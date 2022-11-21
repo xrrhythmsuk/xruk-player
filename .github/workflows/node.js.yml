@@ -4,7 +4,7 @@ name: Node.js CI / deploy
 
 on:
   push:
-    branches: [ "*" ]
+    branches: [ "master" ]
   pull_request:
     branches: [ "*" ]
   
