@@ -1,4 +1,4 @@
-import { crescendo, decrescendo, repeat, sheetUrl } from "../../src/tuneHelper";
+import { crescendo, decrescendo, repeat, stretch, sheetUrl } from "../../src/tuneHelper";
 
 export default {
     categories: ["standard", "common", "uncommon", "new", "proposed", "custom", "onesurdo", "easy", "medium", "tricky", "western", "cultural-appropriation"],
