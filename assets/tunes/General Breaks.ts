@@ -110,7 +110,7 @@ export default {
             sn: "@ls",
             ta: "@ls",
             ag: "o       o       o o o o o       o       o       o o o o o       o       o       o o o o o       o       o       o o o o o",
-            ot: "  y y y   y y y             y     y y y   y y y             y     y y y   y y y             y     y y y   y y y             y   "
+            ot: "  A A A   A A A             A     A A A   A A A             A     A A A   A A A             A     A A A   A A A             A   "
 	},
         'Knock On The Door': {
             loop: true,
