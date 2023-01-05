@@ -44,31 +44,31 @@ export default {
             volumeHack: { 0: .1, 16: .4, 32: .7, 48: 1 }
         },
 	'4 Hits': {
-		ls: "X   X   X   X   ",
-		ms: "@ls",
-		hs: "@ls",
-		re: "@ls",
-		sn: "@ls",
-		ta: "@ls",
-		ag: "o   o   o   o"
+            ls: "X   X   X   X   ",
+            ms: "@ls",
+            hs: "@ls",
+            re: "@ls",
+            sn: "@ls",
+            ta: "@ls",
+            ag: "o   o   o   o"
 	},
 	'8 Hits': {
-		ls: "X   X   X   X   X   X   X   X   ",
-		ms: "@ls",
-		hs: "@ls",
-		re: "@ls",
-		sn: "@ls",
-		ta: "@ls",
-		ag: "o   o   o   o   o   o   o   o"
+            ls: "X   X   X   X   X   X   X   X   ",
+            ms: "@ls",
+            hs: "@ls",
+            re: "@ls",
+            sn: "@ls",
+            ta: "@ls",
+            ag: "o   o   o   o   o   o   o   o"
 	},
 	'Broccoli': {
-		ls: "            X   ",
-		ms: "@ls",
-		hs: "@ls",
-		re: "@ls",
-		sn: "@ls",
-		ta: "@ls",
-		ag: "            o"
+            ls: "            X   ",
+            ms: "@ls",
+            hs: "@ls",
+            re: "@ls",
+            sn: "@ls",
+            ta: "@ls",
+            ag: "            o"
 	},
         'Boom Break': {
             ls: 'X               ',
