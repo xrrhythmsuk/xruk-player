@@ -62,14 +62,14 @@ export default {
             ot: '                                                                                             A  '
         },
         '7 Break': {
-        ls: "XXXXXXX",
-        ms: "@ls",
-        hs: "@ls",
-        re: "@ls",
-        sn: "@ls",
-        ta: "@ls",
-        ag: "ooooooo",
-        ot: "         A  "
+            ls: "XXXXXXX",
+            ms: "@ls",
+            hs: "@ls",
+            re: "@ls",
+            sn: "@ls",
+            ta: "@ls",
+            ag: "ooooooo",
+            ot: "         A  "
         },
         'Butterfly Break': {
             ls: "XXXXXXX     XXXXXXX     XXXXXXXXXX  XXXXXXX",
