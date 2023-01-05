@@ -62,25 +62,25 @@ export default {
             ot: '                                                                                             A  '
         },
         '7 Break': {
-		ls: "XXXXXXX",
-		ms: "@ls",
-		hs: "@ls",
-		re: "@ls",
-		sn: "@ls",
-		ta: "@ls",
-		ag: "ooooooo",
-		ot: "         A  "
-	},
-	'Butterfly Break': {
-		ls: "XXXXXXX     XXXXXXX     XXXXXXXXXX  XXXXXXX",
-		ms: "@ls",
-		hs: "@ls",
-		re: "@ls",
-		sn: "@ls",
-		ta: "@ls",
-		ag: "ooooooo     ooooooo     oooooooooo  ooooooo",
-		ot: "                                             A  "
-	},
+        ls: "XXXXXXX",
+        ms: "@ls",
+        hs: "@ls",
+        re: "@ls",
+        sn: "@ls",
+        ta: "@ls",
+        ag: "ooooooo",
+        ot: "         A  "
+        },
+        'Butterfly Break': {
+            ls: "XXXXXXX     XXXXXXX     XXXXXXXXXX  XXXXXXX",
+            ms: "@ls",
+            hs: "@ls",
+            re: "@ls",
+            sn: "@ls",
+            ta: "@ls",
+            ag: "ooooooo     ooooooo     oooooooooo  ooooooo",
+            ot: "                                             A  "
+        },
         "Karla Break (Bhangra)": {
             ls: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX           ',
             ms: '@ls',
@@ -103,5 +103,5 @@ export default {
             sh: '@ls'
         }
     },
-    exampleSong: ["Tune", "Break 1", "Tune", "Break 3", "Tune", "Break 3", "7 Break", "Tune", "Call Break", "Tune", "Butterfly"]
+    exampleSong: ["Tune", "Break 1", "Tune", "Break 3", "Tune", "Break 3", "7 Break", "Tune", "Call Break", "Tune", "Butterfly Break"]
 }
