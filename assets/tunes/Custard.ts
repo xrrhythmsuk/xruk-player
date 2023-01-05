@@ -35,16 +35,6 @@ export default {
             ag: '@ls',
             sh: '@ls'
         },
-        'Break 3': {
-            ls: repeat(4, 'X             X X               '),
-            ms: '@ls',
-            hs: '@ls',
-            re: '@ls',
-            sn: repeat(3, 'X             X X               ') + 'X             X X.X.X..X.X..XXXX',
-            ta: '@ls',
-            ag: '@ls',
-            sh: '@ls'
-        },
         'Break 3 (Agogô continues)': {
             ls: repeat(4, 'X             X X               '),
             ms: '@ls',
