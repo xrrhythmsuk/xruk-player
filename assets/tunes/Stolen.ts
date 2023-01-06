@@ -24,7 +24,8 @@ export default {
             ta: "@ls",
             ag: "                                          o                                               o                                               o                                               o           o                 o                 o "
         },
-        "2/4 Break": {
+        "24 Break": {
+            displayName: '2/4 Break',
             ls: "X   X   X X X X ",
             ms: "@ls",
             hs: "@ls",
@@ -52,5 +53,5 @@ export default {
             ag: "o o o o ooooooooooooooooo"
         }
     },
-    exampleSong: ["2/4 Break", "Tune", "Tune", "4 Hits (Stolen)", "Tune", "Tune", "Break 1", "Tune", "Tune", "Progressive Karla (Stolen)", "Tune", "Tune", "2/4 Break"]
+    exampleSong: ["24 Break", "Tune", "Tune", "4 Hits (Stolen)", "Tune", "Tune", "Break 1", "Tune", "Tune", "Progressive Karla (Stolen)", "Tune", "Tune", "24 Break"]
 }
