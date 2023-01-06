@@ -6,13 +6,13 @@ export default {
     patterns: {
         Tune: {
             loop: true,
-            ls: "X X X X X X X X X",
-            ms: "    X       X       X X   X X",
+            ls: "XXXXXXXXX",
+            ms: "  X   X   XX XX",
             hs: "@ms",
-            re: ". . X . . . X . . . X . . X X . ",
-            sn: ". . X . . . X . . . X . . . X . ",
-            ta: "X       X       X     X X   X",
-            ag: "                    o a   a o"
+            re: "..X...X...X..XX.",
+            sn:"..X...X...X...X.",
+            ta: "X   X   X  XX X",
+            ag: "          oa ao"
         },
         "Break 1": {
             time: 12,
