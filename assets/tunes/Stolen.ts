@@ -16,13 +16,13 @@ export default {
             ag: "                              o  a     a  o"
         },
         "Break 1": {
-            ls: "                                          X                                               X                                               X                                               X           X                 X                 X ",
+            ls: "                                          X                                               X                                               X                                               X           X                 X                 X     ",
             ms: "@ls",
             hs: "@ls",
             re: "X X X X X X X X X X X X X   X     X             X X X X X X X X X X X X X   X     X             X X X X X X X X X X X X X   X     X             X X X X X X X X X X X X X   X     X           XXX               XXX               XXX",
             sn: "@ls",
             ta: "@ls",
-            ag: "                                          o                                               o                                               o                                               o           o                 o                 o "
+            ag: "                                          o                                               o                                               o                                               o           o                 o                 o     "
         },
         "2/4 Break": {
             ls: "X           X           X     X     X     X     ",
