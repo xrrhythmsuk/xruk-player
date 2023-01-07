@@ -50,7 +50,7 @@ jobs:
 
       - uses: thollander/actions-comment-pull-request@v2
         name: Comment with link
-        if: github.event.action == "opened"
+        if: github.event.action == 'opened'
         with:
           message: |
             :eyes: View the [preview](http://player.xrrhythms.uk/preview/${{github.ref_name}}).
