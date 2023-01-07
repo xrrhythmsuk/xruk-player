@@ -48,7 +48,7 @@ jobs:
           parent: false
           destination: player.xrrhythms.uk/preview/${{github.ref_name}}
 
-      - uses:
+      - uses: thollander/actions-comment-pull-request@v2
         name: Comment with link
         if: github.event.action == "opened"
         with:
