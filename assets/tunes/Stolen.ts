@@ -1,3 +1,5 @@
+import { repeat } from "../../src/tuneHelper";
+
 export default {
     categories: ["standard", "common", "tricky"],
     time: 12,
