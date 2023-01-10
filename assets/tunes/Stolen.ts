@@ -3,7 +3,7 @@ import { repeat } from "../../src/tuneHelper";
 export default {
     categories: ["standard", "common", "tricky"],
     time: 12,
-    sheet: undefined,
+    sheet: require("./stolen.pdf"),
     description: require("./stolen.md").default,
     video: undefined,
     patterns: {

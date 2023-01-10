@@ -1,5 +1,3 @@
-import { sheetUrl } from "../../src/tuneHelper";
-
 export default {
     categories: ["standard", "common", "easy"],
     sheet: sheetUrl + "karla-shnikov.pdf",
