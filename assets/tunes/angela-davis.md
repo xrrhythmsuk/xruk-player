@@ -5,7 +5,7 @@
 
 **Name:** Angela Davis is an African American activist who experienced a lot of oppression as a university professor due to her political views and involvement in the Black liberation, communist and radical feminist movement. She became a major figure of the prison abolishment movement after being imprisoned for a murder that she did not commit. ([Wikipedia](https://en.wikipedia.org/wiki/Angela_Davis), see also the documentary “Free Angela & All Political Prisoners”)
 
-**Musical background:** Break 1 sounds like from “Sex machine” by James Brown and the low surdo part is based on the drum part from that song.
+**Musical background:** Break 1 and the low surdo part sound like “Sex machine” by James Brown.
 
 **Sign:** The sign represents prison bars, because Angela Davis is a major figure in the prison abolishment movement.
 
