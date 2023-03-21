@@ -22,7 +22,7 @@ A helpful tip is to start the snares off first to get everyone in time.
 * **Mid/High Surdo:** medium
 * **Repi:** hard
 * **Snare:** easy
-* **Tam:** medium (though the rhythm is different from everyone else)
+* **Tam:** hard (the rhythm is different from everyone else)
 * **Agogô:** medium
 
 ## Breaks
