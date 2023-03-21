@@ -1,5 +1,3 @@
-## About
-
 This is one of our core tunes. Together with Custard, it's our tune that sounds most like “real” samba.
 
 Like real samba, many of the breaks are more complicated, especially compared to our other tunes. Don't feel like you have to learn them all!
@@ -36,7 +34,7 @@ The rhythm clearly sounds like real Samba Reggae, which is a tune developed and 
 
 * **Break 1** is a longer call and response for repis and snares. It sounds great once you've got it!
 * **Break 2** is a short call and response based on the clave rhythm (like most of our Samba Reggae breaks) led by the repis. It's a good break to start with when you're learning them, and you can get different instruments to lead it (sign Break 2 – agogô for agogôs to lead it, for instance)
-* **Break 3** is a longer call and response for surdos \[uncommon nationally\]
-* The **Call break** is medium-length and has a little tam solo doing their main clave part. Some bands use this as a general break \[not played nationally\]
-* The **SOS break** has the same rhythm as the first part of the call break but is shorter and based on call and response with surdos. It also has a quirk where repis keep playing their part here back in the main part until the next SOS break \[not played nationally\]
+* **Break 3** is a longer call and response for surdos _\[uncommon nationally\]_
+* The **Call break** is medium-length and has a little tam solo doing their main clave part. Some bands use this as a general break _\[not played nationally\]_
+* The **SOS break** has the same rhythm as the first part of the call break but is shorter and based on call and response with surdos. It also has a quirk where repis keep playing their part here back in the main part until the next SOS break _\[not played nationally\]_
 * **General breaks** that work well: Clave, Knock on the Door
