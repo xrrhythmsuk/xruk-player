@@ -6,7 +6,7 @@
 
 **Musical background:** The tune sounds very similar to some Afoxé rhythms from Brazil ([YouTube](https://youtu.be/WCah-JgDktA?t=301)).
 
-**Sign:** The sign comes from the name sounding similar to “aftershave” or "had-a-shave".
+**Sign:** The sign comes from the name sounding similar to “aftershave” or “had-a-shave”.
 
 **History:** Part of the second round of tunes that was introduced by Barking Bateria in 2004/2005.
 
@@ -22,12 +22,12 @@ There is also some criticism about the sign, since it ridicules the spiritual me
 * **Mid/High Surdo:** medium
 * **Repi:** hard 
 * **Snare:** hard
-* **Tam:** medium (quite exhausting if played for a long time, easy to mix up with Custard)
+* **Tam:** medium (easy to mix up with Custard, tiring)
 * **Agogô:** medium (easy to mix up with Custard)
 
 ## Breaks
 
 * **Break 1**, a call and response with surdos
-* **Breaks 2 and 3** are alternate surdo lines while everyone carries on (3 is the same rhythm as 1) \[less common nationally\]
+* **Breaks 2 and 3** are alternate surdo lines while everyone carries on (3 is the same rhythm as 1) _\[less common nationally\]_
 * The **Call break**, led by repis and with a long and a short version
 * **General breaks** that work well: Wolf break
