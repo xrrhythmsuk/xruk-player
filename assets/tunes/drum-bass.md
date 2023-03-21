@@ -9,7 +9,7 @@ We learned this tune at summer camp 2022, so it's a little less established than
 
 ## Background
 
-**Name:** Drum ‘n’ bass is a style of UK electronic music from the 90s. It's characterised by its really fast and strong bass. ([Wikipedia](https://en.wikipedia.org/wiki/Drum_and_bass))
+**Name:** Drum 'n' bass is a style of UK electronic music from the 90s. It's characterised by its really fast and strong bass. ([Wikipedia](https://en.wikipedia.org/wiki/Drum_and_bass))
 
 **Musical background:** The bassline somewhat resembles drum 'n' bass, although drum 'n' bass is usually played much faster at 165–185 bpm, while our tunes are usually around 100–120 bpm. At this speed, it sounds more like hip-hop, and a very similar bassline can be heard in several hip-hop songs e.g. [YouTube](https://www.youtube.com/watch?v=UePtoxDhJSw).
 
