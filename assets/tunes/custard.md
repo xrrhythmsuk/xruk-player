@@ -1,5 +1,3 @@
-## About
-
 Together with Samba Reggae, this is the tune which sounds most like “real” samba.
 
 **Sign:** making an offer to the sky
