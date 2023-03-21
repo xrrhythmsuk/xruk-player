@@ -1,7 +1,7 @@
 import { repeat } from "../../src/tuneHelper";
 
 export default {
-    categories: ["standard", "common", "onesurdo", "tricky"],
+    categories: ["common", "onesurdo", "tricky"],
     sheet: require("./sambasso.pdf"),
     description: require("./sambasso.md").default,
     video: "https://tube.rhythms-of-resistance.org/videos/embed/f75a6a4e-121a-4170-aaf4-2e96a7eed95e",
