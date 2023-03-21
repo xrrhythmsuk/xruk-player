@@ -1,5 +1,3 @@
-## About
-
 **Sign:** Shaving the armpit
 
 ## Background
