@@ -17,7 +17,7 @@ We learned this tune at summer camp 2022, so it's a little less established than
 
 **History:** First mentioned in 2010 by RoR Bremen and developed on a transnational basis between 2009 and 2010. Barking Bateria also mentions a tune with this name [on their website](https://web.archive.org/web/20061023061031/http://www.barkingbateria.co.uk/samba.htm) in 2006, although it's not clear if it's the same tune.
 
-If you're wondering why there's no Break 1 or Break 3, it's because this is where the deeply cursed Everybody Dance Now breaks came from (short was Break 1, long added Break 3).
+If you're wondering why there's no Break 1 or Break 3, it's because this is where the deeply cursed Everybody Dance Now breaks came from (short was Break 1, long added in Break 3).
 
 ## Difficulty
 
@@ -32,5 +32,5 @@ If you're wondering why there's no Break 1 or Break 3, it's because this is wher
 ## Breaks
 
 * **Break 2** is double-time feel so sounds more like actual DnB. That can make it tricky going back into the main tune, through
-* The **Call break** (called Hip-Hop Break in RoR) is a fun extended thing that's probably a bit too involved for us to use generally. _\[not played nationally\]_
+* The **Call break** (called Hip-Hop Break in RoR) is a fun extended thing that's probably a bit too involved for us to use generally _\[not played nationally\]_
 * **General breaks** that work well: Progressive Karla
