@@ -26,5 +26,5 @@ It doesn't sound much like funk, which is something of a theme with RoR tunes.
 
 * **Break 1**, a relatively involved call and response between surdos and everyone else _\[uncommon nationally\]_
 * **Break 2**, where everyone plays one bar of eighth-notes _\[uncommon nationally\]_
-* **General breaks** that work well: Conga, Little Cat, Flappy mouth
+* **General breaks** that work well: Conga, Little Cat, Flappy Mouth
 * Some bands use Angela Davis breaks with Funk instead (signed as e.g. Angela Davis – Break 2 – Funk)
