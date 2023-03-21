@@ -1,5 +1,3 @@
-## About
-
 Sounds more like hip-hop than drum ‘n’ bass but has a really nice groove. Can be very cheerful when played fast
 or groovy when played slow.
 
