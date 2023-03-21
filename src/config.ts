@@ -80,7 +80,7 @@ const config: Config = {
 	instrumentKeys: [ "ls", "ms", "hs", "re", "sn", "ta", "ag", "sh", "ot" ],
 
 	strokes: {
-		"X": "X",
+		"X": "x",
 		"h": "0",
 		"0": "0",
 		"s": "sil",
