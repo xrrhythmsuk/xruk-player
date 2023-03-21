@@ -1,10 +1,8 @@
-## About
-
 This is one of our core tunes, and often the first one new bands learn.
 
 It doesn't sound much like funk, which is something of a theme with RoR tunes.
 
-**Sign:** Two OK signs above your head looking like funky glasses
+**Sign:** two OK signs above your head looking like funky glasses
 
 ## Background
 
@@ -26,7 +24,7 @@ It doesn't sound much like funk, which is something of a theme with RoR tunes.
 
 ## Breaks
 
-* **Break 1**, a relatively involved call and response between surdos and everyone else \[uncommon nationally\]
-* **Break 2**, where everyone plays one bar of eighth-notes \[uncommon nationally\]
+* **Break 1**, a relatively involved call and response between surdos and everyone else _\[uncommon nationally\]_
+* **Break 2**, where everyone plays one bar of eighth-notes _\[uncommon nationally\]_
 * **General breaks** that work well: Conga, Little Cat, Flappy mouth
 * Some bands use Angela Davis breaks with Funk instead
