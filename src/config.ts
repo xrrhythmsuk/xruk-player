@@ -148,10 +148,11 @@ const config: Config = {
 		core: "Core tunes",
 		common: "Common tunes",
 		new: "New tunes",
-		onesurdo: "One Surdo",
+		onesurdo: "One surdo",
 		easy: "Easy",
 		medium: "Medium",
 		tricky: "Tricky",
+		all: "All tunes"
 	},
 
 	// Time measurement that is used for beatbox.js. Should be able to represent all the time measurements above
