@@ -5,6 +5,8 @@ or groovy when played slow.
 
 The rhythm for the low surdo part is tricky, so try thinking of it together with the highs or put in hand mutes on beats 2 and 4.
 
+We learned this tune at summer camp 2022, so it's a little less established than the others. If you're playing it nationally you'll probably want to remind people of the parts, though everyone likes it once it gets going.
+
 **Sign:** With one hand in your ear lift the other and move it front and back (like a DJ).
 
 ## Background
@@ -18,8 +20,6 @@ The rhythm for the low surdo part is tricky, so try thinking of it together with
 **History:** First mentioned in 2010 by RoR Bremen and developed on a transnational basis between 2009 and 2010. Barking Bateria also mentions a tune with this name [on their website](https://web.archive.org/web/20061023061031/http://www.barkingbateria.co.uk/samba.htm) in 2006, although it's not clear if it's the same tune.
 
 If you're wondering why there's no Break 1 or Break 3, it's because this is where the deeply cursed Everybody Dance Now breaks came from (short was Break 1, long added Break 3).
-
-We learned it at the summer camp 2022, so it's a little less established than the others. If you're playing it nationally you'll probably want to remind people of the parts, though everyone likes it once it gets going.
 
 ## Difficulty
 
