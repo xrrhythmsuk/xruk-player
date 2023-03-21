@@ -1,4 +1,4 @@
-## ABout
+## About
 
 **Sign:** Fingers past your eyes
 
@@ -31,4 +31,4 @@ A helpful tip is to start the snares off first to get everyone in time.
 
 * **Break 1** is tricky to get the timing on, especially if you play the tune fast. Start slow and let it groove!
 * The **2/4 break** is a short one that works well as an intro or quick bridge
-* **General breaks** that work well: 4 hits, 8 hits, Progressive Karla (gets very fast at the end — try having the agogôs play in the gap!)
+* **General breaks** that work well: 4 hits, 8 hits, Progressive Karla (gets very fast at the end — try having the agogôs play in the gap!), Whistle break (played straight rather than swung)
