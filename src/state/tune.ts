@@ -73,7 +73,7 @@ export function tuneIsInCategory(tune: Tune, category: Category): boolean {
 	if(category == "all")
 		return true;
 	else if(!tune.categories || tune.categories.length == 0)
-		return false;
+		return category == "custom";
 	else
 		return tune.categories.indexOf(category) != -1;
 }
