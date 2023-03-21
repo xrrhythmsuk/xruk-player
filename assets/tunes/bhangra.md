@@ -1,6 +1,6 @@
 This is one of our core tunes, and rare because it's a bouncy, 6/8 one:
 
-It goes *1-and-a 2-and-a 3-and-a 4-and-a* (like a jig) instead of *1-a-and-a 2-a-and-a 3-a-and-a 4-a-and-a*.
+It goes *1-and-a, 2-and-a, 3-and-a, 4-and-a* (like a jig) instead of *1-a-and-a, 2-a-and-a, 3-a-and-a, 4-a-and-a*.
 
 Some general breaks work best altered to divide each beat into three rather than four (e.g. Karla break, Progressive Karla).
 Some work as they are, and others are best avoided. Good to experiment with!
