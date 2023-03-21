@@ -4,7 +4,7 @@
 
 **Name:** A new XR Rhythms tune “borrowed” rather more directly than the others.
 
-**Musical background:** Sounds like any number of Olodum songs, but specifically taken from ([this song](https://youtu.be/0Pq8vOVbvzs)) by the brilliant Colombian band Aainjaa.
+**Musical background:** Sounds like any number of Olodum songs, but specifically taken from [this song](https://youtu.be/0Pq8vOVbvzs) by the brilliant Colombian band Aainjaa.
 
 The difficulty mostly comes from us feeling the song as double time, so breaks will go twice as fast as usual:
 
