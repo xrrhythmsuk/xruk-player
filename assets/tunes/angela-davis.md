@@ -1,4 +1,3 @@
-## About
 **Sign:** pull two prison bars apart in front of your face
 
 ## Background
