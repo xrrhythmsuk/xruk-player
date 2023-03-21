@@ -1,5 +1,3 @@
-## About
-
 One of our core tunes, and rare because it's a bouncy, 6/8 one:
 
 It goes *1-and-a 2-and-a 3-and-a 4-and-a* (like a jig) instead of *1-a-and-a 2-a-and-a 3-a-and-a 4-a-and-a*.
