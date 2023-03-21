@@ -2,7 +2,7 @@ export type Instrument = "ls" | "ms" | "hs" | "re" | "sn" | "ta" | "ag" | "sh" |
 
 export type Stroke = string;
 
-export type Category = "core" | "common" | "new" | "onesurdo" | "easy" | "medium" | "tricky" | "all";
+export type Category = "core" | "common" | "new" | "onesurdo" | "easy" | "medium" | "tricky" | "custom" | "all";
 
 export type Config = {
 	appName: string,
@@ -152,6 +152,7 @@ const config: Config = {
 		easy: "Easy",
 		medium: "Medium",
 		tricky: "Tricky",
+		custom: "Custom tunes",
 		all: "All tunes"
 	},
 
