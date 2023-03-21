@@ -33,7 +33,7 @@ The rhythm clearly sounds like real Samba Reggae, which is a tune developed and 
 ## Breaks
 
 * **Break 1** is a longer call and response for repis and snares. It sounds great once you've got it!
-* **Break 2** is a short call and response based on the clave rhythm (like most of our Samba Reggae breaks) led by the repis. It's a good break to start with when you're learning them, and you can get different instruments to lead it (sign Break 2 – agogô for agogôs to lead it, for instance)
+* **Break 2** is a short call and response for repis based on the clave rhythm (like most of our Samba Reggae breaks). It's a good break to start with when you're learning them, and you can get different instruments to lead it (sign Break 2 – agogô for agogôs to lead it, for instance)
 * **Break 3** is a longer call and response for surdos _\[uncommon nationally\]_
 * The **Call break** is medium-length and has a little tam solo doing their main clave part. Some bands use this as a general break _\[not played nationally\]_
 * The **SOS break** has the same rhythm as the first part of the call break but is shorter and based on call and response with surdos. It also has a quirk where repis keep playing their part here back in the main part until the next SOS break _\[not played nationally\]_
