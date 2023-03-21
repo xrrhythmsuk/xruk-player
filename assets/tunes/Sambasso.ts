@@ -22,12 +22,12 @@ export default {
             ta: ' X XX X XX XX  X X XXXX X  XX   '
         },
         'Break 1': {
-            ls: 'X  tX t XX XX   ',
+            ls: 'X  rX r XX XX   ',
             ms: '@ls',
             hs: '@ls',
             re: 'X..X..X.XX XX   ',
             sn: 'X..X..X.XX XX   ',
-            ta: ' X XX X XX XX   ',
+            ta: 'X X X   XX XX   ',
             ag: 'o  aa ooXX XX   ',
             sh: 'X X X X XX XX   ',
             ot: 'y w w           '
