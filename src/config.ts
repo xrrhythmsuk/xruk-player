@@ -2,7 +2,7 @@ export type Instrument = "ls" | "ms" | "hs" | "re" | "sn" | "ta" | "ag" | "sh" |
 
 export type Stroke = string;
 
-export type Category = "standard" | "common" | "uncommon" | "new" | "proposed" | "custom" | "onesurdo" | "easy" | "medium" | "tricky" | "western" | "cultural-appropriation" | "all";
+export type Category = "core" | "common" | "new" | "onesurdo" | "easy" | "medium" | "tricky" | "all";
 
 export type Config = {
 	appName: string,
@@ -240,21 +240,15 @@ const config: Config = {
 		12: "4 and then 3 sub-beats",
 		20: "4 and then 5 sub-beats"
 	},
-
+	
 	filterCats: {
-		standard: "Standard tunes",
-		all: "All tunes",
+		core: "Core tunes",
 		common: "Common tunes",
-		uncommon: "Uncommon tunes",
 		new: "New tunes",
-		proposed: "Proposed tunes",
-		custom: "Custom tunes",
 		onesurdo: "One Surdo",
 		easy: "Easy",
 		medium: "Medium",
 		tricky: "Tricky",
-		western: "Western music",
-		"cultural-appropriation": "Cultural appropriation"
 	},
 
 	// Time measurement that is used for beatbox.js. Should be able to represent all the time measurements above
