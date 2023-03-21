@@ -1,5 +1,5 @@
 export default {
-    categories: ["common", "onesurdo", "medium"],
+    categories: ["core", "common", "onesurdo", "medium"],
     speed: 120,
     time: 3,
     sheet: require("./bhangra.pdf"),
