@@ -32,5 +32,5 @@ If you're wondering why there's no Break 1 or Break 3, it's because this is wher
 ## Breaks
 
 * **Break 2** is double-time feel so sounds more like actual DnB. That can make it tricky going back into the main tune, through
-* The **Call break** (called Hip-Hop Break in RoR) is a fun extended thing that's probably a bit too involved for us to use generally. \[not played nationally\]
+* The **Call break** (called Hip-Hop Break in RoR) is a fun extended thing that's probably a bit too involved for us to use generally. _\[not played nationally\]_
 * **General breaks** that work well: Progressive Karla
