@@ -1,5 +1,3 @@
-## About
-
 **Sign:** Fingers past your eyes
 
 ## Background
