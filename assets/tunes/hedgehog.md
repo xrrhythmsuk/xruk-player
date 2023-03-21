@@ -1,5 +1,3 @@
-## About
-
 This is one of our core tunes and often one of the first ones new bands learn. It helps that everyone is playing pretty much the same rhythm.
 
 **Sign:** spiky fingers on your head
@@ -26,5 +24,5 @@ This is one of our core tunes and often one of the first ones new bands learn. I
 
 ## Breaks
 
-* The only break this song has (involving shouting “Act now!” or whatever slogan) can be signed as **Break 1 or Break 2** – perhaps better as Break 2 since there's an RoR Hedgehog Break 1. Either way, there's only one.
+* The only break we have for this song (involving shouting “Act now!” or whatever slogan) can be signed as **Break 1 or Break 2** – perhaps better as Break 2 since there's an RoR Hedgehog Break 1. Either way, there's only one.
 * **General breaks** that work well: 4 hits surdos with everyone else carrying on
