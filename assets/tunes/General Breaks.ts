@@ -174,6 +174,10 @@ export default {
             ta: "@re",
             ag: "o o     o o o o o   o o o o   o   o o o o o   o",
 	},
+	'Little Cat (Alt Repi)': {
+            loop: true,
+	    re: "f   X X r r X X ,
+	},
         'Bunny Ears': {
             ls: "                X X X X X  XX                   X X X X X  XX           X X X           X X X       X X     X X     XX XX X X   ",
             ms: "@ls",
