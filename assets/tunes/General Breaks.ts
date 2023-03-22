@@ -87,7 +87,7 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            volumeHack: { 0: .1, 16: .4, 32: .7, 48: 1 }
+            volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 }
         },
         'Karla Break': {
             ls: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX               ',
@@ -97,7 +97,7 @@ export default {
             sn: '@ls',
             ta: "X X X X X X X X X X X X X X X X X X X X X X X X X",
             ag: "o o o o o o o o o o o o o o o o o o o o o o o o o",
-            volumeHack: { 0: .1, 16: .4, 32: .7, 48: 1 }
+            volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 }
         },
         'Progressive Karla': {
             ls: 'X   X   X   X   X X X X X X X X XXXXXXXXXXXXXXXXX               ',
@@ -116,7 +116,7 @@ export default {
             sn: '@ls',
             ta: "X X X X X X X X X X X X X X X X X X X X X X X X X  X  X   X X",
             ag: "o o o o o o o o o o o o o o o o o o o o o o o o o  o  o   o o",
-            volumeHack: { 0: .1, 16: .4, 32: .7, 48: 1 }
+            volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 }
         },
         'Capped Karla': {
             loop: true,
@@ -127,7 +127,7 @@ export default {
             sn: '@ls',
             ta: 'X X X X X X X X X',
             ag: 'o o o o o o o o o',
-            volumeHack: { 0: .1, 4: .4, 8: .7, 12: 1 }
+            volumeHack: { 0: .2, 4: .4, 8: .7, 12: 1 }
         },
         'X Break': {
             ls: "X       X       X X X X X       X       X       X X X X X       X       X       X X X X X       X       X       X X X X X",
