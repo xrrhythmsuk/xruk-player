@@ -16,44 +16,44 @@ export default {
             ag: 'o a a oo a aa o ',
             sh: '................'
         },
-        "Low Surdo": {
+        "   Low Surdo": {
             loop: true,
             ls: '0   X   0   X X ',
             sh: 'X   .   .   .'
         },
-        "Mid Surdo": {
+        "   Mid Surdo": {
             loop: true,
             ms: 'X   0   X   0   ',
             sh: 'X   .   .   .'
         },
-        "High Surdo": {
+        "   High Surdo": {
             loop: true,
             hs: '0     X 0   XXXX',
             sh: 'X   .   .   .'
         },
-        "Repi": {
+        "   Repi": {
             loop: true,
             re: '  XX  XX  XX  XX',
             sh: 'X   .   .   .'
         },
-        "Snare": {
+        "   Snare": {
             loop: true,
             sn: 'X..X..X...X..X..',
             sh: 'X   .   .   .   '
         },
-        "Tam": {
+        "   Tam": {
             loop: true,
             ta: 'X  X  X   X X   ',
             sh: 'X   .   .   .   '
         },
-        "Agogo": {
-            displayName: 'Agogô',
+        "   Agogo": {
+            displayName: '   Agogô',
             loop: true,
             ag: 'o a a oo a aa o ',
             sh: 'X   .   .   .   '
         },
-        "Starter Agogo": {
-            displayName: 'Starter Agogô',
+        "   Starter Agogo": {
+            displayName: '   Starter Agogô',
             loop: true,
             ag: 'o  a  o   a a   ',
             sh: 'X   .   .   .   '
