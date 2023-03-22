@@ -16,33 +16,33 @@ export default {
             ag: 'a a o o aa o oo a a o o aa o oo ',
             sh: '................................'
         },
-        "Low Surdo": {
+        "   Low Surdo": {
             loop: true,
             ls: 's   s   s   s   s   s   X   X   ',
             sh: 'X   .   .   .   X   .   .   .'
         },
-        "Mid/High Surdo": {
+        "   Mid/High Surdo": {
             loop: true,
             ms: '0     X 0     X 0     X X X X X ',
             hs: '@ms',
             sh: 'X   .   .   .   X   .   .   .'
         },
-        "Repi": {
+        "   Repi": {
             loop: true,
             re: 'f  hs r f  hs r f  hs r s r s r ',
             sh: 'X   .   .   .   X   .   .   .'
         },
-        "Snare": {
+        "   Snare": {
             loop: true,
             sn: 'X...X..XX..X....',
             sh: 'X   .   .   .   '
         },
-        "Tam": {
+        "   Tam": {
             loop: true,
             ta: 'X X X X XX XX X ',
             sh: 'X   .   .   .   '
         },
-        "Agogo": {
+        "   Agogo": {
             displayName: 'Agogô',
             loop: true,
             ag: 'a a o o aa o oo ',
@@ -90,7 +90,7 @@ export default {
             sh: '@ls'
         },
         "Long call": {
-            displayName: 'Call Break (long, example)',
+            displayName: 'Call Break (long, one example)',
             ls: repeat(3, repeat(2, '                                ') + '        XX XX   ') + '        XX XX           XX XX   X X X X XX XX X ',
             ms: '@ls',
             hs: '@ls',
