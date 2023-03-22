@@ -92,12 +92,12 @@ export default {
         'Break 3': {
             ls: '                X  XX X XX XX X                 X  XX X XX XX X                 X  XX X X       X  XX X X       X  X  X         ',
             ms: '@ls',
-            hs: '                X  XX X XX XX X                 X  XX X XX XX X                 X  XX X X       X  XX X X       X  X  X     XXXX',
-            re: '                                X  X  X   X                     X  X  X   X              fX X X          fX X X                 ',
+            hs: '@ls',
+            re: '                                X  X  X   X                     X  X  X   X              fX X X          fX X X             XXXX',
             sn: 'X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...X...',
-            ta: '                                X  X  X   X                     X  X  X   X                 X X             X X                 ',
-            ag: '                                X  X  X   X                     X  X  X   X                 a a             a a                 ',
-            sh: '                                X  X  X   X                     X  X  X   X                                                     '
+            ta: '                                X  X  X   X                     X  X  X   X                 X X             X X             XXXX',
+            ag: '                                X  X  X   X                     X  X  X   X                 a a             a a             aaaa',
+            sh: '                                X  X  X   X                     X  X  X   X                                                 XXXX'
         },
         'Call Break': {
             ls: '          X X             X X             X X                                                                 X ',
