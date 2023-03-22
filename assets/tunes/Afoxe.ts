@@ -43,7 +43,7 @@ export default {
             sh: 'X   .   .   .   '
         },
         "   Agogo": {
-            displayName: 'Agogô',
+            displayName: '   Agogô',
             loop: true,
             ag: 'a a o o aa o oo ',
             sh: 'X   .   .   .   '
