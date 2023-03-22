@@ -176,7 +176,7 @@ export default {
 	},
 	'Little Cat (Alt Repi)': {
             loop: true,
-	    re: "f   X X r r X X ,
+	    re: "f   X X r r X X '
 	},
         'Bunny Ears': {
             ls: "                X X X X X  XX                   X X X X X  XX           X X X           X X X       X X     X X     XX XX X X   ",
