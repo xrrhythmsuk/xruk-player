@@ -15,38 +15,6 @@ export default {
             ag: '  o a   oa  a   ',
             sh: '................'
         },
-        'Break 1': {
-            upbeat: 1,
-            ls: 'XX X X X X X X X ',
-            ms: '@ls',
-            hs: '@ls',
-            re: '@ls',
-            sn: '@ls',
-            ta: '@ls',
-            ag: '@ls',
-            sh: '@ls'
-        },
-        'Break 2': {
-            ls: 'X             X X             X X              XX X X X X X X X ',
-            ms: '@ls',
-            hs: '@ls',
-            re: '  XXX XX XX X     XXX XX XX X     XXX XX XX X  XX X X X X X X X ',
-            sn: '@re',
-            ta: '@re',
-            ag: '@re',
-            sh: '@re'
-        },
-        'Break 3': {
-            loop: true,
-            ls: 'X     XXXX      X X X  X        X     XXXX        X  X  X      XX X X X X X X X ',
-            ms: '@ls',
-            hs: '@ls',
-            re: '@ls',
-            sn: '....X.......X.......X.......X.......X.......X.......X.......X.......X.......X...',
-            ta: '@ls',
-            ag: '@ls',
-            sh: '@ls'
-        },
         "Low Surdo": {
             loop: true,
             ls: 'X X r  rXrX r   ',
@@ -82,6 +50,38 @@ export default {
             loop: true,
             ag: '  o a   oa  a   ',
             sh: 'X   .   .   .   '
+        },
+        'Break 1': {
+            upbeat: 1,
+            ls: 'XX X X X X X X X ',
+            ms: '@ls',
+            hs: '@ls',
+            re: '@ls',
+            sn: '@ls',
+            ta: '@ls',
+            ag: '@ls',
+            sh: '@ls'
+        },
+        'Break 2': {
+            ls: 'X             X X             X X              XX X X X X X X X ',
+            ms: '@ls',
+            hs: '@ls',
+            re: '  XXX XX XX X     XXX XX XX X     XXX XX XX X  XX X X X X X X X ',
+            sn: '@re',
+            ta: '@re',
+            ag: '@re',
+            sh: '@re'
+        },
+        'Break 3': {
+            loop: true,
+            ls: 'X     XXXX      X X X  X        X     XXXX        X  X  X      XX X X X X X X X ',
+            ms: '@ls',
+            hs: '@ls',
+            re: '@ls',
+            sn: '....X.......X.......X.......X.......X.......X.......X.......X.......X.......X...',
+            ta: '@ls',
+            ag: '@ls',
+            sh: '@ls'
         }
     },
     exampleSong: ["Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Break 3", "Break 3", "Tune", "Tune", "Tune", "Tune"]
