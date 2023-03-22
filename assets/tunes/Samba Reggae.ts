@@ -16,6 +16,48 @@ export default {
             ag: 'o a a oo a aa o ',
             sh: '................'
         },
+        "Low Surdo": {
+            loop: true,
+            ls: '0   X   0   X X ',
+            sh: 'X   .   .   .'
+        },
+        "Mid Surdo": {
+            loop: true,
+            ms: 'X   0   X   0   ',
+            sh: 'X   .   .   .'
+        },
+        "High Surdo": {
+            loop: true,
+            hs: '0     X 0   XXXX',
+            sh: 'X   .   .   .'
+        },
+        "Repi": {
+            loop: true,
+            re: '  XX  XX  XX  XX',
+            sh: 'X   .   .   .'
+        },
+        "Snare": {
+            loop: true,
+            sn: 'X..X..X...X..X..',
+            sh: 'X   .   .   .   '
+        },
+        "Tam": {
+            loop: true,
+            ta: 'X  X  X   X X   ',
+            sh: 'X   .   .   .   '
+        },
+        "Agogo": {
+            displayName: 'Agogô',
+            loop: true,
+            ag: 'o a a oo a aa o ',
+            sh: 'X   .   .   .   '
+        },
+        "Starter Agogo": {
+            displayName: 'Starter Agogô',
+            loop: true,
+            ag: 'o  a  o   a a   ',
+            sh: 'X   .   .   .   '
+        },
         'Break 1': {
             ls: '                X X XX XX                       X  X  X X                                  XX                              XX                              XX               XXXX',
             ms: '@ls',
@@ -76,7 +118,18 @@ export default {
             ta: '@re',
             ag: '@re',
             sh: '@re'
+        },
+        'Tune (SOS Repi): {
+            loop: true,
+            ls: '0   X   0   X X ',
+            ms: 'X   0   X   0   ',
+            hs: '0     X 0   XXXX',
+            re: '  XX XX   X X   ',
+            sn: 'X..X..X...X..X..',
+            ta: 'X  X  X   X X   ',
+            ag: 'o a a oo a aa o ',
+            sh: '................'
         }
     },
-    exampleSong: ["Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune", "Tune", "Whistle Break", "Whistle Break", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Call Break", "Tune", "Tune", "Tune", "Tune", "SOS Break", "Tune", "Tune", "Tune", "Tune"]
+    exampleSong: ["Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune", "Tune", "Whistle Break", "Whistle Break", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Call Break", "Tune", "Tune", "Tune", "Tune", "SOS Break", "Tune (SOS Repi)", "Tune (SOS Repi)", "Tune (SOS Repi)", "Tune (SOS Repi)"]
 }
