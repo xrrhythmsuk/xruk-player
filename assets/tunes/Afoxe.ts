@@ -47,7 +47,7 @@ export default {
             loop: true,
             ag: 'a a o o aa o oo ',
             sh: 'X   .   .   .   '
-        }
+        },
         "Break 1": {
             ls: 'X       X       X       X XXXXX ',
             ms: '@ls',
