@@ -44,7 +44,7 @@ export default {
         "   Agogo": {
             displayName: '   Agogô',
             loop: true,
-            ag: 'o  oa o ',
+            ag: 'o  oa o o  oa o ',
             sh: 'X   .   .   .   '
         },
         'Karla Break (Karla)': {
