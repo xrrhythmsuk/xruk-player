@@ -77,6 +77,38 @@ export default {
             ta: '@ls',
             ag: '@ls',
             sh: '@ls'
+        },
+        "Low Surdo": {
+            loop: true,
+            ls: 's   s   s   s   s   s   X   X   ',
+            sh: 'X   .   .   .   X   .   .   .'
+        },
+        "Mid/High Surdo": {
+            loop: true,
+            ms: '0     X 0     X 0     X X X X X ',
+            hs: '@ms',
+            sh: 'X   .   .   .   X   .   .   .'
+        },
+        "Repi": {
+            loop: true,
+            re: 'f  hs r f  hs r f  hs r s r s r ',
+            sh: 'X   .   .   .   X   .   .   .'
+        },
+        "Snare": {
+            loop: true,
+            sn: 'X...X..XX..X....',
+            sh: 'X   .   .   .   '
+        },
+        "Tam": {
+            loop: true,
+            ta: 'X X X X XX XX X ',
+            sh: 'X   .   .   .   '
+        },
+        "Agogo": {
+            displayName: 'Agogô',
+            loop: true,
+            ag: 'a a o o aa o oo ',
+            sh: 'X   .   .   .   '
         }
     },
     exampleSong: ["Tune", "Tune", "Break 1", "Tune", "Tune", "Long call", "Tune", "Tune", "Tam Stroke", "Tune", "Tune", "Break 2", "Tune", "Tune", "Break 3"]
