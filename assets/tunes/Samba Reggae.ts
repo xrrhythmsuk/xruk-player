@@ -119,7 +119,7 @@ export default {
             ag: '@re',
             sh: '@re'
         },
-        'Tune (SOS Repi): {
+        'Tune (SOS Repi)': {
             loop: true,
             ls: '0   X   0   X X ',
             ms: 'X   0   X   0   ',
