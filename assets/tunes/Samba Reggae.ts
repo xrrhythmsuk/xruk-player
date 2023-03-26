@@ -53,7 +53,7 @@ export default {
             sh: 'X   .   .   .   '
         },
         ">  Starter Agogo": {
-            displayName: '   Starter Agogô',
+            displayName: '>  Starter Agogô',
             loop: true,
             ag: 'o  a  o   a a   ',
             sh: 'X   .   .   .   '
