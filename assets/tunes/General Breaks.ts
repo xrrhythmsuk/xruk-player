@@ -70,7 +70,7 @@ export default {
             ag: '@ls'
         },
         "Clave 2x": {
-            ls: repeat(2, 'X  X  X   X '),
+            ls: repeat(2, 'X  X  X   X X   '),
             ms: '@ls',
             hs: '@ls',
             re: '@ls',
@@ -80,7 +80,7 @@ export default {
         },
         "Clave 4x": {
             displayName: "Clave 4x soft to loud",
-            ls: repeat(4, 'X  X  X   X '),
+            ls: repeat(4, 'X  X  X   X X   '),
             ms: '@ls',
             hs: '@ls',
             re: '@ls',
