@@ -115,6 +115,6 @@ export default {
             ag: "@ls"
         }
     },
-    exampleSong: ["2/4 Break", "Tune", "Tune", "Tune", "Tune", "8 Hits (Stolen)", "Tune", "Tune", "Tune", "Tune", "Break 1",
+    exampleSong: ["Whistle in (Stolen)", "2/4 Break", "Tune", "Tune", "Tune", "Tune", "8 Hits (Stolen)", "Tune", "Tune", "Tune", "Tune", "Break 1",
                   "Tune", "Tune", "Tune", "Tune", "Progressive Karla (Stolen)", "Tune", "Tune", "Tune", "Tune", "2/4 Break"]
 }
