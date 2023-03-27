@@ -1,12 +1,12 @@
 <div class="bb-example-song">
 	<div class="song" @click="setPosition($event)">
 		<div class="position-marker" v-show="playerRef && playerRef.customPosition"></div>
-		<b-card v-if="normalizedSong[0].tuneName != 'Stolen'" :style="width: 20em;">
+		<b-card v-if="normalizedSong[0].tuneName != 'Stolen'" style="width: 20em;">
 			<span class="tune-name">General Breaks</span>
 			<br>
 			<span class="pattern-name">Whistle in</span>
 		</b-card>
-		<b-card v-else :style="width: 10em;">
+		<b-card v-else style="width: 10em;">
 			<span class="tune-name">Stolen</span>
 			<br>
 			<span class="pattern-name">Whistle in (Stolen)</span>
