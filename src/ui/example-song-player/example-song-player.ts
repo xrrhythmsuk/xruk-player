@@ -59,9 +59,10 @@ export default class ExampleSongPlayer extends Vue {
 	}
 
 	get songParts(): SongParts {
-		let i = 2;
+		const stolen = (this.normalizedSong[0].tuneName == "Stolen");
+		let i = stolen ? 1 : 2;
 		const result = {
-			0: allInstruments(this.normalizedSong[0].tuneName != "Stolen" ? [ "General Breaks", "Whistle in" ] : [ "Stolen", "Whistle in (Stolen)"])
+			0: allInstruments(stolen ? [ "Stolen", "Whistle in (Stolen)"] : [ "General Breaks", "Whistle in" ])
 		} as SongParts;
 		for(const part of this.normalizedSong) {
 			result[i] = allInstruments([ part.tuneName, part.patternName ], part.instruments);
