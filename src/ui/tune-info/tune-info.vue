@@ -3,7 +3,7 @@
 		<h1 class="flex-grow-1">{{tune.displayName || tuneName}}</h1>
 		<div class="d-flex mb-4">
 			<InstrumentButtons :playback-settings="playbackSettings"/>
-			<PlaybackSettings :playback-settings="playbackSettings" :default-speed="tune.speed" v-if="tune.exampleSong" />
+			<PlaybackSettings :playback-settings="playbackSettings" :default-speed="tune.speed" />
 		</div>
 	</div>
 
