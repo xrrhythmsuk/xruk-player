@@ -11,29 +11,29 @@ import './instrument-buttons.scss'
 @Component({})
 export default class InstrumentButtons extends Vue {
   @InjectReactive() readonly state!: State;
-	@Prop({ type: Object, required: true }) readonly playbackSettings!: PlaybackSettings;
+  @Prop({ type: Object, required: true }) readonly playbackSettings!: PlaybackSettings;
 
   active(instr: Instrument): boolean {
     const { mute } = this.playbackSettings
     return !mute[instr]
   }
 
-  onClick(instr: Instrument) { 
-		const instrs : Instrument[] = ['ls','ms','hs','sn','re','ta','ag']
-		const allInstrs = config.instrumentKeys
+  onClick(instr: Instrument) {
+    const instrs: Instrument[] = ['ls', 'ms', 'hs', 'sn', 're', 'ta', 'ag']
+    const allInstrs = config.instrumentKeys
     const { mute } = this.playbackSettings
-    if(instrs.every(i => !mute[i])){
-      for(let i of allInstrs) Vue.set(mute, i, true)
+    if (instrs.every(i => !mute[i])) {
+      for (let i of allInstrs) Vue.set(mute, i, true)
       Vue.set(mute, instr, false)
     }
     else if (instrs.every(i => mute[i] == (i != instr))) {
-      for(let i of allInstrs) Vue.set(mute, i, false)
+      for (let i of allInstrs) Vue.set(mute, i, false)
     }
-    else { 
+    else {
       Vue.set(mute, instr, !mute[instr])
     }
 
-    const whistleValue : Whistle = instrs.filter(i => !mute[i]).length == 1 ? (2) : false
+    const whistleValue: Whistle = instrs.filter(i => !mute[i]).length == 1 ? (2) : false
     Vue.set(this.playbackSettings, 'whistle', whistleValue)
-      }
+  }
 }
