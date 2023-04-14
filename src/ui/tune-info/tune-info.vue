@@ -1,10 +1,7 @@
 <div class="bb-tune-info" v-if="tune">
 	<div class="d-flex flex-wrap">
 		<h1 class="flex-grow-1">{{tune.displayName || tuneName}}</h1>
-		<div class="d-flex mb-4">
-			<InstrumentButtons :playback-settings="playbackSettings"/>
-			<PlaybackSettings :playback-settings="playbackSettings" :default-speed="tune.speed" />
-		</div>
+		<InstrumentButtons :playback-settings="playbackSettings" :tune="tune" class="mb-4" />
 	</div>
 
 <ExampleSongPlayer

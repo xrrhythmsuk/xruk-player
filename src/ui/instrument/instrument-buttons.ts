@@ -2,16 +2,19 @@ import Vue from "vue";
 import Component from "vue-class-component";
 import { InjectReactive, Prop } from "vue-property-decorator";
 import config, { Instrument } from "../../config";
-import { PlaybackSettings, Whistle } from "../../state/playbackSettings";
+import { PlaybackSettings, Metronome } from "../../state/playbackSettings"
+import PlaybackSettings1 from "../playback-settings/playback-settings"
 import { State } from "../../state/state";
 import WithRender from './instrument-buttons.vue'
 import './instrument-buttons.scss'
+import { Tune } from "../../state/tune";
 
 @WithRender
-@Component({})
+@Component({components: { PlaybackSettings: PlaybackSettings1 }})
 export default class InstrumentButtons extends Vue {
   @InjectReactive() readonly state!: State;
   @Prop({ type: Object, required: true }) readonly playbackSettings!: PlaybackSettings;
+  @Prop({ type: Object, required: true }) readonly tune!: Tune;
 
   active(instr: Instrument): boolean {
     const { mute } = this.playbackSettings
@@ -33,7 +36,7 @@ export default class InstrumentButtons extends Vue {
       Vue.set(mute, instr, !mute[instr])
     }
 
-    const whistleValue: Whistle = instrs.filter(i => !mute[i]).length == 1 ? (2) : false
-    Vue.set(this.playbackSettings, 'whistle', whistleValue)
+    const metronome: Metronome = instrs.filter(i => !mute[i]).length == 1 ? (2) : false
+    Vue.set(this.playbackSettings, 'metronome', metronome)
   }
 }
