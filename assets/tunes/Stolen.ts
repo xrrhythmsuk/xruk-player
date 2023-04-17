@@ -17,6 +17,12 @@ export default {
             ag: "          oa ao ",
             sh: "@sn"
         },
+        "Alt Agogo": {
+            displayName: 'Alt Agogô',
+            loop: true,
+            ag: "o ao  a  oaoo a ",
+            sh: 'X . . . X . . . '
+        },
         "Whistle in (Stolen)": {
             ot: 'y   y   y y y y '
         },
