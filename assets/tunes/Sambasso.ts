@@ -17,6 +17,11 @@ export default {
             ag: 'o  aa oo a oo a ',
             sh: 'X.X.X.X.X.X.X.X.'
         },
+        'Alt Tam': {
+            loop: true,
+            ta: ' X XX X XX XX  X X XXXX X  XX   ',
+            sh: 'X   .   .   .   X   .   .   .   '
+        },
         'Break 1': {
             ls: 'X  rX r XX XX   ',
             ms: '@ls',
