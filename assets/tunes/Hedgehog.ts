@@ -14,6 +14,11 @@ export default {
             ag: 'o  a  a o  a  a o  a  a o a o a ',
             sh: '................................'
         },
+       'Alt Repi': {
+            loop: true,
+            re: '  XX XXX  XX XXX  XX XXX  XX  XX',
+            sh: 'X   .   .   .   X   .   .   .   '
+        },
         'Break 2': {
             ls: 'X               ',
             ms: '@ls',
