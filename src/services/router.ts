@@ -10,16 +10,18 @@ import { stopAllPlayers } from './player'
 const routes : RouteConfig[] = [
     {
       path: '/',
-      component: Listen, 
-      children: [ {
-        name: 'about',
-        path: '',
-        component: About
-    }]
+      component: About, 
+      name: 'about'
     },
-    {
-        path: '/listen',
-        redirect: 'listen/General Breaks'
+    { 
+        path: '/listen', 
+        component: Listen,
+        children: [ {
+            path:'',
+            component: TuneInfo,
+            meta: { showNav: true },
+            props: { tuneName: 'General Breaks' }
+        } ]
     },
     {
         path: '/listen/:tuneName',
@@ -60,6 +62,7 @@ const routes : RouteConfig[] = [
   const router = new VueRouter({
     routes,
     mode: 'hash',
+    scrollBehavior: () => ({ x: 0, y: 0 })
 })
 
 router.beforeEach((from, to, next) => { 

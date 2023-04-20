@@ -8,6 +8,7 @@ import Help from "../help/help";
 import Update from "../update/update";
 import Compatibility from "../compatibility/compatibility";
 import { Watch } from "vue-property-decorator";
+import { Route } from "vue-router";
 
 @WithRender
 @Component({components: { Compatibility, Update, Help  }})
@@ -17,7 +18,9 @@ export default class extends Vue {
 	}
 
     @Watch('$route')
-    onRouteChange() {
-		$("body").removeClass("bb-pattern-list-visible");
+    showHidePatternList(route: Route) {
+        setTimeout(() =>
+		    $("body").toggleClass("bb-pattern-list-visible", !!route.meta?.showNav)
+        , 1)
     }
 }

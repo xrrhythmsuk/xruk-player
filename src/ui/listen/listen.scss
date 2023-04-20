@@ -1,7 +1,6 @@
 $padding: 1.2em;
 .bb-listen {
 	display: flex;
-	height: 100%;
 
 	.bb-listen-tunes {
 		padding: $padding;
@@ -49,7 +48,6 @@ $padding: 1.2em;
 
 	.bb-listen-info {
 
-		width: 0;
 		flex-grow: 1;
 		padding: 1.2em;
 		overflow: auto;
