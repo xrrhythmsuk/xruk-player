@@ -14,7 +14,7 @@ A helpful tip is to start the snares off first to get everyone in time.
 
 **Sign:** like a cartoon burglar mask
 
-**History:** Introduced to XR Rhythms in 2021. It's our only non-RoR tune.
+**History:** Introduced to XR Rhythms in 2021. It was our first non-RoR tune.
 
 ## Difficulty
 
