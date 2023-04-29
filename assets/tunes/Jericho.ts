@@ -29,6 +29,17 @@ export default {
             ta: "@ls",
             ag: "@ls"
         },
+        'Break 1 after short': {
+            displayName: "e.g. Break 1 finishing main part",
+            ls: "X X0  X X0  X X0 X   X XX  X  X XX X",
+            ms: "   X X   X X   0     X XX  X  X XX X",
+            hs: "@ms",
+            re: "f  h sf  h sf  h sf  X XX  X  X XX X     X  X  X",
+            sn: "...X.X...X.....X.X...X XX  X  X XX X",
+            ta: "   X     X     X X   X XX  X  X XX X",
+            ag: "o  a ao  a ao a  o   o oo  o  o oo o",
+            sh: "X  X .X  X .X  X .X  X XX  X  X XX X"
+        },
         'Break 2': {
             upbeat: 1,
             ls: " " + repeat(4, "                  X     "),
@@ -36,8 +47,8 @@ export default {
             hs: "@ls",
             re: " " + repeat(4, "f  h sf  h sf  h sX r   "),
             sn: "@ls",
-            ta: "X" + repeat(2, "X XX  X X  X            X    XX XX X           X"),
-            ag: "a" + repeat(2, "a aa  a o  a            a    aa ao a           a")
+            ta: "XX XX  X X  X            X    XX XX X           XXX XX  X X  X            X    XX XX X",
+            ag: "aa aa  a o  a            a    aa ao a           aaa aa  a o  a            a    aa ao a"
         },
         'Break 3': {
             ls: "s  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s",
@@ -58,5 +69,5 @@ export default {
             ag: "@ls"
         }
     },
-    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Call Break", "Tune", "Tune", "Break 1", "Tune", "Break 2", "Tune", "Break 3"]
+    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Call Break", "Tune", "Break 1 after short", "Tune", "Break 2", "Tune", "Break 3"]
 }
