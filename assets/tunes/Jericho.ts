@@ -1,7 +1,7 @@
 import { repeat } from "../../src/tuneHelper";
 export default {
     categories: ["new", "tricky"],
-    speed: 140,
+    speed: 120,
     time: 3,
     sheet: require("./jericho.pdf"),
     description: require("./jericho.md").default,
