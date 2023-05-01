@@ -94,9 +94,9 @@ export function patternToBeatbox(pattern: Pattern, playbackSettings: PlaybackSet
 		const stroke = [ ];
 
 		if(playbackSettings.metronome && i >= pattern.upbeat && (i-pattern.upbeat) % (4*pattern.time) == 0)
-			stroke.push({ instrument: playbackSettings.metronome == 2 ? toSoundName("ot", "a") : toSoundName("ot", "b"), volume: playbackSettings.volume  * 0.25});
+			stroke.push({ instrument: playbackSettings.metronome == 2 ? toSoundName("sh", "X") : toSoundName("sh", "."), volume: playbackSettings.volume  * 0.25});
 		else if(playbackSettings.metronome == 2 && i >= pattern.upbeat && (i-pattern.upbeat) % pattern.time == 0)
-			stroke.push({ instrument: toSoundName("ot", "b"), volume: playbackSettings.volume * 0.25});
+			stroke.push({ instrument: toSoundName("sh", "."), volume: playbackSettings.volume * 0.25});
 
 		for(const instr of config.instrumentKeys) {
 			if(isEnabled(instr, playbackSettings.headphones, playbackSettings.mute) && pattern[instr]) {
