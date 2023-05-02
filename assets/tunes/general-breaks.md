@@ -1,4 +1,4 @@
-We have quite a few! They have their own signs so you use them in any song.
+We have quite a few! They have their own signs so you can use them in any song.
 
 Once your band has the core tunes and breaks down, learning more general breaks is a great next step.
 
