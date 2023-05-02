@@ -63,6 +63,6 @@ export default {
             ag: "@ls"
         }
     },
-    exampleSong: [{ tuneName: "General Breaks", patternName: "Whistle in" }, "2/4 Break", "Tune", "Tune", "Tune", "Tune", { tuneName: "General Breaks", patternName: "4 Hits" }, "Tune", "Tune", "Tune", "Tune", "Break 1",
-                  "Tune", "Tune", "Tune", "Tune", "Progressive Karla (Stolen)", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "2/4 Break"]
+    exampleSong: [{ tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", { tuneName: "General Breaks", patternName: "8 Hits" }, "Tune", "Tune", "Tune", "Tune", "Break 1",
+                  "Tune", "Tune", "Tune", "Tune", "2/4 Break", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Progressive Karla (Stolen)"]
 }
