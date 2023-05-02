@@ -61,6 +61,16 @@ export default {
             sn: "@re",
             ta: "@ls",
             ag: "@ls"
+        },
+        "Whistle Break (Stolen)": {
+            loop: true,
+            ls: "X  XX  XXX XX",
+            ms: "@ls",
+            hs: "@ls",
+            re: "  X   X   X   X ",
+            sn: "@re",
+            ta: "@re",
+            ag: "@re"
         }
     },
     exampleSong: [{ tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", { tuneName: "General Breaks", patternName: "8 Hits" }, "Tune", "Tune", "Tune", "Tune", "Break 1",
