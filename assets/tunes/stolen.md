@@ -29,5 +29,5 @@ A helpful tip is to start the snares off first to get everyone in time.
 
 * **Break 1** is a repi call and response that's tricky to get the timing on, especially if you play the tune fast. Start slow and let it groove!
 * The **2/4 break** is a short one that works well as an intro or quick bridge
-* **Break 3** is a mid-length break based on the tam line _[less common nationally]_
+* **Break 3** is a mid-length one based on the tam line _[less common nationally]_
 * **General breaks** that work well: 4 hits, 8 hits, Progressive Karla (gets very fast at the end – try having the agogôs play in the gap!), Whistle break (played straight rather than swung)
