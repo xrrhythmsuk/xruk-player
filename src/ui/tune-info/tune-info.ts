@@ -34,12 +34,7 @@ export default class TuneInfo extends Vue {
 
 	@Prop({ type: String, required: true }) readonly tuneName!: string;
 
-	playbackSettings: PlaybackSettings = null as any;
-
-	created() {
-		this.playbackSettings = clone(this.state.playbackSettings);
-		this.playbackSettings.speed = (this.tune && this.tune.speed) || config.defaultSpeed;
-	}
+	get playbackSettings() { return this.state.playbackSettings }
 
 	get tuneDescription() {
 		return getTuneDescription(this.tuneName);
@@ -52,8 +47,6 @@ export default class TuneInfo extends Vue {
 	@Watch("tuneName")
 	onTuneNameChange(tuneName: string, previousTuneName: string) {
 		if(this.tune) {
-			let previousDefaultSpeed = previousTuneName && this.state.tunes[previousTuneName].speed || config.defaultSpeed;
-			if(this.playbackSettings.speed == previousDefaultSpeed)
 				this.playbackSettings.speed = this.tune.speed || config.defaultSpeed;
 		}
 	}

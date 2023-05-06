@@ -1,15 +1,15 @@
 import Vue from "vue";
-import { normalizeState, State } from "../../state/state";
 import Component from "vue-class-component";
 import WithRender from "./listen.vue";
 import { Tune } from "../../state/tune";
 import { stopAllPlayers } from "../../services/player";
 import PatternListFilter, { Filter, filterPatternList } from "../pattern-list-filter/pattern-list-filter";
 import TuneInfo from "../tune-info/tune-info";
-import { ProvideReactive, Ref, Watch } from "vue-property-decorator";
-import events, { MultipleHandlers, registerMultipleHandlers } from "../../services/events";
+import { InjectReactive, Ref, Watch } from "vue-property-decorator";
+import events, { registerMultipleHandlers } from "../../services/events";
 import "./listen.scss";
 import $ from "jquery";
+import { State } from "../../state/state";
 
 @WithRender
 @Component({
@@ -18,7 +18,7 @@ import $ from "jquery";
 	data: () => ({ filter: undefined })
 })
 export default class Listen extends Vue {
-	@ProvideReactive() state = normalizeState();
+	@InjectReactive() state! : State;
 
 	@Ref() tunes!: HTMLElement;
 

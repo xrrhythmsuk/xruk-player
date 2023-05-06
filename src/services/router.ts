@@ -16,7 +16,7 @@ const routes : RouteConfig[] = [
     },
     { 
         path: '/listen', 
-        component: Listen,
+        component: withStateProvider(Listen),
         children: [ {
             path:'',
             component: TuneInfo,
@@ -27,7 +27,7 @@ const routes : RouteConfig[] = [
     {
         path: '/listen/:tuneName',
         props: true,
-        component: Listen,
+        component: withStateProvider(Listen),
         children:  [
             {
                 name: 'listen',
