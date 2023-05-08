@@ -6,10 +6,6 @@
 	<div class="bb-pattern-editor-toolbar">
 		<b-button :variant="playerRef && playerRef.playing ? 'info' : 'success'" @click="playPause()"><fa :icon="playerRef && playerRef.playing ? 'pause' : 'play'"></fa><span class="d-none d-sm-inline"> {{playerRef && playerRef.playing ? 'Pause' : 'Play'}}</span></b-button>
 		<b-button variant="danger" @click="stop()"><fa icon="stop"/><span class="d-none d-sm-inline"> Stop</span></b-button>
-		<PlaybackSettings :playback-settings="playbackSettings" :default-speed="pattern.speed" />
-
-		<div class="divider"></div>
-
 		<b-button-group v-if="!readonly">
 			<b-dropdown :text="`Length: ${pattern.length}`" :class="{'has-changes': originalPattern && originalPattern.length != pattern.length}" variant="secondary">
 				<b-dropdown-item v-for="le in [ 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64 ]" :key="le" :active="pattern.length == le" href="javascript:" @click="updatePattern({ length: le })">Length: {{le}}</b-dropdown-item>
@@ -32,6 +28,9 @@
 
 		<b-button variant="warning" v-if="hasLocalChanges" @click="reset()"><fa icon="eraser"/> Restore original</b-button>
 	</div>
+
+	<InstrumentButtons :playback-settings="playbackSettings" :tune="tuneName" class="mt-1" />
+
 	<div class="bb-pattern-editor-container">
 		<table class="pattern-editor" :class="'time-'+pattern.time">
 			<thead>
