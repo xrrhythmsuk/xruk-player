@@ -56,6 +56,13 @@
 			}
 		}
 	}
+	
+	.tab-gap {
+		gap: 16px;
+		@media (max-width: 575.98px) {
+			gap:8px;
+		}
+	}
 
 	> .tab-content {
 		height: 0;
