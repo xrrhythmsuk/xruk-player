@@ -47,11 +47,11 @@ jobs:
         with:
           path: dist
           parent: false
-          destination: player.xrrhythms.uk/preview/${{github.ref_name}}
+          destination: player.xrrhythms.uk/preview/${{github.event.pull_request.head.ref}}
 
       - uses: thollander/actions-comment-pull-request@v2
         name: Comment with link
         if: github.event.action == 'opened'
         with:
           message: |
-            :eyes: A preview has been generated. [Click here to view](http://player.xrrhythms.uk/preview/${{github.ref_name}}).
+            :eyes: A preview has been generated. [Click here to view](http://player.xrrhythms.uk/preview/${{github.event.pull_request.head.ref}}).
