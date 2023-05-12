@@ -81,7 +81,7 @@ class History {
 			return errors;
 		} catch(e) {
 			console.error("Error decoding state", (e as Error).stack || e);
-			throw e
+			return ["Sorry! That link's messed up and can't be decoded."]
 		}
 	}
 

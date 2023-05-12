@@ -4,6 +4,7 @@ import Listen from  '../ui/listen/listen'
 import PatternPlayer from '../ui/pattern-player/pattern-player'
 import TuneInfo from '../ui/tune-info/tune-info'
 import Compose from '../ui/compose/compose'
+import Error from '../ui/error'
 import SongPlayer from '../ui/song-player/song-player'
 import { stopAllPlayers } from './player'
 import history, { withStateProvider } from './history'
@@ -50,11 +51,10 @@ const routes : RouteConfig[] = [
                 name: 'import',
                 path: ':importData([^/]{50,})/:tuneName?/:patternName?',
                 beforeEnter: (to, from, next) => {
-                    debugger;
                     const errs = history.loadEncodedString(to.params.importData)
                     if (errs.length) {
                         next({ 
-                            name:"error", 
+                            name: "error", 
                             params: { message: "Errors while loading data:\n" + errs.join("\n") }
                         })
                     }
@@ -75,6 +75,12 @@ const routes : RouteConfig[] = [
                 path: ':tuneName/:patternName',
                 props: ({params}) => ({...params, readonly: false }),
                 component: PatternPlayer
+            },
+            {
+                name: 'error',
+                path: 'error',
+                props: true,
+                component: Error
             }
             ]
         }
