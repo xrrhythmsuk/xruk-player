@@ -44,7 +44,7 @@ export default class TuneInfo extends Vue {
 		return this.tuneName && this.state.tunes[this.tuneName];
 	}
 
-	@Watch("tuneName")
+	@Watch("tuneName", { immediate: true })
 	onTuneNameChange(tuneName: string, previousTuneName: string) {
 		if(this.tune) {
 				this.playbackSettings.speed = this.tune.speed || config.defaultSpeed;
