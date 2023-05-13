@@ -6,7 +6,7 @@
 	<div class="d-flex flex-column h-100">
 		<div class="header-nav">
 			<span class="navbar-light d-inline-block d-md-none">
-				<b-button class="navbar-toggler" :disabled="!hasSidebar" 
+				<b-button class="navbar-toggler" :class="{invisible: !hasSidebar}" 
 				 @click="togglePatternList()"><span class="navbar-toggler-icon" /></b-button>
 			</span>
 			<a class="logo" href="https://xrrhythms.uk">
