@@ -27,9 +27,10 @@
 		<slot/>
 
 		<b-button variant="warning" v-if="hasLocalChanges" @click="reset()"><fa icon="eraser"/> Restore original</b-button>
-	</div>
 
-	<InstrumentButtons :playback-settings="playbackSettings" :tune="tuneName" class="mt-2" />
+		<span class="mr-2"/>
+		<InstrumentButtons :playback-settings="playbackSettings" :tune="tuneName" />
+</div>
 
 	<div class="bb-pattern-editor-container">
 		<table class="pattern-editor" :class="'time-'+pattern.time">
