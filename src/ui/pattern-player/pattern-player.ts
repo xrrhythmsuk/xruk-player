@@ -15,7 +15,7 @@ import defaultTunes from "../../defaultTunes";
 import isEqual from "lodash.isequal";
 import PlaybackSettingsComponent from "../playback-settings/playback-settings";
 import StrokeDropdown from "./stroke-dropdown";
-import { registerMultipleHandlers } from "../../services/events";
+import InstrumentButtons from "../instrument/instrument-buttons";
 
 type StrokeDropdownInfo = {
 	instr: Instrument,
@@ -25,7 +25,7 @@ type StrokeDropdownInfo = {
 
 @WithRender
 @Component({
-	components: { PlaybackSettings: PlaybackSettingsComponent, StrokeDropdown }
+	components: { InstrumentButtons, StrokeDropdown }
 })
 export default class PatternPlayer extends Vue {
 

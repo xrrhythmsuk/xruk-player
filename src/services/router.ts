@@ -4,15 +4,17 @@ import Listen from  '../ui/listen/listen'
 import PatternPlayer from '../ui/pattern-player/pattern-player'
 import TuneInfo from '../ui/tune-info/tune-info'
 import Compose from '../ui/compose/compose'
+import Error from '../ui/error'
 import SongPlayer from '../ui/song-player/song-player'
 import { stopAllPlayers } from './player'
-import { withStateProvider } from './history'
+import history, { withStateProvider } from './history'
 
 const routes : RouteConfig[] = [
     {
       path: '/',
       component: About, 
-      name: 'about'
+      name: 'about',
+      meta: { hasSidebar: false }
     },
     { 
         path: '/listen', 
@@ -47,16 +49,41 @@ const routes : RouteConfig[] = [
         component: withStateProvider(Compose),
         children: [
             {
-                name: 'compose',
-                path: '',
-                component: SongPlayer
+                name: 'import',
+                path: ':importData([^/]{50,})/:tuneName?/:patternName?',
+                beforeEnter: (to, from, next) => {
+                    const errs = history.loadEncodedString(to.params.importData)
+                    if (errs.length) {
+                        next({ 
+                            name: "error", 
+                            params: { message: "Errors while loading data:\n" + errs.join("\n") }
+                        })
+                    }
+                    else {
+                        const { tuneName, patternName } = to.params
+                        next(`/compose${tuneName? `/${tuneName}${patternName? `/${patternName}` : ''}` : ''}`)
+                    }
+                }
             },
             {
-                    name: 'edit pattern',
-                    path: ':tuneName/:patternName',
-                    props: ({params}) => ({...params, readonly: false }),
-                    component: PatternPlayer
-            }]
+                name: 'compose',
+                path: ':tuneName?',
+                component: SongPlayer,
+                props: true
+            },
+            {
+                name: 'edit pattern',
+                path: ':tuneName/:patternName',
+                props: ({params}) => ({...params, readonly: false }),
+                component: PatternPlayer
+            },
+            {
+                name: 'error',
+                path: 'error',
+                props: true,
+                component: Error
+            }
+            ]
         }
   ]
 

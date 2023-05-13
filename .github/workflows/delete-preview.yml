@@ -1,6 +1,8 @@
 name: Delete preview
 
-on: delete
+on:
+  pull_request:
+    types: [closed]
 
 jobs:
   build:
@@ -16,4 +18,4 @@ jobs:
         uses: "google-github-actions/setup-gcloud@v1"
 
       - name: "Delete preview"
-        run: "gcloud storage rm --recursive gs://player.xrrhythms.uk/preview/${{github.event.ref}}"
+        run: "gcloud storage rm --recursive gs://player.xrrhythms.uk/preview/${{github.event.pull_request.head.ref}}"
