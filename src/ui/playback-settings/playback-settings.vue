@@ -4,10 +4,10 @@
 	</template>
 
 	<b-form-group label="Speed" label-cols="3">
-		<b-button-group class="d-flex my-auto flex-grow-1">
-			<b-form-input type="range" class="my-auto" @update="update({ speed: $event })" :value="playbackSettings.speed" min="30" max="180" :id="`${id}-speed`"  />
+		<b-button-group class="d-flex my-auto flex-grow-1 align-items-center flex-row">
+			<b-form-input type="range" class="my-auto" @update="update({ speed: $event })" :value="playbackSettings.speed" min="30" max="200" :id="`${id}-speed`"  />
+			<b-form-input type="number" size="sm" class="tempo ml-2" v-model="playbackSettings.speed"/>
 			<b-button size="sm" @click="resetSpeed()" variant="secondary" class="ml-2">Reset</b-button>
-			<b-tooltip :target="`${id}-speed`">{{playbackSettings.speed}}</b-tooltip>
 		</b-button-group>
 	</b-form-group>
 

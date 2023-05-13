@@ -2,6 +2,8 @@ import { repeat } from "../../src/tuneHelper";
 
 export default {
     categories: ["common", "tricky"],
+    speed: 200,
+    time: 2,
     sheet: require("./stolen.pdf"),
     description: require("./stolen.md").default,
     video: undefined,
@@ -23,11 +25,8 @@ export default {
             ag: "o ao  a  oaoo a ",
             sh: 'X . . . X . . . '
         },
-        "Whistle in (Stolen)": {
-            ot: 'y   y   y y y y '
-        },
         "Break 1": {
-            time: 6,
+            time: 3,
             ls: repeat(3, "                     X  ") + "                     X     X        X        X  ",
             ms: "@ls",
             hs: "@ls",
@@ -45,30 +44,12 @@ export default {
             ta: "@ls",
             ag: "@ls"
         },
-        "Break 3 (proposed)": {
+        "Break 3": {
             ls: repeat(3, "X  X XX  X XX X ") + "X          XX X ",
             ms: "@ls",
             hs: "@ls",
             re: "@ls",
             sn: repeat(3, "X..X.XX..X.XX.X.") + "X          XX X ",
-            ta: "@ls",
-            ag: "@ls"
-        },
-        "4 Hits (Stolen)": {
-            ls: repeat(4, "X "),
-            ms: "@ls",
-            hs: "@ls",
-            re: "@ls",
-            sn: "@ls",
-            ta: "@ls",
-            ag: "@ls"
-        },
-        "8 Hits (Stolen)": {
-            ls: repeat(8, "X "),
-            ms: "@ls",
-            hs: "@ls",
-            re: "@ls",
-            sn: "@ls",
             ta: "@ls",
             ag: "@ls"
         },
@@ -80,8 +61,18 @@ export default {
             sn: "@re",
             ta: "@ls",
             ag: "@ls"
+        },
+        "Whistle Break (Stolen)": {
+            loop: true,
+            ls: "X  XX  XXX XX",
+            ms: "@ls",
+            hs: "@ls",
+            re: "  X   X   X   X ",
+            sn: "@re",
+            ta: "@re",
+            ag: "@re"
         }
     },
-    exampleSong: ["Whistle in (Stolen)", "2/4 Break", "Tune", "Tune", "Tune", "Tune", "8 Hits (Stolen)", "Tune", "Tune", "Tune", "Tune", "Break 1",
-                  "Tune", "Tune", "Tune", "Tune", "Progressive Karla (Stolen)", "Tune", "Tune", "Tune", "Tune", "2/4 Break"]
+    exampleSong: [{ tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", { tuneName: "General Breaks", patternName: "8 Hits" }, "Tune", "Tune", "Tune", "Tune", "Break 1",
+                  "Tune", "Tune", "Tune", "Tune", "2/4 Break", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Progressive Karla (Stolen)"]
 }
