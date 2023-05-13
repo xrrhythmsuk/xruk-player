@@ -13,6 +13,11 @@ import { Route } from "vue-router";
 @WithRender
 @Component({components: { Compatibility, Update, Help  }})
 export default class extends Vue {
+
+    get hasSidebar() { 
+        return this.$route.meta?.hasSidebar !== false
+    }
+
 	togglePatternList() {
 		$("body").toggleClass("bb-pattern-list-visible");
 	}

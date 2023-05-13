@@ -13,7 +13,8 @@ const routes : RouteConfig[] = [
     {
       path: '/',
       component: About, 
-      name: 'about'
+      name: 'about',
+      meta: { hasSidebar: false }
     },
     { 
         path: '/listen', 

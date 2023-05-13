@@ -5,8 +5,9 @@
 
 	<div class="d-flex flex-column h-100">
 		<div class="header-nav">
-			<span class="navbar-light d-inline-block d-md-none" @click="togglePatternList()">
-				<b-button class="navbar-toggler"><span class="navbar-toggler-icon" /></b-button>
+			<span class="navbar-light d-inline-block d-md-none">
+				<b-button class="navbar-toggler" :disabled="!hasSidebar" 
+				 @click="togglePatternList()"><span class="navbar-toggler-icon" /></b-button>
 			</span>
 			<a class="logo" href="https://xrrhythms.uk">
 					<img src="../../../assets/img/XRR-logo.webp" alt="XR Rhythms UK">
