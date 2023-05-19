@@ -17,11 +17,11 @@ One of the tunes we learned at the first 2022 samba camp. That reggaeton beat is
 * **Surdos:** easy (though be careful not to zone out!)
 * **Repi:** hard
 * **Snare:** hard
-* **Tam:** easy. The original RoR part is very tricky so we replaced it with the rhythm from Break 1
+* **Tam:** easy. The original RoR part (Alt Tam here) is tricky so we replaced it with the rhythm from Break 1
 * **Agogô:** hard
 
 ## Breaks
 
 * **Break 1** is led with the whistle, which is a nice novelty, and for smaller bands can be whistled in without any warning
 * **Break 2** is a call and response with the surdos
-* The **Call break** (aka the Intro) is an intricate bit of actual samba reggae that, sadly, probably isn't feasible nationally _\[not played nationally\]_
+* The **Call break** (aka the Intro) is an intricate bit of actual samba reggae that, sadly, probably isn’t feasible nationally _\[not played nationally\]_
