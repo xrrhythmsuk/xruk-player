@@ -35,7 +35,8 @@ export default {
             ag: '@ls',
             sh: '@ls'
         },
-        'Break 3 (Agogô continues)': {
+        'Break 3 Agogo': {
+            displayName: 'Break 3 (Agogô continues)',
             ls: repeat(4, 'X             X X               '),
             ms: '@ls',
             hs: '@ls',
@@ -54,7 +55,18 @@ export default {
             ta: '@ls',
             ag: '@ls',
             sh: '@ls'
+        },
+        'Tam Line': {
+            ls: 'X X XX X X X XX ',
+            ms: '@ls',
+            hs: '@ls',
+            re: '@ls',
+            sn: '@ls',
+            ta: '@ls',
+            ag: '@ls',
+            sh: '@ls'
         }
+
     },
-    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Break 3 (Agogô continues)", "Tune", "Tune", "Tune", "Tune", "Break 5"]
+    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Tam Line", "Tune", "Tune", "Tune", "Tune", "Break 3 Agogo", "Tune", "Tune", "Tune", "Tune", "Break 5"]
 }
