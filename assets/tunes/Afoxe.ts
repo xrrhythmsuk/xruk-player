@@ -68,7 +68,7 @@ export default {
             ag: '@ls',
             sh: '@ls'
         },
-        "Tam Stroke": {
+        "Tam Line": {
             ls: 'X X X X XX XX X ',
             ms: '@ls',
             hs: '@ls',
@@ -79,5 +79,5 @@ export default {
             sh: '@ls'
         }
     },
-    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Long call", "Tune", "Tune", "Tam Stroke", "Tune", "Tune", "Break 2", "Tune", "Tune", "Break 3"]
+    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Long call", "Tune", "Tune", "Tam Line", "Tune", "Tune", "Break 2", "Tune", "Tune", "Break 3"]
 }
