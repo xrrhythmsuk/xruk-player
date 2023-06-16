@@ -32,7 +32,7 @@
 		<InstrumentButtons :playback-settings="playbackSettings" :tune="tuneName" />
 </div>
 
-	<div class="bb-pattern-editor-container">
+	<div class="bb-pattern-editor-container" tabindex="0"  @keydown="handleKeyDown">
 		<table class="pattern-editor" :class="'time-'+pattern.time">
 			<thead>
 				<tr>

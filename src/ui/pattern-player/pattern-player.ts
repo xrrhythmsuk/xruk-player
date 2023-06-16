@@ -80,16 +80,6 @@ export default class PatternPlayer extends Vue {
 			this.updateMarkerPosition(false);
 		});
 		this.updateMarkerPosition(false);
-
-		$(document).on({
-			keydown: this.handleKeyDown
-		});
-	}
-
-	beforeDestroy() {
-		$(document).off({
-			keypress: this.handleKeyDown
-		});
 	}
 
 	@Watch("playbackSettings.volume")

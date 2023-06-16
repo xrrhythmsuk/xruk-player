@@ -45,13 +45,6 @@
 
 				&.current { 
 					outline: 2px solid var(--blue);
-					animation: blinker 1s linear infinite;
-				}
-				
-				@keyframes blinker {
-					50% {
-					outline-color:transparent;
-					}
 				}
 			}
 
