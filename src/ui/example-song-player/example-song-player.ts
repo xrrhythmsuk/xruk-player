@@ -89,6 +89,7 @@ export default class ExampleSongPlayer extends Vue {
 		this.player.setUpbeat(songBeatbox.upbeat);
 		this.player.setBeatLength(60000/this.playbackSettings.speed/config.playTime);
 		this.player.setRepeat(this.playbackSettings.loop);
+		this.player.setPosition(0)
 	}
 
 	playStop() {

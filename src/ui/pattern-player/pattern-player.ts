@@ -37,7 +37,7 @@ export default class PatternPlayer extends Vue {
 	@Prop({ type: Boolean, default: false }) readonly readonly!: boolean;
 
 	playerRef: BeatboxReference = null as any;
-	playbackSettings: PlaybackSettings = null as any;
+	get playbackSettings() { return this.state.playbackSettings }
 	currentStrokeDropdown: StrokeDropdownInfo | null = null;
 
 	get playerInst() {
@@ -63,10 +63,11 @@ export default class PatternPlayer extends Vue {
 	created() {
 		this.playerRef = this.player || createBeatbox(true);
 
-		this.playbackSettings = Object.assign(normalizePlaybackSettings(this.state.playbackSettings), {
+		/*this.playbackSettings = Object.assign(normalizePlaybackSettings(this.state.playbackSettings), {
 			speed: this.pattern.speed,
 			loop: this.pattern.loop
 		});
+		*/
 
 		this.updatePlayer();
 	}
