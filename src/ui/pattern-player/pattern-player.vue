@@ -61,7 +61,7 @@
 						>
 							{{config.strokes[pattern[instrumentKey][i-1]] || ' '}}
 						</a>
-						<b-popover v-if="currentStrokeDropdown && currentStrokeDropdown.instr == instrumentKey && currentStrokeDropdown.i == i-1" :target="`bb-pattern-editor-stroke-${instrumentKey}-${i-1}`" placement="bottom" show triggers="manual">
+						<b-popover :no-fade="true" v-if="currentStrokeDropdown && currentStrokeDropdown.instr == instrumentKey && currentStrokeDropdown.i == i-1" :target="`bb-pattern-editor-stroke-${instrumentKey}-${i-1}`" placement="bottom" show triggers="manual">
 							<StrokeDropdown :instrument="instrumentKey" :value="pattern[instrumentKey][i-1] || ' '" @change="onStrokeChange($event, false)" @close="onStrokeClose()" />
 						</b-popover>
 					</td>
