@@ -66,6 +66,8 @@ export default class PatternPlaceholder extends Vue {
 	}
 
 	beforeDestroy() {
+		this.dragging = false
+		events.$emit("pattern-placeholder-drag-end");
 		this._unregisterHandlers();
 	}
 
