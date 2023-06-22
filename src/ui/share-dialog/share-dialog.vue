@@ -1,4 +1,4 @@
-<b-modal title="Share" hide-footer :id="id" size="lg" modal-class="bb-share-dialog" @show="resetSelection()">
+<b-modal title="Share" :id="id" size="lg" modal-class="bb-share-dialog" @show="resetSelection()">
 	<b-tabs>
 		<b-tab title="Link">
 			<textarea readonly="readonly" class="form-control" rows="5" :value="url"></textarea>
@@ -61,4 +61,19 @@
 			</tr>
 		</tbody>
 	</table>
+	<div slot="modal-footer">
+		<button class="btn btn-secondary" @click="">
+			<fa icon="link" />
+			Copy link
+		</button>
+		<button class="btn btn-secondary" @click="">
+			<fa icon="file-export" />
+			Export
+		</button>
+		<button v-if="canShare" class="btn btn-secondary" @click="share">
+			<fa icon="share-from-square" />
+			Share
+		</button>
+	</div>
+
 </b-modal>
