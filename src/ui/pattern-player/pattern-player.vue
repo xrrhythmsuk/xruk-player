@@ -29,7 +29,7 @@
 		<b-button variant="warning" v-if="hasLocalChanges" @click="reset()"><fa icon="eraser"/> Restore original</b-button>
 
 		<span class="mr-2"/>
-		<InstrumentButtons :playback-settings="playbackSettings" :tune="tuneName" />
+		<InstrumentButtons :playback-settings="playbackSettings" :tune="tune" />
 </div>
 
 	<div class="bb-pattern-editor-container" tabindex="0"  @keydown="handleKeyDown">

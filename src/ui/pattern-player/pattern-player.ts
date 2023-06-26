@@ -52,6 +52,10 @@ export default class PatternPlayer extends Vue {
 		return defaultTunes.getPattern(this.tuneName, this.patternName);
 	}
 
+	get tune() {
+		return this.tuneName && this.state.tunes[this.tuneName];
+	}
+	
 	get config() {
 		return config;
 	}
