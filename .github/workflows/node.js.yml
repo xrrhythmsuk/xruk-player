@@ -28,11 +28,6 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn build
 
-      - id: "auth"
-        uses: "google-github-actions/auth@v1"
-        with:
-          credentials_json: "${{ secrets.SERVICE_ACCOUNT_KEY }}"
-
       - name: Upload
         if: github.ref == 'refs/heads/master'
         run: |
