@@ -14,8 +14,10 @@ jobs:
         with:
           credentials_json: "${{ secrets.SERVICE_ACCOUNT_KEY }}"
 
-      - name: "Set up Cloud SDK"
-        uses: "google-github-actions/setup-gcloud@v1"
-
       - name: "Delete preview"
-        run: "gcloud storage rm --recursive gs://player.xrrhythms.uk/preview/${{github.event.pull_request.head.ref}}"
+        run: |
+          aws s3 rm --recursive s3://player.xrrhythms.uk/preview/${{github.event.pull_request.head.ref}} 
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: 'eu-west-2'
