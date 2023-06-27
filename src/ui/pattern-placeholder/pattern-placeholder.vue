@@ -16,6 +16,5 @@
 		<slot :download-mp3="this.downloadMP3"/>
 	</ul>
 	<div class="position-marker" v-show="playerRef && playerRef.playing"></div>
-	<PatternEditorDialog v-if="editorId" :id="editorId" :readonly="readonly" :tune-name="tuneName" :pattern-name="patternName" :player-ref="playerRef" @hidden="editorId = null"/>
 	<Progress :progress="loading" @cancel="cancelExport()"/>
 </div>

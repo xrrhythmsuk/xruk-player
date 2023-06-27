@@ -17,10 +17,10 @@ import { openPromptDialog } from "../utils/prompt";
 import defaultTunes from "../../defaultTunes";
 import PatternPlaceholder, { PatternPlaceholderItem } from "../pattern-placeholder/pattern-placeholder";
 import { clone, id } from "../../utils";
-import events, { MultipleHandlers, registerMultipleHandlers } from "../../services/events";
+import events, { registerMultipleHandlers } from "../../services/events";
 import RenamePatternDialog from "./rename-pattern-dialog";
-import PatternEditorDialog from "../pattern-editor-dialog/pattern-editor-dialog";
 import Collapse from "../utils/collapse";
+import ShareDialog from "../share-dialog/share-dialog";
 
 type Opened = {
 	[tuneName: string]: boolean
@@ -28,7 +28,7 @@ type Opened = {
 
 @WithRender
 @Component({
-	components: { PatternListFilter, PatternPlaceholder, PatternPlaceholderItem, PatternEditorDialog, RenamePatternDialog, Collapse }
+	components: { PatternListFilter, PatternPlaceholder, PatternPlaceholderItem, RenamePatternDialog, Collapse, ShareDialog }
 })
 export default class PatternList extends Vue {
 
@@ -37,8 +37,8 @@ export default class PatternList extends Vue {
 	filter: Filter = DEFAULT_FILTER;
 	isOpened: Opened = {};
 	previousIsOpened: Opened = {};
-	showPatternEditor: {id: string, tuneName: string, patternName: string} | null = null;
 	showRename: {id: string, tuneName: string, patternName: string} | null = null;
+	showShare: {id: string, tuneName: string } | null = null;
 
 	_unregisterHandlers!: () => void;
 
@@ -144,7 +144,6 @@ export default class PatternList extends Vue {
 				this.filter = { text: "", cat: "custom" };
 
 			createPattern(this.state, newTuneName, "Tune", { loop: true });
-			this.showPatternEditor = { id: `bb-pattern-editor-dialog-${id()}`, tuneName: newTuneName, patternName: "Tune" };
 			this.$router.push({ name: 'edit pattern', params: { tuneName: newTuneName, patternName: "Tune" }})
 		}
 	}
@@ -180,6 +179,12 @@ export default class PatternList extends Vue {
 			removeTune(this.state, tuneName);
 		}
 	};
+
+	async shareTune(tuneName: string) {
+		this.showShare = { id: `bb-share-dialog-${id()}`, tuneName };
+		await this.$nextTick();
+		this.$bvModal.show(this.showShare.id);
+	}
 
 	toggleTune(tuneName: string) {
 		Vue.set(this.isOpened, tuneName, !this.isOpened[tuneName]);
