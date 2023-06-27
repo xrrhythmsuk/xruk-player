@@ -45,7 +45,8 @@ export function extendTune(tune: Tune, data: TuneOptional, selectPattern?: (patt
 			if(selectPattern && !selectPattern(patternName))
 				continue;
 
-			Vue.set(tune.patterns, patternName, normalizePattern(data.patterns[patternName]));
+			if(!tune.patterns[patternName])
+				Vue.set(tune.patterns, patternName, normalizePattern(data.patterns[patternName]));
 		}
 	}
 }
