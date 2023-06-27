@@ -31,11 +31,11 @@ export default class ShareDialog extends Vue {
 	sharePatterns: { [tuneName: string]: { [patternName: string]: boolean } } = { };
 
 	get canShare() { 
-		return navigator.canShare()
+		return navigator.canShare?.({url:this.url})
 	}
 
 	share() { 
-		navigator.share({
+		navigator.share?.({
 			url: this.url
 		})
 	}
