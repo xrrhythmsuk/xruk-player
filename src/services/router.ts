@@ -103,7 +103,7 @@ router.beforeEach((from, to, next) => {
 })
 
 if(process.env.NODE_ENV === 'production')
-if(window.location.protocol !== "https")
+if(window.location.protocol.indexOf("https")<0)
 {
     const importData = encodeURIComponent(objectToString(compressState(
         history.state,
