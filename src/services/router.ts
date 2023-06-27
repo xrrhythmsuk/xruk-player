@@ -61,12 +61,11 @@ const routes : RouteConfig[] = [
                             params: { message: "Errors while loading data:\n" + errs.join("\n") }
                         })
                     }
+                    else if(to.query.home)
+                        next('/')
                     else {
                         const { tuneName, patternName } = to.params
-                        if(to.query.home)
-                            next('/')
-                        else
-                            next(`/compose${tuneName? `/${tuneName}${patternName? `/${patternName}` : ''}` : ''}`)
+                        next(`/compose${tuneName? `/${tuneName}${patternName? `/${patternName}` : ''}` : ''}`)
                     }
                 }
             },
