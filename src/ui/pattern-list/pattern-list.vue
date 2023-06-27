@@ -23,6 +23,7 @@
 						<a href="javascript:" @click="createPatternInTune(tune.tuneName)" title="New break" v-b-tooltip.hover><fa icon="plus"/></a>
 						<a v-if="tune.isCustom" href="javascript:" @click="renameTune(tune.tuneName)" title="Rename tune" v-b-tooltip.hover><fa icon="pen"/></a>
 						<a href="javascript:" @click="copyTune(tune.tuneName)" title="Copy tune" v-b-tooltip.hover><fa icon="copy"/></a>
+						<a v-if="tune.isCustom" href="javascript:" @click="shareTune(tune.tuneName)" title="Share tune" v-b-tooltip.hover><fa icon="share-from-square"/></a>
 						<a v-if="tune.isCustom" href="javascript:" @click="removeTune(tune.tuneName)" title="Remove tune" v-b-tooltip.hover><fa icon="trash"/></a>
 					</div>
 				</b-card-body>
@@ -34,6 +35,7 @@
 		<a href="javascript:" @click="createTune()"><fa icon="plus"/> New tune</a>
 	</div>
 
-	<PatternEditorDialog v-if="showPatternEditor" :id="showPatternEditor.id" :tune-name="showPatternEditor.tuneName" :pattern-name="showPatternEditor.patternName" @hidden="showPatternEditor = null"/>
+	<ShareDialog v-if="showShare" :id="showShare.id" :tune-name="showShare.tuneName"/>
+
 	<RenamePatternDialog v-if="showRename" :id="showRename.id" :tune-name="showRename.tuneName" :pattern-name="showRename.patternName" @hidden="showRename = null"/>
 </div>

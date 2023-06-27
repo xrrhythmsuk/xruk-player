@@ -26,6 +26,7 @@ export default class ShareDialog extends Vue {
 
 	@Prop(String) readonly id?: string;
 	@Prop(Array) readonly linkPattern?: PatternReference;
+	@Prop(String) readonly tuneName?: string;
 
 	shareSongs: { [songIdx: number]: boolean } = { };
 	sharePatterns: { [tuneName: string]: { [patternName: string]: boolean } } = { };
@@ -41,14 +42,20 @@ export default class ShareDialog extends Vue {
 	}
 
 	resetSelection() {
+		this.shareSongs = { };
 		if(this.linkPattern) {
-			this.shareSongs = { };
 			this.sharePatterns = {
 				[this.linkPattern[0]]: {
 					[this.linkPattern[1]]: true
 				}
 			};
-		} else {
+		} else if (this.tuneName){
+			const patternNames = Object.keys(this.state.tunes[this.tuneName].patterns)
+			this.sharePatterns = { 
+				[this.tuneName]: Object.fromEntries(patternNames.map(p => [p, true]))
+			}
+		}
+		else {
 			this.shareSongs = {
 				[this.state.songIdx]: true
 			};

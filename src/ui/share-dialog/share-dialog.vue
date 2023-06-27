@@ -2,7 +2,7 @@
 	<b-tabs>
 		<b-tab title="Link">
 			<textarea readonly="readonly" class="form-control" rows="5" :value="url"></textarea>
-			<p><em>Opening this URL will open the songs selected below and have the selected tunes/breaks available in the list.</em></p>
+			<p><em>Opening this URL will open the songs selected below and make the selected tunes/breaks available in the list.</em></p>
 		</b-tab>
 		<b-tab title="Raw (compressed)">
 			<textarea readonly="readonly" class="form-control" rows="10" :value="rawStringCompressed"></textarea>

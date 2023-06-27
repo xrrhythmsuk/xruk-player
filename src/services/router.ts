@@ -8,6 +8,8 @@ import Error from '../ui/error'
 import SongPlayer from '../ui/song-player/song-player'
 import { stopAllPlayers } from './player'
 import history, { withStateProvider } from './history'
+import { objectToString } from '../utils'
+import { compressState } from '../state/state'
 
 const routes : RouteConfig[] = [
     {
@@ -59,6 +61,8 @@ const routes : RouteConfig[] = [
                             params: { message: "Errors while loading data:\n" + errs.join("\n") }
                         })
                     }
+                    else if(to.query.home)
+                        next('/')
                     else {
                         const { tuneName, patternName } = to.params
                         next(`/compose${tuneName? `/${tuneName}${patternName? `/${patternName}` : ''}` : ''}`)
@@ -97,5 +101,19 @@ router.beforeEach((from, to, next) => {
     stopAllPlayers()
     next()
 })
+
+if(process.env.NODE_ENV === 'production')
+if(window.location.protocol !== "https")
+{
+    const importData = encodeURIComponent(objectToString(compressState(
+        history.state,
+        () => true,
+        () => true, 
+        true, 
+        false,
+        true)))
+    window.location.replace(`https://${window.location.host}/#/compose/${importData}?home=1`)
+}
+
 
 export default router
