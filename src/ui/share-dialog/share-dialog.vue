@@ -13,9 +13,12 @@
 			<p><em>Copy this data into the “Import” menu to make the songs and tunes/breaks selected below available in the player.</em></p>
 		</b-tab>
 	</b-tabs>
-	<hr />
-	<h3>Customise selection</h3>
-	<table class="table table-sm">
+		<b-button block  variant="link" @click="customiseExpanded=!customiseExpanded">
+		Customise selection ({{selectionCount}})
+		<fa icon="caret-down"/>
+		</b-button>
+	<Collapse v-model="customiseExpanded" id="customise">
+	<table id="selection" class="table table-sm">
 		<thead>
 			<tr>
 				<th>Songs</th>
@@ -61,4 +64,5 @@
 			</tr>
 		</tbody>
 	</table>
+	</Collapse>
 </b-modal>

@@ -17,9 +17,10 @@ import { Pattern, patternEquals } from "../../state/pattern";
 import { objectToString } from "../../utils";
 import { makeAbsoluteUrl } from "../../services/utils";
 import { songContainsPattern } from "../../state/song";
+import Collapse from '../utils/collapse';
 
 @WithRender
-@Component({})
+@Component({components: { Collapse }})
 export default class ShareDialog extends Vue {
 
 	@InjectReactive() readonly state!: State;
@@ -28,8 +29,18 @@ export default class ShareDialog extends Vue {
 	@Prop(Array) readonly linkPattern?: PatternReference;
 	@Prop(String) readonly tuneName?: string;
 
+	customiseExpanded: boolean = false
 	shareSongs: { [songIdx: number]: boolean } = { };
 	sharePatterns: { [tuneName: string]: { [patternName: string]: boolean } } = { };
+	songCount() { return Object.values(this.shareSongs).filter(x => x).length }
+	tuneCount() { return Object.keys(this.sharePatterns).map(this.getTuneClass).filter(c => c).length }
+	get selectionCount() { 
+		const s = this.songCount(), t = this.tuneCount()
+		return [
+			s? s == 1 ? `1 song` : `${s} songs` : '',	
+			t? t == 1 ? `1 tune` : `${t} tunes` : ''
+		].filter(x => x).join(', ')
+	}
 
 	resetSelection() {
 		this.shareSongs = { };
