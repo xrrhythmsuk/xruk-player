@@ -21,7 +21,8 @@ export function filterPatternList(state: State, params?: Filter | null) {
 	var tuneNames = getSortedTuneList(state);
 	var text = params && params.text.trim().toLowerCase() || "";
 	for(var i=0; i<tuneNames.length; i++) {
-		if(text ? (tuneNames[i].toLowerCase().indexOf(text) != -1) : tuneIsInCategory(state.tunes[tuneNames[i]], params.cat))
+		if((!text || (tuneNames[i].toLowerCase().indexOf(text) != -1))
+			&& (!params.cat || tuneIsInCategory(state.tunes[tuneNames[i]], params.cat)))
 			ret.push(tuneNames[i]);
 	}
 	return ret;
