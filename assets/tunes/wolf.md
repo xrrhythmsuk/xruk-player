@@ -11,7 +11,7 @@
 
 **History:** From the [website of RoR Kraków](https://sambaka.wordpress.com/rytmy/) *(more info needed)*
 
-We‘ve adapted it a little for XR bands, mostly by combining the low and mid lines and making the RoR “pats” into Break 2.
+We’ve adapted it a little for XR bands, mostly by combining the low and mid lines and making the RoR “pats” into Break 2.
 
 ## Difficulty
 
