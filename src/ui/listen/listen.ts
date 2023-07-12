@@ -32,7 +32,7 @@ export default class Listen extends Vue {
 
 	get categoryList() {
 		const categories : [string, Category][] =
-			[["Core tunes", "core"], ["Common tunes", "common"], ["New and proposed", "new"], ["Your tunes", "custom"]]
+			[["", "breaks"], ["Core tunes", "core"], ["Common tunes", "common"], ["New and proposed", "new"], ["Your tunes", "custom"]]
 		return categories
 			.map(([title, cat]) => ({
 				title,

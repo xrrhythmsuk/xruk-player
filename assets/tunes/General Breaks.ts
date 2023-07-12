@@ -1,7 +1,7 @@
 import {  repeat, stretch } from "../../src/tuneHelper";
 
 export default {
-    categories: ["core", "onesurdo", "easy", "medium", "tricky"],
+    categories: ["breaks", "onesurdo", "easy", "medium", "tricky"],
     sheet: require("./general-breaks.pdf"),
     description: require("./general-breaks.md").default,
     video: undefined,

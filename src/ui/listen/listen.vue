@@ -2,7 +2,7 @@
 	<div class="bb-listen-tunes" v-touch:start="handleTouchStart" v-touch:moving="handleTouchMove" v-touch:end="handleTouchEnd" ref="tunes">
 		<b-nav vertical pills class="flex-nowrap">
 			<li v-for="{title, tunes} in categoryList" :key="title">
-				<h4>{{title}}</h4>
+				<h4 v-if="title">{{title}}</h4>
 				<b-nav vertical pills class="flex-nowrap">
 					<router-link custom v-slot="{ isActive,href }" 
 						v-for="tuneName in tunes"
