@@ -51,4 +51,4 @@ jobs:
         if: github.event.action == 'opened'
         with:
           message: |
-            :eyes: A preview has been generated. [Click here to view](http://player.xrrhythms.uk/preview/${{github.event.pull_request.head.ref}}/index.html).
+            :eyes: A preview has been generated. [Click here to view](https://player.xrrhythms.uk/preview/${{github.event.pull_request.head.ref}}/index.html).

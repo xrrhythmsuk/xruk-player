@@ -1,21 +1,12 @@
 <b-modal title="Share" :id="id" size="lg" modal-class="bb-share-dialog" @show="resetSelection()">
-	<b-tabs>
-		<b-tab title="Link">
-			<textarea readonly="readonly" class="form-control" rows="5" :value="url"></textarea>
-			<p><em>Opening this URL will open the songs selected below and make the selected tunes/breaks available in the list.</em></p>
-		</b-tab>
-		<b-tab title="Raw (compressed)">
-			<textarea readonly="readonly" class="form-control" rows="10" :value="rawStringCompressed"></textarea>
-			<p><em>Copy this data into the “Import” menu to make the songs and tunes/breaks selected below available in the player.</em></p>
-		</b-tab>
-		<b-tab title="Raw (uncompressed)">
-			<textarea readonly="readonly" class="form-control" rows="10" :value="rawStringUncompressed"></textarea>
-			<p><em>Copy this data into the “Import” menu to make the songs and tunes/breaks selected below available in the player.</em></p>
-		</b-tab>
-	</b-tabs>
-	<hr />
-	<h3>Customise selection</h3>
-	<table class="table table-sm">
+
+	<b-button block  class="mb-4" variant="link" @click="customiseExpanded=!customiseExpanded">
+		Customise selection ({{selectionCount}})
+		<fa icon="caret-down"/>
+	</b-button>
+
+	<Collapse v-model="customiseExpanded" id="customise">
+	<table id="selection" class="table table-sm">
 		<thead>
 			<tr>
 				<th>Songs</th>
@@ -61,19 +52,40 @@
 			</tr>
 		</tbody>
 	</table>
+	</Collapse>
+
+
+	<b-card class="mb-4">
+		<p>
+			Save as a file for archiving or emailing. Files can be opened using the <fa icon="file-import" /> <strong>Open</strong> menu option.
+		</p>
+		<div class="d-flex justify-content-center">
+			<button class="btn btn-secondary" @click="save">
+				<fa icon="file-audio" />
+				Save
+			</button>
+		</div>
+	</b-card>
+
+	<b-card class="mb-4">
+			<p>
+			Share a magic link with others that will open the rhythms on their device.
+			</p>
+			<div class="d-flex justify-content-center">
+				<button class="btn btn-secondary" @click="copyLink">
+					<fa icon="link" />
+					Copy link
+				</button>
+				<button v-if="canShare" class="btn btn-secondary" @click="share">
+					<fa icon="share-from-square" />
+					Share
+				</button>
+			</div>
+		</div>
+	</b-card>
+
 	<div slot="modal-footer">
-		<button class="btn btn-secondary" @click="">
-			<fa icon="link" />
-			Copy link
-		</button>
-		<button class="btn btn-secondary" @click="">
-			<fa icon="file-export" />
-			Export
-		</button>
-		<button v-if="canShare" class="btn btn-secondary" @click="share">
-			<fa icon="share-from-square" />
-			Share
-		</button>
+		<b-button @click="hide">Cancel</b-button>
 	</div>
 
 </b-modal>

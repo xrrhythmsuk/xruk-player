@@ -1,10 +1,6 @@
-<b-modal title="Import" :id="id" size="lg" modal-class="bb-import-dialog">
-	<b-form @submit.prevent>
-		<b-form-group :invalid-feedback="error" :state="pasted.length == 0 ? null : !error">
-			<b-form-textarea id="bb-import-dialog-paste" v-model="pasted" rows="5" placeholder="Paste link or raw data object…" :state="pasted.length == 0 ? null : !error" />
-		</b-form-group>
-		<b-alert v-for="warning in warnings" :key="warning" variant="warning" show>{{warning}}</b-alert>
-	</b-form>
+<b-modal title="Import" :id="id" size="lg" modal-class="bb-import-dialog" @show="onShow">
+	<input type="file"  ref="fileInput" @change="onUpload" accept=".rhythm" />
+	<b-alert v-for="warning in warnings" :key="warning" variant="warning" show>{{warning}}</b-alert>
 	<div v-if="obj">
 		<hr />
 		<h3>Customise selection</h3>

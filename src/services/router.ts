@@ -1,4 +1,4 @@
-import VueRouter, { RouteConfig } from 'vue-router'
+import VueRouter, { NavigationGuardNext, RouteConfig } from 'vue-router'
 import About from '../ui/overview/about'
 import Listen from  '../ui/listen/listen'
 import PatternPlayer from '../ui/pattern-player/pattern-player'
@@ -54,19 +54,9 @@ const routes : RouteConfig[] = [
                 name: 'import',
                 path: ':importData([^/]{50,})/:tuneName?/:patternName?',
                 beforeEnter: (to, from, next) => {
-                    const errs = history.loadEncodedString(to.params.importData)
-                    if (errs.length) {
-                        next({ 
-                            name: "error", 
-                            params: { message: "Errors while loading data:\n" + errs.join("\n") }
-                        })
-                    }
-                    else if(to.query.home)
-                        next('/')
-                    else {
-                        const { tuneName, patternName } = to.params
-                        next(`/compose${tuneName? `/${tuneName}${patternName? `/${patternName}` : ''}` : ''}`)
-                    }
+                    const { tuneName, patternName } = to.params
+                    importData(to.params.importData, () => 
+                        next(`/compose${tuneName? `/${tuneName}${patternName? `/${patternName}` : ''}` : ''}`))
                 }
             },
             {
@@ -91,15 +81,35 @@ const routes : RouteConfig[] = [
         }
   ]
 
+  function importData(importData : string, next : NavigationGuardNext) {
+    const errs = history.loadEncodedString(importData)
+    if (errs.length) {
+        next({ 
+            name: "error", 
+            params: { message: "Errors while loading data:\n" + errs.join("\n") }
+        })
+    }
+    else 
+        next()
+  }
+
   const router = new VueRouter({
     routes,
     mode: 'hash',
     scrollBehavior: () => ({ x: 0, y: 0 })
 })
 
-router.beforeEach((from, to, next) => { 
+router.beforeEach((to, from, next) => { 
     stopAllPlayers()
     next()
+})
+
+router.beforeEach((to, from, next) => { 
+    const { query, path, hash } = to
+    const i = query.import
+    if(i && i[0]){
+        importData(typeof i === "string" ? i : i[0], () => next({path, hash}))
+    } else next()
 })
 
 if(process.env.NODE_ENV === 'production')
@@ -112,7 +122,7 @@ if(window.location.protocol.indexOf("https")<0)
         true, 
         false,
         true)))
-    window.location.replace(`https://${window.location.host}/#/compose/${importData}?home=1`)
+    window.location.replace(`https://${window.location.host}/${window.location.hash}?import=${importData}`)
 }
 
 

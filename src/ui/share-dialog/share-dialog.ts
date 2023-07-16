@@ -17,28 +17,58 @@ import { Pattern, patternEquals } from "../../state/pattern";
 import { objectToString } from "../../utils";
 import { makeAbsoluteUrl } from "../../services/utils";
 import { songContainsPattern } from "../../state/song";
+import Collapse from '../utils/collapse';
+import FileSaver from 'file-saver';
 
 @WithRender
-@Component({})
+@Component({components: { Collapse }})
 export default class ShareDialog extends Vue {
 
 	@InjectReactive() readonly state!: State;
 
-	@Prop(String) readonly id?: string;
+	@Prop({type: String, required: true}) readonly id!: string;
 	@Prop(Array) readonly linkPattern?: PatternReference;
 	@Prop(String) readonly tuneName?: string;
 
+	customiseExpanded: boolean = false
 	shareSongs: { [songIdx: number]: boolean } = { };
 	sharePatterns: { [tuneName: string]: { [patternName: string]: boolean } } = { };
+	songCount() { return Object.values(this.shareSongs).filter(x => x).length }
+	tuneCount() { return Object.keys(this.sharePatterns).map(this.getTuneClass).filter(c => c).length }
+	get selectionCount() { 
+		const s = this.songCount(), t = this.tuneCount()
+		return [
+			s? s == 1 ? `1 song` : `${s} songs` : '',	
+			t? t == 1 ? `1 tune` : `${t} tunes` : ''
+		].filter(x => x).join(', ')
+	}
 
 	get canShare() { 
 		return navigator.canShare?.({url:this.url})
 	}
 
 	share() { 
+		this.hide()
+
 		navigator.share?.({
 			url: this.url
 		})
+		
+	}
+
+	hide() { 
+		this.$bvModal.hide(this.id)
+	}
+
+	copyLink() { 
+		window.navigator.clipboard.writeText(this.url)
+		this.hide()
+	}
+
+	save() { 
+		this.hide()
+		const blob = new Blob([this.rawStringUncompressed], { type: 'application/rhythm+json' });
+		FileSaver.saveAs(blob, `${this.tuneName || "tunes"}.rhythm`)
 	}
 
 	resetSelection() {
