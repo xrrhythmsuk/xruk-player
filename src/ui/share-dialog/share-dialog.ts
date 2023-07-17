@@ -29,7 +29,7 @@ export default class ShareDialog extends Vue {
 	@Prop({type: String, required: true}) readonly id!: string;
 	@Prop(Array) readonly linkPattern?: PatternReference;
 	@Prop(String) readonly tuneName?: string;
-
+	index: number = 0
 	customiseExpanded: boolean = false
 	shareSongs: { [songIdx: number]: boolean } = { };
 	sharePatterns: { [tuneName: string]: { [patternName: string]: boolean } } = { };

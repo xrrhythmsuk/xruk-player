@@ -1,4 +1,6 @@
-<b-modal title="Share" :id="id" size="lg" modal-class="bb-share-dialog" @show="resetSelection()">
+<b-modal title="Share" :id="id" size="lg" 
+footer-border-variant="blue"
+modal-class="bb-share-dialog" @show="resetSelection()">
 
 	<b-button block  class="mb-4" variant="link" @click="customiseExpanded=!customiseExpanded">
 		Customise selection ({{selectionCount}})
@@ -54,37 +56,27 @@
 	</table>
 	</Collapse>
 
-
-	<b-card class="mb-4">
-		<p>
-			Save as a file for archiving or emailing. Files can be opened using the <fa icon="file-import" /> <strong>Open</strong> menu option.
+	<b-tabs v-model="index">
+		<b-tab title="Link">
+		<p class="mt-4">
+			Sharing a link lets others open the rhythms directly on their device.
 		</p>
-		<div class="d-flex justify-content-center">
-			<button class="btn btn-secondary" @click="save">
-				<fa icon="file-audio" />
-				Save
-			</button>
-		</div>
-	</b-card>
+	</b-tab>
 
-	<b-card class="mb-4">
-			<p>
-			Share a magic link with others that will open the rhythms on their device.
+	<b-tab title="Download">
+			<p class="mt-4">
+			Download a file to keep a copies or send as an attachment to others. Files can be opened using <nobr><fa icon="file-import" /> <strong>Open</strong></nobr> in the Tools menu.
 			</p>
-			<div class="d-flex justify-content-center">
-				<button class="btn btn-secondary" @click="copyLink">
-					<fa icon="link" />
-					Copy link
-				</button>
-				<button v-if="canShare" class="btn btn-secondary" @click="share">
-					<fa icon="share-from-square" />
-					Share
-				</button>
-			</div>
 		</div>
-	</b-card>
+	</b-tab>
+	</b-tabs>
 
 	<div slot="modal-footer">
+		<template v-if="index === 0">
+			<b-button v-if="canShare" @click="share" variant="primary"><fa icon="share-from-square" /> Share</b-button>
+			<b-button v-else @click="copyLink" variant="primary"><fa icon="link" /> Copy link</b-button>
+		</template>
+		<b-button v-else @click="save" variant="primary"><fa icon="file-audio" /> Download</b-button>
 		<b-button @click="hide">Cancel</b-button>
 	</div>
 
