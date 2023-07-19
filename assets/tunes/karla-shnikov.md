@@ -23,6 +23,6 @@ This is one of our core tunes and often one of the first ones that new bands lea
 
 ## Breaks
 
-* We play the **Karla Break** (which used to be Break 1 here, hence the name) and **Progressive Karla** for this song with the repis playing their main part solo instead of the bar of silence
+* We play the **Karla Break** (which used to be Break 1 in RoR Karla, hence the name) and **Progressive Karla** for this song with the repis playing their main part solo instead of the bar of silence
 * **Break 2** has rolls and a call and response with surdos _\[less common nationally\]_
-* **Break 2 Inverted** *(Two fingers pointing down)* has the rolls, the call and response, the call and response again, and then the rolls again _\[uncommon nationally\]_
+* **Break 2 Inverted** *(two fingers pointing down)* has the rolls, the call and response, the call and response again, and then the rolls again _\[uncommon nationally\]_
