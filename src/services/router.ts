@@ -25,7 +25,16 @@ const routes : RouteConfig[] = [
             path:'',
             component: TuneInfo,
             meta: { showNav: true },
-            props: { tuneName: 'General Breaks' }
+            props: { tuneName: 'Core Breaks' }
+        } ]
+    },
+    { 
+        path: '/listen', 
+        component: withStateProvider(Listen),
+        children: [ {
+            path:'',
+            component: TuneInfo,
+            props: { tuneName: 'More Breaks' }
         } ]
     },
     {
