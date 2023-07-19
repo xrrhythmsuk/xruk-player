@@ -110,6 +110,16 @@ export default {
             ag: "@ls",
             ot: repeat(4, "  A A A   A A A             A   ")
 	},
+        'A Break': {
+            ls: 'X               ',
+            ms: '@ls',
+            hs: '@ls',
+            re: '@ls',
+            sn: '@ls',
+            ta: '@ls',
+            ag: '@ls',
+            ot: '        A   A   '
+        }
         'Knock On The Door': {
             loop: true,
             time: 12,
