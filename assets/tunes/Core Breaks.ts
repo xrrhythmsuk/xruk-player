@@ -119,7 +119,7 @@ export default {
             ta: '@ls',
             ag: '@ls',
             ot: '        A   A   '
-        }
+        },
         'Knock On The Door': {
             loop: true,
             time: 12,
