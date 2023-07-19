@@ -1,6 +1,7 @@
 These are the rest of our general breaks.  
 They don’t all have audio here, but they do all get used and are worth knowing, so dig in!
 
+Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants**.
 
 ### Silences
 
