@@ -42,5 +42,5 @@ export default {
             sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.'
         }
     },
-    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Break 2", "Break 2", "Tune", "Tune", { tuneName: "General Breaks", patternName: "Wolf Break"}]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Break 2", "Break 2", "Tune", "Tune", { tuneName: "More Breaks", patternName: "Wolf Break"}]
 }
