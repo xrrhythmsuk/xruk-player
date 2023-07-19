@@ -149,6 +149,7 @@ const config: Config = {
 	},
 	
 	filterCats: {
+		general: "General breaks",
 		core: "Core tunes",
 		common: "Common tunes",
 		new: "New tunes",
