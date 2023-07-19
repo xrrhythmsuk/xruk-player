@@ -18,17 +18,7 @@ export default {
             loop: true,
             re: '  XX XXX  XX XXX  XX XXX  XX  XX',
             sh: 'X   .   .   .   X   .   .   .   '
-        },
-        'Break 2': {
-            ls: 'X               ',
-            ms: '@ls',
-            hs: '@ls',
-            re: '@ls',
-            sn: '@ls',
-            ta: '@ls',
-            ag: '@ls',
-            ot: '        A   A   '
         }
     },
-    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 2", "Tune", "Tune"]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", {tuneName: "Core Breaks", patternName: "A Break"}, "Tune", "Tune"]
 }
