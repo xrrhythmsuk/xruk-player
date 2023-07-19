@@ -31,8 +31,8 @@ Nowadays, Bhangra also refers to a style of pop music that was invented by Punja
 
 * **Break 1** is a call and response between surdos and everyone else
 * **Break 3** is a short break following the agogô line
-* The **7 break** *(Finger and thumb, 5 in other hand)* is taken from the last line of the call break and we use it a lot as a general break (The shout is great!)
-* The **Butterfly break** *(Join thumbs, flap hands upwards*) is an extended version of the 7 break and can also be used as a general break
+* The **7 break** *(finger and thumb, 5 in other hand)* is taken from the last line of the call break and we use it a lot as a general break (The shout is great!)
+* The **Butterfly break** *(join thumbs, flap hands upwards*) is an extended version of the 7 break and can also be used as a general break
 * The **Call break** is longer but well worth learning
 * **Break 2** is quite close to Break 1, and everyone plays the same thing _\[uncommon nationally\]_
 * **General breaks** that work well: 4 hits, 8 hits, Flappy Mouth, Whistle Break
