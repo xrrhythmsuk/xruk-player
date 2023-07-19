@@ -1,7 +1,5 @@
 These are our core general breaks, which have their own signs so you can use them in any song.
 
-Once your band has the core tunes and breaks down, learning more general breaks is a great next step.
-
 You can give breaks and directions to different instruments, so you can do a lot with just a few of them.
 
 Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants**.
@@ -29,7 +27,7 @@ Hit eight beats
 Play noise until signed (Don’t wait for whistle in)
 
 
-### Other Short
+### Other short
 
 **Clave** *Finger and thumb U*  
 Usually pronounced CLAH-vay
@@ -65,3 +63,10 @@ The shout is ”Act now!”
 
 **Knock On The Door** *Knock on palm*  
 This is good as a transition between songs or an alternate line for one or two instruments
+
+
+### Song breaks you can use generally
+
+**7 Break** from **Bhangra**
+
+**Whistle Break** from **Samba Reggae**
