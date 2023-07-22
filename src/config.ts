@@ -2,7 +2,7 @@ export type Instrument = "ls" | "ms" | "hs" | "re" | "sn" | "ta" | "ag" | "sh" |
 
 export type Stroke = string;
 
-export type Category = "general" | "core" | "common" | "new" | "onesurdo" | "easy" | "medium" | "tricky" | "custom" | "all";
+export type Category = "breaks" | "core" | "common" | "new" | "onesurdo" | "easy" | "medium" | "tricky" | "custom" | "all";
 
 export type Config = {
 	appName: string,
@@ -149,7 +149,7 @@ const config: Config = {
 	},
 	
 	filterCats: {
-		general: "General breaks",
+		breaks: "Breaks",
 		core: "Core tunes",
 		common: "Common tunes",
 		new: "New tunes",
