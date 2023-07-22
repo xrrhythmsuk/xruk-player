@@ -1,5 +1,5 @@
 export default {
-    categories: ["core", "common", "easy"],
+    categories: ["core", "easy"],
     sheet: require("./karla.pdf"),
     description: require("./karla-shnikov.md").default,
     video: undefined,

@@ -1,7 +1,7 @@
 import { repeat, stretch } from "../../src/tuneHelper";
 
 export default {
-    categories: ["core", "common", "medium"],
+    categories: ["core", "medium"],
     sheet: require("./samba-reggae.pdf"),
     description: require("./samba-reggae.md").default,
     patterns: {

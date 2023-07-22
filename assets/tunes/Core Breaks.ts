@@ -1,7 +1,7 @@
 import { crescendo, decrescendo, repeat, stretch } from "../../src/tuneHelper";
 
 export default {
-    categories: ["general", "core", "common", "new", "onesurdo", "easy", "medium", "tricky"],
+    categories: ["core", "onesurdo", "easy", "medium", "tricky"],
     sheet: require("./general-breaks.pdf"),
     description: require("./core-breaks.md").default,
     video: undefined,
