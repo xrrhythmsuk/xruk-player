@@ -1,5 +1,5 @@
 export default {
-    categories: ["core", "common", "easy"],
+    categories: ["core", "easy"],
     sheet: require("./funk.pdf"),
     description: require("./funk.md").default,
     patterns: {
