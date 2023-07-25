@@ -69,5 +69,5 @@ export default {
             ag: "@ls"
         }
     },
-    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Call Break", "Tune", "Break 1 after short", "Tune", "Break 2", "Tune", "Break 3"]
+    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Break 1 after short", "Tune", "Call Break", "Tune", "Break 2", "Tune", "Break 3"]
 }
