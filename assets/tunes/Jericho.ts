@@ -45,7 +45,7 @@ export default {
             ls: " " + repeat(4, "                  X     "),
             ms: "@ls",
             hs: "@ls",
-            re: " " + repeat(2, "f  h sf  h sf  h sf  h sf  h sf  h sf  h sX r   "),
+            re: " " + repeat(2, "f  h Xf  h Xf  h Xf  h Xf  h Xf  h Xf  h Xh r   "),
             sn: "@ls",
             ta: "XX XX  X X  X            X    XX XX X           XX XX  X X  X            X    XX XX X",
             ag: "aa aa  a o  a            a    aa ao a           aa aa  a o  a            a    aa ao a"
