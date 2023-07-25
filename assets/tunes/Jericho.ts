@@ -13,7 +13,7 @@ export default {
             ls: "X X0  X X0  X X0 X   0  X X0 X   0  X X0 X   0",
             ms: "   X X   X X   0     X X   0     X X   0     X X",
             hs: "@ms",
-            re: "f  h sf  h sf  h sf  h sf  h sf  h sf  h sX r",
+            re: "f  h Xf  h Xf  h Xf  h Xf  h Xf  h Xf  h Xh r",
             sn: "...X.X...X.....X.X...X.....X.X...X.....X.X..XX.X",
             ta: "   X     X     X X   X     X X   X     X X   X",
             ag: "o  a ao  a ao a  o      o a  o      o a  o",
