@@ -46,5 +46,5 @@ export default {
             sh: '@re'
         }
     },
-    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Karla Break (Karla)", "Tune", "Break 2", "Tune", "Break 2 Inverted", "Tune"]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Karla Break (Karla)", "Tune", "Break 2", "Tune", "Break 2 Inverted", "Tune"]
 }

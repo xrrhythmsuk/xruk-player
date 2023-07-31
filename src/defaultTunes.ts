@@ -67,7 +67,7 @@ Object.defineProperty(defaultTunes, "getPattern", {
 
 Object.defineProperty(defaultTunes, "firstInSorting", {
 	configurable: true,
-	value: ["General Breaks", "Special Breaks", "Shouting Breaks"]
+	value: ["Core Breaks", "More Breaks"]
 });
 
 interface DefaultTunesMethods {

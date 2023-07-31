@@ -28,5 +28,5 @@ The rhythm clearly sounds like Samba Reggae, which is a tune developed and used 
 
 * **Breaks 1 and 2** are call and response versions of the tam/agogô line. In Break 1 surdos call, in Break 2 it’s tams.
 * **Break 3** can be used to solo particular instruments _\[uncommon nationally\]_
-* **Break 5** is a call and response between snares and everyone else _\[not played nationally\]_
+* **Break 5** *(hand with fingers spread)* is a call and response between snares and everyone else _\[not played nationally\]_
 * **General breaks** that work well: Tam Line
