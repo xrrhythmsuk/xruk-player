@@ -13,7 +13,7 @@ export default {
             ls: "X X0  X X0  X X0 X   0  X X0 X   0  X X0 X   0",
             ms: "   X X   X X   0     X X   0     X X   0     X X",
             hs: "@ms",
-            re: "f  h sf  h sf  h sf  h sf  h sf  h sf  h sX r",
+            re: "f  h Xf  h Xf  h Xf  h Xf  h Xf  h Xf  h Xh r",
             sn: "...X.X...X.....X.X...X.....X.X...X.....X.X..XX.X",
             ta: "   X     X     X X   X     X X   X     X X   X",
             ag: "o  a ao  a ao a  o      o a  o      o a  o",
@@ -45,7 +45,7 @@ export default {
             ls: " " + repeat(4, "                  X     "),
             ms: "@ls",
             hs: "@ls",
-            re: " " + repeat(2, "f  h sf  h sf  h sf  h sf  h sf  h sf  h sX r   "),
+            re: " " + repeat(2, "f  h Xf  h Xf  h Xf  h Xf  h Xf  h Xf  h Xh r   "),
             sn: "@ls",
             ta: "XX XX  X X  X            X    XX XX X           XX XX  X X  X            X    XX XX X",
             ag: "aa aa  a o  a            a    aa ao a           aa aa  a o  a            a    aa ao a"
@@ -69,5 +69,5 @@ export default {
             ag: "@ls"
         }
     },
-    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Call Break", "Tune", "Break 1 after short", "Tune", "Break 2", "Tune", "Break 3"]
+    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Break 1 after short", "Tune", "Call Break", "Tune", "Break 2", "Tune", "Break 3"]
 }
