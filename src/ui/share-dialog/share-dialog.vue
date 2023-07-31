@@ -1,22 +1,12 @@
-<b-modal title="Share" hide-footer :id="id" size="lg" modal-class="bb-share-dialog" @show="resetSelection()">
-	<b-tabs>
-		<b-tab title="Link">
-			<textarea readonly="readonly" class="form-control" rows="5" :value="url"></textarea>
-			<p><em>Opening this URL will open the songs selected below and make the selected tunes/breaks available in the list.</em></p>
-		</b-tab>
-		<b-tab title="Raw (compressed)">
-			<textarea readonly="readonly" class="form-control" rows="10" :value="rawStringCompressed"></textarea>
-			<p><em>Copy this data into the “Import” menu to make the songs and tunes/breaks selected below available in the player.</em></p>
-		</b-tab>
-		<b-tab title="Raw (uncompressed)">
-			<textarea readonly="readonly" class="form-control" rows="10" :value="rawStringUncompressed"></textarea>
-			<p><em>Copy this data into the “Import” menu to make the songs and tunes/breaks selected below available in the player.</em></p>
-		</b-tab>
-	</b-tabs>
-		<b-button block  variant="link" @click="customiseExpanded=!customiseExpanded">
+<b-modal title="Share" :id="id" size="lg" 
+footer-border-variant="blue"
+modal-class="bb-share-dialog" @show="resetSelection()">
+
+	<b-button block  class="mb-4" variant="link" @click="customiseExpanded=!customiseExpanded">
 		Customise selection ({{selectionCount}})
 		<fa icon="caret-down"/>
-		</b-button>
+	</b-button>
+
 	<Collapse v-model="customiseExpanded" id="customise">
 	<table id="selection" class="table table-sm">
 		<thead>
@@ -65,4 +55,29 @@
 		</tbody>
 	</table>
 	</Collapse>
+
+	<b-tabs v-model="index">
+		<b-tab title="Link">
+		<p class="mt-4">
+			Sharing a link lets others open the rhythms directly on their device.
+		</p>
+	</b-tab>
+
+	<b-tab title="Download">
+			<p class="mt-4">
+			Download a file to keep a copies or send as an attachment to others. Files can be opened using <nobr><fa icon="file-import" /> <strong>Open</strong></nobr> in the Tools menu.
+			</p>
+		</div>
+	</b-tab>
+	</b-tabs>
+
+	<div slot="modal-footer">
+		<template v-if="index === 0">
+			<b-button v-if="canShare" @click="share" variant="primary"><fa icon="share-from-square" /> Share</b-button>
+			<b-button v-else @click="copyLink" variant="primary"><fa icon="link" /> Copy link</b-button>
+		</template>
+		<b-button v-else @click="save" variant="primary"><fa icon="file-audio" /> Download</b-button>
+		<b-button @click="hide">Cancel</b-button>
+	</div>
+
 </b-modal>

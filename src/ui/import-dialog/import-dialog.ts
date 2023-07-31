@@ -10,11 +10,10 @@ import {
 	songExists,
 	State
 } from "../../state/state";
-import { InjectReactive, Prop, Watch } from "vue-property-decorator";
+import { InjectReactive, Prop, Ref, Watch } from "vue-property-decorator";
 import { stringToObject } from "../../utils";
 import { patternEquals } from "../../state/pattern";
 import { songContainsPattern } from "../../state/song";
-
 
 @WithRender
 @Component({})
@@ -30,32 +29,38 @@ export default class ImportDialog extends Vue {
 	error: string | null = null;
 	warnings: Array<string> = [ ];
 	pasted: string = "";
+	@Ref() fileInput!: HTMLInputElement; 
 
-	@Watch("pasted")
-	onPastedChange(pasted: string) {
-		this.obj = null;
-		this.error = null;
-		this.warnings = [ ];
-
-		if(!pasted)
-			return;
-
-		pasted = pasted.trim();
-
-		try {
-			let m;
-			if(pasted.charAt(0) == "{" || (m = pasted.match(/#(\/compose)?\/([-_a-zA-Z0-9]+)/))) {
-				const state = normalizeState({ tunes: { } });
-				this.warnings = extendStateFromCompressed(state, m ? stringToObject(m[2]) : JSON.parse(pasted), null, null, false, false, true);
-				this.obj = state;
-			}
-			else
-				this.error = "Unrecognised format.";
-		} catch(e) {
-			console.error((e as Error).stack || e);
-			this.error = "Error decoding pasted data: " + ((e as Error).message || e);
-		}
+	onShow(){
+		setTimeout(() => this.fileInput.click())
 	}
+
+	@Watch("fileInput")
+	watchFileInput() {
+		debugger
+	}
+
+	async onUpload(e: Event) {
+		const inputElement = e.target as HTMLInputElement;
+    	const file = inputElement.files?.[0];
+		if (file) {
+			let content = await file.text()
+			content = content.trim();
+
+			try {
+				let m;
+				if(content.charAt(0) == "{" || (m = content.match(/#(\/compose)?\/([-_a-zA-Z0-9]+)/))) {
+					const state = normalizeState({ tunes: { } });
+					this.warnings = extendStateFromCompressed(state, m ? stringToObject(m[2]) : JSON.parse(content), null, null, false, false, true);
+					this.obj = state;
+				}
+				else
+					this.error = "Unrecognised format.";
+			} catch(e) {
+				console.error((e as Error).stack || e);
+				this.error = "Error decoding data: " + ((e as Error).message || e);
+			}
+	}}
 
 	clickSong(idx: number) {
 		Vue.set(this.importSongs, idx, !this.shouldImportSong(idx));
