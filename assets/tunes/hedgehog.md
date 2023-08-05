@@ -12,7 +12,7 @@ This is one of our core tunes and often one of the first ones new bands learn. I
 
 **History:** Part of the first set of tunes taken from Barking Bateria in 2000.
 
-If you’re wondering why we’ve got Break 2 listed here, it’s because RoR Hedgehog Break 1 is effectively surdos doing 4 Hits while everyone else plays main.
+The two general breaks listed below are the two breaks that RoR Hedgehog has.
 
 ## Difficulty
 
@@ -26,6 +26,5 @@ If you’re wondering why we’ve got Break 2 listed here, it’s because RoR He
 
 ## Breaks
 
-* The only break we have for this song (involving shouting “Act now!” or whatever slogan) can be signed as **Break 1 or Break 2** – either way, there’s only one
-* **General breaks** that work well: 4 Hits surdos with everyone else carrying on
-* Some bands have started using the break as a general break, calling it the **A Break** (*forearms in an upside down V*)
+* We made the only break we had for this song (involving shouting “Act now!” or whatever slogan) into the **A Break** *(forearms in an upside-down V)* for the 2023 camp so it could be used generally
+* **General breaks** that work well: A Break, 4 Hits surdos with everyone else carrying on

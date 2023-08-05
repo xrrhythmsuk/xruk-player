@@ -72,7 +72,7 @@ class History {
 	_loadFromString(encodedString: string | null): string[] {
 		try {
 			const state = normalizeState();
-			const errors = extendStateFromCompressed(state, encodedString ? stringToObject(encodedString) : { }, null, null, true, true, true);
+			const errors = extendStateFromCompressed(state, encodedString ? stringToObject(encodedString) : { }, null, null, false, true, true);
 			if(state.songs.length == 0) {
 				createSong(state);
 			}

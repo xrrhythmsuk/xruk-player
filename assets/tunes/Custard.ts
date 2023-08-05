@@ -68,5 +68,5 @@ export default {
         }
 
     },
-    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Tam Line", "Tune", "Tune", "Tune", "Tune", "Break 3 Agogo", "Tune", "Tune", "Tune", "Tune", "Break 5"]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Tam Line", "Tune", "Tune", "Tune", "Tune", "Break 3 Agogo", "Tune", "Tune", "Tune", "Tune", "Break 5"]
 }
