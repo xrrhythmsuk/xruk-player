@@ -3,7 +3,7 @@
 		<router-link :to="{ name: 'listen', params: { tuneName }}">{{state.tunes[tuneName].displayName || tuneName }}</router-link>	
 		{{state.tunes[tuneName].patterns[patternName].displayName || patternName }}
 		<router-link
-			v-if="readonly && isCustomPattern(tuneName, patternName)"
+			v-if="readonly && isCustomPattern"
 		 	:to="{ name: 'edit pattern', params: { tuneName, patternName }}"><fa icon="pencil-alt"/></router-link>	
 	</h1>
 	<div class="bb-pattern-editor-toolbar">
@@ -27,12 +27,12 @@
 			</b-dropdown>
 		</b-button-group>
 
-		<slot/>
-
 		<b-button variant="warning" v-if="hasLocalChanges" @click="reset()"><fa icon="eraser"/> Restore original</b-button>
+		<b-button variant="info" v-if="hasLocalChanges || isCustomPattern" @click="share()"><fa icon="share-from-square"/> Share</b-button>
 
 		<span class="mr-2"/>
 		<InstrumentButtons :playback-settings="playbackSettings" :tune="tune" v-if="readonly" />
+    	<PlaybackSettings :playback-settings="playbackSettings" :default-speed="tune.speed" v-else />
 </div>
 
 	<div class="bb-pattern-editor-container" tabindex="0"  @keydown="handleKeyDown">
@@ -73,4 +73,5 @@
 		</table>
 		<div class="position-marker"></div>
 	</div>
+	<ShareDialog :id="shareDialogId" :link-pattern="[tuneName, patternName]"/>
 </div>

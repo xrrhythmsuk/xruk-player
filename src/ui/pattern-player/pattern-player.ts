@@ -10,12 +10,13 @@ import { normalizePlaybackSettings, PlaybackSettings, updatePlaybackSettings } f
 import $ from "jquery";
 import { scrollToElement } from "../../services/utils";
 import { createPattern, getPatternFromState, State } from "../../state/state";
-import { clone } from "../../utils";
+import { clone, id } from "../../utils";
 import defaultTunes from "../../defaultTunes";
 import isEqual from "lodash.isequal";
 import PlaybackSettingsComponent from "../playback-settings/playback-settings";
 import StrokeDropdown from "./stroke-dropdown";
 import InstrumentButtons from "../instrument/instrument-buttons";
+import ShareDialog from "../share-dialog/share-dialog";
 
 type StrokeDropdownInfo = {
 	instr: Instrument,
@@ -25,7 +26,10 @@ type StrokeDropdownInfo = {
 
 @WithRender
 @Component({
-	components: { InstrumentButtons, StrokeDropdown }
+	components: { InstrumentButtons, StrokeDropdown, 
+		PlaybackSettings: PlaybackSettingsComponent,
+		ShareDialog 
+	}
 })
 export default class PatternPlayer extends Vue {
 
@@ -48,8 +52,8 @@ export default class PatternPlayer extends Vue {
 		return getPatternFromState(this.state, this.tuneName, this.patternName) as Pattern;
 	}
 
-	isCustomPattern(tuneName: string, patternName: string) {
-		return !defaultTunes.getPattern(tuneName, patternName);
+	get isCustomPattern() {
+		return !defaultTunes.getPattern(this.tuneName, this.patternName);
 	}
 
 	get originalPattern() {
@@ -335,4 +339,8 @@ export default class PatternPlayer extends Vue {
 		this.currentStrokeDropdown = strokeDropdown;
 	}
 
+	share() { 
+		this.$bvModal.show(this.shareDialogId)
+	}
+	shareDialogId: string = id().toString()
 }
