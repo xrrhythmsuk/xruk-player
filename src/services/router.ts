@@ -70,7 +70,12 @@ const routes : RouteConfig[] = [
             },
             {
                 name: 'compose',
-                path: ':tuneName?',
+                path: '',
+                component: SongPlayer
+            },
+            {
+                name: 'song',
+                path: 'songs/:songName',
                 component: SongPlayer,
                 props: true
             },

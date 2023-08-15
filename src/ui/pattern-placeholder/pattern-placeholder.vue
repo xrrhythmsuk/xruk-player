@@ -1,6 +1,8 @@
 <div class="bb-pattern-placeholder" :class="[{ dragging }, `drag-effect-${dragEffect}`]" :draggable="draggable ? 'true' : 'false'" @dragstart="handleDragStart($event)" @dragend="handleDragEnd($event)">
 	<div class="pattern-button">
+		<fa icon="grip" v-if="draggable" />
 		<router-link class="pattern-name"
+		draggable="false"
 			:to="{ name: readonly ? 'listen pattern' : 'edit pattern', params: { tuneName, patternName } }">
 			{{state.tunes[tuneName].patterns[patternName].displayName || patternName}}
 			<fa v-if="isCustomPattern" icon="star" title="User-created break" v-b-tooltip/>

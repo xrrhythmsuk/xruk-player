@@ -61,6 +61,9 @@ export default class PatternList extends Vue {
 		}
 	}
 
+	get visibleSongs()  {
+		return this.state.songs
+	}
 
 	get visibleTunes() {
 		return filterPatternList(this.state, this.filter).map((tuneName) => ({

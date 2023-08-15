@@ -4,35 +4,35 @@
 	flex-direction: column;
 	height: 100%;
 
-	.card-body {
-		padding:0 8px;
+	a {
+		color: white;
 	}
-	.card-header {
-		padding:0;
-		.btn { 
-			font-size: 1.425rem;
+
+	.tune { 
+		font-weight: bold;
+	}
+	.caret {
+		transition: linear .25s transform;
+	}
+
+	&-filter{
+		padding:0 1.2em;
+	}
+
+	&-tunes { 
+		>* { 
+			transition: linear 0.5s all;
+			padding:0 1.2em;
 		}
 	}
 
-	.card-header button {
-		text-align: left;
-		text-decoration: none;
-		color: inherit;
-		position: relative;
-		background-color: white;
-		border: none;
-
-		.fa-caret-down {
-			position: absolute;
-			right: 10px;
-			top: 50%;
-			transform: translateY(-50%);
-		}
+	.open { 
+		background-color: rgba(255,255,255,0.3);
+		padding: .4em 1.2em;
+		margin-bottom:2px;
 	}
-
-	.card {
-		margin-bottom: 8px;
-		border:none;
+	.open .caret {
+		transform: rotateZ(-180deg);
 	}
 
 	.bb-pattern-placeholder {
@@ -52,12 +52,8 @@
 		margin-left: 0;
 	}
 
-	.bb-pattern-list-tunes {
-		overflow-y: auto;
-	}
-
 	.general-actions {
-		padding-top: 10px;
+		padding: 10px 1.2em 0 1.2em	;
 		a { 
 			color: white;
 		}

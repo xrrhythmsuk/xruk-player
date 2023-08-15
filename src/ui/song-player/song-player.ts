@@ -3,7 +3,7 @@ import "./song-player.scss";
 import Vue from "vue";
 import Component from "vue-class-component";
 import WithRender from "./song-player.vue";
-import { InjectReactive, Watch } from "vue-property-decorator";
+import { InjectReactive, Prop, Watch } from "vue-property-decorator";
 import { getPatternFromState, PatternReference, State, selectSong, createSong, getSongName, removeSong } from "../../state/state";
 import { BeatboxReference, createBeatbox, getPlayerById, songToBeatbox, stopAllPlayers } from "../../services/player";
 import { scrollToElement } from "../../services/utils";
@@ -55,6 +55,7 @@ type DragOver = "trash" | { instr: Instrument | null, idx: number };
 export default class SongPlayer extends Vue {
 
 	@InjectReactive() readonly state!: State;
+	@Prop() readonly songName?: string;
 
 	shareDialogId = `bb-share-dialog-${id()}`;
 	importDialogId = `bb-import-dialog-${id()}`;
@@ -475,6 +476,12 @@ export default class SongPlayer extends Vue {
 
 	getSongName(songIdx: number = this.state.songIdx) {
 		return getSongName(this.state, songIdx);
+	}
+
+	@Watch("songName")
+	watchSongName(name:string){
+		const i = this.state.songs.findIndex(x => x.name == name)
+		if(i>=0) this.selectSong(i)
 	}
 
 	selectSong(songIdx: number) {
