@@ -12,7 +12,7 @@ import {
 	renameTune,
 	State
 } from "../../state/state";
-import PatternListFilter, { DEFAULT_FILTER, Filter, filterPatternList } from "../pattern-list-filter/pattern-list-filter";
+import PatternListFilter, { DEFAULT_FILTER, Filter, filterPatternList, getTunesByCategory } from "../pattern-list-filter/pattern-list-filter";
 import { openPromptDialog } from "../utils/prompt";
 import defaultTunes from "../../defaultTunes";
 import PatternPlaceholder, { PatternPlaceholderItem } from "../pattern-placeholder/pattern-placeholder";
@@ -65,17 +65,19 @@ export default class PatternList extends Vue {
 		return this.state.songs
 	}
 
-	get visibleTunes() {
-		return filterPatternList(this.state, this.filter).map((tuneName) => ({
-			tuneName,
-			isCustom: this.isCustomTune(tuneName),
-			displayName: this.state.tunes[tuneName].displayName || tuneName,
-			patterns: Object.keys(this.state.tunes[tuneName].patterns).map((patternName) => ({
-				patternName,
-				isCustom: this.isCustomPattern(tuneName, patternName)
-			})),
-			collapseId: `bb-pattern-list-collapse-${id()}`,
-			height: Object.keys(this.state.tunes[tuneName].patterns).length * 50 + 24
+	get tuneCategories() {
+		return getTunesByCategory(this.state, this.filter)
+			.map(({title, tunes}) => ({title, tunes: tunes.map(tuneName => ({
+				tuneName,
+				isCustom: this.isCustomTune(tuneName),
+				displayName: this.state.tunes[tuneName].displayName || tuneName,
+				patterns: Object.keys(this.state.tunes[tuneName].patterns).map((patternName) => ({
+					patternName,
+					isCustom: this.isCustomPattern(tuneName, patternName)
+				})),
+				collapseId: `bb-pattern-list-collapse-${id()}`,
+				height: Object.keys(this.state.tunes[tuneName].patterns).length * 50 + 24
+			}))
 		}));
 	}
 

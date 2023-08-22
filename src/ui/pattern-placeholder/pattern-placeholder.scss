@@ -6,6 +6,10 @@
 		cursor: move;
 	}
 
+	.fa-grip {
+		color:white
+	}
+
 	&.dragging.drag-effect-move {
 		visibility: hidden;
 	}

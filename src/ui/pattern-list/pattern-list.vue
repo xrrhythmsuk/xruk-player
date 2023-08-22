@@ -1,20 +1,21 @@
 <div class="bb-pattern-list">
 	<PatternListFilter v-model="filter" />
 
-	<h3>Songs</h3>
+	<h2>Songs</h2>
 	<div class="bb-pattern-list-songs d-flex flex-column">
 		<router-link :to="{name:'song', params: { songName: song.name }}" 
 			:key="song.name" v-for="song in state.songs">
 					{{song.name}}
 			</router-link>
 			<div class="general-actions">
-		<router-link :to="{name:'compose'}"><fa icon="plus"/> New tune</router-link>
+		<router-link :to="{name:'compose'}"><fa icon="plus"/> New song</router-link>
 	</div>
 	</div>
 
-	<h3>Tunes</h3>
-	<div class="bb-pattern-list-tunes">
-		<div v-for="tune in visibleTunes" :key="tune.tuneName" :class="{open:isOpened[tune.tuneName]}">
+	<h2>Tunes</h2>
+	<div v-for="{title, tunes} in tuneCategories" :key="title">
+		<h3>{{title}}</h3>
+		<div v-for="tune in tunes" :key="tune.tuneName"  class="bb-pattern-list-tunes" :class="{open:isOpened[tune.tuneName]}">
 
 			<a class="d-flex tune" href="javascript:void(0)" @click="toggleTune(tune.tuneName)">
 				<span class="flex-grow-1">

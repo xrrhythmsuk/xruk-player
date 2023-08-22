@@ -30,7 +30,7 @@
 			</span>
 		</div>
 
-		<router-view class="flex-grow-1" />
+		<router-view class="flex-grow-1"/>
 	</div>
 
 	<div class="bb-cover" @click="togglePatternList()"></div>

@@ -28,6 +28,18 @@ export function filterPatternList(state: State, params?: Filter | null) {
 	return ret;
 }
 
+export function getTunesByCategory(state: State, filter?: Filter) { 
+	const categories : [string, Category][] =
+		[["", "breaks"], ["Core tunes", "core"], ["Common tunes", "common"], ["New and proposed", "new"], ["Your tunes", "custom"]]
+	return categories
+		.map(([title, cat]) => ({
+			title,
+			tunes: filterPatternList(state, { text: '', ...filter, cat })
+		}))
+		.filter(x => x.tunes.length)
+}
+
+
 @WithRender
 @Component({})
 export default class PatternListFilter extends Vue {

@@ -3,7 +3,7 @@ import Component from "vue-class-component";
 import WithRender from "./listen.vue";
 import { Tune } from "../../state/tune";
 import { stopAllPlayers } from "../../services/player";
-import PatternListFilter, { Filter, filterPatternList } from "../pattern-list-filter/pattern-list-filter";
+import PatternListFilter, { Filter, filterPatternList, getTunesByCategory } from "../pattern-list-filter/pattern-list-filter";
 import TuneInfo from "../tune-info/tune-info";
 import { InjectReactive, Ref, Watch } from "vue-property-decorator";
 import events, { registerMultipleHandlers } from "../../services/events";
@@ -30,16 +30,7 @@ export default class Listen extends Vue {
 
 	touchStartX: number | null = null;
 
-	get categoryList() {
-		const categories : [string, Category][] =
-			[["", "breaks"], ["Core tunes", "core"], ["Common tunes", "common"], ["New and proposed", "new"], ["Your tunes", "custom"]]
-		return categories
-			.map(([title, cat]) => ({
-				title,
-				tunes: filterPatternList(this.state, { text: '', cat, ...this.filter })
-			}))
-			.filter(x => x.tunes.length)
-	}
+	get categoryList() { return getTunesByCategory(this.state, this.filter) }
 
 	created() {
 		this._unregisterHandlers = registerMultipleHandlers({

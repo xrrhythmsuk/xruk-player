@@ -3,9 +3,14 @@
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+	padding: 1.2em;
 
-	a {
+	* {
 		color: white;
+	}
+
+	a:hover {
+		color: #bbb;
 	}
 
 	.tune { 
@@ -15,19 +20,14 @@
 		transition: linear .25s transform;
 	}
 
-	&-filter{
-		padding:0 1.2em;
-	}
-
 	&-tunes { 
-		>* { 
-			transition: linear 0.5s all;
-			padding:0 1.2em;
-		}
+		padding:0 1.2em;
+		margin:0 -1.2em;
+		transition: linear 0.5s all;
 	}
 
 	.open { 
-		background-color: rgba(255,255,255,0.3);
+		background-color: rgba(255,255,255,0.1);
 		padding: .4em 1.2em;
 		margin-bottom:2px;
 	}
@@ -53,7 +53,7 @@
 	}
 
 	.general-actions {
-		padding: 10px 1.2em 0 1.2em	;
+		padding: 10px  0 0 0;
 		a { 
 			color: white;
 		}
