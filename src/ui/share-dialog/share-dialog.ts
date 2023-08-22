@@ -34,12 +34,14 @@ export default class ShareDialog extends Vue {
 	shareSongs: { [songIdx: number]: boolean } = { };
 	sharePatterns: { [tuneName: string]: { [patternName: string]: boolean } } = { };
 	songCount() { return Object.values(this.shareSongs).filter(x => x).length }
-	tuneCount() { return Object.keys(this.sharePatterns).map(this.getTuneClass).filter(c => c).length }
+	tuneCount() { return Object.keys(this.sharePatterns).map(this.getTuneClass).filter(c => c == 'active').length }
+	patternCount() { return Object.keys(this.sharePatterns).filter(t => this.getTuneClass(t) == 'list-group-item-info').map(t => Object.values(this.sharePatterns[t]).filter(x=>x).length).reduce((x,y) => x+y, 0) }
 	get selectionCount() { 
-		const s = this.songCount(), t = this.tuneCount()
+		const s = this.songCount(), t = this.tuneCount(), p = this.patternCount()
 		return [
 			s? s == 1 ? `1 song` : `${s} songs` : '',	
-			t? t == 1 ? `1 tune` : `${t} tunes` : ''
+			t? t == 1 ? `1 tune` : `${t} tunes` : '',
+			p? p == 1 ? `1 break` : `${p} breaks` : ''
 		].filter(x => x).join(', ')
 	}
 

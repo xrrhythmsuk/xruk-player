@@ -2,7 +2,7 @@
 footer-border-variant="blue"
 modal-class="bb-share-dialog" @show="resetSelection()">
 
-	<b-button block  class="mb-4" variant="link" @click="customiseExpanded=!customiseExpanded">
+	<b-button block  size="lg" class="mb-4" variant="link" @click="customiseExpanded=!customiseExpanded">
 		Customise selection ({{selectionCount}})
 		<fa icon="caret-down"/>
 	</b-button>

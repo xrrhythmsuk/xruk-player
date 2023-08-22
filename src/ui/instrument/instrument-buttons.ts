@@ -38,5 +38,6 @@ export default class InstrumentButtons extends Vue {
 
     const metronome: Metronome = instrs.filter(i => !mute[i]).length == 1 ? (2) : false
     Vue.set(this.playbackSettings, 'metronome', metronome)
+    Vue.set(this.playbackSettings, 'headphones', [])
   }
 }
