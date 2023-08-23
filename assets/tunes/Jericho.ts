@@ -21,7 +21,7 @@ export default {
         },
 	'Alt Repi': {
 	    loop: true,
-	    re: "f  x xf  x xf  x x  r   f  x x  r   f  x x  r   ",
+	    re: "f  X Xf  X Xf  X X  r   f  X X  r   f  X X  r   ",
 	    sh: "X  .  .  .  X  .  .  .  X  .  .  .  X  .  .  .  "
 	},
         'Break 1': {
