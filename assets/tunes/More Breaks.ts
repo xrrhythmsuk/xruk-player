@@ -57,11 +57,17 @@ export default {
             upbeat: 2,
             re: "X X     X X X X X   X X X X   X   X X X X X   X                   ",
             ta: "@re",
-            ag: "@re",
+            ag: "@re"
         },
         'Little Cat (Alt Repi)': {
             loop: true,
             re: "f   X X r r X X "
+        },
+        'Capped Karla (Little Cat)': {
+            loop: true,
+            re: 'XXXXXXXXXXXXXXXXf   X X r r X X ',
+            sn: '@re',
+            volumeHack: { 0: .2, 4: .4, 8: .7, 12: 1 }
         },
         'Bunny Ears': {
             ls: repeat(2, "                X X X X X  XX   ") + repeat(2, "        X X X   ") + "    X X     X X     XX XX X X   ",
