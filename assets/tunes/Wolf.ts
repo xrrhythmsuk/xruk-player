@@ -8,7 +8,7 @@ export default {
             ls: 'X XXX   XXXXX   X XXX   X   X   ',
             ms: '      XX      XX      XXXXXXXXXX',
             hs: '@ms',
-            re: 'X XX  r X X X rrX XX  r  X XX rr',
+            re: 'X  XX r X X X rrX  XX r  XXXX rr',
             sn: 'f.X...X...X...X.f.X...X...X...X.',
             ta: 'X X     X X     XX XXX XX       ',
             ag: 'o ooo a   a   a o ooo a   a   a',
