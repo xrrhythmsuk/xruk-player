@@ -19,6 +19,11 @@ export default {
             ag: "o  a ao  a ao a  o      o a  o      o a  o",
             sh: "X  X .X  X .X  X .X  X .X  X .X  X .X  X .X  X ."
         },
+	'Alt Repi': {
+	    loop: true,
+	    re: "f  x xf  x xf  x x  r   f  x x  r   f  x x  r   ",
+	    sh: "X  .  .  .  X  .  .  .  X  .  .  .  X  .  .  .  "
+	},
         'Break 1': {
             upbeat: 3,
             ls: "X XX  X  X XX X",
