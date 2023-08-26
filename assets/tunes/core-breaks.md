@@ -56,7 +56,7 @@ e.g. Karla Break with clave
 The shout is “Ex-tin-ction! Re-be-llion! ... Hey!”
 
 **A Break** *Forearms make an upside-down V*  
-The shout is ”Act now!”
+The shout is “Act now!”
 
 
 ### Looping

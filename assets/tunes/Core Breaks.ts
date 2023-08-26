@@ -72,7 +72,7 @@ export default {
             volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 }
         },
         'Karla Break': {
-            ls: repeat(12, 'XXXX') + 'X   ' + repeat(3, ' '),
+            ls: repeat(12, 'XXXX') + 'X   ' + repeat(3, '    '),
             ms: '@ls',
             hs: '@ls',
             re: '@ls',

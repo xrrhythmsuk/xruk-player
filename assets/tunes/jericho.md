@@ -11,7 +11,7 @@ Some work as they are, and others are best avoided. Good to experiment with!
 
 **Name:** From the title of the original tune
 
-**Musical background:** Based on the jazz swing tune “Joshua Fit the Battle of Jericho” by Sidney Bechet ([YouTube](https://www.youtube.com/watch?v=b2l8uW3CrGQ)), which itself is based on an old African American spiritual ([Wikipedia](https://en.wikipedia.org/wiki/Joshua_Fit_the_Battle_of_Jericho)). (”Fit” here would be “fought” in Standard English.)
+**Musical background:** Based on the jazz swing tune “Joshua Fit the Battle of Jericho” by Sidney Bechet ([YouTube](https://www.youtube.com/watch?v=b2l8uW3CrGQ)), which itself is based on an old African American spiritual ([Wikipedia](https://en.wikipedia.org/wiki/Joshua_Fit_the_Battle_of_Jericho)). (“Fit” here would be “fought” in Standard English.)
 
 Some of the fun but tricky jazzy rhythms have made it over into our tune. Try listening to the original linked above for some context!
 
