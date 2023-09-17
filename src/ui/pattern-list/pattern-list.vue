@@ -8,7 +8,7 @@
 					{{song.name}}
 			</router-link>
 			<div class="general-actions">
-		<router-link :to="{name:'compose'}"><fa icon="plus"/> New song</router-link>
+		<router-link :to="{name:'compose-new'}"><fa icon="plus"/> New song</router-link>
 	</div>
 	</div>
 

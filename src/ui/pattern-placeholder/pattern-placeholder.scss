@@ -7,11 +7,27 @@
 	}
 
 	.fa-grip {
-		color:white
+		color:white;
+		margin-right:4px;
 	}
 
 	&.dragging.drag-effect-move {
 		visibility: hidden;
+	}
+
+	a.pattern-name { 
+		color: currentColor;
+		flex:1;
+		white-space: wrap;
+		line-height: 1;
+		overflow: hidden;
+	}
+
+	.icon-list {
+		align-items: start;;
+	}
+	.icon-list>li>a, .icon-list button {
+		color:white;
 	}
 
 	.icon-list li { 
@@ -20,21 +36,11 @@
 	.pattern-button {
 		height: 100%;
 		box-sizing: border-box;
-		display: block;
-		text-align: left;
 		overflow: hidden;
 
 		.tune-name {
 			font-weight: bold;
 		}
-	}
-
-	.actions {
-		position: absolute;
-		padding: 3px 5px;
-		top: 2px;
-		right: 2px;
-		border-radius: 5px;
 	}
 
 	.position-marker {
