@@ -20,7 +20,6 @@ import { patternEquals } from "../../state/pattern";
 import WithPatternPlaceholderItemRender from "./pattern-placeholder-item.vue";
 import events, { registerMultipleHandlers } from "../../services/events";
 import { DragType, PatternDragData, setDragData } from "../../services/draggable";
-import PatternEditorDialog from "../pattern-editor-dialog/pattern-editor-dialog";
 import { id } from "../../utils";
 import FileSaver from "file-saver";
 import Progress from "../utils/progress";
@@ -34,7 +33,7 @@ export class PatternPlaceholderItem extends Vue {
 
 @WithRender
 @Component({
-	components: { PatternEditorDialog, Progress }
+	components: { Progress }
 })
 export default class PatternPlaceholder extends Vue {
 	@InjectReactive() readonly state!: State;
@@ -47,7 +46,6 @@ export default class PatternPlaceholder extends Vue {
 	@Prop({ type: String, default: "copy" }) readonly dragEffect!: DataTransfer['dropEffect'];
 
 	playerRef: BeatboxReference | null = null;
-	editorId: string | null = null;
 	fallbackPlaybackSettings: PlaybackSettings = null as any;
 	_unregisterHandlers!: () => void;
 	dragging: boolean = false;
@@ -66,6 +64,8 @@ export default class PatternPlaceholder extends Vue {
 	}
 
 	beforeDestroy() {
+		this.dragging = false
+		events.$emit("pattern-placeholder-drag-end");
 		this._unregisterHandlers();
 	}
 

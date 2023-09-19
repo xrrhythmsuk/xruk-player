@@ -283,6 +283,7 @@ function normalizeVolumeHack(volumeHack: LegacyVolumeHack | VolumeHack): VolumeH
 	}
 
 	const result = { } as VolumeHack;
+	
 	for (const instr of config.instrumentKeys) {
 		result[instr] = clone(volumeHack);
 	}

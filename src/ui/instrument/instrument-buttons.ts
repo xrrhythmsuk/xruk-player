@@ -23,7 +23,7 @@ export default class InstrumentButtons extends Vue {
 
   onClick(instr: Instrument) {
     const instrs: Instrument[] = ['ls', 'ms', 'hs', 'sn', 're', 'ta', 'ag']
-    const allInstrs = config.instrumentKeys
+    const allInstrs = [...instrs, 'sh'] // Leave whistle and shouting ('ot') always active
     const { mute } = this.playbackSettings
     if (instrs.every(i => !mute[i])) {
       for (let i of allInstrs) Vue.set(mute, i, true)
@@ -38,5 +38,6 @@ export default class InstrumentButtons extends Vue {
 
     const metronome: Metronome = instrs.filter(i => !mute[i]).length == 1 ? (2) : false
     Vue.set(this.playbackSettings, 'metronome', metronome)
+    Vue.set(this.playbackSettings, 'headphones', [])
   }
 }

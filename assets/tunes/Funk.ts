@@ -1,5 +1,5 @@
 export default {
-    categories: ["core", "common", "easy"],
+    categories: ["core", "easy"],
     sheet: require("./funk.pdf"),
     description: require("./funk.md").default,
     patterns: {
@@ -40,5 +40,5 @@ export default {
             sh: '@ls'
         }
     },
-    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Break 2", "Tune", "Tune"]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Break 2", "Tune", "Tune"]
 }

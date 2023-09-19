@@ -1,6 +1,6 @@
 This is one of our core tunes and often the first one new bands learn.
 
-It doesn't sound much like funk, which is something of a theme with RoR tunes.
+It doesn’t sound much like funk, which is something of a theme with RoR tunes.
 
 **Sign:** two OK signs above your head looking like funky glasses (or potatoes with roots).
 

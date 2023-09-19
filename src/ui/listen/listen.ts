@@ -10,6 +10,7 @@ import events, { registerMultipleHandlers } from "../../services/events";
 import "./listen.scss";
 import $ from "jquery";
 import { State } from "../../state/state";
+import { Category } from "../../config";
 
 @WithRender
 @Component({
@@ -29,8 +30,15 @@ export default class Listen extends Vue {
 
 	touchStartX: number | null = null;
 
-	get tuneList() {
-		return filterPatternList(this.state, this.filter);
+	get categoryList() {
+		const categories : [string, Category][] =
+			[["", "breaks"], ["Core tunes", "core"], ["Common tunes", "common"], ["New and proposed", "new"], ["Your tunes", "custom"]]
+		return categories
+			.map(([title, cat]) => ({
+				title,
+				tunes: filterPatternList(this.state, { text: '', cat, ...this.filter })
+			}))
+			.filter(x => x.tunes.length)
 	}
 
 	created() {

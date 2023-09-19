@@ -1,5 +1,5 @@
 export default {
-    categories: ["core", "common", "onesurdo", "medium"],
+    categories: ["core", "onesurdo", "medium"],
     speed: 120,
     time: 3,
     sheet: require("./bhangra.pdf"),
@@ -102,6 +102,6 @@ export default {
             sh: '@ls'
         }
     },
-    exampleSong: [ { tuneName: "General Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Break 3", "Tune", "Tune", "7 Break", "Tune", "Tune", "Butterfly Break",
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Break 3", "Tune", "Tune", "7 Break", "Tune", "Tune", "Butterfly Break",
                   "Tune", "Tune", "Call Break", "Tune", "Tune", "Progressive Karla (Bhangra)", "Tune", "Tune", "Break 2"]
 }

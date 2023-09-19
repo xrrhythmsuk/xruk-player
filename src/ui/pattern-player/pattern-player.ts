@@ -10,12 +10,13 @@ import { normalizePlaybackSettings, PlaybackSettings, updatePlaybackSettings } f
 import $ from "jquery";
 import { scrollToElement } from "../../services/utils";
 import { createPattern, getPatternFromState, State } from "../../state/state";
-import { clone } from "../../utils";
+import { clone, id } from "../../utils";
 import defaultTunes from "../../defaultTunes";
 import isEqual from "lodash.isequal";
 import PlaybackSettingsComponent from "../playback-settings/playback-settings";
 import StrokeDropdown from "./stroke-dropdown";
 import InstrumentButtons from "../instrument/instrument-buttons";
+import ShareDialog from "../share-dialog/share-dialog";
 
 type StrokeDropdownInfo = {
 	instr: Instrument,
@@ -25,7 +26,10 @@ type StrokeDropdownInfo = {
 
 @WithRender
 @Component({
-	components: { InstrumentButtons, StrokeDropdown }
+	components: { InstrumentButtons, StrokeDropdown, 
+		PlaybackSettings: PlaybackSettingsComponent,
+		ShareDialog 
+	}
 })
 export default class PatternPlayer extends Vue {
 
@@ -48,10 +52,18 @@ export default class PatternPlayer extends Vue {
 		return getPatternFromState(this.state, this.tuneName, this.patternName) as Pattern;
 	}
 
+	get isCustomPattern() {
+		return !defaultTunes.getPattern(this.tuneName, this.patternName);
+	}
+
 	get originalPattern() {
 		return defaultTunes.getPattern(this.tuneName, this.patternName);
 	}
 
+	get tune() {
+		return this.tuneName && this.state.tunes[this.tuneName];
+	}
+	
 	get config() {
 		return config;
 	}
@@ -81,16 +93,6 @@ export default class PatternPlayer extends Vue {
 			this.updateMarkerPosition(false);
 		});
 		this.updateMarkerPosition(false);
-
-		$(document).on({
-			keydown: this.handleKeyDown
-		});
-	}
-
-	beforeDestroy() {
-		$(document).off({
-			keypress: this.handleKeyDown
-		});
 	}
 
 	@Watch("playbackSettings.volume")
@@ -337,4 +339,8 @@ export default class PatternPlayer extends Vue {
 		this.currentStrokeDropdown = strokeDropdown;
 	}
 
+	share() { 
+		this.$bvModal.show(this.shareDialogId)
+	}
+	shareDialogId: string = id().toString()
 }

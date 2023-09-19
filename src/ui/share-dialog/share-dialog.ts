@@ -17,28 +17,77 @@ import { Pattern, patternEquals } from "../../state/pattern";
 import { objectToString } from "../../utils";
 import { makeAbsoluteUrl } from "../../services/utils";
 import { songContainsPattern } from "../../state/song";
+import Collapse from '../utils/collapse';
+import FileSaver from 'file-saver';
 
 @WithRender
-@Component({})
+@Component({components: { Collapse }})
 export default class ShareDialog extends Vue {
 
 	@InjectReactive() readonly state!: State;
 
-	@Prop(String) readonly id?: string;
+	@Prop({type: String, required: true}) readonly id!: string;
 	@Prop(Array) readonly linkPattern?: PatternReference;
-
+	@Prop(String) readonly tuneName?: string;
+	index: number = 0
+	customiseExpanded: boolean = false
 	shareSongs: { [songIdx: number]: boolean } = { };
 	sharePatterns: { [tuneName: string]: { [patternName: string]: boolean } } = { };
+	songCount() { return Object.values(this.shareSongs).filter(x => x).length }
+	tuneCount() { return Object.keys(this.sharePatterns).map(this.getTuneClass).filter(c => c == 'active').length }
+	patternCount() { return Object.keys(this.sharePatterns).filter(t => this.getTuneClass(t) == 'list-group-item-info').map(t => Object.values(this.sharePatterns[t]).filter(x=>x).length).reduce((x,y) => x+y, 0) }
+	get selectionCount() { 
+		const s = this.songCount(), t = this.tuneCount(), p = this.patternCount()
+		return [
+			s? s == 1 ? `1 song` : `${s} songs` : '',	
+			t? t == 1 ? `1 tune` : `${t} tunes` : '',
+			p? p == 1 ? `1 break` : `${p} breaks` : ''
+		].filter(x => x).join(', ')
+	}
+
+	get canShare() { 
+		return navigator.canShare?.({url:this.url})
+	}
+
+	share() { 
+		this.hide()
+
+		navigator.share?.({
+			url: this.url
+		})
+		
+	}
+
+	hide() { 
+		this.$bvModal.hide(this.id)
+	}
+
+	copyLink() { 
+		window.navigator.clipboard.writeText(this.url)
+		this.hide()
+	}
+
+	save() { 
+		this.hide()
+		const blob = new Blob([this.rawStringUncompressed], { type: 'application/rhythm+json' });
+		FileSaver.saveAs(blob, `${this.tuneName || "tunes"}.rhythm`)
+	}
 
 	resetSelection() {
+		this.shareSongs = { };
 		if(this.linkPattern) {
-			this.shareSongs = { };
 			this.sharePatterns = {
 				[this.linkPattern[0]]: {
 					[this.linkPattern[1]]: true
 				}
 			};
-		} else {
+		} else if (this.tuneName){
+			const patternNames = Object.keys(this.state.tunes[this.tuneName].patterns)
+			this.sharePatterns = { 
+				[this.tuneName]: Object.fromEntries(patternNames.map(p => [p, true]))
+			}
+		}
+		else {
 			this.shareSongs = {
 				[this.state.songIdx]: true
 			};
