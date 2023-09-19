@@ -9,7 +9,7 @@
     "url": "https://github.com/beatboxjs/ror-player.git"
   },
   "scripts": {
-    "build": "ts-node ./node_modules/.bin/gulp",
+    "build": "ts-node ./node_modules/gulp/bin/gulp",
     "clean": "rimraf dist",
     "dev-server": "webpack serve --mode development --host 0.0.0.0"
   },
