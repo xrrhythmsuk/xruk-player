@@ -72,6 +72,30 @@ h3 {
 	}
 }
 
+@include media-breakpoint-down(xs) {
+	.modal {
+
+		&.fade {
+
+			.modal-dialog {
+				transform: translate(100vw, 0);
+				margin: 0;
+
+				.modal-content {
+					border: none;
+					height: 100vh;
+				}
+			}
+
+			&.show {
+				.modal-dialog {
+					transform: none;
+				}
+			}
+
+		}
+	}
+}
 .modal-footer button + button {
 	margin-left: 0.25rem;
 }
