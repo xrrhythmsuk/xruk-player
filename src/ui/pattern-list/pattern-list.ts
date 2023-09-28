@@ -21,6 +21,7 @@ import events, { registerMultipleHandlers } from "../../services/events";
 import RenamePatternDialog from "./rename-pattern-dialog";
 import Collapse from "../utils/collapse";
 import ShareDialog from "../share-dialog/share-dialog";
+import RenameTuneDialog from "./rename-tune-dialog";
 
 type Opened = {
 	[tuneName: string]: boolean
@@ -60,7 +61,6 @@ export default class PatternList extends Vue {
 				events.$emit("pattern-list-tune-closed", i);
 		}
 	}
-
 
 	get visibleTunes() {
 		return filterPatternList(this.state, this.filter).map((tuneName) => ({
@@ -129,23 +129,8 @@ export default class PatternList extends Vue {
 	}
 
 	async createTune() {
-		const newTuneName = await openPromptDialog(this, "Create tune", "", (newTuneName) => {
-			if(newTuneName.trim().length == 0)
-				return "Please enter a name for the new tune.";
-			if(this.state.tunes[newTuneName])
-				return "This name is already taken. Please enter a different one.";
-		});
-
-		if(newTuneName) {
-			createTune(this.state, newTuneName);
-
-			Vue.set(this.isOpened, newTuneName,  true);
-			if (!filterPatternList(this.state, this.filter).includes(newTuneName))
-				this.filter = { text: "", cat: "custom" };
-
-			createPattern(this.state, newTuneName, "Tune", { loop: true });
-			this.$router.push({ name: 'edit pattern', params: { tuneName: newTuneName, patternName: "Tune" }})
-		}
+		this.$bvModal.msgBoxConfirm([this.$createElement(RenameTuneDialog)], 
+		{title: "Create tune"})
 	}
 
 	async renameTune(tuneName: string) {
