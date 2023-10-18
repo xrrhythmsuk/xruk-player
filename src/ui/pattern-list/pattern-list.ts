@@ -8,8 +8,8 @@ import {
 	createPattern,
 	createTune,
 	getPatternFromState,
-	removePattern, removeTune,
-	renameTune,
+	removePattern, 
+	removeTune,
 	State
 } from "../../state/state";
 import PatternListFilter, { DEFAULT_FILTER, Filter, filterPatternList } from "../pattern-list-filter/pattern-list-filter";
@@ -29,7 +29,7 @@ type Opened = {
 
 @WithRender
 @Component({
-	components: { PatternListFilter, PatternPlaceholder, PatternPlaceholderItem, RenamePatternDialog, Collapse, ShareDialog }
+	components: { PatternListFilter, PatternPlaceholder, PatternPlaceholderItem, RenamePatternDialog, RenameTuneDialog, Collapse, ShareDialog }
 })
 export default class PatternList extends Vue {
 
@@ -38,7 +38,8 @@ export default class PatternList extends Vue {
 	filter: Filter = DEFAULT_FILTER;
 	isOpened: Opened = {};
 	previousIsOpened: Opened = {};
-	showRename: {id: string, tuneName: string, patternName: string} | null = null;
+	showRenamePattern: {id: string, tuneName: string, patternName: string} | null = null;
+	showRenameTune: {id: string, tuneName?: string} | null = null;
 	showShare: {id: string, tuneName: string } | null = null;
 
 	_unregisterHandlers!: () => void;
@@ -109,9 +110,9 @@ export default class PatternList extends Vue {
 	}
 
 	async copyPattern(tuneName: string, patternName: string) {
-		this.showRename = { id: `bb-rename-pattern-dialog-${id()}`, tuneName, patternName };
+		this.showRenamePattern = { id: `bb-rename-pattern-dialog-${id()}`, tuneName, patternName };
 		await this.$nextTick();
-		this.$bvModal.show(this.showRename.id);
+		this.$bvModal.show(this.showRenamePattern.id);
 	}
 
 	async removePatternFromTune(tuneName: string, patternName: string) {
@@ -129,22 +130,16 @@ export default class PatternList extends Vue {
 	}
 
 	async createTune() {
-		this.$bvModal.msgBoxConfirm([this.$createElement(RenameTuneDialog)], 
-		{title: "Create tune"})
+		this.showRenameTune = { id: `bb-create-tune-dialog-${id()}` };
+		await this.$nextTick();
+		this.$bvModal.show(this.showRenameTune.id);
 	}
 
 	async renameTune(tuneName: string) {
-		const newTuneName = await openPromptDialog(this, "Rename tune", tuneName, (newTuneName) => {
-			if(newTuneName.trim().length == 0 || newTuneName == tuneName)
-				return "Please enter a new name for the tune.";
-			if(this.state.tunes[newTuneName])
-				return "This name is already taken. Please enter a different one.";
-		});
-
-		if(newTuneName) {
-			renameTune(this.state, tuneName, newTuneName);
-		}
-	};
+		this.showRenameTune = { id: `bb-create-tune-dialog-${id()}`, tuneName };
+		await this.$nextTick();
+		this.$bvModal.show(this.showRenameTune.id);
+	}
 
 	async copyTune(tuneName: string) {
 		const newTuneName = await openPromptDialog(this, "Copy tune", tuneName, (newTuneName) => {
@@ -157,13 +152,13 @@ export default class PatternList extends Vue {
 		if(newTuneName) {
 			copyTune(this.state, tuneName, newTuneName);
 		}
-	};
+	}
 
 	async removeTune(tuneName: string) {
 		if(await this.$bvModal.msgBoxConfirm(`Do you really want to remove the tune ${tuneName}?`)) {
 			removeTune(this.state, tuneName);
 		}
-	};
+	}
 
 	async shareTune(tuneName: string) {
 		this.showShare = { id: `bb-share-dialog-${id()}`, tuneName };

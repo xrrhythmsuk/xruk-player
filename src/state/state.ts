@@ -246,6 +246,7 @@ export function compressState(
         ret.playbackSettings = state.playbackSettings;
     }
 
+    console.log(ret)
     return ret;
 }
 
@@ -280,7 +281,7 @@ function replacePattern(state: State, fromTuneAndName: PatternOrTuneReference, t
 }
 
 export function createTune(state: State, tuneName: string, data?: TuneOptional): void {
-    Vue.set(state.tunes, tuneName, normalizeTune(data));
+    Vue.set(state.tunes, tuneName, normalizeTune(data))
 }
 
 export function renameTune(state: State, tuneName: string, newTuneName: string): void {
@@ -289,6 +290,10 @@ export function renameTune(state: State, tuneName: string, newTuneName: string):
         Vue.set(state.tunes, newTuneName, state.tunes[tuneName]);
         Vue.delete(state.tunes, tuneName);
     }
+}
+
+export function editTune(state: State, tuneName: string, data: TuneOptional): void {
+    Vue.set(state.tunes, tuneName, { ...state.tunes[tuneName], ...data });
 }
 
 export function copyTune(state: State, tuneName: string, newTuneName: string): void {

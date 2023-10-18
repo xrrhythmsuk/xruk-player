@@ -37,5 +37,6 @@
 
 	<ShareDialog v-if="showShare" :id="showShare.id" :tune-name="showShare.tuneName"/>
 
-	<RenamePatternDialog v-if="showRename" :id="showRename.id" :tune-name="showRename.tuneName" :pattern-name="showRename.patternName" @hidden="showRename = null"/>
+	<RenamePatternDialog v-if="showRenamePattern" :id="showRenamePattern.id" :tune-name="showRenamePattern.tuneName" :pattern-name="showRenamePattern.patternName" @hidden="showRenamePattern = null"/>
+	<RenameTuneDialog v-if="showRenameTune" :id="showRenameTune.id" :tune-name="showRenameTune.tuneName" @hidden="showRenameTune = null"/>
 </div>

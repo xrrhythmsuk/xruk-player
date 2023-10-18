@@ -14,12 +14,9 @@ import PatternPlaceholder, { PatternPlaceholderItem } from "../pattern-placehold
 import ExampleSongPlayer from "../example-song-player/example-song-player";
 import InstrumentButtons from "../instrument/instrument-buttons";
 
-export function getTuneDescription(tuneName: string): string | null {
-	if(!defaultTunes[tuneName])
-		return null;
-
+function getTuneDescription(state: State, tuneName: string): string | null {
 	// Use HTML from default tunes to avoid script injection through bbHistory
-	let el = $("<div/>").html(defaultTunes[tuneName].description || "");
+	let el = $("<div/>").html(state.tunes[tuneName].description || "");
 	el.find("a").attr("target", "_blank");
 	return el.html();
 }
@@ -37,7 +34,7 @@ export default class TuneInfo extends Vue {
 	get playbackSettings() { return this.state.playbackSettings }
 
 	get tuneDescription() {
-		return getTuneDescription(this.tuneName);
+		return getTuneDescription(this.state, this.tuneName);
 	}
 
 	get tune() {
