@@ -17,6 +17,8 @@ import {
 	getLocalStorageNumberItem,
 	removeLocalStorageItem, setLocalStorageItem, setLocalStorageItems
 } from "./localStorage";
+import { openDB } from 'idb'
+import { PlaybackSettings } from "../state/playbackSettings";
 
 class History {
 
@@ -89,7 +91,32 @@ class History {
 		return Math.floor(new Date().getTime() / 1000);
 	}
 
-	saveCurrentState(): void {
+	async saveDb() {
+		const db = await openDB("player", 2, {
+			upgrade(db){
+				db.createObjectStore("tunes")
+				db.createObjectStore("songs", { keyPath: 'name' })
+				db.createObjectStore("playbackSettings")
+			}
+		})
+		const tx = db.transaction(["tunes", "songs", "playbackSettings"], "readwrite")
+		const tuneStore = tx.objectStore("tunes")
+		for(let t in this.state.tunes)
+			await tuneStore.put(this.state.tunes[t], t)
+
+		const songStore = tx.objectStore("songs")
+		for(let s of this.state.songs)
+			await songStore.put(s)
+
+		const psStore = tx.objectStore("playbackSettings")
+		for(let  k in this.state.playbackSettings)
+			await psStore.put(this.state.playbackSettings[k as keyof PlaybackSettings], k)
+
+		await tx.done
+	}
+
+	async saveCurrentState() {
+		await this.saveDb()
 		const obj = compressState(this.state, null, null, true, true, true);
 		if(Object.keys(obj).length == 0 || (this._data.currentKey && getLocalStorageItem("bbState-"+this._data.currentKey) && isEqual(obj, stringToObject(getLocalStorageItem("bbState-"+this._data.currentKey) || ""))))
 			return;
@@ -175,7 +202,7 @@ export class StateProvider extends Vue {
 
 	@Watch("state", { deep: true })
 	handleStateChange() {
-		history.saveCurrentState();
+		return history.saveCurrentState();
 	}
 
 	created() {

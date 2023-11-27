@@ -1,10 +1,6 @@
 import {
     normalizePlaybackSettings,
-    PlaybackSettings,
-    PlaybackSettingsOptional,
-    updatePlaybackSettings,
-    Volumes
-} from "./playbackSettings";
+    PlaybackSettings} from "./playbackSettings";
 import {
     CompressedSong,
     CompressedSongs,
@@ -31,10 +27,9 @@ import {
     compressPattern,
     Pattern,
     patternFromCompressed,
-    PatternOptional, updatePattern,
-    updateStroke
-} from "./pattern";
-import config, { Instrument } from "../config";
+    PatternOptional
+    } from "./pattern";
+import config from "../config";
 import Vue from "vue";
 
 export type State = {
