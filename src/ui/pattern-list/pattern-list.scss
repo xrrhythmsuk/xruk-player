@@ -3,7 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	padding: 1.2em;
+	padding: 0 1.2em;
 
 	* {
 		color: white;
@@ -28,7 +28,7 @@
 
 	.open { 
 		background-color: rgba(255,255,255,0.1);
-		padding: .4em 1.2em;
+		padding: 0 1.2em;
 		margin-bottom:2px;
 	}
 	.open .caret {

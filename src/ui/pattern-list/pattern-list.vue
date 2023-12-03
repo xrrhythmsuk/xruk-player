@@ -14,7 +14,7 @@
 
 	<h2>Tunes</h2>
 	<div v-for="{title, tunes} in tuneCategories" :key="title">
-		<h3>{{title}}</h3>
+		<h3 v-if="title">{{title}}</h3>
 		<div v-for="tune in tunes" :key="tune.tuneName"  class="bb-pattern-list-tunes" :class="{open:isOpened[tune.tuneName]}">
 
 			<a class="d-flex tune" href="javascript:void(0)" @click="toggleTune(tune.tuneName)">
