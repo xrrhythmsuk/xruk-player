@@ -7,8 +7,6 @@ import $ from "jquery";
 import config from "../../config";
 import { InjectReactive, Prop, Watch } from "vue-property-decorator";
 import { State } from "../../state/state";
-import { PlaybackSettings } from "../../state/playbackSettings";
-import { clone } from "../../utils";
 import PlaybackSettingsComponent from "../playback-settings/playback-settings";
 import PatternPlaceholder, { PatternPlaceholderItem } from "../pattern-placeholder/pattern-placeholder";
 import ExampleSongPlayer from "../example-song-player/example-song-player";
@@ -16,9 +14,16 @@ import InstrumentButtons from "../instrument/instrument-buttons";
 
 function getTuneDescription(state: State, tuneName: string): string | null {
 	// Use HTML from default tunes to avoid script injection through bbHistory
-	let el = $("<div/>").html(state.tunes[tuneName].description || "");
-	el.find("a").attr("target", "_blank");
-	return el.html();
+	const defaultTune = defaultTunes[tuneName],
+		customTune = state.tunes[tuneName]
+
+		if(defaultTune){
+			let el = $("<div/>").html(defaultTune.description || "")
+			el.find("a").attr("target", "_blank");
+			return el.html()
+		}
+
+		return customTune.description || null
 }
 
 @WithRender
@@ -40,6 +45,8 @@ export default class TuneInfo extends Vue {
 	get tune() {
 		return this.tuneName && this.state.tunes[this.tuneName];
 	}
+
+	get isCustom() { return !defaultTunes[this.tuneName] }
 
 	@Watch("tuneName", { immediate: true })
 	onTuneNameChange(tuneName: string, previousTuneName: string) {
