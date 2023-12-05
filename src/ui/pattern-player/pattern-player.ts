@@ -40,6 +40,9 @@ export default class PatternPlayer extends Vue {
 	@Prop({ type: String, required: true }) readonly patternName!: string;
 	@Prop({ type: Boolean, default: false }) readonly readonly!: boolean;
 
+	showMnemonics = false
+	get mnemonicsAvailable() { return Object.keys(this.pattern.mnemonics || {}).length > 0 }
+
 	playerRef: BeatboxReference = null as any;
 	get playbackSettings() { return this.state.playbackSettings }
 	currentStrokeDropdown: StrokeDropdownInfo | null = null;
@@ -337,6 +340,29 @@ export default class PatternPlayer extends Vue {
 
 	openStrokeDropdown(strokeDropdown: StrokeDropdownInfo) {
 		this.currentStrokeDropdown = strokeDropdown;
+	}
+
+	*mnemonicCells(instrumentKey: Instrument) {
+		const length = this.pattern.length*this.pattern.time + this.pattern.upbeat
+		const words = this.pattern.mnemonics?.[instrumentKey] || []
+		let span = 1, text = words[0]
+		for(let i = 1; i <= length; i++)
+		{
+			const spanMax = Math.ceil((text || ' ').length / 2)
+			if(words[i] || span == spanMax) {
+				yield { span, text, class: this.getStrokeClass(i - span, instrumentKey) }
+				span = 0
+				text = words[i]
+			}
+			span++
+		}	
+		yield { span, text, class: this.getStrokeClass(length - span, instrumentKey) }
+	}
+
+	countSpan(words : string[], index: number){
+		let i = index + 1
+		while(i < words.length && words[i] == '') i++
+		return Math.min(i - index, (~~(words[index]||'').length/2));
 	}
 
 	share() { 

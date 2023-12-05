@@ -57,7 +57,12 @@ export default {
             upbeat: 2,
             re: "X X     X X X X X   X X X X   X   X X X X X   X                   ",
             ta: "@re",
-            ag: "@re"
+            ag: "@re",
+            mnemonics: { 
+                re: "Oh where has lit-tle cat gone, the lit-tle cat gone, where has lit-tle cat gone?",
+                ta: "Oh where has lit-tle cat gone, the lit-tle cat gone, where has lit-tle cat gone?",
+                ag: "Oh where has lit-tle cat gone, the lit-tle cat gone, where has lit-tle cat gone?",
+            }
         },
         'Little Cat (Alt Repi)': {
             loop: true,

@@ -15,6 +15,12 @@ const rawTunes : { [tuneName: string]: RawTune }  = Object.fromEntries(
 
 const defaultTunes: { [tuneName: string]: Tune } = {};
 
+function uncompressMnemonics(part: string[], source: string){
+	const words = source.split(/[\s\-]/)
+	let i = 0;
+	return part.map(p => p != ' ' ? words[i++] : '')
+}
+
 for (const i in rawTunes) {
 	const tune = rawTunes[i];
 	const newTune = clone(tune) as any as Tune;
@@ -37,6 +43,13 @@ for (const i in rawTunes) {
 
 			if (k == "ag")
 				newPattern[k] = newPattern[k].map(function (it) { return it == "X" ? "o" : it; });
+		}
+
+		if(pattern.mnemonics){
+			newPattern.mnemonics = {}
+			for (const k in pattern.mnemonics) {
+				newPattern.mnemonics[k as Instrument] = uncompressMnemonics(newPattern[k as Instrument], pattern.mnemonics[k as Instrument])
+			}
 		}
 
 		newPattern.length = Math.ceil(newPattern.length / (newPattern.time || 4));

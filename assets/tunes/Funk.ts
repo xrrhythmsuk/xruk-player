@@ -12,7 +12,15 @@ export default {
             sn: '....X.......X.......X.......X...',
             ta: '@ms',
             ag: 'o  a  o   a a a o  a  o   a a a ',
-            sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.'
+            sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.',
+            mnemonics: {
+                ls: 'I like po-ta-toes I like them mashed',
+                ms: "Oh. Do you? Yes. I do",
+                hs: "Oh. Do you? Yes. I do",
+                re: "Lots and lots and lots and lots and lots and lots and lots, e-nough for din-ner",
+               ag: 'I like hot po-ta-to I like hot po-ta-to',
+               ta: "Oh. Do you? Yes. I do",
+            }
         },
        "Alt Repi": {
             loop: true,

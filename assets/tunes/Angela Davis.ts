@@ -24,7 +24,10 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            sh: '@ls'
+            sh: '@ls',
+            mnemonics: { 
+                ls: "The nuts stay in the ground all win-ter"
+            }
         },
         'Break 2': {
             ls: 'X             X X             X X              XX X X X X X X X ',
@@ -34,7 +37,11 @@ export default {
             sn: '@re',
             ta: '@re',
             ag: '@re',
-            sh: '@re'
+            sh: '@re',
+            mnemonics: { 
+                ls: "Yes. They do. They do. The nuts stay in the ground all win-ter",
+                re: "Squir-rels hide their nuts in the ground Squir-rels hide their nuts in the ground Squir-rels hide their nuts in the ground The nuts stay in the ground all win-ter"
+            }
         },
         'Break 3': {
             loop: true,
@@ -45,7 +52,10 @@ export default {
             sn: '....X.......X.......X.......X.......X.......X.......X.......X.......X.......X...',
             ta: '@ls',
             ag: '@ls',
-            sh: '@ls'
+            sh: '@ls',
+            mnemonics: { 
+                ls: "Hey! I'm a squir-rel I just climb trees. Hey I'm a squir-rel. Pea-nuts please. The nuts stay in the ground all win-ter"
+            }
         }
     },
     exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Break 3", "Break 3", "Tune", "Tune", "Tune", "Tune"]
