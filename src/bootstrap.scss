@@ -31,7 +31,7 @@ body {
 	--heading-font: Fucxed, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-h1,h2,h3,h4,h5, button, .heading-type {
+h1,h2,h3,h4,h5, button.btn, .heading-type {
 	font-family: var(--heading-font);
 	text-transform:uppercase;
 }

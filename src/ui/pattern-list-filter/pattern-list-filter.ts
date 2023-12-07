@@ -30,7 +30,7 @@ export function filterPatternList(state: State, params?: Filter | null) {
 
 export function getTunesByCategory(state: State, filter?: Filter) { 
 	const categories : [string, Category][] =
-		[["", "breaks"], ["Core tunes", "core"], ["Common tunes", "common"], ["New and proposed", "new"], ["My tunes", "custom"]]
+		[["Breaks", "breaks"], ["Core tunes", "core"], ["Common tunes", "common"], ["New and proposed", "new"], ["My tunes", "custom"]]
 	return categories
 		.map(([title, cat]) => ({
 			title,
