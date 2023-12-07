@@ -3,7 +3,7 @@ import "./song-player.scss";
 import Vue from "vue";
 import Component from "vue-class-component";
 import WithRender from "./song-player.vue";
-import { InjectReactive, Watch } from "vue-property-decorator";
+import { InjectReactive, Prop, Watch } from "vue-property-decorator";
 import { getPatternFromState, PatternReference, State, selectSong, createSong, getSongName, removeSong } from "../../state/state";
 import { BeatboxReference, createBeatbox, getPlayerById, songToBeatbox, stopAllPlayers } from "../../services/player";
 import { scrollToElement } from "../../services/utils";
@@ -55,6 +55,8 @@ type DragOver = "trash" | { instr: Instrument | null, idx: number };
 export default class SongPlayer extends Vue {
 
 	@InjectReactive() readonly state!: State;
+	@Prop() readonly songName?: string;
+	@Prop() readonly newSong = false;
 
 	shareDialogId = `bb-share-dialog-${id()}`;
 	importDialogId = `bb-import-dialog-${id()}`;
@@ -268,11 +270,12 @@ export default class SongPlayer extends Vue {
 		}
 	}
 
-	toggleInstrument(instrumentKey: Instrument, idx: number, tuneAndPattern: PatternReference) {
+	toggleInstrument(event: Event, instrumentKey: Instrument, idx: number, tuneAndPattern: PatternReference) {
 		if(isEqual(this.song[idx][instrumentKey], tuneAndPattern))
 			deleteSongPart(this.song, idx, instrumentKey);
 		else
 			setSongPart(this.song, idx, instrumentKey, tuneAndPattern);
+			console.log(event)
 	}
 
 	getPreviewPlaybackSettings(instrumentKey: Instrument, idx: number) {
@@ -338,13 +341,15 @@ export default class SongPlayer extends Vue {
 	}
 
 	handleDrop(event: DragEvent) {
+		debugger
 		const data = getDragData(event);
-		if(data && data.type == DragType.PLACEHOLDER && this.dragOver instanceof Object) {
+		if(data && data.type == DragType.PLACEHOLDER && this.dragOver) {
 			if(data.data && data.data.instr != null && data.data.idx != null) {
 				this.removePatternFromSong(data.data.instr, data.data.idx);
 			}
 
-			this.dropPattern(data.pattern, this.dragOver.instr, this.dragOver.idx);
+			if(this.dragOver instanceof Object)
+				this.dropPattern(data.pattern, this.dragOver.instr, this.dragOver.idx);
 			event.preventDefault();
 		} else if(data && data.type == DragType.PATTERN_RESIZE) {
 			this.resizePattern(data);
@@ -477,6 +482,12 @@ export default class SongPlayer extends Vue {
 		return getSongName(this.state, songIdx);
 	}
 
+	@Watch("songName")
+	watchSongName(name:string){
+		const i = this.state.songs.findIndex(x => x.name == name)
+		if(i>=0) this.selectSong(i)
+	}
+
 	selectSong(songIdx: number) {
 		if(this.state.songIdx == songIdx)
 			return;
@@ -486,6 +497,10 @@ export default class SongPlayer extends Vue {
 		selectSong(this.state, songIdx);
 	}
 
+	@Watch("newSong")
+	watchNewSong(newSong: boolean){
+		if(newSong) this.createSong()
+	}
 	createSong() {
 		this.stop();
 

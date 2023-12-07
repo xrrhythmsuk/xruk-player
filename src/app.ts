@@ -22,7 +22,8 @@ import {
 	faInfoCircle,
 	faFileImport,
 	faFileAudio,
-	faHandPointRight,
+	faGrip,
+	faListCheck,
 	faHeadphones,
 	faLink,
 	faMobileAlt,
@@ -40,7 +41,8 @@ import {
 	faStop,
 	faTrash,
 	faVolumeMute,
-	faWindowClose } from '@fortawesome/free-solid-svg-icons'
+	faWindowClose,
+} from '@fortawesome/free-solid-svg-icons'
 import router from "./services/router";
 import VueRouter from "vue-router";
 
@@ -68,7 +70,8 @@ library.add(faCaretDown,
 	faInfoCircle,
 	faFileImport,
 	faFileAudio,
-	faHandPointRight,
+	faGrip,
+	faListCheck,
 	faHeadphones,
 	faLink,
 	faMobileAlt,
@@ -87,6 +90,7 @@ library.add(faCaretDown,
 	faTrash,
 	faVolumeMute,
 	faWindowClose);
+	
 new Vue({
 	router,
 	el: "#loading",

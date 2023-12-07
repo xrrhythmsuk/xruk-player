@@ -1,19 +1,30 @@
 <div class="bb-pattern-list">
 	<PatternListFilter v-model="filter" />
 
-	<hr />
+	<h2>Songs</h2>
+	<div class="bb-pattern-list-songs d-flex flex-column">
+		<router-link :to="{name:'song', params: { songName: song.name }}" 
+			:key="song.name" v-for="song in state.songs">
+					{{song.name}}
+			</router-link>
+			<div class="general-actions">
+		<router-link :to="{name:'compose-new'}"><fa icon="plus"/> New song</router-link>
+	</div>
+	</div>
 
-	<div class="bb-pattern-list-tunes">
-		<b-card no-body v-for="tune in visibleTunes" :key="tune.tuneName">
-			<b-card-header>
-				<b-button block @click="toggleTune(tune.tuneName)" variant="link">
+	<h2>Tunes</h2>
+	<div v-for="{title, tunes} in tuneCategories" :key="title">
+		<h3 v-if="title">{{title}}</h3>
+		<div v-for="tune in tunes" :key="tune.tuneName"  class="bb-pattern-list-tunes" :class="{open:isOpened[tune.tuneName]}">
+
+			<a class="d-flex tune" href="javascript:void(0)" @click="toggleTune(tune.tuneName)">
+				<span class="flex-grow-1">
 					{{tune.displayName}}
-					<fa v-if="tune.isCustom" icon="star" title="User-created tune" v-b-tooltip/>
-					<fa icon="caret-down"/>
-				</b-button>
-			</b-card-header>
+				</span>
+				<fa icon="caret-down" class="caret"/>
+			</a>
+
 			<Collapse v-model="isOpened[tune.tuneName]" :id="tune.collapseId" :height="tune.height">
-				<b-card-body>
 					<PatternPlaceholder v-for="pattern in tune.patterns" :key="pattern.patternName" :tune-name="tune.tuneName" :pattern-name="pattern.patternName" :draggable="true">
 						<PatternPlaceholderItem><a href="javascript:" :title="`Copy${pattern.isCustom ? '/Move/Rename' : ''} break`" v-b-tooltip.hover @click="copyPattern(tune.tuneName, pattern.patternName)"><fa icon="copy"/></a></PatternPlaceholderItem>
 						<PatternPlaceholderItem v-if="pattern.isCustom"><a href="javascript:" title="Remove" v-b-tooltip.hover @click="removePatternFromTune(tune.tuneName, pattern.patternName)"><fa icon="trash"/></a></PatternPlaceholderItem>
@@ -26,9 +37,8 @@
 						<a v-if="tune.isCustom" href="javascript:" @click="shareTune(tune.tuneName)" title="Share tune" v-b-tooltip.hover><fa icon="share-from-square"/></a>
 						<a v-if="tune.isCustom" href="javascript:" @click="removeTune(tune.tuneName)" title="Remove tune" v-b-tooltip.hover><fa icon="trash"/></a>
 					</div>
-				</b-card-body>
 			</Collapse>
-		</b-card>
+		</div>
 	</div>
 
 	<div class="general-actions">
