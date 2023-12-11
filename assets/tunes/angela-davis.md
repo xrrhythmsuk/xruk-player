@@ -4,7 +4,9 @@
 
 **Name:** Angela Davis is an African American activist who experienced great oppression as a university professor due to her political views and involvement in the Black liberation, communist and radical feminist movements. She became a major figure of the prison abolition movement after being imprisoned for a murder that she did not commit. ([Wikipedia](https://en.wikipedia.org/wiki/Angela_Davis), see also the documentary “Free Angela & All Political Prisoners”)
 
-**Musical background:** Break 1 and the low surdo part sound like “Sex Machine” by James Brown.
+**Musical background:** Break 1 and the low surdo part sound like “Sex Machine” by James Brown.  
+
+RoR bands, who tend to have proper samba surdos, usually play the low surdo part with a whippy stick in one hand. As our bands tend to use converted drum kit drums,  clicking on the rim or the wooden body with your usual beaters sounds better.
 
 **Sign:** The sign represents prison bars, because Angela Davis is a major figure in prison abolition.
 
