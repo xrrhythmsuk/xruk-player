@@ -1,12 +1,12 @@
 This is one of our core tunes and often one of the first ones that new bands learn.
 
-**Sign:** move index and middle finger like rabbit ears (air quotes) and cover other fingers with other hand
+**Sign:** move index and middle finger like rabbit ears (air quotes) covering other fingers with other hand
 
 ## Background
 
 **Name:** Originally called Kalashnikov but changed to “Karla Shnikov” (ignoring how Slavic names work), an invented female revolutionary.
 
-**Musical background:** *(More info needed.)*
+**Musical background:** The Karla Break can resemble a machine gun. *(More info needed.)*
 
 **Sign:** One of the character Karla’s actions was liberating the biggest rabbit farm in Russia. The sign depicts rabbit ears, an improvement on miming shooting yourself in the head.
 
@@ -25,4 +25,4 @@ This is one of our core tunes and often one of the first ones that new bands lea
 
 * We play the **Karla Break** (which used to be Break 1 in RoR Karla, hence the name) and **Progressive Karla** for this song with the repis playing their main part solo at the end instead of the bar of silence
 * **Break 2** has rolls and a phrase between surdos and everyone else
-* **Break 2 Inverted** *(two fingers pointing down)* has the rolls, the call and response, the call and response again, and then the rolls again _\[uncommon nationally\]_
+* **Break 2 Inverted** *(two fingers pointing down)* has the rolls, the surdo-led phrase, the surdo-led phrase again, and then the rolls again _\[uncommon nationally\]_
