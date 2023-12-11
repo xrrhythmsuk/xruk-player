@@ -48,7 +48,7 @@ export default {
             ag: "@re",
             sh: "@re"
         },
-        'Tune (Whistle in Whistle Break)' {
+        'Tune (Whistle in Whistle Break)': {
             time: 12,
             ls: repeat(2, stretch(4, 12, '0   X   0   X X ')),
             ms: repeat(2, stretch(4, 12, 'X   0   X   0   ')),
