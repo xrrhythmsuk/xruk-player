@@ -37,8 +37,8 @@ export default {
             hs: '@ls',
             sh: 'X   .   .   .   X   .   .   .   '
         },
-        "Main Break 2": {
-            displayName: "Main (Surdos Break 2)",
+        "Tune Break 2": {
+            displayName: "Tune (Surdos Break 2)",
             loop: true,
             ls: 'XXXXXXXXX  X XXXX     XXX       ',
             ms: '@ls',
@@ -50,5 +50,5 @@ export default {
             sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.'
         }
     },
-    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Main Break 2", "Main Break 2", "Tune", "Tune", { tuneName: "More Breaks", patternName: "Wolf Break"}]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune Break 2", "Tune Break 2", "Tune", "Tune", { tuneName: "More Breaks", patternName: "Wolf Break"}]
 }
