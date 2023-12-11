@@ -29,7 +29,7 @@ There is also some criticism about the sign, since it ridicules the spiritual me
 
 ## Breaks
 
-* **Break 1**, a call and response with surdos
+* **Break 1** is between surdos and everyone else
 * **Breaks 2 and 3** are alternate surdo lines while everyone carries on (3 is the same rhythm as 1) _\[less common nationally\]_
 * The **Call break**, led by repis and with a long and a short version
 * **General breaks** that work well: Tam Line, Wolf Break
