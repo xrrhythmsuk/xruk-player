@@ -35,6 +35,14 @@ export default {
             ls: 'XXXXXXXXX  X XXXX     XXX       ',
             ms: '@ls',
             hs: '@ls',
+            sh: 'X   .   .   .   X   .   .   .   '
+        },
+        "Main Break 2": {
+            displayName: "Main (Surdos Break 2)",
+            loop: true,
+            ls: 'XXXXXXXXX  X XXXX     XXX       ',
+            ms: '@ls',
+            hs: '@ls',
             re: 'X XX  r X X X rrX XX  r  X XX rr',
             sn: 'f.X...X...X...X.f.X...X...X...X.',
             ta: 'X X     X X     XX XXX XX       ',
@@ -42,5 +50,5 @@ export default {
             sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.'
         }
     },
-    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Break 2", "Break 2", "Tune", "Tune", { tuneName: "More Breaks", patternName: "Wolf Break"}]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Main Break 2", "Main Break 2", "Tune", "Tune", { tuneName: "More Breaks", patternName: "Wolf Break"}]
 }
