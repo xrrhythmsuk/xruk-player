@@ -80,23 +80,23 @@ export default {
         },
         'Kickback 1': {
 			loop: true,
-			ls: 'X  X    X  X    X  X    X  X    ',
+			ls: 'X  X    X  X    ',
 			ms: '@ls',
 			hs: '@ls',
-			re: '      X       X       X       X ',
+			re: '      X       X ',
 			sn: '@re',
 			ta: '@re',
 			ag: '@re'
 		},
 		'Kickback 2': {
 			loop: true,
-			ls: 'X  X X  X  X X  X  X X  X  X X  ',
+			ls: 'X  X X  X  X X  ',
 			ms: '@ls',
 			hs: '@ls',
-			re: '  X   X   X   X   X   X   X   X ',
+			re: '  X   X   X   X ',
 			sn: '@re',
 			ta: '@re',
-			ag: 'oaoaoaoaoaoaoaoaoaoaoaoaoaoaoaoa'
+			ag: 'oaoaoaoaoaoaoaoa'
 		},
         'Zorro Break': {
             loop: true,
