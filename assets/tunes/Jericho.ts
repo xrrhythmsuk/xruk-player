@@ -22,7 +22,8 @@ export default {
                 ls: "Jo-shu-a Jo-shu-a Je-ri-cho's done for Je-ri-cho's done for Je-ri-cho's done for",
                 ms: "Trum-pets soun-ding Walls fa-lling Walls fa-lling Walls fa-lling",
                 re: "Je-richo's crum-bl-ing Je-richo's crum-bl-ing Je-richo's crum-bl-ing Je-richo's had it",
-                sn: "Those walls will Those walls will Those walls will Those walls will fall down",
+                sn:   ". . . Those . walls . . . will . . . . . Those . walls . . . will . . "
+                    + ". . . Those . walls . . . will . . . . . Those . walls . . will fall . down",
                 ta: "Walls are Fall-ing down Fall-ing down Fall-ing down",
                 ag: "Jo-shu-a laughed when the wall came down Wall came down Wall came down"
             }
