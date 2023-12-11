@@ -7,7 +7,7 @@
 
 **Musical background:** The Wolf Break actually predates this RoR tune, originally being a special break for Afoxé. *(More info needed.)*
 
-**Sign:** It’s... a big W for Wolf? *(More info needed.)*
+**Sign:** It’s a big W for Wolf. The RoR sign is apparently a big V. *(More info needed.)*
 
 **History:** From the [website of RoR Kraków](https://sambaka.wordpress.com/rytmy/) *(more info needed)*
 
