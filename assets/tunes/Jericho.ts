@@ -94,7 +94,7 @@ export default {
             ta: "@ls",
             ag: "@ls",
             mnemonics: {
-                ls: "Yep Yep Yep And the wall came tum-bl-ing down"
+                ls: "Yep Yep Yep And the wall came tum-bl-ing down",
                 re: "Jo-shu-a was figh-ting at Je-ri-cho Je-ri-cho Je-ri-cho Jo-shu-a was figh-ting at Je-ri-cho And the wall came tum-bl-ing down They've had it"
             }
         }
