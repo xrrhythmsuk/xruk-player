@@ -40,7 +40,7 @@ Four bars of clave going from quiet to loud. You can also do it falling to do lo
 
 ### Karlas
 
-**Karla Break** *Thumb and two fingers*
+**Karla Break** *Thumb and two fingers*  
 A bar of 16s quiet, then medium, then loud, then a hit just on beat 1
 
 **Progressive Karla** *Grab thumb of raised hand*  
