@@ -71,8 +71,6 @@ export default {
             sh: '                                X  X  X   X                     X  X  X   X                                                 XXXX'
         },
         'Clave Call': {
-                 0               16              32              48              64              80              96
-                '1   2   3   4   1   2   3   4   1   2   3   4   1   2   3   4   1   2   3   4   1   2   3   4   1   2   3   4   '
             ls: '          X X             X X             X X                   X  X  X   X X   X  X  X   X X   X  X  X   X X X ',
             ms: '@ls',
             hs: '@ls',
