@@ -13,7 +13,15 @@ export default {
             sn: '....X.......X...',
             ta: 'X   X  XXX  X   ',
             ag: '  o a   oa  a   ',
-            sh: '................'
+            sh: '................',
+            mnemonics: {
+                ls: "Did a squi-rrel ask you for nuts?",
+                ms: "I thought squi-rrels went for a-corns more",
+                hs: "We like pea-nuts",
+                re: "Pea-nuts for a squi-rrel",
+                ta: "Who gives a squi-rrel nuts?",
+                ag: "Oh my, squi-rrels fly?"
+            }
         },
         'Break 1': {
             upbeat: 1,
@@ -26,7 +34,7 @@ export default {
             ag: '@ls',
             sh: '@ls',
             mnemonics: { 
-                ls: "The nuts stay in the ground all win-ter"
+                ls: "So give a pea-nut to a squi-rrel"
             }
         },
         'Break 2': {
@@ -39,8 +47,8 @@ export default {
             ag: '@re',
             sh: '@re',
             mnemonics: { 
-                ls: "Yes. They do. They do. The nuts stay in the ground all win-ter",
-                re: "Squir-rels hide their nuts in the ground Squir-rels hide their nuts in the ground Squir-rels hide their nuts in the ground The nuts stay in the ground all win-ter"
+                ls: "Yes. They do. They do. So give a pea-nut to a squi-rrel",
+                re: "Squir-rels hide their nuts in the ground Squir-rels hide their nuts in the ground Squir-rels hide their nuts in the ground So give a pea-nut to a squi-rrel"
             }
         },
         'Break 3': {
@@ -54,7 +62,7 @@ export default {
             ag: '@ls',
             sh: '@ls',
             mnemonics: { 
-                ls: "Hey! I'm a squir-rel I just climb trees. Hey I'm a squir-rel. Pea-nuts please. The nuts stay in the ground all win-ter"
+                ls: "Hey! I'm a squir-rel I just climb trees. Hey I'm a squir-rel. Pea-nuts please. So give a pea-nut to a squi-rrel"
             }
         }
     },
