@@ -25,14 +25,14 @@ export default {
             ag: '@ls'
         },
         'Yala Break': {
-			ls: 'X X   X X   X   ',
-			ms: '@ls',
-			hs: '@ls',
-			re: '@ls',
-			sn: '@ls',
-			ta: '@ls',
-			ag: '@ls'
-		},
+            ls: 'X X   X X   X   ',
+            ms: '@ls',
+            hs: '@ls',
+            re: '@ls',
+            sn: '@ls',
+            ta: '@ls',
+            ag: '@ls'
+        },
         'Capped Karla': {
             loop: true,
             ls: 'XXXXXXXXXXXXXXXXX               ',
@@ -79,31 +79,31 @@ export default {
             volumeHack: { 0: .2, 4: .4, 8: .7, 12: 1 }
         },
         'Kickback 1': {
-			loop: true,
-			ls: 'X  X    X  X    ',
-			ms: '@ls',
-			hs: '@ls',
-			re: '      X       X ',
-			sn: '@re',
-			ta: '@re',
-			ag: '@re'
-		},
-		'Kickback 2': {
-			loop: true,
-			ls: 'X  X X  X  X X  ',
-			ms: '@ls',
-			hs: '@ls',
-			re: '  X   X   X   X ',
-			sn: '@re',
-			ta: '@re',
-			ag: 'oaoaoaoaoaoaoaoa'
-		},
+            loop: true,
+            ls: 'X  X    X  X    ',
+            ms: '@ls',
+            hs: '@ls',
+            re: '      X       X ',
+            sn: '@re',
+            ta: '@re',
+            ag: '@re'
+        },
+        'Kickback 2': {
+            loop: true,
+            ls: 'X  X X  X  X X  ',
+            ms: '@ls',
+            hs: '@ls',
+            re: '  X   X   X   X ',
+            sn: '@re',
+            ta: '@re',
+            ag: 'oaoaoaoaoaoaoaoa'
+        },
         'Zorro Break': {
             loop: true,
-			ls: 'X       X       X       X  X  X ',
-			ms: '@ls',
-			hs: '@ls'
-		},
+            ls: 'X       X       X       X  X  X ',
+            ms: '@ls',
+            hs: '@ls'
+        },
         'Bunny Ears': {
             ls: repeat(2, "                X X X X X  XX   ") + repeat(2, "        X X X   ") + "    X X     X X     XX XX X X   ",
             ms: "@ls",
