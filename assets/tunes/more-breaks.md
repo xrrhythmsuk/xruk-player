@@ -29,6 +29,7 @@ Whistler whistles the song’s tam part, everyone plays it once
 **Yala Break** *Gather fingers on one hand and shake wrist*  
 From the RoR tune Hafla
 
+
 ### Karlas
 **Capped Karla** *Flat palm over Karla Break sign*
 
@@ -42,7 +43,8 @@ From the RoR tune Hafla
 An alternate line for surdos that pairs with...
 
 **Little Cat** *Conga sign with air quotes in other hand*  
-An accompanying line usually used for backpack
+An accompanying line usually used for backpack  
+Repis can do this or their special part, which snares can incorporate into Capped Karla
 
 **Kickback 1** *One thumb over shoulder*  
 From the RoR tune Ragga. A great way to build up hype or do a heartbeat sound going into...
