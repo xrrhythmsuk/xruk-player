@@ -35,7 +35,7 @@ The original spiritual is based on a Bible story where the besieged city of Jeri
 ## Breaks
 
 * **Break 1** is a short one based on the end of the chorus “*... and the wall came tumbling down*”
-* **Break 2** is led by tams and agogôs
-* **Break 3** is led by surdos
+* **Break 2** is led by tams and agogôs *\[not played nationally\]*
+* **Break 3** is led by surdos *\[not played nationally\]*
 * The **Call break** works nicely as an intro
 * **General breaks** that work well: ones you’d use with Bhangra
