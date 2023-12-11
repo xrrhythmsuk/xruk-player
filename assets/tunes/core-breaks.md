@@ -24,7 +24,7 @@ Hit four beats
 Hit eight beats
 
 **Chaos Break** *Pulling your hair out*  
-Play noise until signed (Don’t wait for whistle in)
+Play noise (don’t wait for whistle in) until signed
 
 
 ### Other short
@@ -67,6 +67,6 @@ This is good as a transition between songs or an alternate line for one or two i
 
 ### Song breaks you can use generally
 
-**7 Break** from **Bhangra**
+[**7 Break**](/#/listen/Bhangra/7%20Break) from **Bhangra**
 
-**Whistle Break** from **Samba Reggae**
+[**Whistle Break**](/#/listen/Samba%20Reggae/Whistle%20Break) from **Samba Reggae**
