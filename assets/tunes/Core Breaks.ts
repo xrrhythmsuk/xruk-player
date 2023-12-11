@@ -71,7 +71,7 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            mnemonics: {  ls: "Shut the sys-tem down Shut the sys-tem down Shut the sys-tem down Shut the sys-tem down " },
+            mnemonics: {  ls: "Shut the sys-tem down Shut the sys-tem down Shut the sys-tem down Shut the sys-tem down" },
             volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 }
         },
         'Karla Break': {
@@ -139,5 +139,6 @@ export default {
                 ls: "Hey, Knock on the door I want you to let me in",
                 re: "Hey, Knock on the door I want you to let me in There's cu-stard in my un-der-pants"
             }
+    	}
     }
 }
