@@ -16,6 +16,17 @@ export default {
             ag: 'o a a oo a aa o ',
             sh: '................'
         },
+        'Starter Snare': {
+            loop: true,
+            sn: '..XX..XX..XX..XX',
+            sh: 'X   .   .   .   '
+        },
+        'Starter Agogo': {
+            displayName: 'Starter Agogô',
+            loop: true,
+            ag: 'o  a  o   a a   ',
+            sh: 'X   .   .   .   '
+        },
         'Break 1': {
             ls: '                X X XX XX                       X  X  X X                                  XX                              XX                              XX               XXXX',
             ms: '@ls',
@@ -79,7 +90,7 @@ export default {
             ta: '          X X             X X             X X                   X  X  X   X X   X  X  X   X X   X  X  X   X X   ',
             ag: '@ta',
             sh: '@ta',
-			volumeHack: {  64: .4, 80: .7, 96: 1  }
+            volumeHack: {  64: .4, 80: .7, 96: 1  }
         },
         'SOS Break': {
             ls: 'X       X       X       X       X       X       X       X     X ',
