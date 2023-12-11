@@ -37,7 +37,7 @@ export default {
             mnemonics: {
                 ls: "We want some-thing to eat We want some grub Yum yum Yum yum Yum yum Sam-ba re-ggae",
                 re: repeat(2, "What do you want, tell me what do you want? ") + "Yum yum Yum yum Yum yum Sam-ba re-ggae",
-                sn: "We want some-thing to eat We want some grub"
+                sn: "We want some-thing to eat We want some grub "
                     + repeat(3, repeat(3, "Sau-sa-ges sau-sa-ges I've got ") + "in the pan ") + "Sam-ba re-ggae"
             }
         },
@@ -99,7 +99,7 @@ export default {
                 ls: repeat(3, "Act now ") + ".",
                 ms: repeat(3, "Act now "),
                 re: repeat(3, "There's no time to waste so "),
-                sn: repeat(3, "Act now ") + repeat(3, "Shut . . the . . sy- . . . stem . down . . . ")
+                sn: repeat(3, "Act now ") + repeat(3, "Shut . . the . . sy- . . . stem . down . . . "),
                 ta: repeat(3, "Act now ") + repeat(4, "Shut the sy- stem down ")
             }
         },
