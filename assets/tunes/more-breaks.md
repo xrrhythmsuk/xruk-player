@@ -26,6 +26,8 @@ Hit beat 1 when counted in. When told, build to first 2 beats, 3, 4s, 8s, 16s...
 **Tam Line:** *One hand OK sign*  
 Whistler whistles the song’s tam part, everyone plays it once
 
+**Yala Break** *Gather fingers on one hand and shake wrist*  
+From the RoR tune Hafla
 
 ### Karlas
 **Capped Karla** *Flat palm over Karla Break sign*
@@ -37,10 +39,20 @@ Whistler whistles the song’s tam part, everyone plays it once
 
 ### Looping
 **Conga** *C with whole hand*   
-An alternate line for surdos
+An alternate line for surdos that pairs with...
 
 **Little Cat** *Conga sign with air quotes in other hand*  
 An accompanying line usually used for backpack
+
+**Kickback 1** *One thumb over shoulder*  
+From the RoR tune Ragga. A great way to build up hype or do a heartbeat sound going into...
+
+**Kickback 2** *Both thumbs over shoulders*  
+The high-energy payoff. Instead of constant 16s, agogôs can play little bursts of chaos at random.  
+Best to use a break to get back into your main tune.
+
+**Zorro Break** *Draw a ‘Z’ in the air*  
+Also from Ragga. Can be an alternate line for surdos or given to everyone to play once to get out of the Kickbacks.
 
 
 ### Longer
@@ -55,4 +67,5 @@ A great way to build up the hype!
 
 ### Song breaks you can use generally
 
-**Butterfly Break** from **Bhangra**
+[**Butterfly Break**](/#/listen/Bhangra/Butterfly%20Break) from **Bhangra**  
+[**Clave Call**](/#/listen/Samba%20Reggae/Clave%20Call) from **Samba Reggae**
