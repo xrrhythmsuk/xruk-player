@@ -14,7 +14,15 @@ export default {
             sn: 'X...X..XX..X....X...X..XX..X....',
             ta: 'X X X X XX XX X X X X X XX XX X ',
             ag: 'a a o o aa o oo a a o o aa o oo ',
-            sh: '................................'
+            sh: '................................',
+            mnemonics: {
+                ls: "I'm so sick of all this stu-bble",
+                ms: "If you want a shave then grab a to-wel",
+                re: "Sha-ving cream please, Sha-ving cream please, Sha-ving cream please, Cream please cream please",
+                sn: "Don't scratch my face, please",
+                ta: "Spent all e-vening sha-ving my arm-pits",
+                ag: "Spent all e-vening sha-ving both my legs"
+            }
         },
         "Break 1": {
             ls: 'X       X       X       X XXXXX ',
@@ -24,7 +32,11 @@ export default {
             sn: '@re',
             ta: '@re',
             ag: '@re',
-            sh: '@re'
+            sh: '@re',
+            mnemonics: {
+                ls: "Hey Hey Hey Looks like you've had a shave",
+                re: "You've had a shave You've had a shave You've had a shave Looks like you've had a shave"
+            }
         },
         "Tam Line": {
             ls: 'X X X X XX XX X ',
@@ -34,7 +46,8 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            sh: '@ls'
+            sh: '@ls',
+            mnemonics: {  ls: "Spent all e-vening sha-ving my arm-pits" }
         },
         "Short call": {
             displayName: 'Call Break (short)',
@@ -45,7 +58,11 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            sh: '@ls'
+            sh: '@ls',
+            mnemonics: {
+                ls: "We had some cream We had some cream We had some cream Spent all e-vening sha-ving my arm-pits",
+                re: "Sha-ving cream? Sha-ving cream? Sha-ving cream? Spent all e-vening sha-ving my arm-pits"
+            }
         },
         "Long call": {
             displayName: 'Call Break (long, one example)',
@@ -58,7 +75,14 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            sh: '@ls'
+            sh: '@ls',
+            mnemonics: {
+                ls: repeat(6, "We had some cream ") + "Spent all e-vening sha-ving my arm-pits",
+                re: repeat(2, repeat(2, "Sha-ving cream please, Sha-ving cream please, Sha-ving cream please, Cream please cream please ")
+                        + "Sha-ving cream? ") + "Sha-ving cream? "
+                + repeat(2, "Sha-ving cream please, Sha-ving cream please, Sha-ving cream please, Cream please cream please)
+                        + repeat(3, "Sha-ving cream? ")+ "Spent all e-vening sha-ving my arm-pits"
+            }
         },
         "Break 2": {
             ls: '      X       X       X   XXXXX ',
@@ -68,7 +92,8 @@ export default {
             sn: 'X...X..XX..X....X...X..XX..X....',
             ta: 'X X X X XX XX X X X X X XX XX X ',
             ag: 'a a o o aa o oo a a o o aa o oo ',
-            sh: '................................'
+            sh: '................................',
+            mnemonics: {  ls: "Hey Hey Hey Have you had a shave?" }
         },
         "Break 3": {
             ls: '   XXXX    XXXX    XXXX X XXXXX ',
@@ -78,7 +103,8 @@ export default {
             sn: 'X...X..XX..X....X...X..XX..X....',
             ta: 'X X X X XX XX X X X X X XX XX X ',
             ag: 'a a o o aa o oo a a o o aa o oo ',
-            sh: '................................'
+            sh: '................................',
+            mnemonics: {  ls: "You've had a shave You've had a shave You've had a shave Looks like you've had a shave" }
         }
     },
     exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Tam Line", "Tune", "Tune", "Long call", "Tune", "Tune", "Break 2", "Tune", "Tune", "Break 3"]
