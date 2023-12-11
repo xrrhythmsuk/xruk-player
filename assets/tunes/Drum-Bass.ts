@@ -18,7 +18,8 @@ export default {
                 ls: "Drum, drum and bass, bass Up in your face, face",
                 ms: "Dance, yeah I love it, dance Dance, yeah I love it, dance Dance, yeah I love it, dance Dance, yeah I love it, dance",
                 re: "This M-C can rock the mic, Mic drop This M-C can rock the mic, Mic drop",
-                sn: "Drum and bass Drum and stop Drum and bass This goes out to all the D-Js",
+                sn: ". . . . Drum . . and . . . . bass . . . . . . . Drum . . and . . . . stop "
+                    + ". . . . Drum . . and . . . . bass . . . This . goes . out . to . all . the . D . Js .",
                 ta: "The D-J plays bang-in' tunes The D-J plays bang-in' tunes",
                 ag: "Drum and bass is so cool Drum and bass is so cool"
             }
