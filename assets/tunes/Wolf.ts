@@ -12,12 +12,22 @@ export default {
             sn: 'f.X...X...X...X.f.X...X...X...X.',
             ta: 'X X     X X     XX XXX XX       ',
             ag: 'o ooo a   a   a o ooo a   a   a',
-            sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.'
+            sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.',
+            mnemonics: {
+                ls: "Here comes the wolf, ve-ry sca-ry wolf Here comes the Big Bad Wolf",
+                ms: "And huff And puff Wolf will blow your li-ttle pi-ggy house down",
+                re: "No-one told the Big Bad Wolf Li-ttle Red Ri-ding Hood was like as hard as nails",
+                sn: "Grr . the . . . Big . . . Bad . . . Wolf . Grr . the . . . Big . . . Bad . . . Wolf .",
+                ta: "Big Bad Wolf is hu-ffing and pu-ffing real tough",
+                ag: "Pi-ggies aren't scared of the wolf Pi-ggies aren't scared of the wolf"
+            }
         },
        "Alt Tam": {
-            loop: true,
-            ta: 'X X     X X     XX XXX XX       X XX XX X X X X XX XXX XX       ',
-            sh: 'X   .   .   .   X   .   .   .   X   .   .   .   X   .   .   .   '
+           loop: true,
+           ta: 'X X     X X     XX XXX XX       X XX XX X X X X XX XXX XX       ',
+           sh: 'X   .   .   .   X   .   .   .   X   .   .   .   X   .   .   .   ',
+           mnemonics: {  ta: "Big Bad Wolf is hu-ffing and pu-ffing real tough "
+               + "Dressed up like your nan, come in close so Wol-fie can go-bble you up" }
         },
         "Break 1": {
             upbeat: 1,
@@ -28,7 +38,11 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            ot: '           E D   '
+            ot: '           E D   ',
+            mnemonics: {
+                ls: "No we're not scared at all",
+                ot: "Ah Woo!"
+            }
         },
         "Break 2": {
             loop: true,
@@ -39,7 +53,9 @@ export default {
             sn: 'f.X...X...X...X.f.X...X...X...X.',
             ta: 'X X     X X     XX XXX XX       ',
             ag: 'o ooo a   a   a o ooo a   a   a',
-            sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.'
+            sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.',
+            mnemonics: { ls: "Li-ttle pi-ggies got rid of the wolf, "
+                + "So did Li-ttle Red With an axe" }
         }
     },
     exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Break 2", "Break 2", "Tune", "Tune", { tuneName: "More Breaks", patternName: "Wolf Break"}]
