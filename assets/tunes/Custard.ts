@@ -19,7 +19,7 @@ export default {
                 ms: "Cu-stard par-ty",
                 hs: "Cu-stard thanks, Right in my pants",
                 re: "Can I Get a Bit of Cu-stard?",
-                sn: "Stop wea-ring cu-stard? Nah",
+                sn: "Stop . wea . ring . . cu . stard? . . Nah . . .",
                 ta: "I've got cu-stard in my un-der-pants",
                 ag: "I've got cu-stard in my un-der-pants"
             }
@@ -64,7 +64,7 @@ export default {
             sh: '@ls',
             mnemonics: {
                 ls: repeat(4, "In my pants "),
-                sn: repeat(3, "In my pants ") + "Stop wea-ring cu-stard? Ve-ry fu-nny"
+                sn: repeat(3, "In my pants ") + "Stop . wea . ring . . cu . stard? . . Ve-ry fu-nny"
             }
         },
         'Break 5': {
@@ -78,7 +78,7 @@ export default {
             sh: '@ls',
             mnemonics: {
                 ls: "No way My pants Feel great When full Of Cu-stard",
-                sn: "Stop wea-ring cu-stard? Nah Wea-ring cu-stard's great My pants Feel great Full Of Cu-stard"
+                sn: "Stop . wea . ring . . cu . stard? . . Nah Wea . ring . . cu . stard's . . great My pants Feel great Full Of Cu-stard"
             }
         },
         'Break 5 (Hardcore)': {
