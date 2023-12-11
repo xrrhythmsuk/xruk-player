@@ -1,10 +1,10 @@
-These are the rest of our general breaks.
+These are the rest of our general breaks
 
-Once your band has the core tunes and breaks down, learning more general breaks is a great next step.
+Once your band has the core tunes and breaks down, learning more general breaks is a great next step
 
 They don’t all have audio here, but they do all get used and are worth knowing, so dig in!
 
-Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants**.
+Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants**
 
 ### Silences
 
@@ -48,11 +48,11 @@ An accompanying line usually used for backpack
 From the RoR tune Ragga. A great way to build up hype or do a heartbeat sound going into...
 
 **Kickback 2** *Both thumbs over shoulders*  
-The high-energy payoff. Instead of constant 16s, agogôs can play little bursts of chaos at random.  
-Best to use a break to get back into your main tune.
+The high-energy payoff. Instead of constant 16s, agogôs can play little bursts of chaos at random  
+Best to use a break to get back into your main tune
 
 **Zorro Break** *Draw a ‘Z’ in the air*  
-Also from Ragga. Can be an alternate line for surdos or given to everyone to play once to get out of the Kickbacks.
+Also from Ragga. Can be an alternate line for surdos or given to everyone to play once to get out of the Kickbacks
 
 
 ### Longer
