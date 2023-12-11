@@ -27,14 +27,16 @@ export default {
             sh: '@re'
         },
         "Tam Line": {
-            ls: 'X X X X XX XX X ',
+            upbeat: 16,
+            ls: '                X X X X XX XX X ',
             ms: '@ls',
             hs: '@ls',
             re: '@ls',
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            sh: '@ls'
+            sh: '@ls',
+            ot: 'w w w w ww ww w                 '
         },
         "Short call": {
             displayName: 'Call Break (short)',
