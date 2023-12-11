@@ -58,7 +58,7 @@ export default {
             ta: repeat(2, stretch(4, 12, 'X  X  X   X X   ')),
             ag: repeat(2, stretch(4, 12, 'o a a oo a aa o ')),
             sh: repeat(2, stretch(4, 12, '................')),
-            ot: repeat(2, stretch(6, 12, "w    ww    ww w  ww     ")
+            ot: repeat(2, stretch(6, 12, "w    ww    ww w  ww     "))
         },
         'Break 3': {
             ls: '                X  XX X XX XX X                 X  XX X XX XX X                 X  XX X X       X  XX X X       X  X  X         ',
