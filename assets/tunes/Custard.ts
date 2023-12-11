@@ -13,7 +13,16 @@ export default {
             sn: 'X.X.X..X.X..X...',
             ta: 'X X XX X X X XX ',
             ag: 'a a oo a a o oo ',
-            sh: '................'
+            sh: '................',
+            mnemonics: {
+                ls: "I quite like cu-stard",
+                ms: "Cu-stard par-ty",
+                hs: "Cu-stard thanks, Right in my pants",
+                re: "Can I Get a Bit of Cu-stard?",
+                sn: "Stop wea-ring cu-stard? Nah",
+                ta: "I've got cu-stard in my un-der-pants",
+                ag: "I've got cu-stard in my un-der-pants"
+            }
         },
         'Break 1': {
             ls: repeat(3, 'X X XX          ') + 'X X XX X X X XX ',
@@ -23,7 +32,11 @@ export default {
             sn: '@re',
             ta: '@re',
             ag: '@re',
-            sh: '@re'
+            sh: '@re',
+            mnemonics: {
+                ls: repeat(3, "I've got cu-stard ") + "I've got cu-stard in my un-der-pants",
+                re: repeat(3, "In my un-der-pants ") + "I've got cu-stard in my un-der-pants"
+            }
         },
         'Break 2': {
             ls: repeat(3, '       X X X XX ') + 'X X XX X X X XX ',
@@ -33,7 +46,11 @@ export default {
             sn: '@re',
             ta: repeat(3, 'X X XX          ') + 'X X XX X X X XX ',
             ag: '@ls',
-            sh: '@ls'
+            sh: '@ls',
+            mnemonics: {
+                ls: repeat(3, "In my un-der-pants ") + "I've got cu-stard in my un-der-pants",
+                ra: repeat(3, "I've got cu-stard ") + "I've got cu-stard in my un-der-pants"
+            }
         },
         'Break 3 Agogo': {
             displayName: 'Break 3 (Agogô continues)',
@@ -44,7 +61,11 @@ export default {
             sn: repeat(3, 'X             X X               ') + 'X             X X.X.X..X.X..XXXX',
             ta: '@ls',
             ag: repeat(8, 'a a oo a a o oo '),
-            sh: '@ls'
+            sh: '@ls',
+            mnemonics: {
+                ls: repeat(4, "In my pants "),
+                sn: repeat(3, "In my pants ") + "Stop wea-ring cu-stard? Ve-ry fu-nny"
+            }
         },
         'Break 5': {
             ls: '              X X             X X     X X     X X   X   X   X   ',
@@ -54,7 +75,11 @@ export default {
             sn: 'X.X.X..X.X..X     X.X..X.X..X     X X     X X     X   X   X   X ',
             ta: '@ls',
             ag: '@ls',
-            sh: '@ls'
+            sh: '@ls',
+            mnemonics: {
+                ls: "No way My pants Feel great When full Of Cu-stard",
+                sn: "Stop wea-ring cu-stard? Nah Wea-ring cu-stard's great My pants Feel great Full Of Cu-stard"
+            }
         },
         'Break 5 (Hardcore)': {
             ls: repeat(4, '              X X             X X     X X     X X   X   X   X   '),
@@ -79,7 +104,8 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            sh: '@ls'
+            sh: '@ls',
+            mnemonics: {  ls: "I've got cu-stard in my un-der-pants"}
         }
 
     },
