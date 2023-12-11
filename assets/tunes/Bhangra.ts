@@ -19,7 +19,7 @@ export default {
             mnemonics: {
                 ls: "Swing your drum Swing your drum Swing your drum side to side",
                 re: "Ban-ger ban-ger ban-ger ban-ger Ban-ger ban-ger ban-ger ban-ger Ban-ger ban-ger ban-ger ban-ger Danc-ing a lot, like it or not",
-                sn: "1 2 3 4 1 2 3 4 1 2 3 4 Dan-cing a lot, like it or not",
+                sn: "1 . . 2 . . 3 . . 4 . . 1 . . 2 . . 3 . . 4 . . 1 . . 2 . . 3 . . 4 . . Dan-cing a lot, like it or not",
                 ta: "Ban-ger ban-ger ban-ger ban-ger Ban-ger ban-ger ban-ger ban-ger Ban-ger ban-ger ban-ger ban-ger Ban-ger ban-ger ban-ger ban-ger",
                 ag: "Dan-cing a lot, like it or not Dan-cing a lot, like it or not"
             }
