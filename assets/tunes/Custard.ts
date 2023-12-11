@@ -72,14 +72,16 @@ export default {
             }
         },
         'Tam Line': {
-            ls: 'X X XX X X X XX ',
+            upbeat: 16,
+            ls: '                X X XX X X X XX ',
             ms: '@ls',
             hs: '@ls',
             re: '@ls',
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            sh: '@ls'
+            sh: '@ls',
+            ot: 'w w ww w w w ww                 '
         }
 
     },
