@@ -66,7 +66,7 @@ export default {
             ag: "@ls",
             mnemonics: {
                 ls: repeat(3, "Sto-len, you say? That's ba-na-nas ") + "That's ba-na-nas",
-                sn: repeat(3, "Sto . . len . you say . . That's . ba na . nas . ") + "That's ba-na-nas"
+                sn: repeat(3, "Sto . . len . you say? . . That's . ba na . nas . ") + "That's ba-na-nas"
             }
         },
         "Progressive Karla (Stolen)": {
