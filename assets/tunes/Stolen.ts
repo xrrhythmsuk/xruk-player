@@ -71,8 +71,21 @@ export default {
             sn: "@re",
             ta: "@re",
             ag: "@re"
+        },
+        "Tune Whistle Break": {
+            displayName: "Tune (Surdos Whistle Break)",
+            loop: true,
+            ls: "X  XX  XXX XX",
+            ms: "@ls",
+            hs: "@ls",
+            re: "..X...X...X..XX.",
+            sn: "..X...X...X...X.",
+            ta: "X   X   X  XX X",
+            ag: "          oa ao ",
+            sh: "@sn"
         }
     },
     exampleSong: [{ tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", { tuneName: "Core Breaks", patternName: "8 Hits" }, "Tune", "Tune", "Tune", "Tune", "Break 1",
-                  "Tune", "Tune", "Tune", "Tune", "2/4 Break", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Progressive Karla (Stolen)"]
+                  "Tune", "Tune", "Tune", "Tune", "2/4 Break", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Tune Whistle Break", "Tune Whistle Break",
+                  "Tune Whistle Break", "Tune Whistle Break", "Tune", "Tune", "Tune", "Tune", "Progressive Karla (Stolen)"]
 }
