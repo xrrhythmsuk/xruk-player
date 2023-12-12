@@ -11,7 +11,7 @@
 	:settings="playbackSettings"
 />
 
-<p><em>Tap on the pattern names below to see the notes.</em></p>
+<p><em>Tap on the pattern names below to see the notes and mnemonics.</em></p>
 	
 <PatternPlaceholder
 	:tune-name="tuneName"
