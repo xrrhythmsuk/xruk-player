@@ -19,9 +19,9 @@ export default {
                 ls: "I'm so sick of all this stu-bble",
                 ms: "If you want a shave then grab a to-wel",
                 re: "Sha-ving cream please, Sha-ving cream please, Sha-ving cream please, Cream please cream please",
-                sn: "Don't . . . scratch . . my face, . . please . . . .",
-                ta: "Spent all e-vening sha-ving my arm-pits",
-                ag: "Spent all e-vening sha-ving both my legs"
+                sn: "Don't . . . scratch . . my face, . . please . . . . Don't . . . scratch . . my face, . . please . . . .",
+                ta: "Spent all e-vening sha-ving my arm-pits Spent all e-vening sha-ving my arm-pits",
+                ag: "Spent all e-vening sha-ving both my legs Spent all e-vening sha-ving both my legs"
             }
         },
         "Break 1": {
@@ -80,7 +80,7 @@ export default {
                 ls: repeat(6, "We had some cream ") + "Spent all e-vening sha-ving my arm-pits",
                 re: repeat(2, repeat(2, "Sha-ving cream please, Sha-ving cream please, Sha-ving cream please, Cream please cream please ")
                         + "Sha-ving cream? ") + "Sha-ving cream? "
-                + repeat(2, "Sha-ving cream please, Sha-ving cream please, Sha-ving cream please, Cream please cream please")
+                + repeat(2, "Sha-ving cream please, Sha-ving cream please, Sha-ving cream please, Cream please cream please ")
                         + repeat(3, "Sha-ving cream? ")+ "Spent all e-vening sha-ving my arm-pits"
             }
         },
