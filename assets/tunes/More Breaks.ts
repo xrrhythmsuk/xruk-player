@@ -103,7 +103,7 @@ export default {
             ot: '                                                          E D   ',
             mnemonics: {
                 ls: "Who's a of the Big Bad The Big Bad The Big Bad Who's a of the Big Bad No we're not scared at all",
-                re: "fraid Wolf, Wolf, Wolf Wolf No we're not scared at all",
+                re: "fraid Wolf, Wolf, Wolf Wolf Wolf No we're not scared at all",
                 ot: "Ah Woo!"
             }
         },
@@ -117,10 +117,10 @@ export default {
             ag: repeat(3, 'o o o o o o o ooo o o o o o o ooo o o o o o o ooo o o o oooooooo') + repeat(1, 'a a a a a a a aaa a a a a a a aaa a a a a a a aaa a a a aaaaaaaa'),
             mnemonics: {
                 ls: repeat(2, "Here we go Here we go Here we go Rea-dy for it rea-dy here we ")
-                    + repeat(2, "go . . . . . . Here we go . . . . . . Here we go . . . . . Here we go . . . Rea-dy for it rea-dy here we "),
+                    + repeat(2, "go . . . . . . Here we go . . . . . . Here we go . . . . . . Here we go . . . Rea-dy for it rea-dy here we "),
                 re: repeat(1, "Here we go Here we go Here we go Rea-dy for it rea-dy here we ")
-                    + repeat(3, "go . . . . . . Here we go . . . . . . Here we go . . . . . Here we go . . . Rea-dy for it rea-dy here we "),
-                ag: ". . . . . . . Here we go . . . . . . Here we go . . . . . Here we go . . . Rea-dy for it rea-dy here we "
+                    + repeat(3, "go . . . . . . Here we go . . . . . . Here we go . . . . . . Here we go . . . Rea-dy for it rea-dy here we "),
+                ag: ". . . . . . . Here we go . . . . . . Here we go . . . . . . Here we go . . . Rea-dy for it rea-dy here we "
                     + repeat(3, "go . . . . . . Here we go . . . . . . Here we go . . . . . Here we go . . . Rea-dy for it rea-dy here we ")
             },
             volumeHack: {
