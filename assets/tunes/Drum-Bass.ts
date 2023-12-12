@@ -48,8 +48,8 @@ export default {
             ta: '    X       X       X       X       X       X                       X       X       X       X       X       X                   ',
             ag: '@ta',
             sh: '@ta',
-            mnemonic: {
-                ls: "Where's the Bring the Where's the We want the yeah Where's the Bring the"
+            mnemonics: {
+                ls: "Where's the Bring the Where's the We want the yeah Where's the Bring the "
                 + "Where's the Bring the Where's the We want the yeah Where's the Bring the",
                 re: "drop drop drop drop drop drop C'-mon c'-mon c'-mon c'-mon Give it to us drop drop drop drop drop drop",
                 sn: "drop drop drop drop drop drop drop drop drop drop drop drop Here it comes now",
