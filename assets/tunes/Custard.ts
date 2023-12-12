@@ -49,7 +49,7 @@ export default {
             sh: '@ls',
             mnemonics: {
                 ls: repeat(3, "In my un-der-pants ") + "I've got cu-stard in my un-der-pants",
-                ra: repeat(3, "I've got cu-stard ") + "I've got cu-stard in my un-der-pants"
+                ta: repeat(3, "I've got cu-stard ") + "I've got cu-stard in my un-der-pants"
             }
         },
         'Break 3 Agogo': {
@@ -64,7 +64,7 @@ export default {
             sh: '@ls',
             mnemonics: {
                 ls: repeat(4, "In my pants "),
-                sn: repeat(3, "In my pants ") + "Stop . wea . ring . . cu . stard? . . Ve-ry fu-nny"
+                sn: repeat(3, "In my pants ") + "In my Stop . wea . ring . . cu . stard? . . Ve-ry fu-nny"
             }
         },
         'Break 5': {
