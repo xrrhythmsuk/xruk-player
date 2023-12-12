@@ -17,10 +17,10 @@ export default {
             mnemonics: {
                 ls: "Ra-bbit run Ra-bbit run Ra-bbit run Ra-bbit run from the ca-ges",
                 ms: "Run fast Run fast Run fast Run fast from the ca-ges",
-                re: "Ka-rla said you won't be fur coats Ka-rla said you won't be fur coats"
+                re: "Ka-rla said you won't be fur coats Ka-rla said you won't be fur coats "
                     + "Ka-rla said you won't be fur coats Ka-rla said you won't be fur coats",
-                ta: "Ka-rla sa-ved us from the farm Ka-rla sa-ved us from the farm",
-                ag: "Ha-ppy bu-nnies ha-ppy bu-nnies Ha-ppy bu-nnies ha-ppy bu-nnies"
+                ta: "Ka-rla saved us from the farm Ka-rla saved us from the farm",
+                ag: "Ha-ppy bu-nnies ha-ppy bu-nnies Ha-ppy bu-nnies ha-ppy bu-nnies "
                     + "Ha-ppy bu-nnies ha-ppy bu-nnies Ha-ppy bu-nnies ha-ppy bu-nnies"
             }
         },
@@ -58,9 +58,9 @@ export default {
             ag: '@re',
             sh: '@re',
             mnemonics: {
-                ls: "A-ny-bo-dy a-ny-bo-dy a-ny-bo-dy a-ny-bo-dy Got some le-ttuce? I have I have I have I have"
+                ls: "A-ny-bo-dy a-ny-bo-dy a-ny-bo-dy a-ny-bo-dy Got some le-ttuce? I have I have I have I have "
                     + "I have I have I have I have Got some le-ttuce A-ny-bo-dy a-ny-bo-dy a-ny-bo-dy a-ny-bo-dy?",
-                re: "A-ny-bo-dy a-ny-bo-dy a-ny-bo-dy a-ny-bo-dy Got some le-ttuce? Great We're star-ving here Great We're star-ving here"
+                re: "A-ny-bo-dy a-ny-bo-dy a-ny-bo-dy a-ny-bo-dy Got some le-ttuce? Great We're star-ving here Great We're star-ving here "
                     + "Great We're star-ving here Great We're star-ving here Got some le-ttuce A-ny-bo-dy a-ny-bo-dy a-ny-bo-dy a-ny-bo-dy?"
             }
         }
