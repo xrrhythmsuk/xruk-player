@@ -44,7 +44,8 @@ An alternate line for surdos that pairs with...
 
 **Little Cat** *Conga sign with air quotes in other hand*  
 An accompanying line usually used for backpack  
-Repis can do this or their special part, which snares can incorporate into Capped Karla
+Repis can do this or their special part, which snares can incorporate into Capped Karla  
+(It usually sounds better for snares to click their sticks together instead of doing a rim hit)
 
 **Kickback 1** *One thumb over shoulder*  
 From the RoR tune Ragga. A great way to build up hype or do a heartbeat sound going into...
