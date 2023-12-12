@@ -20,7 +20,7 @@ export default {
                 ms: "Sam-ba re-ggae",
                 hs: "Time to play sam-ba re-ggae",
                 re: "Can I Get a Bit of Re-ggae",
-                sn: "Bo . . ssa . . for . . . re- . . ggae . .",
+                sn: "Bo . . ssa . . for . . . re . . ggae . .",
                 ta: "Cla-ve for re-ggae",
                 ag: "Sam-ba re-ggae on the a-go-gô"
             }
@@ -38,7 +38,7 @@ export default {
                 ls: "We want some-thing to eat We want some grub Yum yum Yum yum Yum yum Sam-ba re-ggae",
                 re: repeat(2, "What do you want, tell me what do you want? ") + "Yum yum Yum yum Yum yum Sam-ba re-ggae",
                 sn: "We want some-thing to eat We want some grub "
-                    + repeat(3, repeat(3, "Sau-sa-ges sau-sa-ges I've got ") + "in the pan ") + "Sam-ba re-ggae"
+                    + repeat(3, repeat(2, "Sau-sa-ges sau-sa-ges I've got ") + "Sau-sa-ges sau-sa-ges in the pan ") + "Sam-ba re-ggae"
             }
         },
         'Break 2': {
@@ -52,7 +52,7 @@ export default {
             sh: '@ls',
             mnemonics: {
                 ls: repeat(4, "Sam-ba re-ggae "),
-                re: repeat(4, "Sam-ba re-ggae Sa")
+                re: repeat(4, "Sam-ba re-ggae Sa ")
             }
         },
         'Whistle Break': {
@@ -80,7 +80,7 @@ export default {
             ag: '                                X  X  X   X                     X  X  X   X                 a a             a a             aaaa',
             sh: '                                X  X  X   X                     X  X  X   X                                                 XXXX',
             mnemonics: {
-                ls: repeat(2, "Do you want to play sam-ba reggae? ") + repeat(2, "Do you want to play? ") + "Right let's play",
+                ls: repeat(2, "Do you want to play sam-ba re-ggae? ") + repeat(2, "Do you want to play? ") + "Right let's play",
                 re: repeat(2, "Sam-ba re-ggae ") + repeat(2, "z We want to ") + "Sam-ba re-ggae",
                 ta: repeat(2, "Sam-ba re-ggae ") + repeat(2, "want to ") + "Sam-ba re-ggae",
                 ag: repeat(2, "Sam-ba re-ggae ") + repeat(2, "want to ") + "Sam-ba re-ggae"
@@ -99,8 +99,8 @@ export default {
                 ls: repeat(3, "Act now ") + ".",
                 ms: repeat(3, "Act now "),
                 re: repeat(3, "There's no time to waste so "),
-                sn: repeat(3, "Act now ") + repeat(3, "Shut . . the . . sy- . . . stem . down . . . "),
-                ta: repeat(3, "Act now ") + repeat(4, "Shut the sy- stem down ")
+                sn: repeat(3, "Act now ") + repeat(3, "Shut . . the . . sy . . . stem . down . . . "),
+                ta: repeat(3, "Act now ") + repeat(4, "Shut the sy-stem down ")
             }
         },
         'SOS Break': {
