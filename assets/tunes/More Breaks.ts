@@ -78,7 +78,7 @@ export default {
             sn: '@re',
             volumeHack: { 0: .2, 4: .4, 8: .7, 12: 1 }
         },
-        'e.g. everybody Conga': {
+        'e.g. everybody Conga/Little Cat': {
             loop: true,
             upbeat: 2,
             ls: "  X     X X   X X X     X X   X X X   X   X   X   X   X   X   X   ",
