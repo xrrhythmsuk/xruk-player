@@ -16,7 +16,7 @@ export default {
             mnemonics: {
                 ls: "I like po-ta-toes, I like them mashed",
                 ms: "Oh, do you? 'Cos I don't",
-                re: "Mash is fine, but Mash is fine but Mash is fine but Chips are clea-rly be-tter",
+                re: "Mash is fine, but Mash is fine, but Mash is fine, but Chips are clea-rly be-tter",
                 ag: "I like hash browns be-tter I like hash browns be-tter",
             }
         },
