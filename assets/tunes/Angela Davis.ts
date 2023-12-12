@@ -47,7 +47,7 @@ export default {
             ag: '@re',
             sh: '@re',
             mnemonics: { 
-                ls: "Yes. They do. They do. So give a pea-nut to a squi-rrel",
+                ls: "Yes They do They do So give a pea-nut to a squi-rrel",
                 re: "Squir-rels hide their nuts in the ground Squir-rels hide their nuts in the ground Squir-rels hide their nuts in the ground So give a pea-nut to a squi-rrel"
             }
         },
@@ -62,7 +62,7 @@ export default {
             ag: '@ls',
             sh: '@ls',
             mnemonics: { 
-                ls: "Hey! I'm a squir-rel I just climb trees. Hey I'm a squir-rel. Pea-nuts please. So give a pea-nut to a squi-rrel"
+                ls: "Hey I'm a squir-rel I just climb trees Hey I'm a squir-rel Pea-nuts please So give a pea-nut to a squi-rrel"
             }
         }
     },
