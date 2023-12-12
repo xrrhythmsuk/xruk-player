@@ -78,6 +78,18 @@ export default {
             sn: '@re',
             volumeHack: { 0: .2, 4: .4, 8: .7, 12: 1 }
         },
+        'e.g. everybody Conga': {
+            loop: true,
+            upbeat: 2,
+            ls: "  X     X X   X X X     X X   X X X   X   X   X   X   X   X   X   ",
+            ms: "@ls",
+            hs: "@ls",
+            re: "  f   X X r r X X f   X X r r X X f   X X r r X X f   X X r r X X ",
+            sn: "  XXXXXXXXXXXXXXXXf   X X r r X X XXXXXXXXXXXXXXXXf   X X r r X X ",
+            ta: "X X     X X X X X   X X X X   X   X X X X X   X                   ",
+            ag: "@ta",
+            volumeHack: {  sn: { 0: .2, 4: .4, 8: .7, 12: 1, 32: .2, 36: .4, 40: 0.7, 44: 1 } }
+        },
         'Kickback 1': {
             loop: true,
             ls: 'X  X    X  X    ',
