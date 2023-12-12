@@ -1,10 +1,10 @@
-These are the rest of our general breaks
+These are the rest of our general breaks.
 
-Once your band has the core tunes and breaks down, learning more general breaks is a great next step
+Once your band has the core tunes and breaks down, learning more general breaks is a great next step.
 
 They don’t all have audio here, but they do all get used and are worth knowing, so dig in!
 
-Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants**
+Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants**.
 
 ### Silences
 
