@@ -376,4 +376,8 @@ export function getSortedTuneList(state: State): Array<string> {
 
 export function selectSong(state: State, songIdx: number): void {
     Vue.set(state, "songIdx", songIdx);
+
+    if(state.songs[songIdx].speed){
+        Vue.set(state.playbackSettings, 'speed', state.songs[songIdx].speed)
+    }
 }

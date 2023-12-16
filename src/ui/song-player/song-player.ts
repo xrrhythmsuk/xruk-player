@@ -39,7 +39,6 @@ import { exportMP3, exportWAV } from "beatbox.js-export";
 
 type DragOver = "trash" | { instr: Instrument | null, idx: number };
 
-
 @WithRender
 @Component({
 	components: {
@@ -135,11 +134,22 @@ export default class SongPlayer extends Vue {
 	@Watch("state.playbackSettings", { deep: true })
 	@Watch("state.tunes", { deep: true })
 	updatePattern() {
-		let songBeatbox = songToBeatbox(this.state.songs[this.state.songIdx], this.state, this.state.playbackSettings);
+		const song = this.state.songs[this.state.songIdx]
+		let songBeatbox = songToBeatbox(song, this.state, this.state.playbackSettings);
 		this.player.setPattern(songBeatbox);
 		this.player.setUpbeat(songBeatbox.upbeat);
-		this.player.setBeatLength(60000/this.state.playbackSettings.speed/config.playTime);
+		this.player.setBeatLength(60000/ this.state.playbackSettings.speed/config.playTime);
 		this.player.setRepeat(this.state.playbackSettings.loop);
+	}
+
+	@Watch("state.playbackSettings.speed")
+	updateSongSpeed(newSpeed: number){
+		this.state.songs[this.state.songIdx].speed = newSpeed
+	}
+
+	@Watch("song.speed", { immediate: true })
+	updatePlaybackSpeed(newSpeed: number){
+		this.state.playbackSettings.speed = newSpeed
 	}
 
 	playPause() {

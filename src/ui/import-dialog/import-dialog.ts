@@ -35,11 +35,6 @@ export default class ImportDialog extends Vue {
 		setTimeout(() => this.fileInput.click())
 	}
 
-	@Watch("fileInput")
-	watchFileInput() {
-		debugger
-	}
-
 	async onUpload(e: Event) {
 		const inputElement = e.target as HTMLInputElement;
     	const file = inputElement.files?.[0];
