@@ -20,13 +20,17 @@ function cloneOf(input:string) {
 	return m ? m[1] as Instrument : null
 }
 
-function uncompressMnemonics(target: Pattern, pattern: CompressedPattern, instr: Instrument){
+function uncompressMnemonics(tuneName: string, target: Pattern, pattern: CompressedPattern, instr: Instrument){
 	const source = pattern.mnemonics?.[instr]
 	const clone = cloneOf(source || pattern[instr] || '')
 	if (clone) return target.mnemonics?.[clone]
 	if(!source) return undefined
 
 	const words = source.split(/[\s\-]/)
+
+	if(target[instr].filter(i => i !== " ").length !== words.length)
+		console.warn(`Mnemonics length mismatch ${tuneName} ${target.displayName}: ${source}`, target[instr])
+
 	let i = 0;
 	return target[instr].map(p => p != ' ' ? words[i++] : '')
 }
@@ -58,7 +62,7 @@ for (const i in rawTunes) {
 		if(pattern.mnemonics){
 			newPattern.mnemonics = {}
 			for (const k of config.instrumentKeys) {
-				newPattern.mnemonics[k as Instrument] = uncompressMnemonics(newPattern, pattern, k as Instrument)
+				newPattern.mnemonics[k as Instrument] = uncompressMnemonics(i, newPattern, pattern, k as Instrument)
 			}
 		}
 
