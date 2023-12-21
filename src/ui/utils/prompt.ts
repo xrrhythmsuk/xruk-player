@@ -1,4 +1,4 @@
-import Vue from "vue";
+import Vue, { VNodeChildren } from "vue";
 import Component from "vue-class-component";
 import { Prop, Watch } from "vue-property-decorator";
 import WithRender from "./prompt.vue";
@@ -6,6 +6,7 @@ import $ from 'jquery';
 import { sleep } from "../../utils";
 
 export type Validate = (value: string) => string | null | undefined;
+
 
 export async function openPromptDialog(instance: Vue, title: string, defaultValue?: string, validate?: Validate): Promise<string | undefined> {
 	let result = defaultValue;

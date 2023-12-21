@@ -148,13 +148,17 @@ export default class ShareDialog extends Vue {
 			}
 		}
 
-		let url = "#/compose/" + encodeURIComponent(objectToString(this._getCompressedState(true)));
+		let query = { import: encodeURIComponent(objectToString(this._getCompressedState(true))) }
+		let url
 		if(onlyPattern)
-			url += "/" + encodeURIComponent(onlyPattern[0]) + "/" + encodeURIComponent(onlyPattern[1]);
+			url = this.$router.resolve({ name:'listen pattern', params: { tuneName: onlyPattern[0], patternName: onlyPattern[1] }, query })
 		else if(onlyTune)
-			url += "/" + encodeURIComponent(onlyTune) + "/";
+			url = this.$router.resolve({ name:'listen', params: { tuneName: onlyTune }, query })
+		else
+			url = this.$router.resolve({ name:'import', params: {  importData: query.import }})
 
-		return makeAbsoluteUrl(url);
+
+		return makeAbsoluteUrl(url.href);
 	}
 
 	getTuneClass(tuneName: string) {
