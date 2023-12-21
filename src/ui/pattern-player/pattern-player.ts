@@ -77,13 +77,6 @@ export default class PatternPlayer extends Vue {
 
 	created() {
 		this.playerRef = this.player || createBeatbox(true);
-
-		/*this.playbackSettings = Object.assign(normalizePlaybackSettings(this.state.playbackSettings), {
-			speed: this.pattern.speed,
-			loop: this.pattern.loop
-		});
-		*/
-
 		this.updatePlayer();
 	}
 
@@ -126,6 +119,13 @@ export default class PatternPlayer extends Vue {
 		this.playerInst.setUpbeat(beatboxPattern.upbeat);
 		this.playerInst.setBeatLength(60000/this.playbackSettings.speed/config.playTime);
 		this.playerInst.setRepeat(this.playbackSettings.loop);
+	}
+
+	@Watch("playbackSettings.speed")
+	onSpeedChanged(newSpeed:number) {
+		if(!this.readonly) {
+			this.pattern.speed	= newSpeed
+		}
 	}
 
 	updateMarkerPosition(scrollFurther: boolean = false, force: boolean = false) {

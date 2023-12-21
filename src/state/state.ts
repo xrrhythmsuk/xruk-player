@@ -60,6 +60,9 @@ export type CompressedState = {
             [patternName: string]: CompressedPattern
         }
     },
+    descriptions?: {
+        [tuneName: string]: string
+    },
     songs?: CompressedSongs | Array<CompressedSong>,
     songIdx?: number,
     playbackSettings?: PlaybackSettings
@@ -143,7 +146,7 @@ export function extendStateFromCompressed(
     if(object.patterns) {
         const tunes: { [tuneName: string]: Tune } = { };
         for(const tuneName in object.patterns) {
-            tunes[tuneName] = normalizeTune({});
+            tunes[tuneName] = normalizeTune({ description: object.descriptions?.[tuneName] });
             for(const patternName in object.patterns[tuneName]) {
                 if(selectPattern && !selectPattern(tuneName, patternName))
                     continue;
@@ -214,7 +217,7 @@ export function compressState(
     keepEmptyTunes?: boolean,
     saveOptions?: boolean
 ): CompressedState {
-    const ret: CompressedState = { patterns: { } };
+    const ret: CompressedState = { patterns: { }, descriptions: { } };
 
     const songs = selectSong ? state.songs.filter((song, songIdx) => selectSong(songIdx)) : state.songs;
     if(songs.length > 0)
@@ -234,6 +237,9 @@ export function compressState(
         if(keepEmptyTunes || Object.keys(encodedPatterns).length > 0) {
             // @ts-ignore ret.patterns cannot be null
             ret.patterns[tuneName] = encodedPatterns;
+
+            const desc = state.tunes[tuneName].description;
+            if(desc) ret.descriptions![tuneName] = desc
         }
     }
 
@@ -246,6 +252,7 @@ export function compressState(
         ret.playbackSettings = state.playbackSettings;
     }
 
+    console.log(ret)
     return ret;
 }
 
@@ -280,15 +287,11 @@ function replacePattern(state: State, fromTuneAndName: PatternOrTuneReference, t
 }
 
 export function createTune(state: State, tuneName: string, data?: TuneOptional): void {
-    Vue.set(state.tunes, tuneName, normalizeTune(data));
+    Vue.set(state.tunes, tuneName, normalizeTune(data))
 }
 
-export function renameTune(state: State, tuneName: string, newTuneName: string): void {
-    if (newTuneName != tuneName) {
-        replacePattern(state, [ tuneName, null ], [ newTuneName, null ]);
-        Vue.set(state.tunes, newTuneName, state.tunes[tuneName]);
-        Vue.delete(state.tunes, tuneName);
-    }
+export function editTune(state: State, tuneName: string, data: TuneOptional): void {
+    Vue.set(state.tunes, tuneName, { ...state.tunes[tuneName], ...data });
 }
 
 export function copyTune(state: State, tuneName: string, newTuneName: string): void {
@@ -376,4 +379,8 @@ export function getSortedTuneList(state: State): Array<string> {
 
 export function selectSong(state: State, songIdx: number): void {
     Vue.set(state, "songIdx", songIdx);
+
+    if(state.songs[songIdx].speed){
+        Vue.set(state.playbackSettings, 'speed', state.songs[songIdx].speed)
+    }
 }

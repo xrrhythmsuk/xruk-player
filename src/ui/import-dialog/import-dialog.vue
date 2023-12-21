@@ -29,7 +29,7 @@
 									<span
 										v-for="pattern in tune.patterns"
 										:key="pattern.patternName"
-										:title="pattern.exists == 2 ? 'Pattern already exists.' : pattern.isUsed ? 'Pattern is used in song, cannot be disabled.' : pattern.exists ? 'Already exists. Local version will be overridden.' : ''"
+										:title="pattern.exists == 2 ? 'Pattern already exists.' : pattern.isUsed ? 'Pattern is used in song, cannot be disabled.' : pattern.exists ? 'Already exists. Local version will be overwritten.' : ''"
 										v-b-tooltip.hover.bottom
 									>
 										<b-badge

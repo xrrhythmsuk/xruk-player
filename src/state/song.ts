@@ -5,7 +5,8 @@ import isEqual from "lodash.isequal";
 import Vue from "vue";
 
 type SongProperties = {
-    name: string
+    name: string,
+	speed: number
 };
 
 type SongPropertiesOptional = {
@@ -28,6 +29,7 @@ type CompressedSongBeat = string | PatternReference | TypedInstrumentObject<stri
 
 export type CompressedSong = {
 	name: string,
+	speed: number,
 	beats: Array<CompressedSongBeat> | TypedNumberObject<CompressedSongBeat>
 };
 
@@ -43,6 +45,7 @@ export type CompressedSongs = {
 export function normalizeSong(data?: SongOptional): Song {
 	return Vue.observable({
 		name: "",
+		speed: 100,
 		...clone(data || {})
 	});
 }
@@ -209,6 +212,7 @@ export function compressSongs(songs: Array<Song>, encode: boolean): CompressedSo
 
 		encodedSongs[songIdx] = {
 			name: songs[songIdx].name,
+			speed: songs[songIdx].speed,
 			beats: JSON.stringify(beatsObj).length < JSON.stringify(beatsArr).length ? beatsObj : beatsArr
 		};
 	}
@@ -226,6 +230,7 @@ export function uncompressSongs(encodedSongs: CompressedSongs | Array<Compressed
 	encoded.songs.forEach(function(song, songIdx) {
 		songs[songIdx] = normalizeSong();
 		songs[songIdx].name = song.name;
+		songs[songIdx].speed = song.speed || 100
 
 		const maxIdx = Array.isArray(song.beats) ? song.beats.length-1 : (getMaxIndex(song.beats) || -1);
 
@@ -256,6 +261,11 @@ export function uncompressSongs(encodedSongs: CompressedSongs | Array<Compressed
 
 export function appendSongPart(song: Song, songPart: SongPart, state: State) {
 	const newIdx = getEffectiveSongLength(song, state);
+	if(newIdx === 0)
+	{
+		const [tune, pattern] = Object.values(songPart).filter(p => p)[0]
+		song.speed = state.tunes[tune].patterns[pattern].speed
+	}
 	Vue.set(song, newIdx, songPart);
 }
 
