@@ -34,8 +34,9 @@ import {
     PatternOptional, updatePattern,
     updateStroke
 } from "./pattern";
-import config, { Instrument } from "../config";
+import config, { Category, Instrument } from "../config";
 import Vue from "vue";
+import { filterPatternList } from "../ui/pattern-list-filter/pattern-list-filter";
 
 export type State = {
 	songs: Array<Song>,

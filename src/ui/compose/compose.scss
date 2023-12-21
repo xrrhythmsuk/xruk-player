@@ -1,12 +1,10 @@
 .bb-compose {
 	display: flex;
-	height: 100%;
 
 	.bb-compose-tunes {
 		height: 100%;
 		width: 20em;
-		padding: 1.2em;
-		background-color: var(--blue);
+		background-color: var(--cyan);
 
 		@media (max-width: 767.98px) {
 			position: fixed;

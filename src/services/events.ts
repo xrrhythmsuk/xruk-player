@@ -10,7 +10,7 @@ type Event0 = {
 	"overview-listen": void,
 	"pattern-placeholder-drag-start": void,
 	"pattern-placeholder-drag-end": void,
-	"update-available": void
+	"update-available": void,
 };
 
 type Event1 = {

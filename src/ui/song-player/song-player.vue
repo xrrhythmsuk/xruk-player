@@ -82,11 +82,11 @@
 				<div :class="`pattern-container colspan-${getColSpan(instrumentKey, i-1)} rowspan-${getRowSpan(instrumentKey, i-1)}`" v-if="song[i-1] && song[i-1][instrumentKey] && shouldDisplay(instrumentKey, i-1)">
 					<PatternPlaceholder :tune-name="song[i-1][instrumentKey][0]" :pattern-name="song[i-1][instrumentKey][1]" :draggable="{ instr: instrumentKey, idx: i-1 }" dragEffect="move" :settings="getPreviewPlaybackSettings(instrumentKey, i-1)">
 						<PatternPlaceholderItem>
-							<b-dropdown variant="link" toggle-class="text-decoration-none" no-caret>
+							<b-dropdown variant="link" toggle-class="text-decoration-none" no-caret size="lg">
 								<template slot="button-content">
-									<fa icon="hand-point-right" title="Pick instruments" v-b-tooltip.hover/>
+									<fa icon="list-check" title="Pick instruments" v-b-tooltip.hover/>
 								</template>
-								<b-dropdown-item v-for="instrumentKey2 in config.instrumentKeys" :key="instrumentKey2" href="javascript:" @click="toggleInstrument(instrumentKey2, i-1, song[i-1][instrumentKey])"><fa icon="check" :style="{visibility: isEqual(song[i-1][instrumentKey2], song[i-1][instrumentKey]) ? 'visible' : 'hidden'}"></fa> {{config.instruments[instrumentKey2].name}}</b-dropdown-item>
+								<b-dropdown-item v-for="instrumentKey2 in config.instrumentKeys" :key="instrumentKey2" href="javascript:" @click="toggleInstrument($event, instrumentKey2, i-1, song[i-1][instrumentKey])"><fa icon="check" :style="{visibility: isEqual(song[i-1][instrumentKey2], song[i-1][instrumentKey]) ? 'visible' : 'hidden'}"></fa> {{config.instruments[instrumentKey2].name}}</b-dropdown-item>
 							</b-dropdown>
 						</PatternPlaceholderItem>
 						<PatternPlaceholderItem>

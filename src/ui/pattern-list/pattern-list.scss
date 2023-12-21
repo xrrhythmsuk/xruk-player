@@ -1,38 +1,41 @@
 .bb-pattern-list {
-
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+	padding: 1.4rem;
+	gap: 1.4em;
 
-	.card-body {
-		padding:0 8px;
-	}
-	.card-header {
-		padding:0;
-		.btn { 
-			font-size: 1.425rem;
-		}
+	h4 {
+		padding: 0.3rem 0;
 	}
 
-	.card-header button {
-		text-align: left;
-		text-decoration: none;
-		color: inherit;
-		position: relative;
-		background-color: white;
-		border: none;
-
-		.fa-caret-down {
-			position: absolute;
-			right: 10px;
-			top: 50%;
-			transform: translateY(-50%);
-		}
+	a {
+		color: black;
 	}
 
-	.card {
-		margin-bottom: 8px;
-		border:none;
+	.caret {
+		margin-top:4px;
+		transition: linear .25s transform;
+	}
+
+	&-tunes { 
+		padding:0 1.2em;
+		margin:0 -1.2em;
+		transition: linear 0.5s all;
+	}
+
+	.open { 
+		background-color: rgba(255,255,255,0.2);
+		padding: 0 1.2em;
+		margin-bottom:2px;
+	}
+
+	.collapse { 
+		padding: 0.2em 0;
+	}
+
+	.open .caret {
+		transform: rotateZ(-180deg);
 	}
 
 	.bb-pattern-placeholder {
@@ -52,15 +55,8 @@
 		margin-left: 0;
 	}
 
-	.bb-pattern-list-tunes {
-		overflow-y: auto;
-	}
-
 	.general-actions {
-		padding-top: 10px;
-		a { 
-			color: white;
-		}
+		padding: 10px  0 0 0;
 	}
 
 }
