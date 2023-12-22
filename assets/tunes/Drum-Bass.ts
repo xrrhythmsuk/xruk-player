@@ -21,7 +21,7 @@ export default {
                 sn: ". . . . Drum . . and . . . . bass . . . . . . . Drum . . and . . . . stop "
                     + ". . . . Drum . . and . . . . bass . . . This . goes . out . to . all . the . D . Js .",
                 ta: "The D-J plays bang-in' tunes The D-J plays bang-in' tunes",
-                ag: "Drum and bass is so cool Drum and bass is so cool"
+                ag: "Drum and bass is so cool Drum and bass is so cool Drum and bass is so cool Drum and bass is so cool"
             }
         },
         'Break 2': {
