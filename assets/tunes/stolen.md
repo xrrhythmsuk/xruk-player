@@ -12,7 +12,7 @@ A helpful tip is to start the snares off first to get everyone in time.
 
 **Musical background:** Sounds like any number of Olodum songs ([example](https://youtu.be/A3o30YJiWsc)), but specifically taken from [this song](https://youtu.be/0Pq8vOVbvzs) by the Colombian band Aainjaa.
 
-**Sign:** like a cartoon burglar mask
+**Sign:** Like a cartoon burglar mask
 
 **History:** Introduced to XR Rhythms in 2021. It was our first non-RoR tune.
 
