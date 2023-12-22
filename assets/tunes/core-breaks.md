@@ -41,7 +41,8 @@ Four bars of clave going from quiet to loud. You can also do it falling to do lo
 ### Karlas
 
 **Karla Break** *Thumb and two fingers*  
-A bar of 16s quiet, then medium, then loud, then a hit just on beat 1
+A bar of 16s quiet, then medium, then loud, then a hit just on beat 1  
+Sometimes called a drum roll break, but even then usually played with 16s rather than buzzes
 
 **Progressive Karla** *Grab thumb of raised hand*  
 A bar of 4s, then 8s, then 16s, then a hit just on beat 1
