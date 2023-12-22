@@ -1,3 +1,6 @@
+That driving low surdo part works very well for backing chants (along with Samba Reggae) and repis love the long call break!  
+Just make sure to check tams and agogôs aren't about to stage a mutiny...
+
 **Name:** Usually pronounced “AFF-uh-shay” or “a-FOSH-ay” by our English-speaking bands
 
 **Sign:** Shaving your armpit
