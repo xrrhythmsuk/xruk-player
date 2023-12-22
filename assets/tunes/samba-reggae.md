@@ -36,8 +36,8 @@ The rhythm clearly sounds like real Samba Reggae, which is a genre developed and
 
 * **Break 1** is a longer break led by repis and snares. It sounds great once you’ve got it!
 * **Break 2** is a short repi-led break based on the clave rhythm (like most of our Samba Reggae breaks). It’s a good break to start with when you’re learning them, and you can get different instruments to lead it. (Sign Break 2 – agogô for agogôs to lead it, for instance, or Break 2 – everyone to make it into a nice unison break.)
-* The **Whistle break** *(whistle surdo part twice)* is a fun double-time swing break you can use anywhere. Try using a clave or two to get out of it _\[less common nationally\]_
+* The **Whistle break** *(point at whistle with both hands, whistle in with surdo part twice)* is a fun double-time swing break you can use anywhere. Try using a clave or two to get out of it _\[less common nationally\]_
 * **Break 3** is a longer surdo-led break _\[uncommon nationally\]_
 * The **Clave Call** *(two claves coming together to make an ‘O’)* is a medium-length break with a repi call and then claves. You can use it anywhere, particularly for tunes without a call break _\[uncommon nationally\]_
-* The **SOS break** *(rub ball between hands moving side to side)* has the same rhythm as the first part of the call and is a shorter surdo-led break. It also has a quirk where repis keep playing their SOS part back in the main part until the next SOS break _\[not played nationally\]_
+* The **SOS break** *(rub ball between hands moving side to side)* has the same rhythm as the first part of the clave call and is a shorter surdo-led break. It also has a quirk where repis keep playing their SOS part back in the main part until the next SOS break _\[not played nationally\]_
 * **General breaks** that work well: Clave, Knock on the Door
