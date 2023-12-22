@@ -1,16 +1,16 @@
-**Sign:** Fingers past your eyes
-
-## Background
-
-**Name:** A new XR Rhythms tune “borrowed” rather more directly than the others.
-
-**Musical background:** Sounds like any number of Olodum songs ([example](https://youtu.be/A3o30YJiWsc)), but specifically taken from [this song](https://youtu.be/0Pq8vOVbvzs) by the Colombian band Aainjaa.
+A new XR Rhythms tune “borrowed” rather more directly than the others.  
 
 The difficulty mostly comes from us feeling the song as double time, so breaks will go twice as fast as usual:
 
 instead of *1 and 2 and 3 and 4 and*, it’s *1 2 3 4 1 2 3 4*
 
-A helpful tip is to start the snares off first to get everyone in time.
+A helpful tip is to start the snares off first to get everyone in time.  
+
+**Sign:** Fingers past your eyes
+
+## Background
+
+**Musical background:** Sounds like any number of Olodum songs ([example](https://youtu.be/A3o30YJiWsc)), but specifically taken from [this song](https://youtu.be/0Pq8vOVbvzs) by the Colombian band Aainjaa.
 
 **Sign:** like a cartoon burglar mask
 
