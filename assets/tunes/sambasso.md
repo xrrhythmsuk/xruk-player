@@ -1,4 +1,4 @@
-One of the tunes we learned at the first 2022 samba camp. That reggaeton beat is infectious!
+One of the tunes we learned at the first 2022 camp. That reggaeton beat is infectious!
 
 **Sign:** V with 4 fingers (Vulcan salute) on both hands, sliding the gaps into each other
 
