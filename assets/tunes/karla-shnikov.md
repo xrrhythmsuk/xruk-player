@@ -10,7 +10,7 @@ This is one of our core tunes and often one of the first ones that new bands lea
 
 **Sign:** One of the character Karla’s actions was liberating the biggest rabbit farm in Russia. The sign depicts rabbit ears, an improvement on miming shooting yourself in the head.
 
-**History:** The tune was invented in London. The name was changed because some bands got in trouble for showing a gun, and other bands didn’t want to have a tune named after a weapon. The story of Karla Shnikov was made up by the working group thinking up a new name and sign for the tune and how people like Karla likely did exist since the historical contributions of women often go unrecorded.
+**History:** The tune was invented in London. The name was changed because some bands got in trouble for showing a gun, and other bands didn’t want to have a tune named after a weapon. The name and story of Karla Shnikov was created by a working group, reflecting how people like Karla likely did exist since women’s historical contributions are often unrecorded.
 
 ## Difficulty
 
@@ -24,5 +24,5 @@ This is one of our core tunes and often one of the first ones that new bands lea
 ## Breaks
 
 * We play the **Karla Break** (which used to be Break 1 in RoR Karla, hence the name) and **Progressive Karla** for this song with the repis playing their main part solo at the end instead of the bar of silence
-* **Break 2** has rolls and a phrase between surdos and everyone else
-* **Break 2 Inverted** *(two fingers pointing down)* has the rolls, the surdo-led phrase, the surdo-led phrase again, and then the rolls again _\[uncommon nationally\]_
+* **Break 2** has 16s and then a phrase between surdos and everyone else
+* **Break 2 Inverted** *(two fingers pointing down)* has the 16s, the surdo-led phrase, the surdo-led phrase again, and then the 16s again _\[uncommon nationally\]_
