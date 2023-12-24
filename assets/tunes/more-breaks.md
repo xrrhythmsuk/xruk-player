@@ -1,8 +1,8 @@
 These are the rest of our general breaks.
 
-Once your band has the core tunes and breaks down, learning more general breaks is a great next step.
+Once your band has the core tunes and core breaks down, learning more general breaks is a great next step along with looking at more individual song breaks.
 
-They don’t all have audio here, but they do all get used and are worth knowing, so dig in!
+These breaks don’t all have audio here, but they do all get used and are worth knowing, so dig in!
 
 Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants**.
 
@@ -23,7 +23,7 @@ Hit beat 1 when counted in. When told, build to first 2 beats, 3, 4s, 8s, 16s...
 
 ### Other short
 
-**Tam Line:** *One hand OK sign*  
+**Tam Line** *One hand OK sign*  
 Whistler whistles the song’s tam part, everyone plays it once
 
 **Yala Break** *Gather fingers on one hand and shake wrist*  
