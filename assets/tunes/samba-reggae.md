@@ -14,7 +14,7 @@ In “real” samba, ‘samba reggae’ is a specific sub-genre in terms of the 
 
 **Musical background:** The tune is a mix of Barking Bateria Samba Reggae 1 and 3. RoR Samba Reggae is played with the mid surdo on beats 1 and 3 and the low on 2 and 4 (mid-low-mid-low low), while many samba bands play it low-mid-low-mid mid. The repi and snare parts used to be swapped too.  
 
-As XR bands rarely have mids, our lows often play first and third beats as a silent stroke (hit with your hand muffling) to replace them.
+As XR bands rarely have mids, our lows often play the first and third beats as a silent stroke (hit with your hand muffling) to replace them.
 
 **Sign:** Changed at the first 2022 camp from “smoking a joint” because just wow.
 
