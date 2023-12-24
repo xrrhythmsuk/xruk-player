@@ -6,7 +6,8 @@ Together with Samba Reggae, this is the tune which sounds most like “real” s
 
 **Name:** From the tam/agogô mnemonic “I’ve got custard in my underpants”, which is... certainly memorable.
 
-**Musical background:** A typical Samba Reggae-style tune.
+**Musical background:** A typical samba reggae-style tune.  
+As XR bands rarely have mids, our lows often play the first and third beats as a silent stroke (hit with your hand muffling) to replace them.
 
 **Sign:** used to be a “W” for Welfare State (the former name of the tune), as can be seen in this [video](https://tube.rhythms-of-resistance.org/w/3LnZ6d58J1jd5GNzK1mQqp) by RoR London. It changed into the current sign and can also be interpreted as “holding a plate of custard”.
 
