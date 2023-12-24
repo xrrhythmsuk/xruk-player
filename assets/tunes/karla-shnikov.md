@@ -14,15 +14,15 @@ This is one of our core tunes and often one of the first ones that new bands lea
 
 ## Difficulty
 
-* **Surdos**: medium (can be tricky keeping that double hit in time – it ends just before the the beat)
+* **Surdos**: medium (can be tricky keeping that double hit in time – it ends just before the beat)
 * **Mid/High Surdos**: easy
 * **Repi**: medium
 * **Snare**: easy
 * **Tam**: easy
-* **Agogô**:easy
+* **Agogô**: easy
 
 ## Breaks
 
-* We play the **Karla Break** (which used to be Break 1 in RoR Karla, hence the name) and **Progressive Karla** for this song with the repis playing their main part solo at the end instead of the bar of silence
+* We play the **Karla Break** (which used to be Break 1 in RoR Karla, hence the name) and **Progressive Karla** for this song with repis playing their main part solo at the end instead of the bar of silence
 * **Break 2** has 16s and then a phrase between surdos and everyone else
 * **Break 2 Inverted** *(two fingers pointing down)* has the 16s, the surdo-led phrase, the surdo-led phrase again, and then the 16s again _\[uncommon nationally\]_
