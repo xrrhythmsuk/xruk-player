@@ -60,7 +60,7 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            mnemonics: {  ls: "Shut the sy-stem down Shut the sys-tem down" }
+            mnemonics: {  ls: "Shut the sy-stem down Shut the sy-stem down" }
         },
         "Clave 4x": {
             displayName: "Clave 4x soft to loud",
@@ -71,7 +71,7 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            mnemonics: {  ls: "Shut the sys-tem down Shut the sys-tem down Shut the sys-tem down Shut the sys-tem down" },
+            mnemonics: {  ls: "Shut the sy-stem down Shut the sy-stem down Shut the sy-stem down Shut the sy-stem down" },
             volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 }
         },
         'Karla Break': {

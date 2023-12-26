@@ -69,8 +69,8 @@ export default {
             ta: "XX XX  X X  X            X    XX XX X           XX XX  X X  X            X    XX XX X",
             ag: "aa aa  a o  a            a    aa ao a           aa aa  a o  a            a    aa ao a",
             mnemonics: {
-                ta: "The trum-pet came ring-ing out Walls fell down to the ground The trumpet came ring-ing out Walls fell down to the ground",
-                ag: "The trum-pet came ring-ing out Walls fell down to the ground The trumpet came ring-ing out Walls fell down to the ground"
+                ta: "The trum-pet came ring-ing out Walls fell down to the ground The trum-pet came ring-ing out Walls fell down to the ground",
+                ag: "The trum-pet came ring-ing out Walls fell down to the ground The trum-pet came ring-ing out Walls fell down to the ground"
             }
         },
         'Break 3': {
@@ -82,7 +82,7 @@ export default {
             ta: "@re",
             ag: "@re",
             mnemonics: {
-                ls: "Drums came boo out Af-ter trum blast Drums came boo out a-fter walls o",
+                ls: "Drums came boo out Af-ter trum blast Drums came boo out a-fter wall o",
                 re: "ming the pet ming the fell ver"
             }
         },

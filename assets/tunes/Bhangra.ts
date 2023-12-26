@@ -61,7 +61,7 @@ export default {
             ot: "         A  ",
             mnemonics: {
                 ls: "This is my fa-vou-rite part",
-                ot: "HEY!"
+                ot: "Hey!"
             }
         },
         'Butterfly Break': {
@@ -75,7 +75,7 @@ export default {
             ot: "                                             A  ",
             mnemonics: {
                 ls: "Bi-bbi-di bo-bbi-di boo Bi-bbi-di bo-bbi-di boo Put it to-ge-ther and what have you got? Bi-bbi-di bo-bbi-di boo",
-                ot: "HEY!"
+                ot: "Hey!"
             }
         },
         "Call Break": {
@@ -95,7 +95,7 @@ export default {
                     + "This is my fa-vou-rite, fa-vou-rite part This is my fa-vou-rite part",
                 sn: "This is my fa-vou-rite, fa-vou-rite part This is my fa-vou-rite, fa-vou-rite part This is the part "
                     + "This is my fa-vou-rite part",
-                ot: "HEY!"
+                ot: "Hey!"
             }
         },
         'Break 2': {
