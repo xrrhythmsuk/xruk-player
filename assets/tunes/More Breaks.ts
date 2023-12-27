@@ -111,17 +111,17 @@ export default {
             ls: repeat(2, '              XXX             XXX             XXX       XXXXXXXX') + repeat(2, 'X X X X X X X XXX X X X X X X XXX X X X X X X XXX X X X XXXXXXXX'),
             ms: '@ls',
             hs: '@ls',
-            re: repeat(1, '              XXX             XXX             XXX       XXXXXXXX') + repeat(3, 'X X X X X X X XXX X X X X X X XXX X X X X X X XXX X X X XXXXXXXX'),
+            re:            '              XXX             XXX             XXX       XXXXXXXX' + repeat(3, 'X X X X X X X XXX X X X X X X XXX X X X X X X XXX X X X XXXXXXXX'),
             sn: '@re',
             ta: '@re',
-            ag: repeat(3, 'o o o o o o o ooo o o o o o o ooo o o o o o o ooo o o o oooooooo') + repeat(1, 'a a a a a a a aaa a a a a a a aaa a a a a a a aaa a a a aaaaaaaa'),
+            ag: repeat(3, 'o o o o o o o ooo o o o o o o ooo o o o o o o ooo o o o oooooooo') +           'a a a a a a a aaa a a a a a a aaa a a a a a a aaa a a a aaaaaaaa',
             mnemonics: {
                 ls: repeat(2, "Here we go Here we go Here we go Rea-dy for it rea-dy here we ")
                     + repeat(2, "go . . . . . . Here we go . . . . . . Here we go . . . . . . Here we go . . . Rea-dy for it rea-dy here we "),
-                re: repeat(1, "Here we go Here we go Here we go Rea-dy for it rea-dy here we ")
+                re: "Here we go Here we go Here we go Rea-dy for it rea-dy here we "
                     + repeat(3, "go . . . . . . Here we go . . . . . . Here we go . . . . . . Here we go . . . Rea-dy for it rea-dy here we "),
                 ag: ". . . . . . . Here we go . . . . . . Here we go . . . . . . Here we go . . . Rea-dy for it rea-dy here we "
-                    + repeat(3, "go . . . . . . Here we go . . . . . . Here we go . . . . . Here we go . . . Rea-dy for it rea-dy here we ")
+                    + repeat(3, "go . . . . . . Here we go . . . . . . Here we go . . . . . . Here we go . . . Rea-dy for it rea-dy here we ")
             },
             volumeHack: {
                 ls: { 66: .3, 78: 1, 82: .3, 94: 1, 98: .3, 110: 1, 114: .3, 120: 1, 130: .6, 142: 1, 146: .6, 158: 1, 162: .6, 174: 1, 178: .6, 184: 1 },
