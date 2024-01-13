@@ -35,7 +35,8 @@
 			table-layout: fixed;
 
 			.stroke {
-				border-right: 1px solid #ddd;
+				border-left: 1px solid #ddd;
+				min-width: 2.7ex;
 				text-align: center;
 				position: relative;
 
@@ -48,9 +49,13 @@
 				}
 			}
 
+			.mnemonic { 
+				font-style: italic;
+				text-align: left;
+			}
+
 			.stroke-inner {
 				display: inline-block;
-				min-width: 2.7ex;
 				min-height: 1em;
 			}
 
@@ -67,12 +72,12 @@
 				font-family: var(--heading-font);
 			}
 
-			.beat, .stroke.before-beat {
-				border-right: 1px solid #aaa;
+			.beat, .stroke.after-beat {
+				border-left: 1px solid #aaa;
 			}
 
-			.instrument-operations, .stroke.before-bar, .beat.before-bar {
-				border-right: 2px solid #888;
+			.stroke.after-bar, .beat.after-bar {
+				border-left: 2px solid #888;
 			}
 
 			.instrument-operations {
@@ -113,23 +118,23 @@
 			}
 
 			&.time-2 {
-				.stroke-inner {
+				.stroke {
 					min-width: 5.4ex;
 				}
 			}
 
 			&.time-12 {
-				.stroke-inner {
+				.stroke {
 					min-width: 1ex;
 				}
 
 				.stroke-0, .stroke-1, .stroke-3, .stroke-4, .stroke-6, .stroke-7, .stroke-9, .stroke-10 {
-					border-right: none;
+					border-left: none;
 				}
 			}
 
 			&.time-20 {
-				.stroke-inner {
+				.stroke {
 					min-width: 1ex;
 				}
 
@@ -137,7 +142,7 @@
 				.stroke-5, .stroke-6, .stroke-7, .stroke-8,
 				.stroke-10,.stroke-11,.stroke-12,.stroke-13,
 				.stroke-15,.stroke-16,.stroke-17,.stroke-18 {
-					border-right: none;
+					border-left: none;
 				}
 			}
 		}

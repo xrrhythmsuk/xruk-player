@@ -1,10 +1,10 @@
 <div class="bb-pattern-player">
 	<h1>
-		<router-link :to="{ name: 'listen', params: { tuneName }}">{{state.tunes[tuneName].displayName || tuneName }}</router-link>	
+		<router-link :to="{ name: 'listen', params: { tuneName }}">{{state.tunes[tuneName].displayName || tuneName }}</router-link>
 		{{state.tunes[tuneName].patterns[patternName].displayName || patternName }}
 		<router-link
 			v-if="readonly && isCustomPattern"
-		 	:to="{ name: 'edit pattern', params: { tuneName, patternName }}"><fa icon="pencil-alt"/></router-link>	
+		 	:to="{ name: 'edit pattern', params: { tuneName, patternName }}"><fa icon="pencil-alt"/></router-link>
 	</h1>
 	<div class="bb-pattern-editor-toolbar">
 		<b-button :variant="playerRef && playerRef.playing ? 'info' : 'success'" @click="playPause()"><fa :icon="playerRef && playerRef.playing ? 'pause' : 'play'"></fa><span class="d-none d-sm-inline"> {{playerRef && playerRef.playing ? 'Pause' : 'Play'}}</span></b-button>
@@ -30,6 +30,8 @@
 		<b-button variant="warning" v-if="hasLocalChanges" @click="reset()"><fa icon="eraser"/> Restore original</b-button>
 		<b-button variant="info" v-if="hasLocalChanges || isCustomPattern" @click="share()"><fa icon="share-from-square"/> Share</b-button>
 
+		<b-button :pressed.sync="showMnemonics" variant="outline-secondary" v-b-tooltip.hover="'Toggle mnemonics'" :disabled="!mnemonicsAvailable"><fa icon="comment"/></b-button>
+
 		<span class="mr-2"/>
 		<InstrumentButtons :playback-settings="playbackSettings" :tune="tune" v-if="readonly" />
     	<PlaybackSettings :playback-settings="playbackSettings" :default-speed="tune.speed" v-else />
@@ -54,20 +56,30 @@
 						<a v-if="isHiddenSurdoHeadphone(instrumentKey) && instrumentKey == 'ms'" href="javascript:" @click="headphones([ 'ls', 'ms', 'hs' ], $event.ctrlKey || $event.shiftKey)" class="inactive"><fa icon="headphones"/></a>
 						<a href="javascript:" @click="mute(instrumentKey)" :class="playbackSettings.mute[instrumentKey] ? 'active' : 'inactive'"><fa icon="volume-mute"/></a>
 					</td>
-					<td v-for="i in pattern.length*pattern.time + pattern.upbeat" class="stroke" 
-						:id="`bb-pattern-editor-stroke-${instrumentKey}-${i-1}`"
-						:class="getStrokeClass(i-1, instrumentKey)" v-b-tooltip.hover="config.strokesDescription[pattern[instrumentKey][i-1]] || ''">
-						<span v-if="readonly" class="stroke-inner">{{config.strokes[pattern[instrumentKey][i-1]] || ' '}}</span>
-						<a v-if="!readonly"
-							href="javascript:" class="stroke-inner"
-							@click="clickStroke(instrumentKey, i-1)"
-						>
-							{{config.strokes[pattern[instrumentKey][i-1]] || ' '}}
-						</a>
-						<b-popover :no-fade="true" v-if="currentStrokeDropdown && currentStrokeDropdown.instr == instrumentKey && currentStrokeDropdown.i == i-1" :target="`bb-pattern-editor-stroke-${instrumentKey}-${i-1}`" placement="bottom" show triggers="manual">
-							<StrokeDropdown :instrument="instrumentKey" :value="pattern[instrumentKey][i-1] || ' '" @change="onStrokeChange($event, false)" @close="onStrokeClose()" />
-						</b-popover>
-					</td>
+					<template v-if="showMnemonics" >
+						<td v-for="cell in mnemonicCells(instrumentKey)" class="stroke mnemonic"
+							:class="cell.class"
+							:colspan="cell.span">
+							{{cell.text}}
+						</td>
+					</template>
+					<template v-else>
+						<td	d v-for="i in pattern.length*pattern.time + pattern.upbeat" class="stroke" 
+							:id="`bb-pattern-editor-stroke-${instrumentKey}-${i-1}`"
+							:class="getStrokeClass(i-1, instrumentKey)" v-b-tooltip.hover="config.strokesDescription[pattern[instrumentKey][i-1]] || ''">
+							<span v-if="readonly" class="stroke-inner">{{config.strokes[pattern[instrumentKey][i-1]] || ' '}}</span>
+
+							<a v-if="!readonly"
+								href="javascript:" class="stroke-inner"
+								@click="clickStroke(instrumentKey, i-1)"
+							>
+								{{config.strokes[pattern[instrumentKey][i-1]] || ' '}}
+							</a>
+							<b-popover :no-fade="true" v-if="currentStrokeDropdown && currentStrokeDropdown.instr == instrumentKey && currentStrokeDropdown.i == i-1" :target="`bb-pattern-editor-stroke-${instrumentKey}-${i-1}`" placement="bottom" show triggers="manual">
+								<StrokeDropdown :instrument="instrumentKey" :value="pattern[instrumentKey][i-1] || ' '" @change="onStrokeChange($event, false)" @close="onStrokeClose()" />
+							</b-popover>
+						</td>
+					</template>
 				</tr>
 			</tbody>
 		</table>

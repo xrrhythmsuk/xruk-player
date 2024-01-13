@@ -15,6 +15,26 @@ const rawTunes : { [tuneName: string]: RawTune }  = Object.fromEntries(
 
 const defaultTunes: { [tuneName: string]: Tune } = {};
 
+function cloneOf(input:string) {
+	const m = input.match(/^@([a-z]{2})$/)
+	return m ? m[1] as Instrument : null
+}
+
+function uncompressMnemonics(tuneName: string, target: Pattern, pattern: CompressedPattern, instr: Instrument){
+	const source = pattern.mnemonics?.[instr]
+	const clone = cloneOf(source || pattern[instr] || '')
+	if (clone) return target.mnemonics?.[clone]
+	if(!source) return undefined
+
+	const words = source.split(/[\s\-]/)
+
+	if(target[instr].filter(i => i !== " ").length !== words.length)
+		console.warn(`Mnemonics length mismatch ${tuneName} ${target.displayName}: ${source}`, target[instr])
+
+	let i = 0;
+	return target[instr].map(p => p != ' ' ? words[i++] : '')
+}
+
 for (const i in rawTunes) {
 	const tune = rawTunes[i];
 	const newTune = clone(tune) as any as Tune;
@@ -27,9 +47,9 @@ for (const i in rawTunes) {
 
 		for (const k of config.instrumentKeys) {
 			const thisPattern = pattern[k] = pattern[k] || "";
-			const m = thisPattern.match(/^@([a-z]{2})$/);
+			const m = cloneOf(thisPattern);
 			if (m)
-				newPattern[k] = clone(newPattern[m[1] as Instrument]);
+				newPattern[k] = clone(newPattern[m]);
 			else {
 				newPattern[k] = thisPattern.split('');
 				newPattern.length = Math.max(newPattern.length || 0, newPattern[k].length - (pattern.upbeat || 0));
@@ -37,6 +57,13 @@ for (const i in rawTunes) {
 
 			if (k == "ag")
 				newPattern[k] = newPattern[k].map(function (it) { return it == "X" ? "o" : it; });
+		}
+
+		if(pattern.mnemonics){
+			newPattern.mnemonics = {}
+			for (const k of config.instrumentKeys) {
+				newPattern.mnemonics[k as Instrument] = uncompressMnemonics(i, newPattern, pattern, k as Instrument)
+			}
 		}
 
 		newPattern.length = Math.ceil(newPattern.length / (newPattern.time || 4));

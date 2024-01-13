@@ -17,13 +17,23 @@ export default {
             sn: "...X.X...X.....X.X...X.....X.X...X.....X.X..XX.X",
             ta: "   X     X     X X   X     X X   X     X X   X",
             ag: "o  a ao  a ao a  o      o a  o      o a  o",
-            sh: "X  X .X  X .X  X .X  X .X  X .X  X .X  X .X  X ."
+            sh: "X  X .X  X .X  X .X  X .X  X .X  X .X  X .X  X .",
+            mnemonics: {
+                ls: "Jo-shu-a Jo-shu-a Je-ri-cho's done for Je-ri-cho's done for Je-ri-cho's done for",
+                ms: "Trum-pets soun-ding Walls fa-lling Walls fa-lling Walls fa-lling",
+                re: "Je-ri-cho's crum-bl-ing Je-ri-cho's crum-bl-ing Je-ri-cho's crum-bl-ing Je-ri-cho's had it",
+                sn:   ". . . Those . walls . . . will . . . . . Those . walls . . . will . . "
+                    + ". . . Those . walls . . . will . . . . . Those . walls . . will fall . down",
+                ta: "Walls are Fall-ing down Fall-ing down Fall-ing down",
+                ag: "Jo-shu-a laughed when the wall came down Wall came down Wall came down"
+            }
         },
-	'Alt Repi': {
-	    loop: true,
-	    re: "f  X Xf  X Xf  X X  r   f  X X  r   f  X X  r   ",
-	    sh: "X  .  .  .  X  .  .  .  X  .  .  .  X  .  .  .  "
-	},
+        'Alt Repi': {
+            loop: true,
+            re: "f  X Xf  X Xf  X X  r   f  X X  r   f  X X  r   ",
+            sh: "X  .  .  .  X  .  .  .  X  .  .  .  X  .  .  .  ",
+            mnemonics: {  re: "Je-ri-cho Je-ri-cho Je-ri-cho's done Je-ri-cho's done Je-ri-cho's done" }
+        },
         'Break 1': {
             upbeat: 3,
             ls: "X XX  X  X XX X",
@@ -32,7 +42,11 @@ export default {
             re: "X XX  X  X XX X     X  X  X",
             sn: "@ls",
             ta: "@ls",
-            ag: "@ls"
+            ag: "@ls",
+            mnemonics: {
+                ls: "And the wall came tum-bl-ing down",
+                re: "And the wall came tum-bl-ing down They've had it"
+            }
         },
         'Break 1 after short': {
             displayName: "e.g. Break 1 finishing main part",
@@ -53,7 +67,11 @@ export default {
             re: " " + repeat(2, "f  h Xf  h Xf  h Xf  h Xf  h Xf  h Xf  h Xh r   "),
             sn: "@ls",
             ta: "XX XX  X X  X            X    XX XX X           XX XX  X X  X            X    XX XX X",
-            ag: "aa aa  a o  a            a    aa ao a           aa aa  a o  a            a    aa ao a"
+            ag: "aa aa  a o  a            a    aa ao a           aa aa  a o  a            a    aa ao a",
+            mnemonics: {
+                ta: "The trum-pet came ring-ing out Walls fell down to the ground The trum-pet came ring-ing out Walls fell down to the ground",
+                ag: "The trum-pet came ring-ing out Walls fell down to the ground The trum-pet came ring-ing out Walls fell down to the ground"
+            }
         },
         'Break 3': {
             ls: "s  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s",
@@ -62,7 +80,11 @@ export default {
             re: "        X        X  X           X        X  X  X",
             sn: "@re",
             ta: "@re",
-            ag: "@re"
+            ag: "@re",
+            mnemonics: {
+                ls: "Drums came boo out Af-ter trum blast Drums came boo out a-fter wall o",
+                re: "ming the pet ming the fell ver"
+            }
         },
         'Call Break': {
             ls: "                     X           X           X                       X XX  X  X XX X",
@@ -71,7 +93,11 @@ export default {
             re: "X XX XX XX  X X  X      X X  X      X X  X      X XX XX XX  X X  X   X XX  X  X XX X     X  X  X",
             sn: "@ls",
             ta: "@ls",
-            ag: "@ls"
+            ag: "@ls",
+            mnemonics: {
+                ls: "Yep Yep Yep And the wall came tum-bl-ing down",
+                re: "Jo-shu-a was figh-ting at Je-ri-cho Je-ri-cho Je-ri-cho Jo-shu-a was figh-ting at Je-ri-cho And the wall came tum-bl-ing down They've had it"
+            }
         }
     },
     exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Break 1 after short", "Tune", "Call Break", "Tune", "Break 2", "Tune", "Break 3"]

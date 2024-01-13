@@ -17,13 +17,21 @@ export default {
             sn: "..X...X...X...X.",
             ta: "X   X   X  XX X",
             ag: "          oa ao ",
-            sh: "@sn"
+            sh: "@sn",
+            mnemonics: {
+                ls: "This beat? We've been pla-ying it for years",
+                ms: "Hey wait, Where's this one from?",
+                re: ". . Who . . . said . . . it's . . half-inched? .",
+                ta: "Sto-len? That's ba-na-nas",
+                ag: "Where's this one from?"
+            }
         },
         "Alt Agogo": {
             displayName: 'Alt Agogô',
             loop: true,
             ag: "o ao  a  oaoo a ",
-            sh: 'X . . . X . . . '
+            sh: 'X . . . X . . . ',
+            mnemonics: {  ag: "This tune we play, I think it's sto-len" }
         },
         "Break 1": {
             time: 3,
@@ -33,7 +41,11 @@ export default {
             re: repeat(3, "XXXXXXXXXXXXX X  X      ") + "XXXXXXXXXXXXX X  X     fX       fX       fX     ",
             sn: "@ls",
             ta: "@ls",
-            ag: "@ls"
+            ag: "@ls",
+            mnemonics: {
+                ls: "Nope Nope Nope Nope Yep Yep Yep",
+                re: repeat(4, "A-ny-one got a-ny tips a-bout fin-ding that sto-len beat? ") + repeat(3, "Y' sure? ")
+            }
         },
         "2/4 Break": {
             ls: "X   X   X X X X ",
@@ -51,7 +63,11 @@ export default {
             re: "@ls",
             sn: repeat(3, "X..X.XX..X.XX.X.") + "X          XX X ",
             ta: "@ls",
-            ag: "@ls"
+            ag: "@ls",
+            mnemonics: {
+                ls: repeat(3, "Sto-len, you say? That's ba-na-nas ") + "That's ba-na-nas",
+                sn: repeat(3, "Sto . . len . you say? . . That's . ba na . nas . ") + "That's ba-na-nas"
+            }
         },
         "Progressive Karla (Stolen)": {
             ls: "X X X X XXXXXXXXXXXXXXXXX       ",
@@ -70,7 +86,11 @@ export default {
             re: "  X   X   X   X ",
             sn: "@re",
             ta: "@re",
-            ag: "@re"
+            ag: "@re",
+            mnemonics: {
+                ls: "Time to nick the Sheff whi-stle break",
+                re: "Yep Yep Yep Yep"
+            }
         },
         "Tune Whistle Break": {
             displayName: "Tune (Surdos Whistle Break)",

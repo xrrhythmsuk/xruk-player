@@ -15,7 +15,14 @@ export default {
             sn: 'X..X..X..X..X..X..X..X..X..X..X..X..XXXX  XXXX',
             ta: 'X XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX X',
             ag: 'aaaa  oooo              aaaa  oooo              ',
-            sh: 'X..X..X..X..X..X..X..X..X..X..X..X..X..X..X..X..'
+            sh: 'X..X..X..X..X..X..X..X..X..X..X..X..X..X..X..X..',
+            mnemonics: {
+                ls: "Swing your drum Swing your drum Swing your drum side to side",
+                re: "Ban-ger ban-ger ban-ger ban-ger Ban-ger ban-ger ban-ger ban-ger Ban-ger ban-ger ban-ger ban-ger Danc-ing a lot, like it or not",
+                sn: "1 . . 2 . . 3 . . 4 . . 1 . . 2 . . 3 . . 4 . . 1 . . 2 . . 3 . . 4 . . Dan-cing a lot, like it or not",
+                ta: "Ban-ger ban-ger ban-ger ban-ger Ban-ger ban-ger ban-ger ban-ger Ban-ger ban-ger ban-ger ban-ger Ban-ger ban-ger ban-ger ban-ger",
+                ag: "Dan-cing a lot, like it or not Dan-cing a lot, like it or not"
+            }
         },
         'Break 1': {
             upbeat: 4,
@@ -26,7 +33,11 @@ export default {
             sn: '@re',
             ta: '@re',
             ag: '@re',
-            sh: '@re'
+            sh: '@re',
+            mnemonics: {
+                ls: "'Cos the swing on this beat is so cool You'll be dan-cing a-round like a fool 'Cos the swing on this beat is so cool 'Cos it's a ban-ger Dan-cing a lot, like it or not",
+                re: "That's right That's right That's right Dan-cing a lot, like it or not"
+            }
         },
         "Break 3": {
             ls: "XXXX  XXXX  ",
@@ -36,7 +47,8 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            sh: '@ls'
+            sh: '@ls',
+            mnemonics: {  ls: "Dan-cing a lot, like it or not" }
         },
         '7 Break': {
             ls: "XXXXXXX",
@@ -46,7 +58,11 @@ export default {
             sn: "@ls",
             ta: "@ls",
             ag: "@ls",
-            ot: "         A  "
+            ot: "         A  ",
+            mnemonics: {
+                ls: "This is my fa-vou-rite part",
+                ot: "Hey!"
+            }
         },
         'Butterfly Break': {
             ls: "XXXXXXX     XXXXXXX     XXXXXXXXXX  XXXXXXX",
@@ -56,7 +72,11 @@ export default {
             sn: "@ls",
             ta: "@ls",
             ag: "@ls",
-            ot: "                                             A  "
+            ot: "                                             A  ",
+            mnemonics: {
+                ls: "Bi-bbi-di bo-bbi-di boo Bi-bbi-di bo-bbi-di boo Put it to-ge-ther and what have you got? Bi-bbi-di bo-bbi-di boo",
+                ot: "Hey!"
+            }
         },
         "Call Break": {
             ls: '            XXXXXXXXXX              XXXXXXXXXX        XXXX              X XX XX XX  XXXXXXX     ',
@@ -67,7 +87,16 @@ export default {
             ta: '@sn',
             ag: '@sn',
             sh: '@sn',
-            ot: '                                                                                             A  '
+            ot: '                                                                                             A  ',
+            mnemonics: {
+                ls: "This is my fa-vou-rite, fa-vou-rite part This is my fa-vou-rite, fa-vou-rite part This is the part "
+                    + "Ban-ger ban-ger ban-ger bang This is my fa-vou-rite part",
+                re: "This is my fa-vou-rite, fa-vou-rite part This is my fa-vou-rite, fa-vou-rite part This is the part "
+                    + "This is my fa-vou-rite, fa-vou-rite part This is my fa-vou-rite part",
+                sn: "This is my fa-vou-rite, fa-vou-rite part This is my fa-vou-rite, fa-vou-rite part This is the part "
+                    + "This is my fa-vou-rite part",
+                ot: "Hey!"
+            }
         },
         'Break 2': {
             upbeat: 4,
@@ -78,7 +107,12 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            sh: '@ls'
+            sh: '@ls',
+            mnemonics: {
+                ls: "They'll say play that song, play that song now They'll say, Play that song right now "
+                    + "They'll say play that song, play that song now They'll say, Play that song we're "
+                    + "Dan-cing a lot, like it or not"
+            }
         },
         "Karla Break (Bhangra)": {
             ls: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX           ',

@@ -28,12 +28,14 @@ type PatternPropertiesOptional = Omit<Partial<PatternProperties>, "volumeHack"> 
 	volumeHack?: LegacyVolumeHack | VolumeHack
 };
 
-export type Pattern = PatternProperties & Beats;
+export type Mnemonics = { mnemonics? : { [instr in Instrument]?: string[] } }
+export type MnemonicsCompressed = { mnemonics? : { [instr in Instrument]: string } }
 
-export type PatternOptional = PatternPropertiesOptional & BeatsOptional;
+export type Pattern = PatternProperties & Beats & Mnemonics
 
-export type CompressedPattern = PatternPropertiesOptional & BeatsStringOptional;
+export type PatternOptional = PatternPropertiesOptional & Mnemonics & BeatsOptional;
 
+export type CompressedPattern = PatternPropertiesOptional & BeatsStringOptional & MnemonicsCompressed;
 
 export function normalizePattern(data?: PatternOptional): Pattern {
 	const ret = {
@@ -42,7 +44,8 @@ export function normalizePattern(data?: PatternOptional): Pattern {
 		speed: data && data.speed || config.defaultSpeed,
 		upbeat: data && data.upbeat || 0,
 		loop: data && data.loop || false,
-		displayName: data && data.displayName
+		displayName: data && data.displayName,
+		mnemonics: data && data.mnemonics || {}
 	} as Pattern;
 
 	if(data && data.volumeHack)
