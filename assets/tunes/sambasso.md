@@ -1,4 +1,4 @@
-One of the tunes we learned at the first 2022 samba camp. That reggaeton beat is infectious!
+One of the tunes we learned at the first 2022 camp. That reggaeton beat is infectious!
 
 **Sign:** V with 4 fingers (Vulcan salute) on both hands, sliding the gaps into each other
 
@@ -6,7 +6,9 @@ One of the tunes we learned at the first 2022 samba camp. That reggaeton beat is
 
 **Name:** Probably a combination of the words “Samba” and “basso” (Italian for “low” or “base”).
 
-**Musical background:** The snare line, repi line and call break seem to be samba reggae style. *(More info needed.)*
+**Musical background:** The snare line, repi line and call break seem to be samba reggae style. *(More info needed.)*  
+  
+RoR bands, who tend to have proper samba surdos, usually play the surdo part with a whippy stick in one hand. As our bands tend to use converted drum kit drums,  clicking on the rim or the wooden body with your usual beaters sounds better.
 
 **Sign:** *(More info needed.)*
 
@@ -23,5 +25,5 @@ One of the tunes we learned at the first 2022 samba camp. That reggaeton beat is
 ## Breaks
 
 * **Break 1** is led with the whistle, which is a nice novelty, and for smaller bands can be whistled in without any warning
-* **Break 2** is a call and response with the surdos
+* **Break 2** is surdo-led
 * The **Call break** (aka the Intro) is an intricate bit of actual samba reggae that, sadly, probably isn’t feasible nationally _\[not played nationally\]_

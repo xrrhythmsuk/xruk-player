@@ -17,6 +17,17 @@ export default {
             ag: 'o  aa oo a oo a ',
             sh: 'X.X.X.X.X.X.X.X.'
         },
+        'Starter Snare': {
+            loop: true,
+            sn: '..XX..XX..XX..XX',
+            sh: 'X   .   .   .   '
+        },
+        'Starter Agogo': {
+            displayName: 'Starter Agogô',
+            loop: true,
+            ag: 'o  a  o   a a   ',
+            sh: 'X   .   .   .   '
+        },
         'Alt Tam': {
             loop: true,
             ta: ' X XX X XX XX  X X XXXX X  XX   ',

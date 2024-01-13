@@ -27,14 +27,16 @@ export default {
             sh: '@re'
         },
         "Tam Line": {
-            ls: 'X X X X XX XX X ',
+            upbeat: 16,
+            ls: '                X X X X XX XX X ',
             ms: '@ls',
             hs: '@ls',
             re: '@ls',
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            sh: '@ls'
+            sh: '@ls',
+            ot: 'w w w w ww ww w                 '
         },
         "Short call": {
             displayName: 'Call Break (short)',
@@ -64,13 +66,27 @@ export default {
             ls: '      X       X       X   XXXXX ',
             ms: '@ls',
             hs: '@ls',
+            sh: 'X   .   .   .   X   .   .   .   '
+        },
+        "Break 3": {
+            ls: '   XXXX    XXXX    XXXX X XXXXX ',
+            ms: '@ls',
+            hs: '@ls',
+            sh: 'X   .   .   .   X   .   .   .   '
+        },
+        "Tune Break 2": {
+            displayName: "Tune (Surdos Break 2)",
+            ls: '      X       X       X   XXXXX ',
+            ms: '@ls',
+            hs: '@ls',
             re: 'f  hs r f  hs r f  hs r s r s r ',
             sn: 'X...X..XX..X....X...X..XX..X....',
             ta: 'X X X X XX XX X X X X X XX XX X ',
             ag: 'a a o o aa o oo a a o o aa o oo ',
             sh: '................................'
         },
-        "Break 3": {
+        "Tune Break 3": {
+            displayName: "Tune (Surdos Break 3)",
             ls: '   XXXX    XXXX    XXXX X XXXXX ',
             ms: '@ls',
             hs: '@ls',
@@ -79,7 +95,7 @@ export default {
             ta: 'X X X X XX XX X X X X X XX XX X ',
             ag: 'a a o o aa o oo a a o o aa o oo ',
             sh: '................................'
-        }
+        }   
     },
-    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Tam Line", "Tune", "Tune", "Long call", "Tune", "Tune", "Break 2", "Tune", "Tune", "Break 3"]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Tam Line", "Tune", "Tune", "Long call", "Tune", "Tune", "Tune Break 2", "Tune", "Tune", "Tune Break 3"]
 }

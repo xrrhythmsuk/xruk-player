@@ -1,3 +1,5 @@
+*If your band is looking for a first tune to learn, try **Funk**, **Karla** or **Hedgehog**!*
+
 This is one of our core tunes, and rare because it’s a bouncy, 6/8 one:
 
 It goes *1-and-a, 2-and-a, 3-and-a, 4-and-a* (like a jig) instead of *1-a-and-a, 2-a-and-a, 3-a-and-a, 4-a-and-a*.
@@ -29,7 +31,7 @@ Nowadays, Bhangra also refers to a style of pop music that was invented by Punja
 
 ## Breaks
 
-* **Break 1** is a call and response between surdos and everyone else
+* **Break 1** is medium-length and led by surdos
 * **Break 3** is a short break following the agogô line
 * The **7 break** *(finger and thumb, 5 in other hand)* is taken from the last line of the call break and we use it a lot as a general break (The shout is great!)
 * The **Butterfly break** *(join thumbs, flap hands upwards*) is an extended version of the 7 break and can also be used as a general break
