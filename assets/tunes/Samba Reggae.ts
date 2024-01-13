@@ -25,6 +25,17 @@ export default {
                 ag: "Sam-ba re-ggae on the a-go-gô"
             }
         },
+        'Starter Snare': {
+            loop: true,
+            sn: '..XX..XX..XX..XX',
+            sh: 'X   .   .   .   '
+        },
+        'Starter Agogo': {
+            displayName: 'Starter Agogô',
+            loop: true,
+            ag: 'o  a  o   a a   ',
+            sh: 'X   .   .   .   '
+        },
         'Break 1': {
             ls: '                X X XX XX                       X  X  X X                                  XX                              XX                              XX               XXXX',
             ms: '@ls',
@@ -57,18 +68,31 @@ export default {
         },
         'Whistle Break': {
             loop: true,
-            time: 12,
-            ls: "X         X X         X X   X     X X",
+            time: 6,
+            ls: "X    XX    XX X  XX     ",
             ms: "@ls",
             hs: "@ls",
-            re: "      X           X           X           X  ",
+            re: "   X     X     X     X  ",
             sn: "@re",
             ta: "@re",
             ag: "@re",
+            sh: "@re",
             mnemonics: {
                 ls: "Time to do the Sheff whi-stle break",
                 re: "Yep Yep Yep Yep"
             }
+        },
+        'Tune (Whistle in Whistle Break)': {
+            time: 12,
+            ls: repeat(2, stretch(4, 12, '0   X   0   X X ')),
+            ms: repeat(2, stretch(4, 12, 'X   0   X   0   ')),
+            hs: repeat(2, stretch(4, 12, '0     X 0   XXXX')),
+            re: repeat(2, stretch(4, 12, '  XX  XX  XX  XX')),
+            sn: repeat(2, stretch(4, 12, 'X..X..X...X..X..')),
+            ta: repeat(2, stretch(4, 12, 'X  X  X   X X   ')),
+            ag: repeat(2, stretch(4, 12, 'o a a oo a aa o ')),
+            sh: repeat(2, stretch(4, 12, '................')),
+            ot: repeat(2, stretch(6, 12, "w    ww    ww w  ww     "))
         },
         'Break 3': {
             ls: '                X  XX X XX XX X                 X  XX X XX XX X                 X  XX X X       X  XX X X       X  X  X         ',
@@ -86,15 +110,16 @@ export default {
                 ag: repeat(2, "Sam-ba re-ggae ") + repeat(2, "want to ") + "Sam-ba re-ggae"
             }
         },
-        'Call Break': {
-            ls: '          X X             X X             X X                                                                 X ',
-            ms: '          X X             X X             X X                                                                   ',
-            hs: '@ms',
-            re: 'f XX XX X       f XX XX X       f XX XX X                                                                       ',
+        'Clave Call': {
+            ls: '          X X             X X             X X                   X  X  X   X X   X  X  X   X X   X  X  X   X X X ',
+            ms: '@ls',
+            hs: '@ls',
+            re: 'f XX XX X       f XX XX X       f XX XX X       X  X  X   X X                                                   ',
             sn: '          X X             X X             X X                   X..X..X...X.X...X..X..X...X.X...X..X..X...X.X...',
-            ta: '          X X             X X             X X   X  X  X   X X   X  X  X   X X   X  X  X   X X   X  X  X   X X   ',
-            ag: '@ms',
-            sh: '@ms',
+            ta: '          X X             X X             X X                   X  X  X   X X   X  X  X   X X   X  X  X   X X   ',
+            ag: '@ta',
+            sh: '@ta',
+            volumeHack: {  64: .4, 80: .7, 96: 1  },
             mnemonics: {
                 ls: repeat(3, "Act now ") + ".",
                 ms: repeat(3, "Act now "),
@@ -105,8 +130,8 @@ export default {
         },
         'SOS Break': {
             ls: 'X       X       X       X       X       X       X       X     X ',
-            ms: 'X       X       X       X       X       X       X       X       ',
-            hs: '@ms',
+            ms: '@ls',
+            hs: '@ls',
             re: '  XX XX   X X     XX XX   X X     XX XX   X X     XX XX   X X   ',
             sn: '@re',
             ta: '@re',
@@ -130,5 +155,5 @@ export default {
             sh: '................'
         }
     },
-    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune", "Tune", "Whistle Break", "Whistle Break", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Call Break", "Tune", "Tune", "Tune", "Tune", "SOS Break", "Tune (SOS Repi)", "Tune (SOS Repi)", "Tune (SOS Repi)", "Tune (SOS Repi)"]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune (Whistle in Whistle Break)", "Whistle Break", "Whistle Break", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Clave Call", "Tune", "Tune", "Tune", "Tune", "SOS Break", "Tune (SOS Repi)", "Tune (SOS Repi)", "Tune (SOS Repi)", "Tune (SOS Repi)"]
 }

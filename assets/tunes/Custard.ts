@@ -97,7 +97,8 @@ export default {
             }
         },
         'Tam Line': {
-            ls: 'X X XX X X X XX ',
+            upbeat: 16,
+            ls: '                X X XX X X X XX ',
             ms: '@ls',
             hs: '@ls',
             re: '@ls',
@@ -105,6 +106,7 @@ export default {
             ta: '@ls',
             ag: '@ls',
             sh: '@ls',
+            ot: 'w w ww w w w ww                 ',
             mnemonics: {  ls: "I've got cu-stard in my un-der-pants"}
         }
 

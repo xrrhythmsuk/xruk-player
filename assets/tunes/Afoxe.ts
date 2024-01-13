@@ -39,7 +39,8 @@ export default {
             }
         },
         "Tam Line": {
-            ls: 'X X X X XX XX X ',
+            upbeat: 16,
+            ls: '                X X X X XX XX X ',
             ms: '@ls',
             hs: '@ls',
             re: '@ls',
@@ -47,6 +48,7 @@ export default {
             ta: '@ls',
             ag: '@ls',
             sh: '@ls',
+            ot: 'w w w w ww ww w                 ',
             mnemonics: {  ls: "Spent all e-vening sha-ving my arm-pits" }
         },
         "Short call": {
@@ -88,6 +90,19 @@ export default {
             ls: '      X       X       X   XXXXX ',
             ms: '@ls',
             hs: '@ls',
+            sh: 'X   .   .   .   X   .   .   .   '
+        },
+        "Break 3": {
+            ls: '   XXXX    XXXX    XXXX X XXXXX ',
+            ms: '@ls',
+            hs: '@ls',
+            sh: 'X   .   .   .   X   .   .   .   '
+        },
+        "Tune Break 2": {
+            displayName: "Tune (Surdos Break 2)",
+            ls: '      X       X       X   XXXXX ',
+            ms: '@ls',
+            hs: '@ls',
             re: 'f  hs r f  hs r f  hs r s r s r ',
             sn: 'X...X..XX..X....X...X..XX..X....',
             ta: 'X X X X XX XX X X X X X XX XX X ',
@@ -95,7 +110,8 @@ export default {
             sh: '................................',
             mnemonics: {  ls: "Hey Hey Hey Have you had a shave?" }
         },
-        "Break 3": {
+        "Tune Break 3": {
+            displayName: "Tune (Surdos Break 3)",
             ls: '   XXXX    XXXX    XXXX X XXXXX ',
             ms: '@ls',
             hs: '@ls',
@@ -107,5 +123,5 @@ export default {
             mnemonics: {  ls: "You've had a shave You've had a shave You've had a shave Looks like you've had a shave" }
         }
     },
-    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Tam Line", "Tune", "Tune", "Long call", "Tune", "Tune", "Break 2", "Tune", "Tune", "Break 3"]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Tam Line", "Tune", "Tune", "Long call", "Tune", "Tune", "Tune Break 2", "Tune", "Tune", "Tune Break 3"]
 }

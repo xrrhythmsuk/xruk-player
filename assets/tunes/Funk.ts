@@ -50,7 +50,19 @@ export default {
             ag: '@ls',
             sh: '@ls',
             mnemonics: {  ls: "Hu-rry up, we're blee-ding star-ving" }
+        },
+        "Tune Conga": {
+            displayName: "Tune (Surdos Conga)",
+            loop: true,
+            ls: 'X     X X   X X X     X X   X X X   X   X   X   X   X   X   X   ',
+            ms: '@ls',
+            hs: '@ls',
+            re: 'f  hf  hf  hf  hf  hf  hf  hXhrhf  hf  hf  hf  hf  hf  hf  hXhrh',
+            sn: '....X.......X.......X.......X.......X.......X.......X.......X...',
+            ta: '    X       X X     X     X X       X       X X     X     X X   ',
+            ag: 'o  a  o   a a a o  a  o   a a a o  a  o   a a a o  a  o   a a a ',
+            sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.'
         }
     },
-    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Break 2", "Tune", "Tune"]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune Conga", "Tune", "Tune", "Break 1", "Tune", "Tune", "Break 2", "Tune", "Tune"]
 }

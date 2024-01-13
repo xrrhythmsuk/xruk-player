@@ -24,6 +24,17 @@ export default {
                 ag: "Hump-ty Dump-ty fell off a brick wall"
             }
         },
+        'Starter Snare': {
+            loop: true,
+            sn: '..XX..XX..XX..XX',
+            sh: 'X   .   .   .   '
+        },
+        'Starter Agogo': {
+            displayName: 'Starter Agogô',
+            loop: true,
+            ag: 'o  a  o   a a   ',
+            sh: 'X   .   .   .   '
+        },
         'Alt Tam': {
             loop: true,
             ta: ' X XX X XX XX  X X XXXX X  XX   ',

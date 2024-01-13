@@ -24,7 +24,7 @@ Hit four beats
 Hit eight beats
 
 **Chaos Break** *Pulling your hair out*  
-Play noise until signed (Don’t wait for whistle in)
+Play noise (don’t wait for whistle in) until signed
 
 
 ### Other short
@@ -40,8 +40,9 @@ Four bars of clave going from quiet to loud. You can also do it falling to do lo
 
 ### Karlas
 
-**Karla Break** *Thumb and two fingers*
-A bar of 16s quiet, then medium, then loud, then a hit just on beat 1
+**Karla Break** *Thumb and two fingers*  
+A bar of 16s quiet, then medium, then loud, then a hit just on beat 1  
+Sometimes called a drum roll break, but even then usually played with 16s rather than buzzes
 
 **Progressive Karla** *Grab thumb of raised hand*  
 A bar of 4s, then 8s, then 16s, then a hit just on beat 1
@@ -67,6 +68,6 @@ This is good as a transition between songs or an alternate line for one or two i
 
 ### Song breaks you can use generally
 
-**7 Break** from **Bhangra**
+[**7 Break**](/#/listen/Bhangra/7%20Break) from **Bhangra**
 
-**Whistle Break** from **Samba Reggae**
+[**Whistle Break**](/#/listen/Samba%20Reggae/Whistle%20Break) from **Samba Reggae**

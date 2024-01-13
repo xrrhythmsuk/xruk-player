@@ -1,3 +1,6 @@
+That driving low surdo part works very well for backing chants (along with Samba Reggae) and repis love the long call break!  
+Just make sure to check tams and agogôs aren't about to stage a mutiny...
+
 **Name:** Usually pronounced “AFF-uh-shay” or “a-FOSH-ay” by our English-speaking bands
 
 **Sign:** Shaving your armpit
@@ -29,7 +32,7 @@ There is also some criticism about the sign, since it ridicules the spiritual me
 
 ## Breaks
 
-* **Break 1**, a call and response with surdos
+* **Break 1** is between surdos and everyone else
 * **Breaks 2 and 3** are alternate surdo lines while everyone carries on (3 is the same rhythm as 1) _\[less common nationally\]_
 * The **Call break**, led by repis and with a long and a short version
 * **General breaks** that work well: Tam Line, Wolf Break

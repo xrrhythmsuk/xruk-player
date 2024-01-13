@@ -25,7 +25,7 @@
 	<PatternPlaceholderItem><a href="javascript:" title="Download as MP3" v-b-tooltip.hover @click="slotProps.downloadMp3()"><fa icon="download"/></a></PatternPlaceholderItem>
 </PatternPlaceholder>
 
-<p v-if="tune.sheet"><a :href="tune.sheet" target="_blank">Tune sheet with mnemonics (PDF)</a></p>
+<p v-if="tune.sheet"><a :href="tune.sheet" target="_blank"><strong>Tune sheet with mnemonics (PDF)</strong></a></p>
 
 	<h2 v-if="tuneDescription">About</h2>
 	<div v-if="isCustom" style="white-space:pre-wrap">{{tuneDescription}}</div>

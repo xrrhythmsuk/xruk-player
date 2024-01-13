@@ -49,6 +49,14 @@ export default {
             ls: 'XXXXXXXXX  X XXXX     XXX       ',
             ms: '@ls',
             hs: '@ls',
+            sh: 'X   .   .   .   X   .   .   .   '
+        },
+        "Tune Break 2": {
+            displayName: "Tune (Surdos Break 2)",
+            loop: true,
+            ls: 'XXXXXXXXX  X XXXX     XXX       ',
+            ms: '@ls',
+            hs: '@ls',
             re: 'X XX  r X X X rrX XX  r  X XX rr',
             sn: 'f.X...X...X...X.f.X...X...X...X.',
             ta: 'X X     X X     XX XXX XX       ',
@@ -58,5 +66,5 @@ export default {
                 + "So did Li-ttle Red With an axe" }
         }
     },
-    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Break 2", "Break 2", "Tune", "Tune", { tuneName: "More Breaks", patternName: "Wolf Break"}]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune Break 2", "Tune Break 2", "Tune", "Tune", { tuneName: "More Breaks", patternName: "Wolf Break"}]
 }
