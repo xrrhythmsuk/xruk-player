@@ -52,6 +52,22 @@ export default {
                 ta: repeat(3, "I've got cu-stard ") + "I've got cu-stard in my un-der-pants"
             }
         },
+        'Tam Line': {
+            upbeat: 16,
+            ls: '                X X XX X X X XX ',
+            ms: '@ls',
+            hs: '@ls',
+            re: '@ls',
+            sn: '@ls',
+            ta: '@ls',
+            ag: '@ls',
+            sh: '@ls',
+            ot: 'w w ww w w w ww                 ',
+            mnemonics: {
+                ls: "I've got cu-stard in my un-der-pants",
+                ot: "I've got cu-stard in my un-der-pands"
+            }
+        },
         'Break 3 Agogo': {
             displayName: 'Break 3 (Agogô continues)',
             ls: repeat(4, 'X             X X               '),
@@ -95,24 +111,7 @@ export default {
                 re: { 66: .3, 78: 1, 82: .3, 94: 1, 98: .3, 110: 1, 114: .3, 120: 1, 130: .6, 142: 1, 146: .6, 158: 1, 162: .6, 174: 1, 178: .6, 184: 1 },
                 ta: { 66: .3, 78: 1, 82: .3, 94: 1, 98: .3, 110: 1, 114: .3, 120: 1, 130: .6, 142: 1, 146: .6, 158: 1, 162: .6, 174: 1, 178: .6, 184: 1 }
             }
-        },
-        'Tam Line': {
-            upbeat: 16,
-            ls: '                X X XX X X X XX ',
-            ms: '@ls',
-            hs: '@ls',
-            re: '@ls',
-            sn: '@ls',
-            ta: '@ls',
-            ag: '@ls',
-            sh: '@ls',
-            ot: 'w w ww w w w ww                 ',
-            mnemonics: {
-                ls: "I've got cu-stard in my un-der-pants",
-                ot: "I've got cu-stard in my un-der-pands"
-            }
         }
-
     },
     exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Tam Line", "Tune", "Tune", "Tune", "Tune", "Break 3 Agogo", "Tune", "Tune", "Tune", "Tune", "Break 5"]
 }
