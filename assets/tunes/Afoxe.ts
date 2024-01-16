@@ -49,7 +49,10 @@ export default {
             ag: '@ls',
             sh: '@ls',
             ot: 'w w w w ww ww w                 ',
-            mnemonics: {  ls: "Spent all e-vening sha-ving my arm-pits" }
+            mnemonics: {
+                ls: "Spent all e-vening sha-ving my arm-pits",
+                ot: "Spent all e-vening sha-ving my arm-pits"
+            }
         },
         "Short call": {
             displayName: 'Call Break (short)',
@@ -90,13 +93,15 @@ export default {
             ls: '      X       X       X   XXXXX ',
             ms: '@ls',
             hs: '@ls',
-            sh: 'X   .   .   .   X   .   .   .   '
+            sh: 'X   .   .   .   X   .   .   .   ',
+            mnemonics: {  ls: "Hey Hey Hey Have you had a shave?" }
         },
         "Break 3": {
             ls: '   XXXX    XXXX    XXXX X XXXXX ',
             ms: '@ls',
             hs: '@ls',
-            sh: 'X   .   .   .   X   .   .   .   '
+            sh: 'X   .   .   .   X   .   .   .   ',
+            mnemonics: {  ls: "You've had a shave You've had a shave You've had a shave Looks like you've had a shave" }
         },
         "Tune Break 2": {
             displayName: "Tune (Surdos Break 2)",
@@ -107,8 +112,7 @@ export default {
             sn: 'X...X..XX..X....X...X..XX..X....',
             ta: 'X X X X XX XX X X X X X XX XX X ',
             ag: 'a a o o aa o oo a a o o aa o oo ',
-            sh: '................................',
-            mnemonics: {  ls: "Hey Hey Hey Have you had a shave?" }
+            sh: '................................'
         },
         "Tune Break 3": {
             displayName: "Tune (Surdos Break 3)",
@@ -119,8 +123,7 @@ export default {
             sn: 'X...X..XX..X....X...X..XX..X....',
             ta: 'X X X X XX XX X X X X X XX XX X ',
             ag: 'a a o o aa o oo a a o o aa o oo ',
-            sh: '................................',
-            mnemonics: {  ls: "You've had a shave You've had a shave You've had a shave Looks like you've had a shave" }
+            sh: '................................'
         }
     },
     exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Tam Line", "Tune", "Tune", "Long call", "Tune", "Tune", "Tune Break 2", "Tune", "Tune", "Tune Break 3"]
