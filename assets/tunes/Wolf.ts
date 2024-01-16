@@ -49,7 +49,9 @@ export default {
             ls: 'XXXXXXXXX  X XXXX     XXX       ',
             ms: '@ls',
             hs: '@ls',
-            sh: 'X   .   .   .   X   .   .   .   '
+            sh: 'X   .   .   .   X   .   .   .   ',
+            mnemonics: { ls: "Li-ttle pi-ggies got rid of the wolf, "
+                + "So did Li-ttle Red With an axe" }
         },
         "Tune Break 2": {
             displayName: "Tune (Surdos Break 2)",
@@ -61,9 +63,7 @@ export default {
             sn: 'f.X...X...X...X.f.X...X...X...X.',
             ta: 'X X     X X     XX XXX XX       ',
             ag: 'o ooo a   a   a o ooo a   a   a',
-            sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.',
-            mnemonics: { ls: "Li-ttle pi-ggies got rid of the wolf, "
-                + "So did Li-ttle Red With an axe" }
+            sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.'
         }
     },
     exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune Break 2", "Tune Break 2", "Tune", "Tune", { tuneName: "More Breaks", patternName: "Wolf Break"}]
