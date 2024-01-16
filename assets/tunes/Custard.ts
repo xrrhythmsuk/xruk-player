@@ -107,7 +107,10 @@ export default {
             ag: '@ls',
             sh: '@ls',
             ot: 'w w ww w w w ww                 ',
-            mnemonics: {  ls: "I've got cu-stard in my un-der-pants"}
+            mnemonics: {
+                ls: "I've got cu-stard in my un-der-pants",
+                ot: "I've got cu-stard in my un-der-pands"
+            }
         }
 
     },
