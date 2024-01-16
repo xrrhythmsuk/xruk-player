@@ -108,8 +108,8 @@ export default {
             ta: '@re',
             ag: '@re',
             mnemonics: {
-                ls: "Wait for",
-                re: "it"
+                ls: "Wait for Wait for",
+                re: "it it"
             }
         },
         'Kickback 2': {
@@ -122,8 +122,8 @@ export default {
             ta: '@re',
             ag: 'oaoaoaoaoaoaoaoa',
             mnemonics: {
-                ls: "It's kick-back",
-                re: "a rave"
+                ls: "It's kick-back It's kick-back",
+                re: "a rave a rave"
             }
         },
         'Zorro Break': {
