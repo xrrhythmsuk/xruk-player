@@ -29,7 +29,7 @@ export default {
             loop: true,
             sn: '..XX..XX..XX..XX',
             sh: 'X   .   .   .   ',
-            mnemonics: {  sn: "Can I Get a Bit of Re-ggae" }
+            mnemonics: {  sn: ". . Can I . . Get a . . Bit of . . Re-ggae" }
         },
         'Starter Agogo': {
             displayName: 'Starter Agogô',
