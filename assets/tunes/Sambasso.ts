@@ -27,13 +27,15 @@ export default {
         'Starter Snare': {
             loop: true,
             sn: '..XX..XX..XX..XX',
-            sh: 'X   .   .   .   '
+            sh: 'X   .   .   .   ',
+            mnemonics: {  sn: "Got to Keep an Eye on Hump-ty" }
         },
         'Starter Agogo': {
             displayName: 'Starter Agogô',
             loop: true,
             ag: 'o  a  o   a a   ',
-            sh: 'X   .   .   .   '
+            sh: 'X   .   .   .   ',
+            mnemonics: {  ag: "Cla-ve for Hump-ty" }
         },
         'Alt Tam': {
             loop: true,
@@ -86,7 +88,7 @@ export default {
             sh: '@ls',
             mnemonics: {
                 ls: repeat(4, "Get off the wall ") + repeat(3, "We're so sick of glu-ing his stu-pid shell back on ") + "We're so sick of glu-ing his stu-pid shell back",
-                re: repeat(4, "z Hump-ty mate ") + repeat(4, "I . . tried . . but . . he . . said it was made up ")
+                re: repeat(4, "z Hump-ty mate ") + repeat(4, "I . . tried . . but . . he . . pro-mised he'd be fine ")
             }
         }
     },
