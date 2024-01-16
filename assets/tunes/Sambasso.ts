@@ -28,7 +28,7 @@ export default {
             loop: true,
             sn: '..XX..XX..XX..XX',
             sh: 'X   .   .   .   ',
-            mnemonics: {  sn: "Got to Keep an Eye on Hump-ty" }
+            mnemonics: {  sn: ". . Got to . . Keep an . . Eye on . . Hump-ty" }
         },
         'Starter Agogo': {
             displayName: 'Starter Agogô',
