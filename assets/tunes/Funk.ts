@@ -61,7 +61,8 @@ export default {
             sn: '....X.......X.......X.......X.......X.......X.......X.......X...',
             ta: '    X       X X     X     X X       X       X X     X     X X   ',
             ag: 'o  a  o   a a a o  a  o   a a a o  a  o   a a a o  a  o   a a a ',
-            sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.'
+            sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.',
+            mnemonics: {  ls: "Py-thons like ki-ttens Py-thons like ki-ttens Ve-ry ta-sty Ve-ry ta-sty" }
         }
     },
     exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune Conga", "Tune", "Tune", "Break 1", "Tune", "Tune", "Break 2", "Tune", "Tune"]
