@@ -31,7 +31,8 @@ export default {
             re: '@ls',
             sn: '@ls',
             ta: '@ls',
-            ag: '@ls'
+            ag: '@ls',
+            mnemonics: {  ls: "Ha-ving a par-ty" }
         },
         'Capped Karla': {
             loop: true,
@@ -105,7 +106,11 @@ export default {
             re: '      X       X ',
             sn: '@re',
             ta: '@re',
-            ag: '@re'
+            ag: '@re',
+            mnemonics: {
+                ls: "Wait for Wait for",
+                re: "it it"
+            }
         },
         'Kickback 2': {
             loop: true,
@@ -115,13 +120,18 @@ export default {
             re: '  X   X   X   X ',
             sn: '@re',
             ta: '@re',
-            ag: 'oaoaoaoaoaoaoaoa'
+            ag: 'oaoaoaoaoaoaoaoa',
+            mnemonics: {
+                ls: "It's kick-back It's kick-back",
+                re: "a rave a rave"
+            }
         },
         'Zorro Break': {
             loop: true,
             ls: 'X       X       X       X  X  X ',
             ms: '@ls',
-            hs: '@ls'
+            hs: '@ls',
+            mnemonics: {  ls: "Ha, take that Zo-rro break" } 
         },
         'Bunny Ears': {
             ls: repeat(2, "                X X X X X  XX   ") + repeat(2, "        X X X   ") + "    X X     X X     XX XX X X   ",

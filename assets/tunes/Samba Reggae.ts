@@ -28,13 +28,15 @@ export default {
         'Starter Snare': {
             loop: true,
             sn: '..XX..XX..XX..XX',
-            sh: 'X   .   .   .   '
+            sh: 'X   .   .   .   ',
+            mnemonics: {  sn: ". . Can I . . Get a . . Bit of . . Re-ggae" }
         },
         'Starter Agogo': {
             displayName: 'Starter Agogô',
             loop: true,
             ag: 'o  a  o   a a   ',
-            sh: 'X   .   .   .   '
+            sh: 'X   .   .   .   ',
+            mnemonics: {  ag: "Cla-ve for re-ggae" }
         },
         'Break 1': {
             ls: '                X X XX XX                       X  X  X X                                  XX                              XX                              XX               XXXX',
@@ -114,18 +116,17 @@ export default {
             ls: '          X X             X X             X X                   X  X  X   X X   X  X  X   X X   X  X  X   X X X ',
             ms: '@ls',
             hs: '@ls',
-            re: 'f XX XX X       f XX XX X       f XX XX X       X  X  X   X X                                                   ',
+            re: 'f XX XX X       f XX XX X       f XX XX X       X  X  X   X X   X  X  X   X X   X  X  X   X X   X  X  X   X X   ',
             sn: '          X X             X X             X X                   X..X..X...X.X...X..X..X...X.X...X..X..X...X.X...',
             ta: '          X X             X X             X X                   X  X  X   X X   X  X  X   X X   X  X  X   X X   ',
             ag: '@ta',
             sh: '@ta',
             volumeHack: {  64: .4, 80: .7, 96: 1  },
             mnemonics: {
-                ls: repeat(3, "Act now ") + ".",
-                ms: repeat(3, "Act now "),
-                re: repeat(3, "There's no time to waste so "),
+                ls: repeat(3, "Act now ") + repeat(3, "Shut the sy-stem down ") + "Yeah",
+                re: repeat(3, "There's no time to waste so ") + repeat(4, "Shut the sy-stem down "),
                 sn: repeat(3, "Act now ") + repeat(3, "Shut . . the . . sy . . . stem . down . . . "),
-                ta: repeat(3, "Act now ") + repeat(4, "Shut the sy-stem down ")
+                ta: repeat(3, "Act now ") + repeat(3, "Shut the sy-stem down ")
             }
         },
         'SOS Break': {
@@ -138,8 +139,7 @@ export default {
             ag: '@re',
             sh: '@re',
             mnemonics: {
-                ls: repeat(4, "Act Now ") + ".",
-                ms: repeat(4, "Act Now "),
+                ls: repeat(4, "Act Now ") + "Yeah",
                 re: repeat(4, "No time to waste Act now ")
             }
         },
