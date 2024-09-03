@@ -16,7 +16,7 @@ RoR considers both the old tune sign itself and the fact that Angela Davis was c
 
 ## Controversies
 
-As the tune is originally based on the music of a rapist, some XR bands don’t play this tune (in common with some in the RoR network).
+As it is originally based on the music of a rapist, some XR bands don’t play this tune (in common with some in the RoR network).
 
 At national events we tend not to play it while marching. While standing still, we sign a Silence 4x before changing to it in case anyone wants to leave.
 
