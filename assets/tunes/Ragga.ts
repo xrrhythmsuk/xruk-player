@@ -64,6 +64,7 @@ export default {
         	ms: '@ls',
         	hs: '@ls',
         	re: '          X  X ',
+            sn: '@re',
         	ta: '@re',
         	ag: '@re',
         	sh: '@re',
