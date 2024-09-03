@@ -10,13 +10,15 @@ RoR bands, who tend to have proper samba surdos, usually play the low surdo part
 
 **Sign:** The sign represents prison bars, because Angela Davis is a major figure in prison abolition.
 
-**History:** Part of the first set of tunes taken from Barking Bateria in 2000. The name used to be “James Brown” and the sign depicted an afro. The tune was renamed because of domestic violence and rape accusations against James Brown, and Angela Davis was chosen because she fit the tune sign. Later the tune sign was changed. RoR considers both the old tune sign itself and the fact that Angela Davis was chosen because of her afro as racist, and some RoR members from the Baltic States have raised concerns as she was a member of the Communist Party and actively collaborated with the oppressive regime of the Soviet Union.
+**History:** Part of the first set of tunes taken from Barking Bateria in 2000. The name used to be “James Brown” and the sign depicted an afro. The tune was renamed because of domestic violence and rape accusations against James Brown, and Angela Davis was chosen because she fit the tune sign. Later the tune sign was changed.
+
+RoR considers both the old tune sign itself and the fact that Angela Davis was chosen because of her afro as racist, and some RoR members from the Baltic States have raised concerns as she was a member of the Communist Party and actively collaborated with the oppressive regime of the Soviet Union.
 
 ## Controversies
 
-There is ongoing discussion in the RoR network on playing a tune based on the music of a rapist.
+As the tune is originally based on the music of a rapist, some XR bands don’t play this tune (like some in the RoR network).
 
-As some XR bands don’t play this tune for similar reasons, at national events we tend not to play it while marching and we sign a Silence 4x before changing to it while standing still in case anyone wants to leave.
+At national events we tend not to play it while marching. While standing still, we sign a Silence 4x before changing to it in case anyone wants to leave.
 
 ## Difficulty
 
