@@ -112,22 +112,35 @@ export default {
                 ag: repeat(2, "Sam-ba re-ggae ") + repeat(2, "want to ") + "Sam-ba re-ggae"
             }
         },
-        'Clave Call': {
-            ls: '          X X             X X             X X                   X  X  X   X X   X  X  X   X X   X  X  X   X X X ',
+        'Circle Break': {
+            ls: repeat(3, '          X X   ') + repeat(4, '    ') + repeat(3, 'X  X  X   X X   ') + 'X  X  X   X X X ',
             ms: '@ls',
             hs: '@ls',
-            re: 'f XX XX X       f XX XX X       f XX XX X       X  X  X   X X   X  X  X   X X   X  X  X   X X   X  X  X   X X   ',
-            sn: '          X X             X X             X X                   X..X..X...X.X...X..X..X...X.X...X..X..X...X.X...',
-            ta: '          X X             X X             X X                   X  X  X   X X   X  X  X   X X   X  X  X   X X   ',
+            re: repeat(3, 'f XX XX X       ') + repeat(5, 'X  X  X   X X   '),
+            sn: repeat(3, '          X X   ') + repeat(4, '    ') + repeat(4, 'X..X..X...X.X...'),
+            ta: repeat(3, '          X X   ') + repeat(4, '    ') + repeat(4, 'X  X  X   X X   '),
             ag: '@ta',
             sh: '@ta',
-            volumeHack: {  64: .4, 80: .7, 96: 1  },
+            volumeHack: {  64: .2, 78: .4, 96: .7, 112: 1  },
             mnemonics: {
-                ls: repeat(3, "Act now ") + repeat(3, "Shut the sy-stem down ") + "Yeah",
-                re: repeat(3, "There's no time to waste so ") + repeat(4, "Shut the sy-stem down "),
-                sn: repeat(3, "Act now ") + repeat(3, "Shut . . the . . sy . . . stem . down . . . "),
-                ta: repeat(3, "Act now ") + repeat(3, "Shut the sy-stem down ")
+                ls: repeat(3, "Act now ") + repeat(4, "Shut the sy-stem down ") + "Yeah",
+                re: repeat(3, "There's no time to waste so ") + repeat(5, "Shut the sy-stem down "),
+                sn: repeat(3, "Act now ") + repeat(4, "Shut . . the . . sy . . . stem . down . . . "),
+                ta: repeat(3, "Act now ") + repeat(4, "Shut the sy-stem down ")
             }
+        },
+        'Tune Reggae Samba': {
+            displayName: 'Tune (Reggae Samba)',
+            time: 3,
+            loop: true,
+            ls: '0     X     0     X  X  ',
+            ms: 'X     0     X     0     ',
+            hs: '0        X  0     X XX X',
+            re: '   X X   X X   X X   X X',
+            sn: 'X .. X. .X .. .X .. X. .',
+            ta: 'X    X   X     X  X     ',
+            ag: 'o  a  a  o o  a  aa  o  ',
+            sh: '. .. .. .. .. .. .. .. .',
         },
         'SOS Break': {
             ls: 'X       X       X       X       X       X       X       X     X ',
@@ -155,5 +168,5 @@ export default {
             sh: '................'
         }
     },
-    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune (Whistle in Whistle Break)", "Whistle Break", "Whistle Break", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Clave Call", "Tune", "Tune", "Tune", "Tune", "SOS Break", "Tune (SOS Repi)", "Tune (SOS Repi)", "Tune (SOS Repi)", "Tune (SOS Repi)"]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune (Whistle in Whistle Break)", "Whistle Break", "Whistle Break", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Circle Break", "Tune", "Tune", "Tune", "Tune", "SOS Break", "Tune (SOS Repi)", "Tune (SOS Repi)", "Tune (SOS Repi)", "Tune (SOS Repi)"]
 }
