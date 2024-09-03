@@ -1,3 +1,5 @@
+import { repeat } from "../../src/tuneHelper";
+
 export default {
     categories: ["new", "tricky"],
     sheet: require("./ragga.pdf"),
