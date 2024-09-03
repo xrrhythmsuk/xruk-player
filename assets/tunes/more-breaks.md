@@ -54,7 +54,8 @@ Often used to speed up or slow down a band if the song doesn’t have a call bre
 **Wolf Break** *Arms “bite” with fingers as teeth*
 
 **Hardcore Break** *Double devil horns down*  
-A great way to build up the hype!
+A great way to build up the hype!  
+There’s an [alternate version](https://player.rhythms-of-resistance.org/#/listen/Special%20Breaks/Hardcore%20Break) where the second repeat is everyone except surdos playing 4s underneath, then for the third repeat surdos play 4s and everyone else plays 8s, then lastly everyone plays 8s as usual.
 
 *See also:* [**Butterfly Break**](/#/listen/Bhangra/Butterfly%20Break) from **Bhangra**, [**Circle Break**](/#/listen/Samba%20Reggae/Circle%20Break) from **Samba Reggae**
 
@@ -62,7 +63,7 @@ A great way to build up the hype!
 
 Most general breaks start life as part of a tune. This is largely repeating things from the individual tune pages, but here’s where a lot of them come from in case it gives you some ideas:
 * **Silence**, **Clave** and **Knock On The Door** are originally from **Samba Reggae**
-* **Conga/Little Cat** and **Flappy Mouth** are originally from **Funk** (and before that, there was a whole tune called Conga)
+* **Conga/Little Cat** and **Flappy Mouth** are originally from **Funk** (and before that, there was a whole set of tunes called Conga from which surdos played our Conga, tams played Little Cat and repis played the special alt line)
 * The **Karla Break** and **Capped Karla** are indeed originally from **Karla**, where the Karla Break used to be Break 1, and so is **Progressive Hits** (aka. Scots break)
 * **Progressive Karla** originally comes from **Drum & Bass** (it was the Progressive Break – missing our last bar – before it got Karla-fied)
 * The **Wolf Break** originally comes from **Afoxé**
@@ -70,8 +71,9 @@ Most general breaks start life as part of a tune. This is largely repeating thin
 * The **Tam Line** break replaces the older idea of every tune being allowed to have a short break as well as 1/2/3/Call. The Samba Reggae short break (Clave) eventually became a general break with the old “short” sign that it still has, and other tunes’ short breaks either became Tam Line breaks (e.g. Afoxé and Custard) or an extra numbered break if there was one free (e.g. Funk 2, Ragga 2, possibly Bhangra 3?)
 
 
-It can be helpful when playing with RoR bands to know which material we have in common – even if it’s often signed and even played a little differently, it’s most of it. Here are the things we know that *don’t* come from the RoR network:
+It can be helpful when playing with RoR bands to know which material we have in common – even if it’s often signed and played a little differently, it’s most of it. Here are the things we know that *don’t* come from the RoR network:
 * **4 Hits**, **8 Hits**, **X Break** from the **Core Breaks**
 * **Broccoli**, **Capped Karla**, **Conga/Little Cat**, **Bunny Ears** from **More Breaks**
 * **7 Break** and **Butterfly Break** from **Bhangra**
+* **Break 1** from **Wolf** (and **Break 2** doesn’t match)
 * The tunes **Stolen** and **Jericho**
