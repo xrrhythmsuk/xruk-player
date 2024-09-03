@@ -2,7 +2,7 @@ This is one of our core tunes. Together with Custard, it’s our tune that sound
 
 Like real samba, many of the breaks are more complicated, especially compared to our other tunes. Don’t feel like you have to learn them all!
 
-Since practically every samba band can play a version of samba reggae, it’s a good tune to play together with non-XR/RoR bands.
+Since practically every samba/samba-fusion band can play a version of samba reggae, it’s a good tune to play together with non-XR/RoR bands.
 
 **Sign:** make an ‘S’ with your index fingers and thumbs
 
