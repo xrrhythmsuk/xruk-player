@@ -140,7 +140,7 @@ export default {
             sn: 'X .. X. .X .. .X .. X. .',
             ta: 'X    X   X     X  X     ',
             ag: 'o  a  a  o o  a  aa  o  ',
-            sh: '. .. .. .. .. .. .. .. .',
+            sh: '. .. .. .. .. .. .. .. .'
         },
         'SOS Break': {
             ls: 'X       X       X       X       X       X       X       X     X ',
