@@ -30,7 +30,7 @@ export default {
             loop: true,
             re: 'X X X X X X X X XXXX            ',
             sh: 'X   .   .   .   X   .   .   .   ',
-            mnemonics: {  re: "Hu-rry up we're blee-ding star-ving I want some chips" }
+            mnemonics: {  re: "Hu-rry up we're blee-ding star-ving Give us some chips" }
         },
         "Break 1": {
             ls: 'X X     X X   X X X     X       X X     X X   X X X     X       ',
