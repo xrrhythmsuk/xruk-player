@@ -68,7 +68,7 @@ export default {
         	ta: '@re',
         	ag: '@re',
         	sh: '@re',
-        	ot: 'y y y y        ',
+        	ot: 'w w w w        ',
         	mnemonics: {
         		ls: 'Put ra-on',
         		re: 'some gga',
