@@ -4,7 +4,7 @@ This is one of our core tunes and often one of the first ones new bands learn. I
 
 ## Background
 
-**Name:** A hedgehog is a medium-sized spiky mammal. *(More info needed about why the name.)*
+**Name:** A hedgehog is a medium-sized spiky mammal. The name might go back to this simpler tune being good for ‘spiky’ (nowadays called ‘spicy’) actions.
 
 **Musical background:** Reportedly the first Barking Bateria tune that doesn’t go back to the London School of Samba. *(More info needed.)*
 
