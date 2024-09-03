@@ -11,11 +11,11 @@ Just make sure to check tams and agogôs aren't about to stage a mutiny...
 
 **Musical background:** The tune sounds very similar to some Afoxé rhythms from Brazil ([YouTube](https://youtu.be/WCah-JgDktA?t=301)).
 
-**Controversies:** Since this tune is directly rooted in Afro-Brazilian religion, many in the RoR network consider it cultural appropriation to play it and have stopped doing so. There is also criticism of the sign, since it ridicules the spiritual meaning of the rhythm and shaving armpits is a loaded topic in our patriarchal society.
-
 **Sign:** The sign comes from the English pronunciation of the name resembling “aftershave” or “had-a-shave”.
 
 **History:** Part of the second round of tunes that was introduced by Barking Bateria in 2004/2005.
+
+Since this tune is directly rooted in Afro-Brazilian religion, many in the RoR network consider it cultural appropriation to play it and have stopped doing so. There is also criticism of the sign, since it ridicules the spiritual meaning of the rhythm and shaving armpits is a loaded topic in our patriarchal society.
 
 The alt repi part is taken from a [Barking Bateria Afoxé break](https://soundcloud.com/barking-bateria/afoxe-in-to-nova-balanca#t=1:22).
 
