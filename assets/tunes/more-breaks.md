@@ -26,9 +26,6 @@ Hit beat 1 when counted in. When told, build to first 2 beats, 3, 4s, 8s, 16s...
 **Tam Line** *One hand OK sign*  
 Whistler whistles the song’s tam part, everyone plays it once
 
-**Yala Break** *Gather fingers on one hand and shake wrist*  
-From the RoR tune Hafla
-
 
 ### Karlas
 **Capped Karla** *Flat palm over Karla Break sign*
@@ -47,15 +44,7 @@ An accompanying line usually used for backpack
 Repis can do this or their special part, which snares can incorporate into Capped Karla  
 (It usually sounds better for snares to click their sticks together instead of doing a rim hit)
 
-**Kickback 1** *One thumb over shoulder*  
-From the RoR tune Ragga. A great way to build up hype or do a heartbeat sound going into...
-
-**Kickback 2** *Both thumbs over shoulders*  
-The high-energy payoff. Instead of constant 16s, agogôs can play little bursts of chaos at random  
-Best to use a break to get back into your main tune
-
-**Zorro Break** *Draw a ‘Z’ in the air*  
-Also from Ragga. Can be an alternate line for surdos or given to everyone to play once to get out of the Kickbacks
+*See also:* [**Kickback 1**](/#/listen/Ragga/Kickback%201), [**Kickback 2**](/#/listen/Ragga/Kickback%202), [**Zorro Break**](/#/listen/Ragga/Zorro%20Break) from **Ragga**
 
 
 ### Longer
@@ -67,8 +56,22 @@ Often used to speed up or slow down a band if the song doesn’t have a call bre
 **Hardcore Break** *Double devil horns down*  
 A great way to build up the hype!
 
+*See also:* [**Butterfly Break**](/#/listen/Bhangra/Butterfly%20Break) from **Bhangra**, [**Circle Break**](/#/listen/Samba%20Reggae/Circle%20Break) from **Samba Reggae**
 
-### Song breaks you can use generally
+## Background
 
-[**Butterfly Break**](/#/listen/Bhangra/Butterfly%20Break) from **Bhangra**  
-[**Clave Call**](/#/listen/Samba%20Reggae/Clave%20Call) from **Samba Reggae**
+Most general breaks start life as part of a tune. This is largely repeating things from the individual tune pages, but here’s where a lot of them come from in case it gives you some ideas:
+* **Silence**, **Clave** and **Knock On The Door** are originally from **Samba Reggae**
+* **Conga/Little Cat** and **Flappy Mouth** are originally from **Funk** (and before that, there was a whole tune called Conga)
+* The **Karla Break** and **Capped Karla** are indeed originally from **Karla**, where the Karla Break used to be Break 1, and so is **Progressive Hits** (aka. Scots break)
+* **Progressive Karla** originally comes from **Drum & Bass** (it was the Progressive Break – missing our last bar – before it got Karla-fied)
+* The **Wolf Break** originally comes from **Afoxé**
+* The **Whistle Break** in Samba Reggae originally comes from the RoR tune **Sheffield Samba Reggae**
+* The **Tam Line** break replaces the older idea of every tune being allowed to have a short break as well as 1/2/3/Call. The Samba Reggae short break (Clave) eventually became a general break with the old “short” sign that it still has, and other tunes’ short breaks either became Tam Line breaks (e.g. Afoxé and Custard) or an extra numbered break if there was one free (e.g. Funk 2, Ragga 2, possibly Bhangra 3?)
+
+
+It can be helpful when playing with RoR bands to know which material we have in common – even if it’s often signed and even played a little differently, it’s most of it. Here are the things we know that *don’t* come from the RoR network:
+* **4 Hits**, **8 Hits**, **X Break** from the **Core Breaks**
+* **Broccoli**, **Capped Karla**, **Conga/Little Cat**, **Bunny Ears** from **More Breaks**
+* **7 Break** and **Butterfly Break** from **Bhangra**
+* The tunes **Stolen** and **Jericho**
