@@ -59,15 +59,15 @@ The shout is “Ex-tin-ction! Re-be-llion! ... Hey!”
 **A Break** *Forearms make an upside-down V*  
 The shout is “Act now!”
 
+*See also:* [**7 Break**](/#/listen/Bhangra/7%20Break) from **Bhangra**
 
 ### Looping
 
 **Knock On The Door** *Knock on palm*  
 This is good as a transition between songs or an alternate line for one or two instruments
 
+*See also:* [**Whistle Break**](/#/listen/Samba%20Reggae/Whistle%20Break) from **Samba Reggae**
 
-### Song breaks you can use generally
 
-[**7 Break**](/#/listen/Bhangra/7%20Break) from **Bhangra**
 
-[**Whistle Break**](/#/listen/Samba%20Reggae/Whistle%20Break) from **Samba Reggae**
+
