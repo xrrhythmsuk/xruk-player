@@ -1,6 +1,6 @@
-A new XR Rhythms tune created so we had another one like Bhangra going:
+A new XR Rhythms tune introduced at band camp 2023 and created so we had another one like Bhangra going:
 
-*1-and-a, 2-and-a, 3-and-a, 4-and-a* (like a jig) instead of *1-a-and-a, 2-a-and-a, 3-a-and-a, 4-a-and-a*.
+*1-and-a, 2-and-a, 3-and-a, 4-and-a* (like a jig) instead of *1 and 2 and 3 and 4 and*.
 
 Some general breaks work best altered to divide each beat into three rather than four (e.g. Karla break, Progressive Karla).
 Some work as they are, and others are best avoided. Good to experiment with!
@@ -19,9 +19,13 @@ The breaks are based on different parts of the song except for Break 3, which is
 
 **Sign:** The walls of Jericho coming tumbling down (palms facing you to avoid confusion with 2x Silent)
 
-**History:** Commissioned in late 2022, introduced nationally in April 2023
+**History:** Commissioned in late 2022, introduced nationally in April 2023 ahead of band camp
 
 The original spiritual is based on a Bible story where the besieged city of Jericho’s walls miraculously collapse when the Israelites (led by Joshua) blow trumpets
+
+## Controversies
+
+In light of the attacks on Palestinians in Gaza since October 2023, Jericho still being a major Palestinian city, and the details of the original Bible story, XR bands have stopped playing this tune at national events.
 
 ## Difficulty
 
