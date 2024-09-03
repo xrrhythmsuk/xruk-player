@@ -32,7 +32,7 @@ The starter agogô part is based on Break 1.
 
 * The Kickbacks are the surdo-led star of the show. They’re a great way to build energy, and as they have their own signs you can use them (along with Zorro Break) in other tunes, such as Hedgehog.
   * **Kickback 1** *(one thumb over shoulder)* is the heartbeat-like build-up to...
-  * **Kickback 2** *(both thumbs over shoulders)*, the high-energy pay-off. Agogôs don’t need to play constant
+  * **Kickback 2** *(both thumbs over shoulders)*, the high-energy pay-off. Just mind the surdos don't drag! Agogôs don’t need to play constant
     16s – instead, they can play chaos between the bells, taking little pauses wherever they feel like.
     In some bands they run around and annoy everyone too!
 * Breaks 1, 2 and 3 are little one-bar riffs that are ideal for getting out of the Kickbacks
