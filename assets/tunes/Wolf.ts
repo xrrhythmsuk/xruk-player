@@ -26,8 +26,8 @@ export default {
            loop: true,
            re: 'X  XX  XX X X   XXXXX  XX X X   X  XX  XX X X   XXXXX  XX       ',
            sh: 'X   .   .   .   X   .   .   .   X   .   .   .   X   .   .   .   ',
-           mnemonics: {  re: "Here he comes, the Big Bad Wolf Ve-ry sca-ry guy, the Big Bad Wolf"
-               + "Here he comes, the Big Bad Wolf Ve-ry sca-ry guy, the Wolf" }
+           mnemonics: {  re: "Here he comes, the Big Bad Wolf Ve-ry sca-ry guy, the Big Bad Wolf "
+               + "Here he comes, the Big Bad Wolf Ve-ry sca-ry guy, the wolf" }
        },
        "Alt Tam": {
            loop: true,
