@@ -1,10 +1,10 @@
-[XR Player](https://player.xrrhythms.uk/) is a browser-based player for
-[XR Rhythms tunes](https://github.com/rhythms-of-resistance/sheetbook/tree/master/generated). It is based on [Rhythms of Resistance player](https://github.com/rhythms-of-resistance/).
+The [XR Rhythms Player](https://player.xrrhythms.uk/) is a browser-based player for
+[XR Rhythms tunes](https://github.com/xrrhythmsuk/xruk-player/tree/master/assets/tunes). It is based on the [Rhythms of Resistance player](https://github.com/rhythms-of-resistance/).
 It is written in TypeScript and relies heavily on beatbox.js, Vue.js and Bootstrap. The core features are:
 
 * Read and play the notes of all XR Rhythms tunes and breaks
 * Edit the notes, even while they are playing
-* Compose own tunes and breaks and share them as a link. The notes are stored in the hash part of the link, nothing is stored on the server.
+* Compose your own tunes and breaks and share them as a link or a file. The notes are stored in the hash part of the link, nothing is stored on the server.
 * Compose songs (sequences of tunes and breaks in different combinations)
 * Export tunes, breaks and songs as MP3 or WAV
 * Smartphone-friendly UI
@@ -13,7 +13,7 @@ It is written in TypeScript and relies heavily on beatbox.js, Vue.js and Bootstr
 
 More information can be found in the [documentation](https://player-docs.rhythms-of-resistance.org/).
 
-Used technologies are:
+The technologies used are:
 * [TypeScript](https://www.typescriptlang.org/) and [SASS](https://sass-lang.com/) for cleaner code
 * [Vue.js](https://vuejs.org/), [Bootstrap 4](https://getbootstrap.com/) and [Font Awesome](https://fontawesome.com/) for the UI
 * [howler.js](https://howlerjs.com/) to play audio in the browser
@@ -41,8 +41,8 @@ Build and host it yourself
 Customise it
 ------------
 
-The tunes are configured in [`assets/tunes`](./assets/tunes), along with tune descriptions. The format is very similar to the "Raw (uncompressed)" format that
-can be generated in the Share dialog of the player.
+The tunes are configured in [`assets/tunes`](./assets/tunes), along with tune descriptions. The format is very similar to the format that
+can be generated in .rhythm files downloaded from the player.
 
 All the parameters (such as the instruments, samples, time measurements) are configured in [`src/config.ts`](./src/config.ts).
 
