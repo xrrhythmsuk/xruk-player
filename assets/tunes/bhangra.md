@@ -1,4 +1,4 @@
-*If your band is looking for a first tune to learn, try [**Funk**](https://player.xrrhythms.uk/#/listen/Funk/), [**Karla**](https://player.xrrhythms.uk/#/listen/Karla/) or [**Hedgehog**](https://player.xrrhythms.uk/#/listen/Hedgehog/)!*
+*If your band is looking for a first tune to learn, try [**Funk**](/#/listen/Funk/), [**Karla**](/#/listen/Karla/) or [**Hedgehog**](/#/listen/Hedgehog/)!*
 
 This is one of our core tunes, and rare because it’s a bouncy, 6/8 one:
 
