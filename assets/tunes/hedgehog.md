@@ -11,7 +11,7 @@ This is one of our core tunes and often one of the first ones new bands learn. I
 **Sign:** The sign depicts the spikes of a hedgehog
 
 **History:** Part of the first set of tunes taken from Barking Bateria in 2000.  
-Not very popular with many RoR bands, who tend to play the similar Ragga instead.
+Not very popular with many RoR bands, who tend to play Ragga instead.
 
 The first two general breaks listed below are the two breaks that RoR Hedgehog has.
 
@@ -28,4 +28,4 @@ The first two general breaks listed below are the two breaks that RoR Hedgehog h
 ## Breaks
 
 * We made the only break we had for this song (involving shouting “Act now!” or whatever slogan) into the **A Break** *(forearms in an upside-down V)* for the 2023 camp so it could be used generally
-* **General breaks** that work well: A Break, 4 Hits surdos with everyone else carrying on, Kickbacks, Zorro Break
+* **General breaks** that work well: A Break, 4 Hits surdos with everyone else carrying on, Kickbacks and Zorro Break from Ragga
