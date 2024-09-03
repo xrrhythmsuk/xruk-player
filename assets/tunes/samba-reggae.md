@@ -28,9 +28,9 @@ The Circle break is adapted from the RoR Samba Reggae call break.
 
 * **Surdos**: medium
 * **Repinique**: medium
-* **Snare**: hard
+* **Snare**: hard (medium starter part available)
 * **Tam**: easy 
-* **Agogô**: medium
+* **Agogô**: medium (easy starter part available)
 
 ## Breaks
 
