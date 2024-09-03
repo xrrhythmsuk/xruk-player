@@ -13,9 +13,7 @@ As XR bands rarely have mids, our lows often play the first and third beats as a
 
 **History:** Part of the first set of tunes taken from Barking Bateria in 2000. Used to be called Welfare State, but was renamed because people didn’t like the state.
 
-## Controversies
-
-The rhythm clearly sounds like Samba Reggae, which is a tune developed and used by the Black liberation movement in Brazil. Many people in the RoR network consider it cultural appropriation to play this tune in our mainly white European bands, and there is ongoing debate about abolishing the tune.
+Many in the RoR network consider it cultural appropriation to play this tune as it sounds like real samba reggae, a genre developed and used by the Black liberation movement in Brazil.
 
 ## Difficulty
 
