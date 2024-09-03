@@ -69,7 +69,7 @@ export default {
         	sh: '@re',
         	ot: 'y y y y        ',
         	mnemonics: {
-        		ls: 'Put ra-on'
+        		ls: 'Put ra-on',
         		re: 'some gga',
         		ot: '1 2 3 4'
         	}
