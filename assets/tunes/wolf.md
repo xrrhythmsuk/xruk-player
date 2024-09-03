@@ -16,11 +16,13 @@ It pairs well with Stolen but usually isn’t whistled double time.
 
 We’ve adapted it a little for XR bands, mostly by combining the low and mid lines and reworking the breaks.
 
+The alt repi line is based on RoR Wolf Break 1.
+
 ## Difficulty
 
 * **Low Surdo:** medium
 * **Mid/High Surdo:** hard
-* **Repi:** hard 
+* **Repi:** hard (there’s a medium two-stick alt line)
 * **Snare:** medium (you can play the buzzes as a normal accent)
 * **Tam:** medium (there’s a hard alt line)
 * **Agogô:** medium
