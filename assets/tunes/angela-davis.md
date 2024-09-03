@@ -6,17 +6,17 @@
 
 **Musical background:** Break 1 and the low surdo part sound like “Sex Machine” by James Brown.  
 
-RoR bands, who tend to have proper samba surdos, usually play the low surdo part with a whippy stick in one hand. As our bands tend to use converted drum kit drums,  clicking on the rim or the wooden body with your usual beaters sounds better.
+RoR bands, who tend to have proper samba surdos, usually play the low surdo part with a whippy stick in one hand. As our bands tend to use converted drum kit drums, clicking on the rim or the wooden body with your usual beaters sounds better.
 
 **Sign:** The sign represents prison bars, because Angela Davis is a major figure in prison abolition.
 
-**History:** Part of the first set of tunes taken from Barking Bateria in 2000. The name used to be “James Brown” and the sign depicted an afro. The tune was renamed because of domestic violence and rape accusations against James Brown, and Angela Davis was chosen because she fit the tune sign. Later the tune sign was changed. RoR considers both the old tune sign itself and the fact that Angela Davis was chosen because of her afro as racist.
+**History:** Part of the first set of tunes taken from Barking Bateria in 2000. The name used to be “James Brown” and the sign depicted an afro. The tune was renamed because of domestic violence and rape accusations against James Brown, and Angela Davis was chosen because she fit the tune sign. Later the tune sign was changed. RoR considers both the old tune sign itself and the fact that Angela Davis was chosen because of her afro as racist, and some RoR members from the Baltic States have raised concerns as she was a member of the Communist Party and actively collaborated with the oppressive regime of the Soviet Union.
 
 ## Controversies
 
-There is an ongoing discussion in the RoR network on playing a tune based on the music of a rapist. Some XR bands have chosen not to play it in the past for similar reasons.
+There is ongoing discussion in the RoR network on playing a tune based on the music of a rapist.
 
-Some RoR members from the Baltic States have raised concerns that the tune is named after Angela Davis, who was a member of the Communist Party and actively collaborated with the oppressive regime of the Soviet Union.
+As some XR bands don’t play this tune for similar reasons, at national events we tend not to play it while marching and we sign a Silence 4x before changing to it while standing still in case anyone wants to leave.
 
 ## Difficulty
 
