@@ -28,12 +28,6 @@ export default {
                 ag: "Jo-shu-a laughed when the wall came down Wall came down Wall came down"
             }
         },
-        'Alt Repi': {
-            loop: true,
-            re: "f  X Xf  X Xf  X X  r   f  X X  r   f  X X  r   ",
-            sh: "X  .  .  .  X  .  .  .  X  .  .  .  X  .  .  .  ",
-            mnemonics: {  re: "Je-ri-cho Je-ri-cho Je-ri-cho's done Je-ri-cho's done Je-ri-cho's done" }
-        },
         'Break 1': {
             upbeat: 3,
             ls: "X XX  X  X XX X",
