@@ -22,7 +22,9 @@ Many in the RoR network consider it cultural appropriation to play this tune as 
 
 **History:** Part of the first set of tunes taken from Barking Bateria in 2000.  
 The Whistle break comes from the RoR tune Sheffield Samba Reggae.  
-The Circle break is adapted from the RoR Samba Reggae call break.
+The Circle break is adapted from the RoR Samba Reggae call break.  
+The starter snare part (which is a common Samba Reggae part) is the same as the repi.  
+The starter agogô part (same as the tams) is taken from the Barking Bateria tune Samba Reggae 3.
 
 ## Difficulty
 
@@ -34,7 +36,7 @@ The Circle break is adapted from the RoR Samba Reggae call break.
 
 ## Breaks
 
-* **Break 1** is a longer break led by repis and snares. It sounds great once you’ve got it!
+* **Break 1** is a longer one led by repis and snares. It sounds great once you’ve got it!
 * **Break 2** is a short repi-led break based on the clave rhythm (like most of our Samba Reggae breaks). It’s a good break to start with when you’re learning them, and you can get different instruments to lead it. (Sign Break 2 – agogô for agogôs to lead, for instance, or Break 2 – everyone to make it into a nice unison break.)
 * The **Whistle break** *(point at whistle with both hands, whistle in with surdo part twice)* is a fun double-time swing break you can use anywhere. Try using a clave or two to get out of it _\[less common nationally\]_
 * **Break 3** is a longer surdo-led break _\[uncommon nationally\]_
