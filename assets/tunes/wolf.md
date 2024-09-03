@@ -16,7 +16,7 @@ It pairs well with Stolen but usually isn’t whistled double time.
 
 We’ve adapted it a little for XR bands, mostly by combining the low and mid lines and reworking the breaks.
 
-The alt repi line is based on RoR Wolf Break 1.
+The alt repi line is based on RoR Wolf Break 1, and Break 2 is based on RoR Wolf Pat 1.
 
 ## Difficulty
 
