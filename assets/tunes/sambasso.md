@@ -14,13 +14,15 @@ RoR bands, who tend to have proper samba surdos, usually play the surdo part wit
 
 **History:** Introduced to the network by RoR London in 2012, was probably played there before?
 
+For the starter parts, see Samba Reggae.
+
 ## Difficulty
 
 * **Surdos:** easy (though be careful not to zone out!)
 * **Repi:** hard
-* **Snare:** hard
+* **Snare:** hard (medium starter part available)
 * **Tam:** easy. The original RoR part (Alt Tam here) is tricky so we replaced it with the rhythm from Break 1
-* **Agogô:** hard
+* **Agogô:** hard (easy starter part available)
 
 ## Breaks
 
