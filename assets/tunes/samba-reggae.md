@@ -23,7 +23,7 @@ Many in the RoR network consider it cultural appropriation to play this tune as 
 **History:** Part of the first set of tunes taken from Barking Bateria in 2000.  
 The Whistle break comes from the RoR tune Sheffield Samba Reggae.  
 The Circle break is adapted from the RoR Samba Reggae call break.  
-The starter snare part (which is a common Samba Reggae part) is the same as the repi.  
+The starter snare part (which is a common samba reggae part) is the same as the repi.  
 The starter agogô part (same as the tams) is taken from the Barking Bateria tune Samba Reggae 3.
 
 ## Difficulty
