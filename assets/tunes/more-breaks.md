@@ -61,7 +61,7 @@ There’s an [alternate version](https://player.rhythms-of-resistance.org/#/list
 
 ## Background
 
-Most general breaks start life as part of a tune. This is largely repeating things from the individual tune pages, but here’s where a lot of them come from in case it gives you some ideas:
+Most general breaks start life as part of a tune. This is often mentioned on the individual tune pages, but here’s where a lot of them come from in case it gives you some ideas:
 * **Silence**, **Clave** and **Knock On The Door** are originally from **Samba Reggae**
 * **Conga/Little Cat** and **Flappy Mouth** are originally from **Funk** (and before that, there was a whole set of tunes called Conga from which surdos played our Conga, tams played Little Cat and repis played the special alt line)
 * The **Karla Break** and **Capped Karla** are indeed originally from **Karla**, where the Karla Break used to be Break 1, and so is **Progressive Hits** (aka. Scots break)
