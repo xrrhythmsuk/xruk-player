@@ -7,7 +7,7 @@ Just make sure to check tams and agogôs aren't about to stage a mutiny...
 
 ## Background
 
-**Name:** Afoxé can refer to a rhythm from Brazilian carnival, a type of rattle from Brazilian music, or a dance and music formation in the Carnaval. All three meanings developed out of Candomblé, a creole religion which evolved through slaves from West Africa who were forcefully brought to South America by white slave traders. The enslaved Black people in Brazil passed on the religious rites through generations. Candomblé is still practiced by some Afro-Brazilians today ([Wikipedia](https://en.wikipedia.org/wiki/Afox%C3%AA)).
+**Name:** Afoxé can refer to a rhythm from Brazilian carnaval, a type of rattle from Brazilian music, or a dance and music formation in the Carnaval. All three meanings developed out of Candomblé, a creole religion which evolved through slaves from West Africa who were forcefully brought to South America by white slave traders. The enslaved Black people in Brazil passed on the religious rites through generations. Candomblé is still practised by some Afro-Brazilians today ([Wikipedia](https://en.wikipedia.org/wiki/Afox%C3%AA)).
 
 **Musical background:** The tune sounds very similar to some Afoxé rhythms from Brazil ([YouTube](https://youtu.be/WCah-JgDktA?t=301)).
 
