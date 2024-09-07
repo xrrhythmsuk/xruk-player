@@ -28,11 +28,12 @@ The starter agogô part is based on Break 1
 
 * The Kickbacks are a great way to build energy, even in other tunes
   * **Kickback 1** *(one thumb over shoulder)* is the heartbeat-like build-up to...
-  * **Kickback 2** *(both thumbs over shoulders)*, the high-energy pay-off. Just make sure the surdos don’t drag! Agogôs should play bursts of chaos between the bells, and in some bands they run around and annoy everyone too
+  * **Kickback 2** *(both thumbs over shoulders)*, the high-energy pay-off. Just make sure the surdos don’t drag!  
+    Agogôs play rolling bursts of chaos between the bells (which sadly we can’t do justice to on here), and in some bands they run around and annoy everyone too!
 * Breaks 1, 2 and 3 are little one-bar riffs that are ideal for getting out of the Kickbacks
   * **Break 1** is a slightly trickier whistle- and surdo-led break that you can use like Sambasso 1, or
     do against e.g. agogôs playing the main part
-  * **Break 2** is the simplest as it’s everyone together. The shouted counts (2 3 4 5 6!) make it a lot of fun!
+  * **Break 2** is the simplest as it’s everyone together. The shouted counts (2 3 4 5 6!) are a lot of fun!
   * **Break 3** is surdo-led and might remind some of a [90s rock song](https://www.youtube.com/watch?v=bWXazVhlyxQ)...
 * The **Zorro Break** *(draw a ‘Z’ in the air)* is originally an alternate surdo line but works nicely with
   everyone doing it (including in other tunes)
