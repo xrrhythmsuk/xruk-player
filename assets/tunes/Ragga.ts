@@ -40,6 +40,7 @@ export default {
             sn: '@re',
             ta: '@re',
             ag: '@re',
+            sh: '@re',
             mnemonics: {
                 ls: "Wait for Wait for",
                 re: "it it"
@@ -53,7 +54,7 @@ export default {
             re: '  X   X   X   X ',
             sn: '@re',
             ta: '@re',
-            ag: 'oaoaoaoaoaoaoaoa',
+            sh: '@re',
             mnemonics: {
                 ls: "It's kick-back It's kick-back",
                 re: "a rave a rave"
