@@ -1,4 +1,4 @@
-import {  repeat, stretch } from "../../src/tuneHelper";
+import {  repeat, stretch, crescendo } from "../../src/tuneHelper";
 
 export default {
     categories: ["breaks", "onesurdo", "easy", "medium", "tricky"],
@@ -33,7 +33,7 @@ export default {
             sn: '@ls',
             ta: 'X X X X X X X X X',
             ag: '@ta',
-            volumeHack: { 0: .2, 4: .4, 8: .7, 12: 1 }
+            volumeHack: crescendo(17)
         },
         'Flappy Mouth': {
             time: 3,
