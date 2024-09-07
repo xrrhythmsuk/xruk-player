@@ -1,5 +1,5 @@
 The [XR Rhythms Player](https://player.xrrhythms.uk/) is a browser-based player for
-[XR Rhythms tunes](https://github.com/xrrhythmsuk/xruk-player/tree/master/assets/tunes). It is based on the [Rhythms of Resistance player](https://github.com/rhythms-of-resistance/).
+[XR Rhythms tunes](https://github.com/xrrhythmsuk/xruk-player/tree/master/assets/tunes). It is based on the [Rhythms of Resistance player](https://github.com/beatboxjs/ror-player).
 It is written in TypeScript and relies heavily on beatbox.js, Vue.js and Bootstrap. The core features are:
 
 * Read and play the notes of all XR Rhythms tunes and breaks
