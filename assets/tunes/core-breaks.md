@@ -47,6 +47,9 @@ Sometimes called a drum roll break, but even then usually played with 16s rather
 **Progressive Karla** *Grab thumb of raised hand*  
 A bar of 4s, then 8s, then 16s, then a hit just on beat 1
 
+If you’ve only got one stick (such as if you’re on tam or agogô), it’s usually better to play just 8s
+instead of trying for lots of 16s as it’s easier to stay in time and (more importantly) means less strain.
+
 Sign either of these breaks with a short break afterwards to replace the last bar with that break   
 e.g. Karla Break with clave
 
