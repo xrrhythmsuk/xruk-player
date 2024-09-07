@@ -74,7 +74,7 @@ export default {
             loop: true,
             re: 'XXXXXXXXXXXXXXXXf   X X r r X X ',
             sn: '@re',
-            volumeHack: { 0: .2, 4: .4, 8: .7, 12: 1 }
+            volumeHack: crescendo(17)
         },
         'e.g. everybody Conga/Little Cat': {
             loop: true,
