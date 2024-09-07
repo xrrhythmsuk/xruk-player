@@ -54,6 +54,7 @@ export default {
             re: '  X   X   X   X ',
             sn: '@re',
             ta: '@re',
+            ag: '################',
             sh: '@re',
             mnemonics: {
                 ls: "It's kick-back It's kick-back",
