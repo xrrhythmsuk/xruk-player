@@ -1,3 +1,5 @@
+One of the funkiest tunes we’ve got! See **Controversies** below, though, for playing it at national events.
+
 **Sign:** pull two prison bars apart in front of your face
 
 ## Background
@@ -16,9 +18,9 @@ RoR considers both the old tune sign itself and the fact that Angela Davis was c
 
 ## Controversies
 
-As it is originally based on the music of a rapist, some XR bands don’t play this tune (in common with some in the RoR network).
+As it was originally based on the music of a rapist, some XR bands don’t play this tune (in common with some in the RoR network).
 
-At national events we tend not to play it while marching. While standing still, we sign a Silence 4x before changing to it in case anyone wants to leave.
+At national events we tend not to play it while marching unless we’re sure no-one objects. While standing still, we sign a Silence 4x before changing to it in case anyone wants to leave.
 
 ## Difficulty
 
