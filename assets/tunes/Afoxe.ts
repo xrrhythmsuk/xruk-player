@@ -24,6 +24,12 @@ export default {
                 ag: "Spent all e-vening sha-ving both my legs Spent all e-vening sha-ving both my legs"
             }
         },
+        "Alt Repi": {
+            loop: true,
+            re: 'X X XX XXX X    ',
+            sh: 'X   .   .   .   ',
+            mnemonics: {  re: "It-chy stu-bble, there's no-thing worse"  }
+        },
         "Break 1": {
             ls: 'X       X       X       X XXXXX ',
             ms: '@ls',

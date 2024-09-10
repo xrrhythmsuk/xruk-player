@@ -40,12 +40,13 @@ export default {
             hs: '@ls',
             re: 'XXXXXXXXXXXXXXXXX   X   X   X       X      XXXX     X      XXXX ',
             sn: '@re',
-            ta: '@re',
-            ag: '@re',
+            ta: 'X X X X X X X X X   X   X   X       X      XXXX     X      XXXX ',
+            ag: '@ta',
             sh: '@re',
             mnemonics: {
                 ls: "A-ny-bo-dy a-ny-bo-dy a-ny-bo-dy a-ny-bo-dy Got some le-ttuce? I have I have I have I have",
-                re: "A-ny-bo-dy a-ny-bo-dy a-ny-bo-dy a-ny-bo-dy Got some le-ttuce? Great We're star-ving here Great We're star-ving here"
+                re: "A-ny-bo-dy a-ny-bo-dy a-ny-bo-dy a-ny-bo-dy Got some le-ttuce? Great We're star-ving here Great We're star-ving here",
+                ta: "A-ny-bo-dy a-ny-bo-dy Got some le-ttuce? Great We're star-ving here Great We're star-ving here"
             }
         },
         'Break 2 Inverted': {
@@ -54,14 +55,16 @@ export default {
             hs: '@ls',
             re: 'XXXXXXXXXXXXXXXXX   X   X   X       X      XXXX     X      XXXX     X      XXXX     X      XXXX X   X   X   X   XXXXXXXXXXXXXXXX',
             sn: '@re',
-            ta: '@re',
-            ag: '@re',
+            ta: 'X X X X X X X X X   X   X   X       X      XXXX     X      XXXX     X      XXXX     X      XXXX X   X   X   X   X X X X X X X X ',
+            ag: '@ta',
             sh: '@re',
             mnemonics: {
                 ls: "A-ny-bo-dy a-ny-bo-dy a-ny-bo-dy a-ny-bo-dy Got some le-ttuce? I have I have I have I have "
                     + "I have I have I have I have Got some le-ttuce A-ny-bo-dy a-ny-bo-dy a-ny-bo-dy a-ny-bo-dy?",
                 re: "A-ny-bo-dy a-ny-bo-dy a-ny-bo-dy a-ny-bo-dy Got some le-ttuce? Great We're star-ving here Great We're star-ving here "
-                    + "Great We're star-ving here Great We're star-ving here Got some le-ttuce A-ny-bo-dy a-ny-bo-dy a-ny-bo-dy a-ny-bo-dy?"
+                    + "Great We're star-ving here Great We're star-ving here Got some le-ttuce A-ny-bo-dy a-ny-bo-dy a-ny-bo-dy a-ny-bo-dy?",
+                ta: "A-ny-bo-dy a-ny-bo-dy Got some le-ttuce? Great We're star-ving here Great We're star-ving here "
+                    + "Great We're star-ving here Great We're star-ving here Got some le-ttuce A-ny-bo-dy a-ny-bo-dy?"
             }
         }
     },

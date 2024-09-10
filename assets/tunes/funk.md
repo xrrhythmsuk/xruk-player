@@ -10,15 +10,15 @@ It doesn’t sound much like funk, which is something of a theme with RoR tunes.
 
 **Musical background:** Probably based on the Brazilian samba reggae interpretation of funk rather than the James Brown version.
 
-**Sign:** Based on the funky glasses that the classic funk bassist Bootsy Collins [used to wear](https://media.npr.org/assets/artslife/arts/2009/10/bootsy-fa-0a236a00a27e682eed7c121e1f0454d4be5adee0-s600-c85.webp).
+**Sign:** Based on the funky glasses that the classic funk bassist Bootsy Collins [used to wear](https://media.npr.org/assets/artslife/arts/2009/10/bootsy-fa-0a236a00a27e682eed7c121e1f0454d4be5adee0-s600-c85.webp). Appears to have evolved from an ‘F’ with thumb and two fingers facing down.
 
-**History:** Was introduced to the network at least 2008. Barking Bateria played a slightly different version called “Lego Funk”: [SoundCloud](https://soundcloud.com/barking-bateria/lego-funk)
+**History:** Was introduced to the network at least 2008. Barking Bateria played a slightly different version called [“Lego Funk”](https://soundcloud.com/barking-bateria/lego-funk), which is where our starter repi part comes from.
 
 ## Difficulty
 
 * **Low Surdo**: easy
 * **Mid/High Surdo and Tam**: easy
-* **Repi**: medium. There are two repi parts, one harder one for playing with one stick and one easier (but longer) one for two sticks
+* **Repi**: medium (main one-stick and alt two-stick parts), easier starter part available.
 * **Snare**: easy
 * **Agogô**: easy
 

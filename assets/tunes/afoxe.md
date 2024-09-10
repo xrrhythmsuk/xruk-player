@@ -1,5 +1,5 @@
 That driving low surdo part works very well for backing chants (along with Samba Reggae) and repis love the long call break!  
-Just make sure to check tams and agogôs aren't about to stage a mutiny...
+Just make sure the tams and agogôs aren't about to stage a mutiny...
 
 **Name:** Usually pronounced “AFF-uh-shay” or “a-FOSH-ay” by our English-speaking bands
 
@@ -7,7 +7,7 @@ Just make sure to check tams and agogôs aren't about to stage a mutiny...
 
 ## Background
 
-**Name:** Afoxé can refer to a rhythm from Brazilian carnival, a type of rattle from Brazilian music, or a dance- and music formation in the Carnival. All three meanings developed out of Candomblé, a creole religion which evolved through slaves from West Africa who were forcefully brought to South America by white slave traders. The enslaved Black people in Brazil passed on the religious rites through generations. Candomblé is still practiced by some Afro-Brazilians today ([Wikipedia](https://en.wikipedia.org/wiki/Afox%C3%AA)).
+**Name:** Afoxé can refer to a rhythm from Brazilian carnaval, a type of rattle from Brazilian music, or a dance and music formation in the Carnaval. All three meanings developed out of Candomblé, a creole religion which evolved through slaves from West Africa who were forcefully brought to South America by white slave traders. The enslaved Black people in Brazil passed on the religious rites through generations. Candomblé is still practised by some Afro-Brazilians today ([Wikipedia](https://en.wikipedia.org/wiki/Afox%C3%AA)).
 
 **Musical background:** The tune sounds very similar to some Afoxé rhythms from Brazil ([YouTube](https://youtu.be/WCah-JgDktA?t=301)).
 
@@ -15,17 +15,17 @@ Just make sure to check tams and agogôs aren't about to stage a mutiny...
 
 **History:** Part of the second round of tunes that was introduced by Barking Bateria in 2004/2005.
 
-## Controversies
+The alt repi part is taken from [Barking Bateria Afoxé](https://soundcloud.com/barking-bateria/afoxe-in-to-nova-balanca#t=1:22).
 
-Since this rhythm is directly rooted in Afro-Brazilian religion, many people in the RoR network consider it cultural appropriation to play it. There is ongoing debate on whether this tune should be abandoned, and some bands have already stopped playing it.
 
-There is also some criticism about the sign, since it ridicules the spiritual meaning of the rhythm, and shaving armpits is a loaded topic in our patriarchal society.
+Since this tune is directly rooted in Afro-Brazilian religion, many in the RoR network consider it cultural appropriation to play it and have stopped doing so. There is also criticism of the sign, since it ridicules the spiritual meaning of the rhythm and shaving armpits is a loaded topic in our patriarchal society.
+
 
 ## Difficulty
 
 * **Low Surdo:** easy
 * **Mid/High Surdo:** medium
-* **Repi:** hard 
+* **Repi:** hard (medium two-stick alt part available)
 * **Snare:** hard
 * **Tam:** medium (easy to mix up with Custard, tiring)
 * **Agogô:** medium (easy to mix up with Custard)
