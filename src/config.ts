@@ -89,12 +89,25 @@ const config: Config = {
 		"o": "l",
 		"a": "h",
 		".": ".",
-		"w" : "Wh",
-		"y" : "Wh2", // Long whistle
+		"w": "Wh",
+		"y": "Wh2", // Long whistle
 		"z": "s", // Soft flare
-		"A" : "Oi!",
-		"D" : "Oo",
-		"E" : "Ah"
+		"A": "Hey",
+		"B": "Ex",
+		"C": "tinc",
+		"D": "woo", // Respecting previous
+		"E": "Ah",  // encoding
+		"F": "tion",
+		"G": "Re",
+		"H": "bell",
+		"I": "ion",
+		"J": "Act",
+		"K": "now",
+		"2": "2",
+		"3": "3",
+		"4": "4",
+		"5": "5",
+		"6": "6"
 		// ]
 	},
 
