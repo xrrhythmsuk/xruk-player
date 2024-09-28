@@ -111,7 +111,7 @@ export default {
             sn: "@ls",
             ta: "@ls",
             ag: "@ls",
-            ot: repeat(4, "  A A A   A A A             A   "),
+            ot: repeat(4, "  B C F   G H I             A   "),
             mnemonics: {  ot: repeat(4, "Ex-tin-ction Re-be-llion Hey! ") }
 	},
         'A Break': {
@@ -122,7 +122,7 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
-            ot: '        A   A   ',
+            ot: '        J   K   ',
             mnemonics: {  ot: "Act now!" }
         },
         'Knock On The Door': {
