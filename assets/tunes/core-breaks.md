@@ -56,11 +56,11 @@ e.g. Karla Break with clave
 
 ### Shouting
 
-**X Break** *Crossed forearms or sticks*  
-The shout is “Ex-tin-ction! Re-be-llion! ... Hey!”
+**X Break** *Crossed forearms or sticks*
+Good to discuss ahead of time whether you’re doing this one at non-XR events
 
 **A Break** *Forearms make an upside-down V*  
-The shout is “Act now!”
+Try changing the shout for specific actions!
 
 *See also:* [**7 Break**](/#/listen/Bhangra/7%20Break) from **Bhangra**
 
