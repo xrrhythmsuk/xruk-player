@@ -112,7 +112,7 @@ export default {
             ta: "@ls",
             ag: "@ls",
             ot: repeat(4, "  B C F   G H I             A   "),
-            mnemonics: {  ot: repeat(4, "Ex-tin-ction Re-be-llion Hey! ") }
+            mnemonics: {  ot: repeat(4, "Ex-tinc-tion Re-bell-ion Hey ") }
 	},
         'A Break': {
             ls: 'X               ',
@@ -123,7 +123,7 @@ export default {
             ta: '@ls',
             ag: '@ls',
             ot: '        J   K   ',
-            mnemonics: {  ot: "Act now!" }
+            mnemonics: {  ot: "Act now" }
         },
         'Knock On The Door': {
             loop: true,
@@ -138,7 +138,8 @@ export default {
             mnemonics: {
                 ls: "Hey, Knock on the door I want you to let me in",
                 re: "Hey, Knock on the door I want you to let me in There's cu-stard in my un-der-pants"
-            }
+            },
+            volumeHack: { sn: 0.3 }
     	}
     }
 }
