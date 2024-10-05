@@ -22,7 +22,7 @@ The starter agogô part is based on Break 1
 * **Repi**: medium
 * **Snare**: tricky
 * **Tam**: medium
-* **Agogô**: hard (medium starter part available or loop the first bar)
+* **Agogô**: hard (medium starter part available, or loop the first bar)
 
 ## Breaks
 
@@ -32,8 +32,8 @@ The starter agogô part is based on Break 1
     Agogôs play rolling bursts of chaos between the bells (which sadly we can’t do justice to on here), and in some bands they run around and annoy everyone too!
 * Breaks 1, 2 and 3 are little one-bar riffs that are ideal for getting out of the Kickbacks
   * **Break 1** is a slightly trickier whistle- and surdo-led break that you can use like Sambasso 1, or
-    do against e.g. agogôs playing the main part _(uncommon nationally)_
+    do against e.g. agogôs playing the main part _\[uncommon nationally\]_
   * **Break 2** is the simplest as it’s everyone together. The shouted counts are a lot of fun!
-  * **Break 3** is surdo-led and might remind some of a [90s rock song](https://www.youtube.com/watch?v=bWXazVhlyxQ)... _(less common nationally)_
+  * **Break 3** is surdo-led and might remind some of a [90s rock song](https://www.youtube.com/watch?v=bWXazVhlyxQ)... _\[less common nationally\]_
 * The **Zorro Break** *(draw a ‘Z’ in the air)* is originally an alternate surdo line but works nicely with
   everyone doing it (including in other tunes)
