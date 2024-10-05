@@ -27,6 +27,6 @@ The sign appears to have evolved from an ‘F’ with thumb and two fingers faci
 ## Breaks
 
 * **Break 1**, a relatively involved break between surdos and everyone else _\[uncommon nationally\]_
-* **Break 2**, where everyone plays one bar of eighth notes _\[less common nationally\]_
+* **Break 2**, where everyone plays one bar of 8s _\[less common nationally\]_
 * **General breaks** that work well: [Conga](/#/listen/More%20Breaks/Conga), [Little Cat](/#/listen/More%20Breaks/Little%20Cat), [Flappy Mouth](/#/listen/More%20Breaks/Flappy%20Mouth)
 * Some bands use [Angela Davis](/#/listen/Angela%20Davis) breaks with Funk instead (signed as e.g. Angela Davis – Break 2 – Funk)
