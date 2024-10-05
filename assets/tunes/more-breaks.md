@@ -73,7 +73,7 @@ Most general breaks start life as part of a tune. This is often mentioned on the
 * The **Tam Line** break replaces the older idea of every tune being allowed to have a short break as well as 1/2/3/Call. The Samba Reggae short break (Clave) eventually became a general break and took the old “short” sign, and other tunes’ short breaks either became Tam Lines (e.g. Afoxé, Custard) or an extra numbered break (e.g. Funk 2)
 
 
-It can be helpful when playing with RoR bands to know which material we have in common – even if it’s often signed and played a little differently, it’s still mostly the same. Here are the things that we know *don’t* come from the RoR network:
+It can be helpful when playing with RoR bands to know which material we’re more likely to have in common – even if it’s often signed and played a little differently, it’s still mostly the same. Here are the things that we know *aren’t* shared with the RoR network:
 * **4 Hits**, **8 Hits**, **X Break** from the **Core Breaks**
 * **Broccoli**, **Capped Karla**, **Conga/Little Cat**, **Bunny Ears** from **More Breaks**
 * **7 Break** and **Butterfly Break** from **Bhangra**
