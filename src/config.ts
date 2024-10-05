@@ -73,7 +73,7 @@ const config: Config = {
 		},
 		ot: {
 			name: "Shouting",
-			strokes: [ "w", "y", "A", "D", "E"]
+			strokes: [ "w", "y", "A", "B", "C", "F", "G", "H", "I", "J", "K", "D", "E", "2", "3", "4", "5", "6"]
 		}
 	},
 
@@ -89,12 +89,25 @@ const config: Config = {
 		"o": "l",
 		"a": "h",
 		".": ".",
-		"w" : "Wh",
-		"y" : "Wh2", // Long whistle
+		"w": "Wh",
+		"y": "Wh2", // Long whistle
 		"z": "s", // Soft flare
-		"A" : "Oi!",
-		"D" : "Oo",
-		"E" : "Ah"
+		"A": "Hey",
+		"B": "Ex",
+		"C": "tinc",
+		"D": "woo", // Respecting previous
+		"E": "Ah",  // encoding
+		"F": "tion",
+		"G": "Re",
+		"H": "bell",
+		"I": "ion",
+		"J": "Act",
+		"K": "now",
+		"2": "2",
+		"3": "3",
+		"4": "4",
+		"5": "5",
+		"6": "6"
 		// ]
 	},
 

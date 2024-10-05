@@ -47,7 +47,7 @@ export default {
             ot: '         A  ',
             mnemonics: {
                 ls: "I've got a big mouth",
-                ot: "Hey!"
+                ot: "Hey"
             }
         },
         'Conga': {
@@ -116,7 +116,7 @@ export default {
             mnemonics: {
                 ls: "Who's a of the Big Bad The Big Bad The Big Bad Who's a of the Big Bad No we're not scared at all",
                 re: "fraid Wolf, Wolf, Wolf fraid Wolf No we're not scared at all",
-                ot: "Ah Woo!"
+                ot: "Ah woo"
             }
         },
         'Hardcore Break': {

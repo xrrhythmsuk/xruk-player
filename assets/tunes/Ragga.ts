@@ -54,7 +54,7 @@ export default {
             re: '  X   X   X   X ',
             sn: '@re',
             ta: '@re',
-            ag: '################',
+            // ag: '################',
             sh: '@re',
             mnemonics: {
                 ls: "It's kick-back It's kick-back",
@@ -86,7 +86,7 @@ export default {
             ta: '@ls',
             ag: '@ls',
             sh: '@ls',
-            ot: '  A A A A A     ',
+            ot: '  2 3 4 5 6     ',
             mnemonics: {
                 ls: 'Hey se-ven eight',
                 ot: '2 3 4 5 6'
