@@ -139,7 +139,7 @@ export default {
                 ls: "Hey, Knock on the door I want you to let me in",
                 re: "Hey, Knock on the door I want you to let me in There's cu-stard in my un-der-pants"
             },
-            volumeHack: { sn: { 0: 0.2 } }
+            volumeHack: { sn: { 0: 0.5 } }
     	}
     }
 }
