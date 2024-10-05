@@ -57,7 +57,7 @@ Often used to speed up or slow down a band if the song doesn’t have a call bre
 
 **Hardcore Break** *Double devil horns down*  
 A great way to build up the hype!  
-There’s an [RoR alternate version](https://player.rhythms-of-resistance.org/#/listen/Special%20Breaks/Hardcore%20Break) that starts each section off doing 4s
+There’s an [alternate RoR version](https://player.rhythms-of-resistance.org/#/listen/Special%20Breaks/Hardcore%20Break) that starts each section off doing 4s
 
 *See also:* [**Butterfly Break**](/#/listen/Bhangra/Butterfly%20Break) from **Bhangra**, [**Circle Break**](/#/listen/Samba%20Reggae/Circle%20Break) from **Samba Reggae**
 
