@@ -66,7 +66,7 @@ There’s an [alternate RoR version](https://player.rhythms-of-resistance.org/#/
 Most general breaks start life as part of a tune. This is often mentioned on the individual tune pages, but here’s where a lot of them come from in case it gives you some ideas:
 * **Silence**, **Clave** and **Knock On The Door** are originally from **Samba Reggae**
 * **Conga/Little Cat** and **Flappy Mouth** are originally from **Funk** (and before that, there was a whole set of tunes called Conga from which surdos played what became our Conga, tams played Little Cat and repis played the special alt line)
-* The **Karla Break** and **Capped Karla** are indeed originally from **Karla**, where the Karla Break used to be Break 1, and so is **Progressive Hits**
+* The **Karla Break** and **Capped Karla** are indeed originally from **Karla**, where the Karla Break used to be Break 1, and so is **Progressive Hits** (though it’s also a classic samba reggae break in its own right)
 * **Progressive Karla** originally comes from **Drum & Bass** (it was the Progressive Break – missing our last bar – before it got Karla-fied)
 * The **Wolf Break** originally comes from **Afoxé**
 * The **Whistle Break** in Samba Reggae originally comes from the RoR tune **Sheffield Samba Reggae**
