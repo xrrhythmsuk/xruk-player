@@ -119,12 +119,12 @@ export default {
         "Tune Whistle In Whistle Break": {
             displayName: "Tune (Whistle in Whistle Break)",
             ls: repeat(2, "XXXXXXXXX       "),
-            ms: repeat(2, "  X   X   XX XX ", 2),
+            ms: repeat(2, "  X   X   XX XX "),
             hs: "@ms",
             re: repeat(2, "..X...X...X..XX."),
             sn: repeat(2, "..X...X...X...X."),
             ta: repeat(2, "X   X   X  XX X "),
-            ag: repeat(2, "          oa ao ",
+            ag: repeat(2, "          oa ao "),
             sh: "@sn",
             ot: repeat(2, "w  ww  www ww   ")
         },
