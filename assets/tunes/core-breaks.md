@@ -67,7 +67,8 @@ Try changing the shout for specific actions!
 ### Looping
 
 **Knock On The Door** *Knock on palm*  
-This is good as a transition between songs or an alternate line for one or two instruments
+This is good as a transition between songs or an alternate line for one or two instruments  
+Try clicking your sticks on the beat in the gaps!
 
 *See also:* [**Whistle Break**](/#/listen/Samba%20Reggae/Whistle%20Break) from **Samba Reggae**
 
