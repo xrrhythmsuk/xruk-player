@@ -1,4 +1,4 @@
-import { crescendo, decrescendo, repeat, stretch } from "../../src/tuneHelper";
+import {  repeat, stretch } from "../../src/tuneHelper";
 
 export default {
     categories: ["breaks", "onesurdo", "easy", "medium", "tricky"],
@@ -31,7 +31,8 @@ export default {
             re: "@ls",
             sn: "@ls",
             ta: "@ls",
-            ag: "@ls"
+            ag: "@ls",
+            sh: "@ls"
 	},
 	'8 Hits': {
             ls: repeat(8, 'X   '),
@@ -40,7 +41,8 @@ export default {
             re: "@ls",
             sn: "@ls",
             ta: "@ls",
-            ag: "@ls"
+            ag: "@ls",
+            sh: "@ls"
 	},
         "Clave": {
             ls: 'X  X  X   X X   ',
@@ -50,6 +52,7 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
+            sh: '@ls',
             mnemonics: {  ls: "Shut the sy-stem down" }
         },
         "Clave 2x": {
@@ -60,6 +63,7 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
+            sh: '@ls',
             mnemonics: {  ls: "Shut the sy-stem down Shut the sy-stem down" }
         },
         "Clave 4x": {
@@ -71,6 +75,7 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
+            sh: '@ls',
             mnemonics: {  ls: "Shut the sy-stem down Shut the sy-stem down Shut the sy-stem down Shut the sy-stem down" },
             volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 }
         },
@@ -81,7 +86,8 @@ export default {
             re: '@ls',
             sn: '@ls',
             ta: repeat(12, 'X X ') + 'X',
-            ag: "@ta",
+            ag: '@ta',
+            sh: '@ls',
             volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 }
         },
         'Progressive Karla': {
@@ -91,16 +97,19 @@ export default {
             re: '@ls',
             sn: '@ls',
             ta: 'X   X   X   X   X X X X X X X X X X X X X X X X X',
-            ag: '@ta'
+            ag: '@ta',
+            sh: '@ls'
         },
-	'e.g. Karla + Clave': {
+	'Karla Clave': {
+            displayName: 'e.g. Karla + Clave',
             ls: repeat(12, 'XXXX') + 'X  X  X   X X   ',
             ms: '@ls',
             hs: '@ls',
             re: '@ls',
             sn: '@ls',
             ta: repeat(12, 'X X ') + 'X  X  X   X X',
-            ag: "@ta",
+            ag: '@ta',
+            sh: '@ls',
             volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 }
         },
         'X Break': {
@@ -111,6 +120,7 @@ export default {
             sn: "@ls",
             ta: "@ls",
             ag: "@ls",
+            sh: "@ls",
             ot: repeat(4, "  B C F   G H I             A   "),
             mnemonics: {  ot: repeat(4, "Ex-tinc-tion Re-bell-ion Hey ") }
 	},
@@ -122,6 +132,7 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
+            sh: '@ls',
             ot: '        J   K   ',
             mnemonics: {  ot: "Act now" }
         },
@@ -135,6 +146,7 @@ export default {
             sn: repeat(4, stretch(4, 12, 'X..XX..XX..XX..X')),
             ta: '@ls',
             ag: '@ls',
+            sh: '@ls',
             mnemonics: {
                 ls: "Hey, Knock on the door I want you to let me in",
                 re: "Hey, Knock on the door I want you to let me in There's cu-stard in my un-der-pants"
