@@ -4,7 +4,7 @@ Once your band has the core tunes and core breaks down, learning more general br
 
 These breaks don’t all have audio here, but they do all get used and are worth knowing, so dig in!
 
-Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants**.
+Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants** as well.
 
 ### Silences
 
