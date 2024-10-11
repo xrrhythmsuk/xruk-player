@@ -13,7 +13,8 @@ export default {
             re: "@ls",
             sn: "@ls",
             ta: "@ls",
-            ag: "@ls"
+            ag: "@ls",
+            sh: "@ls"
         },
         'Boom Break': {
             ls: 'X               ',
@@ -22,7 +23,8 @@ export default {
             re: '@ls',
             sn: '@ls',
             ta: '@ls',
-            ag: '@ls'
+            ag: '@ls',
+            sh: '@ls'
         },
         'Capped Karla': {
             loop: true,
@@ -33,6 +35,7 @@ export default {
             sn: '@ls',
             ta: 'X X X X X X X X X',
             ag: '@ta',
+            sh: '@ls',
             volumeHack: crescendo(17)
         },
         'Flappy Mouth': {
@@ -44,6 +47,7 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
+            sh: '@ls',
             ot: '         A  ',
             mnemonics: {
                 ls: "I've got a big mouth",
@@ -63,6 +67,7 @@ export default {
             re: "X X     X X X X X   X X X X   X   X X X X X   X                   ",
             ta: "@re",
             ag: "@re",
+            sh: "@re",
             mnemonics: {  re: "Oh where has li-ttle cat gone Has lit-tle cat gone Where has li-ttle cat gone?" }
         },
         'Little Cat (Alt Repi)': {
@@ -86,6 +91,7 @@ export default {
             sn: "  XXXXXXXXXXXXXXXXf   X X r r X X XXXXXXXXXXXXXXXXf   X X r r X X ",
             ta: "X X     X X X X X   X X X X   X   X X X X X   X                   ",
             ag: "@ta",
+            sh: "@ta",
             volumeHack: {  sn: { 0: .2, 4: .4, 8: .7, 12: 1, 32: .2, 36: .4, 40: 0.7, 44: 1 } }
         },
         'Bunny Ears': {
@@ -96,6 +102,7 @@ export default {
             sn: "@ls",
             ta: "@ls",
             ag: "@ls",
+            sh: "@ls",
             mnemonics: {
                 ls: repeat(2, "Yes we want some bu-nny ears ") + repeat(2, "Bu-nny ears ") + repeat(2, "Bu-nny ")
                     + "Stro-king our bu-nny ears",
@@ -127,6 +134,7 @@ export default {
             sn: '@re',
             ta: '@re',
             ag: repeat(3, 'o o o o o o o ooo o o o o o o ooo o o o o o o ooo o o o oooooooo') +           'a a a a a a a aaa a a a a a a aaa a a a a a a aaa a a a aaaaaaaa',
+            sh: '@re',
             mnemonics: {
                 ls: repeat(2, "Here we go Here we go Here we go Rea-dy for it rea-dy here we ")
                     + repeat(2, "go . . . . . . Here we go . . . . . . Here we go . . . . . . Here we go . . . Rea-dy for it rea-dy here we "),
@@ -141,7 +149,8 @@ export default {
                 hs: { 66: .3, 78: 1, 82: .3, 94: 1, 98: .3, 110: 1, 114: .3, 120: 1, 130: .6, 142: 1, 146: .6, 158: 1, 162: .6, 174: 1, 178: .6, 184: 1 },
                 re: { 66: .3, 78: 1, 82: .3, 94: 1, 98: .3, 110: 1, 114: .3, 120: 1, 130: .6, 142: 1, 146: .6, 158: 1, 162: .6, 174: 1, 178: .6, 184: 1 },
                 sn: { 66: .3, 78: 1, 82: .3, 94: 1, 98: .3, 110: 1, 114: .3, 120: 1, 130: .6, 142: 1, 146: .6, 158: 1, 162: .6, 174: 1, 178: .6, 184: 1 },
-                ta: { 66: .3, 78: 1, 82: .3, 94: 1, 98: .3, 110: 1, 114: .3, 120: 1, 130: .6, 142: 1, 146: .6, 158: 1, 162: .6, 174: 1, 178: .6, 184: 1 }
+                ta: { 66: .3, 78: 1, 82: .3, 94: 1, 98: .3, 110: 1, 114: .3, 120: 1, 130: .6, 142: 1, 146: .6, 158: 1, 162: .6, 174: 1, 178: .6, 184: 1 },
+                sh: { 66: .3, 78: 1, 82: .3, 94: 1, 98: .3, 110: 1, 114: .3, 120: 1, 130: .6, 142: 1, 146: .6, 158: 1, 162: .6, 174: 1, 178: .6, 184: 1 }
             }
         }
     }
