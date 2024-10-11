@@ -2,7 +2,7 @@ These are our core general breaks, which have their own signs so you can use the
 
 You can give breaks and directions to different instruments, so you can do a lot with just a few of them.
 
-Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants**.
+Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants** as well.
 
 ### Silences
 
@@ -56,7 +56,7 @@ e.g. Karla Break with clave
 
 ### Shouting
 
-**X Break** *Crossed forearms or sticks*
+**X Break** *Crossed forearms or sticks*  
 Good to discuss ahead of time whether you’re doing this one at non-XR events
 
 **A Break** *Forearms make an upside-down V*  
