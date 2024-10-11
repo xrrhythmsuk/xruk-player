@@ -2,6 +2,7 @@ export default {
     categories: ["core", "easy"],
     sheet: require("./funk.pdf"),
     description: require("./funk.md").default,
+    video: "https://www.youtube.com/embed/Yy9wq3sFivw",
     patterns: {
         Tune: {
             loop: true,
