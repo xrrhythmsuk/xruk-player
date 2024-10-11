@@ -116,6 +116,18 @@ export default {
                 re: "Yep Yep Yep Yep"
             }
         },
+        "Tune Whistle In Whistle Break": {
+            displayName: "Tune (Whistle in Whistle Break)",
+            ls: repeat(2, "XXXXXXXXX       "),
+            ms: repeat(2, "  X   X   XX XX ", 2),
+            hs: "@ms",
+            re: repeat(2, "..X...X...X..XX."),
+            sn: repeat(2, "..X...X...X...X."),
+            ta: repeat(2, "X   X   X  XX X "),
+            ag: repeat(2, "          oa ao ",
+            sh: "@sn",
+            ot: repeat(2, "w  ww  www ww   ")
+        },
         "Tune Whistle Break": {
             displayName: "Tune (Surdos Whistle Break)",
             loop: true,
@@ -130,6 +142,6 @@ export default {
         }
     },
     exampleSong: [{ tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", { tuneName: "Core Breaks", patternName: "8 Hits" }, "Tune", "Tune", "Tune", "Tune", "Break 1 Snare",
-                  "Tune", "Tune", "Tune", "Tune", "24 Break", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Tune Whistle Break", "Tune Whistle Break",
+                  "Tune", "Tune", "Tune", "Tune", "24 Break", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune Whistle In Whistle Break", "Tune Whistle Break", "Tune Whistle Break",
                   "Tune Whistle Break", "Tune Whistle Break", "Tune", "Tune", "Tune", "Tune", "Progressive Karla Stolen"]
 }
