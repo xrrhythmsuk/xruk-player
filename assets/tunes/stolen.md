@@ -31,4 +31,4 @@ A helpful tip is to start the snares off first to get everyone in time.
   You can also keep the snares going throughout like the original Aainjaa version to help with the timing
 * The **2/4 break** *(cross arms, 2 fingers on one hand, 4 on the other)* is a short one that works well as an intro or quick bridge
 * **Break 3** is a mid-length one based on the tam line _[less common nationally]_
-* **General breaks** that work well: 4 hits, 8 hits, [Progressive Karla](/#/listen/Stolen/Progressive%20Karla%20(Stolen)) (gets very fast at the end – try having the agogôs play in the gap!), [Whistle break](/#/listen/Stolen/Whistle%20Break%20(Stolen)) from Samba Reggae (played straight rather than swung)
+* **General breaks** that work well: 4 hits, 8 hits, [Progressive Karla](/#/listen/Stolen/Progressive%20Karla%20Stolen) (gets very fast at the end – try having the agogôs play in the gap!), [Whistle break](/#/listen/Stolen/Whistle%20Break%20Stolen) from Samba Reggae (played straight rather than swung)
