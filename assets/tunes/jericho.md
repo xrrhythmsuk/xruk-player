@@ -25,7 +25,7 @@ The original spiritual is based on a Bible story where the besieged city of Jeri
 
 ## Controversies
 
-In light of the attacks on Palestinians in Gaza since October 2023, Jericho still being a major Palestinian city, and the details of the original Bible story, XR bands have mostly stopped playing this tune at national events.
+In light of the Israeli genocide against Palestinians since October 2023, Jericho still being a major Palestinian city, and the details of the original Bible story, XR bands have mostly stopped playing this tune at national events.
 
 ## Difficulty
 
