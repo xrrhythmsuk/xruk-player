@@ -5,7 +5,7 @@ import Component from "vue-class-component";
 import WithRender from "./about.vue";
 import './about.scss'
 import { ProvideReactive } from "vue-property-decorator";
-import { getSortedTuneList, normalizeState, State } from "../../state/state";
+import { getCategoriesAndTunes, normalizeState } from "../../state/state";
 
 @WithRender
 @Component({})
@@ -14,7 +14,7 @@ export default class extends Vue {
 
 	@ProvideReactive() state = normalizeState();
 
-    get tuneList() {
-      return getSortedTuneList(this.state)
+    get categoryList() {
+      return getCategoriesAndTunes(this.state)
     }
   }

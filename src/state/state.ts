@@ -34,8 +34,9 @@ import {
     PatternOptional, updatePattern,
     updateStroke
 } from "./pattern";
-import config, { Instrument } from "../config";
+import config, { Category, Instrument } from "../config";
 import Vue from "vue";
+import { Filter, filterPatternList } from "../ui/pattern-list-filter/pattern-list-filter";
 
 export type State = {
 	songs: Array<Song>,
@@ -375,6 +376,17 @@ export function getSortedTuneList(state: State): Array<string> {
         else
             return a.toLowerCase() < b.toLowerCase() ? -1 : 1;
     });
+}
+
+export function getCategoriesAndTunes(state: State, filter?: Filter) {
+    const categories : [string, Category][] =
+        [["", "breaks"], ["Core tunes", "core"], ["Common tunes", "common"], ["New and proposed", "new"], ["My tunes", "custom"]]
+    return categories
+        .map(([title, cat]) => ({
+            title,
+            tunes: filterPatternList(state, { text: '', cat, ...filter })
+        }))
+        .filter(x => x.tunes.length)
 }
 
 export function selectSong(state: State, songIdx: number): void {
