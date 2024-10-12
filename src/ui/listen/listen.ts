@@ -9,7 +9,7 @@ import { InjectReactive, Ref, Watch } from "vue-property-decorator";
 import events, { registerMultipleHandlers } from "../../services/events";
 import "./listen.scss";
 import $ from "jquery";
-import { State } from "../../state/state";
+import { getCategoriesAndTunes, State } from "../../state/state";
 import { Category } from "../../config";
 
 @WithRender
@@ -31,14 +31,7 @@ export default class Listen extends Vue {
 	touchStartX: number | null = null;
 
 	get categoryList() {
-		const categories : [string, Category][] =
-			[["", "breaks"], ["Core tunes", "core"], ["Common tunes", "common"], ["New and proposed", "new"], ["My tunes", "custom"]]
-		return categories
-			.map(([title, cat]) => ({
-				title,
-				tunes: filterPatternList(this.state, { text: '', cat, ...this.filter })
-			}))
-			.filter(x => x.tunes.length)
+		return getCategoriesAndTunes(this.state, this.filter)
 	}
 
 	created() {
