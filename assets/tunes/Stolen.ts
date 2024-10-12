@@ -55,7 +55,7 @@ export default {
             ms: "@ls",
             hs: "@ls",
             re: stretch(3, 6, repeat(3, "XXXXXXXXXXXXX X  X      ") + "XXXXXXXXXXXXX X  X     fX       fX       fX     "),
-            sn: stretch(2, 6, repeat(10, "..X...X...X...X.")),
+            sn: stretch(2, 6, repeat(5, "..X...X...X...X.")),
             ta: "@ls",
             ag: "@ls",
             sh: "@ls",
