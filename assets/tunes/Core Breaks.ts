@@ -122,7 +122,7 @@ export default {
             ag: "@ls",
             sh: "@ls",
             ot: repeat(4, "  B C F   G H I             A   "),
-            mnemonics: {  ot: repeat(4, "Ex-tinc-tion Re-bell-ion Hey ") }
+            mnemonics: {  ot: repeat(4, "Ex-tinc-tion Re-bell-ion Hey! ") }
 	},
         'A Break': {
             ls: 'X               ',
