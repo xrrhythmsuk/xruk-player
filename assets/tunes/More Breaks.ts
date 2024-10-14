@@ -51,7 +51,7 @@ export default {
             ot: '         A  ',
             mnemonics: {
                 ls: "I've got a big mouth",
-                ot: "Hey"
+                ot: "Hey!"
             }
         },
         'Conga': {
