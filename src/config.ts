@@ -90,7 +90,7 @@ const config: Config = {
 		"a": "h",
 		".": ".",
 		"w": "Wh",
-		"y": "Wh2", // Long whistle
+		"y": "Whhh", // Long whistle
 		"z": "s", // Soft flare
 		"A": "Hey",
 		"B": "Ex",
@@ -114,15 +114,15 @@ const config: Config = {
 	strokesDescription: {
 		"X": "Hit",
 		"h": "Slap with hand",
-		"0": "Damp with hand",
-		"s": "Hit while damping with hand",
+		"0": "Damp with hand/beater",
+		"s": "Hit while damping with hand/beater",
 		"f": "Flare/buzz",
 		"r": "Hit on rim or side",
 		"o": "Low bell",
 		"a": "High bell",
 		".": "Quiet hit",
-		"w" : "Whistle",
-		"y" : "Long whistle",
+		"w": "Short whistle",
+		"y": "Long whistle",
 		"z": "Soft flare/buzz"
 	},
 
