@@ -45,6 +45,7 @@ export default {
             sn: '@ls',
             ta: '@ls',
             ag: '@ls',
+            sh: '@ls',
             ot: '           E D   ',
             mnemonics: {
                 ls: "No we're not scared at all",
