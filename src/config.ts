@@ -92,7 +92,7 @@ const config: Config = {
 		"w": "Wh",
 		"y": "Whhh", // Long whistle
 		"z": "s", // Soft flare
-		"A": "Hey",
+		"A": "Hey!",
 		"B": "Ex",
 		"C": "tinc",
 		"D": "woo", // Respecting previous
