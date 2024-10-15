@@ -51,7 +51,7 @@ export default {
             sn: 'X..X..X.XX XX   ',
             ta: 'X X X   XX XX   ',
             ag: 'o  aa ooXX XX   ',
-            sh: 'X X X X XX XX   ',
+            sh: 'X.X.X.X.XX XX   ',
             ot: 'y w w           ',
             mnemonics: {
                 ls: "Hump-ty Dump-ty Get off the wall",

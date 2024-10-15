@@ -37,4 +37,4 @@ Nowadays, Bhangra also refers to a style of pop music that was invented by Punja
 * The **Butterfly break** *(join thumbs, flap hands upwards*) is an extended version of the 7 break and can also be used as a general break
 * The **Call break** is longer but well worth learning
 * **Break 2** is quite close to Break 1, and everyone plays the same thing _\[uncommon nationally\]_
-* **General breaks** that work well: 4 hits, 8 hits, Flappy Mouth, Whistle Break
+* **General breaks** that work well: [4 hits](/#/listen/Core%20Breaks/4%20Hits), [8 hits](/#/listen/Core%20Breaks/8%20Hits), [Flappy Mouth](/#/listen/More%20Breaks/Flappy%20Mouth), [Whistle Break](/#/listen/Samba%20Reggae/Whistle%20Break) from Samba Reggae

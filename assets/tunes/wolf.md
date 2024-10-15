@@ -31,4 +31,4 @@ The alt repi line is based on RoR Wolf Break 1, and Break 2 is based on RoR Wolf
 
 * **Break 1** is a short break based off the end of the Wolf Break
 * **Break 2** is an alternate bassline
-* **General breaks** that work well: Wolf Break (spoiler alert)
+* **General breaks** that work well: [Wolf Break](/#/listen/More%20Breaks/Wolf%20Break) (spoiler alert)

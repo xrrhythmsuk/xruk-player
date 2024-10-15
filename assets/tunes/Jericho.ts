@@ -37,21 +37,25 @@ export default {
             sn: "@ls",
             ta: "@ls",
             ag: "@ls",
+            sh: "@ls",
             mnemonics: {
                 ls: "And the wall came tum-bl-ing down",
                 re: "And the wall came tum-bl-ing down They've had it"
             }
         },
-        'Break 1 after short': {
-            displayName: "e.g. Break 1 finishing main part",
-            ls: "X X0  X X0  X X0 X   X XX  X  X XX X",
-            ms: "   X X   X X   0     X XX  X  X XX X",
-            hs: "@ms",
-            re: "f  h sf  h sf  h sf  X XX  X  X XX X     X  X  X",
-            sn: "...X.X...X.....X.X...X XX  X  X XX X",
-            ta: "   X     X     X X   X XX  X  X XX X",
-            ag: "o  a ao  a ao a  o   o oo  o  o oo o",
-            sh: "X  X .X  X .X  X .X  X XX  X  X XX X"
+	'Call Break': {
+            ls: "                     X           X           X                       X XX  X  X XX X",
+            ms: "@ls",
+            hs: "@ls",
+            re: "X XX XX XX  X X  X      X X  X      X X  X      X XX XX XX  X X  X   X XX  X  X XX X     X  X  X",
+            sn: "@ls",
+            ta: "@ls",
+            ag: "@ls",
+            sh: "@ls",
+            mnemonics: {
+                ls: "Yep Yep Yep And the wall came tum-bl-ing down",
+                re: "Jo-shu-a was figh-ting at Je-ri-cho Je-ri-cho Je-ri-cho Jo-shu-a was figh-ting at Je-ri-cho And the wall came tum-bl-ing down They've had it"
+            }
         },
         'Break 2': {
             upbeat: 1,
@@ -62,6 +66,7 @@ export default {
             sn: "@ls",
             ta: "XX XX  X X  X            X    XX XX X           XX XX  X X  X            X    XX XX X",
             ag: "aa aa  a o  a            a    aa ao a           aa aa  a o  a            a    aa ao a",
+            sh: "@ls",
             mnemonics: {
                 ta: "The trum-pet came ring-ing out Walls fell down to the ground The trum-pet came ring-ing out Walls fell down to the ground",
                 ag: "The trum-pet came ring-ing out Walls fell down to the ground The trum-pet came ring-ing out Walls fell down to the ground"
@@ -75,24 +80,12 @@ export default {
             sn: "@re",
             ta: "@re",
             ag: "@re",
+            sh: "@re",
             mnemonics: {
                 ls: "Drums came boo out Af-ter trum blast Drums came boo out a-fter wall o",
                 re: "ming the pet ming the fell ver"
             }
-        },
-        'Call Break': {
-            ls: "                     X           X           X                       X XX  X  X XX X",
-            ms: "@ls",
-            hs: "@ls",
-            re: "X XX XX XX  X X  X      X X  X      X X  X      X XX XX XX  X X  X   X XX  X  X XX X     X  X  X",
-            sn: "@ls",
-            ta: "@ls",
-            ag: "@ls",
-            mnemonics: {
-                ls: "Yep Yep Yep And the wall came tum-bl-ing down",
-                re: "Jo-shu-a was figh-ting at Je-ri-cho Je-ri-cho Je-ri-cho Jo-shu-a was figh-ting at Je-ri-cho And the wall came tum-bl-ing down They've had it"
-            }
         }
     },
-    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Break 1 after short", "Tune", "Call Break", "Tune", "Break 2", "Tune", "Break 3"]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", { patternName: "Tune", length: 8 }, "Break 1", "Tune", "Call Break", "Tune", "Break 2", "Tune", "Break 3"]
 }

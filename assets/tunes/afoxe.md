@@ -35,4 +35,4 @@ Since this tune is directly rooted in Afro-Brazilian religion, many in the RoR n
 * **Break 1** is between surdos and everyone else
 * **Breaks 2 and 3** are alternate surdo lines while everyone carries on (3 is the same rhythm as 1) _\[less common nationally\]_
 * The **Call break**, led by repis and with a long and a short version
-* **General breaks** that work well: Tam Line, Wolf Break
+* **General breaks** that work well: [Tam Line](/#/listen/Afoxe/Tam%20Line), [Wolf Break](/#/listen/More%20Breaks/Wolf%20Break)
