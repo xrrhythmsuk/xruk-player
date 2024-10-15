@@ -1,4 +1,4 @@
-The **XR Rhythms Player** is here to help you on your journey with protest samba fusion. *(Scroll down for the tunes list or tap ”Listen” above!)*
+The **XR Rhythms Player** is here to help you on your journey with protest samba fusion. *(Scroll down for the tunes list or tap “Listen” above!)*
 
 It absolutely isn’t telling you the “right way” to play: it’s a resource for learning and practising the tunes and breaks that XR Rhythms UK bands tend to play when we’re all together, prioritising what’s commonest and most accessible for the greatest number of players and bands.
 
