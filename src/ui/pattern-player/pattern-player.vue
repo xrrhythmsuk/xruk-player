@@ -30,8 +30,8 @@
 		<b-button variant="warning" v-if="hasLocalChanges" @click="reset()"><fa icon="eraser"/> Restore original</b-button>
 		<b-button variant="info" v-if="hasLocalChanges || isCustomPattern" @click="share()"><fa icon="share-from-square"/> Share</b-button>
 
-		<b-button :pressed.sync="playbackSettings.loop" variant="outline-secondary" v-b-tooltip.hover="'Loop'"><fa icon="repeat"/></b-button>
-		<b-button :pressed.sync="showMnemonics" variant="outline-secondary" v-b-tooltip.hover="'Toggle mnemonics'" :disabled="!mnemonicsAvailable"><fa icon="comment"/></b-button>
+		<b-button :pressed.sync="playbackSettings.loop" variant="outline-secondary"><fa icon="repeat"/><span class="d-none d-sm-inline"> Loop</span></b-button>
+		<b-button :pressed.sync="showMnemonics" variant="outline-secondary" v-b-tooltip.hover="'Toggle mnemonics'" :disabled="!mnemonicsAvailable"><fa icon="comment"/><span class="d-none d-sm-inline"> Mnems</span></b-button>
 
 		<span class="mr-2"/>
 		<InstrumentButtons :playback-settings="playbackSettings" :tune="tune" v-if="readonly" />
