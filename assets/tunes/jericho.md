@@ -25,7 +25,7 @@ The original spiritual is based on a Bible story where the besieged city of Jeri
 
 ## Controversies
 
-In light of the attacks on Palestinians in Gaza since October 2023, Jericho still being a major Palestinian city, and the details of the original Bible story, XR bands have stopped playing this tune at national events.
+In light of the Israeli genocide against Palestinians since October 2023, Jericho still being a major Palestinian city, and the details of the original Bible story, XR bands have mostly stopped playing this tune at national events.
 
 ## Difficulty
 
@@ -39,7 +39,7 @@ In light of the attacks on Palestinians in Gaza since October 2023, Jericho stil
 ## Breaks
 
 * **Break 1** is a short one based on the end of the chorus “*... and the wall came tumbling down*”
+* The **Call break** works nicely as an intro
 * **Break 2** is led by tams and agogôs *\[not played nationally\]*
 * **Break 3** is led by surdos *\[not played nationally\]*
-* The **Call break** works nicely as an intro
 * **General breaks** that work well: ones you’d use with Bhangra
