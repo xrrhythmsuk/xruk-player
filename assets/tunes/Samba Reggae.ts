@@ -131,6 +131,7 @@ export default {
         },
         'Circle Break Reggae Samba': {
             displayName: 'Circle Break (for Reggae Samba)',
+            speed: 120,
             time: 3,
             ls: repeat(3, '               X  X     ') + repeat(4, '      ') + repeat(3, 'X    X   X     X  X     ') + 'X    X   X     X  X  X  ',
             ms: '@ls',
@@ -144,6 +145,7 @@ export default {
         },
         'Tune Reggae Samba': {
             displayName: 'Tune (Reggae Samba)',
+            speed: 120,
             time: 3,
             loop: true,
             ls: '0     X     0     X  X  ',
@@ -182,5 +184,5 @@ export default {
             sh: '................'
         }
     },
-    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune (Whistle in Whistle Break)", "Whistle Break", "Whistle Break", { tuneName: "Core Breaks", patternName: "Clave" }, "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Circle Break Reggae Samba", "Tune Reggae Samba", "Tune Reggae Samba", "Circle Break", "Tune", "Tune", "Tune", "Tune", "SOS Break", "Tune SOS Repi", "Tune SOS Repi", "Tune SOS Repi", "Tune SOS Repi"]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune (Whistle in Whistle Break)", "Whistle Break", "Whistle Break", { tuneName: "Core Breaks", patternName: "Clave" }, "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Circle Break Reggae Samba", "Tune Reggae Samba", "Tune Reggae Samba", "Tune Reggae Samba", "Tune Reggae Samba", "Circle Break", "Tune", "Tune", "Tune", "Tune", "SOS Break", "Tune SOS Repi", "Tune SOS Repi", "Tune SOS Repi", "Tune SOS Repi"]
 }
