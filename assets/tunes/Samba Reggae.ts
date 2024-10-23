@@ -131,8 +131,8 @@ export default {
         },
         'Circle Break Reggae Samba': {
             displayName: 'Circle Break (for Reggae Samba)',
-            speed: 120,
-            time: 3,
+            speed: 60,
+            time: 6,
             ls: repeat(3, '               X  X     ') + repeat(4, '      ') + repeat(3, 'X    X   X     X  X     ') + 'X    X   X     X  X  X  ',
             ms: '@ls',
             hs: '@ls',
@@ -145,8 +145,8 @@ export default {
         },
         'Tune Reggae Samba': {
             displayName: 'Tune (Reggae Samba)',
-            speed: 120,
-            time: 3,
+            speed: 60,
+            time: 6,
             loop: true,
             ls: '0     X     0     X  X  ',
             ms: 'X     0     X     0     ',
