@@ -132,10 +132,10 @@ export default {
         'Circle Break Reggae Samba': {
             displayName: 'Circle Break (for Reggae Samba)',
             time: 3,
-            ls: repeat(3, '               X  X     ') + repeat(4, '      ') + repeat(3, 'X   X    X     X  X     ') + 'X    X   X     X  X  X  ',
+            ls: repeat(3, '               X  X     ') + repeat(4, '      ') + repeat(3, 'X    X   X     X  X     ') + 'X    X   X     X  X  X  ',
             ms: '@ls',
             hs: '@ls',
-            re: repeat(3, 'f  X X  XX  X           ') + repeat(5, 'X   X    X     X  X     '),
+            re: repeat(3, 'f  X X  XX  X           ') + repeat(5, 'X    X   X     X  X     '),
             sn: repeat(3, '               X  X     ') + repeat(4, '      ') + repeat(4, 'X .. X. .X .. .X .X .. .'),
             ta: repeat(3, '               X  X     ') + repeat(4, '      ') + repeat(4, 'X    X   X     X  X     '),
             ag: '@ta',
