@@ -4,7 +4,7 @@ Once your band has the core tunes and core breaks down, learning more general br
 
 These breaks don’t all have audio here, but they do all get used and are worth knowing, so dig in!
 
-Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants**.
+Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants** as well.
 
 ### Silences
 
@@ -57,7 +57,7 @@ Often used to speed up or slow down a band if the song doesn’t have a call bre
 
 **Hardcore Break** *Double devil horns down*  
 A great way to build up the hype!  
-There’s an [RoR alternate version](https://player.rhythms-of-resistance.org/#/listen/Special%20Breaks/Hardcore%20Break) that starts each section off doing 4s
+There’s an [alternate RoR version](https://player.rhythms-of-resistance.org/#/listen/Special%20Breaks/Hardcore%20Break) that starts each section off doing 4s
 
 *See also:* [**Butterfly Break**](/#/listen/Bhangra/Butterfly%20Break) from **Bhangra**, [**Circle Break**](/#/listen/Samba%20Reggae/Circle%20Break) from **Samba Reggae**
 
@@ -65,15 +65,15 @@ There’s an [RoR alternate version](https://player.rhythms-of-resistance.org/#/
 
 Most general breaks start life as part of a tune. This is often mentioned on the individual tune pages, but here’s where a lot of them come from in case it gives you some ideas:
 * **Silence**, **Clave** and **Knock On The Door** are originally from **Samba Reggae**
-* **Conga/Little Cat** and **Flappy Mouth** are originally from **Funk** (and before that, there was a whole set of tunes called Conga from which surdos played our Conga, tams played Little Cat and repis played the special alt line)
-* The **Karla Break** and **Capped Karla** are indeed originally from **Karla**, where the Karla Break used to be Break 1, and so is **Progressive Hits**
+* **Conga/Little Cat** and **Flappy Mouth** are originally from **Funk** (and before that, there was a whole set of tunes called Conga from which surdos played what became our Conga, tams played Little Cat and repis played the special alt line)
+* The **Karla Break** and **Capped Karla** are indeed originally from **Karla**, where the Karla Break used to be Break 1, and so is **Progressive Hits** (though it’s also a classic samba reggae break in its own right)
 * **Progressive Karla** originally comes from **Drum & Bass** (it was the Progressive Break – missing our last bar – before it got Karla-fied)
 * The **Wolf Break** originally comes from **Afoxé**
 * The **Whistle Break** in Samba Reggae originally comes from the RoR tune **Sheffield Samba Reggae**
 * The **Tam Line** break replaces the older idea of every tune being allowed to have a short break as well as 1/2/3/Call. The Samba Reggae short break (Clave) eventually became a general break and took the old “short” sign, and other tunes’ short breaks either became Tam Lines (e.g. Afoxé, Custard) or an extra numbered break (e.g. Funk 2)
 
 
-It can be helpful when playing with RoR bands to know which material we have in common – even if it’s often signed and played a little differently, it’s still mostly the same. Here are the things that we know *don’t* come from the RoR network:
+It can be helpful when playing with RoR bands to know which material we’re more likely to have in common – even if it’s often signed and played a little differently, it’s still mostly the same. Here are the things that we know *aren’t* shared with the RoR network:
 * **4 Hits**, **8 Hits**, **X Break** from the **Core Breaks**
 * **Broccoli**, **Capped Karla**, **Conga/Little Cat**, **Bunny Ears** from **More Breaks**
 * **7 Break** and **Butterfly Break** from **Bhangra**

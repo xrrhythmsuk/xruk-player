@@ -2,7 +2,7 @@ These are our core general breaks, which have their own signs so you can use the
 
 You can give breaks and directions to different instruments, so you can do a lot with just a few of them.
 
-Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants**.
+Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants** as well.
 
 ### Silences
 
@@ -57,17 +57,18 @@ e.g. Karla Break with clave
 ### Shouting
 
 **X Break** *Crossed forearms or sticks*  
-The shout is “Ex-tin-ction! Re-be-llion! ... Hey!”
+Good to discuss ahead of time whether you’re doing this one at non-XR events
 
 **A Break** *Forearms make an upside-down V*  
-The shout is “Act now!”
+Try changing the shout for specific actions!
 
 *See also:* [**7 Break**](/#/listen/Bhangra/7%20Break) from **Bhangra**
 
 ### Looping
 
 **Knock On The Door** *Knock on palm*  
-This is good as a transition between songs or an alternate line for one or two instruments
+This is good as a transition between songs or an alternate line for one or two instruments  
+Try clicking your sticks on the beat in the gaps!
 
 *See also:* [**Whistle Break**](/#/listen/Samba%20Reggae/Whistle%20Break) from **Samba Reggae**
 

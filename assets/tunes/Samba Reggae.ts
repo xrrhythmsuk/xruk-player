@@ -121,13 +121,26 @@ export default {
             ta: repeat(3, '          X X   ') + repeat(4, '    ') + repeat(4, 'X  X  X   X X   '),
             ag: '@ta',
             sh: '@ta',
-            volumeHack: {  64: .2, 78: .4, 96: .7, 112: 1  },
+            volumeHack: {  64: .2, 80: .4, 96: .7, 112: 1  },
             mnemonics: {
                 ls: repeat(3, "Act now ") + repeat(4, "Shut the sy-stem down ") + "Yeah",
                 re: repeat(3, "There's no time to waste so ") + repeat(5, "Shut the sy-stem down "),
                 sn: repeat(3, "Act now ") + repeat(4, "Shut . . the . . sy . . . stem . down . . . "),
                 ta: repeat(3, "Act now ") + repeat(4, "Shut the sy-stem down ")
             }
+        },
+        'Circle Break Reggae Samba': {
+            displayName: 'Circle Break (for Reggae Samba)',
+            time: 3,
+            ls: repeat(3, '               X  X     ') + repeat(4, '      ') + repeat(3, 'X    X   X     X  X     ') + 'X    X   X     X  X  X  ',
+            ms: '@ls',
+            hs: '@ls',
+            re: repeat(3, 'f  X X  XX  X           ') + repeat(5, 'X    X   X     X  X     '),
+            sn: repeat(3, '               X  X     ') + repeat(4, '      ') + repeat(4, 'X .. X. .X .. .X .X .. .'),
+            ta: repeat(3, '               X  X     ') + repeat(4, '      ') + repeat(4, 'X    X   X     X  X     '),
+            ag: '@ta',
+            sh: '@ta',
+            volumeHack: {  96: .2, 120: .4, 144: .7, 168: 1  }
         },
         'Tune Reggae Samba': {
             displayName: 'Tune (Reggae Samba)',
@@ -156,7 +169,8 @@ export default {
                 re: repeat(4, "No time to waste Act now ")
             }
         },
-        'Tune (SOS Repi)': {
+        'Tune SOS Repi': {
+            displayName: 'Tune (SOS Repi)',
             loop: true,
             ls: '0   X   0   X X ',
             ms: 'X   0   X   0   ',
@@ -168,5 +182,5 @@ export default {
             sh: '................'
         }
     },
-    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune (Whistle in Whistle Break)", "Whistle Break", "Whistle Break", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Circle Break", "Tune", "Tune", "Tune", "Tune", "SOS Break", "Tune (SOS Repi)", "Tune (SOS Repi)", "Tune (SOS Repi)", "Tune (SOS Repi)"]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune (Whistle in Whistle Break)", "Whistle Break", "Whistle Break", { tuneName: "Core Breaks", patternName: "Clave" }, "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune", "Tune", "Circle Break Reggae Samba", "Tune Reggae Samba", "Tune Reggae Samba", "Tune Reggae Samba", "Tune Reggae Samba", "Circle Break", "Tune", "Tune", "Tune", "Tune", "SOS Break", "Tune SOS Repi", "Tune SOS Repi", "Tune SOS Repi", "Tune SOS Repi"]
 }

@@ -10,9 +10,11 @@ It doesn’t sound much like funk, which is something of a theme with RoR tunes.
 
 **Musical background:** Probably based on the Brazilian samba reggae interpretation of funk rather than the James Brown version.
 
-**Sign:** Based on the funky glasses that the classic funk bassist Bootsy Collins [used to wear](https://media.npr.org/assets/artslife/arts/2009/10/bootsy-fa-0a236a00a27e682eed7c121e1f0454d4be5adee0-s600-c85.webp). Appears to have evolved from an ‘F’ with thumb and two fingers facing down.
+**Sign:** Based on the funky glasses that the classic funk bassist Bootsy Collins [used to wear](https://media.npr.org/assets/artslife/arts/2009/10/bootsy-fa-0a236a00a27e682eed7c121e1f0454d4be5adee0-s600-c85.webp).
 
-**History:** Was introduced to the network at least 2008. Barking Bateria played a slightly different version called [“Lego Funk”](https://soundcloud.com/barking-bateria/lego-funk), which is where our starter repi part comes from.
+**History:** Was introduced to the network at least 2008. Barking Bateria played a slightly different version called [“Lego Funk”](https://soundcloud.com/barking-bateria/lego-funk), which is where our starter repi part comes from.   
+
+The sign appears to have evolved from an ‘F’ with thumb and two fingers facing down.
 
 ## Difficulty
 
@@ -25,6 +27,6 @@ It doesn’t sound much like funk, which is something of a theme with RoR tunes.
 ## Breaks
 
 * **Break 1**, a relatively involved break between surdos and everyone else _\[uncommon nationally\]_
-* **Break 2**, where everyone plays one bar of eighth notes _\[less common nationally\]_
-* **General breaks** that work well: Conga, Little Cat, Flappy Mouth
-* Some bands use Angela Davis breaks with Funk instead (signed as e.g. Angela Davis – Break 2 – Funk)
+* **Break 2**, where everyone plays one bar of 8s _\[less common nationally\]_
+* **General breaks** that work well: [Conga](/#/listen/More%20Breaks/Conga), [Little Cat](/#/listen/More%20Breaks/Little%20Cat), [Flappy Mouth](/#/listen/More%20Breaks/Flappy%20Mouth)
+* Some bands use [Angela Davis](/#/listen/Angela%20Davis) breaks with Funk instead (signed as e.g. Angela Davis – Break 2 – Funk)

@@ -32,6 +32,7 @@ export default {
             sn: '@ls',
             ta: "X X X X X X X X X X X X X X X X X X X X X X X X X",
             ag: "o o o o o o o o o o o o o o o o o o o o o o o o o",
+            sh: '@ls',
             volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 }
         },            
         'Break 2': {
