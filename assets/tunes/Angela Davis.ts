@@ -2,7 +2,7 @@ export default {
     categories: ["common", "medium"],
     sheet: require("./angela-davis.pdf"),
     description: require("./angela-davis.md").default,
-    video: undefined,
+    video: "https://www.youtube.com/embed/VQBvrEJkiWk",
     patterns: {
         Tune: {
             loop: true,
