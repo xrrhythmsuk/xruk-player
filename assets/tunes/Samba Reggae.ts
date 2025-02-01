@@ -125,7 +125,7 @@ export default {
             volumeHack: {  65: .2, 81: .4, 97: .7, 113: 1  },
             mnemonics: {
                 ls: repeat(3, "Act now ") + repeat(4, "Shut the sy-stem down ") + "Yeah",
-                re: repeat(3, "zThere's no time to waste so ") + repeat(5, "Shut the sy-stem down "),
+                re: repeat(3, "z There's no time to waste so ") + repeat(5, "Shut the sy-stem down "),
                 sn: repeat(3, "Act now ") + repeat(4, "Shut . . the . . sy . . . stem . down . . . "),
                 ta: repeat(3, "Act now ") + repeat(4, "Shut the sy-stem down ")
             }
