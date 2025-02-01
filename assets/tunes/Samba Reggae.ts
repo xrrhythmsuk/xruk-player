@@ -113,18 +113,19 @@ export default {
             }
         },
         'Circle Break': {
-            ls: repeat(3, '          X X   ') + repeat(4, '    ') + repeat(3, 'X  X  X   X X   ') + 'X  X  X   X X X ',
+            upbeat: 1,
+            ls: repeat(3, '           X X  ') + ' ' + repeat(4, '    ') + repeat(3, 'X  X  X   X X   ') + 'X  X  X   X X X ',
             ms: '@ls',
             hs: '@ls',
-            re: repeat(3, 'f XX XX X       ') + repeat(5, 'X  X  X   X X   '),
-            sn: repeat(3, '          X X   ') + repeat(4, '    ') + repeat(4, 'X..X..X...X.X...'),
-            ta: repeat(3, '          X X   ') + repeat(4, '    ') + repeat(4, 'X  X  X   X X   '),
+            re: repeat(3, 'fX XX XX X      ') + ' ' + repeat(5, 'X  X  X   X X   '),
+            sn: repeat(3, '           X X  ') + ' ' + repeat(4, '    ') + repeat(4, 'X..X..X...X.X...'),
+            ta: repeat(3, '           X X  ') + ' ' + repeat(4, '    ') + repeat(4, 'X  X  X   X X   '),
             ag: '@ta',
             sh: '@ta',
-            volumeHack: {  64: .2, 80: .4, 96: .7, 112: 1  },
+            volumeHack: {  65: .2, 81: .4, 97: .7, 113: 1  },
             mnemonics: {
                 ls: repeat(3, "Act now ") + repeat(4, "Shut the sy-stem down ") + "Yeah",
-                re: repeat(3, "There's no time to waste so ") + repeat(5, "Shut the sy-stem down "),
+                re: repeat(3, "zThere's no time to waste so ") + repeat(5, "Shut the sy-stem down "),
                 sn: repeat(3, "Act now ") + repeat(4, "Shut . . the . . sy . . . stem . down . . . "),
                 ta: repeat(3, "Act now ") + repeat(4, "Shut the sy-stem down ")
             }
@@ -132,15 +133,16 @@ export default {
         'Circle Break Reggae Samba': {
             displayName: 'Circle Break (for Reggae Samba)',
             time: 3,
-            ls: repeat(3, '               X  X     ') + repeat(4, '      ') + repeat(3, 'X    X   X     X  X     ') + 'X    X   X     X  X  X  ',
+            upbeat: 1,
+            ls: repeat(3, '                X  X    ') + ' ' + repeat(4, '      ') + repeat(3, 'X    X   X     X  X     ') + 'X    X   X     X  X  X  ',
             ms: '@ls',
             hs: '@ls',
-            re: repeat(3, 'f  X X  XX  X           ') + repeat(5, 'X    X   X     X  X     '),
-            sn: repeat(3, '               X  X     ') + repeat(4, '      ') + repeat(4, 'X .. X. .X .. .X .X .. .'),
-            ta: repeat(3, '               X  X     ') + repeat(4, '      ') + repeat(4, 'X    X   X     X  X     '),
+            re: repeat(3, 'fX  X X  XX  X          ') + ' ' + repeat(5, 'X    X   X     X  X     '),
+            sn: repeat(3, '                X  X    ') + ' ' + repeat(4, '      ') + repeat(4, 'X .. X. .X .. .X .X .. .'),
+            ta: repeat(3, '                X  X    ') + ' ' + repeat(4, '      ') + repeat(4, 'X    X   X     X  X     '),
             ag: '@ta',
             sh: '@ta',
-            volumeHack: {  96: .2, 120: .4, 144: .7, 168: 1  }
+            volumeHack: {  97: .2, 121: .4, 145: .7, 169: 1  }
         },
         'Tune Reggae Samba': {
             displayName: 'Tune (Reggae Samba)',
