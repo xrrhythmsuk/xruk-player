@@ -5,7 +5,7 @@ A new XR Rhythms tune introduced at band camp 2023 and created so we had another
 Some general breaks work best altered to divide each beat into three rather than four (e.g. Karla break, Progressive Karla).
 Some work as they are, and others are best avoided. Good to experiment with!
 
-**Sign:** palms up together facing you, then drop
+**Sign:** palms up together facing you, then drop and off to the right (so it’s a ‘J’)
 
 ## Background
 
