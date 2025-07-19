@@ -1,4 +1,4 @@
-This is one of our core tunes. Together with Custard, it’s our tune that sounds most like “real” samba.
+This is one of our core tunes. Together with Custard, it’s our tune that sounds most like real samba.
 
 Like real samba, many of the breaks are more complicated, especially compared to our other tunes. Don’t feel like you have to learn them all!
 
@@ -8,15 +8,13 @@ Since practically every samba/samba-fusion band can play a version of samba regg
 
 ## Background
 
-**Name:** Samba Reggae is the original afro bloc rhythm, a mix of samba and reggae created by the Black liberation movement in Brazil. Samba reggae is a sub-genre of samba that arose in the context of Afro-Brazilians fighting for their right to play samba music and partake in Carnaval parades in the late 1960s. At that time only white people were allowed to play in the parades for Carnaval and in the samba schools of Rio de Janeiro. Samba reggae is a samba style that developed because Black people in Brazil wanted one to call their own, incorporating influences from the Black diaspora such as reggae and funk. The music of the afro blocos aimed to recreate and strengthen the Afro-Brazilian community. ([Wikipedia](https://en.wikipedia.org/wiki/Samba_reggae))
+**Name:** Samba Reggae is the original afro bloc rhythm, a mix of samba and reggae created by the Black liberation movement in Brazil. Samba reggae is a sub-genre of samba that arose in the context of Afro-Brazilians fighting for their right to play samba music and partake in Carnaval parades in the late 1960s. At that time only white people were allowed to play in the parades for Carnaval and in the samba schools of Rio de Janeiro. Samba reggae is a samba style that developed because Black people in Brazil wanted one to call their own, incorporating influences from the Black diaspora such as reggae and funk to give the genre its own  rhythms and playing style (such using plastic whippy sticks for repis instead of one wood stick and your hand). The music of the afro blocos aimed to recreate and strengthen the Afro-Brazilian community. ([Wikipedia](https://en.wikipedia.org/wiki/Samba_reggae))
 
-In “real” samba, ‘samba reggae’ is a specific sub-genre in terms of the rhythm and also what instruments are used and how they are played which is different from other kinds of samba. For example the repi, which otherwise is mostly worn quite high and played with a short wooden stick and the hand, is worn low and played with two long plastic rods (as you can see at national XR events).
-
-**Musical background:** The tune is a mix of Barking Bateria Samba Reggae 1 and 3. It has the mid surdo on beats 1 and 3 and the low on 2 and 4 (mid-low-mid-low low), while many samba bands play it low-mid-low-mid mid. The repi and snare parts used to be swapped too.  
+**Musical background:** The tune is a mix of Barking Bateria Samba Reggae 1 and 3. It has the mid surdo on beats 1 and 3 and the low on 2 and 4 (mid-low-mid-low low), while many samba/samba-fusion bands play it low-mid-low-mid mid. The repi and snare parts used to be swapped too.  
 
 As XR bands rarely have mids, our lows often play the first and third beats as a silent stroke (hit with your hand muffling) to replace them.
 
-Many in the RoR network consider it cultural appropriation to play this tune as it sounds like real samba reggae, a genre developed and used by the Black liberation movement in Brazil.
+Many in the RoR network consider it cultural appropriation to play this tune. However, after consulting with musicians and other people with knowledge of samba, including people from Brazil, the XR Rhythms network has kept playing the samba-derived tunes [while making it clearer that we aren’t samba](https://xrrhythms.uk/about).
 
 **Sign:** Changed at the first 2022 camp from “smoking a joint” because just wow.
 
@@ -28,7 +26,7 @@ The starter snare part (which is a common samba reggae part) is the same as the 
 ## Difficulty
 
 * **Surdos**: medium
-* **Repinique**: medium
+* **Repi**: medium
 * **Snare**: hard (medium starter part available)
 * **Tam**: easy 
 * **Agogô**: medium (easy starter part available)
