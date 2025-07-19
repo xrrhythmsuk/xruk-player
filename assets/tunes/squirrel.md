@@ -1,20 +1,20 @@
 One of the funkiest tunes we’ve got! See **Controversies** below, though, for playing it at national events.
 
-**Sign:** pull two prison bars apart in front of your face
+**Sign:** pull two branches apart in front of your face and look through
 
 ## Background
 
-**Name:** Angela Davis is an African American activist who experienced great oppression as a university professor due to her political views and involvement in the Black liberation, communist and radical feminist movements. She became a major figure of the prison abolition movement after being imprisoned for a murder that she did not commit. ([Wikipedia](https://en.wikipedia.org/wiki/Angela_Davis), see also the documentary “Free Angela & All Political Prisoners”)
+**Name:** A squirrel is a small Eurasian mammal known for climbing trees and eating nuts.
 
 **Musical background:** Break 1 and the low surdo part sound like “Sex Machine” by James Brown.  
 
 RoR bands, who tend to have proper samba surdos, usually play the low surdo part with a whippy stick in one hand. As our bands tend to use converted drum kit drums, clicking on the rim or the wooden body with your usual beaters sounds better.
 
-**Sign:** The sign represents prison bars, because Angela Davis is a major figure in prison abolition.
+**Sign:** The sign represents a squirrel peering through the branches to see what food is available.
 
-**History:** Part of the first set of tunes taken from Barking Bateria in 2000. The name used to be “James Brown” and the sign depicted an afro. The tune was renamed because of domestic violence and rape accusations against James Brown, and Angela Davis was chosen because she fit the tune sign. Later the tune sign was changed because yikes.
+**History:** Part of the first set of tunes taken from Barking Bateria in 2000. The name was originally James Brown and the sign depicted an afro. Later, because of the domestic violence and rape accusations against James Brown, the tune was renamed to [Angela Davis](https://en.wikipedia.org/wiki/Angela_Davis) by the RoR network because she fit the tune sign, which was itself then changed to pulling prison bars apart (Prof. Davis is a major figure in prison abolition) because yikes.
 
-RoR considers both the old tune sign itself and the fact that Angela Davis was chosen because of her afro as racist, and some RoR members from the Baltic States have raised concerns as she was a member of the Communist Party and actively collaborated with the oppressive regime of the Soviet Union.
+In June 2025 the XR Rhythms network voted to rename the tune nationally to Squirrel, considering the tune being connected to Angela Davis at all as racist and tokenistic. The new name came from the most common mnemonics for the tune (similar to how Welfare State became Custard) and because it fit with the animal/nature themes in our tunes and XR as a whole. The sign was kept the same but reinterpreted.
 
 ## Controversies
 
