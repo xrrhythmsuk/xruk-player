@@ -14,7 +14,7 @@ RoR bands, who tend to have proper samba surdos, usually play the low surdo part
 
 **History:** Part of the first set of tunes taken from Barking Bateria in 2000. The name was originally James Brown and the sign depicted an afro. Later, because of the domestic violence and rape accusations against James Brown, the tune was renamed to [Angela Davis](https://en.wikipedia.org/wiki/Angela_Davis) by the RoR network because she fit the tune sign, which was itself then changed to pulling prison bars apart (Prof. Davis is a major figure in prison abolition) because yikes.
 
-In June 2025 the XR Rhythms network voted to rename the tune nationally to Squirrel, considering the tune being connected to Angela Davis at all as racist and tokenistic. The new name came from the most common mnemonics for the tune (similar to how Welfare State became Custard) and because it fit with the animal/nature themes in our tunes and XR as a whole. The sign was kept the same but reinterpreted.
+In June 2025 the XR Rhythms network voted to rename the tune nationally to Squirrel, considering the tune being connected to Angela Davis at all as racist and tokenistic (as the RoR network itself has acknowledged). The new name came from the most common mnemonics for the tune (similar to how Welfare State became Custard) and because it fit with the animal/nature themes in our tunes and XR as a whole. The sign was kept the same but reinterpreted.
 
 ## Controversies
 
