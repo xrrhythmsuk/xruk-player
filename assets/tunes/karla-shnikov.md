@@ -23,6 +23,6 @@ This is one of our core tunes and often one of the first ones that new bands lea
 
 ## Breaks
 
-* We play the **Karla Break** (which used to be Break 1 in RoR Karla, hence the name) and [**Progressive Karla**](/#/Core%20Breaks/Progressive%20Karla) for this song with repis playing their main part solo at the end instead of the bar of silence
-* **Break 2** has 16s (8s if you’re a tam/agogô) and then a phrase between surdos and everyone else
-* **Break 2 Inverted** *(two fingers pointing down)* has the 16s (or 8s), the surdo-led phrase, the surdo-led phrase again, and then the 16s again _\[uncommon nationally\]_
+* We play the [**Karla Break**](/#/listen/Karla/Karla%20Break%20(Karla)) (which used to be Break 1 in RoR Karla, hence the name) and [**Progressive Karla**](/#/Karla/Progressive%20Karla%20(Karla)) for this song with repis playing their main part solo at the end instead of the bar of silence
+* [**Break 2**](/#/listen/Karla/Break%202) has 16s (8s if you’re a tam/agogô) and then a phrase between surdos and everyone else
+* [**Break 2 Inverted**](/#/listen/Karla/Break%202%20Inverted) *(two fingers pointing down)* has the 16s (or 8s), the surdo-led phrase, the surdo-led phrase again, and then the 16s again _\[uncommon nationally\]_
