@@ -37,6 +37,15 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: 'eu-west-2'
 
+      - name: Invalidate CloudFront Cache
+        if: github.ref == 'refs/heads/master'
+        run: |
+          aws cloudfront create-invalidation --distribution-id E147FN1O4SJZ0Z --paths "/*"
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: 'eu-west-2'
+              
       - name: Upload Preview
         if: github.ref != 'refs/heads/master'
         run: |
