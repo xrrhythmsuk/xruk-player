@@ -12,7 +12,7 @@ Have fun, wear earplugs and see you in the streets!
 With the Player, you can:
 
 - [Listen](/#/listen) to tunes and breaks
-- Download and print tune sheets with suggested mnemonics
+- Download and print [tune sheets](https://xrrhythms.uk/player-notation/) with suggested mnemonics
 - Download the Player to your phone to use offline
 - [Compose](/#/compose) your own tunes and breaks
 - Share and import tunes and breaks
