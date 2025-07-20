@@ -1,6 +1,7 @@
 import {  repeat, stretch } from "../../src/tuneHelper";
 
 export default {
+    displayName: "Core Breaks and Signs",
     categories: ["breaks", "onesurdo", "easy", "medium", "tricky"],
     sheet: require("./core-breaks.pdf"),
     description: require("./core-breaks.md").default,

@@ -1,6 +1,6 @@
 A driving, howling tune introduced at summer camp 2023. Since then it’s been so popular we’ve moved it to Common tunes!
 
-It pairs well with Stolen but usually isn’t whistled double time.
+It pairs well with [Stolen](/#/listen/Stolen) but usually isn’t whistled double time.
 
 **Sign:** Both hands do a V shape, meeting in the middle to make a W
 
@@ -30,6 +30,6 @@ The alt repi line is based on RoR Wolf Break 1, and Break 2 is based on RoR Wolf
 
 ## Breaks
 
-* **Break 1** is a short break based off the end of the Wolf Break
-* **Break 2** is an alternate bassline
+* [**Break 1**](/#/listen/Wolf/Break%201) is a short break based off the end of the Wolf Break
+* [**Break 2**](/#/listen/Wolf/Break%202) is an alternate bassline
 * **General breaks** that work well: [Wolf Break](/#/listen/More%20Breaks/Wolf%20Break) (spoiler alert)

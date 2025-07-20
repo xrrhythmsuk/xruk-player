@@ -38,8 +38,8 @@ In light of the Israeli genocide against Palestinians since October 2023, Jerich
 
 ## Breaks
 
-* **Break 1** is a short one based on the end of the chorus “*... and the wall came tumbling down*”
-* The **Call break** works nicely as an intro
-* **Break 2** is led by tams and agogôs *\[not played nationally\]*
-* **Break 3** is led by surdos *\[not played nationally\]*
-* **General breaks** that work well: ones you’d use with Bhangra
+* [**Break 1**](/#/listen/Jericho/Break%201) is a short one based on the end of the chorus “*... and the wall came tumbling down*”
+* The [**Call break**](/#/listen/Jericho/Call%20Break) works nicely as an intro
+* [**Break 2**](/#/listen/Jericho/Break%202) is led by tams and agogôs *\[not played nationally\]*
+* [**Break 3**](/#/listen/Jericho/Break%203) is led by surdos *\[not played nationally\]*
+* **General breaks** that work well: ones you’d use with [Bhangra](/#/listen/Bhangra)

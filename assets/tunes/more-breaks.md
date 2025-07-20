@@ -4,7 +4,7 @@ Once your band has the core tunes and core breaks down, learning more general br
 
 These breaks don’t all have audio here, but they do all get used and are worth knowing, so dig in!
 
-Have a look at the **Tune Sheet linked above** for **instrument signs**, **general directions** and **some chants** as well.
+The **Tune Sheet linked above** has everything in the Core Breaks (including **instrument signs**, **general directions** and **some chants**) as well as what’s here.
 
 ### Silences
 
@@ -13,9 +13,9 @@ The whistler stops some instruments, then see-saws their arms to swap who is and
 
 
 ### Hits
-**Broccoli** *Fist over three fingers*
+[**Broccoli**](/#/listen/More%20Breaks/Broccoli) *Fist over three fingers*
 
-**Boom Break** *Hands flying away from head*  
+[**Boom Break**](/#/listen/More%20Breaks/Boom%20Break) *Hands flying away from head*  
 Often just signed as *Fist and other hand shows 1*, though you’ll probably want to include a Main
 afterwards so people don't think you mean...
 
@@ -26,40 +26,41 @@ Also known as Scots Break. Hit beat 1 when counted in. When told, build to first
 ### Other short
 
 **Tam Line** *One hand OK sign*  
-Whistler whistles the song’s tam part, everyone plays it once
+Whistler whistles the song’s tam part, everyone plays it once  
+e.g. [Custard](/#/listen/Custard/Tam%20Line), [Afoxé](/#/listen/Afoxe/Tam%20Line)
 
 
 ### Karlas
-**Capped Karla** *Flat palm over Karla Break sign*
+[**Capped Karla**](/#/listen/More%20Breaks/Capped%20Karla) *Flat palm over Karla Break sign*
 
 
 ### Shouting
-**Flappy Mouth** *“Talking” hand*
+[**Flappy Mouth**](/#/listen/More%20Breaks/Flappy%20Mouth) *“Talking” hand*
 
 
 ### Looping
-**Conga** *C with whole hand*   
+[**Conga**](/#/listen/More%20Breaks/Conga) *C with whole hand*   
 An alternate line for surdos that pairs with...
 
-**Little Cat** *Conga sign with air quotes in other hand*  
+[**Little Cat**](/#/listen/More%20Breaks/Little%20Cat) *Conga sign with air quotes in other hand*  
 An accompanying line usually used for backpack  
-Repis can do this or their special part, which snares can incorporate into Capped Karla  
+Repis can do this or [their special part](/#/listen/More%20Breaks/Little%20Cat%20(Alt%20Repi)), which snares [can incorporate](/#/listen/More%20Breaks/Capped%20Karla%20(Little%20Cat)) into Capped Karla  
 (It usually sounds better for snares to click their sticks together instead of doing a rim hit)
 
 *See also:* [**Kickback 1**](/#/listen/Ragga/Kickback%201), [**Kickback 2**](/#/listen/Ragga/Kickback%202), [**Zorro Break**](/#/listen/Ragga/Zorro%20Break) from **Ragga**
 
 
 ### Longer
-**Bunny Ears** *Arms forward over your head*  
+[**Bunny Ears**](/#/listen/More%20Breaks/Bunny%20Ears) *Arms forward over your head*  
 Often used to speed up or slow down a band if the song doesn’t have a call break  
 
-**Wolf Break** *Arms “bite” with fingers as teeth*
+[**Wolf Break**](/#/listen/More%20Breaks/Wolf%20Break) *Arms “bite” with fingers as teeth*
 
-**Hardcore Break** *Double devil horns down*  
+[**Hardcore Break**](/#/listen/More%20Breaks/Hardcore%20Break) *Double devil horns down*  
 A great way to build up the hype!  
 There’s an [alternate RoR version](https://player.rhythms-of-resistance.org/#/listen/Special%20Breaks/Hardcore%20Break) that starts each section off doing 4s
 
-*See also:* [**Butterfly Break**](/#/listen/Bhangra/Butterfly%20Break) from **Bhangra**, [**Circle Break**](/#/listen/Samba%20Reggae/Circle%20Break) from **Samba Reggae**
+*See also:* [**Butterfly Break**](/#/listen/Bhangra/Butterfly%20Break) from **Bhangra**, [**Circle Break**](/#/listen/Samba%20Reggae/Circle%20Break) and [**SOS Break**](/#/listen/Samba%20Reggae/SOS%20Break) from **Samba Reggae**
 
 ## Background
 

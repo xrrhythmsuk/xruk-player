@@ -1,7 +1,7 @@
 export default {
     categories: ["common", "medium"],
-    sheet: require("./angela-davis.pdf"),
-    description: require("./angela-davis.md").default,
+    sheet: require("./squirrel.pdf"),
+    description: require("./squirrel.md").default,
     video: "https://www.youtube.com/embed/VQBvrEJkiWk",
     patterns: {
         Tune: {

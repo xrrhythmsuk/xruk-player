@@ -24,6 +24,12 @@ export default {
                 ag: "Spent all e-vening sha-ving both my legs Spent all e-vening sha-ving both my legs"
             }
         },
+        "Starter Snare": {
+            loop: true,
+            sn: 'X..XX..XX..XX..X',
+            sh: 'X   .   .   .   ',
+            mnemonics: {  sn: "I . . don't like . . it when . . it's scra- . . tchy"  }
+        },
         "Alt Repi": {
             loop: true,
             re: 'X X XX XXX X    ',

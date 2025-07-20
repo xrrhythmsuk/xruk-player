@@ -14,7 +14,7 @@ RoR bands, who tend to have proper samba surdos, usually play the surdo part wit
 
 **History:** Introduced to the network by RoR London in 2012, was probably played there before?
 
-For the starter parts, see Samba Reggae.
+For the starter parts, see [Samba Reggae](/#/listen/Samba%20Reggae).
 
 ## Difficulty
 
@@ -26,6 +26,6 @@ For the starter parts, see Samba Reggae.
 
 ## Breaks
 
-* **Break 1** is led with the whistle, which is a nice novelty, and for smaller bands can be whistled in without any warning
-* **Break 2** is surdo-led
-* The **Call break** (aka the Intro) is an intricate bit of actual samba reggae that, sadly, probably isn’t feasible nationally _\[not played nationally\]_
+* [**Break 1**](/#/listen/Sambasso/Break%201) is led with the whistle, which is a nice novelty, and for smaller bands can be whistled in without any warning
+* [**Break 2**](/#/listen/Sambasso/Break%202) is surdo-led
+* The [**Call break**](/#/listen/Sambasso/Call%20Break%20(Intro)) (aka the Intro) is an intricate mix of actual samba features that, sadly, probably isn’t feasible nationally _\[not played nationally\]_

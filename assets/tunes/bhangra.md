@@ -4,7 +4,7 @@ This is one of our core tunes, and rare because it’s a bouncy, 6/8 one:
 
 It goes *1-and-a, 2-and-a, 3-and-a, 4-and-a* (like a jig) instead of *1 and 2 and 3 and 4 and*.
 
-Some general breaks work best altered to divide each beat into three rather than four (e.g. Karla break, Progressive Karla).
+Some general breaks work best altered to divide each beat into three rather than four (e.g. [Karla break](/#/listen/Bhangra/Karla%20Break%20(Bhangra)), [Progressive Karla](/#/listen/Bhangra/Progressive%20Karla%20(Bhangra))).
 Some work as they are, and others are best avoided. Good to experiment with!
 
 **Sign:** wavy hands snaking up.
@@ -31,10 +31,10 @@ Nowadays, Bhangra also refers to a style of pop music that was invented by Punja
 
 ## Breaks
 
-* **Break 1** is medium-length and led by surdos
-* **Break 3** is a short break following the agogô line
-* The **7 break** *(finger and thumb, 5 in other hand)* is taken from the last line of the call break and we use it a lot as a general break (The shout is great!)
-* The **Butterfly break** *(join thumbs, flap hands upwards*) is an extended version of the 7 break and can also be used as a general break
-* The **Call break** is longer but well worth learning
-* **Break 2** is quite close to Break 1, and everyone plays the same thing _\[uncommon nationally\]_
+* [**Break 1**](/#/listen/Bhangra/Break%201) is medium-length and led by surdos
+* [**Break 3**](/#/listen/Bhangra/Break%203) is a short break following the agogô line
+* The [**7 break**](/#/listen/Bhangra/7%20Break) *(finger and thumb, 5 in other hand)* is taken from the last line of the call break and we use it a lot as a general break (The shout is great!)
+* The [**Butterfly break**](/#/listen/Bhangra/Butterfly%20Break) *(join thumbs, flap hands upwards*) is an extended version of the 7 break and can also be used as a general break
+* The [**Call break**](/#/listen/Bhangra/Call%20Break) is longer but well worth learning
+* [**Break 2**](/#/listen/Bhangra/Break%202) is quite close to Break 1, and everyone plays the same thing _\[uncommon nationally\]_
 * **General breaks** that work well: [4 hits](/#/listen/Core%20Breaks/4%20Hits), [8 hits](/#/listen/Core%20Breaks/8%20Hits), [Flappy Mouth](/#/listen/More%20Breaks/Flappy%20Mouth), [Whistle Break](/#/listen/Samba%20Reggae/Whistle%20Break) from Samba Reggae

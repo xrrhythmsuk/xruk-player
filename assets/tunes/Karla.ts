@@ -34,7 +34,17 @@ export default {
             ag: "o o o o o o o o o o o o o o o o o o o o o o o o o",
             sh: '@ls',
             volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 }
-        },            
+        },
+        'Progressive Karla (Karla)': {
+            ls: 'X   X   X   X   X X X X X X X X XXXXXXXXXXXXXXXXX               ',
+            ms: '@ls',
+            hs: '@ls',
+            re: 'X   X   X   X   X X X X X X X X XXXXXXXXXXXXXXXXX  XX  X X XX X ',
+            sn: '@ls',
+            ta: 'X   X   X   X   X X X X X X X X X X X X X X X X X',
+            ag: '@ta',
+            sh: '@ls'
+        },
         'Break 2': {
             ls: 'XXXXXXXXXXXXXXXXX   X   X   X   X X    X X      X X    X X      ',
             ms: '@ls',
@@ -69,5 +79,5 @@ export default {
             }
         }
     },
-    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Karla Break (Karla)", "Tune", "Break 2", "Tune", "Break 2 Inverted", "Tune"]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Karla Break (Karla)", "Tune", "Progressive Karla (Karla)", "Tune", "Break 2", "Tune", "Break 2 Inverted", "Tune"]
 }
