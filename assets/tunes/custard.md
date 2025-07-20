@@ -25,7 +25,7 @@ Many in the RoR network consider it cultural appropriation to play this tune as 
 
 ## Breaks
 
-* **Breaks 1 and 2** are call and response versions of the tam/agogô line. In Break 1 surdos lead, in Break 2 it’s tams.
-* **Break 3** can be used to solo particular instruments _\[uncommon nationally\]_
-* **Break 5** *(hand with fingers spread)* is a rare snare-led break _\[not played nationally\]_
+* **[Breaks 1](/#/listen/Custard/Break%201) and [2](/#/listen/Custard/Break%201)** are call and response versions of the tam/agogô line. In Break 1 surdos lead, in Break 2 it’s tams.
+* [**Break 3**](/#/listen/Custard/Break%203) can be used to solo particular instruments _\[uncommon nationally\]_
+* [**Break 5**](/#/listen/Custard/Break%205) *(hand with fingers spread)* is a rare snare-led break _\[not played nationally\]_
 * **General breaks** that work well: [Tam Line](/#/listen/Custard/Tam%20Line)
