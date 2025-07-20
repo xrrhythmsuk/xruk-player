@@ -24,7 +24,7 @@ export default {
                 ag: "Spent all e-vening sha-ving both my legs Spent all e-vening sha-ving both my legs"
             }
         },
-        "Starter snnare": {
+        "Starter Snare": {
             loop: true,
             sn: 'X..XX..XX..XX..X',
             sh: 'X   .   .   .   ',
