@@ -12,9 +12,9 @@ RoR bands, who tend to have proper samba surdos, usually play the low surdo part
 
 **Sign:** The sign represents a squirrel peering through the branches to see what food is available.
 
-**History:** Part of the first set of tunes taken from Barking Bateria in 2000. The name was originally James Brown and the sign depicted an afro. Later, because of the domestic violence and rape accusations against James Brown, the tune was renamed to [Angela Davis](https://en.wikipedia.org/wiki/Angela_Davis) by the RoR network because she fit the tune sign, which was itself then changed to pulling prison bars apart (Prof. Davis is a major figure in prison abolition) because yikes.
+**History:** Part of the first set of tunes taken from Barking Bateria in 2000. The name was originally James Brown and the sign depicted an afro. Later, because of the domestic violence and rape accusations against James Brown, the tune was renamed to Angela Davis [(Wikipedia)](https://en.wikipedia.org/wiki/Angela_Davis) by the RoR network because she fit the tune sign, which was itself then changed to pulling prison bars apart (Prof. Davis is a major figure in prison abolition) because yikes.
 
-In June 2025 the XR Rhythms network voted to rename the tune nationally to Squirrel, considering the tune being connected to Angela Davis at all as racist and tokenistic (as the RoR network itself has acknowledged). The new name came from the most common mnemonics for the tune (similar to how Welfare State became Custard) and because it fit with the animal/nature themes in our tunes and XR as a whole. The sign was kept the same but reinterpreted.
+In June 2025 the XR Rhythms network voted to rename the tune nationally to Squirrel, considering the tune being connected to Angela Davis at all as racist and tokenistic (as the RoR network itself has acknowledged). The new name came from the most common mnemonics for the tune (similar to how Welfare State became [Custard](/#/listen/Custard)) and because it fit with the animal/nature themes in our tunes and XR as a whole. The sign was kept the same but reinterpreted.
 
 ## Controversies
 
@@ -34,6 +34,6 @@ At national events we tend not to play it while marching unless we’re sure no-
 
 ## Breaks
 
-* **Break 1** consists of a pickup followed by a bar of eighth notes.
-* **Break 2** is between surdos and everyone else, ending with the pattern of Break 1.
-* **Break 3** is a loop played by everyone except snares (who just continue their normal part) and also ends with the pattern of Break 1 each time.
+* [**Break 1**](/#/listen/Squirrel/Break%201) consists of a pickup followed by a bar of eighth notes.
+* [**Break 2**](/#/listen/Squirrel/Break%202) is between surdos and everyone else, ending with the pattern of Break 1.
+* [**Break 3**](/#/listen/Squirrel/Break%203) is a loop played by everyone except snares (who just continue their normal part) and also ends with the pattern of Break 1 each time.
