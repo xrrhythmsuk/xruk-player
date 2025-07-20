@@ -15,7 +15,7 @@ Just make sure the tams and agogôs aren't about to stage a mutiny...
 
 **History:** Part of the second round of tunes that was introduced by Barking Bateria in 2004/2005.
 
-The alt repi part is taken from [Barking Bateria Afoxé](https://soundcloud.com/barking-bateria/afoxe-in-to-nova-balanca#t=1:22).
+The starter snare and alt repi part are taken from [Barking Bateria Afoxé](https://soundcloud.com/barking-bateria/afoxe-in-to-nova-balanca#t=1:22).
 
 
 Many in the RoR network consider it cultural appropriation to play this tune. However, after consulting with musicians and other people with knowledge of samba, including people from Brazil, the XR Rhythms network has kept playing the samba-derived tunes [while making it clearer that we aren’t samba](https://xrrhythms.uk/about).
@@ -29,7 +29,7 @@ There is also criticism of the sign, since it ridicules the spiritual meaning of
 * **Low Surdo:** easy
 * **Mid/High Surdo:** medium
 * **Repi:** hard (medium two-stick alt part available)
-* **Snare:** hard
+* **Snare:** hard (medium starter part available)
 * **Tam:** medium (easy to mix up with Custard, tiring)
 * **Agogô:** medium (easy to mix up with Custard)
 
