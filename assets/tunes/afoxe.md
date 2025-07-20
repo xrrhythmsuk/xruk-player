@@ -18,7 +18,10 @@ Just make sure the tams and agogôs aren't about to stage a mutiny...
 The alt repi part is taken from [Barking Bateria Afoxé](https://soundcloud.com/barking-bateria/afoxe-in-to-nova-balanca#t=1:22).
 
 
-Since this tune is directly rooted in Afro-Brazilian religion, many in the RoR network consider it cultural appropriation to play it and have stopped doing so. There is also criticism of the sign, since it ridicules the spiritual meaning of the rhythm and shaving armpits is a loaded topic in our patriarchal society.
+Many in the RoR network consider it cultural appropriation to play this tune. However, after consulting with musicians and other people with knowledge of samba, including people from Brazil, the XR Rhythms network has kept playing the samba-derived tunes [while making it clearer that we aren’t samba](https://xrrhythms.uk/about).
+
+
+There is also criticism of the sign, since it ridicules the spiritual meaning of the rhythm and shaving armpits is a loaded topic in our patriarchal society.
 
 
 ## Difficulty

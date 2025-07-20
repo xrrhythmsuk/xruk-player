@@ -102,13 +102,6 @@ export default {
             sh: 'X   .   .   .   X   .   .   .   ',
             mnemonics: {  ls: "Hey Hey Hey Have you had a shave?" }
         },
-        "Break 3": {
-            ls: '   XXXX    XXXX    XXXX X XXXXX ',
-            ms: '@ls',
-            hs: '@ls',
-            sh: 'X   .   .   .   X   .   .   .   ',
-            mnemonics: {  ls: "You've had a shave You've had a shave You've had a shave Looks like you've had a shave" }
-        },
         "Tune Break 2": {
             displayName: "Tune (Surdos Break 2)",
             ls: '      X       X       X   XXXXX ',
@@ -119,6 +112,13 @@ export default {
             ta: 'X X X X XX XX X X X X X XX XX X ',
             ag: 'a a o o aa o oo a a o o aa o oo ',
             sh: '................................'
+        },
+        "Break 3": {
+            ls: '   XXXX    XXXX    XXXX X XXXXX ',
+            ms: '@ls',
+            hs: '@ls',
+            sh: 'X   .   .   .   X   .   .   .   ',
+            mnemonics: {  ls: "You've had a shave You've had a shave You've had a shave Looks like you've had a shave" }
         },
         "Tune Break 3": {
             displayName: "Tune (Surdos Break 3)",

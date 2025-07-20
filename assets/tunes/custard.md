@@ -1,4 +1,4 @@
-Together with Samba Reggae, this is the tune which sounds most like “real” samba.
+Together with Samba Reggae, this is our tune which sounds most like real samba. The breaks are a lot more accessible, though, as long as everyone’s on the same page about the Custard rhythm!
 
 **Sign:** making an offering to the sky
 
@@ -9,11 +9,11 @@ Together with Samba Reggae, this is the tune which sounds most like “real” s
 **Musical background:** A typical samba reggae-style tune.  
 As XR bands rarely have mids, our lows often play the first and third beats as a silent stroke (hit with your hand muffling) to replace them.
 
-**Sign:** used to be a “W” for Welfare State (the former name of the tune), as can be seen in this [video](https://tube.rhythms-of-resistance.org/w/3LnZ6d58J1jd5GNzK1mQqp) by the original RoR London. It changed into the current sign and can also be interpreted as “holding a plate of custard”.
+**Sign:** used to be a ‘W’ for Welfare State (the former name of the tune), as can be seen in this [video](https://tube.rhythms-of-resistance.org/w/3LnZ6d58J1jd5GNzK1mQqp) by the original RoR London. The current sign can be interpreted as “holding up a plate of custard”.
 
 **History:** Part of the first set of tunes taken from Barking Bateria in 2000. Used to be called Welfare State, but was renamed because people didn’t like the state.
 
-Many in the RoR network consider it cultural appropriation to play this tune as it sounds like real samba reggae, a genre developed and used by the Black liberation movement in Brazil.
+Many in the RoR network consider it cultural appropriation to play this tune. However, after consulting with musicians and other people with knowledge of samba, including people from Brazil, the XR Rhythms network has kept playing the samba-derived tunes [while making it clearer that we aren’t samba](https://xrrhythms.uk/about).
 
 ## Difficulty
 
