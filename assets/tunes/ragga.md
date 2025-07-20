@@ -1,4 +1,4 @@
-A hypnotic, surdo-led tune introduced to our network at band camp 2024. Pairs well with Hedgehog!
+A hypnotic, surdo-led tune introduced to our network at band camp 2024. Pairs well with [Hedgehog](/#/listen/Hedgehog)!
 
 **Sign:** fists together, thumbs out left and right
 
@@ -27,13 +27,13 @@ The starter agogô part is based on Break 1
 ## Breaks
 
 * The Kickbacks are a great way to build energy, even in other tunes
-  * **Kickback 1** *(one thumb over shoulder)* is the heartbeat-like build-up to...
-  * **Kickback 2** *(both thumbs over shoulders)*, the high-energy pay-off. Just make sure the surdos don’t drag!  
+  * [**Kickback 1**](/#/listen/Ragga/Kickback%201) *(one thumb over shoulder)* is the heartbeat-like build-up to...
+  * [**Kickback 2**](/#/listen/Ragga/Kickback%202) *(both thumbs over shoulders)*, the high-energy pay-off. Just make sure the surdos don’t drag!  
     Agogôs play rolling bursts of chaos between the bells (which sadly we can’t do justice to on here), and in some bands they run around and annoy everyone too!
 * Breaks 1, 2 and 3 are little one-bar riffs that are ideal for getting out of the Kickbacks
-  * **Break 1** is a slightly trickier whistle- and surdo-led break that you can use like Sambasso 1, or
+  * [**Break 1**](/#/listen/Ragga/Break%201) is a slightly trickier whistle- and surdo-led break that you can use like [Sambasso 1](/#/listen/Sambasso/Break%201), or
     do against e.g. agogôs playing the main part _\[uncommon nationally\]_
-  * **Break 2** is the simplest as it’s everyone together. The shouted counts are a lot of fun!
-  * **Break 3** is surdo-led and might remind some of a [90s rock song](https://www.youtube.com/watch?v=bWXazVhlyxQ)... _\[less common nationally\]_
-* The **Zorro Break** *(draw a ‘Z’ in the air)* is originally an alternate surdo line but works nicely with
+  * [**Break 2**](/#/listen/Ragga/Break%202) is the simplest as it’s everyone together. The shouted counts are a lot of fun!
+  * [**Break 3**](/#/listen/Ragga/Break%203) is surdo-led and might remind some of a [90s rock song](https://www.youtube.com/watch?v=bWXazVhlyxQ)... _\[less common nationally\]_
+* The [**Zorro Break**](/#/listen/Ragga/Zorro%20Break) *(draw a ‘Z’ in the air)* is originally an alternate surdo line but works nicely with
   everyone doing it (including in other tunes)
