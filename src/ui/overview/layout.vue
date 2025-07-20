@@ -26,6 +26,9 @@
 				<span class="tab">
 					<router-link to="/compose" class="with-child-links">Compose</router-link>
 				</span>
+				<span class="tab">
+					<a href="https://xrrhythms.uk/learn" class="with-child-links">Learn</a>
+				</span>
 				<Help />
 			</span>
 		</div>
