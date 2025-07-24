@@ -28,4 +28,4 @@ For the starter parts, see [Samba Reggae](/#/listen/Samba%20Reggae).
 
 * [**Break 1**](/#/listen/Sambasso/Break%201) is led with the whistle, which is a nice novelty, and for smaller bands can be whistled in without any warning
 * [**Break 2**](/#/listen/Sambasso/Break%202) is surdo-led
-* The [**Call break**](/#/listen/Sambasso/Call%20Break%20(Intro)) (aka the Intro) is an intricate mix of actual samba features that, sadly, probably isn’t feasible nationally _\[not played nationally\]_
+* The [**Call break**](/#/listen/Sambasso/Call%20Break%20(Intro)) (aka the Intro) is an intricate mix of actual samba features that, sadly, probably isn’t feasible nationally. It ends with just the surdos playing their main part in a loop _\[not played nationally\]_
