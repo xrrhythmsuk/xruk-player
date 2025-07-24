@@ -82,10 +82,10 @@ export default {
                 repeat(3, 'X                   X X X X XX X    X X   X X   ') + repeat(2, 'X  rX r X  rX r '),
             ms: '@ls',
             hs: '@ls',
-            re: repeat(4, 'fX X X          ') + ' ' +
-                repeat(4, 'X..X..X..X..ffffX                               ') + repeat(8, '    '),
+            re: repeat(4, 'fX X X          ') +
+                repeat(4, ' X..X..X..X..ffffX                              '),
             sn: repeat(4, '         XX XX  ') + '                     X X X X XX X    X X   X X   ' +
-                repeat(3, 'X                   X X X X XX X    X X   X X   ') + repeat(8, '    '),
+                repeat(3, 'X                   X X X X XX X    X X   X X   ') + 'X',
             ta: '@sn',
             ag: '@sn',
             sh: '@sn',
