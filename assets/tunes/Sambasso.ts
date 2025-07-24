@@ -90,8 +90,8 @@ export default {
             ag: '@sn',
             sh: '@sn',
             mnemonics: {
-                ls: repeat(4, "Get off the wall ") + repeat(4, "We're so sick of glu-ing his stu-pid shell back on ") +
-                    "-ty Dump-ty " + repeat(3, "Hump-ty Dump-ty "),
+                ls: repeat(4, "Get off the wall ") + repeat(3, "We're so sick of glu-ing his stu-pid shell back on ") +
+                    "We're so sick of glu-ing his stu-pid shell back " + repeat(4, "Hump-ty Dump-ty "),
                 re: repeat(4, "z Hump-ty mate ") + repeat(4, "I . . tried . . but . . he . . pro-mised he'd be fine "),
                 sn: repeat(4, "Get off the wall ") + repeat(4, "We're so sick of glu-ing his stu-pid shell back on ")
             }
