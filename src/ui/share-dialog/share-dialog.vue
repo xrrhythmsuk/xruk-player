@@ -74,7 +74,7 @@ modal-class="bb-share-dialog" @show="resetSelection()">
 	<div slot="modal-footer">
 		<template v-if="index === 0">
 			<b-button v-if="canShare" @click="share" variant="primary"><fa icon="share-from-square" /> Share</b-button>
-			<b-button v-else @click="copyLink" variant="primary"><fa icon="link" /> Copy link</b-button>
+			<b-button @click="copyLink" variant="primary"><fa icon="link" /> Copy link</b-button>
 		</template>
 		<b-button v-else @click="save" variant="primary"><fa icon="file-audio" /> Download</b-button>
 		<b-button @click="hide">Cancel</b-button>
