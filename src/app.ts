@@ -1,15 +1,12 @@
-import Vue from "vue";
-import BootstrapVue from "bootstrap-vue";
-import "./bootstrap.scss";
-import "./app.scss";
+import { createApp, defineComponent, h, ref } from "vue"
+import "./bootstrap.scss"
+import "./bootstrap"
+import "./app.scss"
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import Vue2TouchEvents from "vue2-touch-events";
-import {polyfill} from "mobile-drag-drop";
-import {scrollBehaviourDragImageTranslateOverride} from "mobile-drag-drop/scroll-behaviour";
-import App from "./ui/overview/layout";
-import { registerServiceWorker } from "./services/service-worker";
+import Overview from "./ui/overview.vue"
+import { registerServiceWorker } from "./services/service-worker"
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { 
+import {
 	faCaretDown,
 	faCheck,
 	faClock,
@@ -42,21 +39,13 @@ import {
 	faStop,
 	faTrash,
 	faVolumeMute,
-	faWindowClose } from '@fortawesome/free-solid-svg-icons'
-import router from "./services/router";
-import VueRouter from "vue-router";
+	faWindowClose
+} from '@fortawesome/free-solid-svg-icons'
+import Vue3TouchEvents, { Vue3TouchEventsOptions } from "vue3-touch-events"
+import { ensurePersistentStorage, reactiveLocalStorage } from "./services/localStorage"
+import { reactiveLocationHash } from "./services/router"
 
-registerServiceWorker();
-
-polyfill({
-    dragImageTranslateOverride: scrollBehaviourDragImageTranslateOverride
-});
-
-Vue.use(VueRouter)
-
-Vue.use(BootstrapVue);
-Vue.use(Vue2TouchEvents);
-Vue.component('fa', FontAwesomeIcon);
+registerServiceWorker()
 
 library.add(faCaretDown,
 	faCheck,
@@ -90,10 +79,32 @@ library.add(faCaretDown,
 	faStop,
 	faTrash,
 	faVolumeMute,
-	faWindowClose);
-new Vue({
-	router,
-	el: "#loading",
-	render: (createElement) => createElement(App),
+	faWindowClose)
+
+const Root = defineComponent({
+	setup() {
+		const persisted = ref(false)
+
+		return () => h(Overview, {
+			storage: reactiveLocalStorage,
+			path: reactiveLocationHash.value,
+			'onUpdate:path': (path) => {
+				reactiveLocationHash.value = path
+			},
+			'onUpdate:route': (route) => {
+				if (!persisted.value && route.tab === "compose") {
+					persisted.value = true
+					ensurePersistentStorage()
+				}
+			}
+		})
+	}
 })
+
+createApp(Root, { config: { performance: true } })
+	.use<Vue3TouchEventsOptions>(Vue3TouchEvents, {})
+	.component('fa', FontAwesomeIcon)
+	.mount('#app')
+
+document.getElementById('loading')!.remove();
 

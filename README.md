@@ -15,13 +15,25 @@ More information can be found in the [documentation](https://player-docs.rhythms
 
 The technologies used are:
 * [TypeScript](https://www.typescriptlang.org/) and [SASS](https://sass-lang.com/) for cleaner code
-* [Vue.js](https://vuejs.org/), [Bootstrap 4](https://getbootstrap.com/) and [Font Awesome](https://fontawesome.com/) for the UI
-* [howler.js](https://howlerjs.com/) to play audio in the browser
-* [wav-encoder](https://github.com/mohayonao/wav-encoder), [Aurora.js](https://github.com/audiocogs/aurora.js/),
-  [audiolib.js](https://github.com/jussi-kalliokoski/audiolib.js/) and [libmp3lame.js](https://github.com/akrennmair/libmp3lame-js)
-  for MP3/WAV export
+* [Vue.js](https://vuejs.org/), [Bootstrap 5](https://getbootstrap.com/) and [Font Awesome](https://fontawesome.com/) for the UI
+* The [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) for playing and exporting songs
+* [wav-encoder](https://github.com/mohayonao/wav-encoder) and [wasm-media-encoders](https://github.com/arseneyr/wasm-media-encoders)
+  for encoding exported songs to WAV/MP3
 * [pako](https://github.com/nodeca/pako) to compress shared links
-* [Babel](https://babeljs.io/), [webpack](https://webpack.js.org/) and [gulp.js](https://gulpjs.com/) for building
+* [Vite](https://vitejs.dev/) for building and [Vitest](https://vitest.dev/) for testing
+* [i18next](https://www.i18next.com/) for internationalization and [Weblate](https://weblate.org/) to manage translations.
+
+
+Contribute new tunes
+====================
+
+Please see the [contribution guide](https://player-docs.rhythms-of-resistance.org/guide/contribution/tunes.html) for instructions how to add new tunes to the player.
+
+
+Contribute translations
+=======================
+
+Translations are managed on [Weblate](https://hosted.weblate.org/projects/ror-player/#information). Register there to start contributing.
 
 
 Technical notes
@@ -46,7 +58,7 @@ can be generated in .rhythm files downloaded from the player.
 
 All the parameters (such as the instruments, samples, time measurements) are configured in [`src/config.ts`](./src/config.ts).
 
-The samples are available as MP3 files in [`assets/audio`](./assets/audio).
+The samples are available as MP3 files in [`assets/audio`](./assets/audio). Their file names have the format `${instrumentKey}_${strokeHex}.mp3`, where `strokeHex` is the stroke key char code in hex.
 
 More details can be found in the [documentation](https://player-docs.rhythms-of-resistance.org/guide/technical/config.html).
 
