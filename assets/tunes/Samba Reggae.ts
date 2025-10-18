@@ -2,6 +2,7 @@ import { repeat, stretch } from "../../src/tuneHelper";
 import sheet from "./samba-reggae.pdf?url"
 export default {
     categories: ["core", "medium"],
+    descriptionFilename: "samba-reggae",
     sheet,
     patterns: {
         Tune: {

@@ -4,6 +4,7 @@ export default {
     speed: 120,
     time: 3,
     video: undefined,
+    descriptionFilename: "bhangra",
     sheet,
     patterns: {
         Tune: {

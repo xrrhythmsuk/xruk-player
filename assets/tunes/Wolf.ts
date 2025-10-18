@@ -1,6 +1,7 @@
 import sheet from "./wolf.pdf?url"
 export default {
     categories: ["common", "tricky"],
+    descriptionFilename: "wolf",
     sheet,
     patterns: {
         Tune: {

@@ -6,7 +6,6 @@
 	import defaultTunes from "../defaultTunes";
 	import { patternEquals } from "../state/pattern";
 	import { DragType, PatternDragData, setDragData } from "../services/draggable";
-	import PatternPlayerDialog from "./pattern-player/pattern-player-dialog.vue";
 	import { clone, useRefWithOverride } from "../utils";
 	import { computed, defineComponent, h, onBeforeUnmount, ref } from "vue";
 	import { injectStateRequired } from "../services/state";

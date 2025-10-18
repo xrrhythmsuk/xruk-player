@@ -4,6 +4,7 @@ export default {
     categories: ["new", "tricky"],
     speed: 120,
     time: 3,
+    descriptionFilename: "jericho",
     sheet,
     video: undefined,
 	

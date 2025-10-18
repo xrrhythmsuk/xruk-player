@@ -30,6 +30,7 @@ import InstrumentButtons from "../instrument/instrument-buttons.vue";
 
 	const tune = computed(() => props.tuneName && state.value.tunes[props.tuneName]);
 	const tuneDescriptionHtml = computed(() => {
+
 		if(!defaultTunes[props.tuneName]?.descriptionFilename)
 			return null;
 

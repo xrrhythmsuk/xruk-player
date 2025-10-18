@@ -2,6 +2,7 @@ import { repeat } from "../../src/tuneHelper";
 import sheet from "./ragga.pdf?url"
 export default {
     categories: ["new", "tricky"],
+    descriptionFilename: "ragga",
     sheet,
     patterns: {
         Tune: {

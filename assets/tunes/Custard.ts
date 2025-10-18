@@ -2,6 +2,7 @@ import { repeat  } from "../../src/tuneHelper"
 import sheet from "./custard.pdf?url"
 export default {
     categories: ["common", "medium"],
+    descriptionFilename: "custard",
     sheet,
     patterns: {
         Tune: {

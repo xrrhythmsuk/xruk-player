@@ -1,6 +1,7 @@
 import sheet from "./hedgehog.pdf?url"
 export default {
     categories: ["core", "easy"],
+    descriptionFilename: "hedgehog",
     sheet,
     patterns: {
         Tune: {

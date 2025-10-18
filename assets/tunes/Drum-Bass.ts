@@ -1,6 +1,7 @@
 import sheet from "./drum-bass.pdf?url"
 export default {
     categories: ["new", "medium"],
+    descriptionFilename: "drum-bass",
     sheet,
     displayName: "Drum & Bass",
     patterns: {

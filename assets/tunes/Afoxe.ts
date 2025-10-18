@@ -4,6 +4,7 @@ export default <Tune>{
     displayName: "Afoxé",
     categories: ["common", "medium"],
     sheet,
+    descriptionFilename: "afoxe",
     patterns: {
         Tune: {
             loop: true,

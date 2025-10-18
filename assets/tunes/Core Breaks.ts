@@ -4,6 +4,7 @@ import sheet from "./core-breaks.pdf?url"
 export default {
     displayName: "Core Breaks and Signs",
     categories: ["breaks", "onesurdo", "easy", "medium", "tricky"],
+    descriptionFilename: "core-breaks",
     sheet,
     video: undefined,
     patterns: {

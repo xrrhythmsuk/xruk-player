@@ -4,6 +4,7 @@ export default {
     categories: ["common", "tricky"],
     speed: 200,
     time: 2,
+    descriptionFilename: "stolen",
     sheet,
     video: undefined,
     patterns: {
