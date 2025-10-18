@@ -1,8 +1,8 @@
 import { repeat  } from "../../src/tuneHelper"
+import sheet from "./custard.pdf?url"
 export default {
     categories: ["common", "medium"],
-    sheet: require("./custard.pdf"),
-    description: require("./custard.md").default,
+    sheet,
     patterns: {
         Tune: {
             loop: true,

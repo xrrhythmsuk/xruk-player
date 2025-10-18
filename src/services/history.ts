@@ -47,9 +47,9 @@ export class History {
 				true
 			));
 
-			watch(() => Number(this._storage.bbState) && this._storage[`bbState-${this._storage.bbState}`], () => {
+			watch(() => Number(this._storage.bbState) && this._storage[`bbState-${this._storage.bbState}`], (x, o) => {
 				this.loadHistoricState(Number(this._storage.bbState));
-			}, { deep: true, immediate: true });
+			}, { immediate: true });
 
 			watch(this._compressedState, () => {
 				this.saveCurrentState();

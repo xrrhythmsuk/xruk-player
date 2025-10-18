@@ -9,6 +9,7 @@
 	import Compose from "./compose/compose.vue";
 	import { useRefWithOverride } from "../utils";
 	import { useI18n } from "../services/i18n";
+	import About from "./overview/about.vue";
 
 	const props = defineProps<{
 		storage: Record<string, string>;
@@ -49,11 +50,16 @@
 
 		<div class="nav nav-tabs">
 			<span class="bb-sidebar-toggle-container" ref="sidebarToggleContainer"></span>
+			<span class="nav-item"><a class="nav-link" :class="{ active: route.tab === 'about' }" href="javascript:" @click="route.tab = 'about'">{{i18n.t('overview.about')}}</a></span>
 			<span class="nav-item"><a class="nav-link" :class="{ active: route.tab === 'listen' }" href="javascript:" @click="route.tab = 'listen'">{{i18n.t('overview.listen')}}</a></span>
 			<span class="nav-item"><a class="nav-link" :class="{ active: route.tab === 'compose' }" href="javascript:" @click="route.tab = 'compose'">{{i18n.t('overview.compose')}}</a></span>
 		</div>
-
+		
 		<div class="bb-overview-content">
+			<template v-if="route.tab === 'about'">
+				<About/>
+			</template>
+
 			<template v-if="route.tab === 'listen'">
 				<Listen
 					:tuneName="route.tuneName ?? null"

@@ -216,6 +216,7 @@
 		"error-title": "Error exporting {{type}}"
 	},
 	"overview": {
+		"about": "About",
 		"listen": "Listen",
 		"compose": "Compose"
 	},

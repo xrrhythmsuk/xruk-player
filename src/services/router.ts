@@ -1,7 +1,11 @@
 import { computed, ref, Ref, watch } from "vue"
 import { match, compile } from "path-to-regexp"
 
-export type Route = {
+export type Route =
+	{
+		tab: "about"
+	} |
+	{
 	tab: "listen"
 	tuneName?: string
 	patternName?: string
@@ -76,7 +80,7 @@ function pathToRoute(path: string): Route {
 			}
 
 		case "root":
-			return { tab: "listen" }
+			return { tab: "about" }
 	};
 }
 
@@ -144,6 +148,7 @@ window.addEventListener('hashchange', () => {
 });
 
 
+// TODO: consolidate this?
 /* async function navigate(name: string, params: Route['params'] = {}): Promise<void> {
 	if (isEqual(route.value, { name, params })) {
 		return;

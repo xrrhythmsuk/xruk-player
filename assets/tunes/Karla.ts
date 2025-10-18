@@ -1,7 +1,7 @@
+import sheet from "./karla.pdf?url"
 export default {
     categories: ["core", "easy"],
-    sheet: require("./karla.pdf"),
-    description: require("./karla-shnikov.md").default,
+    sheet,
     video: undefined,
     patterns: {
         Tune: {

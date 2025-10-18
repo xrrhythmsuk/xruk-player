@@ -1,9 +1,9 @@
 import { repeat } from "../../src/tuneHelper"
-export default {
+import sheet from "./afoxe.pdf?url"
+export default <Tune>{
     displayName: "Afoxé",
     categories: ["common", "medium"],
-    sheet: require("./afoxe.pdf"),
-    description: require("./afoxe.md").default,
+    sheet,
     patterns: {
         Tune: {
             loop: true,

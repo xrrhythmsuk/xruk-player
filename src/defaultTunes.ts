@@ -1,18 +1,23 @@
 import config, { Instrument } from "./config";
 import { clone } from "./utils";
-import { AllVolumeHack, normalizePattern, Pattern, compressedPatternValidator } from "./state/pattern";
+import { normalizePattern, Pattern, CompressedPattern, compressedPatternValidator } from "./state/pattern"
 import { normalizeTune, Tune } from "./state/tune";
 import * as z from "zod";
 import { PatternReference } from "./state/song";
 
-type RawTune = { [i in keyof GenericTune<CompressedPattern>]?: GenericTune<CompressedPattern>[i] } & {
+const tuneModules = import.meta.glob('../assets/tunes/*.ts', { eager: true })
+
+type RawTune = Partial<Omit<Tune, 'patterns'>> & {
+	patterns: Record<string, z.input<typeof compressedPatternValidator>>;
 	time?: number;
-};
+}
 
-const path = require.context('../assets/tunes', false, /\.ts$/)
-
-const rawTunes : { [tuneName: string]: RawTune }  = Object.fromEntries(
-		path.keys().map(key => [key.match(/\.\/(.+)\.ts/)![1], path(key).default]))
+const rawTunes: { [tuneName: string]: RawTune } = Object.fromEntries(
+	Object.entries(tuneModules).map(([path, module]) => {
+		const tuneName = path.match(/\/([^/]+)\.ts$/)![1]
+		return [tuneName, (module as any).default]
+	})
+);
 
 const defaultTunes: { [tuneName: string]: Tune } = {};
 
@@ -27,11 +32,12 @@ function uncompressMnemonics(tuneName: string, target: Pattern, pattern: Compres
 	if (clone) return target.mnemonics?.[clone]
 	if(!source) return undefined
 
-	const words = source.split(/[\s\-]/)
+	const words = source.trim().split(/[\s\-]+/)
 
 	if(target[instr].filter(i => i !== " ").length !== words.length)
+	{
 		console.warn(`Mnemonics length mismatch ${tuneName} ${target.displayName}: ${source}`, target[instr])
-
+	}
 	let i = 0;
 	return target[instr].map(p => p != ' ' ? words[i++] : '')
 }
@@ -77,14 +83,17 @@ for (const i in rawTunes) {
 		newTune.patterns[j] = normalizePattern(newPattern);
 	}
 
-	defaultTunes[i] = normalizeTune(newTune);
-
-	const unknown = (defaultTunes[i].exampleSong || []).filter((patternName) => !defaultTunes[i].patterns[typeof patternName === 'string' ? patternName : patternName.patternName]);
-	if(unknown.length > 0) {
-		// eslint-disable-next-line no-console
-		console.error(`Unknown breaks in example song for ${i}: ${unknown.join(", ")}`);
-	}
+	defaultTunes[i] = normalizeTune(newTune)
 }
+
+// for (const i in defaultTunes) {
+// 	const unknown = (defaultTunes[i].exampleSong || []).filter((patternName) => !defaultTunes[i].patterns[typeof patternName === 'string' ? patternName : patternName.patternName]);
+// 	debugger;
+// 	if(unknown.length > 0) {
+// 		// eslint-disable-next-line no-console
+// 		console.error(`Unknown breaks in example song for ${i}: ${unknown.join(", ")}`);
+// 	}
+// }
 
 Object.defineProperty(defaultTunes, "getPattern", {
 	configurable: true,

@@ -1,9 +1,8 @@
 import { repeat } from "../../src/tuneHelper";
-
+import sheet from "./ragga.pdf?url"
 export default {
     categories: ["new", "tricky"],
-    sheet: require("./ragga.pdf"),
-    description: require("./ragga.md").default,
+    sheet,
     patterns: {
         Tune: {
             loop: true,

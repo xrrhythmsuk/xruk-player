@@ -1,9 +1,8 @@
 import { repeat } from "../../src/tuneHelper";
-
+import sheet from "./sambasso.pdf?url"
 export default {
     categories: ["common", "onesurdo", "tricky"],
-    sheet: require("./sambasso.pdf"),
-    description: require("./sambasso.md").default,
+    sheet,
     video: undefined,
     patterns: {
         Tune: {

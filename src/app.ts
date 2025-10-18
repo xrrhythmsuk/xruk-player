@@ -7,6 +7,7 @@ import Overview from "./ui/overview.vue"
 import { registerServiceWorker } from "./services/service-worker"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
+	faBars,
 	faCaretDown,
 	faCheck,
 	faClock,
@@ -47,7 +48,8 @@ import { reactiveLocationHash } from "./services/router"
 
 registerServiceWorker()
 
-library.add(faCaretDown,
+library.add(faBars,
+	faCaretDown,
 	faCheck,
 	faClock,
 	faCode,

@@ -4,6 +4,14 @@ import { clone, numberRecordValidator, requiredRecordValidator, transformValidat
 import { applyDiffString, getDiffString } from "./patternDiff";
 import * as z from "zod";
 
+export const mnemonicsValidator = z.object({
+	mnemonics: z.record(instrumentValidator, z.array(z.string()).optional()).default(() => ({}))
+})
+
+const mnemonicsStringValidator = z.object({
+	mnemonics: z.record(instrumentValidator, z.string().optional()).default(() => ({})).optional()
+});
+
 /** The notes of a pattern: a set of strokes that each instrument plays in a certain order. It is wise to use a sparse array for the strokes. */
 export type Beats = z.infer<typeof beatsValidator>;
 export const beatsValidator = requiredRecordValidator(instrumentValidator.options, z.array(strokeValidator).default(() => []));
@@ -47,26 +55,25 @@ const patternPropertiesValidator = z.object({
 	volumeHack: instrumentVolumeHackValidator.optional()
 });
 
-// TODO: add Mnemonics to validation
-export type Mnemonics = { mnemonics? : { [instr in Instrument]?: string[] } }
-export type MnemonicsCompressed = { mnemonics? : { [instr in Instrument]: string } }
-
 /**
  * A pattern is a collection of strokes that each instruments plays in a certain order.
  */
-export type Pattern = z.infer<typeof patternValidator> & Mnemonics;
-export const patternValidator = patternPropertiesValidator.and(beatsValidator).default(() => ({}));
+export type Pattern = z.infer<typeof patternValidator>
+export const patternValidator = patternPropertiesValidator
+	.and(beatsValidator)
+	.and(mnemonicsValidator)
+	.default(() => ({}))
 
+export type PatternOptional = z.input<typeof patternValidator>;
 
-export type PatternOptional = z.input<typeof patternValidator> & Mnemonics;
-
-export type CompressedPattern = z.infer<typeof compressedPatternValidator> & MnemonicsCompressed
-export const compressedPatternValidator = patternPropertiesValidator.partial().and(beatsStringValidator);
+export type CompressedPattern = z.infer<typeof compressedPatternValidator>
+export const compressedPatternValidator = patternPropertiesValidator.partial()
+	.and(beatsStringValidator)
+	.and(mnemonicsStringValidator);
 
 export function normalizePattern(data?: PatternOptional): Pattern {
 	return patternValidator.parse(data);
 }
-
 
 /**
  * Compresses a pattern object. For each instrument, whichever of the following is the smallest will be taken:

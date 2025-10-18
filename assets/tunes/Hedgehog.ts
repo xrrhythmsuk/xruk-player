@@ -1,7 +1,7 @@
+import sheet from "./hedgehog.pdf?url"
 export default {
     categories: ["core", "easy"],
-    sheet: require("./hedgehog.pdf"),
-    description: require("./hedgehog.md").default,
+    sheet,
     patterns: {
         Tune: {
             loop: true,

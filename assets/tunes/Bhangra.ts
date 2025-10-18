@@ -1,10 +1,10 @@
+import sheet from "./bhangra.pdf?url"
 export default {
     categories: ["core", "onesurdo", "medium"],
     speed: 120,
     time: 3,
-    sheet: require("./bhangra.pdf"),
-    description: require("./bhangra.md").default,
     video: undefined,
+    sheet,
     patterns: {
         Tune: {
             loop: true,

@@ -17,22 +17,15 @@
 </template>
 
 <script setup lang="ts">
-import { inject } from 'vue';
-import config, { Instrument } from "../../config";
+import { Instrument } from "../../config";
 import type { PlaybackSettings, Whistle } from "../../state/playbackSettings";
-import { State } from "../../state/state";
 import { Tune } from "../../state/tune";
 
-// Props
 const props = defineProps<{
   playbackSettings: PlaybackSettings;
   tune: Tune;
 }>();
 
-// Inject state
-const state = inject<State>('state')!;
-
-// Instrument configuration
 const instruments = [
   { key: 'ls' as Instrument, label: 'Low' },
   { key: 'ms' as Instrument, label: 'Mid' },
@@ -43,7 +36,6 @@ const instruments = [
   { key: 'ag' as Instrument, label: 'Agogô' },
 ];
 
-// Methods
 function active(instr: Instrument): boolean {
   const { mute } = props.playbackSettings;
   return !mute[instr];
@@ -55,24 +47,20 @@ function onClick(instr: Instrument) {
   const { mute } = props.playbackSettings;
 
   if (instrs.every(i => !mute[i])) {
-    // All instruments are active, mute all except clicked one
     for (let i of allInstrs) {
       mute[i] = true;
     }
     mute[instr] = false;
   }
   else if (instrs.every(i => mute[i] === (i !== instr))) {
-    // Only clicked instrument is active, unmute all
     for (let i of allInstrs) {
       mute[i] = false;
     }
   }
   else {
-    // Toggle the clicked instrument
     mute[instr] = !mute[instr];
   }
 
-  // Set whistle based on active instruments
   const activeCount = instrs.filter(i => !mute[i]).length;
   const whistle: Whistle = activeCount === 1 ? 2 : false;
   props.playbackSettings.whistle = whistle;

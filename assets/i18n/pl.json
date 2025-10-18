@@ -217,6 +217,7 @@
         "error-title": "Błąd przy eksportowaniu {{type}}"
     },
     "overview": {
+        "about": "O aplikacji",
         "listen": "Posłuchaj",
         "compose": "Komponuj"
     },

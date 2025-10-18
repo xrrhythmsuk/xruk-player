@@ -1,10 +1,10 @@
 import { repeat } from "../../src/tuneHelper";
+import sheet from "./jericho.pdf?url"
 export default {
     categories: ["new", "tricky"],
     speed: 120,
     time: 3,
-    sheet: require("./jericho.pdf"),
-    description: require("./jericho.md").default,
+    sheet,
     video: undefined,
 	
     patterns: {

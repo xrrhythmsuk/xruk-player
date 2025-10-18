@@ -1,7 +1,7 @@
+import sheet from "./squirrel.pdf?url"
 export default {
     categories: ["common", "medium"],
-    sheet: require("./squirrel.pdf"),
-    description: require("./squirrel.md").default,
+    sheet,
     video: "https://www.youtube.com/embed/VQBvrEJkiWk",
     patterns: {
         Tune: {

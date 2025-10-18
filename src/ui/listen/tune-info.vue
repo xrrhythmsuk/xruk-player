@@ -11,6 +11,7 @@
 	import { download, ExportType } from "../utils/export";
 	import { BeatboxReference, getPlayerById } from "../../services/player";
 	import { getLocalizedDisplayName, getTuneDescriptionHtml, T, useI18n } from "../../services/i18n";
+import InstrumentButtons from "../instrument/instrument-buttons.vue";
 
 	const state = injectStateRequired();
 
@@ -93,8 +94,8 @@
 				<iframe sandbox="allow-same-origin allow-scripts" :src="tune.video" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
-<!-- 
-TODO: add instrument buttons -->
+
+		<InstrumentButtons :tune="tune" :playbackSettings="playbackSettings" class="mb-3"/>
 
 		<h2 v-if="tuneDescriptionHtml || tune.sheet" class="d-flex align-items-center">
 			<span class="flex-grow-1">{{i18n.t("tune-info.sounds")}}</span>

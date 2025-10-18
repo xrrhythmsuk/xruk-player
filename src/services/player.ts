@@ -2,7 +2,7 @@ import { inflateRaw } from "pako";
 import Beatbox, { InstrumentReferenceObject, Pattern as RawPattern } from "beatbox.js";
 import audioFiles from "virtual:audioFiles";
 import config, { Instrument } from "../config";
-import { Headphones, Mute, normalizePlaybackSettings, PlaybackSettings, Metronome } from "../state/playbackSettings";
+import { Headphones, Mute, normalizePlaybackSettings, PlaybackSettings, Whistle } from "../state/playbackSettings";
 import { normalizePattern, Pattern } from "../state/pattern";
 import { getPatternFromState, State } from "../state/state";
 import { getEffectiveSongLength, SongParts } from "../state/song";
@@ -78,10 +78,6 @@ function isEnabled(instr: Instrument, headphones: Headphones, mute: Mute) {
 	return true;
 }
 
-function toSoundName(instr: string, stroke: string){
-	return `${instr}_${stroke.charCodeAt(0).toString(16)}`
-}
-
 export function patternToBeatbox(pattern: Pattern, playbackSettings: PlaybackSettings): RawPatternWithUpbeat {
 	const fac = config.playTime/pattern.time;
 	const ret: RawPattern = new Array((pattern.length*pattern.time + pattern.upbeat) * fac);
@@ -101,10 +97,10 @@ export function patternToBeatbox(pattern: Pattern, playbackSettings: PlaybackSet
 
 		const stroke = [ ];
 
-		if(playbackSettings.metronome && i >= pattern.upbeat && (i-pattern.upbeat) % (4*pattern.time) == 0)
-			stroke.push({ instrument: playbackSettings.metronome == 2 ? toSoundName("sh", "X") : toSoundName("sh", "."), volume: playbackSettings.volume  * 0.25});
-		else if(playbackSettings.metronome == 2 && i >= pattern.upbeat && (i-pattern.upbeat) % pattern.time == 0)
-			stroke.push({ instrument: toSoundName("sh", "."), volume: playbackSettings.volume * 0.25});
+		if (playbackSettings.whistle && i >= pattern.upbeat && (i - pattern.upbeat) % (4 * pattern.time) == 0)
+			stroke.push({ instrument: playbackSettings.whistle == 2 ? "sh_X" : "sh_.", volume: playbackSettings.volume * 0.25 })
+		else if (playbackSettings.whistle == 2 && i >= pattern.upbeat && (i - pattern.upbeat) % pattern.time == 0)
+			stroke.push({ instrument: "sh_.", volume: playbackSettings.volume * 0.25});
 
 		for(const instr of config.instrumentKeys) {
 			if(isEnabled(instr, playbackSettings.headphones, playbackSettings.mute) && pattern[instr]) {
@@ -119,7 +115,7 @@ export function patternToBeatbox(pattern: Pattern, playbackSettings: PlaybackSet
 				}
 
 				if(strokeType && strokeType != " ")
-					stroke.push({ instrument: toSoundName(instr, strokeType), volume: vol[instr] * playbackSettings.volume * (playbackSettings.volumes[instr] == null ? 1 : playbackSettings.volumes[instr]) });
+					stroke.push({ instrument: instr+"_"+strokeType, volume: vol[instr] * playbackSettings.volume * (playbackSettings.volumes[instr] == null ? 1 : playbackSettings.volumes[instr]) });
 			}
 		}
 
@@ -142,7 +138,7 @@ export function songToBeatbox(song: SongParts, state: State, playbackSettings: P
 			headphones: [ instrumentKey ],
 			volume: playbackSettings.volume,
 			volumes: playbackSettings.volumes,
-			metronome: whistle
+			whistle
 		}));
 
 		let upbeatHasStarted = false;
@@ -176,13 +172,13 @@ export function songToBeatbox(song: SongParts, state: State, playbackSettings: P
 			}
 		}
 
-		if(playbackSettings.metronome) {
+		if(playbackSettings.whistle) {
 			insertPattern(i, normalizePattern({
 				length: 4,
 				time: 1,
 				upbeat: 0,
 				ot: [ ' ', ' ', ' ', ' ' ]
-			}), "ot", 1, playbackSettings.metronome);
+			}), "ot", 1, playbackSettings.whistle);
 		}
 	}
 

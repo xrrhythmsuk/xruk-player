@@ -247,6 +247,7 @@
         "error-title": "Erreur à l'exportation {{type}}"
     },
     "overview": {
+        "about": "À propos",
         "listen": "Écouter",
         "compose": "Composer"
     },

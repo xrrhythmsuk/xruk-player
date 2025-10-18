@@ -43,7 +43,7 @@
 	};
 
 	const showMnemonics = ref(false);
-	const mnemonicsAvailable = computed(() => pattern.value.channels.some(c => c.mnemonics && c.mnemonics.length > 0));
+	const mnemonicsAvailable = computed(() => Object.keys(pattern.value.mnemonics || {}).length > 0);
 </script>
 
 <template>
