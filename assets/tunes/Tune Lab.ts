@@ -73,8 +73,8 @@ export default {
             ag: 'o oa oa o     o o oa oa o     o o oa oa o     o o   r   oa oa o',
             sh: 'X...X...X...X...X...X...X...X...X...X...X...X...X       X  X  X',
             mnemonics: {
-                ls: repeat(3, "We like bang-ing our drums 'cause ") + "We are For-est Thump"),
-                ms: repeat(3, "We can play all day long be-cause ") + "We are For-est Thump")
+                ls: repeat(3, "We like bang-ing our drums 'cause ") + "We are For-est Thump",
+                ms: repeat(3, "We can play all day long be-cause ") + "We are For-est Thump"
             }
         },
 		'Forest Thump Break 1': {
