@@ -42,7 +42,7 @@ export default {
             ms: '@ls',
             hs: '@ls',
             sh: 'X   .   .   .   ',
-            mnemonics: {  ls: 'Ha-loes Let's go' }
+            mnemonics: {  ls: "Ha-loes Let's go" }
         },
         'Pancake Break': {
             loop: true,
