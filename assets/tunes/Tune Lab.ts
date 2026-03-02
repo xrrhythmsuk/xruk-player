@@ -46,8 +46,8 @@ export default {
         },
         'Pancake Break': {
             loop: true,
-            re: 'XXX XXX XXX XXX   XXX XXX XXX  ',
-            sh: 'X   .   .   .',
+            re: 'XXX XXX XXX XXX   XXX XXX XXX   ',
+            sh: 'X   .   .   .   X   .   .   .   ',
             mnemonics: {  re: repeat(4, "Going to flip ") + repeat(3, "Going to flop ") }
         },
         'Whoopi Break': {
