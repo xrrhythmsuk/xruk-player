@@ -13,7 +13,6 @@ An old Barking Bateria/Rhythms of Resistance tune that has survived on the Londo
 
 Relatively straightforward (the agogô part is the same as in Afoxé) and in fact used to be the first tune new bands would learn until it got replaced with Funk. A classic use is to start very, very slowly and gradually speed up. Works well as an interlude tune, or different intruments can use their parts as a looping break.
 
-#### Breaks
 * [**Break 1**](/#/listen/Tune%20Lab/Angel,%20Break%201) is short unison phrase based on the agogô line
 * [**Break 2**](/#/listen/Tune%20Lab/Angel,%20Break%202) is a short surdo break
 
@@ -37,7 +36,6 @@ Sign: *Arms up and stand on one leg*
 
 A standout from the 2025 camp that spent quite a bit of time outside of the lab! Still evolving though so keep checking back.
 
-#### Breaks
 * [**Break 1**](/#/listen/Tune%20Lab/Forest%20Thump,%20Break%201) is everyone playing the same rhythm and pops up at the end of the other breaks
 * [**Break 2**](/#/listen/Tune%20Lab/Forest%20Thump,%20Break%202) is led by surdos
 * [**Break 3**](/#/listen/Tune%20Lab/Forest%20Thump,%20Break%203) gives each instrument group a moment in the spotlight
