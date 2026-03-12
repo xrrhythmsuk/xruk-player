@@ -80,8 +80,8 @@ export default {
             mnemonics: {
                 ls: repeat(3, "We like bang-ing our drums 'cause ") + "We are For-est Thump",
                 ms: repeat(3, "We can play all day long be-cause ") + "We are For-est Thump",
-				ta: repeat(3, "We all love the land, we are the for-est ") + "We are For-est Thump",
-				ag: repeat(3, "We can play all day long 'cause ") + "We are For-est Thump"
+				ta: repeat(3, "We all love the land, we are the for-est ") + "We are, we are the for-est",
+				ag: repeat(3, "We can play all day long 'cause ") + "We are, we are the for-est"
             }
         },
 		'Forest Thump (Draft), Break 1': {
@@ -125,7 +125,7 @@ export default {
             ot: '    A               A               A',
 			mnemonics: {
 				ls: "X We are the for-est X X X X We all love the land For-est Thump",
-				re: "X XX We are the for-est X X We all love the land For-est Thump",
+				re: "X X We are the for-est X X We all love the land For-est Thump",
 				ta: "X X X X X We are the for-est We all love the land For-est Thump",
 				ag: "X X X X X We are the for-est We all love the land For-est Thump",
 				ot: "Hey! Hey! Hey!"
