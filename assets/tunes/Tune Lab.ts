@@ -79,7 +79,9 @@ export default {
             sh: 'X...X...X...X...X...X...X...X...X...X...X...X...X       X  X  X',
             mnemonics: {
                 ls: repeat(3, "We like bang-ing our drums 'cause ") + "We are For-est Thump",
-                ms: repeat(3, "We can play all day long be-cause ") + "We are For-est Thump"
+                ms: repeat(3, "We can play all day long be-cause ") + "We are For-est Thump",
+				ta: repeat(3, "We all love the land, we are the for-est ") + "We are For-est Thump",
+				ag: repeat(3, "We can play all day long 'cause ") + "We are For-est Thump"
             }
         },
 		'Forest Thump (Draft), Break 1': {
@@ -92,8 +94,8 @@ export default {
             ag: 'o oa oa o  a  o',
             sh: '@ls',
             mnemonics: {
-                ls: "We're For-est For-est For-est Thump",
-                ag: "We're For-est For-est For-est Thump"
+                ls: "We all love the land For-est Thump",
+                ag: "We all love the land For-est Thump"
             }
         },
         'Forest Thump (Draft), Break 2': {
@@ -106,9 +108,9 @@ export default {
             ag: '        oo oo o         oo oo o         oo oo o o oa oa o  a  o',
             sh: '@re',
             mnemonics: {
-                ls: repeat(3, "We all love the land ") + "We're For-est For-est For-est Thump",
-                re: repeat(3, "We are the for-est ") + "We're For-est For-est For-est Thump",
-                ag: repeat(3, "We are the for-est ") + "We're For-est For-est For-est Thump"
+                ls: repeat(3, "We all love the land ") + "We all love the land For-est Thump",
+                re: repeat(3, "We are the for-est ") + "We all love the land For-est Thump",
+                ag: repeat(3, "We are the for-est ") + "We all love the land For-est Thump"
             }
         },
         'Forest Thump (Draft), Break 3': {
@@ -120,7 +122,14 @@ export default {
             ta: 'X             X X             X X       XX XX X X XX XX X  X  X',
             ag: 'o             o o             o o       oa oa o o oa oa o  a  o',
             sh: 'X             X X             X X             X X XX XX X  X  X',
-            ot: '    A               A               A'
+            ot: '    A               A               A',
+			mnemonics: {
+				ls: "X We are the for-est X X X X We all love the land For-est Thump",
+				re: "X XX We are the for-est X X We all love the land For-est Thump",
+				ta: "X X X X X We are the for-est We all love the land For-est Thump",
+				ag: "X X X X X We are the for-est We all love the land For-est Thump",
+				ot: "Hey! Hey! Hey!"
+			}
         },
         'Forest Thump (Draft), Break 5': {
             ls: 'X             X X             X X             X X XX XX X  X  X',
