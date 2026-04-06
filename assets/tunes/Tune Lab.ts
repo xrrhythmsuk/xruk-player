@@ -146,7 +146,7 @@ export default {
 			loop: true,
 			ls: 'X  X  XX      X ',
 			ms: '      XXX  X  X ',
-			hs: '@hs',
+			hs: '@ms',
 			re: 'XX  X       X   ',
 			sn: '....X...XX..X...',
 			ta: 'X  XX X X  XX X ',
@@ -156,7 +156,7 @@ export default {
 				ls: "O-pen it up Let's",
 				ms: "And let's shut it down",
 				re: "Flip it round round",
-				sn: "Back Push it back",
+				sn: ". . . . Back . . . Push it . . back . . .",
 				ta: "Turn it o-ver Turn it o-ver",
 				ag: "Turn it o-ver Turn it o-ver"
 			}
@@ -171,7 +171,7 @@ export default {
 			ta: '@ls',
 			ag: '@ls',
 			sh: '@ls',
-			volumeHack: crescendo(16),
+			volumeHack: crescendo(17),
 			mnemonics: { ls: "Shake it up from top to bo-ttom Flip it" }
 		},
 		'Nova Balanca 2': {
@@ -185,8 +185,8 @@ export default {
 			ag: '@re',
 			sh: '@re',
 			mnemonics: {
-				ls: "1   3   still        fix     ",
-				re: "  2   4       got to     more"
+				ls: "1 3 still fix",
+				re: "2 4 got to more"
 			}
 		},
 		'Nova Balanca Call': {
@@ -200,8 +200,8 @@ export default {
 			ag: '@ls',
 			sh: '@ls',
 			mnemonics: {
-				ls: repeat(2, "                  up "),
-				sn: repeat(2, "Time to change it    ")
+				ls: repeat(2, "up "),
+				sn: repeat(2, "Time to change it ")
 			}
 		}
     }
