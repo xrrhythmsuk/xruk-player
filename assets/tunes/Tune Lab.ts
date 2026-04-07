@@ -238,7 +238,7 @@ export default {
 			mnemonics: {
 				ls: repeat(2, "Here we go Here we go Dan-cing a lot, like it or not ") +
 					repeat(2, ". . . . . . . Here we go . . . . . . Here we go . . . . . . . Dan-cing a lot, like it or not "),
-				re: "Here we go Here we go Dancing a lot, like it or not " +
+				re: "Here we go Here we go Dan-cing a lot, like it or not " +
 					repeat(3, ". . . . . . . Here we go . . . . . . Here we go . . . . . . . Dan-cing a lot, like it or not "),
 				ag: repeat(4, ". . . . . . . Here we go . . . . . . Here we go . . . . . . . Dan-cing a lot, like it or not ")
 			},
