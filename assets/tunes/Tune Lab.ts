@@ -204,6 +204,25 @@ export default {
 				sn: repeat(4, "Time to change it ")
 			}
 		},
+		'Nova Balanca 1 interlocking': {
+			displayName: 'Nova Balança, interlocking looped Break 1 (one example)',
+			loop: true,
+			ls: 'X X X X X X X X XX              ',
+			ms: '@ls',
+			hs: '@ls',
+			re: 'XX              X X X X X X X X ',
+			sn: '@re',
+			ta: repeat(2, 'X  XX X X  XX X '),
+			ag: repeat(2, 'o  oa o o  oa o '),
+			sh: repeat(2, '................'),
+			volumeHack: {
+				ls: { 1: .11, 3: .22, 5: .33, 7: .44, 9: .55, 11: .66, 13: .77, 15: .88, 17: 1 },
+				ms: { 1: .11, 3: .22, 5: .33, 7: .44, 9: .55, 11: .66, 13: .77, 15: .88, 17: 1 },
+				hs: { 1: .11, 3: .22, 5: .33, 7: .44, 9: .55, 11: .66, 13: .77, 15: .88, 17: 1 },
+				re: { 1: 1, 17: .11, 19: .22, 21: .33, 23: .44, 25: .55, 27: .66, 29: .77, 31: .88 },
+				sn: { 1: 1, 17: .11, 19: .22, 21: .33, 23: .44, 25: .55, 27: .66, 29: .77, 31: .88 }
+			}
+		},
 		'Knock On The Door (Bhangra)': {
 			loop: true,
 			time: 3,
