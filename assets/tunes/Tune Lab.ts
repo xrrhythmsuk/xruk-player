@@ -172,7 +172,7 @@ export default {
 			ag: '@ls',
 			sh: '@ls',
 			volumeHack: crescendo(17),
-			mnemonics: { ls: "Shake it up from top to bo-ttom Flip it" }
+			mnemonics: {  ls: "Shake it up from top to bo-ttom Flip it" }
 		},
 		'Nova Balanca 2': {
 			displayName: 'Nova Balança, Break 2',
@@ -200,9 +200,57 @@ export default {
 			ag: '@ls',
 			sh: '@ls',
 			mnemonics: {
-				ls: repeat(2, "up "),
-				sn: repeat(2, "Time to change it ")
+				ls: repeat(4, "up "),
+				sn: repeat(4, "Time to change it ")
 			}
+		},
+		'Knock On The Door (Bhangra)': {
+			loop: true,
+			time: 3,
+			speed: 120,
+			ls: 'X        XXXX           XXXXXXXXXXXXX           ',
+			ms: '@ls',
+			hs: '@ls',
+			re: '@ls',
+			sn: 'X..X..X..X..X..X..X..X..X..X..X..X..XXXX  XXXX  ',
+			ta: 'X        XXXX           X XX XX XX XX           ',
+			ag: '@ta',
+			sh: '@ls',
+			mnemonics: {
+				ls: "Hey Knock on the door How ma-ny times have I got to tell you that I'm here?",
+				ta: "Hey Knock on the door I keep as-king you to let me in"
+			}
+		},
+		'Hardcore Break (Bhangra)': {
+			time: 3,
+			speed: 120,
+			ls: repeat(2, '          XXX         XXX           XXXX  XXXX  ') +
+				repeat(2, 'X XX XX XXXXX XX XX XXXXX XX XX XX XXXXX  XXXX  '),
+			ms: '@ls',
+			hs: '@ls',
+			re:           '          XXX         XXX           XXXX  XXXX  '  +
+				repeat(3, 'X XX XX XXXXX XX XX XXXXX XX XX XX XXXXX  XXXX  '),
+			sn: '@re',
+			ta: '@re',
+			ag: repeat(3, 'o oo oo ooooo oo oo ooooo oo oo oo ooooo  oooo  ') +
+				          'a aa aa aaaaa aa aa aaaaa aa aa aa aaaaa  aaaa  ',
+			sh: '@re',
+			mnemonics: {
+				ls: repeat(2, "Here we go Here we go Dan-cing a lot, like it or not ") +
+					repeat(2, ". . . . . . . Here we go . . . . . . Here we go . . . . . . . Dan-cing a lot, like it or not "),
+				re: "Here we go Here we go Dancing a lot, like it or not " +
+					repeat(3, ". . . . . . . Here we go . . . . . . Here we go . . . . . . . Dan-cing a lot, like it or not "),
+				ag: repeat(4, ". . . . . . . Here we go . . . . . . Here we go . . . . . . . Dan-cing a lot, like it or not ")
+			},
+			volumeHack: {
+				ls: { 50: .3, 59: 1, 62: .3, 71: 1, 74: .3, 85: 1, 98: .6, 107: 1, 110: .6, 119: 1, 122: .6, 133: 1 },
+				ms: { 50: .3, 59: 1, 62: .3, 71: 1, 74: .3, 85: 1, 98: .6, 107: 1, 110: .6, 119: 1, 122: .6, 133: 1 },
+				hs: { 50: .3, 59: 1, 62: .3, 71: 1, 74: .3, 85: 1, 98: .6, 107: 1, 110: .6, 119: 1, 122: .6, 133: 1 },
+				re: { 50: .3, 59: 1, 62: .3, 71: 1, 74: .3, 85: 1, 98: .6, 107: 1, 110: .6, 119: 1, 122: .6, 133: 1 },
+				sn: { 50: .3, 59: 1, 62: .3, 71: 1, 74: .3, 85: 1, 98: .6, 107: 1, 110: .6, 119: 1, 122: .6, 133: 1 },
+				ta: { 50: .3, 59: 1, 62: .3, 71: 1, 74: .3, 85: 1, 98: .6, 107: 1, 110: .6, 119: 1, 122: .6, 133: 1 },
+				sh: { 50: .3, 59: 1, 62: .3, 71: 1, 74: .3, 85: 1, 98: .6, 107: 1, 110: .6, 119: 1, 122: .6, 133: 1 }
+            }
 		}
     }
 }
