@@ -14,7 +14,7 @@ It doesn’t sound much like funk, which is something of a theme with RoR tunes.
 
 **History:** Was introduced to the network at least 2008. Barking Bateria played a slightly different version called [“Lego Funk”](https://soundcloud.com/barking-bateria/lego-funk), which is where our starter repi part comes from.   
 
-The sign appears to have evolved from an ‘F’ with thumb and two fingers facing down.
+The sign appears to have evolved from an ‘F’ with thumb and two fingers facing down. Break 1 was originally just the surdo part as an alt line.
 
 ## Difficulty
 
@@ -26,7 +26,7 @@ The sign appears to have evolved from an ‘F’ with thumb and two fingers faci
 
 ## Breaks
 
-* [**Break 1**](/#/listen/Funk/Break%201), a relatively involved break between surdos and everyone else _\[uncommon nationally\]_
+* [**Break 1**](/#/listen/Funk/Break%201), a relatively involved break between surdos and everyone else that works just as well if not better as an alt surdo line _\[less common nationally\]_
 * [**Break 2**](/#/listen/Funk/Break%202), where everyone plays one bar of 8s _\[less common nationally\]_
 * **General breaks** that work well: [Conga](/#/listen/More%20Breaks/Conga), [Little Cat](/#/listen/More%20Breaks/Little%20Cat), [Flappy Mouth](/#/listen/More%20Breaks/Flappy%20Mouth)
 * Some bands use [Squirrel](/#/listen/Squirrel) breaks with Funk instead (signed as e.g. Squirrel – Break 2 – Funk)
