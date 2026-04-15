@@ -152,7 +152,7 @@ import { readonly } from "vue";
 
 <template>
 	<a :href="`#/listen/${tuneName}/${patternName}`" class="bb-pattern-placeholder" :class="[{ dragging }, `drag-effect-${dragEffect}`]" :draggable="draggable ? 'true' : 'false'" @dragstart="handleDragStart($event)" @dragend="handleDragEnd($event)" ref="containerRef">
-		<div v-if="draggable" class="grip">
+		<div v-if="draggable" class="grip" @click.prevent>
 			<fa icon="grip-vertical"/>
 		</div>
 		<div class="pattern-button">
@@ -210,6 +210,7 @@ import { readonly } from "vue";
 			opacity: .5;
 			margin: 2px 8px 0 0;
 			align-self:center;
+			color:white;
 		}
 
 		&[draggable=true] {
