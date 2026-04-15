@@ -5,7 +5,8 @@
 	import config from "../config";
 	import defaultTunes from "../defaultTunes";
 	import { patternEquals } from "../state/pattern";
-	import { DragType, PatternDragData, setDragData } from "../services/draggable";
+	import { DragType, PatternDragData, setDragData } from "../services/draggable";	
+	import PatternPlayerDialog from "./pattern-player/pattern-player-dialog.vue";
 	import { clone, useRefWithOverride } from "../utils";
 	import { computed, defineComponent, h, onBeforeUnmount, ref } from "vue";
 	import { injectStateRequired } from "../services/state";
@@ -13,6 +14,7 @@
 	import vTooltip from "./utils/tooltip";
 	import AbstractPlayer, { PositionData } from "./utils/abstract-player.vue";
 	import { getLocalizedDisplayName, useI18n } from "../services/i18n";
+import { readonly } from "vue";
 
 	export const PatternPlaceholderItem = defineComponent({
 		setup(props, { slots }) {
@@ -149,18 +151,25 @@
 </script>
 
 <template>
-	<div class="bb-pattern-placeholder" :class="[{ dragging }, `drag-effect-${dragEffect}`]" :draggable="draggable ? 'true' : 'false'" @dragstart="handleDragStart($event)" @dragend="handleDragEnd($event)" ref="containerRef">
-		<div class="card pattern-button">
-			<span class="tune-name">{{getLocalizedDisplayName(state.tunes[tuneName].displayName || tuneName)}}</span>
-			<br>
-			<span class="pattern-name">
+	<a :href="`#/listen/${tuneName}/${patternName}`" class="bb-pattern-placeholder" :class="[{ dragging }, `drag-effect-${dragEffect}`]" :draggable="draggable ? 'true' : 'false'" @dragstart="handleDragStart($event)" @dragend="handleDragEnd($event)" ref="containerRef">
+		<div v-if="draggable" class="grip">
+			<fa icon="grip-vertical"/>
+		</div>
+		<div class="pattern-button">
+			<!-- <template v-if="draggable">
+				<a class="tune-name" :href="`#/listen/${tuneName}/`">{{getLocalizedDisplayName(state.tunes[tuneName].displayName || tuneName)}}</a>
+				<br>
+			</template> -->
+			<a class="pattern-name" :href="`#/listen/${tuneName}/${patternName}`">
 				{{getLocalizedDisplayName(state.tunes[tuneName].patterns[patternName].displayName || patternName)}}
 				<fa v-if="isCustomPattern" icon="star" v-tooltip="i18n.t('pattern-placeholder.user-created-tooltip')"/>
-			</span>
+			</a>
 		</div>
 		<ul class="actions icon-list">
 			<li><a href="javascript:" v-tooltip="i18n.t('pattern-placeholder.listen-tooltip')" @click="playPattern()" draggable="false"><fa :icon="abstractPlayerRef?.playerRef?.playing ? 'stop' : 'play-circle'"></fa></a></li>
-			<li><a href="javascript:" v-tooltip="readonly ? i18n.t('pattern-placeholder.show-notes-tooltip') : i18n.t('pattern-placeholder.edit-notes-tooltip')" @click="editPattern()" draggable="false"><fa icon="pen"/></a></li>
+			<!--
+			<li><a :href="`#/listen/${tuneName}/${patternName}`" v-tooltip="readonly ? i18n.t('pattern-placeholder.show-notes-tooltip') : i18n.t('pattern-placeholder.edit-notes-tooltip')" draggable="false"><fa icon="music"/></a></li>
+			-->
 			<li v-if="hasLocalChanges"><a href="javascript:" v-tooltip="i18n.t('pattern-placeholder.restore-tooltip')" @click="restore()" draggable="false"><fa icon="eraser"/></a></li>
 			<slot :getPlayer="() => { abstractPlayerRef!.getOrCreatePlayer(); return abstractPlayerRef!.playerRef!; }"/>
 		</ul>
@@ -180,17 +189,28 @@
 			:pattern-name="patternName"
 			:player-ref="abstractPlayerRef?.playerRef"
 		/>
-	</div>
+	</a>
 </template>
 
 <style lang="scss">
 	.bb-pattern-placeholder.bb-pattern-placeholder.bb-pattern-placeholder.bb-pattern-placeholder {
 
-		padding:4px;
 		background-color: var(--cyan);
-		box-shadow: #0002 2px 2px 2px;
 
 		position: relative;
+
+		display:flex;
+		flex-direction:horizontal;
+		padding:0.8rem;
+		align-items: center;
+		max-width: 100%;
+		line-height: 100%;
+
+		.grip {
+			opacity: .5;
+			margin: 2px 8px 0 0;
+			align-self:center;
+		}
 
 		&[draggable=true] {
 			cursor: move;
@@ -199,13 +219,14 @@
 		&.dragging.drag-effect-move {
 			visibility: hidden;
 		}
-
+		
 		.pattern-button {
-			height: 100%;
-			box-sizing: border-box;
-			display: block;
-			text-align: left;
-			overflow: hidden;
+			flex-grow:1;
+			overflow:hidden;
+
+			a {
+				color: black;
+			}
 
 			.tune-name {
 				font-weight: bold;
@@ -213,11 +234,9 @@
 		}
 
 		.actions {
-			position: absolute;
-			padding: 3px 5px;
-			top: 2px;
-			right: 2px;
-			border-radius: 5px;
+			svg {
+				color:var(--blue);
+			}
 		}
 
 		.position-marker {

@@ -14,7 +14,7 @@ RoR bands, who tend to have proper samba surdos, usually play the surdo part wit
 
 **History:** Introduced to the network by RoR London in 2012, was probably played there before?
 
-For the starter parts, see [Samba Reggae](/#/listen/Samba%20Reggae).
+For the starter parts, see [Samba Reggae](/#/listen/Samba%20Reggae/).
 
 ## Difficulty
 

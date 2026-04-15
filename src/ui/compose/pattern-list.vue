@@ -204,12 +204,10 @@
 </script>
 
 <template>
-	<div class="bb-pattern-list">
+	<div class="bb-pattern-list pt-3">
 		<PatternListFilter v-model="filter" />
 
-		<hr />
-
-		<div class="bb-pattern-list-tunes">
+		<div class="mt-4 bb-pattern-list-tunes">
 			<div v-for="tune in visibleTunes" :key="tune.tuneName" class="card">
 				<div class="card-header">
 					<div class="d-grid">
@@ -249,7 +247,7 @@
 		</div>
 
 		<div class="general-actions">
-			<button type="button" class="btn btn-link" @click="handleCreateTune()"><fa icon="plus"/> {{i18n.t("pattern-list.create-tune")}}</button>
+			<button type="button" class="btn btn-link btn-lg" @click="handleCreateTune()"><fa icon="plus"/> {{i18n.t("pattern-list.create-tune")}}</button>
 		</div>
 
 		<!-- // TODO: Move these dialogs to main view -->
@@ -272,7 +270,6 @@
 
 <style lang="scss">
 	.bb-pattern-list {
-
 		display: flex;
 		flex-direction: column;
 		min-height: 0;
@@ -282,6 +279,7 @@
 		}
 		.card-header {
 			padding:0;
+			border:none;
 			.btn { 
 				font-size: 1.425rem;
 			}
@@ -292,7 +290,6 @@
 			text-decoration: none;
 			color: inherit;
 			position: relative;
-			background-color: white;
 			border: none;
 
 			.fa-caret-down {
@@ -314,6 +311,7 @@
 		}
 
 		.tune-actions {
+			--bs-link-color-rgb: var(--blue);
 			text-align: center;
 
 			> * + * {

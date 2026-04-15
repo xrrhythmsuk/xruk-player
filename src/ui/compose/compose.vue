@@ -58,7 +58,7 @@
 	const song = computed(() => state.value.songs[songIdx.value]);
 	watch(song, () => {
 		if (!song.value) {
-			songIdx.value = state.value.songs.length - 1;
+			songIdx.value = Math.max(state.value.songs.length - 1, 0);
 			selectSong(state.value, songIdx.value);
 		}
 	}, { immediate: true });
@@ -122,10 +122,6 @@
 			flex-grow: 1;
 			min-height: 0;
 			width: 0;
-		}
-
-		.bb-pattern-list-tunes {
-			margin-right: -1.2em;
 		}
 	}
 </style>

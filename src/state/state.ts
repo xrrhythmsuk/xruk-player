@@ -349,13 +349,18 @@ export function getSortedTuneList(state: State): Array<string> {
 }
 
 export function getCategoriesAndTunes(state: State, filter?: Filter) {
-	//TODO: move to config
-    const categories : [string, Category][] =
-        [["", "breaks"], ["Core tunes", "core"], ["Common tunes", "common"], ["New and proposed", "new"], ["My tunes", "custom"]]
-    return categories
-        .map(([title, cat]) => ({
-            title,
-            tunes: filterPatternList(state, { text: '', cat, ...filter })
+	if(filter?.cat && filter.cat != "all")
+	{
+		return [{
+			title: config.filterCats[filter.cat](),
+			tunes: filterPatternList(state, filter)
+		}]
+	}
+
+	return Object.entries(config.overviewCategories)
+		.map(([key, f]) => ({
+			title: f(),
+			tunes: filterPatternList(state, { text: '', ...filter, cat: key as Category })
         }))
         .filter(x => x.tunes.length)
 }

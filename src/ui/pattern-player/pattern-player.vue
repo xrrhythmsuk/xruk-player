@@ -274,6 +274,7 @@
 		})
 	}
 
+	const showMnemonics = ref(false);
 	const mnemonicCells = function* (instrumentKey: Instrument) {
 		const length = pattern.value.length*pattern.value.time + pattern.value.upbeat
 		const words = pattern.value.mnemonics?.[instrumentKey] || []
@@ -303,11 +304,11 @@
 	<div>
 
 		<h1>
-			<router-link :to="{ name: 'listen', params: { tuneName }}">{{state.tunes[tuneName].displayName || tuneName }}</router-link>
+			<a :href="`#/listen/${tuneName}/`">{{state.tunes[tuneName].displayName || tuneName }}</a>
 			{{state.tunes[tuneName].patterns[patternName].displayName || patternName }}
-			<router-link
+			<a
 				v-if="readonly && isCustomPattern"
-				:to="{ name: 'edit pattern', params: { tuneName, patternName }}"><fa icon="pencil-alt"/></router-link>
+				:href="`#/compose/${tuneName}/${patternName}`"><fa icon="pencil-alt"/></a>
 		</h1>
 		
 		<PatternPlayerToolbar
@@ -316,6 +317,7 @@
 			:player="playerRef"
 			v-model:playbackSettings="playbackSettings"
 			:readonly="readonly"
+			v-model:showMnemonics="showMnemonics"
 		>
 			<slot />
 
@@ -326,7 +328,7 @@
 			<table class="bb-pattern-player" :class="`time-${pattern.time}`">
 				<thead>
 					<tr>
-						<td colspan="2" class="instrument-operations">
+						<td class="instrument-operations">
 							<MuteButton instrument="all" v-model:playbackSettings="playbackSettings"/>
 						</td>
 						<td v-for="i in upbeatBeats" :key="i" :colspan="i == 1 ? (pattern.upbeat-1) % pattern.time + 1 : pattern.time" class="beat" :class="getBeatClass(i-1 - upbeatBeats)" @click="setPosition($event)"><span>{{i - upbeatBeats}}</span></td>
@@ -335,22 +337,33 @@
 				</thead>
 				<tbody>
 					<tr v-for="instrumentKey in config.instrumentKeys" :key="instrumentKey">
-						<th>{{config.instruments[instrumentKey].name()}}</th>
-						<td class="instrument-operations">
-							<HeadphonesButton :instrument="instrumentKey" v-model:playbackSettings="playbackSettings" groupSurdos />
-							<MuteButton :instrument="instrumentKey" v-model:playbackSettings="playbackSettings" />
-						</td>
-						<td v-for="i in pattern.length*pattern.time + pattern.upbeat" :key="i" class="stroke" :class="getStrokeClass(i-1, instrumentKey)" v-tooltip="config.strokesDescription[pattern[instrumentKey][i-1]]?.() || ''">
-							<span v-if="readonly" class="stroke-inner">{{config.strokes[pattern[instrumentKey][i-1]] || '\xa0'}}</span>
-							<a v-if="!readonly"
-								href="javascript:" class="stroke-inner"
-								:id="`bb-pattern-player-stroke-${instrumentKey}-${i-1}`"
-								@click="clickStroke(instrumentKey, i-1)"
-								draggable="false"
-							>
-								{{config.strokes[pattern[instrumentKey][i-1]] || '\xa0'}}
-							</a>
-						</td>
+						<th class="d-flex gap-2">
+							<div class="flex-grow-1">{{config.instruments[instrumentKey].name()}}</div>
+							<div class="instrument-operations">
+								<HeadphonesButton :instrument="instrumentKey" v-model:playbackSettings="playbackSettings" groupSurdos />
+								<MuteButton :instrument="instrumentKey" v-model:playbackSettings="playbackSettings" />
+							</div>
+						</th>
+						<template v-if="showMnemonics" >
+							<td :key="i" v-for="(cell, i) in mnemonicCells(instrumentKey)" class="stroke mnemonic"
+								:class="cell.class"
+								:colspan="cell.span">
+								{{cell.text}}
+							</td>
+						</template>
+						<template v-else>
+							<td v-for="i in pattern.length*pattern.time + pattern.upbeat" :key="i" class="stroke" :class="getStrokeClass(i-1, instrumentKey)" v-tooltip="config.strokesDescription[pattern[instrumentKey][i-1]]?.() || ''">
+								<span v-if="readonly" class="stroke-inner">{{config.strokes[pattern[instrumentKey][i-1]] || '\xa0'}}</span>
+								<a v-if="!readonly"
+									href="javascript:" class="stroke-inner"
+									:id="`bb-pattern-player-stroke-${instrumentKey}-${i-1}`"
+									@click="clickStroke(instrumentKey, i-1)"
+									draggable="false"
+								>
+									{{config.strokes[pattern[instrumentKey][i-1]] || '\xa0'}}
+								</a>
+							</td>
+						</template>
 					</tr>
 				</tbody>
 			</table>
@@ -383,7 +396,7 @@
 
 		.bb-pattern-player {
 			table-layout: fixed;
-
+			
 			.stroke {
 				min-width: 2.7ex;
 				border-right: 1px solid #ddd;
@@ -420,15 +433,22 @@
 				padding:2px 4px 0 0;
 			}
 
+			tr>*:first-child {
+				left: 0;
+				position: sticky;
+			}
+
 			th { 
 				font-family: var(--heading-font);
+					background-color: white;
+				z-index: 1;
 			}
 
 			.beat, .stroke.after-beat {
 				border-left: 1px solid #aaa;
 			}
 
-			.instrument-operations, .stroke.after-bar, .beat.after-bar {
+			.stroke.after-bar, .beat.after-bar {
 				border-left: 2px solid #888;
 			}
 
@@ -455,10 +475,6 @@
 				background-color: #3a94a5;
 				color: #fff;
 				transition: none;
-			}
-
-			tbody th {
-				padding-right: 1ex;
 			}
 
 			tbody th, td.instrument-operations {

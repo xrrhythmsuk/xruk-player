@@ -25,7 +25,7 @@ const categoryList = computed(() => {
           <a 
             v-for="tuneName in tunes"
             :key="tuneName"
-            :href="`#/listen/${tuneName}`"
+            :href="`#/listen/${tuneName}/`"
             draggable="false"
           >
             {{ state.tunes[tuneName].displayName || tuneName }}
@@ -38,55 +38,80 @@ const categoryList = computed(() => {
 
 <style lang="scss" scoped>
 .banner {
-  background-color: var(--secondary);
-  padding: 80px 1.5em;
-  
-  h1 {
-    color: var(--light);
-    text-align: center;
-    margin: 0;
-    font-size: 4rem;
-  }
+	background-color: var(--secondary);
+	padding: 80px 1.5em;
+	h1 {
+		margin:0;
+		text-align: center;
+		font-size: 64px;
+	}
 }
 
 .content {
-  padding: 1.5em;
-  max-width: 80rem;
-  margin: 0 auto;
+	padding:1.5em;
+	max-width: 80rem;
+	margin:0 auto;
 }
 
 .styled-links {
-  display: grid;
-  gap: 1em;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  
-  h2 {
-    grid-column: 1 / -1;
-    margin: 1em 0 0.5em;
-    font-size: 1.5rem;
-    color: var(--primary);
-  }
-  
-  a {
-    display: block;
-    padding: 1.5em;
-    background: var(--light);
-    border: 2px solid var(--secondary);
-    border-radius: 8px;
-    text-decoration: none;
-    color: var(--dark);
-    font-weight: 500;
-    text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  a:hover { 
-    transform: scale(1.1);
-    background: var(--primary);
-    color: var(--light);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+	display: grid;
+	gap: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	h2 {
+			grid-column: 1;
+			border: none;
+			height: 6rem;
+			display: flex;
+			align-items: center;
+			margin: 0;
+		}
+	
+    h2+a {
+        grid-column: 1;
+    }
+	a { 
+		padding: 4px 8px;
+		color:white;
+		font-family: Fucxed;
+		font-size:30px;
+		height:6rem;  
+		display: flex;
+		align-items: end;
+		justify-content: end;
+		background-size:cover;
+		background-position: center center;
+		transition: .2s linear all;
+        text-decoration: none;
+        line-height:1;
+	}
+	a:hover { 
+		transform:scale(1.1)
+	}
+    a:nth-of-type(6n+0) {
+    	counter-increment: index;
+		background-image:url(/bg/0.png);
+	}
+    a:nth-of-type(6n+1) {
+    		background-image:url(/bg/1.png);
+	}
+    a:nth-of-type(6n+2) {
+		background-image:url(/bg/2.png);
+	}
+    a:nth-of-type(6n+3) {
+		background-image:url(/bg/3.png);
+	}
+    a:nth-of-type(6n+4) {
+		background-image:url(/bg/4.png);
+	}
+    a:nth-of-type(6n+5) {
+		background-image:url(/bg/5.png);
+	}
+    a:nth-of-type(n+7) {
+		filter:hue-rotate(60deg);
+	}
+    a:nth-of-type(n+13) {
+		filter:hue-rotate(120deg);
+	}
 }
 </style>
 

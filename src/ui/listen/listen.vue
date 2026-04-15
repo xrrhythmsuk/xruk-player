@@ -8,6 +8,7 @@
 	import { getTuneOfTheYear } from "../../services/utils";
 	import TuneList from "./tune-list.vue";
 	import HybridSidebar from "../utils/hybrid-sidebar.vue";
+	import PatternPlayer from "../pattern-player/pattern-player.vue";
 
 	const props = defineProps<{
 		/** null means to forward to the tune of the year */
@@ -22,7 +23,6 @@
 	}>();
 
 	const tuneName = useRefWithOverride(undefined, () => props.tuneName, (tuneName) => emit("update:tuneName", tuneName));
-	const editPattern = useRefWithOverride(undefined, () => props.editPattern, (patternName) => emit("update:editPattern", patternName));
 
 	const state = ref(normalizeState());
 	provideState(state);
@@ -43,7 +43,6 @@
 	<div class="bb-listen">
 		<HybridSidebar v-model:isExpanded="isSidebarExpanded" :toggleContainer="sidebarToggleContainer">
 			<TuneList v-model:tuneName="tuneName" />
-			<!-- TODO: Check category list in tunelist -->
 			<template v-slot:toggle>
 				<button type="button" class="btn btn-secondary" @click="isSidebarExpanded = !isSidebarExpanded">
 					<fa icon="bars" />
@@ -51,8 +50,14 @@
 			</template>
 		</HybridSidebar>
 
-		<div class="bb-listen-info">
-			<TuneInfo v-if="tuneName" :tuneName="tuneName" v-model:editPattern="editPattern" />
+		<div class="bb-listen-info" v-if="props.editPattern">
+			<PatternPlayer className="pattern-player" :tuneName="tuneName" :patternName="props.editPattern" :readonly="true">
+				<button type="button" class="btn btn-info" v-if="hasChanged" @click="share()"><fa icon="share"/>{{" "}}{{i18n.t("pattern-player-dialog.share")}}</button>
+			</PatternPlayer>
+		</div>
+
+		<div class="bb-listen-info" v-else>
+			<TuneInfo v-if="tuneName" :tuneName="tuneName" :editPattern="props.editPattern" @onUpdate:editPattern="() => emit('update:editPattern', props.editPattern)" />
 		</div>
 	</div>
 </template>
@@ -69,13 +74,19 @@
 
 		.bb-listen-info {
 			flex: 1 0 0;
-			overflow: auto;
+			overflow-x: auto;
 
 			.bb-tune-info {
 				padding: 1.2em;
 				max-width: 740px;
 				margin: 0 auto;
 			}
+
+			.pattern-player {
+				display: block;
+				margin: 1em;
+			}
 		}
+
 	}
 </style>

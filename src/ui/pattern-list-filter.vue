@@ -21,14 +21,15 @@
 	export function filterPatternList(state: State, params?: Filter | null): string[] {
 		params = params || DEFAULT_FILTER;
 
-		const ret: string[] = [ ];
+		const result: string[] = [];
 		const tuneNames = getSortedTuneList(state);
-		const text = params && params.text.trim().toLowerCase() || "";
-		for(let i = 0; i < tuneNames.length; i++) {
-			if(text ? textIsInTuneName(state, tuneNames[i], text) : tuneIsInCategory(state.tunes[tuneNames[i]], params.cat))
-				ret.push(tuneNames[i]);
+		const text = params.text?.trim().toLowerCase();
+		for(let tuneName of tuneNames) {
+			if((!text || textIsInTuneName(state, tuneName, text))
+			&& (!params.cat || tuneIsInCategory(state.tunes[tuneName], params.cat)))
+				result.push(tuneName);
 		}
-		return ret;
+		return result;
 	}
 </script>
 

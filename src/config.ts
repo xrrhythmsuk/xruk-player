@@ -9,7 +9,7 @@ export const strokeValidator = z.string();
 /** A stroke is a single sound that an instrument makes. It is identified by a single letter, corresponding to the file name of the audio file in assets/audio/. */
 export type Stroke = z.infer<typeof strokeValidator>;
 
-const categoryKeys = ["breaks", "core", "common", "new", "onesurdo", "easy", "medium", "tricky", "custom", "all"] as const;
+const categoryKeys = ["breaks", "core", "common", "new", "onesurdo", "easy", "medium", "tricky", "custom", "all", "uncommon", "proposed", "western", "cultural-appropriation"] as const
 export const categoryValidator = z.enum(categoryKeys);
 /** Categories by which the tune list can be filtered. Each tune can be part of any number of categories. */
 export type Category = z.infer<typeof categoryValidator>;
@@ -54,6 +54,9 @@ export type Config = {
 
 	/** The available tune filter categories mapped to their display name. */
 	filterCats: Record<Category, () => string>;
+
+	/** The categories to display in the overview page mapped to their display name. */
+	overviewCategories: Partial<Record<Category, () => string>>;
 
 	/**
 	 * The current tune of the year. It will be opened by default when the app is opened. If multiple tunes are specified, one of them will be
@@ -145,7 +148,6 @@ const config: Config = {
 	},
 
 	strokesDescription: {
-		// TODO: check merging
 		"X": () => "Hit",
 		"r": () => "Hit on rim or side",
 		"o": () => "Low bell",
@@ -207,9 +209,10 @@ const config: Config = {
 
 	filterCats: {
 		all: () => getI18n().t("config.category-all"),
+		breaks: () => getI18n().t("config.category-breaks"),
 		common: () => getI18n().t("config.category-common"),
-		core: () => getI18n().t("config.category-core"), //TODO: add localization
-		uncommon: () => getI18n().t("config.category-uncommon"),
+		core: () => getI18n().t("config.category-core"),
+		//uncommon: () => getI18n().t("config.category-uncommon"),
 		new: () => getI18n().t("config.category-new"),
 		proposed: () => getI18n().t("config.category-proposed"),
 		custom: () => getI18n().t("config.category-custom"),
@@ -217,8 +220,16 @@ const config: Config = {
 		easy: () => getI18n().t("config.category-easy"),
 		medium: () => getI18n().t("config.category-medium"),
 		tricky: () => getI18n().t("config.category-tricky"),
-		western: () => getI18n().t("config.category-western"),
-		"cultural-appropriation": () => getI18n().t("config.category-cultural-appropriation")
+		//western: () => getI18n().t("config.category-western"),
+		//"cultural-appropriation": () => getI18n().t("config.category-cultural-appropriation")
+	},
+
+	overviewCategories: {
+		breaks: () => getI18n().t("config.category-breaks"),
+		core: () => getI18n().t("config.category-core"),
+		common: () => getI18n().t("config.category-common"),
+		new: () => getI18n().t("config.category-new"),
+		custom: () => getI18n().t("config.category-custom"),
 	},
 
 	tuneOfTheYear: 'Ragga',

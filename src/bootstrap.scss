@@ -6,6 +6,14 @@ $blue: #3860aa;
 $orange: #ffc11e;
 $cyan: #75d0f1;
 
+body {
+	--green: #{$green};
+	--primary: #{$primary};
+	--secondary: #{$secondary};
+	--blue: #{$blue};
+	--orange: #{$orange};
+	--cyan: #{$cyan};
+}
 $enable-shadows: true;
 $enable-rounded: false;
 $enable-gradients: false;
@@ -57,21 +65,25 @@ $enable-gradients: false;
 // Customizations
 
 // Set button style to bootstrap v3 theme
+.btn {
+	font-family: var(--heading-font);
+}
 @each $color, $value in $theme-colors {
+	.btn-outline-#{$color} {
+			--#{$prefix}btn-hover-bg: #{lighten($value, 12%)};
+		}
 	.btn-#{$color} {
 		$border: darken($value, 14%);
 		--#{$prefix}btn-border-color: #{$border};
 		--#{$prefix}btn-hover-border-color: #{darken($border, 12%)};
 		--#{$prefix}btn-active-border-color: #{$border};
 
-		--#{$prefix}btn-hover-bg: #{darken($value, 12%)};
 		--#{$prefix}btn-active-bg: #{darken($value, 12%)};
 		--#{$prefix}btn-disabled-bg: #{darken($value, 12%)};
 
 		--#{$prefix}btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
 		--#{$prefix}btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 
-		@include gradient-y($start-color: $value, $end-color: darken($value, 12%));
 		background-repeat: repeat-x;
 
 		&:hover,
@@ -79,9 +91,7 @@ $enable-gradients: false;
 			background-position: 0 -15px;
 		}
 
-		.btn-check + &:hover {
-			// Bootstrap disables hover styles for checkbox buttons. Here we reset them to the
-			// default button hover styles.
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																.btn-check+&:hover {
 			color: var(--#{$prefix}btn-hover-color);
 			background-color: var(--#{$prefix}btn-hover-bg);
 			border-color: var(--#{$prefix}btn-hover-border-color);
@@ -93,9 +103,8 @@ $enable-gradients: false;
 		&.active,
 		&.show,
 		&:disabled,
-  		&.disabled,
-  		fieldset:disabled & {
-			// Disable gradient-y
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																&.disabled,
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																fieldset:disabled & {
 			background-image: none;
 		}
 	}
@@ -108,27 +117,18 @@ $enable-gradients: false;
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&display=swap');
 
-  html,body {
-	font-size: 1.4rem;
-	@include media-breakpoint-down(xs) {
-		font-size: 16px;
-	}
+html,
+body {
+	--bs-body-font-size: 1.4rem;
 	font-family: 'Crimson Pro', serif;
 }
 
 body {
 	--heading-font: Fucxed, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
 h1,h2,h3,h4,h5, button, .heading-type {
 	font-family: var(--heading-font);
 	text-transform:uppercase;
 }
-
-
-// Reset btn-outline-secondary colour scheme to original, as #fff makes the text invisible
-.btn-outline-secondary {
-	@include button-outline-variant(#6c757d);
 }
 
 h1 {

@@ -11,7 +11,7 @@
 	import { download, ExportType } from "../utils/export";
 	import { BeatboxReference, getPlayerById } from "../../services/player";
 	import { getLocalizedDisplayName, getTuneDescriptionHtml, T, useI18n } from "../../services/i18n";
-import InstrumentButtons from "../instrument/instrument-buttons.vue";
+	import InstrumentButtons from "../instrument/instrument-buttons.vue";
 
 	const state = injectStateRequired();
 
@@ -75,9 +75,6 @@ import InstrumentButtons from "../instrument/instrument-buttons.vue";
 	<div class="bb-tune-info" v-if="tune">
 		<h1>{{getLocalizedDisplayName(tune.displayName || tuneName)}}</h1>
 
-		<div v-html="tuneDescriptionHtml"></div>
-
-		<h2>{{i18n.t("tune-info.notation")}}</h2>
 		<p>
 			<em>
 				<T k="tune-info.notation-info">
@@ -87,20 +84,12 @@ import InstrumentButtons from "../instrument/instrument-buttons.vue";
 				</T>
 			</em>
 		</p>
-		<p v-if="tune.sheet"><a :href="tune.sheet" target="_blank">{{i18n.t("tune-info.tune-sheet-pdf")}}</a></p>
 
-		<div v-if="tune.video">
-			<h2>{{i18n.t("tune-info.video")}}</h2>
-			<div class="bb-tune-info-video">
-				<iframe sandbox="allow-same-origin allow-scripts" :src="tune.video" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
 
-		<InstrumentButtons :tune="tune" :playbackSettings="playbackSettings" class="mb-3"/>
+		<InstrumentButtons :playbackSettings="playbackSettings" class="mb-3"/>
 
 		<h2 v-if="tuneDescriptionHtml || tune.sheet" class="d-flex align-items-center">
-			<span class="flex-grow-1">{{i18n.t("tune-info.sounds")}}</span>
-			<PlaybackSettingsPicker v-model="playbackSettings" :default-speed="tune.speed" />
+			{{i18n.t("tune-info.sounds")}}
 		</h2>
 
 		<ExampleSongPlayer
@@ -122,6 +111,8 @@ import InstrumentButtons from "../instrument/instrument-buttons.vue";
 		>
 			<PatternPlaceholderItem><a href="javascript:" v-tooltip="i18n.t('tune-info.download-mp3')" @click="handleDownload(patternName, getPlayer())" draggable="false"><fa icon="download"/></a></PatternPlaceholderItem>
 		</PatternPlaceholder>
+
+		<div v-html="tuneDescriptionHtml"></div>
 
 		<p v-if="tune.sheet"><a :href="tune.sheet" target="_blank"><strong>Tune sheet with mnemonics (PDF)</strong></a></p>
 

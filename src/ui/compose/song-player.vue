@@ -9,7 +9,7 @@
 	import PatternPlaceholder, { PatternPlaceholderItem } from "../pattern-placeholder.vue";
 	import { Pattern } from "../../state/pattern";
 	import { injectStateRequired } from "../../services/state";
-	import { computed, ref } from "vue";
+	import { computed, ref, watch } from "vue";
 	import MuteButton from "../playback-settings/mute-button.vue";
 	import HeadphonesButton from "../playback-settings/headphones-button.vue";
 	import SongPlayerToolbar from "./song-player-toolbar.vue";
@@ -53,7 +53,17 @@
 
 	const isDraggingPattern = useRefWithOverride(false, () => props.isDraggingPattern, (isDraggingPattern) => emit("update:isDraggingPattern", isDraggingPattern));
 
-	const song = computed(() => state.value.songs[songIdx.value]);
+	const song = computed(() => {
+		const s = state.value.songs[songIdx.value];
+		return s;
+	});
+	watch(song, (nextSong) => {
+		if (nextSong.speed)
+			state.value.playbackSettings.speed = nextSong.speed;
+	})
+	watch(() => state.value.playbackSettings.speed, (newSpeed) => {
+		song.value.speed = newSpeed;
+	});
 
 	const rawPattern = computed(() => songToBeatbox(song.value ?? {}, state.value, state.value.playbackSettings));
 
@@ -301,12 +311,13 @@
 		return ret;
 	};
 
-	// TODO: check playback speed is getting preserved in song
+	// TODO: check playbak speed is getting preserved in song
 </script>
 
 <template>
-	// TODO: apply heading-type to headers in scss only
 	<div class="bb-song-player" :class="{ dragging: isDraggingPattern, resizing }" ref="containerRef">
+{{ song?.speed }}
+
 		<SongPlayerToolbar :player="playerRef" v-model:songIdx="songIdx">
 			<template v-slot:after-actions>
 				<div class="trash-drop">
@@ -379,7 +390,7 @@
 											<a
 												class="dropdown-item"
 												href="javascript:"
-												@click="toggleInstrument(instrumentKey2, i-1, song[i-1][instrumentKey]!)"
+												@click.stop="toggleInstrument(instrumentKey2, i-1, song[i-1][instrumentKey]!)"
 												draggable="false"
 											><fa icon="check" :style="{visibility: isEqual(song[i-1][instrumentKey2], song[i-1][instrumentKey]) ? 'visible' : 'hidden'}"></fa> {{config.instruments[instrumentKey2].name()}}</a>
 										</li>
@@ -558,6 +569,7 @@
 				&.instruments .field,&.instrument-actions .field {
 					line-height: 3.4em;
 					vertical-align: middle;
+					font-family: var(--heading-font);
 				}
 
 				&.instrument-actions {

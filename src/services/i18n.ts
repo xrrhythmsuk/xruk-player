@@ -97,8 +97,6 @@ export function useI18n(): ReturnType<typeof getI18n> {
 }
 
 export function getTuneDescriptionHtml(tuneName: string): string {
-    // TODO: add our tune descriptions
-    // TODO: add custom tune descriptions
 	return i18n.t(tuneName, { ns: TUNE_DESCRIPTIONS_NS, defaultValue: "" });
 }
 

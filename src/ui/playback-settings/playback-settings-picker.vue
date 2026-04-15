@@ -93,7 +93,7 @@
 </script>
 
 <template>
-	<HybridPopoverButton custom-class="bb-playback-settings" variant="light" :title="i18n.t('playback-settings-picker.title')">
+	<HybridPopoverButton custom-class="bb-playback-settings" variant="outline-secondary" :title="i18n.t('playback-settings-picker.title')">
 		<template #button>
 			<fa icon="sliders-h"/> <fa icon="caret-down"/>
 		</template>
@@ -101,7 +101,7 @@
 		<div class="row">
 			<label :for="`${id}-speed`" class="col-sm-4 col-form-label">{{i18n.t("playback-settings-picker.speed")}}</label>
 			<div class="col-sm-8 d-flex align-items-center">
-				<input :id="`${id}-speed`" type="range" class="form-range" v-model.number="speed" min="30" max="180" v-tooltip="`${speed}`"/>
+				<input :id="`${id}-speed`" type="range" class="form-range" v-model.number="speed" min="30" max="200" v-tooltip="`${speed}`"/>
 				<button type="button" class="btn btn-secondary btn-sm ms-2" @click="speed = defaultSpeed">{{i18n.t("playback-settings-picker.speed-reset")}}</button>
 			</div>
 		</div>

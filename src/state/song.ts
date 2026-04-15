@@ -15,8 +15,8 @@ export const songPartsValidator = numberRecordValidator(songPartValidator);
 
 export type Song = z.infer<typeof songValidator>;
 export const songValidator = songPartsValidator.and(z.object({
-	name: z.string().default("")
-	// TODO: re-add speed
+	name: z.string().default(""),
+	speed: z.string().transform(Number).optional()
 })).default(() => ({}))
 
 /**

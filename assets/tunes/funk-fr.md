@@ -29,4 +29,4 @@ Le signe semble avoir évolué d'un 'F' avec le pouce et deux doigts dirigés ve
 * [**Break 1**](/#/listen/Funk/Break%201), un break relativement complexe entre les surdos et tous les autres _\[peu commun nationalement\]_
 * [**Break 2**](/#/listen/Funk/Break%202), où tout le monde joue une mesure de 8 _\[moins commun nationalement\]_
 * **Breaks généraux** qui fonctionnent bien : [Conga](/#/listen/More%20Breaks/Conga), [Little Cat](/#/listen/More%20Breaks/Little%20Cat), [Flappy Mouth](/#/listen/More%20Breaks/Flappy%20Mouth)
-* Certains groupes utilisent les breaks [Squirrel](/#/listen/Squirrel) avec Funk à la place (signés comme par ex. Squirrel – Break 2 – Funk)
+* Certains groupes utilisent les breaks [Squirrel](/#/listen/Squirrel) avec Funk à la place (signés comme par ex. Squirrel – Break 2 – Funk/)

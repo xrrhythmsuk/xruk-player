@@ -173,7 +173,7 @@
 	},
 	"tune-info": {
 		"notation": "Notation",
-		"notation-info": "Click on the {{pen}} on the breaks below to see the notes.",
+		"notation-info": "Click on the {{pen}} on the parts below to see the notes.",
 		"tune-sheet-pdf": "Tune sheet (PDF)",
 		"video": "Video",
 		"sounds": "Sounds",
@@ -265,7 +265,9 @@
 		"time-with-triplets": "{{time}} with triplets",
 		"time-with-quintuplets": "{{time}} with quintuplets",
 		"category-all": "All tunes",
+		"category-breaks": "Breaks",
 		"category-common": "Common tunes",
+		"category-core": "Core tunes",
 		"category-uncommon": "Uncommon tunes",
 		"category-new": "New tunes",
 		"category-proposed": "Proposed tunes",

@@ -87,10 +87,8 @@
 
 <style lang="scss">
 	.bb-hybrid-sidebar {
-		padding: 1.2em;
-		width: 20em;
+		width: max(20vw, 13em);
 		background: #fff;
-		border-right: 1px solid #dee2e6;
 		display: flex;
 		flex-direction: column;
 

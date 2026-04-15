@@ -1,4 +1,4 @@
-A hypnotic, surdo-led tune introduced to our network at band camp 2024. Pairs well with [Hedgehog](/#/listen/Hedgehog)!
+A hypnotic, surdo-led tune introduced to our network at band camp 2024. Pairs well with [Hedgehog](/#/listen/Hedgehog/)!
 
 **Sign:** fists together, thumbs out left and right
 

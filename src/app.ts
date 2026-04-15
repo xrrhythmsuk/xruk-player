@@ -21,6 +21,7 @@ import {
 	faInfoCircle,
 	faFileImport,
 	faFileAudio,
+	faGripVertical,
 	faHandPointRight,
 	faHeadphones,
 	faLink,
@@ -62,6 +63,7 @@ library.add(faBars,
 	faInfoCircle,
 	faFileImport,
 	faFileAudio,
+	faGripVertical,
 	faHandPointRight,
 	faHeadphones,
 	faLink,
@@ -103,10 +105,15 @@ const Root = defineComponent({
 	}
 })
 
+try {
 createApp(Root, { config: { performance: true } })
 	.use<Vue3TouchEventsOptions>(Vue3TouchEvents, {})
 	.component('fa', FontAwesomeIcon)
 	.mount('#app')
-
-document.getElementById('loading')!.remove();
-
+}
+catch (e) {
+	console.error("Error during app initialization:", e);
+}
+finally { 
+	document.getElementById('loading')!.remove();
+}

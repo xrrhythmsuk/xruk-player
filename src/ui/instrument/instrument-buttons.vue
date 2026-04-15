@@ -1,7 +1,8 @@
 <template>
-  <div class="bb-instr-buttons d-flex align-items-center">
-    <fa icon="headphones" class="pr-2" />
+  <div class="bb-instr-buttons d-flex gap-2 align-items-center">
     <div class="btn-group">
+      <button class="btn btn-outline-secondary" @click="selectAll"><fa icon="headphones" class="pr-2" /></button>
+
       <button 
         v-for="instrument in instruments" 
         :key="instrument.key"
@@ -11,20 +12,23 @@
       >
         {{ instrument.label }}
       </button>
-      <!-- PlaybackSettings component would go here -->
+      
+      <PlaybackSettingsPicker v-model="playbackSettings" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
 import { Instrument } from "../../config";
 import type { PlaybackSettings, Whistle } from "../../state/playbackSettings";
-import { Tune } from "../../state/tune";
+import PlaybackSettingsPicker from "../playback-settings/playback-settings-picker.vue";
 
 const props = defineProps<{
   playbackSettings: PlaybackSettings;
-  tune: Tune;
 }>();
+
+const playbackSettings = ref(props.playbackSettings);
 
 const instruments = [
   { key: 'ls' as Instrument, label: 'Low' },
@@ -64,6 +68,16 @@ function onClick(instr: Instrument) {
   const activeCount = instrs.filter(i => !mute[i]).length;
   const whistle: Whistle = activeCount === 1 ? 2 : false;
   props.playbackSettings.whistle = whistle;
+  props.playbackSettings.headphones = [];
+}
+
+function selectAll() {
+  const { mute } = props.playbackSettings;
+  const instrs: Instrument[] = ['ls', 'ms', 'hs', 'sn', 're', 'ta', 'ag'];
+  for (let i of instrs) {
+    mute[i] = false;
+  }
+  props.playbackSettings.whistle = false;
   props.playbackSettings.headphones = [];
 }
 </script>
