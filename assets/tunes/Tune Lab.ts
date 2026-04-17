@@ -18,12 +18,12 @@ export default {
             ag: repeat(2, 'a a o o aa o oo '),
             sh: repeat(4, 'X.......'),
             mnemonics: {
-                ls: repeat(4, "An-gel "),
-                ms: repeat(4, "fly-ing "),
+                ls: repeat(4, "I'm no "),
+                ms: repeat(4, "an-gel "),
                 re: repeat(4, "White fea-thers "),
                 sn: repeat(4, "White . . fea . . thers . "),
                 ta: "Guess what you don't need to be an an-gel",
-                ag: repeat(2, "Don't wait for an an-gel to app-ear ")
+                ag: repeat(2, "Don't wait for an an-gel to a-ppear ")
             }
         },
         'Angel, Break 1': {
@@ -35,7 +35,7 @@ export default {
             ta: '@ls',
             ag: '@ls',
             sh: '@ls',
-            mnemonics: {  ls: "Don't wait for an an-gel to app-ear" }
+            mnemonics: {  ls: "Don't wait for an an-gel to a-ppear" }
         },
         'Angel, Break 2': {
             ls: 'X   X     XX    ',
@@ -57,7 +57,7 @@ export default {
 			ta: '@re',
 			ag: '@re',
             sh: 'X   .   .   .   ',
-            mnemonics: {  re: 'Clapp-ing hands' }
+            mnemonics: {  re: 'Cla-pping hands' }
         },
         'Funk, Break 1 (Conga)': {
             loop: true,
@@ -72,7 +72,7 @@ export default {
             ls: 'X   r   XX XX X X   r   XX XX X X   r   XX XX X X   r   X  X  X',
             ms: 'X XX XX X   r X X XX XX X   r X X XX XX X   r X X   r   X  X  X',
             hs: '@ms',
-            re: 'X XX  f XX XXrf X XX  f XX XXrf X XX  f XX XXrf X   r   Xr Xr f',
+            re: 'X XX XX XX XX X X XX XX XX XX X X XX XX XX XX X X   r   XX XX X',
             sn: 'X.......X.....X X.......X.....X X.......X.....X X   r   XX XX X',
             ta: 'X XX XX X  X  X X XX XX X  X  X X XX XX X  X  X X   r   XX XX X',
             ag: 'o oa oa o     o o oa oa o     o o oa oa o     o o   r   oa oa o',
@@ -135,7 +135,7 @@ export default {
             ls: 'X             X X             X X             X X XX XX X  X  X',
             ms: '@ls',
             hs: '@ls',
-            re: 'X XX  f XX XXrf X XX  f XX XXrf X XX  f XX XXrf X XX XX X  X  X',
+            re: 'X XX XX XX XX X X XX XX XX XX X X XX XX XX XX X X XX XX X  X  X',
             sn: '@ls',
             ta: '@ls',
             ag: 'o             o o             o o             o o oa oa o  a  o',
@@ -222,6 +222,17 @@ export default {
 				re: { 1: 1, 17: .11, 19: .22, 21: .33, 23: .44, 25: .55, 27: .66, 29: .77, 31: .88 },
 				sn: { 1: 1, 17: .11, 19: .22, 21: .33, 23: .44, 25: .55, 27: .66, 29: .77, 31: .88 }
 			}
+		},
+		'Clock Hands': {
+			ls: 'X           X   ',
+			ms: '@ls',
+			hs: '@ls',
+			re: '@ls',
+			sn: '@ls',
+			ta: '@ls',
+			ag: '@ls',
+			sh: '@ls',
+			mnemonics: {  ls: "Tick tock" }
 		},
 		'Knock On The Door (Bhangra)': {
 			loop: true,
