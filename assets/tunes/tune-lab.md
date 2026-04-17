@@ -56,6 +56,11 @@ As the name suggests the surdos and snares/repis swing backwards and forwards am
 * [**Break 2**](/#/listen/Tune%20Lab/Nova%20Balanca%202) is a short surdo-led phrase with the same rhythm as the Afoxé tam line, which [Barking Bateria](https://soundcloud.com/barking-bateria/afoxe-in-to-nova-balanca)/[old RoR London](https://tube.rhythms-of-resistance.org/w/vL1YFoXhWKJ9RkFGvczJkV) would use to go backwards and forwards between the two tunes and so not need our Afoxé numbered breaks
 * The [**Call Break**](/#/listen/Tune%20Lab/Nova%20Balanca%20Call) is a rarity in being both very short and led by snares!
 
+### [Clock Hands Break](/#/listen/Tune%20Lab/Clock%20Hands)
+Sign: *Arms point straight out ahead, one angled upwards and one downwards (like an analogue clock showing 2:20)*
+
+A combination of Boom and Broccoli, putting a hit on beats 1 and 4.
+
 ### More Bhangra-fied general breaks
 Sign: *Usual sign followed by Bhangra sign, or usual sign snaking up*
 
