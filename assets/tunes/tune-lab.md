@@ -15,7 +15,7 @@ An old Barking Bateria/Rhythms of Resistance tune that has survived on the Londo
 
 Relatively straightforward (our agogô part is the same as for Afoxé) and in fact used to be the first tune new bands would learn until it got replaced with Funk. A classic use is to start very, very slowly and gradually speed up. Works well as an interlude tune, or different intruments can use their parts as a looping break.
 
-* [**Break 1**](/#/listen/Tune%20Lab/Angel,%20Break%201) is short unison phrase based on the agogô line
+* [**Break 1**](/#/listen/Tune%20Lab/Angel,%20Break%201) is a short unison phrase based on the agogô line (it can help to whistle it in with its rhythm, like a tam line break)
 * [**Break 2**](/#/listen/Tune%20Lab/Angel,%20Break%202) is a short surdo break
 
 ### [Pancake Break](/#/listen/Tune%20Lab/Pancake%20Break)
@@ -31,12 +31,12 @@ Get tams and friends clapping along like a choir in Sister Act
 ### [Funk Break 1 (Conga)](/#/listen/Tune%20Lab/Funk,%20Break%201%20(Conga))
 Sign: *Cross arms, Conga sign in one hand, Break 1 in the other*
 
-Another bit of old London samba-fusion, this one a surdo variation for Funk like our normal Conga but from the same source as Funk Break 1.
+Another bit of old London samba-fusion, this one a surdo variation for Funk like our normal Conga but from the same source as Funk Break 1
 
 ### [Forest Thump (Draft)](/#/listen/Tune%20Lab/Forest%20Thump%20(Draft))
 Sign: *Arms up and stand on one leg*
 
-A standout from the 2025 camp that spent quite a bit of time outside of the lab! Still evolving though so keep checking back.
+A standout from the 2025 band camp that spent quite a bit of time outside of the lab! Still evolving though so keep checking back
 
 * [**Break 1**](/#/listen/Tune%20Lab/Forest%20Thump,%20Break%201) is everyone playing the same rhythm and pops up at the end of the other breaks
 * [**Break 2**](/#/listen/Tune%20Lab/Forest%20Thump,%20Break%202) is led by surdos
@@ -80,4 +80,4 @@ The tams settled on _CCTV, bin it!_ as a mnemonic for their rather tricky line.
 
 ### Inverted breaks
 
-Some bands have been playing with things like Inverted Clave ([RoR Player](https://player.rhythms-of-resistance.org/#/listen/General%20Breaks/Clave%20Inverted)) and Inverted Progressive Karla (one example: [RoR Player](https://player.rhythms-of-resistance.org/#/listen/General%20Breaks/Progressive%20Inverted)). People often find them disorientating, though, and for things like inverting Progressive Karla there are different ways you could sign or play it (do you include the silence? Does it go at the front or the end?) so even more than usual, it’s good to physically act them out very clearly if you’re whistling them for a big/mixed band.
+Some bands had been playing with things like Inverted Clave ([RoR Player](https://player.rhythms-of-resistance.org/#/listen/General%20Breaks/Clave%20Inverted)) and Inverted Progressive Karla (one example: [RoR Player](https://player.rhythms-of-resistance.org/#/listen/General%20Breaks/Progressive%20Inverted)). People often find them disorientating, though, and for things like inverting Progressive Karla there are different ways you could sign or play it (do you include the silence? Does it go at the front or the end?) so even more than usual, it’s good to physically act them out very clearly if you’re whistling them for a big/mixed band.
