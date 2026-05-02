@@ -69,7 +69,7 @@ export default {
             ta: '    X       X X     X     X X       X       X X     X     X X   ',
             ag: 'o  a  o   a a a o  a  o   a a a o  a  o   a a a o  a  o   a a a ',
             sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.',
-            mnemonics: {  ls: "Boil them Fry them Just give us spuds Boil them Fry them Just give us spuds" }
+            mnemonics: {  ls: "Boil them Fry them Just give us Spuds Boil them Fry them Just give us Spuds" }
         },
         "Tune Conga": {
             displayName: "Tune (Surdos Conga)",
