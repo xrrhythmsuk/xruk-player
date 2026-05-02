@@ -26,9 +26,9 @@ export default {
         },
         "Starter Snare": {
             loop: true,
-            sn: 'X..XX..XX..XX..X',
+            sn: 'X..XX..XX..XXX.X',
             sh: 'X   .   .   .   ',
-            mnemonics: {  sn: "I . . don't like . . it when . . it's scra- . . tchy"  }
+            mnemonics: {  sn: "I . . don't like . . it when . . it's scra- tching . me"  }
         },
         "Alt Repi": {
             loop: true,
