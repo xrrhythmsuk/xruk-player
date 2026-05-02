@@ -61,15 +61,15 @@ export default {
         "Tune Break 1 loop": {
             displayName: "Tune (Surdos loop Break 1)",
             loop: true,
-            ls: 'X X     X X   X X X     X       X X     X X   X X X     X       ',
+            ls: 'X X     X X   X X X     X       ',
             ms: '@ls',
             hs: '@ls',
-            re: 'f  hf  hf  hf  hf  hf  hf  hXhrhf  hf  hf  hf  hf  hf  hf  hXhrh',
-            sn: '....X.......X.......X.......X.......X.......X.......X.......X...',
-            ta: '    X       X X     X     X X       X       X X     X     X X   ',
-            ag: 'o  a  o   a a a o  a  o   a a a o  a  o   a a a o  a  o   a a a ',
-            sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.',
-            mnemonics: {  ls: "Boil them Fry them Just give us Spuds Boil them Fry them Just give us Spuds" }
+            re: 'f  hf  hf  hf  hf  hf  hf  hXhrh',
+            sn: '....X.......X.......X.......X...',
+            ta: '@ms',
+            ag: 'o  a  o   a a a o  a  o   a a a ',
+            sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.',
+            mnemonics: {  ls: "Boil them Fry them Just give us Spuds" }
         },
         "Tune Conga": {
             displayName: "Tune (Surdos Conga)",
