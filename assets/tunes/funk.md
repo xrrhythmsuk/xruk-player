@@ -26,7 +26,7 @@ The sign appears to have evolved from an ‘F’ with thumb and two fingers faci
 
 ## Breaks
 
-* [**Break 1**](/#/listen/Funk/Break%201), a relatively involved break between surdos and everyone else that works just as well if not better as an alt surdo line _\[less common nationally\]_
+* [**Break 1**](/#/listen/Funk/Break%201), a relatively involved break between surdos and everyone else that often works better [as an alt surdo line](/#/listen/Funk/Tune%20Break%201%20loop) _\[less common nationally\]_
 * [**Break 2**](/#/listen/Funk/Break%202), where everyone plays one bar of 8s _\[less common nationally\]_
 * **General breaks** that work well: [Conga](/#/listen/More%20Breaks/Conga), [Little Cat](/#/listen/More%20Breaks/Little%20Cat), [Flappy Mouth](/#/listen/More%20Breaks/Flappy%20Mouth)
 * Some bands use [Squirrel](/#/listen/Squirrel) breaks with Funk instead (signed as e.g. Squirrel – Break 2 – Funk)
