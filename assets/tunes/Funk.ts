@@ -66,7 +66,7 @@ export default {
             hs: '@ls',
             re: 'f  hf  hf  hf  hf  hf  hf  hXhrh',
             sn: '....X.......X.......X.......X...',
-            ta: '@ms',
+            ta: '    X       X X     X     X X   ',
             ag: 'o  a  o   a a a o  a  o   a a a ',
             sh: 'X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.',
             mnemonics: {  ls: "Boil them Fry them Just give us Spuds" }
