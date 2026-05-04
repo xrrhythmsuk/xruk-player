@@ -27,7 +27,7 @@ At national events we tend not to play it while marching unless we’re sure no-
 * **Low Surdo:** hard
 * **Mid Surdo:** easy to remember, but hard to play it without being too fast or slow
 * **High Surdo:** medium
-* **Repi:** easy. In the original whippy stick version, instead of buzzes you hit with both sticks together.
+* **Repi:** easy (In the original whippy stick version, instead of buzzes you hit with both sticks at the same time)
 * **Snare:** easy
 * **Tam:** easy
 * **Agogô:** medium
