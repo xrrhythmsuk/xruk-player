@@ -8,36 +8,62 @@ We recommend doing the signs big and over your head, leaving lots of time and sp
 
 ## Instruments
 
-**Low/mid/high surdo** *Raise fist and point to low/mid/high on forearm*  
+**Low/mid/high surdo** *Raise fist and point to low/mid/high on forearm*
+
 **All surdos** *Raise fist and brush up and down forearm*
 
-**Repi** *One hand devil horns*  
+&nbsp;
+
+**Repi** *One hand devil horns*
+
 **Snare** *Cross index fingers*
 
-**Tam** *Tap palm*  
-**Agogô** *Tap finger between index and thumb*  
-**Shaker** *Wave loaf of bread*  
+&nbsp;
+
+**Tam** *Tap palm*
+
+**Agogô** *Tap finger between index and thumb*
+
+**Shaker** *Wave loaf of bread*
+
 **Backpack (tam, agogô and shaker)** *Raise forearm and brush spread fingers*
 
 ## General directions
 
-**Stop** *Other hand pulls down raised fist*  
+**Stop** *Other hand pulls down raised fist*
+
 **Play main part** *Hands on head in ‘M’*
 
-**Everyone (else)** *Hand does horizontal loop*  
-**Keep going/Repeat** *Both hands vertical loop*  
-**Play 1/2/3/4 times** *One finger horizontal (or sign) in one hand, 1/2/3/4 horizontal in the other*  
+&nbsp;
+
+**Everyone (else)** *Hand does horizontal loop*
+
+**Keep going/Repeat** *Both hands vertical loop*
+
+**Play 1/2/3/4 times** *One finger horizontal (or sign) in one hand, 1/2/3/4 horizontal in the other*
+
 e.g. “Surdos – Stop – Everyone (else) – Keep going/Repeat” to stop just the surdos, “Everyone (else) – Clave – Keep going/Repeat” for the whole band to play the clave in a loop
 
-**Break 1/2/3** *Show 1/2/3 fingers*  
-**Call Break** *Waft hands away from you*  
+&nbsp;
+
+**Break 1/2/3** *Show 1/2/3 fingers*
+
+**Call Break** *Waft hands away from you*
+
 These come from the tune the band is currently playing. Not every tune has all of them!
 
-**Faster/Slower** *Spiral hand up/down*  
-**Louder/Quieter** *Raise/lower flat hand (or sign)* (Don’t wait for whistle in)  
+&nbsp;
+
+**Faster/Slower** *Spiral hand up/down*
+
+**Louder/Quieter** *Raise/lower flat hand (or sign)* (Don’t wait for whistle in)
+
 **Play on rim** *Draw air circle* (Don’t wait for whistle in)
 
-**Form rows** *Draw air square* (Don’t wait for whistle in)  
+&nbsp;
+
+**Form rows** *Draw air square* (Don’t wait for whistle in)
+
 **Chant** *Hands waft from around mouth*
 
 ## Counting in
@@ -67,7 +93,7 @@ Hit four beats
 [**8 Hits**](/#/listen/Core%20Breaks/8%20Hits) *Fist and 4 horizontal fingers turning*  
 Hit eight beats
 
-**Chaos Break** *Pulling your hair out* (Don’t wait for whistle in)
+**Chaos Break** *Pulling your hair out* (Don’t wait for whistle in)  
 Play noise until signed
 
 

@@ -10,7 +10,7 @@ This is one of our core tunes and often one of the first ones that new bands lea
 
 **Sign:** One of the character Karla’s actions was liberating the biggest rabbit farm in Russia. The sign depicts rabbit ears, an improvement on miming shooting yourself in the head
 
-**History:** The tune was invented in London. The name was changed because some bands got in trouble for showing a gun, and other bands didn’t want to have a tune named after a weapon. The name and story of Karla Shnikov was created by a working group, reflecting how people like Karla likely did exist since women’s historical contributions are often unrecorded
+**History:** The tune was invented in London, starting life as a break in Funk. The name was changed in 2014–2015 because some RoR bands got in trouble for showing a gun, while others didn’t want to have a tune named after a weapon. The name and story of Karla Shnikov was created by a RoR working group during the same period, reflecting how people like Karla likely did exist since women’s historical contributions are often unrecorded
 
 ## Difficulty
 
