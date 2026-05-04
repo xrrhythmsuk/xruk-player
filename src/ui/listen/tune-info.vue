@@ -55,7 +55,7 @@
 	});
 
 	const handleDownload = (patternName: string, playerRef: BeatboxReference) => {
-		download({
+		void download({
 			type: ExportType.MP3,
 			player: getPlayerById(playerRef.id),
 			filename: `${props.tuneName} - ${patternName}`

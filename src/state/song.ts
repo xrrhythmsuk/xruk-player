@@ -16,7 +16,7 @@ export const songPartsValidator = numberRecordValidator(songPartValidator);
 export type Song = z.infer<typeof songValidator>;
 export const songValidator = songPartsValidator.and(z.object({
 	name: z.string().default(""),
-	speed: z.string().transform(Number).optional()
+	speed: z.coerce.number().optional()
 })).default(() => ({}))
 
 /**
@@ -29,6 +29,7 @@ const compressedSongBeatValidator = z.union([z.string(), patternReferenceValidat
 export type CompressedSong = z.infer<typeof compressedSongValidator>;
 export const compressedSongValidator = z.object({
 	name: z.string(),
+	speed: z.number().optional(),
 	beats: z.array(compressedSongBeatValidator).or(numberRecordValidator(compressedSongBeatValidator))
 });
 

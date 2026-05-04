@@ -106,6 +106,9 @@ export class History {
 	_loadFromCompressed(compressed: CompressedState): string[] {
 		try {
 			if (isEqual(toRaw(compressed), toRaw(this._compressedState.value))) {
+				if (this.state.value.songs.length === 0) {
+					createSong(this.state.value);
+				}
 				return [];
 			}
 
@@ -117,6 +120,9 @@ export class History {
 			this.state.value = state;
 			return errors;
 		} catch(e: any) {
+			const state = normalizeState();
+			createSong(state);
+			this.state.value = state;
 			// eslint-disable-next-line no-console
 			console.error("Error decoding state", e.stack || e);
 			return ["Sorry! That link's messed up and can't be decoded."]

@@ -50,7 +50,7 @@
 	};
 
 	const handleDownload = (type: ExportType) => {
-		download({
+		void download({
 			type,
 			filename: getSongName(state.value, songIdx.value)!,
 			player: getPlayerById(props.player.id)
@@ -108,7 +108,7 @@
 			height: 34px;
 			margin-left: 0.5rem;
 			margin-right: 0.75rem;
-			border-left: 1px solid #dee2e6;
+			border-left: 1px solid var(--bs-border-color);
 		}
 	}
 </style>

@@ -1,7 +1,7 @@
-import { createApp, defineComponent, h, ref } from "vue"
-import "./bootstrap.scss"
-import "./bootstrap"
-import "./app.scss"
+import { createApp, defineComponent, Directive, h, ref, watchEffect } from "vue";
+import "./bootstrap.scss";
+import "./bootstrap";
+import "./app.scss";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Overview from "./ui/overview.vue"
 import { registerServiceWorker } from "./services/service-worker"
@@ -46,6 +46,7 @@ import {
 import Vue3TouchEvents, { Vue3TouchEventsOptions } from "vue3-touch-events"
 import { ensurePersistentStorage, reactiveLocalStorage } from "./services/localStorage"
 import { reactiveLocationHash } from "./services/router"
+import { theme } from "./services/bootstrap";
 
 registerServiceWorker()
 
@@ -117,3 +118,13 @@ catch (e) {
 finally { 
 	document.getElementById('loading')!.remove();
 }
+
+declare module "vue" {
+	export interface GlobalDirectives {
+		vTouch: Directive;
+	}
+}
+
+watchEffect(() => {
+	document.documentElement.setAttribute("data-bs-theme", theme.value);
+});

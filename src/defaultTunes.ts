@@ -83,7 +83,15 @@ for (const i in rawTunes) {
 		newTune.patterns[j] = normalizePattern(newPattern);
 	}
 
-	defaultTunes[i] = normalizeTune(newTune)
+	defaultTunes[i] = normalizeTune(newTune);
+
+	const unknown = (defaultTunes[i].exampleSong || [])
+		.map((patternName) => typeof patternName === 'string' ? patternName : patternName.patternName)
+		.filter((patternName) => !defaultTunes[i].patterns[patternName]);
+	if(unknown.length > 0) {
+		// eslint-disable-next-line no-console
+		console.error(`Unknown breaks in example song for ${i}: ${unknown.join(", ")}`);
+	}
 }
 
 // for (const i in defaultTunes) {

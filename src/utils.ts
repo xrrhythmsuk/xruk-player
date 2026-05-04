@@ -8,6 +8,7 @@ export type AnyRef<T> = T | Ref<T> | (() => T);
 export const NUMBER_TO_STRING_CHARS = " !#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~";
 
 export function getMaxIndex(arr: Record<number, any>): number | null {
+	if (!arr) return null
 	const keys = Object.keys(arr);
 	let ret: number | null = null;
 	for(let i=0; i<keys.length; i++) {

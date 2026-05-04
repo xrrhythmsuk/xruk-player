@@ -40,11 +40,11 @@ watch(tuneName, () => {
 		if (!allTunes.includes(tuneName.value))
 			filter.value = { text: "", cat: "all" }
 
-		nextTick(() => {
-			scrollToTune()
-		})
-	}
-}, { immediate: true })
+			void nextTick(() => {
+				scrollToTune();
+			});
+		}
+	}, { immediate: true });
 
 const scrollToTune = () => {
 	tuneListRef.value?.querySelector('.nav-link.active')?.scrollIntoView({ block: 'nearest', behavior: 'smooth' })

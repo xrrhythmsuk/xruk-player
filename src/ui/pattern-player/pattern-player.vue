@@ -223,7 +223,7 @@
 			strokeDropdownPopover.value = undefined;
 		}
 
-		nextTick(() => {
+		void nextTick(() => {
 			if (currentStrokeDropdown.value) {
 				strokeDropdownPopover.value = new CustomPopover(`#bb-pattern-player-stroke-${currentStrokeDropdown.value.instr}-${currentStrokeDropdown.value.i}`, { content: strokeDropdownRef.value!, placement: 'bottom' });
 				strokeDropdownPopover.value.show();
@@ -399,12 +399,12 @@
 			
 			.stroke {
 				min-width: 2.7ex;
-				border-right: 1px solid #ddd;
+				border-right: 1px solid var(--bs-border-color);
 				text-align: center;
 				position: relative;
 
 				&.has-changes {
-					background-color: #fbe8d0;
+					background-color: var(--bb-modified);
 				}
 
 				&.current { 
@@ -422,10 +422,11 @@
 				min-width: 2.7ex;
 				min-height: 1em;
 				text-decoration: none;
+				color: inherit;
 			}
 
 			thead td {
-				border-bottom: 1px solid #aaa;
+				border-bottom: 1px solid var(--bb-strong-border-color);
 				padding-bottom: .5ex;
 				background-color: var(--blue);
 				color:white;
@@ -445,11 +446,11 @@
 			}
 
 			.beat, .stroke.after-beat {
-				border-left: 1px solid #aaa;
+				border-left: 1px solid var(--bb-strong-border-color);
 			}
 
 			.stroke.after-bar, .beat.after-bar {
-				border-left: 2px solid #888;
+				border-left: 2px solid var(--bb-strong-border-color);
 			}
 
 			.instrument-operations {
@@ -472,8 +473,8 @@
 			}
 
 			.beat.active span {
-				background-color: #3a94a5;
-				color: #fff;
+				background-color: var(--bb-active-beat-bg);
+				color: var(--bb-active-beat-color);
 				transition: none;
 			}
 
