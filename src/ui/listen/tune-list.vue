@@ -53,8 +53,9 @@ const scrollToTune = () => {
 
 <template>
 	<div class="bb-tune-list">
+		<!--
 		<PatternListFilter v-model="filter" :show-custom="false" class="px-3" />
-
+-->
 		<ul class="nav nav-pills flex-column flex-nowrap" ref="tuneListRef">
 			<template v-for="category in filterCategorisedPatternList" :key="category.title">
 				<li class="nav-item category-header">

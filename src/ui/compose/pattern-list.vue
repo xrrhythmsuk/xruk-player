@@ -206,7 +206,7 @@
 <template>
 	<div class="bb-pattern-list pt-3">
 		<PatternListFilter v-model="filter" />
-
+		
 		<div class="mt-4 bb-pattern-list-tunes">
 			<div v-for="tune in visibleTunes" :key="tune.tuneName" class="card">
 				<div class="card-header">
