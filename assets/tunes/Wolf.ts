@@ -1,7 +1,8 @@
+import sheet from "./wolf.pdf?url"
 export default {
     categories: ["common", "tricky"],
-    sheet: require("./wolf.pdf"),
-    description: require("./wolf.md").default,
+    descriptionFilename: "wolf",
+    sheet,
     patterns: {
         Tune: {
             loop: true,

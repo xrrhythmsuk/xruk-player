@@ -6,14 +6,37 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>XR Rhythms Player</title>
 		<meta name="description" content="A pattern-based drumming machine.">
-		<link rel="icon" href="./assets/img/app-180.png">
+		<link rel="icon" href="/app-180.png">
 		<link rel="apple-touch-icon" href="./app-180.png">
 		<link rel="manifest" href="./manifest.json">
 		<style>
+			:root {
+				--bs-body-color: #212529;
+				--bs-body-bg: #fff;
+			}
+
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--bs-body-color: #dee2e6;
+					--bs-body-bg: #212529;
+				}
+			}
+
+			html,body {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				background-color: var(--bs-body-bg);
+			}
+
 			#loading {
+				padding: 5px 10px;
 				font-size: 24.5px;
 				font-weight: 500;
-				color: #495057;
+				line-height: 1.5;
+				color: var(--bs-body-color);
 				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 			}
 
@@ -24,7 +47,7 @@
 				transform: translate(-50% -50%);
 				width: 28px;
 				height: 28px;
-				border: 3.5px solid #495057;
+				border: 3.5px solid var(--bs-body-color);
 				border-right-color: transparent;
 				border-radius: 50%;
 				animation: spinner-border .75s linear infinite;
@@ -35,23 +58,13 @@
 				to { transform: rotate(360deg); }
 			}
 		</style>
-		<script>
-			// hotjar
-			(function (c, s, q, u, a, r, e) {
-				c.hj = c.hj || function () { (c.hj.q = c.hj.q || []).push(arguments) };
-				c._hjSettings = { hjid: a };
-				r = s.getElementsByTagName('head')[0];
-				e = s.createElement('script');
-				e.async = true;
-				e.src = q + c._hjSettings.hjid + u;
-				r.appendChild(e);
-			})(window, document, 'https://static.hj.contentsquare.net/c/csq-', '.js', 5180940);
-		</script>
+		<script type="module" src="./src/app.ts"></script>
 	</head>
 	<body>
 		<div id="loading">
 			Loading...
 			<div id="spinner"></div>
 		</div>
+		<div id="app"></div>
 	</body>
 </html>

@@ -1,9 +1,9 @@
 import { repeat, stretch } from "../../src/tuneHelper";
-
+import sheet from "./samba-reggae.pdf?url"
 export default {
     categories: ["core", "medium"],
-    sheet: require("./samba-reggae.pdf"),
-    description: require("./samba-reggae.md").default,
+    descriptionFilename: "samba-reggae",
+    sheet,
     patterns: {
         Tune: {
             loop: true,

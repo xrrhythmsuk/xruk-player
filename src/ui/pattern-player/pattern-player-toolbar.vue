@@ -1,0 +1,119 @@
+<script setup lang="ts">
+	import PatternLengthPicker from "./pattern-length-picker.vue";
+	import TimeSignaturePicker from "./time-signature-picker.vue";
+	import UpbeatPicker from "./upbeat-picker.vue";
+	import { BeatboxReference } from "../../services/player";
+	import { computed, ref } from "vue";
+	import { PlaybackSettings } from "../../state/playbackSettings";
+	import { getPatternFromState } from "../../state/state";
+	import { injectStateRequired } from "../../services/state";
+	import { updatePattern } from "../../state/pattern";
+	import defaultTunes from "../../defaultTunes";
+	import PlayPauseStopButton from "../play-pause-stop-button.vue";
+	import InstrumentButtons from "../instrument/instrument-buttons.vue";
+
+	const props = withDefaults(defineProps<{
+		tuneName: string;
+		patternName: string;
+		player: BeatboxReference;
+		playbackSettings: PlaybackSettings;
+		readonly?: boolean;
+		showMnemonics?: boolean;
+	}>(), {
+		readonly: false
+	});
+
+	const emit = defineEmits<{
+		"update:playbackSettings": [playbackSettings: PlaybackSettings];
+		"update:showMnemonics": [showMnemonics: boolean];
+	}>();
+
+	const state = injectStateRequired();
+
+	const pattern = computed(() => getPatternFromState(state.value, props.tuneName, props.patternName)!);
+	const originalPattern = computed(() => defaultTunes.getPattern(props.tuneName, props.patternName));
+
+	const playbackSettings = computed({
+		get: () => props.playbackSettings,
+		set: (value) => {
+			emit("update:playbackSettings", value);
+		}
+	});
+
+	const showMnemonics = computed({
+		get: () => props.showMnemonics,
+		set: (value) => {
+			emit("update:showMnemonics", value);
+		}
+	});
+
+	const handleUpdatePattern = (update: Parameters<typeof updatePattern>[1]) => {
+		updatePattern(pattern.value, update);
+	};
+
+	const mnemonicsAvailable = computed(() => Object.keys(pattern.value.mnemonics || {}).length > 0);
+</script>
+
+<template>
+	<div class="bb-pattern-editor-toolbar">
+		<PlayPauseStopButton :player="props.player" />
+
+		<div class="divider"></div>
+
+		<button @click="() => playbackSettings.loop = !playbackSettings.loop" 
+			class="btn btn-outline-secondary" :class="{active: playbackSettings.loop}" v-b-tooltip.hover="'Loop'"><fa icon="repeat"/></button>
+		<button @click="() => showMnemonics = !showMnemonics" 
+			class="btn btn-outline-secondary" :class="{active: showMnemonics}"
+			v-b-tooltip.hover="'Toggle mnemonics'" :disabled="!mnemonicsAvailable"><fa icon="comment"/></button>
+
+		<template v-if="!readonly">
+			<div class="btn-group">
+				<PatternLengthPicker
+					:modelValue="pattern.length"
+					@update:modelValue="handleUpdatePattern({ length: $event })"
+					:variant="originalPattern && originalPattern.length != pattern.length ? 'modified' : undefined"
+				/>
+			</div>
+
+			<div class="btn-group">
+				<TimeSignaturePicker
+					:modelValue="pattern.time"
+					@update:modelValue="handleUpdatePattern({ time: $event })"
+					:variant="originalPattern && originalPattern.time != pattern.time ? 'modified' : undefined"
+				/>
+			</div>
+
+			<div class="btn-group">
+				<UpbeatPicker
+					:modelValue="pattern.upbeat"
+					@update:modelValue="handleUpdatePattern({ upbeat: $event })"
+					:time="pattern.time"
+					:variant="originalPattern && originalPattern.upbeat != pattern.upbeat ? 'modified' : undefined"
+				/>
+			</div>
+		</template>
+
+		<div class="divider"></div>
+
+		<InstrumentButtons :playbackSettings="playbackSettings" />
+
+		<slot/>
+	</div>
+</template>
+
+<style lang="scss">
+	.bb-pattern-editor-toolbar {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-top: -0.5rem;
+		gap: 0.25rem;
+
+		.divider {
+			margin-left: 0.5rem;
+			margin-right: 0.5rem;
+			height: 34px;
+			border-left: 1px solid var(--bs-border-color);
+		}
+	}
+</style>

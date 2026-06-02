@@ -1,17 +1,18 @@
-import pako from "pako";
+import { inflateRaw } from "pako";
 import Beatbox, { InstrumentReferenceObject, Pattern as RawPattern } from "beatbox.js";
-import audioFiles from "../../dist/audioFiles";
+import audioFiles from "virtual:audioFiles";
 import config, { Instrument } from "../config";
-import { Headphones, Mute, normalizePlaybackSettings, PlaybackSettings, Metronome } from "../state/playbackSettings";
+import { Headphones, Mute, normalizePlaybackSettings, PlaybackSettings, Whistle } from "../state/playbackSettings";
 import { normalizePattern, Pattern } from "../state/pattern";
 import { getPatternFromState, State } from "../state/state";
-import { getEffectiveSongLength, Song, SongParts } from "../state/song";
+import { getEffectiveSongLength, SongParts } from "../state/song";
 import { decode } from "base64-arraybuffer";
+import { reactive } from "vue";
 
 export interface BeatboxReference {
-	id: number,
-	playing: boolean,
-	customPosition: boolean
+	id: number;
+	playing: boolean;
+	customPosition: boolean;
 }
 
 export interface RawPatternWithUpbeat extends RawPattern {
@@ -19,8 +20,15 @@ export interface RawPatternWithUpbeat extends RawPattern {
 }
 
 for(const i in audioFiles) {
-	const decompressed = pako.inflateRaw(new Uint8Array(decode(audioFiles[i])));
-	Beatbox.registerInstrument(i.replace(/\.mp3$/i, ""), decompressed.buffer);
+	const m = i.match(/^(.*?)_([a-f0-9]+)\.mp3$/i);
+	if (!m) {
+		// eslint-disable-next-line no-console
+		console.warn(`Unexpected audio file name: ${i}`);
+		continue;
+	}
+
+	const decompressed = inflateRaw(new Uint8Array(decode(audioFiles[i])));
+	void Beatbox.registerInstrument(`${m[1]}_${String.fromCodePoint(parseInt(m[2], 16))}`, decompressed.buffer as ArrayBuffer);
 }
 
 let currentNumber = 0;
@@ -28,6 +36,12 @@ let currentNumber = 0;
 const players: {
 	[id: number]: Beatbox;
 } = { };
+
+declare module "beatbox.js" {
+	interface BeatboxEvents {
+		setPosition: [];
+	}
+}
 
 class CustomBeatbox extends Beatbox {
 	setPosition(position: number) {
@@ -37,11 +51,11 @@ class CustomBeatbox extends Beatbox {
 }
 
 export function createBeatbox(repeat: boolean): BeatboxReference {
-	const reference: BeatboxReference = {
+	const reference: BeatboxReference = reactive({
 		id: currentNumber++,
 		playing: false,
 		customPosition: false
-	};
+	});
 
 	const player = new CustomBeatbox([ ], 1, repeat);
 	player.on("play", () => {
@@ -70,10 +84,6 @@ function isEnabled(instr: Instrument, headphones: Headphones, mute: Mute) {
 	return true;
 }
 
-function toSoundName(instr: string, stroke: string){
-	return `${instr}_${stroke.charCodeAt(0).toString(16)}`
-}
-
 export function patternToBeatbox(pattern: Pattern, playbackSettings: PlaybackSettings): RawPatternWithUpbeat {
 	const fac = config.playTime/pattern.time;
 	const ret: RawPattern = new Array((pattern.length*pattern.time + pattern.upbeat) * fac);
@@ -93,10 +103,10 @@ export function patternToBeatbox(pattern: Pattern, playbackSettings: PlaybackSet
 
 		const stroke = [ ];
 
-		if(playbackSettings.metronome && i >= pattern.upbeat && (i-pattern.upbeat) % (4*pattern.time) == 0)
-			stroke.push({ instrument: playbackSettings.metronome == 2 ? toSoundName("sh", "X") : toSoundName("sh", "."), volume: playbackSettings.volume  * 0.25});
-		else if(playbackSettings.metronome == 2 && i >= pattern.upbeat && (i-pattern.upbeat) % pattern.time == 0)
-			stroke.push({ instrument: toSoundName("sh", "."), volume: playbackSettings.volume * 0.25});
+		if (playbackSettings.whistle && i >= pattern.upbeat && (i - pattern.upbeat) % (4 * pattern.time) == 0)
+			stroke.push({ instrument: playbackSettings.whistle == 2 ? "sh_X" : "sh_.", volume: playbackSettings.volume * 0.25 })
+		else if (playbackSettings.whistle == 2 && i >= pattern.upbeat && (i - pattern.upbeat) % pattern.time == 0)
+			stroke.push({ instrument: "sh_.", volume: playbackSettings.volume * 0.25});
 
 		for(const instr of config.instrumentKeys) {
 			if(isEnabled(instr, playbackSettings.headphones, playbackSettings.mute) && pattern[instr]) {
@@ -111,7 +121,7 @@ export function patternToBeatbox(pattern: Pattern, playbackSettings: PlaybackSet
 				}
 
 				if(strokeType && strokeType != " ")
-					stroke.push({ instrument: toSoundName(instr, strokeType), volume: vol[instr] * playbackSettings.volume * (playbackSettings.volumes[instr] == null ? 1 : playbackSettings.volumes[instr]) });
+					stroke.push({ instrument: instr+"_"+strokeType, volume: vol[instr] * playbackSettings.volume * (playbackSettings.volumes[instr] == null ? 1 : playbackSettings.volumes[instr]) });
 			}
 		}
 
@@ -134,7 +144,7 @@ export function songToBeatbox(song: SongParts, state: State, playbackSettings: P
 			headphones: [ instrumentKey ],
 			volume: playbackSettings.volume,
 			volumes: playbackSettings.volumes,
-			metronome: whistle
+			whistle
 		}));
 
 		let upbeatHasStarted = false;
@@ -168,13 +178,13 @@ export function songToBeatbox(song: SongParts, state: State, playbackSettings: P
 			}
 		}
 
-		if(playbackSettings.metronome) {
+		if(playbackSettings.whistle) {
 			insertPattern(i, normalizePattern({
 				length: 4,
 				time: 1,
 				upbeat: 0,
 				ot: [ ' ', ' ', ' ', ' ' ]
-			}), "ot", 1, playbackSettings.metronome);
+			}), "ot", 1, playbackSettings.whistle);
 		}
 	}
 
@@ -185,7 +195,7 @@ export function songToBeatbox(song: SongParts, state: State, playbackSettings: P
 
 export function stopAllPlayers(): void {
 	for(const id of Object.keys(players) as unknown as number[]) {
-		players[id].stop();
+		void players[id].stop();
 	}
 }
 

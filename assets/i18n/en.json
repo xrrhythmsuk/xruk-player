@@ -1,0 +1,288 @@
+{
+	"general": {
+		"untitled-song": "Untitled song",
+		"dialog-close": "Close",
+		"dialog-cancel": "Cancel",
+		"dialog-ok": "OK"
+	},
+	"i18n": {
+		"general-breaks": "General Breaks",
+		"special-breaks": "Special Breaks",
+		"shouting-breaks": "Shouting Breaks",
+		"tune": "Tune",
+		"silence": "{{beats}} Silence",
+		"whistle-in": "Whistle in"
+	},
+	"utils": {
+		"time-day-and-time": "{{day}} {{time}}",
+		"time-today": "Today",
+		"time-yesterday": "Yesterday",
+		"time-days-ago_one": "{{count}} day ago",
+		"time-days-ago_other": "{{count}} days ago",
+		"time-weeks-ago_one": "{{count}} week ago",
+		"time-weeks-ago_other": "{{count}} weeks ago",
+		"time-months-ago_one": "{{count}} month ago",
+		"time-months-ago_other": "{{count}} months ago",
+		"time-years-ago_one": "{{count}} year ago",
+		"time-years-ago_other": "{{count}} years ago",
+		"time-month-jan": "Jan",
+		"time-month-feb": "Feb",
+		"time-month-mar": "Mar",
+		"time-month-apr": "Apr",
+		"time-month-may": "May",
+		"time-month-jun": "Jun",
+		"time-month-jul": "Jul",
+		"time-month-aug": "Aug",
+		"time-month-sep": "Sep",
+		"time-month-oct": "Oct",
+		"time-month-nov": "Nov",
+		"time-month-dec": "Dec",
+		"time-day-with-year": "{{day}} {{month}} {{year}}",
+		"time-day-without-year": "{{day}} {{month}}"
+	},
+	"state": {
+		"untitled-song": "Untitled song {{no}}"
+	},
+	"compose": {
+		"add-to-song-tooltip": "Add to song"
+	},
+	"history-picker": {
+		"import-error-title": "Errors while loading data",
+		"clear-title": "Clear history",
+		"clear-message": "Are you sure that you want to clear your history? If you have recently opened a shared link, this might lose any custom tunes/breaks/songs that you had previously created.",
+		"clear-ok": "Clear",
+		"history-alt": "History",
+		"clear": "Clear",
+		"shared-link": "You have opened a shared link. Your previous songs and tunes can be restored here."
+	},
+	"import-dialog": {
+		"unrecognized-format-error": "Unrecognised format.",
+		"decoding-error": "Error decoding pasted data: {{message}}",
+		"title": "Import",
+		"paste-placeholder": "Paste link or raw data object…",
+		"customize-selection": "Customise selection",
+		"songs": "Songs",
+		"tunes-breaks": "Tunes/Breaks",
+		"song-exists": "Song already exists.",
+		"break-exists-identical": "Break already exists.",
+		"break-used": "Break is used in song, cannot be disabled.",
+		"break-exists-different": "Already exists. Local version will be overridden.",
+		"import-button": "Import"
+	},
+	"pattern-list": {
+		"create-pattern-title": "Create break",
+		"create-pattern-empty-name-error": "Please enter a name for the new break.",
+		"create-pattern-duplicate-name-error": "This name is already taken. Please enter a different one.",
+		"create-pattern-ok": "Create",
+		"remove-pattern-title": "Remove break",
+		"remove-pattern-message": "Do you really want to remove {{patternName}} ({{tuneName}})?",
+		"remove-pattern-ok": "Remove",
+		"create-tune-title": "Create tune",
+		"create-tune-empty-name-error": "Please enter a name for the new tune.",
+		"create-tune-duplicate-name-error": "This name is already taken. Please enter a different one.",
+		"create-tune-ok": "Create",
+		"rename-tune-title": "Rename tune",
+		"rename-tune-empty-name-error": "Please enter a new name for the tune.",
+		"rename-tune-duplicate-name-error": "This name is already taken. Please enter a different one.",
+		"rename-tune-ok": "Rename",
+		"copy-tune-title": "Copy tune",
+		"copy-tune-empty-name-error": "Please enter a new name for the tune.",
+		"copy-tune-duplicate-name-error": "This name is already taken. Please enter a different one.",
+		"copy-tune-ok": "Copy",
+		"remove-tune-title": "Remove tune",
+		"remove-tune-message": "Do you really want to remove the tune {{tuneName}}?",
+		"remove-tune-ok": "Remove",
+		"user-created-tune": "User-created tune",
+		"copy-move-rename-break": "Copy/Move/Rename break",
+		"copy-break": "Copy break",
+		"remove-break": "Remove",
+		"create-break": "New break",
+		"rename-tune": "Rename tune",
+		"copy-tune": "Copy tune",
+		"remove-tune": "Remove tune",
+		"create-tune": "New tune"
+	},
+	"rename-pattern-dialog": {
+		"empty-name-error": "Please enter a new name for the break.",
+		"duplicate-name-error": "This name is already taken. Please type in a different name.",
+		"title-copy": "Copy break",
+		"title-rename": "Rename break",
+		"title-move": "Move break",
+		"new-name": "New name",
+		"different-tune-copy": "Copy to different tune?",
+		"different-tune-move": "Move to different tune?",
+		"mode": "Mode",
+		"mode-rename": "Rename",
+		"mode-move": "Move",
+		"mode-copy": "Copy"
+	},
+	"share-dialog": {
+		"title": "Share",
+		"link": "Link",
+		"raw-compressed": "Raw (compressed)",
+		"raw-uncompressed": "Raw (uncompressed)",
+		"link-description": "Opening this URL will open the songs selected below and have the selected tunes/breaks available in the list.",
+		"raw-description": "Copy this data into the “Import” menu to make the songs and tunes/breaks selected below available in the player.",
+		"customize-heading": "Customise selection",
+		"customize-songs": "Songs",
+		"customize-tunes-breaks": "Tunes/Breaks",
+		"customize-tooltip-default": "Will be opened by default",
+		"customize-tooltip-used": "Used in song, cannot be disabled"
+	},
+	"song-picker": {
+		"rename-title": "Enter song name",
+		"rename-ok": "Rename",
+		"copy-of-song-name": "Copy of {{name}}",
+		"copy-song-name": "Copy",
+		"remove-title": "Remove song",
+		"remove-message": "Do you really want to remove the song {{name}}?",
+		"remove-ok": "Remove",
+		"rename-tooltip": "Rename",
+		"copy-tooltip": "Copy",
+		"remove-tooltip": "Remove",
+		"new-song": "New song"
+	},
+	"song-player-toolbar": {
+		"clear-song-title": "Clear song",
+		"clear-song-message": "Do you really want to clear the current song?",
+		"clear-song-ok": "Clear",
+		"tools": "Tools",
+		"clear-song": "Clear song",
+		"export-mp3": "Export MP3",
+		"export-wav": "Export WAV",
+		"share": "Share",
+		"import": "Import"
+	},
+	"song-player": {
+		"all-instruments": "All",
+		"pick-intruments-tooltip": "Pick instruments",
+		"remove-tooltip": "Remove",
+		"all-instruments-drop": "(All)"
+	},
+	"help": {
+		"user-manual": "User manual",
+		"report-problem": "Report a problem",
+		"download": "Download {{appName}}",
+		"app": "{{appName}} app",
+		"source-code": "Source code on GitHub",
+		"language": "Language",
+		"colour-mode": "Colour mode",
+		"colour-mode-auto": "auto",
+		"colour-mode-light": "light",
+		"colour-mode-dark": "dark"
+	},
+	"example-song-player": {
+		"listen": "Listen",
+		"download-mp3": "Download as MP3"
+	},
+	"tune-info": {
+		"notation": "Notation",
+		"notation-info": "Click on the {{pen}} on the parts below to see the notes.",
+		"tune-sheet-pdf": "Tune sheet (PDF)",
+		"video": "Video",
+		"sounds": "Sounds",
+		"download-mp3": "Download as MP3"
+	},
+	"pattern-length-picker": {
+		"length": "Length: {{length}}"
+	},
+	"pattern-player-dialog": {
+		"share": "Share"
+	},
+	"pattern-player": {
+		"restore-title": "Restore original",
+		"restore-message": "Are you sure that you want to revert your modifications and restore the original break?",
+		"restore-ok": "Restore",
+		"restore": "Restore original"
+	},
+	"time-signature-picker": {
+		"time-signature": "Time signature: {{time}}"
+	},
+	"upbeat-picker": {
+		"upbeat": "Upbeat: {{upbeat}}"
+	},
+	"mute-button": {
+		"mute-all": "Mute all instruments",
+		"unmute-all": "Unmute all instruments"
+	},
+	"playback-settings-picker": {
+		"title": "Playback settings",
+		"speed": "Speed",
+		"speed-reset": "Reset",
+		"loop": "Loop",
+		"whistle": "Whistle",
+		"whistle-off": "No",
+		"whistle-one": "On one",
+		"whistle-all": "On all",
+		"volume-master": "Master"
+	},
+	"export": {
+		"error-title": "Error exporting {{type}}"
+	},
+	"overview": {
+		"about": "About",
+		"listen": "Listen",
+		"compose": "Compose"
+	},
+	"pattern-list-filter": {
+		"filter-placeholder": "Filter: {{category}}"
+	},
+	"pattern-placeholder": {
+		"restore-title": "Restore original",
+		"restore-message": "Are you sure that you want to revert your modifications to {{patternName}} ({{tuneName}}) and restore the original break?",
+		"restore-ok": "Restore",
+		"user-created-tooltip": "User-created break",
+		"listen-tooltip": "Listen",
+		"show-notes-tooltip": "Show notes",
+		"edit-notes-tooltip": "Edit notes",
+		"restore-tooltip": "Restore original"
+	},
+	"play-pause-stop-button": {
+		"pause": "Pause",
+		"play": "Play",
+		"stop": "Stop"
+	},
+	"update": {
+		"new-version": "A new version of {{appName}} is available.",
+		"refresh": "{{refresh}} to update.",
+		"refresh-refresh": "Refresh the page"
+	},
+	"config": {
+		"instruments-ls": "Low Surdo",
+		"instruments-ms": "Mid Surdo",
+		"instruments-hs": "High Surdo",
+		"instruments-re": "Repi",
+		"instruments-sn": "Snare",
+		"instruments-ta": "Tamborim",
+		"instruments-ag": "Agogô",
+		"instruments-sh": "Shaker",
+		"instruments-ot": "Shouting",
+		"stroke-description-hd": "Slap with hand",
+		"stroke-description-0": "Damp with hand",
+		"stroke-description-sil": "Silent stroke",
+		"stroke-description-fl": "Flare",
+		"stroke-description-w": "Whippy (tamborim) stick",
+		"stroke-description-.": "Silent stroke",
+		"stroke-description-wh": "Whistle",
+		"stroke-description-wh2": "Long whistle",
+		"stroke-description-s": "Soft flare",
+		"time-with-triplets": "{{time}} with triplets",
+		"time-with-quintuplets": "{{time}} with quintuplets",
+		"category-all": "All tunes",
+		"category-breaks": "Breaks",
+		"category-common": "Common tunes",
+		"category-core": "Core tunes",
+		"category-uncommon": "Uncommon tunes",
+		"category-new": "New tunes",
+		"category-proposed": "Proposed tunes",
+		"category-custom": "Custom tunes",
+		"category-onesurdo": "One Surdo",
+		"category-easy": "Easy",
+		"category-medium": "Medium",
+		"category-tricky": "Tricky",
+		"category-western": "Western music",
+		"category-cultural-appropriation": "Cultural appropriation",
+		"stroke-volume-defaults": "Defaults",
+		"stroke-volume-shitty": "Shitty speakers"
+	}
+}

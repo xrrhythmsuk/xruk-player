@@ -1,17 +1,23 @@
 import config, { Instrument } from "./config";
-import { clone, TypedObject } from "./utils";
-import { CompressedPattern, LegacyVolumeHack, normalizePattern, Pattern } from "./state/pattern";
-import { GenericTune, normalizeTune, Tune } from "./state/tune";
-import { PatternReference } from "./state/state";
+import { clone } from "./utils";
+import { normalizePattern, Pattern, CompressedPattern, compressedPatternValidator } from "./state/pattern"
+import { normalizeTune, Tune } from "./state/tune";
+import * as z from "zod";
+import { PatternReference } from "./state/song";
 
-type RawTune = { [i in keyof GenericTune<CompressedPattern>]?: GenericTune<CompressedPattern>[i] } & {
+const tuneModules = import.meta.glob('../assets/tunes/*.ts', { eager: true })
+
+type RawTune = Partial<Omit<Tune, 'patterns'>> & {
+	patterns: Record<string, z.input<typeof compressedPatternValidator>>;
 	time?: number;
-};
+}
 
-const path = require.context('../assets/tunes', false, /\.ts$/)
-
-const rawTunes : { [tuneName: string]: RawTune }  = Object.fromEntries(
-		path.keys().map(key => [key.match(/\.\/(.+)\.ts/)![1], path(key).default]))
+const rawTunes: { [tuneName: string]: RawTune } = Object.fromEntries(
+	Object.entries(tuneModules).map(([path, module]) => {
+		const tuneName = path.match(/\/([^/]+)\.ts$/)![1]
+		return [tuneName, (module as any).default]
+	})
+);
 
 const defaultTunes: { [tuneName: string]: Tune } = {};
 
@@ -26,17 +32,19 @@ function uncompressMnemonics(tuneName: string, target: Pattern, pattern: Compres
 	if (clone) return target.mnemonics?.[clone]
 	if(!source) return undefined
 
-	const words = source.split(/[\s\-]/)
+	const words = source.trim().split(/[\s\-]+/)
 
 	if(target[instr].filter(i => i !== " ").length !== words.length)
+	{
 		console.warn(`Mnemonics length mismatch ${tuneName} ${target.displayName}: ${source}`, target[instr])
-
+	}
 	let i = 0;
 	return target[instr].map(p => p != ' ' ? words[i++] : '')
 }
 
 for (const i in rawTunes) {
 	const tune = rawTunes[i];
+
 	const newTune = clone(tune) as any as Tune;
 
 	for (const j in tune.patterns) {
@@ -67,18 +75,33 @@ for (const i in rawTunes) {
 		}
 
 		newPattern.length = Math.ceil(newPattern.length / (newPattern.time || 4));
-		if (newPattern.length % 4)
+		if (newPattern.length % 4) {
+			// eslint-disable-next-line no-console
 			console.error(`Unusual length ${newPattern.length} for ${j} of ${i}.`);
+		}
 
 		newTune.patterns[j] = normalizePattern(newPattern);
 	}
 
 	defaultTunes[i] = normalizeTune(newTune);
 
-	const unknown = (defaultTunes[i].exampleSong || []).filter((patternName) => !defaultTunes[i].patterns[typeof patternName === 'string' ? patternName : patternName.patternName]);
-	if (unknown.length > 0)
+	const unknown = (defaultTunes[i].exampleSong || [])
+		.map((patternName) => typeof patternName === 'string' ? patternName : patternName.patternName)
+		.filter((patternName) => !defaultTunes[i].patterns[patternName]);
+	if(unknown.length > 0) {
+		// eslint-disable-next-line no-console
 		console.error(`Unknown breaks in example song for ${i}: ${unknown.join(", ")}`);
+	}
 }
+
+// for (const i in defaultTunes) {
+// 	const unknown = (defaultTunes[i].exampleSong || []).filter((patternName) => !defaultTunes[i].patterns[typeof patternName === 'string' ? patternName : patternName.patternName]);
+// 	debugger;
+// 	if(unknown.length > 0) {
+// 		// eslint-disable-next-line no-console
+// 		console.error(`Unknown breaks in example song for ${i}: ${unknown.join(", ")}`);
+// 	}
+// }
 
 Object.defineProperty(defaultTunes, "getPattern", {
 	configurable: true,
@@ -88,7 +111,7 @@ Object.defineProperty(defaultTunes, "getPattern", {
 			tuneName = tuneName[0];
 		}
 
-		return this[tuneName] && this[tuneName].patterns[<string>patternName] || null;
+		return this[tuneName]?.patterns[<string> patternName];
 	}
 });
 
@@ -98,11 +121,11 @@ Object.defineProperty(defaultTunes, "firstInSorting", {
 });
 
 interface DefaultTunesMethods {
-	getPattern(tuneName: string, patternName?: string): Pattern | null,
-	getPattern(patternReference: PatternReference): Pattern | null,
-	firstInSorting: Array<string>
+	getPattern(tuneName: string, patternName?: string): Pattern | undefined;
+	getPattern(patternReference: PatternReference): Pattern | undefined;
+	firstInSorting: Array<string>;
 }
 
-type DefaultTunes = TypedObject<Tune> & DefaultTunesMethods;
+type DefaultTunes = Record<string, Tune> & DefaultTunesMethods;
 
-export default <DefaultTunes>defaultTunes;
+export default defaultTunes as DefaultTunes;

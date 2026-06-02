@@ -1,8 +1,20 @@
-@import "~bootstrap-vue/dist/bootstrap-vue.css";
-@import "~mobile-drag-drop/default.css";
+:root {
+	--bb-strong-border-color: color-mix(in srgb, var(--bs-body-color) 50%, transparent);
+	--bb-active-beat-bg: #3a94a5;
+	--bb-active-beat-color: #fff;
+	--bb-disabled-link-color: color-mix(in srgb, var(--bs-body-color) 30%, transparent);
+}
 
 html {
 	font-size: 14px;
+	min-height: 100%;
+	color-scheme: light dark;
+}
+
+html,body,#app {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 }
 
 h1,h2,h3,h4,h5,h6,.popover-header {

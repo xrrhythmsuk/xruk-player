@@ -1,9 +1,9 @@
 import {  repeat, stretch, crescendo } from "../../src/tuneHelper";
-
+import sheet from "./more-breaks.pdf?url"
 export default {
     categories: ["breaks", "onesurdo", "easy", "medium", "tricky"],
-    sheet: require("./general-breaks.pdf"),
-    description: require("./more-breaks.md").default,
+    sheet,
+    descriptionFilename: "more-breaks",
     video: undefined,
     patterns: {
         'Broccoli': {

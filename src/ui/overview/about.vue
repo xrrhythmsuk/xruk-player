@@ -1,20 +1,117 @@
-<div>
-    <div class="banner"><h1>Player</h1></div>
-    <div class="content">
-        <div v-html="content"></div>
-        <h1>The Tunes</h1>
-        <div class="styled-links">
-            <template v-for="({title, tunes}, i) in categoryList">
-                <h2 v-if="title">{{title}}</h2>
-                <router-link 
-                    v-for="(tuneName, j) in tunes"
-                    :to="{name: 'listen', params: { tuneName }}"
-                    draggable="false"
-                    :key="tuneName">
-                    {{state.tunes[tuneName].displayName || tuneName}}
-                </router-link>
-            </template>
-        </div>
+
+<script setup lang="ts">
+import { computed } from 'vue';
+import { html as content } from "../../../assets/about.md";
+import { getCategoriesAndTunes, normalizeState } from "../../state/state";
+
+const state = normalizeState();
+
+const categoryList = computed(() => {
+  return getCategoriesAndTunes(state);
+});
+</script>
+
+<template>
+  <div>
+    <div class="banner">
+      <h1>Player</h1>
     </div>
-</div>
+    <div class="content">
+      <div v-html="content"></div>
+      <h1>The Tunes</h1>
+      <div class="styled-links">
+        <template v-for="({ title, tunes }, i) in categoryList" :key="i">
+          <h2 v-if="title">{{ title }}</h2>
+          <a 
+            v-for="tuneName in tunes"
+            :key="tuneName"
+            :href="`#/listen/${tuneName}/`"
+            draggable="false"
+          >
+            {{ state.tunes[tuneName].displayName || tuneName }}
+          </a>
+        </template>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.banner {
+	background-color: var(--secondary);
+	padding: 80px 1.5em;
+	h1 {
+		margin:0;
+		text-align: center;
+		font-size: 64px;
+	}
+}
+
+.content {
+	padding:1.5em;
+	max-width: 80rem;
+	margin:0 auto;
+}
+
+.styled-links {
+	display: grid;
+	gap: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	h2 {
+			grid-column: 1;
+			border: none;
+			height: 6rem;
+			display: flex;
+			align-items: center;
+			margin: 0;
+		}
+	
+    h2+a {
+        grid-column: 1;
+    }
+	a { 
+		padding: 4px 8px;
+		color:white;
+		font-family: Fucxed;
+		font-size:30px;
+		height:6rem;  
+		display: flex;
+		align-items: end;
+		justify-content: end;
+		background-size:cover;
+		background-position: center center;
+		transition: .2s linear all;
+        text-decoration: none;
+        line-height:1;
+	}
+	a:hover { 
+		transform:scale(1.1)
+	}
+    a:nth-of-type(6n+0) {
+    	counter-increment: index;
+		background-image:url(/bg/0.png);
+	}
+    a:nth-of-type(6n+1) {
+    		background-image:url(/bg/1.png);
+	}
+    a:nth-of-type(6n+2) {
+		background-image:url(/bg/2.png);
+	}
+    a:nth-of-type(6n+3) {
+		background-image:url(/bg/3.png);
+	}
+    a:nth-of-type(6n+4) {
+		background-image:url(/bg/4.png);
+	}
+    a:nth-of-type(6n+5) {
+		background-image:url(/bg/5.png);
+	}
+    a:nth-of-type(n+7) {
+		filter:hue-rotate(60deg);
+	}
+    a:nth-of-type(n+13) {
+		filter:hue-rotate(120deg);
+	}
+}
+</style>
 
