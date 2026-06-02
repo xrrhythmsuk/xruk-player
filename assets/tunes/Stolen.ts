@@ -1,11 +1,11 @@
 import { repeat, stretch } from "../../src/tuneHelper";
-
+import sheet from "./stolen.pdf?url"
 export default {
     categories: ["common", "tricky"],
     speed: 200,
     time: 2,
-    sheet: require("./stolen.pdf"),
-    description: require("./stolen.md").default,
+    descriptionFilename: "stolen",
+    sheet,
     video: undefined,
     patterns: {
         Tune: {

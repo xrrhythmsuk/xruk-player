@@ -1,9 +1,9 @@
 import { repeat } from "../../src/tuneHelper";
-
+import sheet from "./sambasso.pdf?url"
 export default {
     categories: ["common", "onesurdo", "tricky"],
-    sheet: require("./sambasso.pdf"),
-    description: require("./sambasso.md").default,
+    descriptionFilename: "sambasso",
+    sheet,
     video: undefined,
     patterns: {
         Tune: {
@@ -78,19 +78,25 @@ export default {
         },
         'Call Break (Intro)': {
             upbeat: 1,
-            ls: '         XX XX           XX XX           XX XX           XX XX                       X X X X XX X    X X   X X   X                   X X X X XX X    X X   X X   X                   X X X X XX X    X X   X X   X                   X X X X XX X    X X   X X   ',
+            ls: repeat(4, '         XX XX  ') + '                     X X X X XX X    X X   X X   ' +
+                repeat(3, 'X                   X X X X XX X    X X   X X   ') + repeat(2, 'X  rX r X  rX r '),
             ms: '@ls',
             hs: '@ls',
-            re: 'fX X X          fX X X          fX X X          fX X X           X..X..X..X..ffffX                               X..X..X..X..ffffX                               X..X..X..X..ffffX                               X..X..X..X..ffffX                               ',
-            sn: '@ls',
-            ta: '@ls',
-            ag: '@ls',
-            sh: '@ls',
+            re: repeat(4, 'fX X X          ') +
+                repeat(4, ' X..X..X..X..ffffX                              '),
+            sn: repeat(4, '         XX XX  ') + '                     X X X X XX X    X X   X X   ' +
+                repeat(3, 'X                   X X X X XX X    X X   X X   ') + 'X',
+            ta: '@sn',
+            ag: '@sn',
+            sh: '@sn',
             mnemonics: {
-                ls: repeat(4, "Get off the wall ") + repeat(3, "We're so sick of glu-ing his stu-pid shell back on ") + "We're so sick of glu-ing his stu-pid shell back",
-                re: repeat(4, "z Hump-ty mate ") + repeat(4, "I . . tried . . but . . he . . pro-mised he'd be fine ")
+                ls: repeat(4, "Get off the wall ") + repeat(3, "We're so sick of glu-ing his stu-pid shell back on ") +
+                    "We're so sick of glu-ing his stu-pid shell back " + repeat(4, "Hump-ty Dump-ty "),
+                re: repeat(4, "z Hump-ty mate ") + repeat(4, "I . . tried . . but . . he . . pro-mised he'd be fine "),
+                sn: repeat(4, "Get off the wall ") + repeat(4, "We're so sick of glu-ing his stu-pid shell back on ")
             }
         }
     },
-    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 1", "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Call Break (Intro)"]
+    exampleSong: [ { tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", "Break 1",
+                  "Tune", "Tune", "Tune", "Tune", "Break 2", "Tune", "Tune", "Tune", "Tune", "Call Break (Intro)"]
 }

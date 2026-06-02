@@ -1,7 +1,8 @@
-export default {
+import sheet from "./funk.pdf?url"
+export default <Tune>{
     categories: ["core", "easy"],
-    sheet: require("./funk.pdf"),
-    description: require("./funk.md").default,
+    sheet,
+    descriptionFilename: "funk",
     video: "https://www.youtube.com/embed/Yy9wq3sFivw",
     patterns: {
         Tune: {

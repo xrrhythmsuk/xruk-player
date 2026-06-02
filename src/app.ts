@@ -1,15 +1,13 @@
-import Vue from "vue";
-import BootstrapVue from "bootstrap-vue";
+import { createApp, defineComponent, Directive, h, ref, watchEffect } from "vue";
 import "./bootstrap.scss";
+import "./bootstrap";
 import "./app.scss";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import Vue2TouchEvents from "vue2-touch-events";
-import {polyfill} from "mobile-drag-drop";
-import {scrollBehaviourDragImageTranslateOverride} from "mobile-drag-drop/scroll-behaviour";
-import App from "./ui/overview/layout";
-import { registerServiceWorker } from "./services/service-worker";
+import Overview from "./ui/overview.vue"
+import { registerServiceWorker } from "./services/service-worker"
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { 
+import {
+	faBars,
 	faCaretDown,
 	faCheck,
 	faClock,
@@ -23,6 +21,7 @@ import {
 	faInfoCircle,
 	faFileImport,
 	faFileAudio,
+	faGripVertical,
 	faHandPointRight,
 	faHeadphones,
 	faLink,
@@ -42,23 +41,17 @@ import {
 	faStop,
 	faTrash,
 	faVolumeMute,
-	faWindowClose } from '@fortawesome/free-solid-svg-icons'
-import router from "./services/router";
-import VueRouter from "vue-router";
+	faWindowClose
+} from '@fortawesome/free-solid-svg-icons'
+import Vue3TouchEvents, { Vue3TouchEventsOptions } from "vue3-touch-events"
+import { ensurePersistentStorage, reactiveLocalStorage } from "./services/localStorage"
+import { reactiveLocationHash } from "./services/router"
+import { theme } from "./services/bootstrap";
 
-registerServiceWorker();
+registerServiceWorker()
 
-polyfill({
-    dragImageTranslateOverride: scrollBehaviourDragImageTranslateOverride
-});
-
-Vue.use(VueRouter)
-
-Vue.use(BootstrapVue);
-Vue.use(Vue2TouchEvents);
-Vue.component('fa', FontAwesomeIcon);
-
-library.add(faCaretDown,
+library.add(faBars,
+	faCaretDown,
 	faCheck,
 	faClock,
 	faCode,
@@ -71,6 +64,7 @@ library.add(faCaretDown,
 	faInfoCircle,
 	faFileImport,
 	faFileAudio,
+	faGripVertical,
 	faHandPointRight,
 	faHeadphones,
 	faLink,
@@ -90,10 +84,47 @@ library.add(faCaretDown,
 	faStop,
 	faTrash,
 	faVolumeMute,
-	faWindowClose);
-new Vue({
-	router,
-	el: "#loading",
-	render: (createElement) => createElement(App),
+	faWindowClose)
+
+const Root = defineComponent({
+	setup() {
+		const persisted = ref(false)
+
+		return () => h(Overview, {
+			storage: reactiveLocalStorage,
+			path: reactiveLocationHash.value,
+			'onUpdate:path': (path) => {
+				reactiveLocationHash.value = path
+			},
+			'onUpdate:route': (route) => {
+				if (!persisted.value && route.tab === "compose") {
+					persisted.value = true
+					ensurePersistentStorage()
+				}
+			}
+		})
+	}
 })
 
+try {
+createApp(Root, { config: { performance: true } })
+	.use<Vue3TouchEventsOptions>(Vue3TouchEvents, {})
+	.component('fa', FontAwesomeIcon)
+	.mount('#app')
+}
+catch (e) {
+	console.error("Error during app initialization:", e);
+}
+finally { 
+	document.getElementById('loading')!.remove();
+}
+
+declare module "vue" {
+	export interface GlobalDirectives {
+		vTouch: Directive;
+	}
+}
+
+watchEffect(() => {
+	document.documentElement.setAttribute("data-bs-theme", theme.value);
+});

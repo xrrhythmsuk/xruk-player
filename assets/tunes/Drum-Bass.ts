@@ -1,8 +1,9 @@
+import sheet from "./drum-bass.pdf?url"
 export default {
     categories: ["new", "medium"],
-    sheet: require("./drum-bass.pdf"),
+    descriptionFilename: "drum-bass",
+    sheet,
     displayName: "Drum & Bass",
-    description: require("./drum-bass.md").default,
     patterns: {
         Tune: {
             loop: true,
