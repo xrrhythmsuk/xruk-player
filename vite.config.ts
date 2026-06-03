@@ -8,6 +8,13 @@ export default defineConfig(({ mode }) => ({
 	define: {
 		'process.env.DISABLE_SW': String(mode === 'development')
 	},
+	css: {
+		preprocessorOptions: {
+			scss: {
+				silenceDeprecations: ['import', 'if-function', 'global-builtin', 'color-functions']
+			}
+		}
+	},
 	plugins: [
 		vuePlugin(),
 		mdPlugin({ mode: [Mode.HTML] }),

@@ -4,7 +4,7 @@ export default {
 	displayName: "... from the Tune Lab",
     categories: ["new", "tricky", "proposed"],
     sheet: undefined,
-    description: require("./tune-lab.md").default,
+    descriptionFilename: "tube-lab",
     video: undefined,
     patterns: {
         'Angel': {
@@ -125,7 +125,7 @@ export default {
             ot: '    A               A               A',
 			mnemonics: {
 				ls: "X We are the for-est X X X X We all love the land For-est Thump",
-				re: "X X We are the for-est X X We all love the land For-est Thump",
+				re: "X X We are the for-est X X We all love the land For-est Thump X",
 				ta: "X X X X X We are the for-est We all love the land For-est Thump",
 				ag: "X X X X X We are the for-est We all love the land For-est Thump",
 				ot: "Hey! Hey! Hey!"
