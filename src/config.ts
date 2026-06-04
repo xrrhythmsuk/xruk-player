@@ -232,7 +232,7 @@ const config: Config = {
 		custom: () => getI18n().t("config.category-custom"),
 	},
 
-	tuneOfTheYear: 'Ragga',
+	tuneOfTheYear: 'Core Breaks', // So it's a front page rather than the newest stuff
 	defaultSpeed: 120
 };
 
