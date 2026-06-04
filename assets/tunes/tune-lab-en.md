@@ -4,7 +4,9 @@ We settled on this format for the 2025 band camp because polling suggested that 
 
 It also means that people can bring things along without feeling pressure for them to be totally finished and ready to present to everyone – so beware, things on this page still might change in future!  
 
-It likely goes without saying, but assume anything in here will be totally new to most bands (or they might know a different version). If you are bringing it out for a big/mixed band, be prepared to teach it on the fly or (perhaps the safer option) wait till you’re at a practice. Simple stuff played confidently always sounds better than tricky and unsure!
+It likely goes without saying, but assume anything in here will be totally new to most bands (or they might know a different version). If you are bringing it out for a big/mixed band, be prepared to teach it on the fly or (perhaps the safer option) wait till you’re at a practice. Simple stuff played confidently always sounds better than tricky and unsure!  
+
+And if you’re more experienced and feel like you’re getting bored of playing the same things, you might find that coming back to the simplest stuff and really focusing on it brings out some pleasant depths you didn’t know were there before.
 
 ## Band Camp 2025
 
