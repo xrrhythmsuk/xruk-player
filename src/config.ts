@@ -233,7 +233,7 @@ const config: Config = {
 	},
 
 	tuneOfTheYear: 'Core Breaks', // So it's a front page rather than the newest stuff
-	defaultSpeed: 120
+	defaultSpeed: 100
 };
 
 // Check some requirements for export so that we don't forget them at some point in the future
