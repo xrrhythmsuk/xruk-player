@@ -14,12 +14,13 @@
       </button>
       
       <PlaybackSettingsPicker v-model="playbackSettings" />
+
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { computed } from "vue";
 import { Instrument } from "../../config";
 import type { PlaybackSettings, Whistle } from "../../state/playbackSettings";
 import PlaybackSettingsPicker from "../playback-settings/playback-settings-picker.vue";
@@ -28,7 +29,16 @@ const props = defineProps<{
   playbackSettings: PlaybackSettings;
 }>();
 
-const playbackSettings = ref(props.playbackSettings);
+const emit = defineEmits<{
+  "update:playbackSettings": [playbackSettings: PlaybackSettings];
+}>();
+
+const playbackSettings = computed({
+  get: () => props.playbackSettings,
+  set: (settings) => {
+    emit("update:playbackSettings", settings);
+  }
+});
 
 const instruments = [
   { key: 'ls' as Instrument, label: 'Low' },
@@ -41,44 +51,54 @@ const instruments = [
 ];
 
 function active(instr: Instrument): boolean {
-  const { mute } = props.playbackSettings;
+  const { mute } = playbackSettings.value;
   return !mute[instr];
 }
 
 function onClick(instr: Instrument) {
   const instrs: Instrument[] = ['ls', 'ms', 'hs', 'sn', 're', 'ta', 'ag'];
   const allInstrs = [...instrs, 'sh'] as Instrument[]; // Leave whistle and shouting ('ot') always active
-  const { mute } = props.playbackSettings;
+  const nextMute = { ...playbackSettings.value.mute };
 
-  if (instrs.every(i => !mute[i])) {
+  if (instrs.every(i => !nextMute[i])) {
     for (let i of allInstrs) {
-      mute[i] = true;
+      nextMute[i] = true;
     }
-    mute[instr] = false;
+    nextMute[instr] = false;
   }
-  else if (instrs.every(i => mute[i] === (i !== instr))) {
+  else if (instrs.every(i => nextMute[i] === (i !== instr))) {
     for (let i of allInstrs) {
-      mute[i] = false;
+      nextMute[i] = false;
     }
   }
   else {
-    mute[instr] = !mute[instr];
+    nextMute[instr] = !nextMute[instr];
   }
 
-  const activeCount = instrs.filter(i => !mute[i]).length;
+  const activeCount = instrs.filter(i => !nextMute[i]).length;
   const whistle: Whistle = activeCount === 1 ? 2 : false;
-  props.playbackSettings.whistle = whistle;
-  props.playbackSettings.headphones = [];
+  playbackSettings.value = {
+    ...playbackSettings.value,
+    mute: nextMute,
+    whistle,
+    headphones: []
+  };
 }
 
 function selectAll() {
-  const { mute } = props.playbackSettings;
   const instrs: Instrument[] = ['ls', 'ms', 'hs', 'sn', 're', 'ta', 'ag'];
+  const nextMute = { ...playbackSettings.value.mute };
+
   for (let i of instrs) {
-    mute[i] = false;
+    nextMute[i] = false;
   }
-  props.playbackSettings.whistle = false;
-  props.playbackSettings.headphones = [];
+
+  playbackSettings.value = {
+    ...playbackSettings.value,
+    mute: nextMute,
+    whistle: false,
+    headphones: []
+  };
 }
 </script>
 

@@ -95,7 +95,7 @@
 
 		<div class="divider"></div>
 
-		<InstrumentButtons :playbackSettings="playbackSettings" />
+		<InstrumentButtons v-model:playbackSettings="playbackSettings" />
 
 		<slot/>
 	</div>
