@@ -3,6 +3,7 @@ import sheet from "./ragga.pdf?url"
 export default {
     categories: ["new", "tricky"],
     descriptionFilename: "ragga",
+    speed: 100,
     sheet,
     patterns: {
         Tune: {

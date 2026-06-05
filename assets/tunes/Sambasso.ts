@@ -3,6 +3,7 @@ import sheet from "./sambasso.pdf?url"
 export default {
     categories: ["common", "onesurdo", "tricky"],
     descriptionFilename: "sambasso",
+    speed: 100, 
     sheet,
     video: undefined,
     patterns: {

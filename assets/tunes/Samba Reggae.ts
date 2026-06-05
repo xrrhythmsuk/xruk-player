@@ -3,6 +3,7 @@ import sheet from "./samba-reggae.pdf?url"
 export default {
     categories: ["core", "medium"],
     descriptionFilename: "samba-reggae",
+    speed: 100, 
     sheet,
     patterns: {
         Tune: {

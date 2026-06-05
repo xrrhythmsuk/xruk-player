@@ -2,7 +2,7 @@ import { repeat, stretch } from "../../src/tuneHelper";
 import sheet from "./stolen.pdf?url"
 export default {
     categories: ["common", "tricky"],
-    speed: 200,
+    speed: 180,
     time: 2,
     descriptionFilename: "stolen",
     sheet,

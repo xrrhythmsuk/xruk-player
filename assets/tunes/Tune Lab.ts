@@ -3,6 +3,7 @@ import {  repeat, crescendo } from "../../src/tuneHelper";
 export default {
 	displayName: "... from the Tune Lab",
     categories: ["new", "tricky", "proposed"],
+    speed: 100,
     sheet: undefined,
     descriptionFilename: "tube-lab",
     video: undefined,
