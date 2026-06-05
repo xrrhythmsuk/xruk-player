@@ -429,7 +429,7 @@
 				border-bottom: 1px solid var(--bb-strong-border-color);
 				padding-bottom: .5ex;
 				background-color: var(--blue);
-				color:white;
+				color: var(--bs-body-bg);
 				font-family: var(--heading-font);
 				padding:2px 4px 0 0;
 			}
@@ -441,7 +441,7 @@
 
 			th { 
 				font-family: var(--heading-font);
-					background-color: white;
+				background-color: var(--bs-body-bg);
 				z-index: 1;
 			}
 
