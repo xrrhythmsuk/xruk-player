@@ -121,7 +121,7 @@ export default {
             sn: '@re',
             ta: 'X             X X             X X       XX XX X X XX XX X  X  X',
             ag: 'o             o o             o o       oa oa o o oa oa o  a  o',
-            sh: 'X             X X             X X             X X XX XX X  X  X',
+            sh: '@ta',
             ot: '    A               A               A',
 			mnemonics: {
 				ls: "X We are the for-est X X X X We all love the land For-est Thump",
