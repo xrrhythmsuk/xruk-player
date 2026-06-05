@@ -86,7 +86,7 @@
 		</p>
 
 
-		<InstrumentButtons :playbackSettings="playbackSettings" class="mb-3"/>
+		<InstrumentButtons v-model:playbackSettings="playbackSettings" class="mb-3"/>
 
 		<h2 v-if="tuneDescriptionHtml || tune.sheet" class="d-flex align-items-center">
 			{{i18n.t("tune-info.sounds")}}
@@ -98,6 +98,7 @@
 			:song="tune.exampleSong"
 			:settings="playbackSettings"
 		/>
+
 		<PatternPlaceholder
 			v-for="(pattern, patternName) in tune.patterns"
 			:tune-name="tuneName"

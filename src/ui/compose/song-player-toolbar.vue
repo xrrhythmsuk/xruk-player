@@ -62,7 +62,7 @@
 	<div class="bb-song-player-toolbar">
 		<PlayPauseStopButton :player="props.player" />
 		<PlaybackSettingsPicker v-model="state.playbackSettings" tooltip-placement="bottom" />
-
+		
 		<div class="divider"></div>
 
 		<SongPicker v-model="songIdx"/>
