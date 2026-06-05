@@ -50,6 +50,7 @@
 	const pattern = computed(() => getPatternFromState(state.value, props.tuneName, props.patternName)!);
 
 	const playerRef = ref<BeatboxReference>(props.player || createBeatbox(true));
+
 	const playbackSettings = ref<PlaybackSettings>({
 		...normalizePlaybackSettings(state.value.playbackSettings),
 		speed: pattern.value.speed,
@@ -68,13 +69,6 @@
 	const isCustomPattern = computed(() =>
 		 !defaultTunes.getPattern(props.tuneName, props.patternName));
 
-	const mnemonicsAvailable = computed(() =>
-		Object.keys(pattern.value.mnemonics || {}).length > 0
-	);
-
-	const tune = computed(() => {
-		return props.tuneName && state.value.tunes[props.tuneName];
-	});
 	// END XR
 
 	watch([
