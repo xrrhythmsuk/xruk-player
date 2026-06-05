@@ -232,8 +232,8 @@ const config: Config = {
 		custom: () => getI18n().t("config.category-custom"),
 	},
 
-	tuneOfTheYear: 'Ragga',
-	defaultSpeed: 120
+	tuneOfTheYear: 'Core Breaks', // So it's a front page rather than the newest stuff
+	defaultSpeed: 100
 };
 
 // Check some requirements for export so that we don't forget them at some point in the future
