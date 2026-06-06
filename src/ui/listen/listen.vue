@@ -9,6 +9,9 @@
 	import TuneList from "./tune-list.vue";
 	import HybridSidebar from "../utils/hybrid-sidebar.vue";
 	import PatternPlayer from "../pattern-player/pattern-player.vue";
+	import { useI18n } from "../../services/i18n"
+
+	const i18n = useI18n();
 
 	const props = defineProps<{
 		/** null means to forward to the tune of the year */
@@ -51,13 +54,12 @@
 		</HybridSidebar>
 
 		<div class="bb-listen-info" v-if="props.editPattern">
-			<PatternPlayer className="pattern-player" :tuneName="tuneName" :patternName="props.editPattern" :readonly="true">
-				<button type="button" class="btn btn-info" v-if="hasChanged" @click="share()"><fa icon="share"/>{{" "}}{{i18n.t("pattern-player-dialog.share")}}</button>
+			<PatternPlayer class="pattern-player" :tuneName="tuneName||''" :patternName="props.editPattern" :readonly="true">
 			</PatternPlayer>
 		</div>
 
 		<div class="bb-listen-info" v-else>
-			<TuneInfo v-if="tuneName" :tuneName="tuneName" :editPattern="props.editPattern" @onUpdate:editPattern="() => emit('update:editPattern', props.editPattern)" />
+			<TuneInfo v-if="tuneName" :tuneName="tuneName" :editPattern="props.editPattern"/>
 		</div>
 	</div>
 </template>

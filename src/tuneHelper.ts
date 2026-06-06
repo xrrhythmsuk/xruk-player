@@ -1,4 +1,4 @@
-import { LegacyVolumeHack } from "./state/pattern";
+import { LegacyVolumeHack } from "./state/pattern"
 
 export function stretch(from: number, to: number, pattern: string): string {
 	return pattern.split("").concat([""]).join(repeat((to / from) - 1, " "));

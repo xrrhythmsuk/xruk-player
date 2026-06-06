@@ -20,6 +20,7 @@ export const tuneValidator = z.object({
 	descriptionFilename: z.string().optional(),
 	speed: z.number().optional(),
 	exampleSong: exampleSongValidator.optional(),
+	description: z.string().optional()
 }).default(() => ({}));
 
 export function normalizeTune(data?: z.input<typeof tuneValidator>): Tune {

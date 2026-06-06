@@ -14,7 +14,6 @@
 	import vTooltip from "./utils/tooltip";
 	import AbstractPlayer, { PositionData } from "./utils/abstract-player.vue";
 	import { getLocalizedDisplayName, useI18n } from "../services/i18n";
-import { readonly } from "vue";
 
 	export const PatternPlaceholderItem = defineComponent({
 		setup(props, { slots }) {

@@ -10,6 +10,7 @@ import { getI18n } from '../../services/i18n';
 export enum ExportType { WAV = "wav", MP3 = "mp3" };
 
 export type ExportArgs = { type: ExportType; player: Beatbox; filename: string };
+type ExportableBeatbox = Parameters<typeof exportMP3>[0];
 
 export async function download({ type, player, filename }: ExportArgs): Promise<void> {
 	const progress = ref(0);
@@ -29,7 +30,7 @@ export async function download({ type, player, filename }: ExportArgs): Promise<
 
 	try {
 		const exportFunc = type === ExportType.MP3 ? exportMP3 : exportWAV;
-		const blob = await exportFunc(player, {
+		const blob = await exportFunc(player as ExportableBeatbox, {
 			onProgress: (perc) => {
 				progress.value = perc*100;
 			},

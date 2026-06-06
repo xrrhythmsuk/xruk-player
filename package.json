@@ -10,7 +10,7 @@
     "url": "https://github.com/beatboxjs/ror-player.git"
   },
   "scripts": {
-    "build": "vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "clean": "rimraf dist",
     "dev-server": "vite",
     "check-types": "vue-tsc --noEmit",

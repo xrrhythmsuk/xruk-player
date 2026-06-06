@@ -11,6 +11,7 @@
 	import defaultTunes from "../../defaultTunes";
 	import PlayPauseStopButton from "../play-pause-stop-button.vue";
 	import InstrumentButtons from "../instrument/instrument-buttons.vue";
+	import vTooltip from "../utils/tooltip";
 
 	const props = withDefaults(defineProps<{
 		tuneName: string;
@@ -61,11 +62,10 @@
 		<div class="divider"></div>
 
 		<button @click="() => playbackSettings.loop = !playbackSettings.loop" 
-			class="btn btn-outline-secondary" :class="{active: playbackSettings.loop}" v-b-tooltip.hover="'Loop'"><fa icon="repeat"/></button>
+			class="btn btn-outline-secondary" :class="{active: playbackSettings.loop}" v-tooltip="'Loop'"><fa icon="repeat"/></button>
 		<button @click="() => showMnemonics = !showMnemonics" 
 			class="btn btn-outline-secondary" :class="{active: showMnemonics}"
-			v-b-tooltip.hover="'Toggle mnemonics'" :disabled="!mnemonicsAvailable"><fa icon="comment"/></button>
-
+			v-tooltip="'Toggle mnemonics'" :disabled="!mnemonicsAvailable"><fa icon="comment"/></button>
 		<template v-if="!readonly">
 			<div class="btn-group">
 				<PatternLengthPicker

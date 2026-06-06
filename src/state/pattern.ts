@@ -55,6 +55,8 @@ const patternPropertiesValidator = z.object({
 	volumeHack: instrumentVolumeHackValidator.optional()
 });
 
+export type LegacyVolumeHack = z.infer<typeof allVolumeHackValidator>;
+
 /**
  * A pattern is a collection of strokes that each instruments plays in a certain order.
  */

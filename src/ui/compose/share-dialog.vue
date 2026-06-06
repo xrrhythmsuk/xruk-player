@@ -188,7 +188,7 @@
 						<div v-else-if="activeTab === 1">
 							<textarea readonly class="form-control" rows="10" :value="rawStringCompressed"></textarea>
 							<p class="mt-4">
-							Download a file to keep a copies or send as an attachment to others. Files can be opened using <nobr><fa icon="file-import" /> <strong>Open</strong></nobr> in the Tools menu.
+							Download a file to keep a copies or send as an attachment to others. Files can be opened using <fa icon="file-import" />&nbsp;<strong>Open</strong> in the Tools menu.
 							</p>
 						</div>
 
@@ -249,7 +249,7 @@
 						</table>
 					</div>
 
-					<div slot="modal-footer">
+					<div>
 						<template v-if="activeTab === 0">
 							<button v-if="canShare" @click="share" class="btn btn-primary"><fa icon="share-from-square" /> Share</button>
 							<button @click="copyLink" class="btn btn-primary"><fa icon="link" /> Copy link</button>

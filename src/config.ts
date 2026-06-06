@@ -212,7 +212,7 @@ const config: Config = {
 		breaks: () => getI18n().t("config.category-breaks"),
 		common: () => getI18n().t("config.category-common"),
 		core: () => getI18n().t("config.category-core"),
-		//uncommon: () => getI18n().t("config.category-uncommon"),
+		uncommon: () => getI18n().t("config.category-uncommon"),
 		new: () => getI18n().t("config.category-new"),
 		proposed: () => getI18n().t("config.category-proposed"),
 		custom: () => getI18n().t("config.category-custom"),
@@ -220,8 +220,8 @@ const config: Config = {
 		easy: () => getI18n().t("config.category-easy"),
 		medium: () => getI18n().t("config.category-medium"),
 		tricky: () => getI18n().t("config.category-tricky"),
-		//western: () => getI18n().t("config.category-western"),
-		//"cultural-appropriation": () => getI18n().t("config.category-cultural-appropriation")
+		western: () => getI18n().t("config.category-western"),
+		"cultural-appropriation": () => getI18n().t("config.category-cultural-appropriation")
 	},
 
 	overviewCategories: {

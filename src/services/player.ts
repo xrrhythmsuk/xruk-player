@@ -139,7 +139,7 @@ export function songToBeatbox(song: SongParts, state: State, playbackSettings: P
 	let ret: RawPattern = new Array(maxUpbeat + length*config.playTime*4);
 	let upbeat = 0;
 
-	function insertPattern(idx: number, pattern: Pattern, instrumentKey: Instrument, patternLength: number, whistle: Metronome) {
+	function insertPattern(idx: number, pattern: Pattern, instrumentKey: Instrument, patternLength: number, whistle: Whistle) {
 		let patternBeatbox = patternToBeatbox(pattern, normalizePlaybackSettings({
 			headphones: [ instrumentKey ],
 			volume: playbackSettings.volume,
