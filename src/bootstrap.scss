@@ -168,6 +168,15 @@ $theme-colors-dark: (
 			@include gradient-y($start-color: $value, $end-color: darken($value, 12%));
 		}
 	}
+
+	body {
+		--green: #{darken($green, 22%)};
+		--primary: #{darken($primary, 22%)};
+		--secondary: #{darken($secondary, 22%)};
+		--blue: #{darken($blue, 22%)};
+		--orange: #{darken($orange, 22%)};
+		--cyan: #{darken($cyan, 22%)};
+	}
 }
 
 h1 {

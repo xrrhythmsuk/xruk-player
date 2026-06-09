@@ -45,6 +45,7 @@
 				<li><a class="dropdown-item" href="?" :download="downloadFilename"><fa icon="download" fixed-width/>{{" "}}{{i18n.t("help.download", { appName: config.appName })}}</a></li>
 				<li><a class="dropdown-item" href="javascript:" @click="showAppModal = true"><fa icon="mobile-alt" fixed-width/>{{" "}}{{i18n.t("help.app", { appName: config.appName })}}</a></li>
 				<li><a class="dropdown-item" href="https://github.com/xrrhythmsuk/xruk-player" target="_blank"><fa icon="code" fixed-width/>{{" "}}{{i18n.t("help.source-code")}}</a></li>
+				<!-- 
 				<li><hr class="dropdown-divider"></li>
 				<li><h6 class="dropdown-header">{{i18n.t("help.language")}}</h6></li>
 				<li class="bb-language-picker">
@@ -56,7 +57,8 @@
 						href="javascript:"
 						@click.stop="selectLanguage(lang)"
 					>{{lang}}</a>
-				</li>
+				</li> 
+				-->
 				<li><hr class="dropdown-divider"></li>
 				<li><h6 class="dropdown-header">{{i18n.t("help.colour-mode")}}</h6></li>
 				<li class="bb-colour-mode-picker">

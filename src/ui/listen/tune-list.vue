@@ -82,7 +82,7 @@ const scrollToTune = () => {
 	background: var(--green);
 
 	a {
-		color: black;
+		color: var(--text);
 	}
 
 	.category-header { 
@@ -95,10 +95,10 @@ const scrollToTune = () => {
 		position: relative;
 
 		.nav-item.active {
-			background-color: white;
+			background-color: var(--bs-body-bg);
 
 			>a {
-				color: black;
+				color: var(--text);
 			}
 		}
 	}

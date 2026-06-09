@@ -104,10 +104,6 @@ watch(() => route.value?.tab, () => {
 		left: 0.5em;
 	}
 
-	.bb-overview-help * {
-		color:black;
-	}
-
 	.header-nav {
 		display: flex;
 		align-items: center;
@@ -128,7 +124,7 @@ watch(() => route.value?.tab, () => {
 		}
 
 		a {
-			color: black;
+			color: var(--text);
 		}
 
 		font-weight:bold;

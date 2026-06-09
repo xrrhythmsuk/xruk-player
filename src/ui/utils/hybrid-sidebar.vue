@@ -89,7 +89,6 @@
 	.bb-hybrid-sidebar {
 		width: max(20vw, 13em);
 		background: var(--bs-body-bg);
-		border-right: 1px solid var(--bs-border-color);
 		display: flex;
 		flex-direction: column;
 
