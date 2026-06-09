@@ -5,6 +5,7 @@ export default {
     displayName: "Core Breaks and Signs",
     categories: ["breaks", "onesurdo", "easy", "medium", "tricky"],
     descriptionFilename: "core-breaks",
+    speed: 100,
     sheet,
     video: undefined,
     patterns: {

@@ -196,6 +196,7 @@ export function songToBeatbox(song: SongParts, state: State, playbackSettings: P
 export function stopAllPlayers(): void {
 	for(const id of Object.keys(players) as unknown as number[]) {
 		void players[id].stop();
+		players[id].setPosition(0);
 	}
 }
 

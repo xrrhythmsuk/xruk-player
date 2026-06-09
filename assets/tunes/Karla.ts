@@ -2,6 +2,7 @@ import sheet from "./karla.pdf?url"
 export default {
     categories: ["core", "easy"],
     descriptionFilename: "karla",
+    speed: 100,
     sheet,
     video: undefined,
     patterns: {

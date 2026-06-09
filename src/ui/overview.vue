@@ -105,7 +105,7 @@ watch(() => route.value?.tab, () => {
 	}
 
 	.bb-overview-help * {
-		color:black;
+		color: var(--bs-body-color);
 	}
 
 	.header-nav {
@@ -128,7 +128,7 @@ watch(() => route.value?.tab, () => {
 		}
 
 		a {
-			color: black;
+			color: var(--bs-body-color);
 		}
 
 		font-weight:bold;

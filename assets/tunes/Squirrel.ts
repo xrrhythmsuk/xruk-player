@@ -2,6 +2,7 @@ import sheet from "./squirrel.pdf?url"
 export default {
     categories: ["common", "medium"],
     descriptionFilename: "squirrel",
+    speed: 100,
     sheet,
     video: "https://www.youtube.com/embed/VQBvrEJkiWk",
     patterns: {
