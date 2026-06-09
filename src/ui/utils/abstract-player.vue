@@ -88,6 +88,7 @@
 	};
 
 	onBeforeUnmount(() => {
+		playerRef.value && (playerRef.value.playing = false)
 		if (playerInst.value) {
 			// Unregister event handlers in case we used an existing player
 			playerInst.value.off("play", handlePlay);

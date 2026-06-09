@@ -2,6 +2,7 @@ import sheet from "./hedgehog.pdf?url"
 export default {
     categories: ["core", "easy"],
     descriptionFilename: "hedgehog",
+    speed: 100,
     sheet,
     patterns: {
         Tune: {

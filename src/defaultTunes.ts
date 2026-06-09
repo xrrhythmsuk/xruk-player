@@ -52,6 +52,8 @@ for (const i in rawTunes) {
 		const newPattern = clone(pattern) as any as Pattern;
 		if (!newPattern.time && tune.time)
 			newPattern.time = tune.time;
+		if (!newPattern.speed && tune.speed)
+			newPattern.speed = tune.speed;
 
 		for (const k of config.instrumentKeys) {
 			const thisPattern = pattern[k] = pattern[k] || "";

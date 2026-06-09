@@ -3,6 +3,7 @@ import sheet from "./custard.pdf?url"
 export default {
     categories: ["common", "medium"],
     descriptionFilename: "custard",
+    speed: 100,
     sheet,
     patterns: {
         Tune: {
