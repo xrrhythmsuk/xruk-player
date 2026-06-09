@@ -50,6 +50,7 @@
 	const pattern = computed(() => getPatternFromState(state.value, props.tuneName, props.patternName)!);
 
 	const playerRef = ref<BeatboxReference>(props.player || createBeatbox(true));
+
 	const playbackSettings = ref<PlaybackSettings>({
 		...normalizePlaybackSettings(state.value.playbackSettings),
 		speed: pattern.value.speed,
@@ -68,13 +69,6 @@
 	const isCustomPattern = computed(() =>
 		 !defaultTunes.getPattern(props.tuneName, props.patternName));
 
-	const mnemonicsAvailable = computed(() =>
-		Object.keys(pattern.value.mnemonics || {}).length > 0
-	);
-
-	const tune = computed(() => {
-		return props.tuneName && state.value.tunes[props.tuneName];
-	});
 	// END XR
 
 	watch([
@@ -429,7 +423,7 @@
 				border-bottom: 1px solid var(--bb-strong-border-color);
 				padding-bottom: .5ex;
 				background-color: var(--blue);
-				color:white;
+				color: var(--bs-body-bg);
 				font-family: var(--heading-font);
 				padding:2px 4px 0 0;
 			}
@@ -441,7 +435,7 @@
 
 			th { 
 				font-family: var(--heading-font);
-					background-color: white;
+				background-color: var(--bs-body-bg);
 				z-index: 1;
 			}
 
