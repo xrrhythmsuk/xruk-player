@@ -2,7 +2,7 @@
 	import Beatbox from 'beatbox.js';
 	import { computed, onBeforeUnmount, ref, watch, watchSyncEffect } from 'vue';
 	import config from '../../config';
-	import { BeatboxReference, createBeatbox, getPlayerById, RawPatternWithUpbeat } from '../../services/player';
+	import { BeatboxReference, createBeatbox, getPlayerById, getPlayerReferenceById, RawPatternWithUpbeat } from '../../services/player';
 	import { scrollToElement } from '../../services/utils';
 	import { PlaybackSettings } from '../../state/playbackSettings';
 
@@ -13,6 +13,7 @@
 	}
 
 	const props = defineProps<{
+		identifier: string;
 		player?: BeatboxReference;
 		rawPattern: RawPatternWithUpbeat;
 		playbackSettings: PlaybackSettings;
@@ -26,7 +27,7 @@
 	const positionMarkerRef = ref<HTMLElement>();
 
 	const playerRef = ref<BeatboxReference>();
-	const playerInst = computed(() => playerRef.value && getPlayerById(playerRef.value.id));
+	const playerInst = computed(() => playerRef.value && getPlayerById(playerRef.value.key));
 
 	const updatePosition = (scroll: boolean, force = false) => {
 		const player = getOrCreatePlayer();
@@ -58,10 +59,8 @@
 		updatePosition(false);
 	};
 
-	watch(() => props.player, () => {
-		if (props.player) {
-			playerRef.value = props.player;
-		}
+	watch([() => props.player, () => props.identifier], () => {
+		playerRef.value = props.player || getPlayerReferenceById(props.identifier) || undefined;
 	}, { immediate: true });
 
 	watchSyncEffect((onCleanup) => {
@@ -83,7 +82,7 @@
 
 	const getOrCreatePlayer = (): Beatbox => {
 		if (!playerRef.value) {
-			playerRef.value = createBeatbox(false);
+			playerRef.value = createBeatbox(props.identifier, false);
 		}
 		return playerInst.value!;
 	};

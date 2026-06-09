@@ -49,7 +49,7 @@
 
 	const pattern = computed(() => getPatternFromState(state.value, props.tuneName, props.patternName)!);
 
-	const playerRef = ref<BeatboxReference>(props.player || createBeatbox(true));
+	const playerRef = ref<BeatboxReference>(props.player || createBeatbox(`${props.tuneName}+${props.patternName}`, true));
 	const playbackSettings = ref<PlaybackSettings>({
 		...normalizePlaybackSettings(state.value.playbackSettings),
 		speed: pattern.value.speed,
@@ -369,6 +369,7 @@
 			</table>
 
 			<AbstractPlayer
+				:identifier="`${tuneName}+${patternName}`"
 				:player="playerRef"
 				:rawPattern="rawPattern"
 				:playbackSettings="playbackSettings"

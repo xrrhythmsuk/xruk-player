@@ -9,7 +9,7 @@
 
 	const i18n = useI18n();
 
-	const player = computed(() => getPlayerById(props.player.id));
+	const player = computed(() => getPlayerById(props.player.key));
 
 	const playPause = () => {
 		if(!player.value.playing) {

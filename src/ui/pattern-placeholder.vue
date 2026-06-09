@@ -174,6 +174,7 @@
 		</ul>
 
 		<AbstractPlayer
+			:identifier="`${tuneName}+${patternName}`"
 			:rawPattern="rawPattern"
 			:playbackSettings="playerPlaybackSettings"
 			:getLeft="getPositionMarkerLeft"

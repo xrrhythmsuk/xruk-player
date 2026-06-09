@@ -104,6 +104,7 @@
 			</div>
 
 			<AbstractPlayer
+				:identifier="`${props.tuneName}-example-song`"
 				:rawPattern="rawPattern"
 				:playbackSettings="playbackSettings"
 				:getLeft="getPositionMarkerLeft"
