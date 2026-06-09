@@ -84,7 +84,7 @@ function pathToRoute(path: string): Route {
 	};
 }
 
-function routeToPath(route: Route): string {
+function routeToMatch(route: Route) {
 	let match: { name: keyof typeof ROUTES; params?: Partial<Record<string, string>> } | undefined
 	switch (route?.tab) {
 		case "listen":
@@ -110,7 +110,11 @@ function routeToPath(route: Route): string {
 	if (!match) {
 		match = { name: "root" }
 	}
+	return match
+}
 
+function routeToPath(route: Route): string {
+	const match = routeToMatch(route)
 	return ROUTES_COMPILE[match.name](match.params)
 }
 
@@ -130,6 +134,13 @@ export function useRouter(path: Ref<string>): Ref<Route> {
 	watch(route, () => {
 		path.value = routeToPath(route.value)
 	}, { immediate: true, deep: true })
+
+	watch(route, () => {
+		const hotjar = (window as Window & { hj?: (...args: [string, string]) => void }).hj
+		if (typeof hotjar === "function") {
+			hotjar("stateChange", routeToMatch(route.value).name)
+		}
+	}, { deep: true, immediate: true })
 
 	return route
 }
