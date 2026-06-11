@@ -12,6 +12,7 @@
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
     "clean": "rimraf dist",
+    "dev": "vite",
     "dev-server": "vite",
     "check-types": "vue-tsc --noEmit",
     "lint": "eslint 'src/**/*.{ts,vue}'",

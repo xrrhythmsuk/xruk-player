@@ -46,13 +46,13 @@ watch(() => route.value?.tab, () => {
 
 		<div class="header-nav">
 
-			<span class="bb-sidebar-toggle-container" ref="sidebarToggleContainer"></span>
+			<span class="toggle bb-sidebar-toggle-container" ref="sidebarToggleContainer"></span>
 
 			<a class="logo" href="https://xrrhythms.uk">
 				<img src="/XRR-logo.webp" alt="XR Rhythms UK">
 			</a>
 			<a class="heading" href="https://xrrhythms.uk">
-				<img src="/XRR-header.webp" class="d-none d-md-inline">
+				<img src="/XRR-header.webp" class="d-none d-lg-inline">
 			</a>
 
 			<div class="nav nav-tabs d-flex flex-row tab-gap flex-wrap">
@@ -90,9 +90,13 @@ watch(() => route.value?.tab, () => {
 </template>
 
 <style lang="scss">
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
 .bb-overview {
 	--gap-size: 8px;
-	@media (max-width: 500px) {
+	@include media-breakpoint-down(md) {
 		--gap-size: 0px;
 	}
 	display: flex;
@@ -115,10 +119,39 @@ watch(() => route.value?.tab, () => {
 		padding: 1.5em 1em;
 		gap: var(--gap-size);
 
-		.logo img {
-			max-height: 80px;
-		}
+		@include media-breakpoint-down(md) {
+			display: grid;
+			padding-bottom: 0;
+			grid-template-columns: 3rem 1fr 3rem;
+			.toggle {
+				grid-column: 1 / 1;
+				justify-self: start;
+			}
+			.logo {
+				grid-column: 2 / 2;
+				justify-self: center;
 
+			}
+			.nav {
+				grid-row: 2 / 2;
+				grid-column: 1 / 4;
+				justify-self: center;
+				margin: 1rem -1rem 0 -1rem;
+				.nav-item a { 
+					padding-bottom: 1em;
+				}
+			}
+			.bb-overview-help {
+				grid-column: 3 / 3;
+				grid-row: 1 / 1;
+				justify-self: end;
+			}
+
+			.logo img {
+				max-height: 80px;
+			}
+
+		}
 		.heading {
 			flex-grow: 1;
 
@@ -135,14 +168,6 @@ watch(() => route.value?.tab, () => {
 
 		.nav-tabs {
 			border:none;
-		}
-		.tab {
-			.router-link-active.with-child-links,
-			.router-link-exact-active,
-			&:hover a {
-				border-color: black;
-				text-decoration: none;
-			}
 		}
 	}
 
