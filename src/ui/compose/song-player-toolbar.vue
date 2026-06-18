@@ -53,7 +53,7 @@
 		void download({
 			type,
 			filename: getSongName(state.value, songIdx.value)!,
-			player: getPlayerById(props.player.id)
+			player: getPlayerById(props.player.key)
 		});
 	};
 </script>

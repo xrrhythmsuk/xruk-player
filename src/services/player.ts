@@ -10,7 +10,7 @@ import { decode } from "base64-arraybuffer";
 import { reactive } from "vue";
 
 export interface BeatboxReference {
-	id: number;
+	key: string;
 	playing: boolean;
 	customPosition: boolean;
 }
@@ -31,10 +31,12 @@ for(const i in audioFiles) {
 	void Beatbox.registerInstrument(`${m[1]}_${String.fromCodePoint(parseInt(m[2], 16))}`, decompressed.buffer as ArrayBuffer);
 }
 
-let currentNumber = 0;
-
 const players: {
-	[id: number]: Beatbox;
+	[id: string]: BeatboxReference;
+} = { };
+
+const playerInstances: {
+	[id: string]: Beatbox;
 } = { };
 
 declare module "beatbox.js" {
@@ -50,9 +52,13 @@ class CustomBeatbox extends Beatbox {
 	}
 }
 
-export function createBeatbox(repeat: boolean): BeatboxReference {
+export function createBeatbox(key: string, repeat: boolean): BeatboxReference {
+	if (players[key]) {
+		return players[key];
+	}
+
 	const reference: BeatboxReference = reactive({
-		id: currentNumber++,
+		key,
 		playing: false,
 		customPosition: false
 	});
@@ -69,7 +75,8 @@ export function createBeatbox(repeat: boolean): BeatboxReference {
 	player.on("setPosition", () => {
 		reference.customPosition = reference.playing || player._position != 0
 	});
-	players[reference.id] = player;
+	players[key] = reference;
+	playerInstances[key] = player;
 
 	return reference;
 }
@@ -194,12 +201,16 @@ export function songToBeatbox(song: SongParts, state: State, playbackSettings: P
 }
 
 export function stopAllPlayers(): void {
-	for(const id of Object.keys(players) as unknown as number[]) {
-		void players[id].stop();
-		players[id].setPosition(0);
+	for(const id of Object.keys(playerInstances) as unknown as string[]) {
+		playerInstances[id].stop();
+		playerInstances[id].setPosition(0);
 	}
 }
 
-export function getPlayerById(id: number): Beatbox {
+export function getPlayerById(id: string): Beatbox {
+	return playerInstances[id] || null;
+}
+
+export function getPlayerReferenceById(id: string): BeatboxReference {
 	return players[id] || null;
 }

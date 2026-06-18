@@ -43,7 +43,7 @@
 		}
 	});
 
-	const playerRef = ref(createBeatbox(false));
+	const playerRef = ref(createBeatbox(`song-player-${songIdx.value}`, false));
 	const resizing = ref<PatternResizeDragData>();
 	const dragOver = ref<DragOver>();
 	const dragOverCount = ref(0);
@@ -415,6 +415,7 @@
 			</div></div>
 
 			<AbstractPlayer
+				:identifier="`song-player-${songIdx}`"
 				:player="playerRef"
 				:rawPattern="rawPattern"
 				:playbackSettings="state.playbackSettings"
