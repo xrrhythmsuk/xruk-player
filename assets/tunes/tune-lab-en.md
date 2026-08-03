@@ -42,10 +42,10 @@ Difficulty: Hard
 
 A standout from the 2025 band camp that spent quite a bit of time outside of the lab! Still evolving though so keep checking back
 
-* [**Break 1**](/#/listen/Tune%20Lab/Forest%20Thump,%20Break%201) is everyone playing the same rhythm and pops up at the end of the other breaks
-* [**Break 2**](/#/listen/Tune%20Lab/Forest%20Thump,%20Break%202) is led by surdos
-* [**Break 3**](/#/listen/Tune%20Lab/Forest%20Thump,%20Break%203) gives each instrument group a moment in the spotlight
-* [**Break 5**](/#/listen/Tune%20Lab/Forest%20Thump,%20Break%205) _(Hand with fingers spread)_ has the repi soloing
+* [**Break 1**](/#/listen/Tune%20Lab/Forest%20Thump%20(Draft)%2C%20Break%201) is everyone playing the same rhythm and pops up at the end of the other breaks
+* [**Break 2**](/#/listen/Tune%20Lab/Forest%20Thump%20(Draft)%2C%20Break%202) is led by surdos
+* [**Break 3**](/#/listen/Tune%20Lab/Forest%20Thump%20(Draft)%2C%20Break%203) gives each instrument group a moment in the spotlight
+* [**Break 5**](/#/listen/Tune%20Lab/Forest%20Thump%20(Draft)%2C%20Break%205) _(Hand with fingers spread)_ has the repi soloing
 
 ## London Drum Break 2026
 
