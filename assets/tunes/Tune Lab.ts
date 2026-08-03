@@ -1,10 +1,11 @@
 import {  repeat, crescendo } from "../../src/tuneHelper";
+import sheet from "./tune-lab.pdf?url"
 
 export default {
 	displayName: "... from the Tune Lab",
     categories: ["new", "tricky", "proposed"],
     speed: 100,
-    sheet: undefined,
+    sheet,
     descriptionFilename: "tune-lab",
     video: undefined,
     patterns: {
