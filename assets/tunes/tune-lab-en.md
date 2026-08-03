@@ -86,6 +86,7 @@ The tams settled on _CCTV, bin it!_ as a mnemonic for their rather tricky line.
 
 ### Inverted breaks
 Sign: *Usual sign but upside down*
+
 Some bands had been playing with things like Inverted Clave ([RoR Player](https://player.rhythms-of-resistance.org/#/listen/General%20Breaks/Clave%20Inverted)) and Inverted Progressive Karla (one example: [RoR Player](https://player.rhythms-of-resistance.org/#/listen/General%20Breaks/Progressive%20Inverted)).  
 
 People often find them disorientating, though, and for things like inverting Progressive Karla there are different ways you could sign or play it (do you include the silence? Does it go at the front or the end?) so even more than usual, it’s good to physically act them out very clearly if you’re whistling them for a big/mixed band.
