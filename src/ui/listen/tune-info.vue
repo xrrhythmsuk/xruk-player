@@ -113,8 +113,7 @@
 
 		<p v-if="tune.sheet"><a :href="tune.sheet" target="_blank"><strong>Tune sheet with mnemonics (PDF)</strong></a></p>
 		
-		<br/>
-		
+		<h2>About</h2>
 		<div v-html="tuneDescriptionHtml"></div>
 
 		<div v-if="tune.video">
