@@ -75,16 +75,6 @@
 	<div class="bb-tune-info" v-if="tune">
 		<h1>{{getLocalizedDisplayName(tune.displayName || tuneName)}}</h1>
 
-		<p>
-			<em>
-				<T k="tune-info.notation-info">
-					<template #pen>
-						<fa icon="pen"></fa>
-					</template>
-				</T>
-			</em>
-		</p>
-
 
 		<InstrumentButtons v-model:playbackSettings="playbackSettings" class="mb-3"/>
 
@@ -99,6 +89,14 @@
 			:settings="playbackSettings"
 		/>
 
+		<p>
+			<em>
+				<T k="tune-info.notation-info">
+				</T>
+			</em>
+		</p>
+
+		
 		<PatternPlaceholder
 			v-for="(pattern, patternName) in tune.patterns"
 			:tune-name="tuneName"
@@ -114,6 +112,8 @@
 		</PatternPlaceholder>
 
 		<p v-if="tune.sheet"><a :href="tune.sheet" target="_blank"><strong>Tune sheet with mnemonics (PDF)</strong></a></p>
+		
+		<br/>
 		
 		<div v-html="tuneDescriptionHtml"></div>
 
