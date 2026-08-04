@@ -177,7 +177,7 @@
 	},
 	"tune-info": {
 		"notation": "Notation",
-		"notation-info": "Click on the {{pen}} on the parts below to see the notes.",
+		"notation-info": "Tap on the pattern names below below to see the notes.",
 		"tune-sheet-pdf": "Tune sheet (PDF)",
 		"video": "Video",
 		"sounds": "Sounds",
