@@ -62,7 +62,7 @@ These come from the tune the band is currently playing. Not every tune has all o
 
 &nbsp;
 
-**Form rows** *Draw air square* (Don’t wait for whistle in)
+[**Form rows**](https://xrrhythms.uk/formation-tips/) *Draw air square* (Don’t wait for whistle in)
 
 **Chant** *Hands waft from around mouth*
 
