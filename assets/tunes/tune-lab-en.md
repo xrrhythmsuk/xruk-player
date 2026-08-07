@@ -11,7 +11,7 @@ And if you’re more experienced and feel like you’re getting bored of playing
 ## Band Camp 2025
 
 ### [Angel](/#/listen/Tune%20Lab/Angel)
-Sign: *Finger down, draw a halo around your head*  
+Sign: *Finger down, draw a halo above your head*  
 Difficulty: Easy
 
 An old Barking Bateria/Rhythms of Resistance tune that has survived on the London samba-fusion scene, where it’s still called Voodoo. We changed the name for cultural sensitivity and because it matches the sign. A [different version](https://player.rhythms-of-resistance.org/#/listen/Voodoo/) with a more involved low surdo line has also ended up on the RoR Player, though apparently it doesn’t get played.
@@ -22,12 +22,12 @@ Relatively straightforward (our agogô part is the same as for Afoxé) and in fa
 * [**Break 2**](/#/listen/Tune%20Lab/Angel,%20Break%202) is a short surdo break
 
 ### [Pancake Break](/#/listen/Tune%20Lab/Pancake%20Break)
-Sign: *Flip a pancake with both hands in front of your face*
+Sign: *Flip a pancake with both hands*
 
 A fun flipping line that works particularly well for repi
 
 ### [Whoopi Break](/#/listen/Tune%20Lab/Whoopi%20Break)
-Sign: *Clap prayer hands together in front of you*
+Sign: *Clap prayer hands together*
 
 Get tams and friends clapping along like a choir in Sister Act
 
@@ -42,10 +42,10 @@ Difficulty: Hard
 
 A standout from the 2025 band camp that spent quite a bit of time outside of the lab! Still evolving though so keep checking back
 
-* [**Break 1**](/#/listen/Tune%20Lab/Forest%20Thump,%20Break%201) is everyone playing the same rhythm and pops up at the end of the other breaks
-* [**Break 2**](/#/listen/Tune%20Lab/Forest%20Thump,%20Break%202) is led by surdos
-* [**Break 3**](/#/listen/Tune%20Lab/Forest%20Thump,%20Break%203) gives each instrument group a moment in the spotlight
-* [**Break 5**](/#/listen/Tune%20Lab/Forest%20Thump,%20Break%205) _(Hand with fingers spread)_ has the repi soloing
+* [**Break 1**](/#/listen/Tune%20Lab/Forest%20Thump%20(Draft)%2C%20Break%201) is everyone playing the same rhythm and pops up at the end of the other breaks
+* [**Break 2**](/#/listen/Tune%20Lab/Forest%20Thump%20(Draft)%2C%20Break%202) is led by surdos
+* [**Break 3**](/#/listen/Tune%20Lab/Forest%20Thump%20(Draft)%2C%20Break%203) gives each instrument group a moment in the spotlight
+* [**Break 5**](/#/listen/Tune%20Lab/Forest%20Thump%20(Draft)%2C%20Break%205) _(Hand with fingers spread)_ has the repi soloing
 
 ## London Drum Break 2026
 
@@ -62,18 +62,18 @@ As the name suggests the surdos and snares/repis swing backwards and forwards am
 * The [**Call Break**](/#/listen/Tune%20Lab/Nova%20Balanca%20Call) is a rarity in being both very short and led by snares!
 
 ### [Clock Hands Break](/#/listen/Tune%20Lab/Clock%20Hands)
-Sign: *Arms point straight out ahead, one angled upwards and one downwards (like an analogue clock showing 2:20)*
+Sign: *Arms out ahead, one angled upwards and one downwards (like 2:20 on an analogue clock)*
 
 A combination of Boom and Broccoli, putting a hit on beats 1 and 4.
 
 ### More Bhangra-fied general breaks
 Sign: *Usual sign followed by Bhangra sign, or usual sign snaking up*
 
-What it says on the tin! See also using call breaks like the Circle Break to slow down and swing your tunes.  
+What it says on the tin! See also using call breaks like the [Circle Break](/#/listen/Samba%20Reggae/Circle%20Break%20Reggae%20Samba) to slow down and swing your tunes.  
 
 If due to technical limitations these sound a bit slow, try bumping the speed up to 120 bpm.
 
-* [Knock On The Door (Bhangra)](/#/listen/Tune%20Lab/Knock%20On%20The%Door%20(Bhangra))
+* [Knock On The Door (Bhangra)](/#/listen/Tune%20Lab/Knock%20On%20The%20Door%20(Bhangra))
 * [Hardcore Break (Bhangra)](/#/listen/Tune%20Lab/Hardcore%20Break%20(Bhangra))
 
 ### [Antitek](https://player.rhythms-of-resistance.org/#/listen/Antitek/)
@@ -85,6 +85,7 @@ We looked at this tune directly from the RoR Player so have a look over there!
 The tams settled on _CCTV, bin it!_ as a mnemonic for their rather tricky line.
 
 ### Inverted breaks
+Sign: *Usual sign but upside down*
 
 Some bands had been playing with things like Inverted Clave ([RoR Player](https://player.rhythms-of-resistance.org/#/listen/General%20Breaks/Clave%20Inverted)) and Inverted Progressive Karla (one example: [RoR Player](https://player.rhythms-of-resistance.org/#/listen/General%20Breaks/Progressive%20Inverted)).  
 

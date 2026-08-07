@@ -82,7 +82,8 @@ export default {
             sn: '@re',
             volumeHack: crescendo(17)
         },
-        'e.g. everybody Conga/Little Cat': {
+        'Everybody Conga 2': {
+            displayName: "e.g. everybody Conga/Little Cat",
             loop: true,
             upbeat: 2,
             ls: "  X     X X   X X X     X X   X X X   X   X   X   X   X   X   X   ",

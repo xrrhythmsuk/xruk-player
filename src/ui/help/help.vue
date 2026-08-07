@@ -40,7 +40,7 @@
 				<fa icon="info-circle"/>
 			</button>
 			<ul class="dropdown-menu dropdown-menu-end">
-				<li><a class="dropdown-item" href="https://player-docs.rhythms-of-resistance.org/" target="_blank"><fa icon="question-circle" fixed-width/>{{" "}}{{i18n.t("help.user-manual")}}</a></li>
+				<!-- <li><a class="dropdown-item" href="https://player-docs.rhythms-of-resistance.org/" target="_blank"><fa icon="question-circle" fixed-width/>{{" "}}{{i18n.t("help.user-manual")}}</a></li> -->
 				<li><a class="dropdown-item" href="https://github.com/xrrhythmsuk/xruk-player/issues" target="_blank"><fa icon="exclamation-circle" fixed-width/>{{" "}}{{i18n.t("help.report-problem")}}</a></li>
 				<li><a class="dropdown-item" href="?" :download="downloadFilename"><fa icon="download" fixed-width/>{{" "}}{{i18n.t("help.download", { appName: config.appName })}}</a></li>
 				<li><a class="dropdown-item" href="javascript:" @click="showAppModal = true"><fa icon="mobile-alt" fixed-width/>{{" "}}{{i18n.t("help.app", { appName: config.appName })}}</a></li>
