@@ -198,8 +198,11 @@
 	};
 
 	const onStrokePrevNext = (previous: boolean = false) => {
-		if(!currentStrokeDropdown.value || previous && currentStrokeDropdown.value.i == 0 || !previous && currentStrokeDropdown.value.i >= pattern.value.length*pattern.value.time - 1)
-			return currentStrokeDropdown.value = undefined;
+		if(!currentStrokeDropdown.value)
+			return;
+
+		if(previous && currentStrokeDropdown.value.i == 0 || !previous && currentStrokeDropdown.value.i >= pattern.value.length*pattern.value.time - 1)
+			return;
 
 		openStrokeDropdown({
 			instr: currentStrokeDropdown.value.instr,
@@ -218,6 +221,13 @@
 		currentStrokeDropdown.value = undefined;
 	};
 
+	const scrollCurrentStrokeIntoView = () => {
+		const currentStroke = containerRef.value?.querySelector<HTMLElement>(".stroke.current");
+		if (currentStroke) {
+			currentStroke.scrollIntoView({ block: "nearest", inline: "nearest" });
+		}
+	};
+
 	watch(currentStrokeDropdown, () => {
 		if (strokeDropdownPopover.value) {
 			strokeDropdownPopover.value.dispose();
@@ -226,44 +236,12 @@
 
 		void nextTick(() => {
 			if (currentStrokeDropdown.value) {
+				scrollCurrentStrokeIntoView();
 				strokeDropdownPopover.value = new CustomPopover(`#bb-pattern-player-stroke-${currentStrokeDropdown.value.instr}-${currentStrokeDropdown.value.i}`, { content: strokeDropdownRef.value!, placement: 'bottom' });
 				strokeDropdownPopover.value.show();
 			}
 		});
 	}, { immediate: true });
-
-	const handleKeyDown= (e: KeyboardEvent) => {
-		if(e.ctrlKey || e.altKey || e.metaKey)
-			return;
-
-		let handled = true;
-		switch(e.key) {
-			case "Backspace":
-				onStrokeChange(" ", true)
-				break
-			case "Delete":
-				onStrokeChange(" ", false)
-				break				
-			case  "ArrowLeft":
-				onStrokePrevNext(true)
-				break
-			case "ArrowRight":
-				onStrokePrevNext()
-				break
-			case "ArrowUp":
-				changeInstr(-1)
-				break
-			case "ArrowDown":
-				changeInstr(1)
-				break
-			case "Tab":
-				onStrokePrevNext(e.shiftKey)
-				break
-			default: handled = false
-		}
-
-		if(handled) e.preventDefault()
-	}
 
 	const changeInstr = (offset: number) => {
 		if(!currentStrokeDropdown.value) return
@@ -393,7 +371,7 @@
 			<div v-if="currentStrokeDropdown" class="popover bs-popover-auto fade" ref="strokeDropdownRef">
 				<div class="popover-arrow"></div>
 				<div class="popover-body">
-					<StrokeDropdown :instrument="currentStrokeDropdown.instr" :model-value="pattern[currentStrokeDropdown.instr][currentStrokeDropdown.i] || ' '" @change="onStrokeChange($event, false)" @change-prev="onStrokeChange($event, true)" @prev="onStrokePrevNext(true)" @next="onStrokePrevNext(false)" @close="closeStrokeDropdown()" />
+					<StrokeDropdown :instrument="currentStrokeDropdown.instr" :model-value="pattern[currentStrokeDropdown.instr][currentStrokeDropdown.i] || ' '" @change="onStrokeChange($event, false)" @change-prev="onStrokeChange($event, true)" @prev="onStrokePrevNext(true)" @next="onStrokePrevNext(false)" @prev-instrument="changeInstr(-1)" @next-instrument="changeInstr(1)" @close="closeStrokeDropdown()" />
 				</div>
 			</div>
 		</div>

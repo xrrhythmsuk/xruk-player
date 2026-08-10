@@ -14,6 +14,8 @@
 		change: [value: string];
 		prev: [];
 		next: [];
+		"prev-instrument": [];
+		"next-instrument": [];
 		close: [];
 	}>();
 
@@ -66,6 +68,12 @@
 		} else if(e.key == "ArrowRight") {
 			e.preventDefault();
 			emit("next");
+		} else if(e.key == "ArrowUp") {
+			e.preventDefault();
+			emit("prev-instrument");
+		} else if(e.key == "ArrowDown") {
+			e.preventDefault();
+			emit("next-instrument");
 		} else if(e.key == "Tab") {
 			e.preventDefault();
 			if (e.shiftKey) {
