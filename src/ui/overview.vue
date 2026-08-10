@@ -78,7 +78,7 @@ watch(() => route.value?.tab, () => {
 
 			<template v-if="route.tab === 'listen'">
 				<Listen :tuneName="route.tuneName ?? null" @update:tuneName="route.tuneName = $event ?? undefined"
-					v-model:editPattern="route.patternName" :sidebarToggleContainer="sidebarToggleContainer" />
+					v-model:editPattern="route.patternName" :sidebarToggleContainer="sidebarToggleContainer" :state="history.state" />
 			</template>
 
 			<template v-if="route.tab === 'compose'">
