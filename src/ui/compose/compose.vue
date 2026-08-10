@@ -10,6 +10,7 @@
 	import { selectSong } from "../../state/state";
 	import HistoryPicker from "./history-picker.vue";
 	import SongPlayer from "./song-player.vue";
+	import PatternPlayer from "../pattern-player/pattern-player.vue";
 	import { clone, useRefWithOverride } from "../../utils";
 	import HybridSidebar from "../utils/hybrid-sidebar.vue";
 	import { useI18n } from "../../services/i18n";
@@ -103,7 +104,16 @@
 		</HybridSidebar>
 
 		<div class="bb-compose-song-player">
-			<SongPlayer v-model:songIdx="songIdx" v-model:isDraggingPattern="isDraggingPattern">
+			<PatternPlayer
+				v-if="expandTune && editPattern"
+				class="pattern-player"
+				:tuneName="expandTune"
+				:patternName="editPattern"
+				closeHref="#/compose/"
+				@close="expandTune = undefined; editPattern = undefined"
+			/>
+
+			<SongPlayer v-else v-model:songIdx="songIdx" v-model:isDraggingPattern="isDraggingPattern">
 				<template v-slot:toolbar-right>
 					<HistoryPicker :history="history" v-model:importData="importData" />
 				</template>
@@ -122,6 +132,11 @@
 			flex-grow: 1;
 			min-height: 0;
 			width: 0;
+
+			.pattern-player {
+				display: block;
+				margin: 1em;
+			}
 		}
 	}
 </style>

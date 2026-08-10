@@ -41,9 +41,14 @@
 		tuneName: string;
 		patternName: string;
 		readonly?: boolean;
+		closeHref?: string;
 	}>(), {
 		readonly: false
 	});
+
+	const emit = defineEmits<{
+		close: [];
+	}>();
 
 	const i18n = useI18n();
 
@@ -147,6 +152,9 @@
 
 		if(originalPattern.value && (originalPattern.value[instrumentKey][realI] || "").trim() != (pattern.value[instrumentKey][realI] || "").trim())
 			ret.push("has-changes");
+
+		if(currentStrokeDropdown?.value?.i == realI && currentStrokeDropdown?.value?.instr == instrumentKey)
+			ret.push("current");
 
 		return ret;
 	};
@@ -297,11 +305,22 @@
 	<div>
 
 		<h1>
-			<a :href="`#/listen/${tuneName}/`">{{state.tunes[tuneName].displayName || tuneName }}</a>
-			{{state.tunes[tuneName].patterns[patternName].displayName || patternName }}
-			<a
-				v-if="readonly && isCustomPattern"
-				:href="`#/compose/${tuneName}/${patternName}`"><fa icon="pencil-alt"/></a>
+			<span>
+				<a :href="`#/listen/${tuneName}/`">{{state.tunes[tuneName].displayName || tuneName }}</a>
+				{{state.tunes[tuneName].patterns[patternName].displayName || patternName }}
+				<a
+					v-if="readonly && isCustomPattern"
+					:href="`#/compose/${tuneName}/${patternName}`"><fa icon="pencil-alt"/></a>
+				<a
+				v-if="closeHref"
+				:href="closeHref"
+				@click="emit('close')"
+				:aria-label="i18n.t('general.dialog-close')"
+				:title="i18n.t('general.dialog-close')"
+			><fa icon="window-close"/></a>
+			</span>
+
+			
 		</h1>
 		
 		<PatternPlayerToolbar
@@ -402,7 +421,7 @@
 				}
 
 				&.current { 
-					outline: 2px solid var(--blue);
+					outline: 2px solid var(--bb-focus);
 				}
 			}
 

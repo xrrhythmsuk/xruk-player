@@ -5,7 +5,6 @@
 	import PatternPlaceholder, { PatternPlaceholderItem } from "../pattern-placeholder.vue";
 	import { useRefWithOverride } from "../../utils";
 	import RenamePatternDialog from "./rename-pattern-dialog.vue";
-	import PatternPlayerDialog from "../pattern-player/pattern-player-dialog.vue";
 	import Collapse from "../utils/collapse.vue";
 	import { computed, ref, watch } from "vue";
 	import { injectStateRequired } from "../../services/state";
@@ -38,7 +37,6 @@
 
 	const filter = ref<Filter>(DEFAULT_FILTER);
 	const isOpened = ref<Opened>({});
-	const showPatternEditor = ref<{ tuneName: string; patternName: string }>();
 	const showRename = ref<{ tuneName: string; patternName: string }>();
 
 	const isCustomPattern = (tuneName: string, patternName: string) => {
@@ -92,7 +90,8 @@
 
 		if(newPatternName) {
 			createPattern(state.value, tuneName, newPatternName);
-			showPatternEditor.value = { tuneName, patternName: newPatternName };
+			expandTune.value = tuneName;
+			editPattern.value = newPatternName;
 		}
 	};
 
@@ -132,7 +131,8 @@
 				filter.value = { text: "", cat: "custom" };
 
 			createPattern(state.value, newTuneName, "Tune", { loop: true });
-			showPatternEditor.value = { tuneName: newTuneName, patternName: "Tune" };
+			expandTune.value = newTuneName;
+			editPattern.value = "Tune";
 		}
 	};
 
@@ -193,14 +193,6 @@
 		}
 	};
 
-	const handleEditorDialog = (tuneName: string, patternName: string, show: boolean) => {
-		if (show) {
-			expandTune.value = tuneName;
-			editPattern.value = patternName;
-		} else if (expandTune.value === tuneName && editPattern.value === patternName) {
-			editPattern.value = undefined;
-		}
-	};
 </script>
 
 <template>
@@ -226,11 +218,10 @@
 							:tune-name="tune.tuneName"
 							:pattern-name="pattern.patternName"
 							:draggable="true"
-							:showEditorDialog="expandTune === tune.tuneName && editPattern === pattern.patternName"
-							@update:showEditorDialog="handleEditorDialog(tune.tuneName, pattern.patternName, $event)"
 							@dragStart="isDraggingPattern = true"
 							@dragEnd="isDraggingPattern = false"
 						>
+							<PatternPlaceholderItem><a :href="`#/compose/${encodeURIComponent(tune.tuneName)}/${encodeURIComponent(pattern.patternName)}`" v-tooltip="i18n.t('pattern-placeholder.edit-notes-tooltip')" draggable="false"><fa icon="pencil-alt"/></a></PatternPlaceholderItem>
 							<PatternPlaceholderItem><a href="javascript:" v-tooltip="pattern.isCustom ? i18n.t('pattern-list.copy-move-rename-break') : i18n.t('pattern-list.copy-break')" @click="copyPattern(tune.tuneName, pattern.patternName)" draggable="false"><fa icon="copy"/></a></PatternPlaceholderItem>
 							<PatternPlaceholderItem v-if="pattern.isCustom"><a href="javascript:" v-tooltip="i18n.t('pattern-list.remove-break')" @click="removePatternFromTune(tune.tuneName, pattern.patternName)" draggable="false"><fa icon="trash"/></a></PatternPlaceholderItem>
 							<slot :tuneName="tune.tuneName" :patternName="pattern.patternName"/>
@@ -250,13 +241,6 @@
 			<button type="button" class="btn btn-link btn-lg" @click="handleCreateTune()"><fa icon="plus"/> {{i18n.t("pattern-list.create-tune")}}</button>
 		</div>
 
-		<!-- // TODO: Move these dialogs to main view -->
-		<PatternPlayerDialog
-			v-if="showPatternEditor"
-			:tune-name="showPatternEditor.tuneName"
-			:pattern-name="showPatternEditor.patternName"
-			@hidden="showPatternEditor = undefined"
-		/>
 		<RenamePatternDialog
 			v-if="showRename"
 			:tune-name="showRename.tuneName"

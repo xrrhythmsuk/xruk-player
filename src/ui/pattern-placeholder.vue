@@ -6,9 +6,8 @@
 	import defaultTunes from "../defaultTunes";
 	import { patternEquals } from "../state/pattern";
 	import { DragType, PatternDragData, setDragData } from "../services/draggable";	
-	import PatternPlayerDialog from "./pattern-player/pattern-player-dialog.vue";
-	import { clone, useRefWithOverride } from "../utils";
-	import { computed, defineComponent, h, onBeforeUnmount, ref } from "vue";
+	import { clone } from "../utils";
+	import { computed, defineComponent, h, isReadonly, onBeforeUnmount, ref } from "vue";
 	import { injectStateRequired } from "../services/state";
 	import { showConfirm } from "./utils/alert";
 	import vTooltip from "./utils/tooltip";
@@ -47,7 +46,6 @@
 
 	const i18n = useI18n();
 
-	const showEditorDialog = useRefWithOverride(false, () => props.showEditorDialog, (show) => emit("update:showEditorDialog", show));
 	const dragging = ref(false);
 
 	const containerRef = ref<HTMLElement>();
@@ -71,10 +69,6 @@
 	});
 
 	const isCustomPattern = computed(() => !defaultTunes.getPattern(props.tuneName, props.patternName));
-
-	const editPattern = () => {
-		showEditorDialog.value = true;
-	};
 
 	const playerPlaybackSettings = computed(() => ({
 		...playbackSettings.value,
@@ -150,7 +144,7 @@
 </script>
 
 <template>
-	<a :href="`#/listen/${tuneName}/${patternName}`" class="bb-pattern-placeholder" :class="[{ dragging }, `drag-effect-${dragEffect}`]" :draggable="draggable ? 'true' : 'false'" @dragstart="handleDragStart($event)" @dragend="handleDragEnd($event)" ref="containerRef">
+	<a :href="`#/${readonly ? 'listen' : 'compose'}/${tuneName}/${patternName}`" class="bb-pattern-placeholder" :class="[{ dragging }, `drag-effect-${dragEffect}`]" :draggable="draggable ? 'true' : 'false'" @dragstart="handleDragStart($event)" @dragend="handleDragEnd($event)" ref="containerRef">
 		<div v-if="draggable" class="grip" @click.prevent>
 			<fa icon="grip-vertical"/>
 		</div>
@@ -159,7 +153,7 @@
 				<a class="tune-name" :href="`#/listen/${tuneName}/`">{{getLocalizedDisplayName(state.tunes[tuneName].displayName || tuneName)}}</a>
 				<br>
 			</template> -->
-			<a class="pattern-name" :href="`#/listen/${tuneName}/${patternName}`">
+			<a class="pattern-name" :href="`#/${readonly ? 'listen' : 'compose'}/${tuneName}/${patternName}`">
 				{{getLocalizedDisplayName(state.tunes[tuneName].patterns[patternName].displayName || patternName)}}
 				<fa v-if="isCustomPattern" icon="star" v-tooltip="i18n.t('pattern-placeholder.user-created-tooltip')"/>
 			</a>
@@ -181,14 +175,6 @@
 			ref="abstractPlayerRef"
 		/>
 
-		<PatternPlayerDialog
-			v-if="showEditorDialog"
-			@hidden="showEditorDialog = false"
-			:readonly="readonly"
-			:tune-name="tuneName"
-			:pattern-name="patternName"
-			:player-ref="abstractPlayerRef?.playerRef"
-		/>
 	</a>
 </template>
 
