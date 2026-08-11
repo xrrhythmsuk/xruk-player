@@ -93,7 +93,7 @@
 	};
 
 	const handleClick = (e: MouseEvent) => {
-		if(!(e.target instanceof Element && e.target.closest(".stroke-inner"))) {
+		if(!(e.target instanceof Element && (e.target.closest(".stroke-inner") || e.target.closest(".bb-pattern-player-stokes-dropdown-menu")))) {
 			e.preventDefault();
 			emit("close");
 		}
@@ -123,7 +123,7 @@
 
 	const handleSelect = (stroke: string) => {
 		emit("change", stroke);
-		emit("close");
+		emit("next");
 	};
 </script>
 
