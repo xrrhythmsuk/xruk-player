@@ -8,6 +8,7 @@ export default {
     video: undefined,
     patterns: {
         'Broccoli': {
+            description: "*Fist over three fingers*",
             ls: "            X   ",
             ms: "@ls",
             hs: "@ls",
@@ -18,6 +19,7 @@ export default {
             sh: "@ls"
         },
         'Boom Break': {
+            description: "*Hands flying away from head*\nOften just signed as *Fist and other hand shows 1*",
             ls: 'X               ',
             ms: '@ls',
             hs: '@ls',
@@ -29,6 +31,7 @@ export default {
         },
         'Capped Karla': {
             loop: true,
+            description: "*Flat palm over Karla Break sign*",
             ls: 'XXXXXXXXXXXXXXXXX               ',
             ms: '@ls',
             hs: '@ls',
@@ -41,6 +44,7 @@ export default {
         },
         'Flappy Mouth': {
             time: 3,
+            description: "*Talking hand*",
             ls: 'X  XXXX     ',
             ms: '@ls',
             hs: '@ls',
@@ -57,6 +61,7 @@ export default {
         },
         'Conga': {
             loop: true,
+            description: "*C with whole hand*\nAn alternate line for surdos",
             ls: "X     X X   X X X     X X   X X X   X   X   X   X   X   X   X   ",
             ms: "@ls",
             hs: "@ls",
@@ -65,6 +70,7 @@ export default {
         'Little Cat': {
             loop: true,
             upbeat: 2,
+            description: "*Conga sign with air quotes in other hand*\nAn accompanying line usually used for backpack",
             re: "X X     X X X X X   X X X X   X   X X X X X   X                   ",
             ta: "@re",
             ag: "@re",
@@ -73,11 +79,13 @@ export default {
         },
         'Little Cat (Alt Repi)': {
             loop: true,
+            description: "*Their special part*\nAlternate line for repis",
             re: "f   X X r r X X ",
             mnemonics: {  re: "Ugh, li-ttle cat's a go-ner" }
         },
         'Capped Karla (Little Cat)': {
             loop: true,
+            description: "*Capped Karla with Little Cat part*\nSnare variation that incorporates the special repi line",
             re: 'XXXXXXXXXXXXXXXXf   X X r r X X ',
             sn: '@re',
             volumeHack: crescendo(17)
@@ -86,6 +94,7 @@ export default {
             displayName: "e.g. everybody Conga/Little Cat",
             loop: true,
             upbeat: 2,
+            description: "*Conga sign with air quotes in other hand*\nExample combination of Conga and Little Cat",
             ls: "  X     X X   X X X     X X   X X X   X   X   X   X   X   X   X   ",
             ms: "@ls",
             hs: "@ls",
@@ -97,6 +106,7 @@ export default {
             volumeHack: {  sn: { 0: .2, 4: .4, 8: .7, 12: 1, 32: .2, 36: .4, 40: 0.7, 44: 1 } }
         },
         'Bunny Ears': {
+            description: "*Arms forward over your head*\nOften used to speed up or slow down a band if the song doesn’t have a call break",
             ls: repeat(2, "                X X X X X  XX   ") + repeat(2, "        X X X   ") + "    X X     X X     XX XX X X   ",
             ms: "@ls",
             hs: "@ls",
@@ -113,6 +123,7 @@ export default {
             }
         },
         'Wolf Break': {
+            description: "*Arms bite with fingers as teeth*",
             ls: 'X X   XXX X    XX X    XX X     X X   XXX X    XX X X X X       ',
             ms: '@ls',
             hs: '@ls',
@@ -129,6 +140,7 @@ export default {
             }
         },
         'Hardcore Break': {
+            description: "*Double devil horns down*\nA great way to build up the hype!",
             ls: repeat(2, '              XXX             XXX             XXX       XXXXXXXX') + repeat(2, 'X X X X X X X XXX X X X X X X XXX X X X X X X XXX X X X XXXXXXXX'),
             ms: '@ls',
             hs: '@ls',
