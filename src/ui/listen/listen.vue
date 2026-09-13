@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 	import { ref, TeleportProps, watch } from "vue";
-	import { normalizeState } from "../../state/state";
+	import { normalizeState, State } from "../../state/state";
 	import { stopAllPlayers } from "../../services/player";
 	import { provideState } from "../../services/state";
 	import TuneInfo from "./tune-info.vue";
@@ -10,6 +10,7 @@
 	import HybridSidebar from "../utils/hybrid-sidebar.vue";
 	import PatternPlayer from "../pattern-player/pattern-player.vue";
 	import { useI18n } from "../../services/i18n"
+	import type { Ref } from "vue";
 
 	const i18n = useI18n();
 
@@ -18,6 +19,7 @@
 		tuneName?: string | null;
 		editPattern?: string;
 		sidebarToggleContainer?: TeleportProps['to'];
+		state?: Ref<State>;
 	}>();
 
 	const emit = defineEmits<{
@@ -27,7 +29,7 @@
 
 	const tuneName = useRefWithOverride(undefined, () => props.tuneName, (tuneName) => emit("update:tuneName", tuneName));
 
-	const state = ref(normalizeState());
+	const state = props.state ?? ref(normalizeState());
 	provideState(state);
 
 	const isSidebarExpanded = ref(false);
