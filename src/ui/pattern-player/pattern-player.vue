@@ -53,6 +53,21 @@
 	const i18n = useI18n();
 
 	const pattern = computed(() => getPatternFromState(state.value, props.tuneName, props.patternName)!);
+	const patternDescriptionHtml = computed(() => {
+		const description = pattern.value.description?.trim();
+		if(!description)
+			return "";
+
+		const escapedDescription = description
+			.replace(/&/g, "&amp;")
+			.replace(/</g, "&lt;")
+			.replace(/>/g, "&gt;");
+
+		return escapedDescription
+			.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+			.replace(/\*(.*?)\*/g, "<em>$1</em>")
+			.replace(/\n/g, "<br>");
+	});
 
 	const playerRef = ref<BeatboxReference>(props.player || createBeatbox(`${props.tuneName}+${props.patternName}`, true));
 	const playbackSettings = ref<PlaybackSettings>({
@@ -301,6 +316,8 @@
 			
 		</h1>
 		
+		<p v-if="patternDescriptionHtml" class="bb-pattern-description" v-html="patternDescriptionHtml"></p>
+
 		<PatternPlayerToolbar
 			:tuneName="tuneName"
 			:patternName="patternName"
@@ -379,6 +396,10 @@
 </template>
 
 <style lang="scss">
+	.bb-pattern-description {
+		margin-bottom: 2rem;
+	}
+
 	.bb-pattern-player-container {
 		width: 100%;
 		overflow-x: auto;
