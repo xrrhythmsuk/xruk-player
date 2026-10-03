@@ -1,5 +1,5 @@
 import { repeat } from "../../src/tuneHelper";
-import sheet from "./jericho.pdf?url"
+import sheet from "./jericho.pdf?no-inline"
 export default {
     categories: ["new", "tricky"],
     speed: 120,

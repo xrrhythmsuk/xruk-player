@@ -1,5 +1,5 @@
 import { repeat } from "../../src/tuneHelper";
-import sheet from "./sambasso.pdf?url"
+import sheet from "./sambasso.pdf?no-inline"
 export default {
     categories: ["common", "onesurdo", "tricky"],
     descriptionFilename: "sambasso",

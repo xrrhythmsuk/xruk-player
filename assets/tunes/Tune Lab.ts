@@ -1,5 +1,5 @@
 import {  repeat, crescendo } from "../../src/tuneHelper";
-import sheet from "./tune-lab.pdf?url"
+import sheet from "./tune-lab.pdf?no-inline"
 
 export default {
 	displayName: "... from the Tune Lab",

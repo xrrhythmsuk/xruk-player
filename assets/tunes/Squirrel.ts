@@ -1,4 +1,4 @@
-import sheet from "./squirrel.pdf?url"
+import sheet from "./squirrel.pdf?no-inline"
 export default {
     categories: ["common", "medium"],
     descriptionFilename: "squirrel",

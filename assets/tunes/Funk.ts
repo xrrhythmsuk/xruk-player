@@ -1,4 +1,4 @@
-import sheet from "./funk.pdf?url"
+import sheet from "./funk.pdf?no-inline"
 export default <Tune>{
     categories: ["core", "easy"],
     sheet,

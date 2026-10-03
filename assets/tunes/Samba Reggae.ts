@@ -1,5 +1,5 @@
 import { repeat, stretch } from "../../src/tuneHelper";
-import sheet from "./samba-reggae.pdf?url"
+import sheet from "./samba-reggae.pdf?no-inline"
 export default {
     categories: ["core", "medium"],
     descriptionFilename: "samba-reggae",

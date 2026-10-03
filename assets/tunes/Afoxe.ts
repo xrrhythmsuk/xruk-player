@@ -1,5 +1,5 @@
 import { repeat } from "../../src/tuneHelper"
-import sheet from "./afoxe.pdf?url"
+import sheet from "./afoxe.pdf?no-inline"
 export default <Tune>{
     displayName: "Afoxé",
     categories: ["common", "medium"],

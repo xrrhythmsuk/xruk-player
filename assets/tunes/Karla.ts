@@ -1,4 +1,4 @@
-import sheet from "./karla.pdf?url"
+import sheet from "./karla.pdf?no-inline"
 export default {
     categories: ["core", "easy"],
     descriptionFilename: "karla",

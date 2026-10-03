@@ -1,5 +1,5 @@
 import { repeat  } from "../../src/tuneHelper"
-import sheet from "./custard.pdf?url"
+import sheet from "./custard.pdf?no-inline"
 export default {
     categories: ["common", "medium"],
     descriptionFilename: "custard",

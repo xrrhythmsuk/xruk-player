@@ -1,5 +1,5 @@
 import { repeat } from "../../src/tuneHelper";
-import sheet from "./ragga.pdf?url"
+import sheet from "./ragga.pdf?no-inline"
 export default {
     categories: ["new", "tricky"],
     descriptionFilename: "ragga",

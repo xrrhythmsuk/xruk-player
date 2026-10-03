@@ -1,5 +1,5 @@
 import {  repeat, stretch } from "../../src/tuneHelper";
-import sheet from "./core-breaks.pdf?url"
+import sheet from "./core-breaks.pdf?no-inline"
 
 export default {
     displayName: "Core Breaks and Signs",

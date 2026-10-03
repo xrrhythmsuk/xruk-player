@@ -1,4 +1,4 @@
-import sheet from "./hedgehog.pdf?url"
+import sheet from "./hedgehog.pdf?no-inline"
 export default {
     categories: ["core", "easy"],
     descriptionFilename: "hedgehog",

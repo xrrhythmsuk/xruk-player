@@ -1,5 +1,5 @@
 import { repeat, stretch } from "../../src/tuneHelper";
-import sheet from "./stolen.pdf?url"
+import sheet from "./stolen.pdf?no-inline"
 export default {
     categories: ["common", "tricky"],
     speed: 180,

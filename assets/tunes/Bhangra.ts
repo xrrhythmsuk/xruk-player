@@ -1,4 +1,4 @@
-import sheet from "./bhangra.pdf?url"
+import sheet from "./bhangra.pdf?no-inline"
 export default {
     categories: ["core", "onesurdo", "medium"],
     speed: 120,

@@ -1,4 +1,4 @@
-import sheet from "./wolf.pdf?url"
+import sheet from "./wolf.pdf?no-inline"
 export default {
     categories: ["common", "tricky"],
     descriptionFilename: "wolf",

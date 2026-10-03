@@ -1,5 +1,5 @@
 import {  repeat, stretch, crescendo } from "../../src/tuneHelper";
-import sheet from "./more-breaks.pdf?url"
+import sheet from "./more-breaks.pdf?no-inline"
 export default {
     categories: ["breaks", "onesurdo", "easy", "medium", "tricky"],
     speed: 100,

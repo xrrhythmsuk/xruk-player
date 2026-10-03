@@ -1,4 +1,4 @@
-import sheet from "./drum-bass.pdf?url"
+import sheet from "./drum-bass.pdf?no-inline"
 export default {
     categories: ["new", "medium"],
     descriptionFilename: "drum-bass",
