@@ -75,7 +75,7 @@
 				<li><a class="dropdown-item" href="javascript:" @click="handleClearSong()" draggable="false"><fa icon="trash" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.clear-song")}}</a></li>
 				<li><a class="dropdown-item" href="javascript:" @click="handleDownload(ExportType.MP3)" draggable="false"><fa icon="file-export" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.export-mp3")}}</a></li>
 				<li><a class="dropdown-item" href="javascript:" @click="handleDownload(ExportType.WAV)" draggable="false"><fa icon="file-export" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.export-wav")}}</a></li>
-				<li><a class="dropdown-item" href="javascript:" @click="showShareDialog = true" draggable="false"><fa icon="share" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.share")}}</a></li>
+				<li><a class="dropdown-item" href="javascript:" @click="showShareDialog = true" draggable="false"><fa icon="share-from-square" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.share")}}</a></li>
 				<li><a class="dropdown-item" href="javascript:" @click="showImportDialog = true" draggable="false"><fa icon="file-import" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.import")}}</a></li>
 			</ul>
 		</div>

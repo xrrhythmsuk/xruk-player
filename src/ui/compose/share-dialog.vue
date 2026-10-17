@@ -28,7 +28,11 @@
 	const state = injectStateRequired();
 
 	const shareSongs = ref<Record<number, boolean>>(!props.linkPattern && props.songIdx != null ? { [props.songIdx]: true } : {});
-	const sharePatterns = ref<Record<string, Record<string, boolean>>>(props.linkPattern ? { [props.linkPattern[0]]: { [props.linkPattern[1]]: true } } : {});
+	const sharePatterns = ref<Record<string, Record<string, boolean>>>(props.linkPattern
+		? { [props.linkPattern[0]]: { [props.linkPattern[1]]: true } }
+		: props.tuneName && state.value.tunes[props.tuneName]
+			? { [props.tuneName]: Object.fromEntries(Object.keys(state.value.tunes[props.tuneName].patterns).map((patternName) => [patternName, true])) }
+			: {});
 
 	const modalRef = ref<HTMLElement>();
 	useModal(modalRef, {
@@ -146,14 +150,14 @@
 	const share = () => { 
 		hide()
 
-		navigator.share?.({
+		void navigator.share?.({
 			url: url.value
 		})
 		
 	}
 
 	const copyLink = () => { 
-		window.navigator.clipboard.writeText(url.value)
+		void window.navigator.clipboard.writeText(url.value)
 		hide()
 	}
 
@@ -249,7 +253,7 @@
 						</table>
 					</div>
 
-					<div>
+					<div class="modal-footer">
 						<template v-if="activeTab === 0">
 							<button v-if="canShare" @click="share" class="btn btn-primary"><fa icon="share-from-square" /> Share</button>
 							<button @click="copyLink" class="btn btn-primary"><fa icon="link" /> Copy link</button>

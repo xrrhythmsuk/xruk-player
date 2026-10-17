@@ -1,5 +1,6 @@
 import { computed, ref, Ref, watch } from "vue"
 import { match, compile } from "path-to-regexp"
+import { stringToObject } from "../utils"
 
 export type Route =
 	{
@@ -21,21 +22,34 @@ const ROUTES = {
 	"listen-tune": "/listen/:tuneName/",
 	"listen-pattern": "/listen/:tuneName/:patternName",
 	"compose": "/compose/",
-	"compose-tune": "/compose/:tuneName/",
-	"compose-pattern": "/compose/:tuneName/:patternName",
+	"compose-import": "/compose/:importData",
 	"compose-importAndTune": "/compose/:importData/:tuneName/",
 	"compose-importAndPattern": "/compose/:importData/:tuneName/:patternName",
-	"compose-import": "/compose/:importData",
-	"legacy-tune": "/:tuneName/",
-	"legacy-pattern": "/:tuneName/:patternName",
+	"compose-tune": "/compose/:tuneName/",
+	"compose-pattern": "/compose/:tuneName/:patternName",
+	"legacy-import": "/:importData",
 	"legacy-importAndTune": "/:importData/:tuneName/",
 	"legacy-importAndPattern": "/:importData/:tuneName/:patternName",
-	"legacy-import": "/:importData"
+	"legacy-tune": "/:tuneName/",
+	"legacy-pattern": "/:tuneName/:patternName"
 } satisfies Record<string, string>
 
 const ROUTES_MATCH = Object.fromEntries(Object.entries(ROUTES).map(([name, pattern]) => [name, match(pattern, { decode: decodeURIComponent, trailing: false })]))
 
 const ROUTES_COMPILE = Object.fromEntries(Object.entries(ROUTES).map(([name, pattern]) => [name, compile(pattern, { encode: encodeURIComponent })]))
+
+function isImportData(value: unknown): boolean {
+	if (typeof value !== "string" || !value) {
+		return false
+	}
+
+	try {
+		const decoded = stringToObject(value) as { patterns?: unknown; songs?: unknown };
+		return decoded != null && (decoded.patterns != null || decoded.songs != null);
+	} catch {
+		return false;
+	}
+}
 
 function pathToRoute(path: string): Route {
 	let match: { name: keyof typeof ROUTES; params?: Partial<Record<string, string>> } | undefined
@@ -43,6 +57,11 @@ function pathToRoute(path: string): Route {
 		for (const name of Object.keys(ROUTES_MATCH) as Array<keyof typeof ROUTES>) {
 			const m = ROUTES_MATCH[name](path)
 			if (m) {
+				if (name.startsWith("compose-import") || name.startsWith("legacy-import")) {
+					if (!isImportData(m.params?.importData)) {
+						continue;
+					}
+				}
 				match = { name, params: m.params as Record<string, string> }
 				break
 			}

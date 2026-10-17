@@ -100,6 +100,7 @@
 		"rename-tune": "Rename tune",
 		"copy-tune": "Copy tune",
 		"remove-tune": "Remove tune",
+		"share-tune": "Share tune",
 		"create-tune": "New tune"
 	},
 	"rename-pattern-dialog": {

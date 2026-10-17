@@ -1,40 +1,21 @@
 <script setup lang="ts">
-	import { computed, ref, watch } from "vue";
+	import { computed, ref } from "vue";
 	import { isoDate, readableDate } from "../../services/utils";
 	import Popover from "../utils/popover.vue";
 	import vTooltip from "../utils/tooltip";
 	import { History } from "../../services/history";
-	import { showAlert, showConfirm } from "../utils/alert";
-	import { useRefWithOverride } from "../../utils";
+	import { showConfirm } from "../utils/alert";
 	import { useI18n } from "../../services/i18n";
 
 	const props = defineProps<{
 		history: History;
-		importData?: string;
-	}>();
-
-	const emit = defineEmits<{
-		"update:importData": [importData: string | undefined];
 	}>();
 
 	const i18n = useI18n();
 
-	const importData = useRefWithOverride(undefined, () => props.importData, (importData) => emit("update:importData", importData));
-
 	const dropdownRef = ref<HTMLElement>();
 
 	const showPopover = ref(false);
-
-	watch(importData, () => {
-		if (importData.value) {
-			const errs = props.history.loadEncodedString(importData.value);
-			if(errs.length > 0) {
-				void showAlert({ title: () => i18n.t("history-picker.import-error-title"), message: errs.join("\n"), variant: 'warning' });
-			}
-			showPopover.value = true;
-			importData.value = undefined;
-		}
-	}, { immediate: true });
 
 	const historicStates = computed(() => {
 		const states = props.history.getHistoricStates();

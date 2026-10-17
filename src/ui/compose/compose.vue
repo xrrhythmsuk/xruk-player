@@ -7,7 +7,7 @@
 	import { computed, nextTick, ref, TeleportProps, watch } from "vue";
 	import { History } from "../../services/history";
 	import vTooltip from "../utils/tooltip";
-	import { selectSong } from "../../state/state";
+	import { getPatternFromState, selectSong } from "../../state/state";
 	import HistoryPicker from "./history-picker.vue";
 	import SongPlayer from "./song-player.vue";
 	import PatternPlayer from "../pattern-player/pattern-player.vue";
@@ -19,25 +19,22 @@
 		history: History;
 		expandTune?: string;
 		editPattern?: string;
-		importData?: string;
 		sidebarToggleContainer?: TeleportProps['to'];
 	}>();
 
 	const emit = defineEmits<{
 		"update:expandTune": [tuneName: string | undefined];
 		"update:editPattern": [patternName: string | undefined];
-		"update:importData": [importData: string | undefined];
 	}>();
 
 	const i18n = useI18n();
 
 	const expandTune = useRefWithOverride(undefined, () => props.expandTune, (tuneName) => emit("update:expandTune", tuneName));
 	const editPattern = useRefWithOverride(undefined, () => props.editPattern, (patternName) => emit("update:editPattern", patternName));
-	const importData = useRefWithOverride(undefined, () => props.importData, (importData) => emit("update:importData", importData));
-
 	provideState(props.history.state);
 
 	const state = computed(() => props.history.state.value);
+	const editingPattern = computed(() => expandTune.value && editPattern.value && getPatternFromState(state.value, expandTune.value, editPattern.value));
 
 	const containerRef = ref<HTMLElement>();
 	const songIdx = computed({
@@ -104,18 +101,18 @@
 		</HybridSidebar>
 
 		<div class="bb-compose-song-player">
-			<PatternPlayer
-				v-if="expandTune && editPattern"
-				class="pattern-player"
-				:tuneName="expandTune"
-				:patternName="editPattern"
+				<PatternPlayer
+					v-if="editingPattern"
+					class="pattern-player"
+					:tuneName="expandTune!"
+					:patternName="editPattern!"
 				closeHref="#/compose/"
 				@close="expandTune = undefined; editPattern = undefined"
 			/>
 
 			<SongPlayer v-else v-model:songIdx="songIdx" v-model:isDraggingPattern="isDraggingPattern">
 				<template v-slot:toolbar-right>
-					<HistoryPicker :history="history" v-model:importData="importData" />
+				<HistoryPicker :history="history" />
 				</template>
 			</SongPlayer>
 		</div>

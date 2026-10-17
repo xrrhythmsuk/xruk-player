@@ -11,6 +11,7 @@
 	import { showConfirm, showPrompt } from "../utils/alert";
 	import vTooltip from "../utils/tooltip";
 	import { getLocalizedDisplayName, useI18n } from "../../services/i18n";
+	import ShareDialog from "./share-dialog.vue";
 
 	const props = defineProps<{
 		expandTune?: string;
@@ -38,6 +39,7 @@
 	const filter = ref<Filter>(DEFAULT_FILTER);
 	const isOpened = ref<Opened>({});
 	const showRename = ref<{ tuneName: string; patternName: string }>();
+	const shareTuneName = ref<string>();
 
 	const isCustomPattern = (tuneName: string, patternName: string) => {
 		return !defaultTunes.getPattern(tuneName, patternName);
@@ -183,6 +185,10 @@
 		}
 	};
 
+	const shareTune = (tuneName: string) => {
+		shareTuneName.value = tuneName;
+	};
+
 	const toggleTune = (tuneName: string, show = !isOpened.value[tuneName]) => {
 		isOpened.value[tuneName] = show;
 
@@ -231,6 +237,7 @@
 							<a v-if="tune.isCustom" href="javascript:" @click="handleRenameTune(tune.tuneName)" v-tooltip="i18n.t('pattern-list.rename-tune')" draggable="false"><fa icon="pen"/></a>
 							<a href="javascript:" @click="handleCopyTune(tune.tuneName)" v-tooltip="i18n.t('pattern-list.copy-tune')" draggable="false"><fa icon="copy"/></a>
 							<a v-if="tune.isCustom" href="javascript:" @click="handleRemoveTune(tune.tuneName)" v-tooltip="i18n.t('pattern-list.remove-tune')" draggable="false"><fa icon="trash"/></a>
+							<a v-if="tune.isCustom" href="javascript:" @click="shareTune(tune.tuneName)" v-tooltip="i18n.t('pattern-list.share-tune')" draggable="false"><fa icon="share-from-square"/></a>
 						</div>
 					</div>
 				</Collapse>
@@ -246,6 +253,12 @@
 			:tune-name="showRename.tuneName"
 			:pattern-name="showRename.patternName"
 			@hidden="showRename = undefined"
+		/>
+
+		<ShareDialog
+			v-if="shareTuneName"
+			:tune-name="shareTuneName"
+			@hidden="shareTuneName = undefined"
 		/>
 
 		<!-- // TODO: re-add share dialog -->

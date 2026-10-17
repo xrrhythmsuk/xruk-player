@@ -63,7 +63,7 @@
 					</div>
 					<div class="modal-body">
 						<PatternPlayer :tuneName="tuneName" :patternName="patternName" :readonly="readonly" :player="playerRef">
-							<button type="button" class="btn btn-info" v-if="hasChanged" @click="share()"><fa icon="share"/>{{" "}}{{i18n.t("pattern-player-dialog.share")}}</button>
+							<button type="button" class="btn btn-info" v-if="hasChanged" @click="share()"><fa icon="share-from-square"/>{{" "}}{{i18n.t("pattern-player-dialog.share")}}</button>
 						</PatternPlayer>
 						<ShareDialog v-if="showShareDialog" @hidden="showShareDialog = false" :link-pattern="[tuneName, patternName]" />
 					</div>

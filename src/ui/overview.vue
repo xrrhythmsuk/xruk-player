@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { stopAllPlayers } from "../services/player"
-import { ref, watch } from "vue"
+import { nextTick, ref, watch } from "vue"
 import Update from "./update.vue"
 import Help from "./help/help.vue"
 import Listen from "./listen/listen.vue"
@@ -10,6 +10,7 @@ import Compose from "./compose/compose.vue"
 import { useRefWithOverride } from "../utils"
 import { useI18n } from "../services/i18n"
 import About from "./overview/about.vue"
+import { showAlert } from "./utils/alert"
 
 const props = defineProps<{
 	storage: Record<string, string>
@@ -32,6 +33,18 @@ watch(route, () => {
 }, { deep: true, immediate: true })
 
 const history = new History(props.storage)
+
+watch(route, async () => {
+	if (route.value.tab === "compose" && route.value.importData) {
+		const importData = route.value.importData
+		route.value.importData = undefined
+		await nextTick()
+		const errors = history.loadEncodedString(importData)
+		if (errors.length > 0) {
+			void showAlert({ title: () => i18n.t("history-picker.import-error-title"), message: errors.join("\n"), variant: "warning" })
+		}
+	}
+}, { deep: true, immediate: true })
 
 const sidebarToggleContainer = ref<HTMLElement>()
 
@@ -83,7 +96,7 @@ watch(() => route.value?.tab, () => {
 
 			<template v-if="route.tab === 'compose'">
 				<Compose :history="history" v-model:expandTune="route.tuneName" v-model:editPattern="route.patternName"
-					v-model:importData="route.importData" :sidebarToggleContainer="sidebarToggleContainer" />
+					:sidebarToggleContainer="sidebarToggleContainer" />
 			</template>
 		</div>
 	</div>
