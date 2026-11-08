@@ -199,7 +199,7 @@
 								<button type="button" class="btn btn-secondary btn-sm" @click="fileInputRef?.click()">
 									<fa icon="file-import" fixed-width/>{{" "}}{{i18n.t("import-dialog.upload-button")}}
 								</button>
-								<input ref="fileInputRef" type="file" accept=".rhythms" class="d-none" @change="handleFileInput" />
+								<input ref="fileInputRef" type="file" accept=".rhythm" class="d-none" @change="handleFileInput" />
 							</div>
 						</div>
 

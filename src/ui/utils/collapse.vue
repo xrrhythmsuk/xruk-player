@@ -14,14 +14,37 @@
 	const collapseRef = ref<Collapse>();
 	const shouldRender = ref(false);
 
+	// Bootstrap does not cancel the pending transition callback on dispose(), so
+	// disposing while a transition is in flight makes that callback dereference a
+	// null element. Defer disposal until the transition has settled.
+	let isTransitioning = false;
+	let isUnmounted = false;
+
+	const dispose = () => {
+		collapseRef.value?.dispose();
+		collapseRef.value = undefined;
+	};
+
+	const settle = () => {
+		isTransitioning = false;
+		if (isUnmounted)
+			dispose();
+	};
+
 	onMounted(() => {
 		collapseRef.value = new Collapse(containerRef.value!, { toggle: false });
 
 		containerRef.value!.addEventListener("show.bs.collapse", () => {
+			isTransitioning = true;
 			shouldRender.value = true;
 		});
+		containerRef.value!.addEventListener("hide.bs.collapse", () => {
+			isTransitioning = true;
+		});
+		containerRef.value!.addEventListener("shown.bs.collapse", settle);
 		containerRef.value!.addEventListener("hidden.bs.collapse", () => {
 			shouldRender.value = false;
+			settle();
 		});
 
 		watch(() => props.show, () => {
@@ -34,7 +57,9 @@
 	});
 
 	onBeforeUnmount(() => {
-		collapseRef.value?.dispose();
+		isUnmounted = true;
+		if (!isTransitioning)
+			dispose();
 	});
 </script>
 
