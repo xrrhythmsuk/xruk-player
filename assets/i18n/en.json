@@ -60,6 +60,8 @@
 		"decoding-error": "Error decoding pasted data: {{message}}",
 		"title": "Import",
 		"paste-placeholder": "Paste link or raw data object…",
+		"upload-hint": "or drag and drop your .rhythms file here:",
+		"upload-button": "Choose file",
 		"customize-selection": "Customise selection",
 		"songs": "Songs",
 		"tunes-breaks": "Tunes/Breaks",

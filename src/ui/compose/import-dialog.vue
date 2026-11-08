@@ -22,6 +22,45 @@
 
 	const pasted = ref("");
 
+	const fileInputRef = ref<HTMLInputElement>();
+	const isDragging = ref(false);
+
+	const readFile = (file: File | undefined) => {
+		if(!file)
+			return;
+
+		const reader = new FileReader();
+
+		reader.onload = () => {
+			if(typeof reader.result === "string")
+				pasted.value = reader.result;
+		};
+
+		reader.onerror = () => {
+			// eslint-disable-next-line no-console
+			console.error(reader.error);
+		};
+
+		reader.readAsText(file);
+	};
+
+	const handleFileInput = (event: Event) => {
+		const input = event.target as HTMLInputElement;
+		readFile(input.files?.[0]);
+		input.value = "";
+	};
+
+	const handleDragLeave = (event: DragEvent) => {
+		const related = event.relatedTarget as Node | null;
+		if(!related || !(event.currentTarget as HTMLElement).contains(related))
+			isDragging.value = false;
+	};
+
+	const handleDrop = (event: DragEvent) => {
+		isDragging.value = false;
+		readFile(event.dataTransfer?.files?.[0]);
+	};
+
 	const modalRef = ref<HTMLElement>();
 	const modal = useModal(modalRef, {
 		onHidden: () => {
@@ -146,6 +185,24 @@
 							v-model="pasted"
 							:placeholder="i18n.t('import-dialog.paste-placeholder')"
 						/>
+
+						<div
+							class="bb-import-dropzone"
+							:class="{ dragging: isDragging }"
+							@dragenter.prevent="isDragging = true"
+							@dragover.prevent="isDragging = true"
+							@dragleave.prevent="handleDragLeave($event)"
+							@drop.prevent="handleDrop($event)"
+						>
+							{{i18n.t("import-dialog.upload-hint")}}
+							<div class="mt-2">
+								<button type="button" class="btn btn-secondary btn-sm" @click="fileInputRef?.click()">
+									<fa icon="file-import" fixed-width/>{{" "}}{{i18n.t("import-dialog.upload-button")}}
+								</button>
+								<input ref="fileInputRef" type="file" accept=".rhythms" class="d-none" @change="handleFileInput" />
+							</div>
+						</div>
+
 						<div v-if="parsed.error" class="invalid-feedback">
 							{{parsed.error}}
 						</div>
@@ -216,6 +273,20 @@
 	.bb-import-dialog {
 		thead th {
 			width: 50%;
+		}
+
+		.bb-import-dropzone {
+			margin-top: 0.75rem;
+			padding: 1rem;
+			text-align: center;
+			border: 2px dashed var(--bb-strong-border-color);
+			border-radius: var(--bs-border-radius);
+			transition: border-color 0.15s, background-color 0.15s;
+
+			&.dragging {
+				border-color: var(--bs-primary);
+				background-color: var(--bs-primary-bg-subtle);
+			}
 		}
 	}
 </style>
