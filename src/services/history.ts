@@ -94,9 +94,19 @@ export class History {
 	}
 
 	loadHistoricState(key: number): void {
+		const decoded = this._storageDecoded[`bbState-${key}`];
+		// The entry for this key may be gone: another tab can delete it while syncing a newer
+		// save, or we may be starting with no stored state. Never wipe the current state for
+		// that; just make sure there is a song to work with.
+		if (decoded === undefined) {
+			if (this.state.value.songs.length === 0)
+				createSong(this.state.value);
+			return;
+		}
+
 		this.currentKey.value = key;
 		this._storage.bbState = `${key}`;
-		this._loadFromCompressed(this._storageDecoded[`bbState-${key}`] ?? {});
+		this._loadFromCompressed(decoded);
 	}
 
 	clear(): void {
