@@ -10,9 +10,8 @@
 	import { getPatternFromState, selectSong } from "../../state/state";
 	import HistoryPicker from "./history-picker.vue";
 	import SongPlayer from "./song-player.vue";
-	import PatternPlayer from "../pattern-player/pattern-player.vue";
 	import { clone, useRefWithOverride } from "../../utils";
-	import HybridSidebar from "../utils/hybrid-sidebar.vue";
+	import TuneView from "../tune-view.vue";
 	import { useI18n } from "../../services/i18n";
 
 	const props = defineProps<{
@@ -36,7 +35,7 @@
 	const state = computed(() => props.history.state.value);
 	const editingPattern = computed(() => expandTune.value && editPattern.value && getPatternFromState(state.value, expandTune.value, editPattern.value));
 
-	const containerRef = ref<HTMLElement>();
+	const tuneViewRef = ref<InstanceType<typeof TuneView>>();
 	const songIdx = computed({
 		get: () => state.value.songIdx,
 		set: (value) => {
@@ -44,12 +43,11 @@
 		}
 	});
 	const playbackSettings = ref(clone(state.value.playbackSettings));
-	const isSidebarExpanded = ref(false);
 	const isDraggingPattern = ref(false);
 
 	watch(isDraggingPattern, () => {
 		if (isDraggingPattern.value) {
-			isSidebarExpanded.value = false;
+			tuneViewRef.value?.collapse();
 		}
 	});
 
@@ -74,66 +72,43 @@
 		if(!song)
 			return;
 
-		appendSongPart(song, allInstruments([ tuneName, patternName]), state.value);
+		appendSongPart(song, allInstruments([ tuneName, patternName ]), state.value);
 
 		await nextTick();
-		scrollToElement(containerRef.value!.querySelector(".bb-song-player .song-container")!, false, true);
+		const el = tuneViewRef.value?.$el as HTMLElement | undefined;
+		const songContainer = el?.querySelector<HTMLElement>(".bb-song-player .song-container");
+		if (songContainer)
+			scrollToElement(songContainer, false, true);
 	};
 </script>
 
 <template>
-	<div class="bb-compose" ref="containerRef">
-		<HybridSidebar v-model:isExpanded="isSidebarExpanded" :toggleContainer="sidebarToggleContainer">
-			<PatternList
-				v-slot="slotProps"
-				v-model:expandTune="expandTune"
-				v-model:editPattern="editPattern"
-				v-model:isDraggingPattern="isDraggingPattern"
-			>
-				<PatternPlaceholderItem><a href="javascript:" v-tooltip="i18n.t('compose.add-to-song-tooltip')" @click="patternClick(slotProps.tuneName, slotProps.patternName)" draggable="false"><fa icon="plus"/></a></PatternPlaceholderItem>
-			</PatternList>
+	<TuneView
+		ref="tuneViewRef"
+		class="bb-compose"
+		:tuneName="expandTune"
+		:patternName="editingPattern ? editPattern : undefined"
+		:readonly="false"
+		closeHref="#/compose/"
+		:sidebarToggleContainer="sidebarToggleContainer"
+		@update:tuneName="expandTune = $event"
+		@close="expandTune = undefined; editPattern = undefined"
+	>
+		<PatternList
+			v-slot="slotProps"
+			v-model:expandTune="expandTune"
+			v-model:editPattern="editPattern"
+			v-model:isDraggingPattern="isDraggingPattern"
+		>
+			<PatternPlaceholderItem><a href="javascript:" v-tooltip="i18n.t('compose.add-to-song-tooltip')" @click="patternClick(slotProps.tuneName, slotProps.patternName)" draggable="false"><fa icon="plus"/></a></PatternPlaceholderItem>
+		</PatternList>
 
-			<template v-slot:toggle>
-				<button type="button" class="btn btn-secondary" @click="isSidebarExpanded = !isSidebarExpanded">
-					<fa icon="bars" />
-				</button>
-			</template>
-		</HybridSidebar>
-
-		<div class="bb-compose-song-player">
-				<PatternPlayer
-					v-if="editingPattern"
-					class="pattern-player"
-					:tuneName="expandTune!"
-					:patternName="editPattern!"
-				closeHref="#/compose/"
-				@close="expandTune = undefined; editPattern = undefined"
-			/>
-
-			<SongPlayer v-else v-model:songIdx="songIdx" v-model:isDraggingPattern="isDraggingPattern">
+		<template v-slot:empty>
+			<SongPlayer v-model:songIdx="songIdx" v-model:isDraggingPattern="isDraggingPattern">
 				<template v-slot:toolbar-right>
-				<HistoryPicker :history="history" />
+					<HistoryPicker :history="history" />
 				</template>
 			</SongPlayer>
-		</div>
-	</div>
+		</template>
+	</TuneView>
 </template>
-
-<style lang="scss">
-	.bb-compose {
-		display: flex;
-		flex-grow: 1;
-		min-height: 0;
-
-		.bb-compose-song-player {
-			flex-grow: 1;
-			min-height: 0;
-			width: 0;
-
-			.pattern-player {
-				display: block;
-				margin: 1em;
-			}
-		}
-	}
-</style>

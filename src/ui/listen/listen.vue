@@ -3,16 +3,11 @@
 	import { normalizeState, State } from "../../state/state";
 	import { stopAllPlayers } from "../../services/player";
 	import { provideState } from "../../services/state";
-	import TuneInfo from "./tune-info.vue";
 	import { useRefWithOverride } from "../../utils";
 	import { getTuneOfTheYear } from "../../services/utils";
 	import TuneList from "./tune-list.vue";
-	import HybridSidebar from "../utils/hybrid-sidebar.vue";
-	import PatternPlayer from "../pattern-player/pattern-player.vue";
-	import { useI18n } from "../../services/i18n"
+	import TuneView from "../tune-view.vue";
 	import type { Ref } from "vue";
-
-	const i18n = useI18n();
 
 	const props = defineProps<{
 		/** null means to forward to the tune of the year */
@@ -32,10 +27,7 @@
 	const state = props.state ?? ref(normalizeState());
 	provideState(state);
 
-	const isSidebarExpanded = ref(false);
-
 	watch(tuneName, () => {
-		isSidebarExpanded.value = false;
 		stopAllPlayers();
 
 		if (!tuneName.value) {
@@ -45,52 +37,22 @@
 </script>
 
 <template>
-	<div class="bb-listen">
-		<HybridSidebar v-model:isExpanded="isSidebarExpanded" :toggleContainer="sidebarToggleContainer">
-			<TuneList v-model:tuneName="tuneName" />
-			<template v-slot:toggle>
-				<button type="button" class="btn btn-secondary" @click="isSidebarExpanded = !isSidebarExpanded">
-					<fa icon="bars" />
-				</button>
-			</template>
-		</HybridSidebar>
-
-		<div class="bb-listen-info" v-if="props.editPattern">
-			<PatternPlayer class="pattern-player" :tuneName="tuneName||''" :patternName="props.editPattern" :readonly="true">
-			</PatternPlayer>
-		</div>
-
-		<div class="bb-listen-info" v-else>
-			<TuneInfo v-if="tuneName" :tuneName="tuneName" :editPattern="props.editPattern" @update:tuneName="tuneName = $event"/>
-		</div>
-	</div>
+	<TuneView
+		class="bb-listen"
+		:tuneName="tuneName || undefined"
+		:patternName="props.editPattern"
+		:readonly="true"
+		:sidebarToggleContainer="sidebarToggleContainer"
+		@update:tuneName="tuneName = $event"
+	>
+		<TuneList v-model:tuneName="tuneName" />
+	</TuneView>
 </template>
 
 <style lang="scss">
 	.bb-listen {
-		display: flex;
-		flex-grow: 1;
-		min-height: 0;
-
 		.bb-tune-list {
 			flex-grow: 1;
 		}
-
-		.bb-listen-info {
-			flex: 1 0 0;
-			overflow-x: auto;
-
-			.bb-tune-info {
-				padding: 1.2em;
-				max-width: 740px;
-				margin: 0 auto;
-			}
-
-			.pattern-player {
-				display: block;
-				margin: 1em;
-			}
-		}
-
 	}
 </style>

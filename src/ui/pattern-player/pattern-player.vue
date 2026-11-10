@@ -299,7 +299,7 @@
 
 		<h1>
 			<span>
-				<a :href="`#/listen/${tuneName}/`">{{state.tunes[tuneName].displayName || tuneName }}</a>
+				<a :href="`#/${readonly ? 'listen' : 'compose'}/${tuneName}/`">{{state.tunes[tuneName].displayName || tuneName }}</a>
 				{{state.tunes[tuneName].patterns[patternName].displayName || patternName }}
 				<a
 					v-if="readonly && isCustomPattern"

@@ -16,10 +16,13 @@
 
 	const state = injectStateRequired();
 
-	const props = defineProps<{
+	const props = withDefaults(defineProps<{
 		tuneName: string;
 		editPattern?: string;
-	}>();
+		readonly?: boolean;
+	}>(), {
+		readonly: true
+	});
 
 	const emit = defineEmits<{
 		"update:editPattern": [patternName: string | undefined];
@@ -118,7 +121,7 @@
 			v-for="(pattern, patternName) in tune.patterns"
 			:tune-name="tuneName"
 			:pattern-name="patternName"
-			:readonly="true"
+			:readonly="readonly"
 			:key="patternName"
 			:settings="playbackSettings"
 			v-slot="{ getPlayer }"
