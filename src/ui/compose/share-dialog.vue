@@ -84,8 +84,6 @@
 
 	const rawStringUncompressed = computed(() => jsonFormat(getCompressedState(false)));
 
-	const rawStringCompressed = computed(() => jsonFormat(getCompressedState(true)));
-
 	const url = computed(() => {
 		let res = `#/compose/${encodeURIComponent(objectToString(getCompressedState(true)))}`;
 
@@ -121,8 +119,6 @@
 			sharePatterns.value[tuneName] = {};
 		sharePatterns.value[tuneName][patternName] = !sharePatterns.value[tuneName][patternName];
 	};
-
-	const activeTab = ref(0);
 
     const songCount = computed(() => Object.values(shareSongs.value).filter(x => x).length )
 
@@ -179,22 +175,12 @@
 						<button type="button" class="btn-close" data-bs-dismiss="modal" :aria-label="i18n.t('general.dialog-close')"></button>
 					</div>
 					<div class="modal-body">
-						<ul class="nav nav-tabs">
-							<li class="nav-item"><a class="nav-link" :class="{ active: activeTab === 0 }" href="javascript:" @click="activeTab = 0">{{i18n.t("share-dialog.link")}}</a></li>
-							<li class="nav-item"><a class="nav-link" :class="{ active: activeTab === 1 }" href="javascript:" @click="activeTab = 1">{{i18n.t("share-dialog.raw-uncompressed")}}</a></li>
-						</ul>
-
-						<div v-if="activeTab === 0">
-							<p class="mt-4">
-								Sharing a link lets others open the rhythms directly on their device.
-							</p>
-						</div>
-						<div v-else-if="activeTab === 1">
-							<textarea readonly class="form-control" rows="10" :value="rawStringCompressed"></textarea>
-							<p class="mt-4">
-							Download a file to keep a copies or send as an attachment to others. Files can be opened using <fa icon="file-import" />&nbsp;<strong>Open</strong> in the Tools menu.
-							</p>
-						</div>
+						<p>
+							Sharing a link lets others open the rhythms directly on their device.
+						</p>
+						<p>
+							Alternatively, download a file to keep a copy or send as an attachment to others. Files can be opened using <fa icon="file-import" />&nbsp;<strong>Open</strong> in the Tools menu.
+						</p>
 
 						<hr />
 
@@ -254,11 +240,9 @@
 					</div>
 
 					<div class="modal-footer">
-						<template v-if="activeTab === 0">
-							<button v-if="canShare" @click="share" class="btn btn-primary"><fa icon="share-from-square" /> Share</button>
-							<button @click="copyLink" class="btn btn-primary"><fa icon="link" /> Copy link</button>
-						</template>
-						<button v-else @click="save" class="btn btn-primary"><fa icon="file-audio" /> Download</button>
+						<button v-if="canShare" @click="share" class="btn btn-primary"><fa icon="share-from-square" /> Share</button>
+						<button @click="copyLink" class="btn btn-primary"><fa icon="link" /> Copy link</button>
+						<button @click="save" class="btn btn-primary"><fa icon="file-audio" /> Download</button>
 						<button @click="hide" class="btn btn-secondary">Cancel</button>
 					</div>
 
