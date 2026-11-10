@@ -93,11 +93,6 @@
 			const enabledTunes = Object.keys(tuneInfo.value).filter((tuneName) => tuneInfo.value[tuneName].enabled);
 			if (enabledTunes.length === 1) {
 				res += `/${encodeURIComponent(enabledTunes[0])}/`;
-
-				const enabledPatterns = Object.keys(tuneInfo.value[enabledTunes[0]].patterns).filter((patternName) => tuneInfo.value[enabledTunes[0]].patterns[patternName].enabled);
-				if (enabledPatterns.length === 1) {
-					res += encodeURIComponent(enabledPatterns[0]);
-				}
 			}
 		}
 
@@ -179,7 +174,7 @@
 							Sharing a link lets others open the rhythms directly on their device.
 						</p>
 						<p>
-							Alternatively, download a file to keep a copy or send as an attachment to others. Files can be opened using <fa icon="file-import" />&nbsp;<strong>Open</strong> in the Tools menu.
+							Alternatively, download a file to keep a copy or send as an attachment to others. Files can be opened using <fa icon="file-import" />&nbsp;<strong>Import</strong> in the Tools menu.
 						</p>
 
 						<hr />

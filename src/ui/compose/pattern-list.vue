@@ -1,10 +1,11 @@
 <script setup lang="ts">
-	import { copyTune, createPattern, createTune, getPatternFromState, removePattern, removeTune, renameTune } from "../../state/state";
+	import { copyTune, createPattern, getPatternFromState, removePattern, removeTune } from "../../state/state";
 	import PatternListFilter, { DEFAULT_FILTER, Filter, filterPatternList } from "../pattern-list-filter.vue";
 	import defaultTunes from "../../defaultTunes";
 	import PatternPlaceholder, { PatternPlaceholderItem } from "../pattern-placeholder.vue";
 	import { useRefWithOverride } from "../../utils";
 	import RenamePatternDialog from "./rename-pattern-dialog.vue";
+	import RenameTuneDialog from "../pattern-list/rename-tune-dialog.vue";
 	import Collapse from "../utils/collapse.vue";
 	import { computed, ref, watch } from "vue";
 	import { injectStateRequired } from "../../services/state";
@@ -39,6 +40,7 @@
 	const filter = ref<Filter>(DEFAULT_FILTER);
 	const isOpened = ref<Opened>({});
 	const showRename = ref<{ tuneName: string; patternName: string }>();
+	const showTuneDialog = ref<string | null>(null);
 	const shareTuneName = ref<string>();
 
 	const isCustomPattern = (tuneName: string, patternName: string) => {
@@ -113,47 +115,24 @@
 	};
 
 	const handleCreateTune = async () => {
-		// TODO: share a dialog that includes description
-		const newTuneName = await showPrompt({
-			title: () => i18n.t("pattern-list.create-tune-title"),
-			validate: (newTuneName) => {
-				if(newTuneName.trim().length == 0)
-					return i18n.t("pattern-list.create-tune-empty-name-error");
-				if(state.value.tunes[newTuneName])
-					return i18n.t("pattern-list.create-tune-duplicate-name-error");
-			},
-			okLabel: () => i18n.t("pattern-list.create-tune-ok")
-		});
-
-		if(newTuneName) {
-			createTune(state.value, newTuneName);
-
-			isOpened.value[newTuneName] = true;
-			if (!filterPatternList(state.value, filter.value).includes(newTuneName))
-				filter.value = { text: "", cat: "custom" };
-
-			createPattern(state.value, newTuneName, "Tune", { loop: true });
-			expandTune.value = newTuneName;
-			editPattern.value = "Tune";
-		}
+		showTuneDialog.value = "";
 	};
 
 	const handleRenameTune = async (tuneName: string) => {
-		const newTuneName = await showPrompt({
-			title: () => i18n.t("pattern-list.rename-tune-title"),
-			initialValue: tuneName,
-			validate: (newTuneName) => {
-				if(newTuneName.trim().length == 0 || newTuneName == tuneName)
-					return i18n.t("pattern-list.rename-tune-empty-name-error");
-				if(state.value.tunes[newTuneName])
-					return i18n.t("pattern-list.rename-tune-duplicate-name-error");
-			},
-			okLabel: () => i18n.t("pattern-list.rename-tune-ok")
-		});
+		showTuneDialog.value = tuneName;
+	};
 
-		if(newTuneName) {
-			renameTune(state.value, tuneName, newTuneName);
-		}
+	const handleTuneSubmitted = (tuneName: string) => {
+		if (showTuneDialog.value !== "")
+			return;
+
+		isOpened.value[tuneName] = true;
+		if (!filterPatternList(state.value, filter.value).includes(tuneName))
+			filter.value = { text: "", cat: "custom" };
+
+		createPattern(state.value, tuneName, "Tune", { loop: true });
+		expandTune.value = tuneName;
+		editPattern.value = "Tune";
 	};
 
 	const handleCopyTune = async (tuneName: string) => {
@@ -253,6 +232,13 @@
 			:tune-name="showRename.tuneName"
 			:pattern-name="showRename.patternName"
 			@hidden="showRename = undefined"
+		/>
+
+		<RenameTuneDialog
+			v-if="showTuneDialog !== null"
+			:initial-tune-name="showTuneDialog || undefined"
+			@submitted="handleTuneSubmitted"
+			@hidden="showTuneDialog = null"
 		/>
 
 		<ShareDialog

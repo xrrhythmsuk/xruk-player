@@ -61,7 +61,7 @@
 		</div>
 
 		<div class="bb-listen-info" v-else>
-			<TuneInfo v-if="tuneName" :tuneName="tuneName" :editPattern="props.editPattern"/>
+			<TuneInfo v-if="tuneName" :tuneName="tuneName" :editPattern="props.editPattern" @update:tuneName="tuneName = $event"/>
 		</div>
 	</div>
 </template>

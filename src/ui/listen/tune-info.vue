@@ -12,6 +12,7 @@
 	import { BeatboxReference, getPlayerById } from "../../services/player";
 	import { getLocalizedDisplayName, getTuneDescriptionHtml, T, useI18n } from "../../services/i18n";
 	import InstrumentButtons from "../instrument/instrument-buttons.vue";
+	import RenameTuneDialog from "../pattern-list/rename-tune-dialog.vue";
 
 	const state = injectStateRequired();
 
@@ -22,14 +23,23 @@
 
 	const emit = defineEmits<{
 		"update:editPattern": [patternName: string | undefined];
+		"update:tuneName": [tuneName: string];
 	}>();
 
 	const i18n = useI18n();
 
 	const editPattern = useRefWithOverride(undefined, () => props.editPattern, (patternName) => emit("update:editPattern", patternName));
+	const showTuneDialog = ref(false);
+	const isCustomTune = computed(() => !defaultTunes[props.tuneName]);
 
-	const tune = computed(() => props.tuneName && state.value.tunes[props.tuneName]);
+	const tune = computed(() => state.value.tunes[props.tuneName]);
 	const tuneDescriptionHtml = computed(() => {
+		const description = tune.value?.description?.trim();
+		if (description) {
+			const el = document.createElement("div");
+			el.textContent = description;
+			return el.innerHTML.replace(/\r?\n/g, "<br>");
+		}
 
 		if(!defaultTunes[props.tuneName]?.descriptionFilename)
 			return null;
@@ -69,11 +79,18 @@
 			editPattern.value = undefined;
 		}
 	};
+
+	const handleTuneSubmitted = (tuneName: string) => {
+		emit("update:tuneName", tuneName);
+	};
 </script>
 
 <template>
 	<div class="bb-tune-info" v-if="tune">
-		<h1>{{getLocalizedDisplayName(tune.displayName || tuneName)}}</h1>
+		<h1 class="d-flex align-items-center">
+			{{getLocalizedDisplayName(tune.displayName || tuneName)}}
+			<a v-if="isCustomTune" class="ms-2" href="javascript:" @click="showTuneDialog = true" v-tooltip="i18n.t('pattern-list.rename-tune')" draggable="false"><fa icon="pencil-alt"/></a>
+		</h1>
 
 
 		<InstrumentButtons v-model:playbackSettings="playbackSettings" class="mb-3"/>
@@ -115,6 +132,13 @@
 		
 		<h2>About</h2>
 		<div v-html="tuneDescriptionHtml"></div>
+
+		<RenameTuneDialog
+			v-if="showTuneDialog"
+			:initial-tune-name="tuneName"
+			@submitted="handleTuneSubmitted"
+			@hidden="showTuneDialog = false"
+		/>
 
 		<div v-if="tune.video">
 			<h2>Video</h2>

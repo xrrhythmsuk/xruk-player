@@ -56,6 +56,7 @@ export function extendState(
 					categories: data.tunes[tuneName]!.categories,
 					displayName: data.tunes[tuneName]!.displayName,
 					descriptionFilename: data.tunes[tuneName]!.descriptionFilename,
+					description: data.tunes[tuneName]!.description,
 					sheet: data.tunes[tuneName]!.sheet,
 					video: data.tunes[tuneName]!.video,
 					speed: data.tunes[tuneName]!.speed,
@@ -184,6 +185,12 @@ export function compressSongsAndTunes(
 		})),
 		...(("songs" in songs ? songs.songs : songs).length > 0 ? { songs } : {})
 	};
+
+	const descriptions = Object.fromEntries(Object.entries(state.tunes)
+		.filter(([tuneName, tune]) => tune.description && (!keepEmptyTunes || ret.patterns?.[tuneName] != null))
+		.map(([tuneName, tune]) => [tuneName, tune.description!]));
+	if (Object.keys(descriptions).length > 0)
+		ret.descriptions = descriptions;
 
 	if(saveOptions) {
 		ret.songIdx = state.songIdx;
