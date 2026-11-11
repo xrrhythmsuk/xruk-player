@@ -283,6 +283,72 @@ export default {
 				ta: { 50: .3, 59: 1, 62: .3, 71: 1, 74: .3, 85: 1, 98: .6, 107: 1, 110: .6, 119: 1, 122: .6, 133: 1 },
 				sh: { 50: .3, 59: 1, 62: .3, 71: 1, 74: .3, 85: 1, 98: .6, 107: 1, 110: .6, 119: 1, 122: .6, 133: 1 }
             }
+		},
+		'Pale Horse (Draft)': {
+			loop: true,
+			ls: 'X  XX X  XX X   X  XX X  XX X',
+			ms: 'X   X X   X X XXX   X X   X X',
+			hs: '@ms',
+			re: 'XX  XXXX   XXX  XX  XXXX    X XX',
+			sn: '....X.......X.XX....X.......X.XX',
+			ta: 'X X X X X X X X XX',
+			ag: 'a  oa o   a   o a a a o       o',
+			sh: repeat(8, 'X.X.')
+		},
+		'Pale Horse (Draft), Break 1': {
+			ls: '            X XX            XXXX',
+			ms: '@ls',
+			hs: '@ls',
+			re: '@ls',
+			sn: '....X.......X.XX....X.......X.XX',
+			ta: '@ls',
+			ag: '@ls',
+			sh: repeat(8, 'X.X.')
+		},
+		'Pale Horse (Draft), Break 2': {
+			loop: true,
+			ls: 'XX    XX  X     XX    XX  X XXXX',
+			ms: '@ls',
+			hs: '@ls',
+			sh: 'X   .   .   .   X   .   .   .   '
+		},
+		'Pale Horse (Draft), Tune (Surdos Break 2)': {
+			loop: true,
+			ls: 'XX    XX  X     XX    XX  X XXXX',
+			ms: '@ls',
+			hs: '@ls',
+			re: 'XX  XXXX   XXX  XX  XXXX    X XX',
+			sn: '....X.......X.XX....X.......X.XX',
+			ta: 'X X X X X X X X XX',
+			ag: 'a  oa o   a   o a a a o       o',
+			sh: repeat(8, 'X.X.')
+		},
+		'Pale Horse (Draft), Break 3': {
+			ls: 'X  XX X X  XX X X  XX X X  XX X X  XX  XX  XX  XX  XX  XX',
+			ms: '@ls',
+			hs: '@ls',
+			re: '@ls',
+			sn: '....X.......X.......X.......X...X...X...X...X...X...X...X.X.X.XX',
+			ta: '@ls',
+			ag: '@ls',
+			sh: '@ls',
+			volumeHack: { 0: 1, 32: 0.2, 40: 0.4, 48: 0.7, 56: 1 }
+		},
+		'Pale Horse (Draft), Pickup': {
+			re: '            X XX',
+			sn: '            X.XX'
+		},
+		'Pale Horse (Draft), Sinister Pony Break': {
+			description: "*Mime riding a hobby horse*",
+			ls: repeat(3, 'X  XX X  XX X   '),
+			ms: '@ls',
+			hs: '@ls',
+			re: repeat(3, 'X  XX X  XX X   ') + '            X XX',
+			sn: repeat(2, 'X..XX.X..XX.X...') + 'X..XX.X..XX.X   ' + '            X.XX',
+			ta: '@ls',
+			ag: '@ls',
+			sh: '@ls',
+			volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 }
 		}
     }
 }
