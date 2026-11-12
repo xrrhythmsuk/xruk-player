@@ -55,7 +55,7 @@ Difficulty: Medium
 
 Another old Barking Bateria/Rhythms of Resistance tune, pronounced something like _no-vuh ba-LANCE-uh_ (“ç” is just pronounced like an “s” as in French) and meaning “new balance” in Portuguese. As you can see from the [version on the RoR Player](https://player.rhythms-of-resistance.org/#/listen/Nova%20Balanca/) (which also doesn’t seem to get played), we’ve changed the tune a little, mostly in making the sign look different to Aeroplane Break and lightly redoing Break 1.  
 
-As the name suggests the surdos and snares/repis swing backwards and forwards among themselves, while agogôs helpfully play the same part as in Karla and tams follow. A mnemonic for all the surdos together is _We need a new balance now_.
+As the name suggests the surdos and snares/repis swing backwards and forwards among themselves, while agogôs helpfully play the same part as in Karla and tams follow.
 
 * [**Break 1**](/#/listen/Tune%20Lab/Nova%20Balanca%201) in our version is the same as an old alt tam line (which crops up in Angel too!) and also works nicely looped by two different instrument groups one bar apart for even more [interlocking shenanigans](/#/listen/Tune%20Lab/Nova%20Balanca%201%20interlocking)
 * [**Break 2**](/#/listen/Tune%20Lab/Nova%20Balanca%202) is a short surdo-led phrase with the same rhythm as the Afoxé tam line, which [Barking Bateria](https://soundcloud.com/barking-bateria/afoxe-in-to-nova-balanca)/[old RoR London](https://tube.rhythms-of-resistance.org/w/vL1YFoXhWKJ9RkFGvczJkV) would use to go backwards and forwards between the two tunes and so not need our Afoxé numbered breaks
@@ -90,3 +90,30 @@ Sign: *Usual sign but upside down*
 Some bands had been playing with things like Inverted Clave ([RoR Player](https://player.rhythms-of-resistance.org/#/listen/General%20Breaks/Clave%20Inverted)) and Inverted Progressive Karla (one example: [RoR Player](https://player.rhythms-of-resistance.org/#/listen/General%20Breaks/Progressive%20Inverted)).  
 
 People often find them disorientating, though, and for things like inverting Progressive Karla there are different ways you could sign or play it (do you include the silence? Does it go at the front or the end?) so even more than usual, it’s good to physically act them out very clearly if you’re whistling them for a big/mixed band.
+
+## Band Camp 2026
+
+### [Pale Horse (Draft)](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft))
+Sign: *???*  
+Difficulty: Hard
+
+\[Description to follow\]
+
+The tune has a [**pickup**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Break%203): when there’s a break, the snares and repis play the last beat of their parts before going back into the main tune. This is a classic samba feature and can be brought in with e.g. the high surdos in Samba Reggae (like at the end of its numbered breaks).
+
+* [**Break 1**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Break%201) has everyone play a pickup-like phrase at the end of the bar while snare and shaker carry on
+* [**Break 2**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Break%202) is an [alternate surdo line](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Tune%20(Surdos%20Break%202))
+* [**Break 3**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Break%203) is a slightly longer one with everyone against the snare
+* The [**Sinister Pony Break**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Sinister%20Pony%20Break) _(Fingers down on raised forearms and rock like on a rocking horse)_ is a riff on the Karla Break but based on the low surdo part
+
+### [Tam Up](/#/listen/Tune%20Lab/Tam%20Up%20(Hedgehog))
+Sign: *Lift tam sign up to the sky* (or tams just do it automatically)
+
+In real samba, tams often play a little intro phrase before going into their main part, which can incorporate the end of their normal phrase (so acting like a pickup). Here’s a version that goes with Hedgehog. For maximum effect, move the tam over your head in a rainbow while you do it!
+
+### [Copycat Break](/#/listen/Tune%20Lab/Copycat%20(one%20example))
+Sign: *Like Call Break sign but with one hand and slower*
+
+Another feature from real samba is long and involved call breaks, which often include a lot of repi improvisation. This break lets us get a taste of this – it starts and ends with the copycat phrase (*“How ’bout that, how bout that, are you ready to copycat?” ”How ’bout that, how ’bout that, yep we’re ready to copycat”*), but between then the repi plays whatever they like and the band copies. The audio above is just one example.  
+
+It can help for the repi to point to themselves when they’re leading and to the band when it’s their turn to copy, which as it only leaves them one stick on the drum also helps avoiding asking one-stick instruments to copy anything too busy. Best to keep it short and simple, and don’t be afraid of repeating a phrase.
