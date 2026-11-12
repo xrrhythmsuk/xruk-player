@@ -354,7 +354,8 @@ export default {
 			mnemonics: {
 				ls: repeat(3, "Let's get a pint to drink in "),
 				re: repeat(3, "Let's get a pint to drink in ") + "X X X",
-				sn: repeat(2, "Let's . . get . a pint . . to drink . in . . .") + "Let's . . get a . pint . . to drink . in X . X X"
+				sn: repeat(2, "Let's . . get . a pint . . to drink . in . . .") +
+					"Let's . . get a . pint . . to drink . in X . X X"
 			}	
 		},
 		'Tam Up (Hedgehog)': {
@@ -365,13 +366,13 @@ export default {
 		},
 		'Copycat Break (one example)': {
 			description: "*Call break sign but with one hand and slower*",
-			ls: '                                X X X   X X X   X X XX XX X X   ' +\
-				'                X  X    X X X                   X      XX X XX  ' +\
+			ls: '                                X X X   X X X   X X XX XX X X   ' +
+				'                X  X    X X X                   X      XX X XX  ' +
 				'                XX XXX XXXX X                                   X X X   X X X   X X XX XX X X',
 			ms: '@ls',
 			hs: '@ls',
-			re: 'X X X   X X X   X X XX XX X X                                   ' +\
-				'X  X    X X X                   X      XX X XX                  ' +\
+			re: 'X X X   X X X   X X XX XX X X                                   ' +
+				'X  X    X X X                   X      XX X XX                  ' +
 				'XX XXX XXXX X                   X X X   X X X   X X XX XX X X',
 			sn: '@ls',
 			ta: '@ls',
