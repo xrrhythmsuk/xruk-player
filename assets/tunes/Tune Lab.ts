@@ -155,8 +155,8 @@ export default {
 			ag: 'o  oa o o  oa o ',
 			sh: '................',
 			mnemonics: {
-				ls: "O-pen it up Let's",
-				ms: "And let's shut it down",
+				ls: "We need a new now",
+				ms: "a new ba-lance now",
 				re: "Flip it round round",
 				sn: ". . . . Back . . . Push it . . back . . .",
 				ta: "Turn it o-ver Turn it o-ver",
@@ -293,7 +293,8 @@ export default {
 			sn: '....X.......X.XX....X.......X.XX',
 			ta: 'X X X X X X X X XX',
 			ag: 'a  oa o   a   o a a a o       o',
-			sh: repeat(8, 'X.X.')
+			sh: repeat(8, 'X.X.'),
+			mnemonics: { ls: repeat(2, "Let's get a pint to drink in ") }
 		},
 		'Pale Horse (Draft), Break 1': {
 			ls: '            X XX            XXXX',
@@ -335,11 +336,12 @@ export default {
 			volumeHack: { 0: 1, 32: 0.2, 40: 0.4, 48: 0.7, 56: 1 }
 		},
 		'Pale Horse (Draft), Pickup': {
+			description: "Automatically played before returning to main part",
 			re: '            X XX',
 			sn: '            X.XX'
 		},
 		'Pale Horse (Draft), Sinister Pony Break': {
-			description: "*Mime riding a hobby horse*",
+			description: "*Fingers down on raised forearms and rock like on a rocking horse*",
 			ls: repeat(3, 'X  XX X  XX X   '),
 			ms: '@ls',
 			hs: '@ls',
@@ -348,7 +350,37 @@ export default {
 			ta: '@ls',
 			ag: '@ls',
 			sh: '@ls',
-			volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 }
+			volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 },
+			mnemonics: {
+				ls: repeat(3, "Let's get a pint to drink in "),
+				re: repeat(3, "Let's get a pint to drink in ") + "X X X",
+				sn: repeat(2, "Let's . . get . a pint . . to drink . in . . .") + "Let's . . get a . pint . . to drink . in X . X X"
+			}	
+		},
+		'Tam Up (Hedgehog)': {
+			time: 12,
+			ta: 'X   X   X   X   X   X   X   X   X   X   X   X   X                       X     X     X',
+			sh: 'X           .           .           .           X           .           .           .',
+			mnemonics: { ta: "1 and a 2 and a 3 and a 4 and a stop I'm a hog" }
+		},
+		'Copycat Break (one example)': {
+			description: "*Call break sign but with one hand and slower*",
+			ls: '                                X X X   X X X   X X XX XX X X   ' +\
+				'                X  X    X X X                   X      XX X XX  ' +\
+				'                XX XXX XXXX X                                   X X X   X X X   X X XX XX X X',
+			ms: '@ls',
+			hs: '@ls',
+			re: 'X X X   X X X   X X XX XX X X                                   ' +\
+				'X  X    X X X                   X      XX X XX                  ' +\
+				'XX XXX XXXX X                   X X X   X X X   X X XX XX X X',
+			sn: '@ls',
+			ta: '@ls',
+			ag: '@ls',
+			sh: '@ls',
+			mnemonics: {
+				ls: "How 'bout that, how 'bout that, yep we're rea-dy to co-py-cat",
+				re: "How 'bout that, how 'bout that, are you rea-dy to co-py-cat?"
+			}
 		}
     }
 }
