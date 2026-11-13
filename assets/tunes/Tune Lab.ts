@@ -354,7 +354,7 @@ export default {
 			mnemonics: {
 				ls: repeat(3, "Let's get a pint to drink in "),
 				re: repeat(3, "Let's get a pint to drink in ") + "X X X",
-				sn: repeat(2, "Let's . . get . a pint . . to drink . in . . .") +
+				sn: repeat(2, "Let's . . get . a pint . . to drink . in . . . ") +
 					"Let's . . get a . pint . . to drink . in X . X X"
 			}	
 		},
