@@ -141,7 +141,7 @@ export default {
             sh: "@sn"
         }
     },
-    exampleSong: [{ tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", { tuneName: "Core Breaks", patternName: "8 Hits" }, "Tune", "Tune", "Tune", "Tune", "Break 1 Snare",
-                  "Tune", "Tune", "Tune", "Tune", "24 Break", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune Whistle In Whistle Break", "Tune Whistle Break", "Tune Whistle Break",
-                  "Tune Whistle Break", "Tune Whistle Break", "Tune", "Tune", "Tune", "Tune", "Progressive Karla Stolen"]
+    exampleSong: [{ tuneName: "Core Breaks", patternName: "Whistle in" }, "Tune", "Tune", "Tune", "Tune", { tuneName: "Core Breaks", patternName: "8 Hits" }, "Tune", "Tune", "Tune", "Tune", "24 Break",
+                  "Tune", "Tune", "Tune", "Tune", "Break 1 Snare", "Tune", "Tune", "Tune", "Tune", "Break 3", "Tune", "Tune", "Tune Whistle In Whistle Break", "Tune Whistle Break", "Tune Whistle Break",
+                  "Whistle Break Stolen", "Whistle Break Stolen", "24 Break", "Tune", "Tune", "Tune", "Tune", "Progressive Karla Stolen"]
 }
