@@ -94,7 +94,7 @@ People often find them disorientating, though, and for things like inverting Pro
 ## Band Camp 2026
 
 ### [Pale Horse (Draft)](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft))
-Sign: *???*  
+Sign: *Hold out a pint glass, then put it upside down on your head*  
 Difficulty: Hard
 
 \[Description to follow\]
