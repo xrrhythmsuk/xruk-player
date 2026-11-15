@@ -296,6 +296,11 @@ export default {
 			sh: repeat(8, 'X.X.'),
 			mnemonics: { ls: repeat(2, "Let's get a pint to drink in ") }
 		},
+		'Pale Horse (Draft), Pickup': {
+			description: "Automatically played before returning to main part",
+			re: '            X XX',
+			sn: '            X.XX'
+		},
 		'Pale Horse (Draft), Break 1': {
 			ls: '            X XX            XXXX',
 			ms: '@ls',
@@ -335,11 +340,6 @@ export default {
 			sh: '@ls',
 			volumeHack: { 0: 1, 32: 0.2, 40: 0.4, 48: 0.7, 56: 1 }
 		},
-		'Pale Horse (Draft), Pickup': {
-			description: "Automatically played before returning to main part",
-			re: '            X XX',
-			sn: '            X.XX'
-		},
 		'Pale Horse (Draft), Sinister Pony Break': {
 			description: "*Fingers down on raised forearms and rock like on a rocking horse*",
 			ls: repeat(3, 'X  XX X  XX X   '),
@@ -353,9 +353,9 @@ export default {
 			volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 },
 			mnemonics: {
 				ls: repeat(3, "Let's get a pint to drink in "),
-				re: repeat(3, "Let's get a pint to drink in ") + "X X X",
+				re: repeat(3, "Let's get a pint to drink in ") + "x x x",
 				sn: repeat(2, "Let's . . get . a pint . . to drink . in . . . ") +
-					"Let's . . get a . pint . . to drink . in X . X X"
+					"Let's . . get a . pint . . to drink . in x . x x"
 			}	
 		},
 		'Tam Up (Hedgehog)': {
@@ -380,7 +380,7 @@ export default {
 			sh: '@ls',
 			mnemonics: {
 				ls: "How 'bout that, how 'bout that, yep we're rea-dy to co-py-cat",
-				re: "How 'bout that, how 'bout that, are you rea-dy to co-py-cat?"
+				re: "How 'bout that, how 'bout that, are you rea-dy to co-py-cat? ..."
 			}
 		}
     }
