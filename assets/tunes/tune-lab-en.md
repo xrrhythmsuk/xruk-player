@@ -114,6 +114,12 @@ In real samba, tams often play a little intro phrase before going into their mai
 ### [Copycat Break](/#/listen/Tune%20Lab/Copycat%20(one%20example))
 Sign: *Like Call Break sign but with one hand and slower*
 
-Another feature from real samba is long and involved call breaks, which often include a lot of repi improvisation. This break lets us get a taste of this – it starts and ends with the copycat phrase (*“How ’bout that, how bout that, are you ready to copycat?” ”How ’bout that, how ’bout that, yep we’re ready to copycat”*), but between then the repi plays whatever they like and the band copies. The audio above is just one example.  
+Another feature from real samba is long and involved call breaks, which often include a lot of repi improvisation. This break lets us get a taste of this – it starts and ends with the copycat phrase (*“How ’bout that, how bout that, are you ready to copycat?” ”How ’bout that, how ’bout that, yep we’re ready to copycat”*), but between then one repi plays whatever phrases they like and the band copies. The audio above is just one example.  
 
 It can help for the repi to point to themselves when they’re leading and to the band when it’s their turn to copy, which as it only leaves them one stick on the drum also helps avoiding asking one-stick instruments to copy anything too busy. Best to keep it short and simple, and don’t be afraid of repeating a phrase.
+
+### Hedgehog Shout
+Sign: *Hedgehog tune sign in one hand, mime shouting with the other*
+
+This is the [original version](https://soundcloud.com/barking-bateria/hedgehog) of the [A Break](/#/listen/Core%20Breaks/A%20Break) – instead of “Act now!” you shout “Hedgehog!”.
+
