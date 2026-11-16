@@ -294,7 +294,7 @@ export default {
 			ta: 'X X X X X X X X XX',
 			ag: 'a  oa o   a   o a a a o       o',
 			sh: repeat(8, 'X.X.'),
-			mnemonics: { ls: repeat(2, "Let's get a pint to drink in ") }
+			mnemonics: {  ls: repeat(2, "Let's get a pint to drink in ") }
 		},
 		'Pale Horse (Draft), Pickup': {
 			description: "Automatically played before returning to main part",
@@ -338,7 +338,7 @@ export default {
 			ta: '@ls',
 			ag: '@ls',
 			sh: '@ls',
-			volumeHack: { 0: 1, 32: 0.2, 40: 0.4, 48: 0.7, 56: 1 }
+			volumeHack: {  0: 1, 32: 0.2, 40: 0.4, 48: 0.7, 56: 1 }
 		},
 		'Pale Horse (Draft), Sinister Pony Break': {
 			description: "*Fingers down on raised forearms and rock like on a rocking horse*",
@@ -350,7 +350,7 @@ export default {
 			ta: '@ls',
 			ag: '@ls',
 			sh: '@ls',
-			volumeHack: { 0: .2, 16: .4, 32: .7, 48: 1 },
+			volumeHack: {  0: .2, 16: .4, 32: .7, 48: 1 },
 			mnemonics: {
 				ls: repeat(3, "Let's get a pint to drink in "),
 				re: repeat(3, "Let's get a pint to drink in ") + "x x x",
@@ -359,10 +359,10 @@ export default {
 			}	
 		},
 		'Tam Up (Hedgehog)': {
-			time: 12,
-			ta: 'X   X   X   X   X   X   X   X   X   X   X   X   X                       X     X     X',
-			sh: 'X           .           .           .           X           .           .           .',
-			mnemonics: { ta: "1 and a 2 and a 3 and a 4 and a stop I'm a hog" }
+			time: 6,
+			ta: 'X X X X X X X X X X X X X           X  X  X',
+			sh: 'X     .     .     .     X     .     .     .     ',
+			mnemonics: {  ta: "1 and a 2 and a 3 and a 4 and a Stop I'm a hog" }
 		},
 		'Copycat Break (one example)': {
 			description: "*Call break sign but with one hand and slower*",
