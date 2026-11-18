@@ -18,7 +18,7 @@ An old Barking Bateria/Rhythms of Resistance tune that has survived on the Londo
 
 Relatively straightforward (our agogô part is the same as for Afoxé) and in fact used to be the first tune new bands would learn until it got replaced with Funk. A classic use is to start very, very slowly and gradually speed up. Works well as an interlude tune, or different instruments can use their parts as a looping break.
 
-* [**Break 1**](/#/listen/Tune%20Lab/Angel,%20Break%201) is a short unison phrase based on the agogô line (it can help to whistle it in with its rhythm, like a tam line break)
+* [**Break 1**](/#/listen/Tune%20Lab/Angel,%20Break%201) is a short unison phrase based on the agogô line (it can help to whistle it in with its rhythm, like a Tam Line break)
 * [**Break 2**](/#/listen/Tune%20Lab/Angel,%20Break%202) is a short surdo break
 
 ### [Pancake Break](/#/listen/Tune%20Lab/Pancake%20Break)
@@ -97,29 +97,29 @@ People often find them disorientating, though, and for things like inverting Pro
 Sign: *Hold out a pint glass, then put it upside down on your head*  
 Difficulty: Hard
 
-\[Description to follow\]
+_Description coming soon!_
 
-The tune has a [**pickup**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Break%203): when there’s a break, the snares and repis play the last beat of their parts before going back into the main tune. This is a classic samba feature and can be brought in with e.g. the high surdos in Samba Reggae (like at the end of its numbered breaks).
+The tune has a [**pickup**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Break%203): when there’s a break, one or more instruments (snare and repi here) can play the last beat or so of their main part or some other short set phrase before going back into the main tune, especially if the break ends with a few beats of silence. This is a classic samba feature and can be brought in with e.g. the high surdos in Samba Reggae, like at the end of its numbered breaks.
 
-* [**Break 1**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Break%201) has everyone play a pickup-like phrase at the end of the bar while snare and shaker carry on
+* [**Break 1**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Break%201) has everyone play a pickup-like phrase at the end of each bar while snare and shaker carry on
 * [**Break 2**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Break%202) is an [alternate surdo line](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Tune%20(Surdos%20Break%202))
-* [**Break 3**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Break%203) is a slightly longer one with everyone against the snare
-* The [**Sinister Pony Break**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Sinister%20Pony%20Break) _(Fingers down on raised forearms and rock like on a rocking horse)_ is a riff on the Karla Break but based on the low surdo part
+* [**Break 3**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Break%203) is a slightly longer one with everyone against the snare and goes from quiet to loud from the third bar
+* The [**Sinister Pony Break**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Sinister%20Pony%20Break) _(Fingers down on raised forearms, turn to the side and rock like on a rocking horse)_ is a riff on the Karla Break but based on the low surdo part
 
 ### [Tam Up](/#/listen/Tune%20Lab/Tam%20Up%20(Hedgehog))
 Sign: *Lift tam sign up to the sky* (or tams just do it automatically)
 
-In real samba, tams often play a little intro phrase before going into their main part, which can incorporate the end of their normal phrase (so acting like a pickup). Here’s a version that goes with Hedgehog. For maximum effect, move the tam over your head in a rainbow while you do it!
+In real samba, tams often play an intro phrase before going into their main part, which can incorporate the end of their normal part (like a pickup). Here’s a version that goes with Hedgehog. For maximum effect, move the tam over your head in a rainbow while you do it!
 
 ### [Copycat Break](/#/listen/Tune%20Lab/Copycat%20(one%20example))
 Sign: *Like Call Break sign but with one hand and slower*
 
-Another feature from real samba is long and involved call breaks, which often include a lot of repi improvisation. This break lets us get a taste of this – it starts and ends with the copycat phrase (*“How ’bout that, how bout that, are you ready to copycat?” ”How ’bout that, how ’bout that, yep we’re ready to copycat”*), but between then one repi plays whatever phrases they like and the band copies. The audio above is just one example.  
+Another feature from real samba is long and involved call breaks with a lot of repi improvisation. This break lets us get a taste of this – it starts and ends with the copycat phrase (*“How ’bout that, how bout that, are you ready to copycat?” ”How ’bout that, how ’bout that, yep we’re ready to copycat”*), but between then one repi plays whatever phrases they like and the band copies. The audio above is just one example.  
 
 It can help for the repi to point to themselves when they’re leading and to the band when it’s their turn to copy, which as it only leaves them one stick on the drum also helps avoiding asking one-stick instruments to copy anything too busy. Best to keep it short and simple, and don’t be afraid of repeating a phrase.
 
 ### Hedgehog Shout
 Sign: *Hedgehog tune sign in one hand, mime shouting with the other*
 
-This is the [original version](https://soundcloud.com/barking-bateria/hedgehog) of the [A Break](/#/listen/Core%20Breaks/A%20Break) – instead of “Act now!” you shout “Hedgehog!”.
+This is the [original version](https://soundcloud.com/barking-bateria/hedgehog) of the [A Break](/#/listen/Core%20Breaks/A%20Break), from Hedgehog. Instead of “Act now!” you shout (you’ll never guess) “Hedgehog!”.
 
