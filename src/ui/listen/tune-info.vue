@@ -131,7 +131,7 @@
 			<PatternPlaceholderItem><a href="javascript:" v-tooltip="i18n.t('tune-info.download-mp3')" @click="handleDownload(patternName, getPlayer())" draggable="false"><fa icon="download"/></a></PatternPlaceholderItem>
 		</PatternPlaceholder>
 
-		<p v-if="tune.sheet"><a :href="tune.sheet" target="_blank"><strong>Tune sheet with mnemonics (PDF)</strong></a></p>
+		<p v-if="tune.sheet"><a :href="tune.sheet" target="_blank"><strong>Tune sheet (PDF)</strong></a></p>
 		
 		<h2>About</h2>
 		<div v-html="tuneDescriptionHtml"></div>

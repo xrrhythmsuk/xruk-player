@@ -39,7 +39,7 @@ function uncompressMnemonics(tuneName: string, target: Pattern, pattern: Compres
 		console.warn(`Mnemonics length mismatch ${tuneName} ${target.displayName}: ${source}`, target[instr])
 	}
 	let i = 0;
-	return target[instr].map(p => p != ' ' ? words[i++] : '')
+	return target[instr].map(p => p != ' ' ? (words[i++] ?? '') : '')
 }
 
 for (const i in rawTunes) {
