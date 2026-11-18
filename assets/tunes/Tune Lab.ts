@@ -341,7 +341,7 @@ export default {
 			volumeHack: {  0: 1, 32: 0.2, 40: 0.4, 48: 0.7, 56: 1 }
 		},
 		'Pale Horse (Draft), Sinister Pony Break': {
-			description: "*Fingers down on raised forearms and rock like on a rocking horse*",
+			description: "*Fingers down on raised forearms, turn to the side and rock like on a rocking horse*",
 			ls: repeat(3, 'X  XX X  XX X   '),
 			ms: '@ls',
 			hs: '@ls',
