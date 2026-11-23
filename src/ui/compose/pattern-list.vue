@@ -13,6 +13,7 @@
 	import vTooltip from "../utils/tooltip";
 	import { getLocalizedDisplayName, useI18n } from "../../services/i18n";
 	import ShareDialog from "./share-dialog.vue";
+	import { track } from "../../services/analytics";
 
 	const props = defineProps<{
 		expandTune?: string;
@@ -94,6 +95,7 @@
 
 		if(newPatternName) {
 			createPattern(state.value, tuneName, newPatternName);
+			track('composition_pattern_created');
 			expandTune.value = tuneName;
 			editPattern.value = newPatternName;
 		}

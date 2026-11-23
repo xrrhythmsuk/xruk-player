@@ -8,6 +8,7 @@
 	import { useModal } from "../utils/modal";
 	import vTooltip from "../utils/tooltip";
 	import { getLocalizedDisplayName, useI18n } from "../../services/i18n";
+	import { track } from "../../services/analytics";
 
 	const emit = defineEmits<{
 		hidden: [];
@@ -162,8 +163,10 @@
 	};
 
 	const doImport = () => {
-		if(parsed.value.state)
+		if(parsed.value.state) {
 			extendState(state.value, parsed.value.state, (songIdx) => songInfo.value[songIdx].shouldImport, (tuneName, patternName) => tuneInfo.value[tuneName].patterns[patternName].shouldImport);
+			track('composition_imported');
+		}
 
 		modal.hide();
 	};

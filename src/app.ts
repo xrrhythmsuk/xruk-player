@@ -48,6 +48,7 @@ import Vue3TouchEvents, { Vue3TouchEventsOptions } from "vue3-touch-events"
 import { ensurePersistentStorage, reactiveLocalStorage } from "./services/localStorage"
 import { reactiveLocationHash } from "./services/router"
 import { theme } from "./services/bootstrap";
+import { trackException, trackLog } from "./services/analytics"
 
 registerServiceWorker()
 
@@ -102,6 +103,7 @@ const Root = defineComponent({
 				if (!persisted.value && route.tab === "compose") {
 					persisted.value = true
 					ensurePersistentStorage()
+					trackLog('info', 'persistent storage requested', { storage: 'browser' })
 				}
 			}
 		})
@@ -109,10 +111,19 @@ const Root = defineComponent({
 })
 
 try {
-createApp(Root, { config: { performance: true } })
-	.use<Vue3TouchEventsOptions>(Vue3TouchEvents, {})
-	.component('fa', FontAwesomeIcon)
-	.mount('#app')
+	const app = createApp(Root, { config: { performance: true } })
+
+	app.config.errorHandler = (error) => {
+		trackException(error)
+		trackLog('error', 'vue error boundary reached', { source: 'vue_error_handler' })
+	}
+
+	app
+		.use<Vue3TouchEventsOptions>(Vue3TouchEvents, {})
+		.component('fa', FontAwesomeIcon)
+		.mount('#app')
+
+	trackLog('info', 'application mounted', { app_component: 'root' })
 }
 catch (e) {
 	console.error("Error during app initialization:", e);

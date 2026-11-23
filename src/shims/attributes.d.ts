@@ -5,5 +5,6 @@ declare module "vue" {
 		"data-bs-toggle"?: "dropdown" | "modal";
 		"data-bs-target"?: string;
 		"data-bs-dismiss"?: "modal";
+		"data-ph"?: string;
 	}
 }

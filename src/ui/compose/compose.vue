@@ -13,6 +13,7 @@
 	import { clone, useRefWithOverride } from "../../utils";
 	import TuneView from "../tune-view.vue";
 	import { useI18n } from "../../services/i18n";
+	import { track } from "../../services/analytics";
 
 	const props = defineProps<{
 		history: History;
@@ -73,6 +74,7 @@
 			return;
 
 		appendSongPart(song, allInstruments([ tuneName, patternName ]), state.value);
+		track('composition_pattern_added');
 
 		await nextTick();
 		const el = tuneViewRef.value?.$el as HTMLElement | undefined;

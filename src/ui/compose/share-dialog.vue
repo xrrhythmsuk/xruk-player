@@ -138,16 +138,16 @@
 
 	const hide = () => emit("hidden");
 
-	const share = () => { 
+	const share = () => {
 		hide()
 
 		void navigator.share?.({
 			url: url.value
 		})
-		
+
 	}
 
-	const copyLink = () => { 
+	const copyLink = () => {
 		void window.navigator.clipboard.writeText(url.value)
 		hide()
 	}
@@ -235,10 +235,10 @@
 					</div>
 
 					<div class="modal-footer">
-						<button v-if="canShare" @click="share" class="btn btn-primary"><fa icon="share-from-square" /> Share</button>
-						<button @click="copyLink" class="btn btn-primary"><fa icon="link" /> Copy link</button>
-						<button @click="save" class="btn btn-primary"><fa icon="file-audio" /> Download</button>
-						<button @click="hide" class="btn btn-secondary">Cancel</button>
+						<button v-if="canShare" @click="share" class="btn btn-primary" data-ph="share-dialog-share"><fa icon="share-from-square" /> Share</button>
+						<button @click="copyLink" class="btn btn-primary" data-ph="share-dialog-copy-link"><fa icon="link" /> Copy link</button>
+						<button @click="save" class="btn btn-primary" data-ph="share-dialog-download"><fa icon="file-audio" /> Download</button>
+						<button @click="hide" class="btn btn-secondary" data-ph="share-dialog-cancel">Cancel</button>
 					</div>
 
 				</div>

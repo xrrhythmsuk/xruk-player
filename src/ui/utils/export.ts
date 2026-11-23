@@ -6,6 +6,7 @@ import { createApp, defineComponent, h, ref } from 'vue';
 import { showAlert } from './alert';
 import Progress from "./progress.vue";
 import { getI18n } from '../../services/i18n';
+import { track } from '../../services/analytics';
 
 export enum ExportType { WAV = "wav", MP3 = "mp3" };
 
@@ -38,6 +39,7 @@ export async function download({ type, player, filename }: ExportArgs): Promise<
 		});
 
 		FileSaver.saveAs(blob, `${filename}.${type}`);
+		track('composition_exported', { export_format: type });
 	} catch(err: any) {
 		if (err instanceof DOMException && err.name === "AbortError") {
 			return;

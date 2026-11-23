@@ -2,6 +2,7 @@
 	import { computed } from 'vue';
 	import { BeatboxReference, getPlayerById, stopAllPlayers } from '../services/player';
 	import { useI18n } from '../services/i18n';
+	import { track } from '../services/analytics';
 
 	const props = defineProps<{
 		player: BeatboxReference;
@@ -15,14 +16,19 @@
 		if(!player.value.playing) {
 			stopAllPlayers();
 			player.value.play();
+			track('player_playback_started');
 		}
-		else
+		else {
 			void player.value.stop();
+			track('player_playback_stopped');
+		}
 	};
 
 	const stop = () => {
-		if(player.value.playing)
+		if(player.value.playing) {
 			void player.value.stop();
+			track('player_playback_stopped');
+		}
 		player.value.setPosition(0);
 	};
 </script>

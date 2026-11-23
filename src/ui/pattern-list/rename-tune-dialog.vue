@@ -6,6 +6,7 @@
 	import { useI18n } from "../../services/i18n";
 	import { useModal } from "../utils/modal";
 	import vValidity from "../utils/validity";
+	import { track } from "../../services/analytics";
 
 	const props = defineProps<{
 		initialTuneName?: string;
@@ -56,6 +57,7 @@
 		const data = { description: description.value || undefined };
 		if (isNew.value) {
 			createTune(state.value, newName, data);
+			track('composition_tune_created');
 		} else {
 			renameTune(state.value, props.initialTuneName!, newName);
 			state.value.tunes[newName].description = data.description;
