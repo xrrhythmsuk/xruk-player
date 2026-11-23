@@ -43,10 +43,10 @@ export function track(event: string, properties?: Record<string, unknown>): void
 /**
  * Captures a pageview for a route change. No-op when analytics is not configured.
  */
-export function trackPageview(routeName: string): void {
+export function trackPageview(routeName: string, properties?: Record<string, unknown>): void {
 	if (!analyticsEnabled)
 		return
-	posthog.capture("$pageview", { route: routeName })
+	posthog.capture("$pageview", { route: routeName, ...properties })
 }
 
 /**

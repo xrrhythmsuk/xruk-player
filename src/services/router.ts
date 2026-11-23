@@ -153,7 +153,10 @@ export function useRouter(path: Ref<string>): Ref<Route> {
 
 	watch(route, () => {
 		path.value = routeToPath(route.value)
-		trackPageview(routeToMatch(route.value).name)
+		trackPageview(routeToMatch(route.value).name, {
+			tune_name: "tuneName" in route.value ? route.value.tuneName : undefined,
+			pattern_name: "patternName" in route.value ? route.value.patternName : undefined
+		})
 	}, { immediate: true, deep: true })
 
 	return route
