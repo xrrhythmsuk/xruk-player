@@ -246,8 +246,6 @@
 			:tune-name="shareTuneName"
 			@hidden="shareTuneName = undefined"
 		/>
-
-		<!-- // TODO: re-add share dialog -->
 	</div>
 </template>
 

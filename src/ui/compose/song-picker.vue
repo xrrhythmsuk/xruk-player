@@ -78,7 +78,7 @@
 
 <template>
 	<div class="dropdown bb-song-picker">
-		<button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+		<button class="btn dropdown-toggle" data-bs-toggle="dropdown">
 			<fa icon="music"/><span class="d-none d-sm-inline">{{' '}}{{getSongName(state, props.modelValue)}}</span>
 		</button>
 		<ul class="dropdown-menu">
@@ -115,6 +115,10 @@
 		.list-unstyled {
 			display: flex;
 			align-items: center;
+		}
+
+		.dropdown-toggle {
+			background-color: var(--cyan);
 		}
 	}
 </style>

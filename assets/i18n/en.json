@@ -46,6 +46,9 @@
 	"compose": {
 		"add-to-song-tooltip": "Add to song"
 	},
+	"song-list": {
+		"title": "Songs"
+	},
 	"history-picker": {
 		"import-error-title": "Errors while loading data",
 		"clear-title": "Clear history",
