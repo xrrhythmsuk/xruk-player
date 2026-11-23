@@ -1,6 +1,7 @@
 import { computed, ref, Ref, watch } from "vue"
 import { match, compile } from "path-to-regexp"
 import { stringToObject } from "../utils"
+import { trackPageview } from "./analytics"
 
 export type Route =
 	{
@@ -152,6 +153,7 @@ export function useRouter(path: Ref<string>): Ref<Route> {
 
 	watch(route, () => {
 		path.value = routeToPath(route.value)
+		trackPageview(routeToMatch(route.value).name)
 	}, { immediate: true, deep: true })
 
 	return route

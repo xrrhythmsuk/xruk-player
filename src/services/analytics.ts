@@ -10,6 +10,9 @@ if (analyticsEnabled) {
 	posthog.init(posthogToken, {
 		api_host: posthogHost,
 		autocapture: true,
+		// The app uses a custom hash-based router, so pageviews are captured explicitly
+		// via {@link trackPageview} instead of relying on the History API.
+		capture_pageview: false,
 		capture_exceptions: {
 			capture_unhandled_errors: true,
 			capture_unhandled_rejections: true,
@@ -35,6 +38,15 @@ export function track(event: string, properties?: Record<string, unknown>): void
 	if (!analyticsEnabled)
 		return
 	posthog.capture(event, properties)
+}
+
+/**
+ * Captures a pageview for a route change. No-op when analytics is not configured.
+ */
+export function trackPageview(routeName: string): void {
+	if (!analyticsEnabled)
+		return
+	posthog.capture("$pageview", { route: routeName })
 }
 
 /**
