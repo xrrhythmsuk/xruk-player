@@ -28,8 +28,8 @@ export default {
         'Starter Agogo': {
             displayName: 'Starter Agogô',
             loop: true,
+            metronome: true,
             ag: 'o a o a o ao ao ',
-            sh: 'X   .   .   .   ',
             mnemonics: {  ag: '1 2 3 4 Put some ra-gga on'}
         },
         'Kickback 1': {
