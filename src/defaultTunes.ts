@@ -87,11 +87,11 @@ for (const i in rawTunes) {
 
 	defaultTunes[i] = normalizeTune(newTune);
 
-	let unknown = [];
+	let unknown = [] as string[];
 	(defaultTunes[i].exampleSong || []).forEach((egBit) => {
 		if (typeof egBit === 'string' && !defaultTunes[i].patterns[egBit]) {
 			unknown.push(egBit);
-		} else if (typeof egBit === 'object') {
+		} else if (typeof egBit === 'object' && egBit.tuneName && egBit.patternName) {
 			const bitTune = egBit.tuneName, bitPattern = egBit.patternName;
 			if (!defaultTunes[bitTune].pattern[bitPattern]) {
 				unknown.push(`${bitPattern} from ${bitTune}`);
