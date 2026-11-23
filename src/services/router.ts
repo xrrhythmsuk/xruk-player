@@ -154,13 +154,6 @@ export function useRouter(path: Ref<string>): Ref<Route> {
 		path.value = routeToPath(route.value)
 	}, { immediate: true, deep: true })
 
-	watch(route, () => {
-		const hotjar = (window as Window & { hj?: (...args: [string, string]) => void }).hj
-		if (typeof hotjar === "function") {
-			hotjar("stateChange", routeToMatch(route.value).name)
-		}
-	}, { deep: true, immediate: true })
-
 	return route
 }
 
