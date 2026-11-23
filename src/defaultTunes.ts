@@ -93,7 +93,7 @@ for (const i in rawTunes) {
 			unknown.push(egBit);
 		} else if (typeof egBit === 'object' && egBit.tuneName && egBit.patternName) {
 			const bitTune = egBit.tuneName, bitPattern = egBit.patternName;
-			if (!defaultTunes[bitTune].pattern[bitPattern]) {
+			if (!defaultTunes[bitTune].patterns[bitPattern]) {
 				unknown.push(`${bitPattern} from ${bitTune}`);
 			}
 		}
