@@ -154,7 +154,15 @@
 		"export-mp3": "Export MP3",
 		"export-wav": "Export WAV",
 		"share": "Share",
-		"import": "Import"
+		"import": "Import",
+		"advanced-editor": "Advanced editor"
+	},
+	"advanced-editor-dialog": {
+		"title": "Advanced editor",
+		"pick-tune": "Pick tune",
+		"pick-tune-placeholder": "Pick a tune…",
+		"pick-tune-hint": "Select a tune above to edit its JSON here.",
+		"save": "Save"
 	},
 	"song-player": {
 		"all-instruments": "All",

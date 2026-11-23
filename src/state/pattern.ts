@@ -89,9 +89,11 @@ export function normalizePattern(data?: PatternOptional): Pattern {
  * @returns A pattern object where some of the instruments have been replaced by diffs and the time and length
  *          properties have been removed if they don't differ from the original. The format is as follows:
  *          - If the instrument line starts with a '@', it is followed by a two-char instrument key and
- *            a diff to the line of that instrument (as returned by getDiffString()
+ *          a diff to the line of that instrument (as returned by getDiffString()
  *          - If the instrument line starts with a '+', it is followed by a diff to the original instrument line
  *          - Otherwise, the string is the actual instrument line
+ *          Mnemonics are compressed to one word per stroke (separated by spaces or hyphens), one string per instrument.
+ *          The speed, loop, displayName, description and volumeHack properties are included when they differ from the original (or from the defaults, if there is no original).
  */
 export function compressPattern(pattern: Pattern, originalPattern?: Pattern, encode?: boolean): CompressedPattern {
 	const instrumentKeys = config.instrumentKeys;
@@ -148,6 +150,38 @@ export function compressPattern(pattern: Pattern, originalPattern?: Pattern, enc
 	}
 	if(originalPattern == null ? (pattern.upbeat != 0) : (pattern.upbeat != originalPattern.upbeat)) {
 		ret.upbeat = pattern.upbeat;
+	}
+	if(originalPattern == null ? (pattern.speed != config.defaultSpeed) : (pattern.speed != originalPattern.speed)) {
+		ret.speed = pattern.speed;
+	}
+	if(originalPattern == null ? (pattern.loop != false) : (pattern.loop != originalPattern.loop)) {
+		ret.loop = pattern.loop;
+	}
+	if(pattern.displayName != null && pattern.displayName != originalPattern?.displayName) {
+		ret.displayName = pattern.displayName;
+	}
+	if(pattern.description != null && pattern.description != originalPattern?.description) {
+		ret.description = pattern.description;
+	}
+	if(originalPattern == null ? (pattern.volumeHack != null) : !isEqual(pattern.volumeHack, originalPattern.volumeHack)) {
+		ret.volumeHack = pattern.volumeHack;
+	}
+	if(pattern.mnemonics != null) {
+		for(const instr of instrumentKeys) {
+			const words = pattern.mnemonics[instr];
+			if(!words || words.every((word) => !word))
+				continue;
+
+			const outWords: Array<string> = [ ];
+			const strokes = pattern[instr] || [ ];
+			for(let i=0; i<Math.max(words.length, strokes.length); i++) {
+				if(strokes[i] && strokes[i] != ' ')
+					outWords.push(words[i] || "");
+			}
+
+			if(outWords.length > 0 && outWords.every((word) => word))
+				(ret.mnemonics ??= { })[instr] = outWords.join(" ");
+		}
 	}
 
 	return ret;
@@ -227,6 +261,14 @@ export function patternFromCompressed(encodedPatternObject: CompressedPattern, o
 		ret.upbeat = encodedPatternObject.upbeat;
 	else if(!originalPattern || !ret.upbeat)
 		ret.upbeat = 0;
+	if(encodedPatternObject.speed != null)
+		ret.speed = encodedPatternObject.speed;
+	if(encodedPatternObject.loop != null)
+		ret.loop = encodedPatternObject.loop;
+	if(encodedPatternObject.displayName != null)
+		ret.displayName = encodedPatternObject.displayName;
+	if(encodedPatternObject.description != null)
+		ret.description = encodedPatternObject.description;
 	if(encodedPatternObject.volumeHack != null)
 		ret.volumeHack = encodedPatternObject.volumeHack;
 
@@ -261,6 +303,21 @@ export function patternFromCompressed(encodedPatternObject: CompressedPattern, o
 			ret[instr] = str2pattern(encoded);
 		} else if(encoded == "")
 			ret[instr] = [ ];
+	}
+
+	if(encodedPatternObject.mnemonics != null) {
+		ret.mnemonics = { };
+		for(const instr of config.instrumentKeys) {
+			const source = encodedPatternObject.mnemonics[instr];
+			const clone = (source || encodedPatternObject[instr] || "").match(/^@([a-z]{2})$/);
+			if(clone) {
+				ret.mnemonics[instr] = ret.mnemonics[clone[1] as Instrument];
+			} else if(source) {
+				const words = source.trim().split(/[\s-]+/);
+				let wordIdx = 0;
+				ret.mnemonics[instr] = (ret[instr] || [ ]).map((stroke) => stroke && stroke != ' ' ? words[wordIdx++] : "");
+			}
+		}
 	}
 
 	return normalizePattern(ret);
