@@ -61,6 +61,7 @@ export default {
         },
         'Conga': {
             loop: true,
+            metronome: true,
             description: "*C with whole hand*\nAn alternate line for surdos",
             ls: "X     X X   X X X     X X   X X X   X   X   X   X   X   X   X   ",
             ms: "@ls",
@@ -70,6 +71,7 @@ export default {
         'Little Cat': {
             loop: true,
             upbeat: 2,
+            metronome: true,
             description: "*Conga sign with air quotes in other hand*\nAn accompanying line usually used for backpack",
             re: "X X     X X X X X   X X X X   X   X X X X X   X                   ",
             ta: "@re",
@@ -79,12 +81,14 @@ export default {
         },
         'Little Cat (Alt Repi)': {
             loop: true,
+            metronome: true,
             description: "*Their special part*\nAlternate line for repis",
             re: "f   X X r r X X ",
             mnemonics: {  re: "Ugh, li-ttle cat's a go-ner" }
         },
         'Capped Karla (Little Cat)': {
             loop: true,
+            metronome: true,
             description: "*Capped Karla with Little Cat part*\nSnare variation that incorporates the special repi line",
             re: 'XXXXXXXXXXXXXXXXf   X X r r X X ',
             sn: '@re',
