@@ -26,15 +26,15 @@ export default {
         },
        "Alt Repi": {
            loop: true,
+           metronome: true,
            re: 'X  XX  XX X X   XXXXX  XX X X   X  XX  XX X X   XXXXX  XX       ',
-           sh: 'X   .   .   .   X   .   .   .   X   .   .   .   X   .   .   .   ',
            mnemonics: {  re: "Here he comes, the Big Bad Wolf Ve-ry sca-ry guy, the Big Bad Wolf "
                + "Here he comes, the Big Bad Wolf Ve-ry sca-ry guy, the wolf" }
        },
        "Alt Tam": {
            loop: true,
+           metronome: true,
            ta: 'X X     X X     XX XXX XX       X XX XX X X X X XX XXX XX       ',
-           sh: 'X   .   .   .   X   .   .   .   X   .   .   .   X   .   .   .   ',
            mnemonics: {  ta: "Big Bad Wolf is hu-ffing and pu-ffing real tough "
                + "Dressed up like your nan, come in close so Wol-fie can go-bble you up" }
         },
@@ -56,10 +56,10 @@ export default {
         },
         "Break 2": {
             loop: true,
+            metronome: true,
             ls: 'XXXXXXXXX  X XXXX     XXX       ',
             ms: '@ls',
             hs: '@ls',
-            sh: 'X   .   .   .   X   .   .   .   ',
             mnemonics: { ls: "Li-ttle pi-ggies got rid of the wolf, "
                 + "So did Li-ttle Red With an axe" }
         },
