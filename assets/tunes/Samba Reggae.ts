@@ -28,15 +28,15 @@ export default {
         },
         'Starter Snare': {
             loop: true,
+            metronome: true,
             sn: '..XX..XX..XX..XX',
-            sh: 'X   .   .   .   ',
             mnemonics: {  sn: ". . Can I . . Get a . . Bit of . . Re-ggae" }
         },
         'Starter Agogo': {
             displayName: 'Starter Agogô',
             loop: true,
+            metronome: true,
             ag: 'o  a  o   a a   ',
-            sh: 'X   .   .   .   ',
             mnemonics: {  ag: "Cla-ve for re-ggae" }
         },
         'Break 1': {
