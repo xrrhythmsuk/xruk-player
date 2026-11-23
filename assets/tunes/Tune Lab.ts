@@ -294,7 +294,10 @@ export default {
 			ta: 'X X X X X X X X XX',
 			ag: 'a  oa o   a   o a a a o       o',
 			sh: repeat(8, 'X.X.'),
-			mnemonics: {  ls: repeat(2, "Let's get a pint to drink in ") }
+			mnemonics: {
+				ls: repeat(2, "Let's get a pint to drink in "),
+				ag: "I need an a-pple for my pale white horse, hey,"
+			}
 		},
 		'Pale Horse (Draft), Pickup': {
 			description: "Automatically played before returning to main part",
