@@ -90,7 +90,7 @@ for (const i in rawTunes) {
 	const unknown = (defaultTunes[i].exampleSong || [])
 		.filter((patternName) => typeof patternName === 'string' ?
 			!defaultTunes[i].patterns[patternName] :
-			!defaultTunes[patternName.tuneName].patterns[patternName.patternName]);
+			!defaultTunes[patternName.tuneName ?? ''].patterns[patternName.patternName ?? '']);
 	
 	if(unknown.length > 0) {
 		// eslint-disable-next-line no-console
