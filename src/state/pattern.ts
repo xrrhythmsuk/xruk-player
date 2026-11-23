@@ -51,6 +51,7 @@ const patternPropertiesValidator = z.object({
 	speed: z.number().default(() => config.defaultSpeed),
 	upbeat: z.number().default(0),
 	loop: z.boolean().default(false),
+	metronome: z.boolean().default(false),
 	displayName: z.string().optional(),
 	description: z.string().optional(),
 	volumeHack: instrumentVolumeHackValidator.optional()
