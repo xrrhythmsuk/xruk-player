@@ -87,10 +87,17 @@ for (const i in rawTunes) {
 
 	defaultTunes[i] = normalizeTune(newTune);
 
-	const unknown = (defaultTunes[i].exampleSong || [])
-		.filter((patternName) => typeof patternName === 'string' ?
-			!defaultTunes[i].patterns[patternName] :
-			!defaultTunes[patternName.tuneName ?? ''].patterns[patternName.patternName ?? '']);
+	let unknown = [];
+	(defaultTunes[i].exampleSong || []).forEach((egBit) => {
+		if (typeof egBit === 'string' && !defaultTunes[i].patterns[egBit]) {
+			unknown.push(egBit);
+		} else if (typeof egBit === 'object') {
+			const bitTune = egBit.tuneName, bitPattern = egBit.patternName;
+			if (!defaultTunes[bitTune].pattern[bitPattern]) {
+				unknown.push(`${bitPattern} from ${bitTune}`);
+			}
+		}
+	})
 	
 	if(unknown.length > 0) {
 		// eslint-disable-next-line no-console
