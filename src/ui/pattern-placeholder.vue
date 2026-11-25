@@ -57,7 +57,8 @@
 		...clone(state.value.playbackSettings),
 		...(pattern.value ? {
 			speed: pattern.value.speed,
-			loop: pattern.value.loop
+			loop: pattern.value.loop,
+			whistle: pattern.value.metronome ? 2 : false
 		} : {})
 	}));
 
@@ -72,7 +73,9 @@
 
 	const playerPlaybackSettings = computed(() => ({
 		...playbackSettings.value,
-		loop: pattern.value?.loop || playbackSettings.value.loop
+		loop: pattern.value?.loop || playbackSettings.value.loop,
+		speed: pattern.value?.speed || playbackSettings.value.speed,
+		whistle: (pattern.value?.metronome ? 2 : false) || playbackSettings.value.whistle
 	}));
 
 	const rawPattern = computed<RawPatternWithUpbeat>(() => {
