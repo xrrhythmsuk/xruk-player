@@ -71,7 +71,7 @@
 	<Teleport to="body">
 		<div class="modal fade bb-pattern-editor-dialog" tabindex="-1" aria-hidden="true" ref="modalRef">
 			<div class="modal-dialog">
-				<form class="modal-content" @submit.prevent="submit()" novalidate ref="formRef" :class="{ 'was-validated': formTouched }">
+				<form class="modal-content" @submit.prevent="submit()" novalidate ref="formRef" :class="{ 'was-validated': formTouched }" data-ph-capture-attribute-dialog="rename-tune">
 					<div class="modal-header">
 						<h1 class="modal-title fs-5">{{title}}</h1>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" :aria-label="i18n.t('general.dialog-close')"></button>
@@ -92,8 +92,8 @@
 						</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" @click="modal.hide()">{{i18n.t('general.dialog-cancel')}}</button>
-						<button type="submit" class="btn btn-primary">{{i18n.t(isNew ? 'pattern-list.create-tune-ok' : 'pattern-list.rename-tune-ok')}}</button>
+						<button type="button" class="btn btn-secondary" @click="modal.hide()" data-ph-capture-attribute-action="cancel">{{i18n.t('general.dialog-cancel')}}</button>
+						<button type="submit" class="btn btn-primary" data-ph-capture-attribute-action="ok">{{i18n.t(isNew ? 'pattern-list.create-tune-ok' : 'pattern-list.rename-tune-ok')}}</button>
 					</div>
 				</form>
 			</div>

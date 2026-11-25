@@ -85,32 +85,34 @@
 </script>
 
 <template>
-	<TuneView
-		ref="tuneViewRef"
-		class="bb-compose"
-		:tuneName="expandTune"
-		:patternName="editingPattern ? editPattern : undefined"
-		:readonly="false"
-		closeHref="#/compose/"
-		:sidebarToggleContainer="sidebarToggleContainer"
-		@update:tuneName="expandTune = $event"
-		@close="expandTune = undefined; editPattern = undefined"
-	>
-		<PatternList
-			v-slot="slotProps"
-			v-model:expandTune="expandTune"
-			v-model:editPattern="editPattern"
-			v-model:isDraggingPattern="isDraggingPattern"
+	<div data-ph-capture-attribute-section="compose">
+		<TuneView
+			ref="tuneViewRef"
+			class="bb-compose"
+			:tuneName="expandTune"
+			:patternName="editingPattern ? editPattern : undefined"
+			:readonly="false"
+			closeHref="#/compose/"
+			:sidebarToggleContainer="sidebarToggleContainer"
+			@update:tuneName="expandTune = $event"
+			@close="expandTune = undefined; editPattern = undefined"
 		>
-			<PatternPlaceholderItem><a href="javascript:" v-tooltip="i18n.t('compose.add-to-song-tooltip')" @click="patternClick(slotProps.tuneName, slotProps.patternName)" draggable="false"><fa icon="plus"/></a></PatternPlaceholderItem>
-		</PatternList>
+			<PatternList
+				v-slot="slotProps"
+				v-model:expandTune="expandTune"
+				v-model:editPattern="editPattern"
+				v-model:isDraggingPattern="isDraggingPattern"
+			>
+				<PatternPlaceholderItem><a href="javascript:" v-tooltip="i18n.t('compose.add-to-song-tooltip')" @click="patternClick(slotProps.tuneName, slotProps.patternName)" draggable="false" data-ph-capture-attribute-action="add-to-song"><fa icon="plus"/></a></PatternPlaceholderItem>
+			</PatternList>
 
-		<template v-slot:empty>
-			<SongPlayer v-model:songIdx="songIdx" v-model:isDraggingPattern="isDraggingPattern">
-				<template v-slot:toolbar-right>
-					<HistoryPicker :history="history" />
-				</template>
-			</SongPlayer>
-		</template>
-	</TuneView>
+			<template v-slot:empty>
+				<SongPlayer v-model:songIdx="songIdx" v-model:isDraggingPattern="isDraggingPattern">
+					<template v-slot:toolbar-right>
+						<HistoryPicker :history="history" />
+					</template>
+				</SongPlayer>
+			</template>
+		</TuneView>
+	</div>
 </template>

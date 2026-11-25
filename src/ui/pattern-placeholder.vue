@@ -144,7 +144,7 @@
 </script>
 
 <template>
-	<a :href="`#/${readonly ? 'listen' : 'compose'}/${tuneName}/${patternName}`" class="bb-pattern-placeholder" :class="[{ dragging }, `drag-effect-${dragEffect}`]" :draggable="draggable ? 'true' : 'false'" @dragstart="handleDragStart($event)" @dragend="handleDragEnd($event)" ref="containerRef">
+	<a :href="`#/${readonly ? 'listen' : 'compose'}/${tuneName}/${patternName}`" class="bb-pattern-placeholder" :class="[{ dragging }, `drag-effect-${dragEffect}`]" :data-ph-capture-attribute-tune="tuneName" :data-ph-capture-attribute-pattern="patternName" :draggable="draggable ? 'true' : 'false'" @dragstart="handleDragStart($event)" @dragend="handleDragEnd($event)" ref="containerRef">
 		<div v-if="draggable" class="grip" @click.prevent>
 			<fa icon="grip-vertical"/>
 		</div>
@@ -159,11 +159,11 @@
 			</a>
 		</div>
 		<ul class="actions icon-list">
-			<li><a href="javascript:" v-tooltip="i18n.t('pattern-placeholder.listen-tooltip')" @click="playPattern()" draggable="false"><fa :icon="abstractPlayerRef?.playerRef?.playing ? 'stop' : 'play-circle'"></fa></a></li>
+			<li><a href="javascript:" v-tooltip="i18n.t('pattern-placeholder.listen-tooltip')" @click="playPattern()" draggable="false" data-ph-capture-attribute-action="play-pattern"><fa :icon="abstractPlayerRef?.playerRef?.playing ? 'stop' : 'play-circle'"></fa></a></li>
 			<!--
 			<li><a :href="`#/listen/${tuneName}/${patternName}`" v-tooltip="readonly ? i18n.t('pattern-placeholder.show-notes-tooltip') : i18n.t('pattern-placeholder.edit-notes-tooltip')" draggable="false"><fa icon="music"/></a></li>
 			-->
-			<li v-if="hasLocalChanges"><a href="javascript:" v-tooltip="i18n.t('pattern-placeholder.restore-tooltip')" @click="restore()" draggable="false"><fa icon="eraser"/></a></li>
+			<li v-if="hasLocalChanges"><a href="javascript:" v-tooltip="i18n.t('pattern-placeholder.restore-tooltip')" @click="restore()" draggable="false" data-ph-capture-attribute-action="restore"><fa icon="eraser"/></a></li>
 			<slot :getPlayer="() => { abstractPlayerRef!.getOrCreatePlayer(); return abstractPlayerRef!.playerRef!; }"/>
 		</ul>
 

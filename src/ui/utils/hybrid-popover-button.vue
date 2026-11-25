@@ -69,13 +69,13 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<h1 class="modal-title fs-5">{{props.title}}</h1>
-							<button type="button" class="btn-close" data-bs-dismiss="modal" :aria-label="i18n.t('general.dialog-close')"></button>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" :aria-label="i18n.t('general.dialog-close')" data-ph-capture-attribute-action="close"></button>
 						</div>
 						<div class="modal-body">
 							<slot></slot>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">{{i18n.t("general.dialog-ok")}}</button>
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-ph-capture-attribute-action="ok">{{i18n.t("general.dialog-ok")}}</button>
 						</div>
 					</div>
 				</div>

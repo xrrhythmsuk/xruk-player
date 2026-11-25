@@ -61,11 +61,11 @@
 
 		<div class="divider"></div>
 
-		<button @click="() => playbackSettings.loop = !playbackSettings.loop" 
-			class="btn btn-outline-secondary" :class="{active: playbackSettings.loop}" v-tooltip="'Loop'"><fa icon="repeat"/></button>
-		<button @click="() => showMnemonics = !showMnemonics" 
+		<button @click="() => playbackSettings.loop = !playbackSettings.loop"
+			class="btn btn-outline-secondary" :class="{active: playbackSettings.loop}" v-tooltip="'Loop'" data-ph-capture-attribute-action="loop"><fa icon="repeat"/></button>
+		<button @click="() => showMnemonics = !showMnemonics"
 			class="btn btn-outline-secondary" :class="{active: showMnemonics}"
-			v-tooltip="'Toggle mnemonics'" :disabled="!mnemonicsAvailable"><fa icon="comment"/></button>
+			v-tooltip="'Toggle mnemonics'" :disabled="!mnemonicsAvailable" data-ph-capture-attribute-action="mnemonics"><fa icon="comment"/></button>
 		<template v-if="!readonly">
 			<div class="btn-group">
 				<PatternLengthPicker

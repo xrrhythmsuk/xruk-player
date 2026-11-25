@@ -36,14 +36,14 @@
 <template>
 	<div class="bb-help">
 		<div class="dropdown">
-			<button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown">
+			<button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" data-ph-capture-attribute-action="help-menu">
 				<fa icon="info-circle"/>
 			</button>
 			<ul class="dropdown-menu dropdown-menu-end">
 				<!-- <li><a class="dropdown-item" href="https://player-docs.rhythms-of-resistance.org/" target="_blank"><fa icon="question-circle" fixed-width/>{{" "}}{{i18n.t("help.user-manual")}}</a></li> -->
 				<li><a class="dropdown-item" href="https://github.com/xrrhythmsuk/xruk-player/issues" target="_blank"><fa icon="exclamation-circle" fixed-width/>{{" "}}{{i18n.t("help.report-problem")}}</a></li>
 				<li><a class="dropdown-item" href="?" :download="downloadFilename"><fa icon="download" fixed-width/>{{" "}}{{i18n.t("help.download", { appName: config.appName })}}</a></li>
-				<li><a class="dropdown-item" href="javascript:" @click="showAppModal = true"><fa icon="mobile-alt" fixed-width/>{{" "}}{{i18n.t("help.app", { appName: config.appName })}}</a></li>
+				<li><a class="dropdown-item" href="javascript:" @click="showAppModal = true" data-ph-capture-attribute-action="open-app"><fa icon="mobile-alt" fixed-width/>{{" "}}{{i18n.t("help.app", { appName: config.appName })}}</a></li>
 				<li><a class="dropdown-item" href="https://github.com/xrrhythmsuk/xruk-player" target="_blank"><fa icon="code" fixed-width/>{{" "}}{{i18n.t("help.source-code")}}</a></li>
 				<!-- 
 				<li><hr class="dropdown-divider"></li>
@@ -67,18 +67,21 @@
 						:class="{ active: themePreference == null }"
 						href="javascript:"
 						@click.stop="themePreference = undefined"
+						data-ph-capture-attribute-action="theme-auto"
 					>{{i18n.t("help.colour-mode-auto")}}</a>
 					<a
 						class="dropdown-item"
 						:class="{ active: themePreference === 'light' }"
 						href="javascript:"
 						@click.stop="themePreference = 'light'"
+						data-ph-capture-attribute-action="theme-light"
 					>{{i18n.t("help.colour-mode-light")}}</a>
 					<a
 						class="dropdown-item"
 						:class="{ active: themePreference == 'dark' }"
 						href="javascript:"
 						@click.stop="themePreference = 'dark'"
+						data-ph-capture-attribute-action="theme-dark"
 					>{{i18n.t("help.colour-mode-dark")}}</a>
 				</li>
 			</ul>
@@ -87,14 +90,14 @@
 		<Teleport to="body">
 			<div v-if="showAppModal" class="modal fade" tabindex="-1" aria-hidden="true" ref="appModalRef">
 				<div class="modal-dialog modal-dialog-scrollable">
-					<div class="modal-content">
+					<div class="modal-content" data-ph-capture-attribute-dialog="app-instructions">
 						<div class="modal-header">
 							<h1 class="modal-title fs-5">{{i18n.t("help.app", { appName: config.appName })}}</h1>
-							<button type="button" class="btn-close" data-bs-dismiss="modal" :aria-label="i18n.t('general.dialog-close')"></button>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" :aria-label="i18n.t('general.dialog-close')" data-ph-capture-attribute-action="close"></button>
 						</div>
 						<div class="modal-body" v-html="appInstructionsHtml"></div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">{{i18n.t("general.dialog-ok")}}</button>
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-ph-capture-attribute-action="ok">{{i18n.t("general.dialog-ok")}}</button>
 						</div>
 					</div>
 				</div>

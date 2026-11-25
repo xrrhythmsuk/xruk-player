@@ -31,7 +31,7 @@
 					<a href="javascript:location.reload()" draggable="false">{{i18n.t("update.refresh-refresh")}}</a>
 				</template>
 			</T>
-			<button type="button" class="btn-close" :aria-label="i18n.t('general.dialog-close')" @click="show = false"></button>
+			<button type="button" class="btn-close" :aria-label="i18n.t('general.dialog-close')" @click="show = false" data-ph-capture-attribute-action="close"></button>
 		</div>
 	</div>
 </template>

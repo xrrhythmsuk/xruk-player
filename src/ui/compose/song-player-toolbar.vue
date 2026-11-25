@@ -68,15 +68,15 @@
 		<SongPicker v-model="songIdx"/>
 
 		<div class="dropdown">
-			<button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+			<button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-ph-capture-attribute-action="tools">
 				<fa icon="cog"/><span class="d-none d-sm-inline">{{" "}}{{i18n.t("song-player-toolbar.tools")}}</span>
 			</button>
 			<ul class="dropdown-menu">
-				<li><a class="dropdown-item" href="javascript:" @click="handleClearSong()" draggable="false"><fa icon="trash" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.clear-song")}}</a></li>
-				<li><a class="dropdown-item" href="javascript:" @click="handleDownload(ExportType.MP3)" draggable="false"><fa icon="file-export" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.export-mp3")}}</a></li>
-				<li><a class="dropdown-item" href="javascript:" @click="handleDownload(ExportType.WAV)" draggable="false"><fa icon="file-export" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.export-wav")}}</a></li>
-				<li><a class="dropdown-item" href="javascript:" @click="showShareDialog = true" draggable="false"><fa icon="share-from-square" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.share")}}</a></li>
-				<li><a class="dropdown-item" href="javascript:" @click="showImportDialog = true" draggable="false"><fa icon="file-import" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.import")}}</a></li>
+				<li><a class="dropdown-item" href="javascript:" @click="handleClearSong()" draggable="false" data-ph-capture-attribute-action="clear-song"><fa icon="trash" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.clear-song")}}</a></li>
+				<li><a class="dropdown-item" href="javascript:" @click="handleDownload(ExportType.MP3)" draggable="false" data-ph-capture-attribute-action="export-mp3"><fa icon="file-export" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.export-mp3")}}</a></li>
+				<li><a class="dropdown-item" href="javascript:" @click="handleDownload(ExportType.WAV)" draggable="false" data-ph-capture-attribute-action="export-wav"><fa icon="file-export" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.export-wav")}}</a></li>
+				<li><a class="dropdown-item" href="javascript:" @click="showShareDialog = true" draggable="false" data-ph-capture-attribute-action="share"><fa icon="share-from-square" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.share")}}</a></li>
+				<li><a class="dropdown-item" href="javascript:" @click="showImportDialog = true" draggable="false" data-ph-capture-attribute-action="import"><fa icon="file-import" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.import")}}</a></li>
 			</ul>
 		</div>
 

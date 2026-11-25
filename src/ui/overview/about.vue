@@ -12,7 +12,7 @@ const categoryList = computed(() => {
 </script>
 
 <template>
-  <div>
+  <div data-ph-capture-attribute-section="about">
     <div class="banner">
       <h1>Player</h1>
     </div>

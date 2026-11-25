@@ -176,7 +176,7 @@
 	<Teleport to="body">
 		<div class="modal fade bb-import-dialog" tabindex="-1" aria-hidden="true" ref="modalRef">
 			<div class="modal-dialog modal-lg">
-				<div class="modal-content">
+				<div class="modal-content" data-ph-capture-attribute-dialog="import">
 					<div class="modal-header">
 						<h1 class="modal-title fs-5">{{i18n.t("import-dialog.title")}}</h1>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" :aria-label="i18n.t('general.dialog-close')"></button>
@@ -199,7 +199,7 @@
 						>
 							{{i18n.t("import-dialog.upload-hint")}}
 							<div class="mt-2">
-								<button type="button" class="btn btn-secondary btn-sm" @click="fileInputRef?.click()">
+								<button type="button" class="btn btn-secondary btn-sm" @click="fileInputRef?.click()" data-ph-capture-attribute-action="upload-file">
 									<fa icon="file-import" fixed-width/>{{" "}}{{i18n.t("import-dialog.upload-button")}}
 								</button>
 								<input ref="fileInputRef" type="file" accept=".rhythm" class="d-none" @change="handleFileInput" />
@@ -228,7 +228,7 @@
 										<td>
 											<ul class="list-group">
 												<li v-for="(song, idx) in songInfo" :key="idx" class="list-group-item" :class="{active: song.shouldImport, disabled: song.exists}" v-tooltip.bottom="song.exists ? i18n.t('import-dialog.song-exists') : ''">
-													<a v-if="!song.exists" href="javascript:" @click="clickSong(idx)" draggable="false">{{song.name}}</a>
+													<a v-if="!song.exists" href="javascript:" @click="clickSong(idx)" draggable="false" data-ph-capture-attribute-action="toggle-import-song">{{song.name}}</a>
 													<span v-if="song.exists">{{song.name}} <fa icon="check"></fa></span>
 												</li>
 											</ul>
@@ -236,7 +236,7 @@
 										<td>
 											<ul class="list-group">
 												<li v-for="(tune, tuneName) in tuneInfo" :key="tuneName" class="list-group-item" :class="tune.className">
-													<a href="javascript:" @click="clickTune(tuneName as string)" draggable="false">{{getLocalizedDisplayName(tune.displayName)}}</a>
+													<a href="javascript:" @click="clickTune(tuneName as string)" draggable="false" data-ph-capture-attribute-action="toggle-import-tune">{{getLocalizedDisplayName(tune.displayName)}}</a>
 													<div>
 														<span
 															v-for="(pattern, patternName) in tune.patterns"
@@ -249,6 +249,7 @@
 																:disabled="!pattern.clickable"
 																:class="[pattern.shouldImport ? 'btn-outline-dark' : 'btn-outline-secondary', { active: pattern.shouldImport }]"
 																@click="pattern.clickable && clickPattern(tuneName as string, patternName as string)"
+																data-ph-capture-attribute-action="toggle-import-pattern"
 															>
 																{{patternName}} <fa v-if="pattern.exists" :icon="pattern.exists == 2 ? 'check' : 'exclamation-circle'"></fa>
 															</button>
@@ -263,8 +264,8 @@
 						</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" @click="modal.hide()">{{i18n.t("general.dialog-cancel")}}</button>
-						<button type="button" class="btn btn-primary" @click="doImport()" :disabled="!parsed.state">{{i18n.t("import-dialog.import-button")}}</button>
+						<button type="button" class="btn btn-secondary" @click="modal.hide()" data-ph-capture-attribute-action="cancel">{{i18n.t("general.dialog-cancel")}}</button>
+						<button type="button" class="btn btn-primary" @click="doImport()" :disabled="!parsed.state" data-ph-capture-attribute-action="import">{{i18n.t("import-dialog.import-button")}}</button>
 					</div>
 				</div>
 			</div>

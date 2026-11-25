@@ -56,14 +56,14 @@
 	<Teleport to="body">
 		<div class="modal fade bb-pattern-editor-dialog" tabindex="-1" aria-hidden="true" ref="modalRef">
 			<div class="modal-dialog">
-				<div class="modal-content">
+				<div class="modal-content" :data-ph-capture-attribute-dialog="'pattern-player'">
 					<div class="modal-header">
 						<h1 class="modal-title fs-5">{{title}}</h1>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" :aria-label="i18n.t('general.dialog-close')"></button>
 					</div>
 					<div class="modal-body">
 						<PatternPlayer :tuneName="tuneName" :patternName="patternName" :readonly="readonly" :player="playerRef">
-							<button type="button" class="btn btn-info" v-if="hasChanged" @click="share()"><fa icon="share-from-square"/>{{" "}}{{i18n.t("pattern-player-dialog.share")}}</button>
+							<button type="button" class="btn btn-info" v-if="hasChanged" @click="share()" data-ph-capture-attribute-action="share"><fa icon="share-from-square"/>{{" "}}{{i18n.t("pattern-player-dialog.share")}}</button>
 						</PatternPlayer>
 						<ShareDialog v-if="showShareDialog" @hidden="showShareDialog = false" :link-pattern="[tuneName, patternName]" />
 					</div>

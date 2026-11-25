@@ -129,7 +129,7 @@
 
 <template>
 	<div class="list-group bb-pattern-player-stokes-dropdown-menu">
-		<a class="list-group-item list-group-item-action" :class="{ active: !sequence && (!value || value == ' ') }" href="javascript:" @click="handleSelect(' ')" draggable="false">&nbsp;</a>
+		<a class="list-group-item list-group-item-action" :class="{ active: !sequence && (!value || value == ' ') }" href="javascript:" @click="handleSelect(' ')" draggable="false" data-ph-capture-attribute-action="select-stroke">&nbsp;</a>
 		<a class="list-group-item list-group-item-action"
 			v-for="stroke in config.instruments[instrument].strokes"
 			:key="stroke"
@@ -138,6 +138,7 @@
 			@click="handleSelect(stroke)"
 			v-tooltip="config.strokesDescription[stroke]?.()"
 			draggable="false"
+			:data-ph-capture-attribute-action="`select-stroke-${stroke}`"
 		>
 			{{config.strokes[stroke]}}
 		</a>

@@ -380,7 +380,7 @@
 						>
 							<PatternPlaceholderItem>
 								<div class="dropdown">
-									<a href="javascript" data-bs-toggle="dropdown">
+									<a href="javascript" data-bs-toggle="dropdown" data-ph-capture-attribute-action="pick-instrument">
 										<fa icon="hand-point-right" v-tooltip="i18n.t('song-player.pick-intruments-tooltip')"/>
 									</a>
 									<ul class="dropdown-menu">
@@ -390,13 +390,14 @@
 												href="javascript:"
 												@click.stop="toggleInstrument(instrumentKey2, i-1, song[i-1][instrumentKey]!)"
 												draggable="false"
+												:data-ph-capture-attribute-action="`set-song-instrument-${instrumentKey2}`"
 											><fa icon="check" :style="{visibility: isEqual(song[i-1][instrumentKey2], song[i-1][instrumentKey]) ? 'visible' : 'hidden'}"></fa> {{config.instruments[instrumentKey2].name()}}</a>
 										</li>
 									</ul>
 								</div>
 							</PatternPlaceholderItem>
 							<PatternPlaceholderItem>
-								<a href="javascript:" @click="removePatternFromSong(instrumentKey, i-1)" v-tooltip="i18n.t('song-player.remove-tooltip')" draggable="false"><fa icon="trash" /></a>
+								<a href="javascript:" @click="removePatternFromSong(instrumentKey, i-1)" v-tooltip="i18n.t('song-player.remove-tooltip')" draggable="false" data-ph-capture-attribute-action="remove-song-pattern"><fa icon="trash" /></a>
 							</PatternPlaceholderItem>
 						</PatternPlaceholder>
 						<span class="placeholder-drag-handle" draggable="true" @dragstart="handleResizeDragStart($event, instrumentKey, i-1)" @dragend="handleResizeDragEnd($event)"><span class="caret-se"></span></span>

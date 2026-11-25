@@ -69,12 +69,12 @@ watch(() => route.value?.tab, () => {
 			</a>
 
 			<div class="nav nav-tabs d-flex flex-row tab-gap flex-wrap">
-				<span class="nav-item"><a class="nav-link" :class="{ active: route.tab === 'about' }" href="javascript:"
-						@click="route.tab = 'about'">{{ i18n.t('overview.about') }}</a></span>
+				<span class="nav-item"><a class	="nav-link" :class="{ active: route.tab === 'about' }" href="javascript:"
+						@click="route.tab = 'about'" data-ph-capture-attribute-action="open-about">{{ i18n.t('overview.about') }}</a></span>
 				<span class="nav-item"><a class="nav-link" :class="{ active: route.tab === 'listen' }"
-						href="javascript:" @click="route.tab = 'listen'">{{ i18n.t('overview.listen') }}</a></span>
+						href="javascript:" @click="route.tab = 'listen'" data-ph-capture-attribute-action="open-listen">{{ i18n.t('overview.listen') }}</a></span>
 				<span class="nav-item"><a class="nav-link" :class="{ active: route.tab === 'compose' }"
-						href="javascript:" @click="route.tab = 'compose'">{{ i18n.t('overview.compose') }}</a></span>
+						href="javascript:" @click="route.tab = 'compose'" data-ph-capture-attribute-action="open-compose">{{ i18n.t('overview.compose') }}</a></span>
 				<span class="nav-item"><a class="nav-link"
 						href="https://xrrhythms.uk/learn">Learn</a></span>
 			</div>
@@ -86,7 +86,7 @@ watch(() => route.value?.tab, () => {
 
 		<div class="bb-overview-content">
 			<template v-if="route.tab === 'about'">
-				<About />
+				<About/>
 			</template>
 
 			<template v-if="route.tab === 'listen'">

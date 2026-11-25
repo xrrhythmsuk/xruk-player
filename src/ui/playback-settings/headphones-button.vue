@@ -41,7 +41,7 @@
 </script>
 
 <template>
-	<a v-if="!hide" class="bb-headphones-button" href="javascript:" @click="handleClick" :class="isActive ? 'active' : 'inactive'" draggable="false"><fa icon="headphones"/></a>
+	<a v-if="!hide" class="bb-headphones-button" href="javascript:" @click="handleClick" :class="isActive ? 'active' : 'inactive'" draggable="false" :data-ph-capture-attribute-action="`headphones-${instrument}`"><fa icon="headphones"/></a>
 </template>
 
 <style lang="scss">

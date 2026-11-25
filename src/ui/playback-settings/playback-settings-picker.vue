@@ -102,7 +102,7 @@
 			<label :for="`${id}-speed`" class="col-sm-4 col-form-label">{{i18n.t("playback-settings-picker.speed")}}</label>
 			<div class="col-sm-8 d-flex align-items-center">
 				<input :id="`${id}-speed`" type="range" class="form-range" v-model.number="speed" min="30" max="200" v-tooltip="`${speed}`"/>
-				<button type="button" class="btn btn-secondary btn-sm ms-2" @click="speed = defaultSpeed">{{i18n.t("playback-settings-picker.speed-reset")}}</button>
+				<button type="button" class="btn btn-secondary btn-sm ms-2" @click="speed = defaultSpeed" data-ph-capture-attribute-action="speed-reset">{{i18n.t("playback-settings-picker.speed-reset")}}</button>
 			</div>
 		</div>
 
@@ -117,9 +117,9 @@
 			<label :for="`${id}-whistle`" class="col-sm-4 col-form-label">{{i18n.t("playback-settings-picker.whistle")}}</label>
 			<div class="col-sm-8 d-flex align-items-center">
 				<div class="btn-group">
-					<button type="button" class="btn btn-secondary btn-sm" :class="{ active: whistle === false }" @click="whistle = false">{{i18n.t("playback-settings-picker.whistle-off")}}</button>
-					<button type="button" class="btn btn-secondary btn-sm" :class="{ active: whistle === 1 }" @click="whistle = 1">{{i18n.t("playback-settings-picker.whistle-one")}}</button>
-					<button type="button" class="btn btn-secondary btn-sm" :class="{ active: whistle === 2 }" @click="whistle = 2">{{i18n.t("playback-settings-picker.whistle-all")}}</button>
+					<button type="button" class="btn btn-secondary btn-sm" :class="{ active: whistle === false }" @click="whistle = false" data-ph-capture-attribute-action="whistle-off">{{i18n.t("playback-settings-picker.whistle-off")}}</button>
+					<button type="button" class="btn btn-secondary btn-sm" :class="{ active: whistle === 1 }" @click="whistle = 1" data-ph-capture-attribute-action="whistle-one">{{i18n.t("playback-settings-picker.whistle-one")}}</button>
+					<button type="button" class="btn btn-secondary btn-sm" :class="{ active: whistle === 2 }" @click="whistle = 2" data-ph-capture-attribute-action="whistle-all">{{i18n.t("playback-settings-picker.whistle-all")}}</button>
 				</div>
 			</div>
 		</div>
@@ -138,10 +138,10 @@
 				</tr>
 				<tr class="mute">
 					<td class="master">
-						<a href="javascript:" :class="allMuted ? 'active' : 'inactive'" @click="allMuted = !allMuted" draggable="false"><fa icon="volume-mute"/></a>
+						<a href="javascript:" :class="allMuted ? 'active' : 'inactive'" @click="allMuted = !allMuted" draggable="false" data-ph-capture-attribute-action="mute-volume-all"><fa icon="volume-mute"/></a>
 					</td>
 					<td v-for="instrumentKey in config.instrumentKeys" :key="instrumentKey">
-						<a href="javascript:" :class="muted[instrumentKey].value ? 'active' : 'inactive'" @click="muted[instrumentKey].value = !muted[instrumentKey].value" draggable="false"><fa icon="volume-mute"/></a>
+						<a href="javascript:" :class="muted[instrumentKey].value ? 'active' : 'inactive'" @click="muted[instrumentKey].value = !muted[instrumentKey].value" draggable="false" :data-ph-capture-attribute-action="`mute-volume-${instrumentKey}`"><fa icon="volume-mute"/></a>
 					</td>
 				</tr>
 				<tr class="instrument-names">
@@ -159,7 +159,7 @@
 
 		<div class="row">
 			<div class="btn-group">
-				<button v-for="(preset, key) in config.volumePresets" :key="key" type="button" class="btn btn-secondary" :class="{ active: key === activePreset }" @click="activePreset = key">{{preset.displayName()}}</button>
+				<button v-for="(preset, key) in config.volumePresets" :key="key" type="button" class="btn btn-secondary" :class="{ active: key === activePreset }" @click="activePreset = key" :data-ph-capture-attribute-action="`volume-preset-${key}`">{{preset.displayName()}}</button>
 			</div>
 		</div>
 	</HybridPopoverButton>

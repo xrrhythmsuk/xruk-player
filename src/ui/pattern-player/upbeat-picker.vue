@@ -26,9 +26,9 @@
 
 <template>
 	<div class="dropdown">
-		<button class="btn dropdown-toggle" :class="`btn-${props.variant}`" data-bs-toggle="dropdown">{{i18n.t("upbeat-picker.upbeat", { upbeat: props.modelValue })}}</button>
+		<button class="btn dropdown-toggle" :class="`btn-${props.variant}`" data-bs-toggle="dropdown" data-ph-capture-attribute-action="upbeat-picker">{{i18n.t("upbeat-picker.upbeat", { upbeat: props.modelValue })}}</button>
 		<ul class="dropdown-menu">
-			<li v-for="i in props.time * 4 + 1" :key="i"><a class="dropdown-item" :class="{ active: props.modelValue == i - 1 }" href="javascript:" @click="handleUpdate(i - 1)" draggable="false">{{i18n.t("upbeat-picker.upbeat", { upbeat: i - 1 })}}</a></li>
+			<li v-for="i in props.time * 4 + 1" :key="i"><a class="dropdown-item" :class="{ active: props.modelValue == i - 1 }" href="javascript:" @click="handleUpdate(i - 1)" draggable="false" :data-ph-capture-attribute-action="`set-upbeat-${i - 1}`">{{i18n.t("upbeat-picker.upbeat", { upbeat: i - 1 })}}</a></li>
 		</ul>
 	</div>
 </template>

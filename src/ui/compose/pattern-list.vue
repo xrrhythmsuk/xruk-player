@@ -187,10 +187,10 @@
 		<PatternListFilter v-model="filter" />
 		
 		<div class="mt-4 bb-pattern-list-tunes">
-			<div v-for="tune in visibleTunes" :key="tune.tuneName" class="card">
+			<div v-for="tune in visibleTunes" :key="tune.tuneName" class="card" :data-ph-capture-attribute-tune="tune.tuneName">
 				<div class="card-header">
 					<div class="d-grid">
-						<button type="button" class="btn btn-link" @click="toggleTune(tune.tuneName)">
+						<button type="button" class="btn btn-link" @click="toggleTune(tune.tuneName)" data-ph-capture-attribute-action="toggle-tune">
 							{{getLocalizedDisplayName(tune.displayName)}}
 							<fa v-if="tune.isCustom" icon="star" v-tooltip="i18n.t('pattern-list.user-created-tune')"/>
 							<fa icon="caret-down"/>
@@ -208,17 +208,17 @@
 							@dragStart="isDraggingPattern = true"
 							@dragEnd="isDraggingPattern = false"
 						>
-							<PatternPlaceholderItem><a :href="`#/compose/${encodeURIComponent(tune.tuneName)}/${encodeURIComponent(pattern.patternName)}`" v-tooltip="i18n.t('pattern-placeholder.edit-notes-tooltip')" draggable="false"><fa icon="pencil-alt"/></a></PatternPlaceholderItem>
-							<PatternPlaceholderItem><a href="javascript:" v-tooltip="pattern.isCustom ? i18n.t('pattern-list.copy-move-rename-break') : i18n.t('pattern-list.copy-break')" @click="copyPattern(tune.tuneName, pattern.patternName)" draggable="false"><fa icon="copy"/></a></PatternPlaceholderItem>
-							<PatternPlaceholderItem v-if="pattern.isCustom"><a href="javascript:" v-tooltip="i18n.t('pattern-list.remove-break')" @click="removePatternFromTune(tune.tuneName, pattern.patternName)" draggable="false"><fa icon="trash"/></a></PatternPlaceholderItem>
+							<PatternPlaceholderItem><a :href="`#/compose/${encodeURIComponent(tune.tuneName)}/${encodeURIComponent(pattern.patternName)}`" v-tooltip="i18n.t('pattern-placeholder.edit-notes-tooltip')" draggable="false" data-ph-capture-attribute-action="edit-pattern"><fa icon="pencil-alt"/></a></PatternPlaceholderItem>
+							<PatternPlaceholderItem><a href="javascript:" v-tooltip="pattern.isCustom ? i18n.t('pattern-list.copy-move-rename-break') : i18n.t('pattern-list.copy-break')" @click="copyPattern(tune.tuneName, pattern.patternName)" draggable="false" data-ph-capture-attribute-action="copy-pattern"><fa icon="copy"/></a></PatternPlaceholderItem>
+							<PatternPlaceholderItem v-if="pattern.isCustom"><a href="javascript:" v-tooltip="i18n.t('pattern-list.remove-break')" @click="removePatternFromTune(tune.tuneName, pattern.patternName)" draggable="false" data-ph-capture-attribute-action="remove-pattern"><fa icon="trash"/></a></PatternPlaceholderItem>
 							<slot :tuneName="tune.tuneName" :patternName="pattern.patternName"/>
 						</PatternPlaceholder>
 						<div class="tune-actions">
-							<a href="javascript:" @click="createPatternInTune(tune.tuneName)" v-tooltip="i18n.t('pattern-list.create-break')" draggable="false"><fa icon="plus"/></a>
-							<a v-if="tune.isCustom" href="javascript:" @click="handleRenameTune(tune.tuneName)" v-tooltip="i18n.t('pattern-list.rename-tune')" draggable="false"><fa icon="pen"/></a>
-							<a href="javascript:" @click="handleCopyTune(tune.tuneName)" v-tooltip="i18n.t('pattern-list.copy-tune')" draggable="false"><fa icon="copy"/></a>
-							<a v-if="tune.isCustom" href="javascript:" @click="handleRemoveTune(tune.tuneName)" v-tooltip="i18n.t('pattern-list.remove-tune')" draggable="false"><fa icon="trash"/></a>
-							<a v-if="tune.isCustom" href="javascript:" @click="shareTune(tune.tuneName)" v-tooltip="i18n.t('pattern-list.share-tune')" draggable="false"><fa icon="share-from-square"/></a>
+							<a href="javascript:" @click="createPatternInTune(tune.tuneName)" v-tooltip="i18n.t('pattern-list.create-break')" draggable="false" data-ph-capture-attribute-action="add-pattern"><fa icon="plus"/></a>
+							<a v-if="tune.isCustom" href="javascript:" @click="handleRenameTune(tune.tuneName)" v-tooltip="i18n.t('pattern-list.rename-tune')" draggable="false" data-ph-capture-attribute-action="rename-tune"><fa icon="pen"/></a>
+							<a href="javascript:" @click="handleCopyTune(tune.tuneName)" v-tooltip="i18n.t('pattern-list.copy-tune')" draggable="false" data-ph-capture-attribute-action="copy-tune"><fa icon="copy"/></a>
+							<a v-if="tune.isCustom" href="javascript:" @click="handleRemoveTune(tune.tuneName)" v-tooltip="i18n.t('pattern-list.remove-tune')" draggable="false" data-ph-capture-attribute-action="remove-tune"><fa icon="trash"/></a>
+							<a v-if="tune.isCustom" href="javascript:" @click="shareTune(tune.tuneName)" v-tooltip="i18n.t('pattern-list.share-tune')" draggable="false" data-ph-capture-attribute-action="share-tune"><fa icon="share-from-square"/></a>
 						</div>
 					</div>
 				</Collapse>
@@ -226,7 +226,7 @@
 		</div>
 
 		<div class="general-actions">
-			<button type="button" class="btn btn-link btn-lg" @click="handleCreateTune()"><fa icon="plus"/> {{i18n.t("pattern-list.create-tune")}}</button>
+			<button type="button" class="btn btn-link btn-lg" @click="handleCreateTune()" data-ph-capture-attribute-action="create-tune"><fa icon="plus"/> {{i18n.t("pattern-list.create-tune")}}</button>
 		</div>
 
 		<RenamePatternDialog

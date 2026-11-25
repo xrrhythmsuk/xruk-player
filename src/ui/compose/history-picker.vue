@@ -42,7 +42,7 @@
 
 <template>
 	<div v-if="historicStates.length > 1" class="dropdown bb-history" ref="dropdownRef">
-		<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+		<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-ph-capture-attribute-action="history">
 			<fa icon="clock"/><span class="d-none d-sm-inline">{{" "}}{{i18n.t("history-picker.history-alt")}}</span>
 		</button>
 		<ul class="dropdown-menu dropdown-menu-end">
@@ -54,6 +54,7 @@
 					@click="props.history.loadHistoricState(historicState.key)"
 					v-tooltip="historicState.isoDate"
 					draggable="false"
+					data-ph-capture-attribute-action="load-history"
 				>{{historicState.readableDate}}</a>
 			</li>
 			<li><hr class="dropdown-divider"></li>
@@ -63,6 +64,7 @@
 					href="javascript:"
 					@click="handleClear()"
 					draggable="false"
+					data-ph-capture-attribute-action="clear-history"
 				>{{i18n.t("history-picker.clear")}}</a>
 			</li>
 		</ul>

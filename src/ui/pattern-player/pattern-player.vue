@@ -295,22 +295,23 @@
 
 
 <template>
-	<div>
+	<div :data-ph-capture-attribute-tune="tuneName" :data-ph-capture-attribute-pattern="patternName">
 
 		<h1>
 			<span>
-				<a :href="`#/${readonly ? 'listen' : 'compose'}/${tuneName}/`">{{state.tunes[tuneName].displayName || tuneName }}</a>
-				{{state.tunes[tuneName].patterns[patternName].displayName || patternName }}
-				<a
-					v-if="readonly && isCustomPattern"
-					:href="`#/compose/${tuneName}/${patternName}`"><fa icon="pencil-alt"/></a>
-				<a
-				v-if="closeHref"
-				:href="closeHref"
-				@click="emit('close')"
-				:aria-label="i18n.t('general.dialog-close')"
-				:title="i18n.t('general.dialog-close')"
-			><fa icon="window-close"/></a>
+			<a :href="`#/${readonly ? 'listen' : 'compose'}/${tuneName}/`" data-ph-capture-attribute-action="open-tune">{{state.tunes[tuneName].displayName || tuneName }}</a>
+			{{state.tunes[tuneName].patterns[patternName].displayName || patternName }}
+			<a
+				v-if="readonly && isCustomPattern"
+				:href="`#/compose/${tuneName}/${patternName}`" data-ph-capture-attribute-action="edit-pattern"><fa icon="pencil-alt"/></a>
+			<a
+			v-if="closeHref"
+			:href="closeHref"
+			@click="emit('close')"
+			data-ph-capture-attribute-action="close"
+			:aria-label="i18n.t('general.dialog-close')"
+			:title="i18n.t('general.dialog-close')"
+		><fa icon="window-close"/></a>
 			</span>
 
 			
@@ -328,7 +329,7 @@
 		>
 			<slot />
 
-			<button v-if="hasLocalChanges" type="button" class="btn btn-warning" @click="reset()"><fa icon="eraser"/>{{" "}}{{i18n.t("pattern-player.restore")}}</button>
+			<button v-if="hasLocalChanges" type="button" class="btn btn-warning" @click="reset()" data-ph-capture-attribute-action="restore"><fa icon="eraser"/>{{" "}}{{i18n.t("pattern-player.restore")}}</button>
 		</PatternPlayerToolbar>
 
 		<div class="bb-pattern-player-container" ref="containerRef">

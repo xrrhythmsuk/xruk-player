@@ -33,7 +33,7 @@
 </script>
 
 <template>
-	<div class="bb-tune-view">
+	<div class="bb-tune-view" :data-ph-capture-attribute-tune="tuneName" :data-ph-capture-attribute-pattern="patternName">
 		<HybridSidebar v-model:isExpanded="isSidebarExpanded" :toggleContainer="sidebarToggleContainer">
 			<slot />
 

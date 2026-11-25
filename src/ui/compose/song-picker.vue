@@ -81,22 +81,22 @@
 
 <template>
 	<div class="dropdown bb-song-picker">
-		<button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-ph="song-picker-menu">
+		<button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-ph-capture-attribute-action="song-menu">
 			<fa icon="music"/><span class="d-none d-sm-inline">{{' '}}{{getSongName(state, props.modelValue)}}</span>
 		</button>
 		<ul class="dropdown-menu">
 			<li v-for="(thisSong, idx) in state.songs" :key="idx">
 				<ul class="list-unstyled">
 					<li class="song-name flex-grow-1">
-						<a class="dropdown-item" :class="{ active: idx == props.modelValue }" href="javascript:" @click="handleSelectSong(idx)" draggable="false" :data-ph="`song-picker-select-${idx}`">{{getSongName(state, idx)}}</a>
+						<a class="dropdown-item" :class="{ active: idx == props.modelValue }" href="javascript:" @click="handleSelectSong(idx)" draggable="false" data-ph-capture-attribute-action="select-song">{{getSongName(state, idx)}}</a>
 					</li>
-					<li class="rename"><a class="dropdown-item" :class="{ active: idx == props.modelValue }" href="javascript:" @click="handleRenameSong(idx)" v-tooltip="i18n.t('song-picker.rename-tooltip')" draggable="false" data-ph="song-picker-rename"><fa icon="pencil-alt"/></a></li>
-					<li class="copy"><a class="dropdown-item" :class="{ active: idx == props.modelValue }" href="javascript:" @click="handleCopySong(idx)" v-tooltip="i18n.t('song-picker.copy-tooltip')" draggable="false" data-ph="song-picker-copy"><fa icon="copy"/></a></li>
-					<li class="remove"><a class="dropdown-item" :class="{ active: idx == props.modelValue }" href="javascript:" @click="handleRemoveSong(idx)" v-tooltip="i18n.t('song-picker.remove-tooltip')" draggable="false" data-ph="song-picker-remove"><fa icon="trash"/></a></li>
+					<li class="rename"><a class="dropdown-item" :class="{ active: idx == props.modelValue }" href="javascript:" @click="handleRenameSong(idx)" v-tooltip="i18n.t('song-picker.rename-tooltip')" draggable="false" data-ph-capture-attribute-action="rename-song"><fa icon="pencil-alt"/></a></li>
+					<li class="copy"><a class="dropdown-item" :class="{ active: idx == props.modelValue }" href="javascript:" @click="handleCopySong(idx)" v-tooltip="i18n.t('song-picker.copy-tooltip')" draggable="false" data-ph-capture-attribute-action="copy-song"><fa icon="copy"/></a></li>
+					<li class="remove"><a class="dropdown-item" :class="{ active: idx == props.modelValue }" href="javascript:" @click="handleRemoveSong(idx)" v-tooltip="i18n.t('song-picker.remove-tooltip')" draggable="false" data-ph-capture-attribute-action="remove-song"><fa icon="trash"/></a></li>
 				</ul>
 			</li>
 			<li><hr class="dropdown-divider"></li>
-			<li><a class="dropdown-item" href="javascript:" @click="handleCreateSong()" draggable="false" data-ph="song-picker-new-song">{{i18n.t("song-picker.new-song")}}</a></li>
+			<li><a class="dropdown-item" href="javascript:" @click="handleCreateSong()" draggable="false" data-ph-capture-attribute-action="new-song">{{i18n.t("song-picker.new-song")}}</a></li>
 		</ul>
 	</div>
 </template>

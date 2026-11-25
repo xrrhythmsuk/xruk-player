@@ -37,16 +37,18 @@
 </script>
 
 <template>
-	<TuneView
-		class="bb-listen"
-		:tuneName="tuneName || undefined"
-		:patternName="props.editPattern"
-		:readonly="true"
-		:sidebarToggleContainer="sidebarToggleContainer"
-		@update:tuneName="tuneName = $event"
-	>
-		<TuneList v-model:tuneName="tuneName" />
-	</TuneView>
+	<div data-ph-capture-attribute-section="listen">
+		<TuneView
+			class="bb-listen"
+			:tuneName="tuneName || undefined"
+			:patternName="props.editPattern"
+			:readonly="true"
+			:sidebarToggleContainer="sidebarToggleContainer"
+			@update:tuneName="tuneName = $event"
+		>
+			<TuneList v-model:tuneName="tuneName" />
+		</TuneView>
+	</div>
 </template>
 
 <style lang="scss">

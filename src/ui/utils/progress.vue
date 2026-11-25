@@ -14,7 +14,7 @@
 			<div class="progress">
 				<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" :style="{ width: `${props.progress}%` }">{{Math.round(props.progress)}}&#x202f;%</div>
 			</div>
-			<a href="javascript:" @click="emit('cancel')" draggable="false"><fa icon="window-close"/></a>
+			<a href="javascript:" @click="emit('cancel')" draggable="false" data-ph-capture-attribute-action="cancel-export"><fa icon="window-close"/></a>
 		</div>
 	</Teleport>
 </template>

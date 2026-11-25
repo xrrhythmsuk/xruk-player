@@ -92,7 +92,7 @@
 	<div class="bb-tune-info" v-if="tune">
 		<h1 class="d-flex align-items-center">
 			{{getLocalizedDisplayName(tune.displayName || tuneName)}}
-			<a v-if="isCustomTune" class="ms-2" href="javascript:" @click="showTuneDialog = true" v-tooltip="i18n.t('pattern-list.rename-tune')" draggable="false"><fa icon="pencil-alt"/></a>
+			<a v-if="isCustomTune" class="ms-2" href="javascript:" @click="showTuneDialog = true" v-tooltip="i18n.t('pattern-list.rename-tune')" draggable="false" data-ph-capture-attribute-action="rename-tune"><fa icon="pencil-alt"/></a>
 		</h1>
 
 
@@ -128,7 +128,7 @@
 			:showEditorDialog="editPattern === patternName"
 			@update:showEditorDialog="handleEditorDialog(patternName, $event)"
 		>
-			<PatternPlaceholderItem><a href="javascript:" v-tooltip="i18n.t('tune-info.download-mp3')" @click="handleDownload(patternName, getPlayer())" draggable="false"><fa icon="download"/></a></PatternPlaceholderItem>
+			<PatternPlaceholderItem><a href="javascript:" v-tooltip="i18n.t('tune-info.download-mp3')" @click="handleDownload(patternName, getPlayer())" draggable="false" data-ph-capture-attribute-action="download-pattern"><fa icon="download"/></a></PatternPlaceholderItem>
 		</PatternPlaceholder>
 
 		<p v-if="tune.sheet"><a :href="tune.sheet" target="_blank"><strong>Tune sheet with mnemonics (PDF)</strong></a></p>

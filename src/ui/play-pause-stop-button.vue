@@ -34,6 +34,6 @@
 </script>
 
 <template>
-	<button type="button" class="btn" :class="`btn-${props.player.playing ? 'info' : 'success'}`" @click="playPause()"><fa :icon="props.player.playing ? 'pause' : 'play'"></fa><span class="d-none d-sm-inline">{{' '}}{{props.player.playing ? i18n.t("play-pause-stop-button.pause") : i18n.t("play-pause-stop-button.play")}}</span></button>
-	<button type="button" class="btn btn-danger" @click="stop()"><fa icon="stop"/><span class="d-none d-sm-inline">{{" "}}{{i18n.t("play-pause-stop-button.stop")}}</span></button>
+	<button type="button" class="btn" :class="`btn-${props.player.playing ? 'info' : 'success'}`" @click="playPause()" data-ph-capture-attribute-action="play-pause"><fa :icon="props.player.playing ? 'pause' : 'play'"></fa><span class="d-none d-sm-inline">{{' '}}{{props.player.playing ? i18n.t("play-pause-stop-button.pause") : i18n.t("play-pause-stop-button.play")}}</span></button>
+	<button type="button" class="btn btn-danger" @click="stop()" data-ph-capture-attribute-action="stop"><fa icon="stop"/><span class="d-none d-sm-inline">{{" "}}{{i18n.t("play-pause-stop-button.stop")}}</span></button>
 </template>

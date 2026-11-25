@@ -112,8 +112,8 @@
 			/>
 		</div>
 		<ul class="actions icon-list">
-			<li><a href="javascript:" v-tooltip="i18n.t('example-song-player.listen')" @click="playStop()" draggable="false"><fa :icon="abstractPlayerRef?.playerRef?.playing ? 'stop' : 'play-circle'"/></a></li>
-			<li><a href="javascript:" v-tooltip="i18n.t('example-song-player.download-mp3')" @click="handleDownload()" draggable="false"><fa icon="download"/></a></li>
+			<li><a href="javascript:" v-tooltip="i18n.t('example-song-player.listen')" @click="playStop()" draggable="false" data-ph-capture-attribute-action="play-example-song"><fa :icon="abstractPlayerRef?.playerRef?.playing ? 'stop' : 'play-circle'"/></a></li>
+			<li><a href="javascript:" v-tooltip="i18n.t('example-song-player.download-mp3')" @click="handleDownload()" draggable="false" data-ph-capture-attribute-action="download-example-song"><fa icon="download"/></a></li>
 		</ul>
 	</div>
 </template>

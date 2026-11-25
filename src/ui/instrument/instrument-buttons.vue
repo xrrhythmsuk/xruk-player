@@ -1,14 +1,15 @@
 <template>
   <div class="bb-instr-buttons d-flex gap-2 align-items-center">
     <div class="btn-group">
-      <button class="btn btn-outline-secondary" @click="selectAll"><fa icon="headphones" class="pr-2" /></button>
+      <button class="btn btn-outline-secondary" @click="selectAll" data-ph-capture-attribute-action="select-all-instruments"><fa icon="headphones" class="pr-2" /></button>
 
-      <button 
-        v-for="instrument in instruments" 
+      <button
+        v-for="instrument in instruments"
         :key="instrument.key"
-        class="btn btn-outline-secondary" 
-        :class="{ active: active(instrument.key) }" 
+        class="btn btn-outline-secondary"
+        :class="{ active: active(instrument.key) }"
         @click="onClick(instrument.key)"
+        :data-ph-capture-attribute-action="`toggle-instrument-${instrument.key}`"
       >
         {{ instrument.label }}
       </button>

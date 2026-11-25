@@ -40,7 +40,7 @@
 </script>
 
 <template>
-	<a class="bb-mute-button" href="javascript:" @click="handleClick()" :class="value ? 'active' : 'inactive'" draggable="false" v-tooltip="tooltip"><fa icon="volume-mute"/></a>
+	<a class="bb-mute-button" href="javascript:" @click="handleClick()" :class="value ? 'active' : 'inactive'" draggable="false" v-tooltip="tooltip" :data-ph-capture-attribute-action="instrument === 'all' ? 'mute-all' : `mute-${instrument}`"><fa icon="volume-mute"/></a>
 </template>
 
 <style lang="scss">

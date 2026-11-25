@@ -64,10 +64,10 @@
 <template>
 	<div class="input-group bb-pattern-list-filter">
 		<input type="text" class="form-control" :value="value.text" @input="value = { ...value, text: ($event.currentTarget as HTMLInputElement).value }" :placeholder="i18n.t('pattern-list-filter.filter-placeholder', { category: filterCats[value.cat] })" autofocus />
-		<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+		<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-ph-capture-attribute-action="filter"></button>
 		<ul class="dropdown-menu dropdown-menu-end">
 			<li v-for="(val, key) in filterCats" :key="key">
-				<a class="dropdown-item" :class="{ active: value.cat === key }" href="javascript:" @click="value = { ...value, cat: key }">{{val}}</a>
+				<a class="dropdown-item" :class="{ active: value.cat === key }" href="javascript:" @click="value = { ...value, cat: key }" :data-ph-capture-attribute-action="`set-filter-${key}`">{{val}}</a>
 			</li>
 		</ul>
 	</div>

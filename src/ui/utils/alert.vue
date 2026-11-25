@@ -60,7 +60,7 @@
 	<Teleport to="body">
 		<div class="modal fade" tabindex="-1" aria-hidden="true" ref="modalRef">
 			<div class="modal-dialog">
-				<form class="modal-content" :class="{ 'was-validated': formTouched }" @submit.prevent="handleSubmit()" novalidate ref="formRef">
+				<form class="modal-content" :class="{ 'was-validated': formTouched }" @submit.prevent="handleSubmit()" novalidate ref="formRef" :data-ph-capture-attribute-dialog="type">
 					<div class="modal-header">
 						<h1 class="modal-title fs-5">{{props.title}}</h1>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -69,8 +69,8 @@
 						<slot>{{props.message}}</slot>
 					</div>
 					<div class="modal-footer">
-						<button v-if="type === 'confirm'" type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{i18n.t("general.dialog-cancel")}}</button>
-						<button type="submit" class="btn" :class="`btn-${props.variant ?? 'primary'}`">{{props.okLabel ?? i18n.t("general.dialog-ok")}}</button>
+						<button v-if="type === 'confirm'" type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-ph-capture-attribute-action="cancel">{{i18n.t("general.dialog-cancel")}}</button>
+						<button type="submit" class="btn" :class="`btn-${props.variant ?? 'primary'}`" data-ph-capture-attribute-action="ok">{{props.okLabel ?? i18n.t("general.dialog-ok")}}</button>
 					</div>
 				</form>
 			</div>

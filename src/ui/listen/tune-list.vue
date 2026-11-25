@@ -63,7 +63,7 @@ const scrollToTune = () => {
 				</li>
 				<li v-for="thisTuneName in category.tunes" :key="thisTuneName" class="nav-item"
 					:class="{ active: thisTuneName == tuneName }">
-					<a class="nav-link" :href="`#/listen/${thisTuneName}/`" draggable="false">
+					<a class="nav-link" :href="`#/listen/${thisTuneName}/`" draggable="false" data-ph-capture-attribute-action="select-tune">
 						{{ getLocalizedDisplayName(state.tunes[thisTuneName].displayName || thisTuneName) }}
 					</a>
 				</li>

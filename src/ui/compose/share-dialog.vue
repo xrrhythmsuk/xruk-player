@@ -164,7 +164,7 @@
 	<Teleport to="body">
 		<div class="modal fade bb-share-dialog" tabindex="-1" aria-hidden="true" ref="modalRef">
 			<div class="modal-dialog modal-lg">
-				<div class="modal-content">
+				<div class="modal-content" data-ph-capture-attribute-dialog="share">
 					<div class="modal-header">
 						<h1 class="modal-title fs-5">{{i18n.t("share-dialog.title")}}</h1>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" :aria-label="i18n.t('general.dialog-close')"></button>
@@ -199,6 +199,7 @@
 												href="javascript:"
 												@click="shareSongs[idx] = !shareSongs[idx]"
 												draggable="false"
+												data-ph-capture-attribute-action="toggle-share-song"
 											>{{getSongName(state, idx)}}</a>
 										</div>
 									</td>
@@ -210,7 +211,7 @@
 												class="list-group-item"
 												:class="className"
 											>
-												<a href="javascript:" @click="toggleTune(tuneName as string)" draggable="false">{{getLocalizedDisplayName(state.tunes[tuneName].displayName || tuneName as string)}}</a>
+												<a href="javascript:" @click="toggleTune(tuneName as string)" draggable="false" data-ph-capture-attribute-action="toggle-share-tune">{{getLocalizedDisplayName(state.tunes[tuneName].displayName || tuneName as string)}}</a>
 												<span
 													v-for="({ enabled }, patternName) in patterns"
 													:key="patternName"
@@ -222,6 +223,7 @@
 														:class="[enabled ? 'btn-outline-dark' : 'btn-outline-secondary', { active: enabled }]"
 														:disabled="enabled === 2"
 														@click="togglePattern(tuneName as string, patternName as string)"
+														data-ph-capture-attribute-action="toggle-share-pattern"
 													>
 														{{getLocalizedDisplayName(state.tunes[tuneName].patterns[patternName].displayName || patternName as string)}} <fa icon="star" v-if="linkPattern && linkPattern[0] == tuneName && linkPattern[1] == patternName" />
 													</button>
@@ -235,10 +237,10 @@
 					</div>
 
 					<div class="modal-footer">
-						<button v-if="canShare" @click="share" class="btn btn-primary" data-ph="share-dialog-share"><fa icon="share-from-square" /> Share</button>
-						<button @click="copyLink" class="btn btn-primary" data-ph="share-dialog-copy-link"><fa icon="link" /> Copy link</button>
-						<button @click="save" class="btn btn-primary" data-ph="share-dialog-download"><fa icon="file-audio" /> Download</button>
-						<button @click="hide" class="btn btn-secondary" data-ph="share-dialog-cancel">Cancel</button>
+						<button v-if="canShare" @click="share" class="btn btn-primary" data-ph-capture-attribute-action="share"><fa icon="share-from-square" /> Share</button>
+						<button @click="copyLink" class="btn btn-primary" data-ph-capture-attribute-action="copy-link"><fa icon="link" /> Copy link</button>
+						<button @click="save" class="btn btn-primary" data-ph-capture-attribute-action="download"><fa icon="file-audio" /> Download</button>
+						<button @click="hide" class="btn btn-secondary" data-ph-capture-attribute-action="cancel">Cancel</button>
 					</div>
 
 				</div>
