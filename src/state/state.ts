@@ -275,6 +275,10 @@ export function copyTune(state: State, tuneName: string, newTuneName: string): v
 	});
 }
 
+export function replaceTune(state: State, tuneName: string, data: Tune): void {
+	state.tunes[tuneName] = data;
+}
+
 export function removeTune(state: State, tuneName: string): void {
 	replacePattern(state, [ tuneName, null ], null);
 	delete state.tunes[tuneName];

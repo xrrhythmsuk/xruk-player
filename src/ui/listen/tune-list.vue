@@ -74,7 +74,6 @@ const scrollToTune = () => {
 
 <style lang="scss">
 .bb-tune-list {
-	--padding: 1.4rem;
 	padding: var(--padding) 0;
 	display: flex;
 	flex-direction: column;

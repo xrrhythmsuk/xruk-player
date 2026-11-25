@@ -6,6 +6,7 @@
 	import PlaybackSettingsPicker from "../playback-settings/playback-settings-picker.vue";
 	import ImportDialog from "./import-dialog.vue";
 	import ShareDialog from "./share-dialog.vue";
+	import AdvancedEditorDialog from "./advanced-editor-dialog.vue";
 	import { injectStateRequired } from "../../services/state";
 	import { computed, ref } from "vue";
 	import SongPicker from "./song-picker.vue";
@@ -37,6 +38,7 @@
 
 	const showShareDialog = ref(false);
 	const showImportDialog = ref(false);
+	const showAdvancedEditorDialog = ref(false);
 
 	const handleClearSong = async () => {
 		if(await showConfirm({
@@ -77,6 +79,7 @@
 				<li><a class="dropdown-item" href="javascript:" @click="handleDownload(ExportType.WAV)" draggable="false"><fa icon="file-export" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.export-wav")}}</a></li>
 				<li><a class="dropdown-item" href="javascript:" @click="showShareDialog = true" draggable="false"><fa icon="share-from-square" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.share")}}</a></li>
 				<li><a class="dropdown-item" href="javascript:" @click="showImportDialog = true" draggable="false"><fa icon="file-import" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.import")}}</a></li>
+				<li><a class="dropdown-item" href="javascript:" @click="showAdvancedEditorDialog = true" draggable="false"><fa icon="code" fixed-width/>{{" "}}{{i18n.t("song-player-toolbar.advanced-editor")}}</a></li>
 			</ul>
 		</div>
 
@@ -88,6 +91,7 @@
 
 		<ShareDialog v-if="showShareDialog" @hidden="showShareDialog = false"/>
 		<ImportDialog v-if="showImportDialog" @hidden="showImportDialog = false"/>
+		<AdvancedEditorDialog v-if="showAdvancedEditorDialog" @hidden="showAdvancedEditorDialog = false"/>
 	</div>
 </template>
 

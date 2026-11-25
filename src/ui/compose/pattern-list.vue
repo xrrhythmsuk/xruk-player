@@ -170,12 +170,6 @@
 
 	const toggleTune = (tuneName: string, show = !isOpened.value[tuneName]) => {
 		isOpened.value[tuneName] = show;
-
-		if (show) {
-			expandTune.value = tuneName;
-		} else if (expandTune.value === tuneName) {
-			expandTune.value = undefined;
-		}
 	};
 
 </script>
@@ -246,8 +240,6 @@
 			:tune-name="shareTuneName"
 			@hidden="shareTuneName = undefined"
 		/>
-
-		<!-- // TODO: re-add share dialog -->
 	</div>
 </template>
 
