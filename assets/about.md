@@ -6,6 +6,8 @@ Individual bands can and will do their own thing and that’s great – that’s
 
 The Core tunes ([Funk](/#/listen/Funk), [Karla](/#/listen/Karla), [Hedgehog](/#/listen/Hedgehog), [Samba Reggae](/#/listen/Samba%20Reggae) and [Bhangra](/#/listen/Bhangra)) and [Core breaks and signs](/#/listen/Core%20Breaks) are more than enough for a band to play with: they make up most of what we do when we’re together. We don’t know any bands that play absolutely everything on here! Instead, we tend to explore combining and layering our material.
 
+Most of what’s on here (including the Player itself) comes via the [Rhythms of Resistance network](http://rhythms-of-resistance.org), though it also includes and/or puts back things from the long-standing London samba fusion scene that [descends from](https://xrrhythms.uk/about/) Barking Bateria and the London School of Samba and that the RoR tunes [originally](https://github.com/rhythms-of-resistance/sheetbook/blob/master/generated/single/history.pdf) came from.
+
 Have fun, wear earplugs and see you in the streets!
 
 ## Features
