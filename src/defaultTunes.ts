@@ -91,9 +91,9 @@ for (const i in rawTunes) {
 	(defaultTunes[i].exampleSong || []).forEach((egBit) => {
 		if (typeof egBit === 'string' && !defaultTunes[i].patterns[egBit]) {
 			unknown.push(egBit);
-		} else if (typeof egBit === 'object' && egBit.tuneName && egBit.patternName) {
+		} else if (typeof egBit === 'object' && 'tuneName' in egBit && 'patternName' in egBit) {
 			const bitTune = egBit.tuneName, bitPattern = egBit.patternName;
-			if (!defaultTunes[bitTune].patterns[bitPattern]) {
+			if (!defaultTunes[bitTune] || !defaultTunes[bitTune].patterns[bitPattern]) {
 				unknown.push(`${bitPattern} from ${bitTune}`);
 			}
 		}
