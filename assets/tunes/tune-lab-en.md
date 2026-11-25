@@ -71,8 +71,6 @@ Sign: *Usual sign followed by Bhangra sign, or usual sign snaking up*
 
 What it says on the tin! See also using call breaks like the [Circle Break](/#/listen/Samba%20Reggae/Circle%20Break%20Reggae%20Samba) to slow down and swing your tunes.  
 
-If due to technical limitations these sound a bit slow, try bumping the speed up to 120 bpm.
-
 * [Knock On The Door (Bhangra)](/#/listen/Tune%20Lab/Knock%20On%20The%20Door%20(Bhangra))
 * [Hardcore Break (Bhangra)](/#/listen/Tune%20Lab/Hardcore%20Break%20(Bhangra))
 
