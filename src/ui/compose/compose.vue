@@ -10,6 +10,7 @@
 	import { getPatternFromState, selectSong } from "../../state/state";
 	import HistoryPicker from "./history-picker.vue";
 	import SongPlayer from "./song-player.vue";
+	import SongList from "./song-list.vue";
 	import { clone, useRefWithOverride } from "../../utils";
 	import TuneView from "../tune-view.vue";
 	import { useI18n } from "../../services/i18n";
@@ -97,15 +98,18 @@
 			@update:tuneName="expandTune = $event"
 			@close="expandTune = undefined; editPattern = undefined"
 		>
-			<PatternList
-				v-slot="slotProps"
-				v-model:expandTune="expandTune"
-				v-model:editPattern="editPattern"
-				v-model:isDraggingPattern="isDraggingPattern"
-			>
-				<PatternPlaceholderItem><a href="javascript:" v-tooltip="i18n.t('compose.add-to-song-tooltip')" @click="patternClick(slotProps.tuneName, slotProps.patternName)" draggable="false" data-ph-capture-attribute-action="add-to-song"><fa icon="plus"/></a></PatternPlaceholderItem>
-			</PatternList>
+			<div class="sidebar-content">
+				<SongList v-model:songIdx="songIdx" @navigate="expandTune = undefined; editPattern = undefined" />
 
+				<PatternList
+					v-slot="slotProps"
+					v-model:expandTune="expandTune"
+					v-model:editPattern="editPattern"
+					v-model:isDraggingPattern="isDraggingPattern"
+				>
+					<PatternPlaceholderItem><a href="javascript:" v-tooltip="i18n.t('compose.add-to-song-tooltip')" @click="patternClick(slotProps.tuneName, slotProps.patternName)" draggable="false" data-ph-capture-attribute-action="add-to-song"><fa icon="plus"/></a></PatternPlaceholderItem>
+				</PatternList>
+			</div>
 			<template v-slot:empty>
 				<SongPlayer v-model:songIdx="songIdx" v-model:isDraggingPattern="isDraggingPattern">
 					<template v-slot:toolbar-right>
@@ -116,3 +120,9 @@
 		</TuneView>
 	</div>
 </template>
+
+<style lang="scss" scoped>
+	.sidebar-content {
+		padding:var(--padding) 0;
+	}
+</style>
