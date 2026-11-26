@@ -104,7 +104,7 @@ The tune has a [**pickup**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Bre
 * [**Break 1**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Break%201) has everyone play a pickup-like phrase at the end of each bar while snare and shaker carry on
 * [**Break 2**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Break%202) is an [alternate surdo line](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Tune%20(Surdos%20Break%202))
 * [**Break 3**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Break%203) is a slightly longer one with everyone against the snare and goes from quiet to loud from the third bar
-* The [**Sinister Pony Break**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Sinister%20Pony%20Break) _(Fingers down on raised forearms, turn to the side and rock like on a rocking horse)_ is a riff on the Karla Break but based on the low surdo part
+* The [**Sinister Pony Break**](/#/listen/Tune%20Lab/Pale%20Horse%20(Draft)%2C%20Sinister%20Pony%20Break) _(Hand up and down in waves in front of your face, like playing with a toy horse)_ is a riff on the Karla Break but based on the low surdo part
 
 ### [Tam Up](/#/listen/Tune%20Lab/Tam%20Up%20(Hedgehog))
 Sign: *Lift tam sign up to the sky* (or tams just do it automatically)
