@@ -207,7 +207,7 @@ export default {
 			}
 		},
 		'Nova Balanca 1 interlocking': {
-			displayName: 'Nova Balança, interlocking looped Break 1 (one example)',
+			displayName: 'Nova Balança, e.g. interlocking looped Break 1 (one example)',
 			loop: true,
 			ls: 'X X X X X X X X XX              ',
 			ms: '@ls',
@@ -218,11 +218,11 @@ export default {
 			ag: repeat(2, 'o  oa o o  oa o '),
 			sh: repeat(2, '................'),
 			volumeHack: {
-				ls: { 1: .11, 3: .22, 5: .33, 7: .44, 9: .55, 11: .66, 13: .77, 15: .88, 17: 1 },
-				ms: { 1: .11, 3: .22, 5: .33, 7: .44, 9: .55, 11: .66, 13: .77, 15: .88, 17: 1 },
-				hs: { 1: .11, 3: .22, 5: .33, 7: .44, 9: .55, 11: .66, 13: .77, 15: .88, 17: 1 },
-				re: { 1: 1, 17: .11, 19: .22, 21: .33, 23: .44, 25: .55, 27: .66, 29: .77, 31: .88 },
-				sn: { 1: 1, 17: .11, 19: .22, 21: .33, 23: .44, 25: .55, 27: .66, 29: .77, 31: .88 }
+				ls: crescendo(17),
+				ms: crescendo(17),
+				hs: crescendo(17),
+				re: crescendo(17, 17),
+				sn: crescendo(17, 17)
 			}
 		},
 		'Clock Hands': {
@@ -295,7 +295,7 @@ export default {
 			ag: 'a  oa o   a   o a a a o       o',
 			sh: repeat(8, 'X.X.'),
 			mnemonics: {
-				ls: repeat(2, "Let's get a pint to drink in "),
+				ls: repeat(2, "Let's get a pint and drink it "),
 				ag: "I need an a-pple for my pale white horse, hey,"
 			}
 		},
@@ -341,10 +341,10 @@ export default {
 			ta: '@ls',
 			ag: '@ls',
 			sh: '@ls',
-			volumeHack: {  0: 1, 32: 0.2, 40: 0.4, 48: 0.7, 56: 1 }
+			volumeHack: crescendo(25, 32)
 		},
 		'Pale Horse (Draft), Sinister Pony Break': {
-			description: "*Fingers down on raised forearms, turn to the side and rock like on a rocking horse*",
+			description: "*Hand up and down in waves in front of your face, like playing with a toy horse*",
 			ls: repeat(3, 'X  XX X  XX X   '),
 			ms: '@ls',
 			hs: '@ls',
@@ -355,10 +355,10 @@ export default {
 			sh: '@ls',
 			volumeHack: {  0: .2, 16: .4, 32: .7, 48: 1 },
 			mnemonics: {
-				ls: repeat(3, "Let's get a pint to drink in "),
-				re: repeat(3, "Let's get a pint to drink in ") + "x x x",
-				sn: repeat(2, "Let's . . get . a pint . . to drink . in . . . ") +
-					"Let's . . get a . pint . . to drink . in x . x x"
+				ls: repeat(3, "Let's get a pint and drink it "),
+				re: repeat(3, "Let's get a pint and drink it ") + "x x x",
+				sn: repeat(2, "Let's . . get . a pint . . and drink . it . . . ") +
+					"Let's . . get a . pint . . and drink . it x . x x"
 			}	
 		},
 		'Tam Up (Hedgehog)': {
