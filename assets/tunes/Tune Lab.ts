@@ -155,8 +155,8 @@ export default {
 			ag: 'o  oa o o  oa o ',
 			sh: '................',
 			mnemonics: {
-				ls: "O-pen it up Let's",
-				ms: "And let's shut it down",
+				ls: "We need a new now",
+				ms: "a new ba-lance now",
 				re: "Flip it round round",
 				sn: ". . . . Back . . . Push it . . back . . .",
 				ta: "Turn it o-ver Turn it o-ver",
@@ -207,7 +207,7 @@ export default {
 			}
 		},
 		'Nova Balanca 1 interlocking': {
-			displayName: 'Nova Balança, interlocking looped Break 1 (one example)',
+			displayName: 'Nova Balança, e.g. interlocking looped Break 1 (one example)',
 			loop: true,
 			ls: 'X X X X X X X X XX              ',
 			ms: '@ls',
@@ -218,11 +218,11 @@ export default {
 			ag: repeat(2, 'o  oa o o  oa o '),
 			sh: repeat(2, '................'),
 			volumeHack: {
-				ls: { 1: .11, 3: .22, 5: .33, 7: .44, 9: .55, 11: .66, 13: .77, 15: .88, 17: 1 },
-				ms: { 1: .11, 3: .22, 5: .33, 7: .44, 9: .55, 11: .66, 13: .77, 15: .88, 17: 1 },
-				hs: { 1: .11, 3: .22, 5: .33, 7: .44, 9: .55, 11: .66, 13: .77, 15: .88, 17: 1 },
-				re: { 1: 1, 17: .11, 19: .22, 21: .33, 23: .44, 25: .55, 27: .66, 29: .77, 31: .88 },
-				sn: { 1: 1, 17: .11, 19: .22, 21: .33, 23: .44, 25: .55, 27: .66, 29: .77, 31: .88 }
+				ls: crescendo(17),
+				ms: crescendo(17),
+				hs: crescendo(17),
+				re: crescendo(17, 17),
+				sn: crescendo(17, 17)
 			}
 		},
 		'Clock Hands': {
@@ -283,6 +283,108 @@ export default {
 				ta: { 50: .3, 59: 1, 62: .3, 71: 1, 74: .3, 85: 1, 98: .6, 107: 1, 110: .6, 119: 1, 122: .6, 133: 1 },
 				sh: { 50: .3, 59: 1, 62: .3, 71: 1, 74: .3, 85: 1, 98: .6, 107: 1, 110: .6, 119: 1, 122: .6, 133: 1 }
             }
+		},
+		'Pale Horse (Draft)': {
+			loop: true,
+			ls: 'X  XX X  XX X   X  XX X  XX X',
+			ms: 'X   X X   X X XXX   X X   X X',
+			hs: '@ms',
+			re: 'XX  XXXX   XXX  XX  XXXX    X XX',
+			sn: '....X.......X.XX....X.......X.XX',
+			ta: 'X X X X X X X X XX',
+			ag: 'a  oa o   a   o a a a o       o',
+			sh: repeat(8, 'X.X.'),
+			mnemonics: {
+				ls: repeat(2, "Let's get a pint and drink it "),
+				ag: "I need an a-pple for my pale white horse, hey,"
+			}
+		},
+		'Pale Horse (Draft), Pickup': {
+			description: "Automatically played before returning to main part",
+			re: '            X XX',
+			sn: '            X.XX'
+		},
+		'Pale Horse (Draft), Break 1': {
+			ls: '            X XX            XXXX',
+			ms: '@ls',
+			hs: '@ls',
+			re: '@ls',
+			sn: '....X.......X.XX....X.......X.XX',
+			ta: '@ls',
+			ag: '@ls',
+			sh: repeat(8, 'X.X.')
+		},
+		'Pale Horse (Draft), Break 2': {
+			loop: true,
+			ls: 'XX    XX  X     XX    XX  X XXXX',
+			ms: '@ls',
+			hs: '@ls',
+			sh: 'X   .   .   .   X   .   .   .   '
+		},
+		'Pale Horse (Draft), Tune (Surdos Break 2)': {
+			loop: true,
+			ls: 'XX    XX  X     XX    XX  X XXXX',
+			ms: '@ls',
+			hs: '@ls',
+			re: 'XX  XXXX   XXX  XX  XXXX    X XX',
+			sn: '....X.......X.XX....X.......X.XX',
+			ta: 'X X X X X X X X XX',
+			ag: 'a  oa o   a   o a a a o       o',
+			sh: repeat(8, 'X.X.')
+		},
+		'Pale Horse (Draft), Break 3': {
+			ls: 'X  XX X X  XX X X  XX X X  XX X X  XX  XX  XX  XX  XX  XX',
+			ms: '@ls',
+			hs: '@ls',
+			re: '@ls',
+			sn: '....X.......X.......X.......X...X...X...X...X...X...X...X.X.X.XX',
+			ta: '@ls',
+			ag: '@ls',
+			sh: '@ls',
+			volumeHack: crescendo(25, 32)
+		},
+		'Pale Horse (Draft), Sinister Pony Break': {
+			description: "*Hand up and down in waves in front of your face, like playing with a toy horse*",
+			ls: repeat(3, 'X  XX X  XX X   '),
+			ms: '@ls',
+			hs: '@ls',
+			re: repeat(3, 'X  XX X  XX X   ') + '            X XX',
+			sn: repeat(2, 'X..XX.X..XX.X...') + 'X..XX.X..XX.X   ' + '            X.XX',
+			ta: '@ls',
+			ag: '@ls',
+			sh: '@ls',
+			volumeHack: {  0: .2, 16: .4, 32: .7, 48: 1 },
+			mnemonics: {
+				ls: repeat(3, "Let's get a pint and drink it "),
+				re: repeat(3, "Let's get a pint and drink it ") + "x x x",
+				sn: repeat(2, "Let's . . get . a pint . . and drink . it . . . ") +
+					"Let's . . get a . pint . . and drink . it x . x x"
+			}	
+		},
+		'Tam Up (Hedgehog)': {
+			time: 6,
+			ta: 'X X X X X X X X X X X X X           X  X  X',
+			sh: 'X     .     .     .     X     .     .     .     ',
+			mnemonics: {  ta: "1 and a 2 and a 3 and a 4 and a Stop I'm a hog" }
+		},
+		'Copycat Break (one example)': {
+			description: "*Call break sign but with one hand and slower*",
+			ls: '                                X X X   X X X   X X XX XX X X   ' +
+				'                X  X    X X X                   X      XX X XX  ' +
+				'                XX XXX XXXX X                                   X X X   X X X   X X XX XX X X',
+			ms: '@ls',
+			hs: '@ls',
+			re: 'X X X   X X X   X X XX XX X X                                   ' +
+				'X  X    X X X                   X      XX X XX                  ' +
+				'XX XXX XXXX X                   X X X   X X X   X X XX XX X X',
+			sn: '@ls',
+			ta: '@ls',
+			ag: '@ls',
+			sh: '@ls',
+			mnemonics: {
+				ls: "How 'bout that, how 'bout that, yep we're rea-dy to co-py-cat",
+				re: "How 'bout that, how 'bout that, are you rea-dy to co-py-cat? ..."
+			}
 		}
     }
 }

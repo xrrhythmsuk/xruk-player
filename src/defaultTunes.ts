@@ -39,7 +39,7 @@ function uncompressMnemonics(tuneName: string, target: Pattern, pattern: Compres
 		console.warn(`Mnemonics length mismatch ${tuneName} ${target.displayName}: ${source}`, target[instr])
 	}
 	let i = 0;
-	return target[instr].map(p => p != ' ' ? words[i++] : '')
+	return target[instr].map(p => p != ' ' ? (words[i++] ?? '') : '')
 }
 
 for (const i in rawTunes) {
@@ -87,9 +87,18 @@ for (const i in rawTunes) {
 
 	defaultTunes[i] = normalizeTune(newTune);
 
-	const unknown = (defaultTunes[i].exampleSong || [])
-		.map((patternName) => typeof patternName === 'string' ? patternName : patternName.patternName)
-		.filter((patternName) => !defaultTunes[i].patterns[patternName]);
+	let unknown = [] as string[];
+	(defaultTunes[i].exampleSong || []).forEach((egBit) => {
+		if (typeof egBit === 'string' && !defaultTunes[i].patterns[egBit]) {
+			unknown.push(egBit);
+		} else if (typeof egBit === 'object' && egBit.tuneName && egBit.patternName) {
+			const bitTune = egBit.tuneName, bitPattern = egBit.patternName;
+			if (!defaultTunes[bitTune] || !defaultTunes[bitTune].patterns[bitPattern]) {
+				unknown.push(`${bitPattern} from ${bitTune}`);
+			}
+		}
+	})
+	
 	if(unknown.length > 0) {
 		// eslint-disable-next-line no-console
 		console.error(`Unknown breaks in example song for ${i}: ${unknown.join(", ")}`);
