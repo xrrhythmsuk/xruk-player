@@ -28,14 +28,14 @@ export default <Tune>{
         },
         "Starter Snare": {
             loop: true,
+            metronome: true,
             sn: 'X..XX..XX..XXX.X',
-            sh: 'X   .   .   .   ',
             mnemonics: {  sn: "I . . don't like . . it when . . it's scra-tching . me"  }
         },
         "Alt Repi": {
             loop: true,
+            metronome: true,
             re: 'X X XX XXX X    ',
-            sh: 'X   .   .   .   ',
             mnemonics: {  re: "It-chy stu-bble, there's no-thing worse"  }
         },
         "Break 1": {
@@ -104,10 +104,10 @@ export default <Tune>{
             }
         },
         "Break 2": {
+            metronome: true,
             ls: '      X       X       X   XXXXX ',
             ms: '@ls',
             hs: '@ls',
-            sh: 'X   .   .   .   X   .   .   .   ',
             mnemonics: {  ls: "Hey Hey Hey Have you had a shave?" }
         },
         "Tune Break 2": {
@@ -122,10 +122,10 @@ export default <Tune>{
             sh: '................................'
         },
         "Break 3": {
+            metronome: true,
             ls: '   XXXX    XXXX    XXXX X XXXXX ',
             ms: '@ls',
             hs: '@ls',
-            sh: 'X   .   .   .   X   .   .   .   ',
             mnemonics: {  ls: "You've had a shave You've had a shave You've had a shave Looks like you've had a shave" }
         },
         "Tune Break 3": {

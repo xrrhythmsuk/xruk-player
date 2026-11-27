@@ -40,33 +40,33 @@ export default {
             mnemonics: {  ls: "Don't wait for an an-gel to a-ppear" }
         },
         'Angel, Break 2': {
+			metronome: true,
             ls: 'X   X     XX    ',
             ms: '@ls',
             hs: '@ls',
-            sh: 'X   .   .   .   ',
             mnemonics: {  ls: "Ha-loes Let's go" }
         },
         'Pancake Break': {
             loop: true,
+			metronome: true,
             re: 'XXX XXX XXX XXX   XXX XXX XXX   ',
-            sh: 'X   .   .   .   X   .   .   .   ',
             mnemonics: {  re: repeat(4, "Going to flip ") + repeat(3, "Going to flop ") }
         },
         'Whoopi Break': {
             loop: true,
+			metronome: true,
             re: '    X X     X   ',
 			sn: '@re',
 			ta: '@re',
 			ag: '@re',
-            sh: 'X   .   .   .   ',
             mnemonics: {  re: 'Cla-pping hands' }
         },
         'Funk, Break 1 (Conga)': {
             loop: true,
+			metronome: true,
             ls: 'X X     X X   X X X     X       X   X   X   X   X   X   X   X   ',
             ms: '@ls',
             hs: '@ls',
-            sh: 'X   .   .   .   X   .   .   .   X   .   .   .   X   .   .   .   ',
             mnemonics: {  ls: "Boil them Mash them Just give us spuds Ve-ry ta-sty ve-ry ta-sty" }
         },
         'Forest Thump (Draft)': {

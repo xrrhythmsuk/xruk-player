@@ -25,14 +25,14 @@ export default <Tune>{
         },
        "Alt Repi": {
            loop: true,
+           metronome: true,
            re: '  X   X XXXXX X   X   X X XX XX ',
-           sh: 'X   .   .   .   X   .   .   .   ',
            mnemonics: {  re: "I don't want to come off pi-cky, But you can't beat sa-lty chips" }
         },
         "Starter Repi": {
             loop: true,
+            metronome: true,
             re: 'X X X X X X X X XXXX            ',
-            sh: 'X   .   .   .   X   .   .   .   ',
             mnemonics: {  re: "Hu-rry up we're blee-ding star-ving Give us some chips" }
         },
         "Break 1": {

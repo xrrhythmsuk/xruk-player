@@ -27,8 +27,8 @@ export default {
         },
        'Alt Repi': {
            loop: true,
+           metronome: true,
            re: '  XX XXX  XX XXX  XX XXX  XX  XX',
-           sh: 'X   .   .   .   X   .   .   .   ',
            mnemonics: {  re: "A ti-ny li-ttle A ti-ny li-ttle A ti-ny li-ttle Hedge-hog Hedge-hog" }
         }
     },

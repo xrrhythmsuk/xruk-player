@@ -29,8 +29,8 @@ export default {
         "Alt Agogo": {
             displayName: 'Alt Agogô',
             loop: true,
+            metronome: true,
             ag: "o ao  a  oaoo a ",
-            sh: 'X . . . X . . . ',
             mnemonics: {  ag: "This tune we play, I think it's sto-len" }
         },
         "Break 1": {

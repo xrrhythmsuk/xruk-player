@@ -73,7 +73,8 @@
 	const playbackSettings = ref<PlaybackSettings>({
 		...normalizePlaybackSettings(state.value.playbackSettings),
 		speed: pattern.value.speed,
-		loop: pattern.value.loop
+		loop: pattern.value.loop,
+		whistle: pattern.value.metronome ? 2 : false
 	});
 	const currentStrokeDropdown = ref<StrokeDropdownInfo>();
 

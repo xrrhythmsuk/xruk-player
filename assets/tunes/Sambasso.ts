@@ -27,21 +27,21 @@ export default {
         },
         'Starter Snare': {
             loop: true,
+            metronome: true,
             sn: '..XX..XX..XX..XX',
-            sh: 'X   .   .   .   ',
             mnemonics: {  sn: ". . Got to . . Keep an . . Eye on . . Hump-ty" }
         },
         'Starter Agogo': {
             displayName: 'Starter Agogô',
             loop: true,
+            metronome: true,
             ag: 'o  a  o   a a   ',
-            sh: 'X   .   .   .   ',
             mnemonics: {  ag: "Cla-ve for Hump-ty" }
         },
         'Alt Tam': {
             loop: true,
+            metronome: true,
             ta: ' X XX X XX XX  X X XXXX X  XX   ',
-            sh: 'X   .   .   .   X   .   .   .   ',
             mnemonics: {  ta: "Hump-ty Dump-ty sat on the wall, which made his hae-mo-rrhoids worse and all" }
         },
         'Break 1': {
